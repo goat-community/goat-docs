@@ -50,26 +50,23 @@ const config = {
         docs: {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
 
-          lastVersion: "current",
+          lastVersion: "2.0",
+          includeCurrentVersion: false,
           versions: {
-            current: {
-              label: "1.5",
-              path: "1.5",
+            "2.0": {
+              label: "2.0",
+              path: "2.0",
             },
+            //while working with this activate the code below, when finished comment it and create the push request
+            // current: {
+            //   label: "1.5",
+            //   path: "1.5",
+            // },
           },
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        // },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
