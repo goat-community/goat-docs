@@ -12,10 +12,7 @@ Single-Isochrones are **catchment areas** that are **calculated on the real tran
 
 Isochrones can be used as an **accessibility indicator** in one specific location. The isochrone area gives insights into the network connectivity. Furthermore, the isochrone can be intersected with further spatial data sets, such as population and POI data. Therewith it can be assessed how many people or POIs can be reached from a certain starting point.  
 
-
-
-**TODO: insert image of isochrone**
-
+![GOAT isochrone](/img/docs/indicators/catchments/isochrone/isochrone_pois.png "GOAT isochrone")
 
 
 :::tip Tip
@@ -45,7 +42,7 @@ Among others, isochrones can be used to answer the following planning questions:
 
 1. Pick for which ``routing`` mode you would like to calculate an isochrone. 
 
-TODO: Insert Swizzle (Walking, Cycling/Pedelec, Public Transport, Car)
+**TODO:** Insert Swizzle (Walking, Cycling/Pedelec, Public Transport, Car)
 
 #### Walking
 
@@ -201,12 +198,20 @@ How many people can access a specific location within 20min by rail-based public
 
 [comment]:<img src="/images/tutorials/Isochrone/isochrone_3.5public_en.webp"  alt="result-graph" style="max-height:400px;"/>
 
+:::tip Tip
 
+Want to style your isochrones and print nice looking maps? See [Styling & Print](../../styling_and_print/).
+
+:::
 ## 4. Technical details
 
 Isochrones are isolines connecting all points that can be reached from a specific starting point within a certain time interval. Depending on the chosen travel mode, the according transport networks are used for the [routing > TODO: Insert Link](/../routing).
 
 The isochrone shapes are dynamically created in the front end based on a travel time grid. Therefore, isochrones can be created fast and for different intervals on the fly.
+
+### Scientific background
+
+From the scientific background, isochrones are _contour-based measures_ (also known as _cumulative opportunities_). They are valued for their **easily interpretable results** ([Geurs and van Eck 2001](isochrones#6-resources); [Albacete 2016](isochrones#6-resources)), but have the drawback of not distinguishing between different travel times within the **cut-off range** ([Bertolini, le Clercq, and Kapoen 2005](isochrones#6-resources)), as it is done by [heatmaps > TODO: Insert Link](/category/heatmaps/).
 
 ### Visualization 
 
@@ -216,13 +221,20 @@ The isochrone shape is derived from the routing grid using the [Marching square 
 
 ## 5. Further readings
 
+**TODO:**
 (Links to tutorials)  
 Links to videos  
 Related docs  
 
+- GOAT paper
+
 If you want to learn more detailed examples of how the isochrone can be used within GOAT, you can access [the tutorials](../../tutorials/isochrone/) and [video sections](../../videos/) on the website.
 
 ## 6. Resources
+
+Albacete, Xavier. 2016. “Evaluation and Improvements of Contour-Based Accessibility Measures.” url: https://dspace.uef.fi/bitstream/handle/123456789/16857/urn_isbn_978-952-61-2103-1.pdf?sequence=1&isAllowed=y 
+
+Bertolini, Luca, F. le Clercq, and L. Kapoen. 2005. “Sustainable Accessibility: A Conceptual Framework to Integrate Transport and Land Use Plan-Making. Two Test-Applications in the Netherlands and a Reflection on the Way Forward.” Transport Policy 12 (3): 207–20. https://doi.org/10.1016/j.tranpol.2005.01.006.
 
 J. F. de Queiroz Neto, E. M. d. Santos, and C. A. Vidal. “MSKDE - Using
 Marching Squares to Quickly Make High Quality Crime Hotspot Maps”. en.
@@ -233,7 +245,9 @@ Sao Paulo, Brazil: IEEE, Oct. 2016, pp. 305–312. isbn: 978-1-5090-3568-7. doi:
 
 https://fr.wikipedia.org/wiki/Marching_squares#/media/Fichier:Marching_Squares_Isoline.svg
 
-Majk Shkurti, "Spatio-temporal public transport accessibility analysis and benchmarking in an interactive WebGIS", Sep 2022. url: https://www.researchgate.net/publication/365790691_Spatio-temporal_public_transport_accessibility_analysis_and_benchmarking_in_an_interactive_WebGIS
+Majk Shkurti, "Spatio-temporal public transport accessibility analysis and benchmarking in an interactive WebGIS", Sep 2022. url: https://www.researchgate.net/publication/365790691_Spatio-temporal_public_transport_accessibility_analysis_and_benchmarking_in_an_interactive_WebGIS **@EPajares & @majkshkurti: I took this reference from the current docs but cannot find the text passage where it is cited. Do you know where this belongs to? **
 
-Matthew Wigginton Conway,Andrew Byrd,Marco Van Der Linden. "Evidence-Based Transit and Land Use Sketch Planning Using Interactive Accessibility Methods on Combined Schedule and Headway-Based Networks", 2017. url: https://journals.sagepub.com/doi/10.3141/2653-06
+Matthew Wigginton Conway, Andrew Byrd, Marco Van Der Linden. "Evidence-Based Transit and Land Use Sketch Planning Using Interactive Accessibility Methods on Combined Schedule and Headway-Based Networks", 2017. url: https://journals.sagepub.com/doi/10.3141/2653-06 **@EPajares & @majkshkurti: I took this reference from the current docs but cannot find the text passage where it is cited. Do you know where this belongs to? **
+
+Geurs, Karst T., and Ritsema van Eck. 2001. “Accessibility Measures: Review and Applications.” RIVM Report 408505 006. url: https://rivm.openrepository.com/handle/10029/259808
 
