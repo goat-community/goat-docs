@@ -42,7 +42,7 @@ Among others, isochrones can be used to answer the following planning questions:
 
 1. Pick for which ``routing`` mode you would like to calculate an isochrone. 
 
-**TODO:** Insert Swizzle (Walking, Cycling/Pedelec, Public Transport, Car)
+**TODO:** Insert Tabs / Swizzle? (Walking, Cycling/Pedelec, Public Transport, Car) >> **@Ebubeker**
 
 #### Walking
 
