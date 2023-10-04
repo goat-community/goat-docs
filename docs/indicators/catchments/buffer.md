@@ -69,6 +69,11 @@ Want to calculate buffers from multiple starting points? See [Multi-Isochrones](
 ![Visualize and download results](/img/docs/indicators/catchments/buffer/tutorial_6.png "Visualize and download results")
 **TODO:** make image smaller
 
+:::tip Tip
+
+Want to style your buffers and print nice looking maps? See [Styling & Print](../../styling_and_print/).
+
+:::
 
 ## 4. Technical details
 
