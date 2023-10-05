@@ -3,27 +3,7 @@ sidebar_position: 1
 slug: /
 ---
 
-import docusaurusImg from "/img/docusaurus.png"
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-# Getting started
-
-<img src={docusaurusImg} style={{width: "100px"}}/>
-
-<Tabs>
-  <TabItem value="apple" label="Apple" default>
-    This is an apple 🍎
-  </TabItem>
-  <TabItem value="orange" label="Orange">
-    This is an orange 🍊
-  </TabItem>
-  <TabItem value="banana" label="Banana">
-    This is a banana 🍌
-  </TabItem>
-</Tabs>
-
-This is <span style={{color: "#FF0000"}}>red</span> and this is <span style={{color: "#FFFF00"}}>yellow</span>
+# Intro
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
