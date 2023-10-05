@@ -53,18 +53,18 @@ const config = {
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
 
-          lastVersion: "2.0",
-          includeCurrentVersion: false,
+          lastVersion: "current",
+          // includeCurrentVersion: false,
           versions: {
             "2.0": {
               label: "2.0",
               path: "2.0",
             },
             //while working with this activate the code below, when finished comment it and create the push request
-            // current: {
-            //   label: "1.5",
-            //   path: "1.5",
-            // },
+            current: {
+              label: "1.5",
+              path: "1.5",
+            },
           },
         },
         theme: {
