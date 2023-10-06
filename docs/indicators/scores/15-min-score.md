@@ -4,6 +4,12 @@ sidebar_position: 9
 
 # 15-Min-Score
 
+:::info
+
+This is not a standard feature of GOAT and only available on request.
+
+:::
+
 The 15-Min-Score gives a city-wide overview of how good the accessibility is to important destinations of the 15-minute city: housing, leisure, shopping, public transport, education and health. The easier the various facilities can be reached on foot, the higher the score (on a scale of 0-100).
 
 ![15-min-city score](/img/docs/indicators/scores/15-min-score/15-min-score-muenchen.png "15-min-city score")
