@@ -26,7 +26,7 @@ import aboutIcon from "/img/interface_overview/about_icon.webp"
 This section provides an overview of the GOAT interface and it's functionalities. There are several tabs, menu actions, icons and toolbars for the user to access GOAT's various functions and configuration screens.
 
 | User Interface Item | Label | Usage |
-| --- | --- | --- |
+| :-: | --- | --- |
 | <img src={catchmentsTab} alt="catchmentsTab" width="150px" style={{width: "150px", height: "50px", maxHeight: "100px", maxWidth: "150px", objectFit: "contain"}}/> | **"Catchments" Tab** | Here you can find the different options for calculating catchment areas. | 
 | <img src={indicatorTab} alt="indicatorTab" width="150px" style={{width: "150px", height: "50px", maxHeight: "100px", maxWidth: "150px", objectFit: "contain"}}/> | **"Indicators" Tab** | Here, you are finding all our indicators, such as the heatmaps on connectivity, local accessibility and population density. |
 | <img src={otherLayersTab} alt="otherLayersTab" width="150px" style={{width: "150px", height: "50px", maxHeight: "100px", maxWidth: "150px", objectFit: "contain"}}/> | **"Other Layers" Tab** | In this panel, you can switch on and off different layers, such as environmental data, buildings and land use. You can also integrate your own external layers from geoportals. |
