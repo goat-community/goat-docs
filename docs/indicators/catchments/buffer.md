@@ -3,6 +3,8 @@ sidebar_position: 2
 ---
 
 import thematicIcon from "/img/interface_overview/thematic_icon.webp"
+import bufferSettings from "/img/docs/indicators/catchments/buffer/tutorial_2.png"
+import bufferResult from "/img/docs/indicators/catchments/buffer/tutorial_6.png"
 
 # Buffer
 
@@ -11,13 +13,9 @@ The buffer creates a **straight line circle** around a given starting point. The
 
 ## 1. Explanation
 
-A **buffer** is an simple accessibility indicator that shows the catchment area of a specific point. The buffer ``distance`` can be selected by the user.
+A **buffer** is an simple accessibility indicator that shows the catchment area of a specific point. The buffer ``distance`` can be selected by the user. In contrary to the [isochrones](isochrones/), which are calculated based on the real transport network, the buffer calculates the catchment areas **as the crow flies**. The resulting catchment areas can be intersected with further spatial data sets, such as population and POI data. Therewith it can be assessed how many people or POIs are located within the buffer area.  
 
-In contrary to the [isochrones](isochrones/), which are calculated based on the real transport network, the buffer calculates the catchment areas **as the crow flies**. 
-
-The resulting catchment areas can be intersected with further spatial data sets, such as population and POI data. Therewith it can be assessed how many people or POIs are located within the buffer area.  
-
- ![GOAT buffer](/img/docs/indicators/catchments/buffer/buffer.png "GOAT buffer")
+![GOAT buffer](/img/docs/indicators/catchments/buffer/buffer.png "GOAT buffer")
 
 ## 2. Which planning questions can be answered? 
 
@@ -26,9 +24,6 @@ Among others, buffers can be used to answer the following planning questions:
 - How many shops are accessible within a 1000m distance from a bus stop?
 
 ## 3. How to use the indicator?
-
-How to use the indicator? (from tutorials) / Sample calculation(s)
-Show as many samples as necessary to explain a feature
 
 ### Video Tutorial
 
@@ -44,9 +39,7 @@ Show as many samples as necessary to explain a feature
    
 3. Zoom in into the area where you want to calculate the buffer. Place the ``Starting point`` on the map. 
 
-![Buffer Settings in GOAT](/img/docs/indicators/catchments/buffer/tutorial_2.png "Buffer Settings in GOAT")
-
-**TODO:** make image smaller
+<img src={bufferSettings} alt="bufferSettings" width="1000px" style={{width: "300px", height: "180px", maxHeight: "300px", maxWidth: "500px", objectFit: "contain"}}/> 
 
 :::tip Tip
 
@@ -68,8 +61,7 @@ Want to calculate buffers from multiple starting points? See [Multi-Isochrones](
 
 7. The results can be visualized in different forms (table, graph, pie chart) and can be downloaded as GeoJSON, CSV, Geobuf, Shapefile, GeoPackage, KML and XLSX. 
 
-![Visualize and download results](/img/docs/indicators/catchments/buffer/tutorial_6.png "Visualize and download results")
-**TODO:** make image smaller
+<img src={bufferResult} alt="bufferResult" width="1000px" style={{width: "300px", height: "280px", maxHeight: "500px", maxWidth: "500px", objectFit: "contain"}}/> 
 
 :::tip Tip
 
