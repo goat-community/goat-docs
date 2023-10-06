@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+import connectivityFormula from "/img/docs/indicators/connectivity/formula_en.webp"
+
 # Connectivity
 
 The Connectivity Heatmap shows **how well the walking network is connected** on a hexagonal grid. It helps to detect network gaps across the city. 
@@ -51,8 +53,7 @@ The connectivity heatmap is calculated using the [H3 hexagonal grid](../../gener
 
 The **connectivity value** is computed by summing up the reached area for each time interval (1 to 20 min) and dividing the sum by the total number of intervals (20):
 
-![Connectivity formula](/img/docs/indicators/connectivity/formula_en.webp "Formula to compute the average reached area")
-**TODO:** adjust image size
+<img src={connectivityFormula} alt="connectivityFormula" width="1000px" style={{width: "400px", height: "130px", maxHeight: "500px", maxWidth: "500px", objectFit: "contain"}}/> 
 
 The resulting connectivity values are classified into six levels, from highest to lowest as [**quintile classification**](../../general/glossary#quintile-classification "Quintile Classification"). This classification helps to identify areas with relatively small or large catchments, allowing to locate gaps in the network and potential areas for improvement. 
 
