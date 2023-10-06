@@ -9,16 +9,18 @@ import TabItem from '@theme/TabItem';
 
 # Getting started
 
-<img src={docusaurusImg} style={{width: "100px"}}/>
+<div style={{display: "flex", justifyContent: "center"}}>
+  <img src={docusaurusImg} style={{width: "100px"}}/>
+</div>
 
 <Tabs>
-  <TabItem value="apple" label="Apple" default>
+  <TabItem value="apple" label="Apple" default className="tabItemBox">
     This is an apple 🍎
   </TabItem>
-  <TabItem value="orange" label="Orange">
+  <TabItem value="orange" label="Orange" className="tabItemBox">
     This is an orange 🍊
   </TabItem>
-  <TabItem value="banana" label="Banana">
+  <TabItem value="banana" label="Banana" className="tabItemBox">
     This is a banana 🍌
   </TabItem>
 </Tabs>

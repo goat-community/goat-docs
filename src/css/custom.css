@@ -99,3 +99,7 @@ html[data-theme='dark'] {
 html[data-theme='dark'] .navbar .navbar__logo {
   content: url(https://assets.plan4better.de/img/logo/plan4better_white.svg)
 }
+
+.tabItemBox{
+  margin-left: 10px;
+}
