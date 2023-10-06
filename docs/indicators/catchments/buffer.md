@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+import thematicIcon from "/img/interface_overview/thematic_icon.webp"
+
 # Buffer
 
 The buffer creates a **straight line circle** around a given starting point. Therewith, **catchment areas** can be calculated, e.g. around public transport stops.  
@@ -56,7 +58,7 @@ Want to calculate buffers from multiple starting points? See [Multi-Isochrones](
 
 ![Buffer Catchment Area in GOAT](/img/docs/indicators/catchments/buffer/tutorial_3.png "Buffer Catchment Area in GOAT")
 
-5. If you want to intersect the buffer area with POI data, you can go into the ``Thematic Data Filter`` and enable the desired POI categories. The result table dynamically reacts on the selection.
+5. If you want to intersect the buffer area with POI data, you can go into the ``Thematic Data Filter`` <img src={thematicIcon} alt="thematic icon" style={{width: "25px"}}/> and enable the desired POI categories. The result table dynamically reacts on the selection.
 
 ![Buffer intersection with POI data in GOAT](/img/docs/indicators/catchments/buffer/tutorial_4.png "Buffer intersection with POI data in GOAT")
 

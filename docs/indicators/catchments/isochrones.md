@@ -2,6 +2,9 @@
 sidebar_position: 3
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Single-Isochrones
 
 Single-Isochrones are **catchment areas** that are **calculated on the real transport network**. This accessibility indicator shows how far a person can travel from a selected starting point within a given travel time.
@@ -42,7 +45,8 @@ Among others, isochrones can be used to answer the following planning questions:
 
 1. Pick for which ``routing`` mode you would like to calculate an isochrone. 
 
-**TODO:** Insert Tabs / Swizzle? (Walking, Cycling/Pedelec, Public Transport, Car) >> **@Ebubeker**
+<Tabs>
+  <TabItem value="walking" label="Walking" default>
 
 #### Walking
 
@@ -54,6 +58,10 @@ Default walking speed: 5km/h
 
 Further information: **TODO: add link to routing/walking**
 
+  </TabItem>
+  <TabItem value="cycling" label="Cycling/Pedelec">
+
+    
 #### Cycling Standard
 
 Considering all paths accessible by bicycle.
@@ -72,6 +80,9 @@ For Pedelecs, slopes are considered with a lower impedance than for standard bic
 Further information: **TODO: add link to routing/cycling**
 
 
+  </TabItem>
+  <TabItem value="public transport" label="Public Transport">
+
 #### Transit
 
 In this routing mode, users can compute intermodal accessibility centered around public transport. The following settings can be adjusted:
@@ -86,12 +97,20 @@ In this routing mode, users can compute intermodal accessibility centered around
 
 Further information: **TODO: add link to routing/transit**
 
+
+  </TabItem>
+  <TabItem value="car" label="Car">
+
 #### Car
+
 TODO
 
-Further information: **TODO: add link to routing/transit**
+Further information: **TODO: add link to routing/car**
 
---- end of swizzle --- 
+  </TabItem>
+</Tabs>
+
+
 
 2. Place the ``starting point`` on the map. 
 

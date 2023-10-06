@@ -10,8 +10,7 @@ The Connectivity Heatmap shows **how well the walking network is connected** on 
 
 The **Connectivity Heatmap** serves as **benchmark** for the [connectivity](../../general/glossary#connectivity "What is Connectivity?") of the transport infrastructure, i.e. the path network. It can currently be calculated for the walking mode and visualizes the **connectivity of footpaths** on a hexagonal grid. This allows users to identify areas of high and low connectivity in the study area. This is particularly important for the promotion of active modes (walking and cycling), as these modes are sensitive to detours.
 
-The connectivity heatmap is based on the [isochrone](/en/docs/isochrone/ "What is an isochrone?") calculation. From the centroid of each hexagon, the walking catchment area is computed. Based on the size of the catchment area, the hexagons are categorized in <i>very low</i> (**RED**) to <i>very high connectivity</i> (**GREEN**).
-**TODO: @Ebubeker do you know if/how it is possible to adjust the text colour?**
+The connectivity heatmap is based on the [isochrone](/en/docs/isochrone/ "What is an isochrone?") calculation. From the centroid of each hexagon, the walking catchment area is computed. Based on the size of the catchment area, the hexagons are categorized in <i>very low</i> (<span style={{color: "#FF0000"}}>red</span>) to <i>very high connectivity</i> (<span style={{color: "#268c35"}}>green</span>).
 
 ![Connectivity Heatmap in GOAT](/img/docs/indicators/connectivity/first_impression_connectivity_en.webp "Connectivity Heatmap in GOAT")
 
