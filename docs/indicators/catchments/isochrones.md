@@ -48,7 +48,7 @@ Among others, isochrones can be used to answer the following planning questions:
 1. Pick for which ``routing`` mode you would like to calculate an isochrone. 
 
 <Tabs>
-  <TabItem value="walking" label="Walking" default>
+  <TabItem value="walking" label="Walking" default className="tabItemBox">
 
 #### Walking
 
@@ -61,7 +61,7 @@ Default walking speed: 5km/h
 Further information: **TODO: add link to routing/walking**
 
   </TabItem>
-  <TabItem value="cycling" label="Cycling/Pedelec">
+  <TabItem value="cycling" label="Cycling/Pedelec" className="tabItemBox">
 
     
 #### Cycling Standard
@@ -83,7 +83,7 @@ Further information: **TODO: add link to routing/cycling**
 
 
   </TabItem>
-  <TabItem value="public transport" label="Public Transport">
+  <TabItem value="public transport" label="Public Transport" className="tabItemBox">
 
 #### Transit
 
@@ -101,7 +101,7 @@ Further information: **TODO: add link to routing/transit**
 
 
   </TabItem>
-  <TabItem value="car" label="Car">
+  <TabItem value="car" label="Car" className="tabItemBox">
 
 #### Car
 
