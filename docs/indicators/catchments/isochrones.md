@@ -43,6 +43,8 @@ Among others, isochrones can be used to answer the following planning questions:
 
 ### Step-by-step guideline
 
+1. Go into menu ... 
+
 1. Pick for which ``routing`` mode you would like to calculate an isochrone. 
 
 <Tabs>

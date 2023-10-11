@@ -12,7 +12,7 @@ The Population Density Heatmap shows **how many people live in an area** on a he
 
 The **Population Density Heatmap** serves as an overview on the population densities, representing the demand side of the accessibility analysis. The higher the population density in an area, the higher also the **demand for amenities and services**.
 
-The heatmap is visualized on a hexagonal grid. Per grid cell, the population numbers are shown by the use of different shades of red. The darker the colour, the higher the population density.
+The heatmap is visualized on a hexagonal grid. Per grid cell, the population numbers are shown by the use of different shades of red. The darker the colour, the higher the population density. It is thus suitable for directly **comparing different locations** within a chosen geographical scope. 
 
 ![Population Density Heatmap in GOAT](/img/docs/indicators/heatmaps/population_density/population_density_en.webp "Population Density Heatmap in GOAT")
 
