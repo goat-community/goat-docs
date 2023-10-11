@@ -38,9 +38,17 @@ Among others, the connectivity heatmap can be used to answer the following plann
 
 ### Step-by-step guideline
 
-**TODO**
-How to use the indicator? (from tutorials) / Sample calculation(s)
-Show as many samples as necessary to explain a feature
+1. Go into the tab ``INDICATORS`` and activate the ``Connectivity`` heatmap. The resulting heatmap shows areas with <i>low connectivity</i> in <span style={{color: "#FF0000"}}>red</span> and areas with <i>high connectivity</i> in <span style={{color: "#268c35"}}>green</span>.
+
+![GOAT Connectivity Heatmap](/img/docs/indicators/connectivity/connectivity_en.webp "Connectivity Heatmap in GOAT")
+
+2. To further understand, where the connectivity values come from, it is helpful to activate the ``Aerial Image`` background map. 
+
+![GOAT Connectivity Heatmap](/img/docs/indicators/connectivity/background_en.webp "Connectivity Heatmap in GOAT")
+
+3. In this example, we can see that one of the <span style={{color: "#FF0000"}}>red areas</span> has low connectivity due to a large freight depot, while the large <span style={{color: "#268c35"}}>green areas</span> are due to the historic city centre with its small-grained block structure.
+
+![GOAT Connectivity Heatmap](/img/docs/indicators/connectivity/explanation_en.webp "Connectivity Heatmap in GOAT")
 
 ## 4. Technical details
 
