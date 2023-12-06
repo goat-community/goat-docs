@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Data
+# Data Basis
 
 
 ### Data as an important basis for our analysis
