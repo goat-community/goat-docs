@@ -54,7 +54,7 @@ You can find further information on how we perform isochrone calculations in our
 ### Land Use
 **Land use** is the categorization and management of land according to its functional role within a specific area. This includes a range of purposes such as residential, commercial, industrial, and natural or conservation uses. Additionally, land use incorporates aspects of urban planning and environmental management, as the manner in which land is utilized significantly influences factors like population density and the distribution of destinations. Consequently, land use has a direct and substantial impact on accessibility, affecting the availability of services, transport connectivity, and liveability of an area.
 
-**IMAGE**
+**TODO: IMAGE**
 
 
 ### Local Accessibility
@@ -63,7 +63,7 @@ You can find further information on how we perform isochrone calculations in our
 ### Micromobility
 **Micromobility** is a growing trend in urban transportation, involving small, lightweight vehicles like electric scooters and skateboards. These compact modes of transport offer convenient solutions for short-distance travel. 
 
-**IMAGE**
+**TODO: IMAGE**
 
 ### Open Source **IMAGE**
 **Open source** refers to software or other products that are made available to the public with their source code freely accessible and modifiable. This allows individuals and organizations to modify and improve the product as needed, without restrictions on use or distribution. 
