@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-import thematicIcon from "/img/interface_overview/thematic_icon.webp"
+import thematicIcon from "/img/general/interface_overview/thematic_icon.webp"
 import bufferSettings from "/img/indicators/catchments/buffer/tutorial_2.png"
 import bufferResult from "/img/indicators/catchments/buffer/tutorial_6.png"
 

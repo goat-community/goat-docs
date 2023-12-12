@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-import thematicIcon from "/img/interface_overview/thematic_icon.webp"
+import thematicIcon from "/img/general/interface_overview/thematic_icon.webp"
 
 # Accessibility and Population Density
 
