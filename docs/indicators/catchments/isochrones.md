@@ -105,7 +105,7 @@ Further information: **TODO: add link to routing/transit**
 
 #### Car
 
-TODO
+<span style={{color: "#FF0000"}}>TODO</span> 
 
 Further information: **TODO: add link to routing/car**
 
@@ -118,7 +118,7 @@ Further information: **TODO: add link to routing/car**
 
 <img src="/img/docs/indicators/catchments/Isochrone/original_files/starting_point.png" width="1000px" alt="isochrone starting point" style={{width: "1000px", height: "250px", maxHeight: "10px", maxWidth: "100px", objectFit: "cover"}}/> 
 
-TODO: check image
+<span style={{color: "#FF0000"}}>TODO:</span> check image
 
 3. ... to be continued ... 
 
@@ -242,7 +242,7 @@ The isochrone shape is derived from the routing grid using the [Marching square 
 
 ## 5. Further readings
 
-**TODO:**
+<span style={{color: "#FF0000"}}>TODO:</span> 
 (Links to tutorials)  
 Links to videos  
 Related docs  

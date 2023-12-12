@@ -20,10 +20,10 @@ The 15-minute-city is <i>“an urban set-up where locals are able to access all 
 
 ![Essential destinations of the 15-min-city](/img/docs/indicators/scores/15-min-score/15-min-score-categories.png "Essential destinations of the 15-min-city")
 
-TODO: translate the image
+<span style={{color: "#FF0000"}}>TODO:</span>  translate the image
 
 
-TODO: add info from https://plan4better-my.sharepoint.com/:w:/g/personal/elias_pajares_plan4better_de/EQsnShs-E0RDk6Eo__jDfSQBgb0xBILtYJPUqPf2NsIq5Q?e=YeT0JI
+<span style={{color: "#FF0000"}}>TODO:</span> add info from https://plan4better-my.sharepoint.com/:w:/g/personal/elias_pajares_plan4better_de/EQsnShs-E0RDk6Eo__jDfSQBgb0xBILtYJPUqPf2NsIq5Q?e=YeT0JI
   & acatech & Lime report
 
 
@@ -37,12 +37,12 @@ For what can this indicator be used? (planning question list from tutorials)
 
 ## 3. How to use the indicator?
 
-TODO: How to use the indicator? (from tutorials) / Sample calculation(s)
+<span style={{color: "#FF0000"}}>TODO:</span>  How to use the indicator? (from tutorials) / Sample calculation(s)
 Show as many samples as necessary to explain a feature
 
 ## 4. Technical details 
 
-TODO: mit Infos + graphiken aus Acatech report synchen
+<span style={{color: "#FF0000"}}>TODO:</span>  mit Infos + graphiken aus Acatech report synchen
 
 
 
