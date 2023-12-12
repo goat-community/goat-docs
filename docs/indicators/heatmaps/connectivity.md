@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-import connectivityFormula from "/img/docs/indicators/connectivity/formula_en.webp"
+import connectivityFormula from "/img/indicators/connectivity/formula_en.webp"
 
 # Connectivity
 
@@ -14,7 +14,7 @@ The **Connectivity Heatmap** serves as **benchmark** for the [connectivity](../.
 
 The connectivity heatmap is based on the [isochrone](/en/docs/isochrone/ "What is an isochrone?") calculation. From the centroid of each hexagon, the walking catchment area is computed. Based on the size of the catchment area, the hexagons are categorized in <i>very low</i> (<span style={{color: "#FF0000"}}>red</span>) to <i>very high connectivity</i> (<span style={{color: "#268c35"}}>green</span>). The heatmap is thus suitable for directly **comparing different locations** within a chosen geographical scope. 
 
-![Connectivity Heatmap in GOAT](/img/docs/indicators/connectivity/first_impression_connectivity_en.webp "Connectivity Heatmap in GOAT")
+![Connectivity Heatmap in GOAT](/img/indicators/connectivity/first_impression_connectivity_en.webp "Connectivity Heatmap in GOAT")
 
 Typical areas with low connectivity are along railway lines and large main roads. High connectivity values are often found in residential areas with dense path networks.
 
@@ -40,15 +40,15 @@ Among others, the connectivity heatmap can be used to answer the following plann
 
 1. Go into the tab ``INDICATORS`` and activate the ``Connectivity`` heatmap. The resulting heatmap shows areas with <i>low connectivity</i> in <span style={{color: "#FF0000"}}>red</span> and areas with <i>high connectivity</i> in <span style={{color: "#268c35"}}>green</span>.
 
-![GOAT Connectivity Heatmap](/img/docs/indicators/connectivity/connectivity_en.webp "Connectivity Heatmap in GOAT")
+![GOAT Connectivity Heatmap](/img/indicators/connectivity/connectivity_en.webp "Connectivity Heatmap in GOAT")
 
 2. To further understand, where the connectivity values come from, it is helpful to activate the ``Aerial Image`` background map. 
 
-![GOAT Connectivity Heatmap](/img/docs/indicators/connectivity/background_en.webp "Connectivity Heatmap in GOAT")
+![GOAT Connectivity Heatmap](/img/indicators/connectivity/background_en.webp "Connectivity Heatmap in GOAT")
 
 3. In this example, we can see that one of the <span style={{color: "#FF0000"}}>red areas</span> has low connectivity due to a large freight depot, while the large <span style={{color: "#268c35"}}>green areas</span> are due to the historic city centre with its small-grained block structure.
 
-![GOAT Connectivity Heatmap](/img/docs/indicators/connectivity/explanation_en.webp "Connectivity Heatmap in GOAT")
+![GOAT Connectivity Heatmap](/img/indicators/connectivity/explanation_en.webp "Connectivity Heatmap in GOAT")
 
 ## 4. Technical details
 
@@ -56,7 +56,7 @@ Among others, the connectivity heatmap can be used to answer the following plann
 
 The connectivity heatmap is calculated using the [H3 hexagonal grid](../../general/glossary#h3-grid "Glossary entry on H3 grid") with an edge length of approximately 66 m per cell. For each hexagon centroid, the reached area is computed using an **isochrone** with the maximum walking time of 20 minutes (with 5km/h). This calculation returns the travel time from the centroid to each pixel of the isochrone.
 
-![Isochrone travel times](/img/docs/indicators/connectivity/isochrone_en.webp "Travel time from the centroid to each pixel grid of the isochrone")
+![Isochrone travel times](/img/indicators/connectivity/isochrone_en.webp "Travel time from the centroid to each pixel grid of the isochrone")
 
 
 The **connectivity value** is computed by summing up the reached area for each time interval (1 to 20 min) and dividing the sum by the total number of intervals (20):

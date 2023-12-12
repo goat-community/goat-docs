@@ -14,7 +14,7 @@ With the **Accessibility and Population Density Heatmap**, it can be assessed wh
 
 The Accessibility and Population Density Heatmap can be used as an **supply vs. demand indicator** on the neighborhood, city or regional scale. The heatmap gives insights into the POI distribution and network connectivity on the supply side, and into population density on the demand side. Based on the equilbrium between supply and demand, the hexagons indicate areas with <i>accessibility surplus</i> (<span style={{color: "#4e9ecf"}}>blue</span>), areas with <i>balanced supply and demand</i>  (<span style={{color: "#c9c96f"}}>yellow</span>) and areas with <i>density surplus</i> (<span style={{color: "#e03157"}}>red</span>). It is suitable for directly **comparing different locations** within a chosen geographical scope. 
 
-![Accessibility and Population Density Heatmap in GOAT](/img/docs/indicators/heatmaps/comparison_accessibility_population/original_files/heatmap_en.png "Accessibility and Population Density Heatmap in GOAT")
+![Accessibility and Population Density Heatmap in GOAT](/img/indicators/heatmaps/comparison_accessibility_population/original_files/heatmap_en.png "Accessibility and Population Density Heatmap in GOAT")
 
 :::info
 
@@ -39,11 +39,11 @@ Among others, the Accessibility and Population Density Heatmap can be used to an
 
 1. Open the ``Thematic Data Filter`` <img src={thematicIcon} alt="thematic icon" style={{width: "25px"}}/> and select the POIs to analyze. 
 
-![POI Selection in GOAT](/img/docs/indicators/heatmaps/comparison_accessibility_population/original_files/pois_en.png "POI Selection in GOAT")
+![POI Selection in GOAT](/img/indicators/heatmaps/comparison_accessibility_population/original_files/pois_en.png "POI Selection in GOAT")
 
 2. Go into the tab ``INDICATORS`` and activate the ``Accessibility and Population Density`` heatmap. The resulting heatmap shows areas with <i>accessibility surplus</i> in <span style={{color: "#4e9ecf"}}>blue</span>, areas with <i>balanced supply and demand</i> in <span style={{color: "#c9c96f"}}>yellow</span> and areas with <i>density surplus</i> in <span style={{color: "#e03157"}}>red</span>.
 
-![Accessibility and Population Density Heatmap in GOAT](/img/docs/indicators/heatmaps/comparison_accessibility_population/original_files/menu_en.png "Accessibility and Population Density Heatmap in GOAT")
+![Accessibility and Population Density Heatmap in GOAT](/img/indicators/heatmaps/comparison_accessibility_population/original_files/menu_en.png "Accessibility and Population Density Heatmap in GOAT")
 
 :::tip Tip
 
@@ -53,11 +53,11 @@ Want to adjust the colours of the heatmap? See [Styling & Print](../../styling_a
 
 3. To further understand, where the values come from, it is helpful to play around with different background maps, such as the ``Aerial Image``. 
 
-![Change Background Map in GOAT](/img/docs/indicators/heatmaps/comparison_accessibility_population/original_files/background_en.png "Change Background Map in GOAT")
+![Change Background Map in GOAT](/img/indicators/heatmaps/comparison_accessibility_population/original_files/background_en.png "Change Background Map in GOAT")
 
 4. In this example, we can see an imbalance between supply and demand, as all supermarkets are located in a commercial area on one side of the highway, and one residential area is on the other side of the highway. Thus, supply is actually high, but not accessible for some residents as the highway acts as a huge barrier.
 
-![Example Analysis in GOAT](/img/docs/indicators/heatmaps/comparison_accessibility_population/original_files/example_en.png "Example Analysis in GOAT")
+![Example Analysis in GOAT](/img/indicators/heatmaps/comparison_accessibility_population/original_files/example_en.png "Example Analysis in GOAT")
 
 ## 4. Technical details
 
@@ -71,7 +71,7 @@ further technical details that were too complex for the "explanation" section
 
 The Accessibility and Population Density Heatmap is the result of the intersection of the two heatmaps [Local Accessibility](local_accessibility/) and [Population Density](population/). 
 
-![Combination](/img/docs/indicators/heatmaps/comparison_accessibility_population/combination.webp)
+![Combination](/img/indicators/heatmaps/comparison_accessibility_population/combination.webp)
 
 In order to classify the accessibility levels that were computed for each grid cell, a classification based on percentiles is used. The following table shows how the percentiles of accessibility and population are calculated in each grid.
 

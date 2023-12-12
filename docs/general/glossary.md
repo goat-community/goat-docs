@@ -19,7 +19,7 @@ An **accessibility instrument** is a tool used to calculate and analyze the acce
 ### Active Mobility
 **Active mobility** refers to the use of human-powered modes of transport, such as walking, and cycling. It is an important part of sustainable transport as it reduces car dependency and is emission-free. Active mobility also has many health benefits, such as reducing the risk of obesity and cardiovascular disease. 
  
-![Active Mobility](/img/docs/general/glossary/active_mobility_freepik.webp "Active Mobility")
+![Active Mobility](/img/general/glossary/active_mobility_freepik.webp "Active Mobility")
 
 _Image: Designed by pch.vector / [Freepik](http://www.freepik.com)_
 

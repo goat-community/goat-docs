@@ -12,7 +12,7 @@ Multi-Isochrones are **catchment areas starting from multiple points**. This acc
 
 Multi-Isochrones can be used as an **accessibility indicator** on neighborhood or city level. The multi-isochrones give insights into the POI distribution and network connectivity. Furthermore, the isochrone can be intersected with  spatial data sets, such as population data. Therewith, it can be identified which share of inhabitants has access to important destinations of daily life within a specific travel time. 
 
-![GOAT multi-isochrone](/img/docs/indicators/catchments/multi-isochrone/multi-isochrone.png "GOAT multi-isochrone")
+![GOAT multi-isochrone](/img/indicators/catchments/multi-isochrone/multi-isochrone.png "GOAT multi-isochrone")
 
 ## 2. Which planning questions can be answered? 
 

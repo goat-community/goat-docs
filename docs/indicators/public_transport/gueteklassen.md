@@ -45,11 +45,11 @@ In the Swiss version of the indicator, the calculation of the quality classes is
 
 The calculations are carried out on the basis of **GTFS data**. First, the number of departures per public transport mode (metro, tram, bus and train) is dynamically calculated for each station. The sum of the departures is divided by two to calculate the frequency, in order to eliminate the outward and return directions. In the next step, the **average frequency** for the selected time interval is calculated. The higher-value service is selected as the **station type** in the case of service by several means of transport. For example, in the case of bus and train, this is the train. With the help of the table below, as well as the station type and the frequency, the station category can now be determined. 
 
-![Classification of transport stops](/img/docs/indicators/public_transport/gueteklassen/classification_stations_en.webp "Classification of transport stops")
+![Classification of transport stops](/img/indicators/public_transport/gueteklassen/classification_stations_en.webp "Classification of transport stops")
 
 Subsequently, **buffers** of the size shown are calculated for the corresponding station categories. This creates several buffers that are merged. For overlapping buffers, the higher quality class is used. 
 
-![Determination of the "ÖV Güteklassen"](/img/docs/indicators/public_transport/gueteklassen/determination_oev_gueteklasse_en.webp "Determination of public transport quality classes")
+![Determination of the "ÖV Güteklassen"](/img/indicators/public_transport/gueteklassen/determination_oev_gueteklasse_en.webp "Determination of public transport quality classes")
 
 ### Visualization
 
@@ -58,7 +58,7 @@ The created buffers are visualized around the stations in the corresponding colo
 
 
 
-![Visualization of the ÖV-Güteklassen](/img/docs/indicators/public_transport/gueteklassen/visualization.png "Visualization of the ÖV-Güteklassen")
+![Visualization of the ÖV-Güteklassen](/img/indicators/public_transport/gueteklassen/visualization.png "Visualization of the ÖV-Güteklassen")
 
 ## 5. Further readings
 

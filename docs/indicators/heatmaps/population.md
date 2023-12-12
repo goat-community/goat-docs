@@ -14,7 +14,7 @@ The **Population Density Heatmap** serves as an overview on the population densi
 
 The heatmap is visualized on a hexagonal grid. Per grid cell, the population numbers are shown by the use of different shades of red. The darker the colour, the higher the population density. It is thus suitable for directly **comparing different locations** within a chosen geographical scope. 
 
-![Population Density Heatmap in GOAT](/img/docs/indicators/heatmaps/population_density/population_density_en.webp "Population Density Heatmap in GOAT")
+![Population Density Heatmap in GOAT](/img/indicators/heatmaps/population_density/population_density_en.webp "Population Density Heatmap in GOAT")
 
 :::tip Tip
 
@@ -41,15 +41,15 @@ Show as many samples as necessary to explain a feature
 
 1. Go into the tab ``INDICATORS`` and activate the ``Population Density`` heatmap. The resulting heatmap shows areas with <i>no population</i> in white, areas with <i>low population density</i> in <span style={{color: "#e8aa9b"}}>light red</span> and areas with <i>high population density</i> in <span style={{color: "#b03336"}}>dark red</span>.
 
-![Population Density Heatmap in GOAT](/img/docs/indicators/heatmaps/population_density/menu_en.webp "Population Density Heatmap in GOAT")
+![Population Density Heatmap in GOAT](/img/indicators/heatmaps/population_density/menu_en.webp "Population Density Heatmap in GOAT")
 
 2. To further understand, where the population density values come from, it is helpful to activate the ``Aerial Image`` background map. 
 
-![Population Density Heatmap in GOAT](/img/docs/indicators/heatmaps/population_density/background_en.webp "Population Density Heatmap in GOAT")
+![Population Density Heatmap in GOAT](/img/indicators/heatmaps/population_density/background_en.webp "Population Density Heatmap in GOAT")
 
 3. In this example, we can see that one of the white areas has no population as it is an industrial area, while the large <span style={{color: "#b03336"}}>dark red</span> area is the city centre with high population densities.
 
-![Population Density Heatmap in GOAT](/img/docs/indicators/heatmaps/population_density/explanation_en.webp "Population Density Heatmap in GOAT")
+![Population Density Heatmap in GOAT](/img/indicators/heatmaps/population_density/explanation_en.webp "Population Density Heatmap in GOAT")
 
 :::tip Tip
 

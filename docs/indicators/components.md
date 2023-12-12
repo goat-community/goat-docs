@@ -5,8 +5,8 @@ sidebar_position: 0
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import bufferSettings from "/img/docs/indicators/catchments/buffer/tutorial_2.png"
-import connectivityFormula from "/img/docs/indicators/connectivity/formula_en.webp"
+import bufferSettings from "/img/indicators/catchments/buffer/tutorial_2.png"
+import connectivityFormula from "/img/indicators/connectivity/formula_en.webp"
 
 # Components
 

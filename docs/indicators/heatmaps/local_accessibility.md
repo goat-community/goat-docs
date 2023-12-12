@@ -13,7 +13,7 @@ The Local Accessibility Heatmap shows how good **walking accessibility to select
 
 The Local Accessibility Heatmap can be used as an **accessibility indicator** on the neighborhood, city or regional scale. The heatmap gives insights into the POI distribution and network connectivity. It is suitable for directly **comparing different locations** within a chosen geographical scope. 
 
-![Local Accessibility Heatmap in GOAT](/img/docs/indicators/heatmaps/local_accessibility/lokale-erreichbarkeit-1-englisch.webp "Local Accessibility Heatmap in GOAT")
+![Local Accessibility Heatmap in GOAT](/img/indicators/heatmaps/local_accessibility/lokale-erreichbarkeit-1-englisch.webp "Local Accessibility Heatmap in GOAT")
 
 ## 2. Which planning questions can be answered? 
 
@@ -61,32 +61,32 @@ They are **advanced to contour-based measures**, such as [isochrones > TODO: che
 
 The heatmap is calculated through the following formula:
 
-![Accessibility formula](/img/docs/indicators/heatmaps/local_accessibility/place-based_accessibility_measures.webp "Accessibility formula")
+![Accessibility formula](/img/indicators/heatmaps/local_accessibility/place-based_accessibility_measures.webp "Accessibility formula")
 
 where the <b>accessibility A</b> of <b>origin i</b> is the sum of all <b>opportunities O</b> available at <b>destinations j</b> weighted by an <b>impedance function f()</b> of the <b>travel time t<sub>ij</sub></b> between <b>i</b> and <b>j</b>. 
 
 To determine the impedance, the modified gaussian function is used:
 
-![Impedance function](/img/docs/indicators/heatmaps/local_accessibility/Gaussian_function.webp "Impedance function")
+![Impedance function](/img/indicators/heatmaps/local_accessibility/Gaussian_function.webp "Impedance function")
 
 Travel times t<sub>ij</sub> are computed in seconds. 1200 seconds (= 20 minutes) are used as **cut-off value**, meaning that destinations further than 20 minutes walking are considered inaccessible and will not be included in further calculations. 
 
 The travel times are **computed for each grid cell** to the corresponding destination on the walking network. The following figure shows this process exemplarily for one grid cell for accessibility to different kind of supermarkets. 
 
-![Simplified example](/img/docs/indicators/heatmaps/local_accessibility/grid_groceries.webp "Simplified example")
+![Simplified example](/img/indicators/heatmaps/local_accessibility/grid_groceries.webp "Simplified example")
 
 **TODO: adjust graphic to use 20 mins as cut-off value**
 
 The ``sensitivity index β`` defines how accessibility changes with increasing travel time. As the sensitivity parameter is decisive when measuring accessibility, it can be adjusted by the user. The following graphs show the influence of the sensitivity parameter on the **willingness to walk** to a certain destination.
 
-![Sensitivity index](/img/docs/indicators/heatmaps/local_accessibility/sensitivitätsindex_en.webp "Sensitivity index")
+![Sensitivity index](/img/indicators/heatmaps/local_accessibility/sensitivitätsindex_en.webp "Sensitivity index")
 
 Similarly, the ``weighting`` of the opportunities can be changed. Thus, for example, one POI type (e.g. hypermarkets) can be assigned a higher accessibility effect than other POI types (e.g. discount supermarkets). 
 
 
 For the hexagon highlighted above, the **calculation** yields the following result:
 
-![Accessibility calculation](/img/docs/indicators/heatmaps/local_accessibility/accessiblity_different_sensitivity-indices.webp "Accessibility calculation")
+![Accessibility calculation](/img/indicators/heatmaps/local_accessibility/accessiblity_different_sensitivity-indices.webp "Accessibility calculation")
 
 In this example, the accessibility of grocery shops in 20 min is performed using different sensitivity parameters (β=300,000 for supermarkets and discounters ; and β=400,000 for hypermarkets). Meaning hypermarkets are assumed to bring a higher value to the customer than supermarkets or discounters, thus customers are willing to travel further to reach those. 
 

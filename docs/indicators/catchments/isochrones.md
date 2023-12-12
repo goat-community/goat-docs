@@ -15,7 +15,7 @@ Single-Isochrones are **catchment areas** that are **calculated on the real tran
 
 Isochrones can be used as an **accessibility indicator** in one specific location. The isochrone area gives insights into the network connectivity. Furthermore, the isochrone can be intersected with further spatial data sets, such as population and POI data. Therewith it can be assessed how many people or POIs can be reached from a certain starting point.  
 
-![GOAT isochrone](/img/docs/indicators/catchments/isochrone/isochrone_pois.png "GOAT isochrone")
+![GOAT isochrone](/img/indicators/catchments/isochrone/isochrone_pois.png "GOAT isochrone")
 
 
 :::tip Tip
@@ -116,7 +116,7 @@ Further information: **TODO: add link to routing/car**
 
 2. Place the ``starting point`` on the map. 
 
-<img src="/img/docs/indicators/catchments/Isochrone/original_files/starting_point.png" width="1000px" alt="isochrone starting point" style={{width: "1000px", height: "250px", maxHeight: "10px", maxWidth: "100px", objectFit: "cover"}}/> 
+<img src="/img/indicators/catchments/Isochrone/original_files/starting_point.png" width="1000px" alt="isochrone starting point" style={{width: "1000px", height: "250px", maxHeight: "10px", maxWidth: "100px", objectFit: "cover"}}/> 
 
 <span style={{color: "#FF0000"}}>TODO:</span> check image
 
