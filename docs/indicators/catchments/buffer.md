@@ -27,7 +27,8 @@ Among others, buffers can be used to answer the following planning questions:
 
 ### Video Tutorial
 
-**TODO**: create video tutorial (@iremkapucuoglu) --> very short sequence showing the described steps below
+<span style={{color: "#FF0000"}}>TODO: create video tutorial (@iremkapucuoglu) --> very short sequence showing the described steps below</span>
+
 
 ### Step-by-step guideline
 
@@ -71,8 +72,7 @@ Want to style your buffers and print nice looking maps? See [Styling & Print](..
 
 ## 4. Technical details
 
-**TODO:**
-**@EPajares & @majkshkurti are there any further technical details that should be mentioned here?**
+<span style={{color: "#FF0000"}}>TODO: @EPajares & @majkshkurti are there any further technical details that should be mentioned here?</span>
 
 ## 5. Further readings
 

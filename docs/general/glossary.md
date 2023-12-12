@@ -5,6 +5,9 @@ sidebar_position: 4
 # Glossary
 
 
+<span style={{color: "#e8aa9b"}}>TODO: @iremkapucuoglu fix images </span> 
+
+
 ### Accessibility
 **Accessibility** is defined first in 1959 as “the potential of opportunities for interaction”, which refers to the ease with which people or goods can be reached from a particular location ([Hansen, 1959](https://doi.org/10.1080/01944365908978307 "Visit Reference")). In the context of GIS and urban planning, it refers to the ease with which people can reach essential services, such as healthcare facilities, schools, or supermarkets. 
 
