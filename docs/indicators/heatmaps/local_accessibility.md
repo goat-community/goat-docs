@@ -81,6 +81,8 @@ The ``sensitivity index β`` defines how accessibility changes with increasing t
 
 ![Sensitivity index](/img/indicators/heatmaps/local_accessibility/sensitivitätsindex_en.webp "Sensitivity index")
 
+Depending on the amenity type, users have the possibility to pick suitable sensitivity values. However, by default, the value β = 300,000 is chosen. This can be translated into approximately 74.1% accessibility after 5 min, 30.1% accessibility after 10 min and 6.7% accessibility after 15 min of travel time to the respective amenity. Although further calibration by opportunity type is needed, the chosen values can be regarded as being in line with the aim that all basic needs should be available in 15 to 20 min of walking time.
+
 Similarly, the ``weighting`` of the opportunities can be changed. Thus, for example, one POI type (e.g. hypermarkets) can be assigned a higher accessibility effect than other POI types (e.g. discount supermarkets). 
 
 
@@ -109,3 +111,5 @@ Kwan, Mei-Po. 1998. “Space-Time and Integral Measures of Individual Accessibil
 Vale, D.S., and M. Pereira. 2017. “The Influence of the Impedance Function on Gravity-Based Pedestrian Accessibility Measures: A Comparative Analysis.” Environment and Planning B: Urban Analytics and City Science 44 (4): 740–63. [https://doi.org/10.1177%2F0265813516641685](https://doi.org/10.1177%2F0265813516641685).
 
 Higgins, Christopher D. 2019. “Accessibility Toolbox for R and ArcGIS.” Transport Findings, May. [https://doi.org/10.32866/8416](https://doi.org/10.32866/8416).
+
+https://doi.org/10.1016/j.jtrangeo.2021.103080
