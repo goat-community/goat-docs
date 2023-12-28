@@ -4,6 +4,8 @@ sidebar_position: 4
 
 # Multi-Isochrones
 
+TODO: Merge FLow of "SIngle" & "Multi" Isochrones
+
 Multi-Isochrones are **catchment areas starting from multiple points**. This accessibility indicator shows how many people live within the catchment of a certain amenity group. 
 
 ## 1. Explanation
