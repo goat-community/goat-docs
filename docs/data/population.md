@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # Population Density
 
+WON'T EXIST ANYMORE IN THE NEW VERSION
+
 The Population Density Heatmap shows **how many people live in an area** on a hexagonal grid. It helps to understand which parts of a city are more and which are less densely populated.
 
 <span style={{color: "#FF0000"}}>TODO: @EPajares & @majkshkurti - is "Population density" still the right term? I think it shows population numbers instead of densities.</span> 

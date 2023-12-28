@@ -4,6 +4,8 @@ sidebar_position: 9
 
 # 15-Min-Score
 
+NEW VERSION: RATHER A DATASET THAN A INDICATOR. PRECOMPUTED DATASET, CANNOT BE ADJUSTED.
+
 :::info
 
 This is not a standard feature of GOAT and only available on request.
