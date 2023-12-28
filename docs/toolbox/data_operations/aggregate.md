@@ -1,14 +1,10 @@
 ---
-sidebar_position: 8
+sidebar_position: 0
 ---
 
-# Walkability Index
+# Aggregate Features
 
-:::info
-
-This is not a standard feature of GOAT and only available on request.
-
-:::
+@iremkapucuoglu this can be started.
 
 INTRODUCTION / TEASER TEXT (2 sentences, can be used as tooltip in GOAT)
 
@@ -16,7 +12,7 @@ INTRODUCTION / TEASER TEXT (2 sentences, can be used as tooltip in GOAT)
 
 General explanation of the indicator (in easy words, reuse texts from tutorials)
 
-## 2. Which planning questions can be answered? 
+## 2. Which questions can be answered? 
 
 For what can this indicator be used? (planning question list from tutorials)
 
@@ -44,4 +40,3 @@ Related docs
 ## 6. Resources
 
 bibliography of cited literature
-

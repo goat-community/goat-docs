@@ -5,7 +5,9 @@ sidebar_position: 3
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Single-Isochrones
+# Isochrones
+
+TODO: Merge FLow of "SIngle" & "Multi" Isochrones
 
 Single-Isochrones are **catchment areas** that are **calculated on the real transport network**. This accessibility indicator shows how far a person can travel from a selected starting point within a given travel time.
 

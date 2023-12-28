@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # Local Accessibility
 
+IN FUTURE, THERE WILL BE 3 DIFFERENT TYPES. @EPajares PROVIDES LIST. 
+
 
 The Local Accessibility Heatmap shows how good **walking accessibility to selected amenities** is on a hexagonal grid. It helps to understand how accessibility varies across the city. 
 

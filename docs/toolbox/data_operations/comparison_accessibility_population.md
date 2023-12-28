@@ -4,7 +4,9 @@ sidebar_position: 4
 
 import thematicIcon from "/img/general/interface_overview/thematic_icon.webp"
 
-# Accessibility and Population Density
+# COMPARISION OF 2 DATASETS > JOIN (case study: Accessibility and Population Density)
+
+idea: use Accessibility and Population Density as a case study (either here or in video / on dedicated section)
 
 The Accessibility and Population Density Heatmap **juxtaposes the supply (accessibility to locations) and the demand (population)** on a hexagonal grid. 
 

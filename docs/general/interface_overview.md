@@ -23,6 +23,9 @@ import aboutIcon from "/img/general/interface_overview/about_icon.webp"
 
 # Interface Overview
 
+@iremkapucuoglu this can be updated & enhanced: 
+- add overview of dashboard & overview GOAT interface > where to find what? Explain different sections (see QGIS). Together with @AnaSasso.
+
 This section provides an overview of the GOAT interface and it's functionalities. There are several tabs, menu actions, icons and toolbars for the user to access GOAT's various functions and configuration screens.
 
 | User Interface Item | Label | Usage |

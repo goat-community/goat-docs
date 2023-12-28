@@ -14,3 +14,5 @@ GOAT differentiates between four different data types:
 
 **External Vector Tile Layer:** MVT vector tiles that can be integrated into GOAT as static maps and for which the style can be customised.
 
+
+@iremkapucuoglu this can be further populated. Check other tools. 

@@ -8,6 +8,8 @@ import bufferResult from "/img/indicators/catchments/buffer/tutorial_6.png"
 
 # Buffer
 
+TODO: ADJUST TEXT & STRUCTURE. BUFFER NOW IN DATA OPPERATIONS. will be available for points, lines, polygons, ... 
+
 The buffer creates a **straight line circle** around a given starting point. Therewith, **catchment areas** can be calculated, e.g. around public transport stops.  
 
 
