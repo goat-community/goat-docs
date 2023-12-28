@@ -36,11 +36,12 @@ System_Boundary(s1, "Authorization"){
 }
 
 System_Boundary(a2, "GOAT Application"){
-    Container(applicationapi, "Analysis API", "Python and FastAPI", "It bundles the GOAT specific analyses and interacts with the content meta data.", $sprite="python")
+    Container(applicationapi, "GOAT Core API", "Python and FastAPI", "It bundles the GOAT specific analyses and interacts with the content meta data.", $sprite="python")
     Container(geoapi, "GEO API", "Python and FastAPI", "It bundles the geoservice namely OGC Feature and Vector tiles.", $sprite="python")
-    
+
     ContainerDb(applicationdb, "Application Database", "PostgreSQL", "Holds the application specific base data.", $sprite="postgresql")
-    Container(r5, "Routing Engine", "CONVEYAL R5", "Java engine handling travel-time calculation logic for public transport and car", $sprite="java")
+    Container(r5, "Routing API Car/PT", "Java and R5", "Java engine handling travel-time calculation logic for public transport and car", $sprite="java")
+    Container(goatrouting, "Routing API Walking/Cycling", "Python and FastAPI", "Python engine using Numba for travel-time calculatuin for walking and cycling", $sprite="python")
 } 
 
 
@@ -52,6 +53,7 @@ Rel(geoapi, applicationdb, "Reads", "SQLAlchemy")
 Rel_L(s1, a1, "")
 Rel_L(a1, s1, "")
 Rel(applicationapi, r5, "HTTP (Private)")
+Rel(applicationapi, goatrouting, "HTTP (Private)")
 Rel(user, c1, "")
 Rel(c1, a1, "")
 Rel(c1, s1, "")
