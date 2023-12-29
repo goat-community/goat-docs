@@ -5,8 +5,6 @@ sidebar_position: 4
 # Glossary
 
 
-<span style={{color: "#FF0000"}}>TODO: @iremkapucuoglu fix/insert images </span> 
-
 
 ### Accessibility
 **Accessibility** is defined first in 1959 as “the potential of opportunities for interaction”, which refers to the ease with which people or goods can be reached from a particular location ([Hansen, 1959](https://doi.org/10.1080/01944365908978307 "Visit Reference")). In the context of GIS and urban planning, it refers to the ease with which people can reach essential services, such as healthcare facilities, schools, or supermarkets. 
@@ -18,10 +16,12 @@ An **accessibility instrument** is a tool used to calculate and analyze the acce
 
 ### Active Mobility
 **Active mobility** refers to the use of human-powered modes of transport, such as walking, and cycling. It is an important part of sustainable transport as it reduces car dependency and is emission-free. Active mobility also has many health benefits, such as reducing the risk of obesity and cardiovascular disease. 
- 
-![Active Mobility](/img/general/glossary/active_mobility_freepik.webp "Active Mobility")
 
-_Image: Designed by pch.vector / [Freepik](http://www.freepik.com)_
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/general/glossary/active_mobility_freepik.webp').default} alt="Active Mobility" style={{ mixBlendMode: 'multiply'}}/>
+  <p style={{ textAlign: 'center' }}>Image: Designed by pch.vector / <a href="http://www.freepik.com">Freepik</a></p>
+</div>
+
 
 ### Area of Interest (AOI)
 An **Area of Interest (AOI)** is a specific geographical region or boundary that is of particular interest or importance to a particular study or analysis. It can be a watershed, a forest, a park or any other geographic area relevant to the study. The AOI is usually defined by a set of coordinates or a polygonal boundary that encompasses the region of interest. 
@@ -33,17 +33,19 @@ Connectivity has a direct impact on accessibility, as it is decisive for the tra
 
 ### H3 Grid
 
-The **H3 grid** <img src="https://plan4better.de/images/docs/technical_documentation/glossary/H3_grid_logo.webp" width="1000px" alt="H3 grid logo" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/> is a geospatial indexing system by [Uber Technologies](https://investor.uber.com/home/default.aspx "About Uber Technologies") that partitions the Earth's surface into a hierarchical grid of hexagonal cells for more efficient and accurate representation and analysis of geospatial data. It uses a hexagonal tiling approach based on an icosahedron, creating a hierarchical structure with multiple levels of resolution. The hexagonal shape allows for equidistant and consistent spatial representation, with different resolutions. The resolution 10 (approx. 75m edge length) is used in GOAT for computing travel-times and resolution 9 (approx. 200m edge length) or higher is used for visualization of heatmaps. Values are aggregated from the higher to lower resolution by computing the mean. 
+The **H3 grid** <img src="https://plan4better.de/images/docs/technical_documentation/glossary/H3_grid_logo.webp" width="1000px" alt="H3 grid logo" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/> 
+is a geospatial indexing system by [Uber Technologies](https://investor.uber.com/home/default.aspx "About Uber Technologies") that partitions the Earth's surface into a hierarchical grid of hexagonal cells for more efficient and accurate representation and analysis of geospatial data. It uses a hexagonal tiling approach based on an icosahedron, creating a hierarchical structure with multiple levels of resolution. The hexagonal shape allows for equidistant and consistent spatial representation, with different resolutions. The resolution 10 (approx. 75m edge length) is used in GOAT for computing travel-times and resolution 9 (approx. 200m edge length) or higher is used for visualization of heatmaps. Values are aggregated from the higher to lower resolution by computing the mean. 
 
-<img src="https://plan4better.de/images/docs/technical_documentation/glossary/H3_grid.webp" width="1000px" alt="H3 grid" style={{width: "1000px", height: "250px", maxHeight: "250px", maxWidth: "500px", objectFit: "cover"}}/>  
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src="https://plan4better.de/images/docs/technical_documentation/glossary/H3_grid.webp"  alt="H3 Grid" style={{ width: "600px", height: "200px", objectFit: "cover", mixBlendMode: 'multiply'}}/>
+  <p style={{ textAlign: 'center' }}>Image: <a href="https://www.uber.com/en-TR/blog/h3/">UBER</a></p>
+</div>
 
-
-<span style={{color: "#FF0000"}}>TODO: fix image size & center allignment</span>  
 
 ### Heatmap
 A **heatmap** is a graphical visualization form that uses different colors to indicate the different values of a dataset. This allows for a quick understanding of the data presented. 
 
-In GOAT, we, among others, use heatmaps to analyse the local accessibility (see [Heatmaps](/en/docs/heatmap/ "Indicator documentation on our heatmaps")) of different amenities, such as cafes, restaurants or supermarkets. The heatmap utilizes a range of colors to represent various accessibility values. By analyzing this data, we can gain insights into the distribution of destinations and the quality of infrastructure available.
+In GOAT, we, among others, use heatmaps to analyse the local accessibility of different amenities, such as cafes, restaurants or supermarkets. The heatmap utilizes a range of colors to represent various accessibility values. By analyzing this data, we can gain insights into the distribution of destinations and the quality of infrastructure available.
 
 ### Indicator
 An **indicator** is a mean to analyze a specific attribute or topic in a quantitative way. Usually, a standardised procedure is applied for this, e.g. by using a formula. In planning, indicators can be used to assess the current situation, to compare different locations with each other, as well as to monitor the progress towards specific goals or objectives, such as improving accessibility. 
@@ -51,14 +53,16 @@ An **indicator** is a mean to analyze a specific attribute or topic in a quantit
 ### Isochrone
 An **isochrone** or catchment area is an indicator that shows how far people can travel in a given time with a given speed from a selected location. Isochrones can be calculated for any mode such as walking, cycling, car or public transport. Depending on the selected mode, the corresponding routing network is used.  
 
-You can find further information on how we perform isochrone calculations in our [indicator documentation](/en/docs/isochrone/ "Isochrone documentation"). 
+You can find further information on how we perform isochrone calculations in our [indicator documentation](docs\toolbox\indicators\catchments\isochrones.md "Isochrone documentation"). 
 
-<span style={{color: "#FF0000"}}>TODO: Fix link</span>   
 
 ### Land Use
 **Land use** is the categorization and management of land according to its functional role within a specific area. This includes a range of purposes such as residential, commercial, industrial, and natural or conservation uses. Additionally, land use incorporates aspects of urban planning and environmental management, as the manner in which land is utilized significantly influences factors like population density and the distribution of destinations. Consequently, land use has a direct and substantial impact on accessibility, affecting the availability of services, transport connectivity, and liveability of an area.
 
-<span style={{color: "#FF0000"}}>TODO: IMAGE</span>  
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src="https://plan4better.de/images/docs/technical_documentation/glossary/landuse.webp"  alt="Landuse" style={{ width: "350px", height: "300px", objectFit: "cover"}}/>
+<p style={{ textAlign: 'center' }}>Image: <a href="https://accelerator.chathamhouse.org/article/land-use-challenges">Chatham House Sustainability Accelerator</a></p>
+</div>
 
 
 ### Local Accessibility
@@ -67,10 +71,15 @@ You can find further information on how we perform isochrone calculations in our
 ### Micromobility
 **Micromobility** is a growing trend in urban transportation, involving small, lightweight vehicles like electric scooters and skateboards. These compact modes of transport offer convenient solutions for short-distance travel. 
 
-<span style={{color: "#FF0000"}}>TODO: IMAGE</span>  
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/general/glossary/micromobility_freepik.webp').default} 
+  alt="Micromobility" style={{ width: "600px", height: "300px", mixBlendMode: 'multiply'}} />
+  <p style={{ textAlign: 'center' }}>Image: Designed by pch.vector / <a href="http://www.freepik.com">Freepik</a></p>
+</div>
 
-### Open Source <span style={{color: "#FF0000"}}>IMAGE</span>  
-**Open source** refers to software or other products that are made available to the public with their source code freely accessible and modifiable. This allows individuals and organizations to modify and improve the product as needed, without restrictions on use or distribution. 
+### Open Source 
+**Open source** <img src="https://plan4better.de/images/docs/technical_documentation/glossary/open_source.webp" width="1000px" alt="opensource" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/> 
+refers to software or other products that are made available to the public with their source code freely accessible and modifiable. This allows individuals and organizations to modify and improve the product as needed, without restrictions on use or distribution. 
 
 ### Planning Support System (PSS)
 A **planning support system** is a digital tool used to support the planning and decision-making process for urban and regional development. It uses data and models to provide information on various aspects of planning, such as land use, transportation, and environmental impact. A PPS allows planners to explore different scenarios and evaluate the potential outcomes of their decisions. 
@@ -85,11 +94,13 @@ In GIS, quintile classification is often used to create choropleth maps, which a
 
 The accessibility heatmaps in GOAT use quintile classification to determine what is high or low accessible. For the classification, we first assign all zero values which have “no accessibility” and then we sort the data from lowest to highest. We divide the data into 6 equal groups, each containing 20% of the total data. The values in each group are assigned a rank from 0 to 5, with 0 being the lowest (no accessibility) and 5 being the highest (very high accessibility). 
 
-### Routing <span style={{color: "#FF0000"}}>IMAGE</span>  
-**Routing** refers to the process of finding the fastest or shortest path from one location to another. This is commonly used in transportation planning and navigation systems to help people get from point A to point B but is also crucial to accessibility analysis.
+### Routing 
+**Routing** <img src="https://plan4better.de/images/docs/technical_documentation/glossary/routing_logo.webp" width="1000px" alt="routing" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/> 
+refers to the process of finding the fastest or shortest path from one location to another. This is commonly used in transportation planning and navigation systems to help people get from point A to point B but is also crucial to accessibility analysis.
 
-### Sustainability <span style={{color: "#FF0000"}}>IMAGE</span>  
-**Sustainability** refers to meeting the needs of the present without compromising the ability of future generations to meet their own needs. In the context of urban and regional development, sustainability involves balancing economic, social, and environmental factors to create livable and resilient communities. This includes reducing carbon emissions, promoting active mobility, and preserving natural resources. 
+### Sustainability  
+**Sustainability** <img src="https://plan4better.de/images/docs/technical_documentation/glossary/sustainability.webp" width="1000px" alt="sustainability" style={{width: "100px", height: "200px", maxHeight: "50px", maxWidth: "100px", objectFit: "cover"}}/> 
+refers to meeting the needs of the present without compromising the ability of future generations to meet their own needs. In the context of urban and regional development, sustainability involves balancing economic, social, and environmental factors to create livable and resilient communities. This includes reducing carbon emissions, promoting active mobility, and preserving natural resources. 
 
 ### Transport Mode
 **Transport mode** refers to the type of transportation used for a particular trip or journey. This can include modes such as transit (bus, train, subway), cycling (pedelec, bike), walking, and driving. The choice of transport mode can have a significant impact on factors such as travel time, cost, and environmental impact. 
