@@ -25,7 +25,7 @@ Show as many samples as necessary to explain a feature
 
 ### Video Tutorial
 
-### Step-by-step guideline
+### Tool parameters
 
 ## 4. Technical details
 
