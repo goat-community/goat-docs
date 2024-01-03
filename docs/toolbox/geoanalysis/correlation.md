@@ -4,7 +4,8 @@ sidebar_position: 4
 
 import thematicIcon from "/img/general/interface_overview/thematic_icon.webp"
 
-# COMPARISION OF 2 DATASETS > JOIN (case study: Accessibility and Population Density)
+# Correlation
+COMPARISION OF 2 DATASETS > Corellation (case study: Accessibility and Population Density)
 
 idea: use Accessibility and Population Density as a case study (either here or in video / on dedicated section)
 
