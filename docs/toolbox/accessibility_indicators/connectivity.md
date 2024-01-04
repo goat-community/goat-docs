@@ -35,6 +35,8 @@ Among others, the connectivity heatmap can be used to answer the following plann
 ## 3. How to use the indicator?
 ### Video Tutorial
 <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/753850371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen data-uk-responsive width="700" height="400"></iframe>
+  
+<span style={{color: "#FF0000"}}>TODO: insert new video or move this version to "further readings" as use case (version 1.5)</span>  
 
 ### Step-by-step guideline
 
