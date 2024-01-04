@@ -27,6 +27,8 @@ Among others, the Public Transport Quality Classes (ÖV Güteklassen) can be use
 <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/766394906" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen data-uk-responsive width="700" height="400"></iframe>
 
 
+<span style={{color: "#FF0000"}}>TODO: insert new video or move this version to "further readings" as use case (version 1.5)</span>  
+
 ### Step-by-step guideline
 
 <span style={{color: "#FF0000"}}>TODO</span> 
