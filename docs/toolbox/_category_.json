@@ -3,6 +3,6 @@
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "The routing algorithm is a basic function of GOAT that is used to calculate travel times for the isochrones and heatmaps, among others. Depending on the mode, the routing algorithm follows different approaches and data bases."
+    "description": "TODO"
   }
 }
