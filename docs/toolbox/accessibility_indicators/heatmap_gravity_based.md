@@ -2,10 +2,9 @@
 sidebar_position: 2
 ---
 
-# Local Accessibility
+# Heatmap - Gravity-based
 
-IN FUTURE, THERE WILL BE 3 DIFFERENT TYPES. @EPajares PROVIDES LIST. 
-
+<span style={{color: "#FF0000"}}>TODO: adjust texts from "Local Accessibility" to "Gravity-based"</span>  
 
 The Local Accessibility Heatmap shows how good **walking accessibility to selected amenities** is on a hexagonal grid. It helps to understand how accessibility varies across the city. 
 
@@ -44,8 +43,7 @@ Show as many samples as necessary to explain a feature
 
 ## 4. Technical details
 
-**TODO:** adjust texts (currently mainly copy & pasted from old docs)
-
+<span style={{color: "#FF0000"}}>TODO: adjust texts (currently mainly copy & pasted from old docs)</span>  
 
 gravity-based accessibility > the more the better approach
 

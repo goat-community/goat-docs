@@ -25,7 +25,9 @@ By default, only population data is used to represent the demand. However, in re
 
 :::
 
-## 2. Which planning questions can be answered? 
+## 2. Which tasks can be fulfilled? 
+
+TODO: adjust text to tasks instead of planning questions.
 
 Among others, the Accessibility and Population Density Heatmap can be used to answer the following planning questions:
 - Which areas have an accessibility surplus?
@@ -33,7 +35,7 @@ Among others, the Accessibility and Population Density Heatmap can be used to an
 - Where is potential for redensification?
 - Where is an improvement of accessibility to specific amenities or public transport stations needed?
 
-## 3. How to use the indicator?
+## 3. How to use the function?
 
 ### Video Tutorial
 <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/754241640" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen data-uk-responsive width="700" height="400"></iframe>

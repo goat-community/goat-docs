@@ -19,13 +19,15 @@ A **buffer** is an simple accessibility indicator that shows the catchment area 
 
 ![GOAT buffer](/img/indicators/catchments/buffer/buffer.png "GOAT buffer")
 
-## 2. Which planning questions can be answered? 
+## 2. Which tasks can be fulfilled? 
 
-Among others, buffers can be used to answer the following planning questions:
+For what can this function be used? 
+Among others, xxx can be used to accomplish the following tasks:
 - How many people live within a 500m distance from the train station? 
 - How many shops are accessible within a 1000m distance from a bus stop?
+- .... TODO .... 
 
-## 3. How to use the indicator?
+## 3. How to use the function?
 
 ### Video Tutorial
 

@@ -10,17 +10,17 @@ INTRODUCTION / TEASER TEXT (2 sentences, can be used as tooltip in GOAT)
 
 ## 1. Explanation
 
-General explanation of the indicator (in easy words, reuse texts from tutorials)
+General explanation of the function (in easy words)
 
-## 2. Which planning questions can be answered? 
+## 2. Which tasks can be fulfilled? 
 
-For what can this indicator be used? (planning question list from tutorials)
+For what can this function be used? 
 
-Among others, xxx can be used to answer the following planning questions:
+Among others, xxx can be used to accomplish the following tasks:
 
-## 3. How to use the indicator?
+## 3. How to use the function?
 
-How to use the indicator? (from tutorials) / Sample calculation(s)
+How to use the function? 
 Show as many samples as necessary to explain a feature
 
 ### Video Tutorial
