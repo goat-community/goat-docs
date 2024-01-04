@@ -1,4 +1,8 @@
-# Heatmap Closest Facilities
+---
+sidebar_position: 3
+---
+
+# Heatmap - Closest Facilities
 
 INTRODUCTION / TEASER TEXT (2 sentences, can be used as tooltip in GOAT)
 

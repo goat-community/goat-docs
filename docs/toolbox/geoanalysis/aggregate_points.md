@@ -1,8 +1,8 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
 ---
 
-# Aggregate Features
+# Aggregate Points
 
 @iremkapucuoglu this can be started.
 

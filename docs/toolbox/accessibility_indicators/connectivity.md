@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 import connectivityFormula from "/img/indicators/connectivity/formula_en.webp"

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 import thematicIcon from "/img/general/interface_overview/thematic_icon.webp"
