@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-# Template
+# Indicator Template
 
 INTRODUCTION / TEASER TEXT (2 sentences, can be used as tooltip in GOAT)
 
