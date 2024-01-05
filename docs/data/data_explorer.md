@@ -1,50 +1,85 @@
 ---
 sidebar_position: 21
 ---
+<!--This part is necessary for green highligted texts -->
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '20px',
+      color: '#fff',
+      padding: '10px',
+      cursor: 'pointer',
+    }}
+    onClick={() => {
+      alert(`You clicked the color ${color} with label ${children}`)
+    }}>
+    {children}
+  </span>
+); 
 
 # Data Explorer
 
-@iremkapucuoglu this can be started.
+This page is designated for the upload, management, and distribution of datasets. Within the "Workspace", users are presented with an organized view of their datasets, categorized by personal, team-based, or organizational groupings.
 
-- dataset explorer & data upload (can accessed via dashboad & via map)
 
-# Template
+## Add data from Workspace
 
-INTRODUCTION / TEASER TEXT (2 sentences, can be used as tooltip in GOAT)
+Utilize the `+ Add Dataset` feature to incorporate datasets from your personal computing device. GOAT supports the importation of GeoPackage, GeoJSON, Shapefile, KML, CSV, and XLSX files.
+Follow these steps to add a dataset to Workspace:
 
-## 1. Explanation
+<div class="step">
+  <div class="step-number">1</div>
+  <div class="content">Open the "Datasets" menu from the sidebar</div>
+</div>
 
-General explanation of the indicator (in easy words, reuse texts from tutorials)
+<div class="step">
+  <div class="step-number">2</div>
+  <div class="content">Click on <Highlight color="#2bb381">+ Add Dataset</Highlight> </div>
+</div>
 
-## 2. What can be done? 
+<div class="step">
+  <div class="step-number">3</div>
+  <div class="content">Select your file</div>
+</div>
 
-For what can this operation be used? (planning question list from tutorials)
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Select the folder destination where you want your data to reside (personal, team-based or organisational groupings) and edit your file's metadata</div>
+</div>
 
-Among others, xxx can be used to achieve the following:
+<div class="step">
+  <div class="step-number">5</div>
+  <div class="content">Check the information about your dataset and click on <Highlight color="#2bb381">Upload</Highlight></div>
+</div>
 
-## 3. How to use the operation?
 
-How to use the operation? / Sample flow(s)
-Show as many samples as necessary to explain the operation
+---------------------------------------------------------------------------------------------------
 
-### Video Tutorial
+## Add data from GOAT
+Utilize the `+ Add Dataset`  feature to integrate datasets either from from either your individual computing device or access those previously established within your workspace. Follow these steps to add a dataset to GOAT: 
 
-(maybe not needed for all the operations) > rather implement videos that we anyhow produce 
+<div class="step">
+  <div class="step-number">1</div>
+  <div class="content">Click on <Highlight color="#2bb381">+ Add Layer</Highlight> button under the "Layers" menu </div>
+</div>
 
-### Step-by-step guideline
-Describe input & output data. (ref. to Data page)
-Add note on coordinate system of files.
+<div class="step">
+  <div class="step-number">2</div>
+  <div class="content">The "Dataset Upload" procedure mirrors the instructions described in the "Add data from Workspace"</div>
+</div>
 
-## 4. Technical details
+<div class="step">
+  <div class="step-number">3</div>
+  <div class="content"> Within the "Dataset Explorer" interface, you may select and utilize datasets previously imported to the workspace</div>
+</div>
 
-further technical details that were too complex for the "explanation" section
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Select the file you want to import</div>
+</div>
 
-## 5. Further readings
-
-(Links to tutorials)  
-Links to videos  
-Related docs  
-
-## 6. Resources
-
-bibliography of cited literature
+<div class="step">
+  <div class="step-number">5</div>
+  <div class="content">Click on <Highlight color="#2bb381">Add Layer</Highlight></div>
+</div>
