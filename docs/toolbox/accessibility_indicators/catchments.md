@@ -7,42 +7,45 @@ import TabItem from '@theme/TabItem';
 
 # Catchments
 
-TODO: Merge Flow of "Single" & "Multi" Isochrones & Rename to "Catchments"
-
-Single-Isochrones are **catchment areas** that are **calculated on the real transport network**. This accessibility indicator shows how far a person can travel from a selected starting point within a given travel time.
+**Catchment areas** show how far people can travel within a given **travel time** or **distance**. The catchment areas are calculated on the real transport network and start from one or more selected points. 
 
 ## 1. Explanation
 
-**Single-Isochrones** show how far a person can travel from a selected starting point within a given travel time. In contrary to the [buffer](buffer/), which creates a straight line circle, the isochrone calculation routes on the real transport network. Therefor, the user can select the ``routing mode`` (_Walking_, _Bike_, _Pedelec_, _Transit_ or _Car_). 
+**Catchment areas** show how far a person can travel from selected starting point(s) within a given travel time or a given travel distance. In contrary to the [buffer](buffer/), which creates a straight line circle, the catchment calculation routes on the **real transport network**. Therefor, the user can select the ``routing mode`` (_Walking_, _Bike_, _Pedelec_, _Transit_ or _Car_). 
 
-Isochrones can be used as an **accessibility indicator** in one specific location. The isochrone area gives insights into the network connectivity. Furthermore, the isochrone can be intersected with further spatial data sets, such as population and POI data. Therewith it can be assessed how many people or POIs can be reached from a certain starting point.  
+Catchment areas can be used as an **accessibility indicator** in a specific location or area. The catchment area gives insights into the network connectivity. Furthermore, the catchment area can be intersected with further spatial data sets, such as population and POI data. Therewith it can be assessed how many people or POIs can be reached from certain starting point(s) and thus e.g. identified which share of inhabitants has access to important destinations of daily life within a specific travel time. 
 
+![GOAT multi-isochrone](/img/indicators/catchments/multi-isochrone/multi-isochrone.png "GOAT multi-isochrone") <span style={{color: "#FF0000"}}>TODO: update image with sample result</span>  
+  
 
-
-:::tip Tip
-
-Want to perform isochrones from multiple starting points? See [Multi-Isochrones](multi-isochrones/).
-
+:::tip Hint
+You might know this feature from our previous software versions under the terms *Single-Isochrone* and *Multi-Isochrone*. With the release of GOAT version 2.0, we combined these two indicators in the same flow and enriched it with further calculation options. 
 :::
-
 
 
 
 ## 2. Which planning questions can be answered? 
 
-Among others, isochrones can be used to answer the following planning questions:
+Among others, catchments can be used to answer the following planning questions:
 
-* How many supermarkets can be reached from a certain point in a 10-minute walk?
-* How many people can access a public transport station within 5 minutes of cycling?
-* How many people can reach a specific location within 20 minutes by public transport?
-* How big is the catchment area of a school by car vs. by public transport? How many students live within these catchment areas? 
+- Which amenities can be reached from a certain point in a 15-minute walk?
+- How many inhabitants have access to a supermarket within 10 minutes cycling?
+- What proportion of the population has a GP within 500m distance?
+- How big is the catchment area of a workplace by car vs. by public transport? How many employees live within these catchment areas? 
+- How well are kindergartens currently distributed across the city? In which districts are there accessibility deficits?
+
+
 
 ## 3. How to use the indicator?
 
 ### Video Tutorial
 <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/754209613" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen data-uk-responsive width="700" height="400"></iframe>
 
+<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/754227700" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen data-uk-responsive width="700" height="400"></iframe>
+
 ### Step-by-step guideline
+
+<span style={{color: "#FF0000"}}>TODO</span> 
 
 1. Go into menu ... 
 
@@ -117,140 +120,41 @@ Further information: **TODO: add link to routing/car**
 
 2. Place the ``starting point`` on the map. 
 
-<img src="/img/indicators/catchments/Isochrone/original_files/starting_point.png" width="1000px" alt="isochrone starting point" style={{width: "1000px", height: "250px", maxHeight: "10px", maxWidth: "100px", objectFit: "cover"}}/> 
+<span style={{color: "#FF0000"}}>... to be continued & updated... </span> 
 
-<span style={{color: "#FF0000"}}>TODO:</span> check image
-
-3. ... to be continued ... 
-
-4. result table .. 
-
-5. intersect isochrone with POI data ... 
-
-
-
-#### 1 Walking accessibility to supermarkets
-
-##### 1.1 Planning question
-
-How many supermarkets can be reached from a certain point in 10 minutes walking?
-
-##### 1.2 Step-by-Step guide
-
-1. Display all supermarkets by enabling the amenity "Supermarket" in the Thematic Data Filter under the category "Shop".
-
-[comment]:<img src="/images/tutorials/Isochrone/amenity_supermarket_en.webp" alt="amenity supermarket" style="max-height:400px;"/>
-
-2. Zoom in into the area where you want to calculate the isochrone.
-
-3. Select the the routing profile and the desired walking speed.
-
-[comment]:<img src="/images/tutorials/Isochrone/Isochrone_1.2_select_eng.webp"  alt="choose isochrone range" style="max-height:175px;"/>
-
-4. Place the starting point for the isochrone.
-
-[comment]:<img src="/images/tutorials/Isochrone/starting_point_isochrone_en.webp"  alt="set starting point" style="max-height:150px;"/>
-
-5. After the calculation has been carried out, a window with the results opens automatically. From this window you can see the number of supermarkets that can be reached within 10 minutes.
-
-[comment]:<img src="/images/tutorials/Isochrone/results_supermarkets_en.webp"  alt="results"/>
-
-6.	 In the result window that opens, the results can be analyzed by the use of different graphs. Therewith it can be seen how the supermarkets are spacial distributed. 
-
-[comment]:<img src="/images/tutorials/Isochrone/results_supermarkets_2_en.webp"  alt="results"/>
-
-#### 2 Accessibility by bike
-
-##### 2.1 Planning question
-
-How many people can reach the train station within 5 minutes by bike?
-
-##### 2.2 Step-by-Step guide
-
-1. Change the routing mode to "cycling" and choose the desired speed.
-   
-[comment]:<img src="/images/tutorials/Isochrone/Isochrone_2.2_select_eng.webp"  alt="Routing mode cycling" style="max-height:220px;"/>
-
-2. Place the starting point for the isochrone calculation on the station.
-
-[comment]:<img src="/images/tutorials/Isochrone/starting_point_isochrone_en.webp"  alt="set starting point" style="max-height:150px;"/>
-
-3. After the calculation has been carried out, a window with the results opens automatically. From this window you can see the population that can reach the train station within 10 minutes of cycling.
-
-[comment]:<img src="/images/tutorials/Isochrone/Isochrone_2.3_10minutes_eng.webp"  alt="result"/>
-
-4. The travel time can interactively be adjusted to 5 minutes by moving the slider. 
-   
-[comment]:<img src="/images/tutorials/Isochrone/Isochrone_2.3_5minutes_eng.webp"  alt="result"/>
-
-5. Besides the table, the population count can be visualized in a graph.
-
-[comment]:<img src="/images/tutorials/Isochrone/Isochrone_2.result_different_graph_Eng.webp"  alt="download" style="max-height:300px;"/>
-
-6. By clicking on the download button you can download the isochrones as GeoJSON, Shapefile or XML and the result table as Excel file.
-
-[comment]:<img src="/images/tutorials/Isochrone/Isochrone_2.4_export_eng.webp"  alt="download" style="max-height:230px;"/>
-
-
-#### 3 Accessibility by public transport
-
-##### 3.1 Planning question
-
-How many people can access a specific location within 20min by rail-based public transport (tram, underground, train)?
-
-##### 3.2 Step-by-Step guide
-
-1. Set the routing mode to “Transit” and choose the calculation options (weekday, time, access mode and egress mode) as desired. In the “Transit Modes” section, you can select which public transportation options shall be considered for the calculation. In this example, we focus on rail-based public transport (tram, underground and train). To get some additional information on the public transport network, you can activate the public transport background map. 
-
-[comment]:<img src="/images/tutorials/Isochrone/isochrone_3.1public_en.webp"  alt="change_routing_mode" style="max-height:400px;"/>
-
-2. Click "Isochrone Single" and zoom in the area where you want to calculate the isochrone.
-
-[comment]:<img src="/images/tutorials/Isochrone/isochrone_3.2public_en.webp"  alt="choose isochrone" style="max-height:400px;"/>
-
-3. Place the starting point for the isochrone.
-
-[comment]:<img src="/images/tutorials/Isochrone/isochrone_3.3public_en.webp"  alt="choose starting point" style="max-height:400px;"/>
-
-4. After the calculation has been carried out, a window with the results opens automatically. From this window you can see how many people can access a specific location within 20min by rail-based public transport. You can also change the travel time by using the slider.
-
-[comment]:<img src="/images/tutorials/Isochrone/isochrone_3.4public_en.webp"  alt="result" style="max-height:400px;"/>
-
-5. You can also view the population graph with travel time by clicking the graph button indicated by the blue box.
-
-[comment]:<img src="/images/tutorials/Isochrone/isochrone_3.5public_en.webp"  alt="result-graph" style="max-height:400px;"/>
+  
 
 :::tip Tip
 
-Want to style your isochrones and print nice looking maps? See [Styling & Print](../../styling_and_print/).
+Want to style your catchment areas and create nice looking maps? See [Styling (TODO: insert new section name & link)](../../styling_and_print/).
 
 :::
+
 ## 4. Technical details
 
-Isochrones are isolines connecting all points that can be reached from a specific starting point within a certain time interval. Depending on the chosen travel mode, the according transport networks are used for the [routing > TODO: Insert Link](/../routing).
+Catchment areas are **isolines** connecting all points that can be reached from one or more starting points within a certain time interval (called *isochrones*) or distance (called *isodistance*). Depending on the chosen travel mode, the according transport networks are used for the [routing > TODO: Insert Link](/../routing). 
 
-The isochrone shapes are dynamically created in the front end based on a travel time grid. Therefore, isochrones can be created fast and for different intervals on the fly.
+The catchment areas are dynamically created in the front end based on a travel time / distance grid. Therefore, catchment areas can be created fast and for different intervals on the fly.
 
 ### Scientific background
 
-From the scientific background, isochrones are _contour-based measures_ (also known as _cumulative opportunities_). They are valued for their **easily interpretable results** ([Geurs and van Eck 2001](isochrones#6-resources); [Albacete 2016](isochrones#6-resources)), but have the drawback of not distinguishing between different travel times within the **cut-off range** ([Bertolini, le Clercq, and Kapoen 2005](isochrones#6-resources)), as it is done by [heatmaps > TODO: Insert Link](/category/heatmaps/).
+From the scientific background, catchments are _contour-based measures_ (also known as _cumulative opportunities_). They are valued for their **easily interpretable results** ([Geurs and van Eck 2001](isochrones#6-resources); [Albacete 2016](isochrones#6-resources)), but have the drawback of not distinguishing between different travel times within the **cut-off range** ([Bertolini, le Clercq, and Kapoen 2005](isochrones#6-resources)), as it is done by [heatmaps > TODO: Insert Link](/category/heatmaps/).
 
 ### Visualization 
 
-The isochrone shape is derived from the routing grid using the [Marching square contour line algorithm](https://en.wikipedia.org/wiki/Marching_squares "Wikipedia: Marching Squares"), a computer graphics algorithm that can generate two-dimensional contour lines from a rectangular array of values ([de Queiroz Neto et al. 2016](isochrones#6-resources)). This algorithm transforms the grid from a 2D array to a shape to visualize or analyzed. An illustration of 2D image processing is shown in the figure. 
+The catchment shape is derived from the routing grid using the [Marching square contour line algorithm](https://en.wikipedia.org/wiki/Marching_squares "Wikipedia: Marching Squares"), a computer graphics algorithm that can generate two-dimensional contour lines from a rectangular array of values ([de Queiroz Neto et al. 2016](isochrones#6-resources)). This algorithm transforms the grid from a 2D array to a shape to visualize or analyzed. An illustration of 2D image processing is shown in the figure. 
 
 <img src="https://plan4better.de/images/docs/technical_documentation/isochrone/wiki.webp" width="1000px" alt="marching square" style={{width: "1000px", height: "400px", maxHeight: "400px", maxWidth: "400px", objectFit: "contain"}}/> 
 
 ## 5. Further readings
 
-<span style={{color: "#FF0000"}}>TODO:</span> 
-(Links to tutorials)  
-Links to videos  
-Related docs  
+<span style={{color: "#FF0000"}}>TODO:</span>
 
-- GOAT paper
+- Links to videos / use cases
+- Related docs
 
-If you want to learn more detailed examples of how the isochrone can be used within GOAT, you can access [the tutorials](../../tutorials/isochrone/) and [video sections](../../videos/) on the website.
+
+Further insights into the catchment calculation and its scientific background can be found in this [publication](https://doi.org/10.1016/j.jtrangeo.2021.103080).
 
 ## 6. Resources
 
@@ -267,9 +171,9 @@ Sao Paulo, Brazil: IEEE, Oct. 2016, pp. 305–312. isbn: 978-1-5090-3568-7. doi:
 
 https://fr.wikipedia.org/wiki/Marching_squares#/media/Fichier:Marching_Squares_Isoline.svg
 
-Majk Shkurti, "Spatio-temporal public transport accessibility analysis and benchmarking in an interactive WebGIS", Sep 2022. url: https://www.researchgate.net/publication/365790691_Spatio-temporal_public_transport_accessibility_analysis_and_benchmarking_in_an_interactive_WebGIS **@EPajares & @majkshkurti: I took this reference from the current docs but cannot find the text passage where it is cited. Do you know where this belongs to? **
+Majk Shkurti, "Spatio-temporal public transport accessibility analysis and benchmarking in an interactive WebGIS", Sep 2022. url: https://www.researchgate.net/publication/365790691_Spatio-temporal_public_transport_accessibility_analysis_and_benchmarking_in_an_interactive_WebGIS <span style={{color: "#FF0000"}}>TODO: @EPajares & @majkshkurti: I took this reference from the current docs but cannot find the text passage where it is cited. Do you know where this belongs to?</span>
 
-Matthew Wigginton Conway, Andrew Byrd, Marco Van Der Linden. "Evidence-Based Transit and Land Use Sketch Planning Using Interactive Accessibility Methods on Combined Schedule and Headway-Based Networks", 2017. url: https://journals.sagepub.com/doi/10.3141/2653-06 **@EPajares & @majkshkurti: I took this reference from the current docs but cannot find the text passage where it is cited. Do you know where this belongs to? **
+Matthew Wigginton Conway, Andrew Byrd, Marco Van Der Linden. "Evidence-Based Transit and Land Use Sketch Planning Using Interactive Accessibility Methods on Combined Schedule and Headway-Based Networks", 2017. url: https://journals.sagepub.com/doi/10.3141/2653-06 <span style={{color: "#FF0000"}}>TODO: @EPajares & @majkshkurti: I took this reference from the current docs but cannot find the text passage where it is cited. Do you know where this belongs to?</span>
 
 Geurs, Karst T., and Ritsema van Eck. 2001. “Accessibility Measures: Review and Applications.” RIVM Report 408505 006. url: https://rivm.openrepository.com/handle/10029/259808
 
