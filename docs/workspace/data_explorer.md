@@ -1,5 +1,5 @@
 ---
-sidebar_position: 21
+sidebar_position: 3
 ---
 <!--This part is necessary for green highligted texts -->
 export const Highlight = ({children, color}) => (
@@ -18,7 +18,7 @@ export const Highlight = ({children, color}) => (
   </span>
 ); 
 
-# Data Explorer
+# Data Explorer / Data Sets
 
 This page is designated for the upload, management, and distribution of datasets. Within the "Workspace", users are presented with an organized view of their datasets, categorized by personal, team-based, or organizational groupings.
 
