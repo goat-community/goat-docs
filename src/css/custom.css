@@ -76,6 +76,34 @@ html[data-theme='dark'] {
   color: #99a2af8a;
 }
 
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* for space between steps */
+}
+
+.step-number {
+  text-align: right;
+  font-size: 2rem; 
+  font-weight: bold; 
+  color: #3a3a3a; /* color of the number */
+  position: relative; /* This is needed to position the line */
+  padding-right: 30px; /* Space between the number and the line */
+  margin-right: 20px; /* Additional space if needed */
+}
+
+.step-number::after {
+  content: ''; 
+  position: absolute; 
+  top: 50%; /* Align the line in the middle vertically */
+  right: 0; /* Align the line to the right of the number */
+  transform: translateY(-50%); /* Center the line with respect to the number */
+  border-left: 2px solid #3a3a3a; /* Solid line to the right of the number */
+  height: 60px; /* Length of the line */
+}
+
+
+
 [data-theme='light'] .menu-content, [data-theme='light'] .rygJf{
   background-color: #F8F7F3;
 }
