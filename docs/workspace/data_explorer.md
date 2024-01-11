@@ -1,27 +1,13 @@
 ---
 sidebar_position: 3
 ---
-<!--This part is necessary for green highligted texts -->
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
-    }}
-    onClick={() => {
-      alert(`You clicked the color ${color} with label ${children}`)
-    }}>
-    {children}
-  </span>
-); 
 
-# Data Explorer / Data Sets
+# Data Explorer / Datasets
+
+<span style={{color: "#FF0000"}}>TODO: Show how to filter the datasets
+How to create folders and move the dataset to different folders and organizations</span> 
 
 This page is designated for the upload, management, and distribution of datasets. Within the "Workspace", users are presented with an organized view of their datasets, categorized by personal, team-based, or organizational groupings.
-
 
 ## Add data from Workspace
 
@@ -35,7 +21,7 @@ Follow these steps to add a dataset to Workspace:
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Click on <Highlight color="#2bb381">+ Add Dataset</Highlight> </div>
+  <div class="content">Click on <code>+ Add Dataset</code> </div>
 </div>
 
 <div class="step">
@@ -50,9 +36,8 @@ Follow these steps to add a dataset to Workspace:
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Check the information about your dataset and click on <Highlight color="#2bb381">Upload</Highlight></div>
+  <div class="content">Check the information about your dataset and click on <code>Upload</code></div>
 </div>
-
 
 ---------------------------------------------------------------------------------------------------
 
@@ -61,7 +46,7 @@ Utilize the `+ Add Dataset`  feature to integrate datasets either from from eith
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <Highlight color="#2bb381">+ Add Layer</Highlight> button under the "Layers" menu </div>
+  <div class="content">Click on <code>+ Add Layer</code> button under the "Layers" menu </div>
 </div>
 
 <div class="step">
@@ -81,5 +66,6 @@ Utilize the `+ Add Dataset`  feature to integrate datasets either from from eith
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Click on <Highlight color="#2bb381">Add Layer</Highlight></div>
+  <div class="content">Click on <code>+ Add Layer</code></div>
 </div>
+
