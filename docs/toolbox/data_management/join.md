@@ -6,31 +6,28 @@ import thematicIcon from "/img/indicators/join/toolbox.webp"
 
 # Join
 
-The **Join** tool is used to append attributes from one layer to another using predefined attribute connections. 
+The **Join** tool is used to append attributes from one layer to another using a matching attribute on both layers. 
 
 ## 1. Explanation
 
-This functionality facilitates the combination of two separate datasets. By defining relationships, the tool aligns data from both layers. The resulting output is a new layer that contains attributes from both layers, allowing for integrated analysis of the combined data.
+This tool facilitates the combination of two datasets. By defining relationships, the tool aligns data from both layers. The resulting output is a new layer that contains the attributes from the target layer and new column that summarizes a chosen attribute from the source layer. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/indicators/join/join_icon.png').default} alt="join" style={{ maxHeight: "400px", maxWidth: "200px", objectFit: "cover"}}/>
 </div> 
 
-GOAT uses the **"Inner Join"** operations to calculate join which combines rows from two tables based on a related column between them. It specifically selects records that have matching values in both tables. This means that for a row in the first table to be included in the result set, it must have a corresponding row in the second table. This type of join is particularly useful when you need to retrieve data that exists across multiple tables and is interrelated, ensuring that only the records with common values in both tables are selected for the final output.
+GOAT uses the **"Inner Join"** operation to calculate a join which combines rows from a target and a source layer based on a related column between them. It only selects records that have matching values in both tables. This means that for a row in the target layer there need to be at least one row in the source layer to realize a successful match. All rows with no match will not be returned as result.
 
-## 2. Which tasks can be fulfilled?
+## 2. Example use cases
 
-For what can this function be used? Among others, Join feature can be used to accomplish the following tasks:
+- Summarize the count of population collected in a spreadsheet on a layer containing the zipcode geometries.
+- Merge and aggregate the data from a household survey with the geomtries of the census tract.
 
-- Join information from a table without geometry with a [feature layer](docs/data/layer_types.md). 
+TODO: Find some more examples
 
-*For example, if you have the zipcode information of a region without geometry and you have another table containing the geometry of the region, you can merge the geometries and zipcodes using zipcode key.*
+## 3. How to use the tool?
 
-
-### Video Tutorial
 <span style={{color: "#FF0000"}}>TODO: add the video </span>  
-
-### Step-by-step guideline
 
 <span style={{color: "#FF0000"}}>TODO: update the image </span>  
 
@@ -41,7 +38,7 @@ For what can this function be used? Among others, Join feature can be used to ac
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under <code>Summarize data</code> menu, click on <code>Join</code></div>
+  <div class="content">Under the <code>Summarize data</code> menu, click on <code>Join</code></div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -52,7 +49,7 @@ For what can this function be used? Among others, Join feature can be used to ac
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">  Select your <b>Target Layer</b> (the primary table or dataset where you want to integrate additional data) </div>
+  <div class="content">  Select your <b>Target Layer</b> (the primary table or layer to which you you want to add additional data) </div>
 </div>
 
 <div class="step">
@@ -62,20 +59,20 @@ For what can this function be used? Among others, Join feature can be used to ac
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content"> Now, you should select your fields to match. Pick your <b>Target Field</b> (the specific column in the Target Layer that is used to match records with the Join Layer) </div>
+  <div class="content"> Now, you should select your fields to match. Pick your <b>Target Field</b> (the column in the Target Layer that is used to match records with the Join Layer) </div>
 </div>
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content"> Select your <b>Join Field</b> (to match each record in the Join Layer to records in the Target Layer) </div>
+  <div class="content"> Select your <b>Join Field</b> the column in the Join Layer to match the records in the Target Layer) </div>
 </div>
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content"> Select the method used to join the field under <b>Statistics</b> </div>
+  <div class="content"> Select the statistical method to be used to join the field under <b>Statistics</b> </div>
 </div>
 
-When running **Statistics** in join operation, you must select method for the selected column. Available methods are listed depend on the data type of the column.
+To aggregate the in the **Statistics** section, you have to select the method and attribute to be used. Available methods are listed in the following. The available methods depend on the data type of the chosen attribute:
 
 | Method | Type | Description |
 | -------|------| ------------|

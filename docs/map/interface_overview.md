@@ -2,6 +2,8 @@
 sidebar_position: 3
 ---
 
+TODO: UPDATE THIS WITH THE NEW INTERFACE
+
 import catchmentsTab from "/img/general/interface_overview/catchments_tab.webp"
 import otherLayersTab from "/img/general/interface_overview/otherlayers_tab.webp"
 import catchmentSettings from "/img/general/interface_overview/catchment_settings.webp"
