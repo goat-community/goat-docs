@@ -2,7 +2,10 @@
 sidebar_position: 3
 ---
 
-TODO: UPDATE THIS WITH THE NEW INTERFACE
+# Home / Map Interface
+
+<span style={{color: "#FF0000"}}>TODO: UPDATE THIS WITH THE NEW INTERFACE. @iremkapucuoglu this can be updated & enhanced together with @AnaSasso. Add overview of map interface > where to find what? Explain different sections (see QGIS).</span>
+
 
 import catchmentsTab from "/img/general/interface_overview/catchments_tab.webp"
 import otherLayersTab from "/img/general/interface_overview/otherlayers_tab.webp"
@@ -24,9 +27,6 @@ import aboutIcon from "/img/general/interface_overview/about_icon.webp"
 
 
 # Interface Overview
-
-@iremkapucuoglu this can be updated & enhanced: 
-- add overview of dashboard & overview GOAT interface > where to find what? Explain different sections (see QGIS). Together with @AnaSasso.
 
 This section provides an overview of the GOAT interface and it's functionalities. There are several tabs, menu actions, icons and toolbars for the user to access GOAT's various functions and configuration screens.
 
