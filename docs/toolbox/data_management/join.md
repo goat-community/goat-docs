@@ -13,7 +13,7 @@ The **Join** tool is used to append attributes from one layer to another using a
 This tool facilitates the combination of two datasets. By defining relationships, the tool aligns data from both layers. The resulting output is a new layer that contains the attributes from the target layer and new column that summarizes a chosen attribute from the source layer. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/indicators/join/join_icon.png').default} alt="join" style={{ maxHeight: "400px", maxWidth: "200px", objectFit: "cover"}}/>
+  <img src={require('/img/indicators/join/join.png').default} alt="join" style={{ maxHeight: "400px", maxWidth: "200px", objectFit: "cover"}}/>
 </div> 
 
 GOAT uses the **"Inner Join"** operation to calculate a join which combines rows from a target and a source layer based on a related column between them. It only selects records that have matching values in both tables. This means that for a row in the target layer there need to be at least one row in the source layer to realize a successful match. All rows with no match will not be returned as result.
