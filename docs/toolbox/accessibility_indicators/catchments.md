@@ -4,16 +4,20 @@ sidebar_position: 1
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import thematicIcon from "/img/indicators/join/toolbox.webp";
 
 # Catchments
+
+<span style={{color: "#FF0000"}}> !!!THIS PAGE NEEDS A LOT OF CHECK AND UPDATE!!!! </span> 
+
 
 **Catchment areas** show how far people can travel within a given **travel time** or **distance**. The catchment areas are calculated on the real transport network and start from one or more selected points. 
 
 ## 1. Explanation
 
-**Catchment areas** show how far a person can travel from selected starting point(s) within a given travel time or a given travel distance. In contrary to the [buffer](buffer/), which creates a straight line circle, the catchment calculation routes on the **real transport network**. Therefor, the user can select the ``routing mode`` (_Walking_, _Bike_, _Pedelec_, _Transit_ or _Car_). 
+**Catchment areas** show how far a person can travel from selected starting point(s) within a given travel time or a given travel distance. In contrary to the [buffer](/docs/toolbox/geoprocessing/buffer.md), which creates a straight line circle, the catchment calculation routes on the **real transport network**. Therefore, the user can select the `routing mode` (_Walking_, _Bike_, _Pedelec_, _Transit_ or _Car_). 
 
-Catchment areas can be used as an **accessibility indicator** in a specific location or area. The catchment area gives insights into the network connectivity. Furthermore, the catchment area can be intersected with further spatial data sets, such as population and POI data. Therewith it can be assessed how many people or POIs can be reached from certain starting point(s) and thus e.g. identified which share of inhabitants has access to important destinations of daily life within a specific travel time. 
+Catchment areas can be used as an **accessibility indicator** in a specific location or area. The catchment area gives insights into the network connectivity. Furthermore, the catchment area can be intersected with further spatial datasets, such as population and POI data. Therewith it can be assessed how many people or POIs can be reached from certain starting point(s) and thus e.g. identified which share of inhabitants has access to important destinations of daily life within a specific travel time. 
 
 ![GOAT multi-isochrone](/img/indicators/catchments/multi-isochrone/multi-isochrone.png "GOAT multi-isochrone") <span style={{color: "#FF0000"}}>TODO: update image with sample result</span>  
   
@@ -43,13 +47,22 @@ Among others, catchments can be used to answer the following planning questions:
 
 <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/754227700" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen data-uk-responsive width="700" height="400"></iframe>
 
-### Step-by-step guideline
+### Step-by-step Guideline
 
-<span style={{color: "#FF0000"}}>TODO</span> 
+<div class="step">
+  <div class="step-number">1</div>
+  <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+</div>
 
-1. Go into menu ... 
+<div class="step">
+  <div class="step-number">2</div>
+  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Catchment Area</code>.</div>
+</div>
 
-1. Pick for which ``routing`` mode you would like to calculate an isochrone. 
+<div class="step">
+  <div class="step-number">3</div>
+  <div class="content">Pick for which <code>routing</code> mode you would like to calculate an isochrone.</div>
+</div>
 
 <Tabs>
   <TabItem value="walking" label="Walking" default className="tabItemBox">
@@ -58,11 +71,17 @@ Among others, catchments can be used to answer the following planning questions:
 
 Considering all paths accessible by foot.
 
-Default walking speed: 5km/h
+Default walking speed: **5km/h**
 
-<img src="https://plan4better.de/images/docs/technical_documentation/isochrone/walking_en.webp" width="1000px" alt="isochrone walking settings" style={{width: "1000px", height: "150px", maxHeight: "100px", maxWidth: "300px", objectFit: "contain"}}/> 
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Set the configurations for <code>time</code> or <code>distance</code>.</div>
+</div>
 
-Further information: **TODO: add link to routing/walking**
+<img src={require('/img/indicators/catchments/walk_config.png').default} alt="walking configurations" style={{ maxHeight: "400px", maxWidth: "400px"}}/>
+
+
+**Further information:** [Routing/Walking](/docs/routing/walking.md)
 
   </TabItem>
   <TabItem value="cycling" label="Cycling/Pedelec" className="tabItemBox">
@@ -72,36 +91,62 @@ Further information: **TODO: add link to routing/walking**
 
 Considering all paths accessible by bicycle.
 
-Default cycling speed: 15km/h Depending on the surface, smoothness and slope of the different street segments, the cycling speed is adjusted accordingly (further information: [Publication](/general/publications#accessibility-by-proximity-addressing-the-lack-of-interactive-accessibility-instruments-for-active-mobility) > TODO: check link).
+Default cycling speed: **15km/h**. Depending on the surface, smoothness and slope of the different street segments, the cycling speed is adjusted accordingly. 
 
-<img src="https://plan4better.de/images/docs/technical_documentation/isochrone/standard_en.webp" width="1000px" alt="isochrone cycling settings" style={{width: "300px", height: "150px", maxHeight: "100px", maxWidth: "300px", objectFit: "contain"}}/> 
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Set the configurations for <code>time</code> or <code>distance</code>.</div>
+</div>
+
+<img src={require('/img/indicators/catchments/walk_config.png').default} alt="walking configurations" style={{ maxHeight: "400px", maxWidth: "400px"}}/>
+
+
+**Further information:** [Publication](https://doi.org/10.1016/j.jtrangeo.2021.103080).
+
 
 #### Pedelec
 
-Same as the cycling standard profile, but with an increased cycling speed of 23 km/h.
+Same as the cycling standard profile, but with an increased cycling speed of **23 km/h**.
 For Pedelecs, slopes are considered with a lower impedance than for standard bicycles.
 
-<img src="https://plan4better.de/images/docs/technical_documentation/isochrone/pedelec_en.webp" width="1000px" alt="isochrone pedelec settings" style={{width: "1000px", height: "150px", maxHeight: "100px", maxWidth: "300px", objectFit: "contain"}}/> 
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Set the configurations for <code>time</code> or <code>distance</code>.</div>
+</div>
 
-Further information: **TODO: add link to routing/cycling**
+<img src={require('/img/indicators/catchments/walk_config.png').default} alt="walking configurations" style={{ maxHeight: "400px", maxWidth: "400px"}}/>
+
+**Further information:** [Routing/Cycling](/docs/routing/cycling.md)
 
 
   </TabItem>
   <TabItem value="public transport" label="Public Transport" className="tabItemBox">
 
-#### Transit
+#### Public Transport
 
 In this routing mode, users can compute intermodal accessibility centered around public transport. The following settings can be adjusted:
 
 -	The ``weekday`` (Monday to Sunday)
 -	Time period (``from time`` and ``to time``) (0h to 24h)
--	``Access Mode`` (How the user accesses the station, e.g., Walk, Bicycle),
+-	``Access Mode`` (How the user accesses the station, e.g., Car, Walk, Bicycle),
 -	``Egress Mode`` (How the user exists the station e.g., Walk, Bicycle) 
--	``Transit Modes`` (Bus, Tram, Metro and/or Rail).
+-	``Pt types`` (Bus, Tram, Metro and/or Rail).
 
-<img src="https://plan4better.de/images/docs/technical_documentation/isochrone/transit_en.webp" width="1000px" alt="isochrone transit settings" style={{width: "1000px", height: "350px", maxHeight: "350px", maxWidth: "300px", objectFit: "contain"}}/> 
+Before setting the configurations, select the ``Pt types`` you want to analyze.
+ 
+<div>
+  <img src={require('/img/indicators/catchments/pt_type.png').default} alt="pt type" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>
+</div>
 
-Further information: **TODO: add link to routing/transit**
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Set the configurations for <code>time</code>.</div>
+</div>
+
+<img src={require('/img/indicators/catchments/pt_config.png').default} alt="pt configurations" style={{ maxHeight: "200px", maxWidth: "200px"}}/>
+
+
+Further information: [Routing/Public Transport](/docs/routing/public_transport.md)
 
 
   </TabItem>
@@ -109,42 +154,78 @@ Further information: **TODO: add link to routing/transit**
 
 #### Car
 
-<span style={{color: "#FF0000"}}>TODO</span> 
+Considering all roads accessible by car.
 
-Further information: **TODO: add link to routing/car**
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Set the configurations for <code>time</code>.</div>
+</div>
+
+<img src={require('/img/indicators/catchments/pt_config.png').default} alt="pt configurations" style={{ maxHeight: "200px", maxWidth: "200px"}}/>
+
+
+Further information: [Routing/Car](/docs/routing/car.md)
 
   </TabItem>
 </Tabs>
 
 
+<div class="step">
+  <div class="step-number">5</div>
+  <div class="content">Choose a way to select starting point(s) of the isochrone under <code>Starting</code> menu.</div>
+</div>
 
-2. Place the ``starting point`` on the map. 
+<Tabs>
+  <TabItem value="Place on Map" label="Place on Map" default className="tabItemBox">
 
-<span style={{color: "#FF0000"}}>... to be continued & updated... </span> 
+ #### Place on Map
+   Click on location icon <img src={require('/img/indicators/catchments/location_icon.png').default} alt="location icon" style={{ maxHeight: "30px", maxWidth: "30px"}}/>.
 
-  
+   Place one starting point on the map to calculate **single isochrone**, place the starting points on the map to calculate **multi-isochrone**.
+
+
+  </TabItem>
+  <TabItem value="Browse Layers" label="Browse Layers" className="tabItemBox">
+
+ #### Browse Layers
+  Select the layer you want to calculate the isochrone.
+
+
+  </TabItem>
+  <TabItem value="Search Address" label="Search Address" className="tabItemBox">
+
+  #### Search Address
+  Search for the address you want to calculate the isochrone.
+
+  </TabItem>
+</Tabs>
+
+<div class="step">
+  <div class="step-number">6</div>
+  <div class="content">Click on <code>Run</code>.</div>
+</div>
 
 :::tip Tip
-
-Want to style your catchment areas and create nice looking maps? See [Styling (TODO: insert new section name & link)](../../styling_and_print/).
-
+Want to style your catchment areas and create nice looking maps? See [Styling](/docs/map/layer_design/styling.md).
 :::
 
 ## 4. Technical details
 
-Catchment areas are **isolines** connecting all points that can be reached from one or more starting points within a certain time interval (called *isochrones*) or distance (called *isodistance*). Depending on the chosen travel mode, the according transport networks are used for the [routing > TODO: Insert Link](/../routing). 
+Catchment areas are **isolines** connecting all points that can be reached from one or more starting points within a certain time interval (called *isochrones*) or distance (called *isodistance*). Depending on the chosen travel mode, the according transport networks are used for the [routing](/docs/routing/walking.md). 
 
-The catchment areas are dynamically created in the front end based on a travel time / distance grid. Therefore, catchment areas can be created fast and for different intervals on the fly.
+The catchment areas are dynamically created in the front end based on a travel time/distance grid. Therefore, catchment areas can be created fast and for different intervals on the fly.
 
 ### Scientific background
 
-From the scientific background, catchments are _contour-based measures_ (also known as _cumulative opportunities_). They are valued for their **easily interpretable results** ([Geurs and van Eck 2001](isochrones#6-resources); [Albacete 2016](isochrones#6-resources)), but have the drawback of not distinguishing between different travel times within the **cut-off range** ([Bertolini, le Clercq, and Kapoen 2005](isochrones#6-resources)), as it is done by [heatmaps > TODO: Insert Link](/category/heatmaps/).
+From the scientific background, catchments are _contour-based measures_ (also known as _cumulative opportunities_). They are valued for their **easily interpretable results** ([Geurs and van Eck 2001](isochrones#6-resources); [Albacete 2016](isochrones#6-resources)), but have the drawback of not distinguishing between different travel times within the **cut-off range** ([Bertolini, le Clercq, and Kapoen 2005](isochrones#6-resources)), as it is done by [heatmaps](/docs/toolbox/accessibility_indicators/heatmap_closest_facilities.md).
 
 ### Visualization 
 
 The catchment shape is derived from the routing grid using the [Marching square contour line algorithm](https://en.wikipedia.org/wiki/Marching_squares "Wikipedia: Marching Squares"), a computer graphics algorithm that can generate two-dimensional contour lines from a rectangular array of values ([de Queiroz Neto et al. 2016](isochrones#6-resources)). This algorithm transforms the grid from a 2D array to a shape to visualize or analyzed. An illustration of 2D image processing is shown in the figure. 
 
-<img src="https://plan4better.de/images/docs/technical_documentation/isochrone/wiki.webp" width="1000px" alt="marching square" style={{width: "1000px", height: "400px", maxHeight: "400px", maxWidth: "400px", objectFit: "contain"}}/> 
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src="https://plan4better.de/images/docs/technical_documentation/isochrone/wiki.webp" width="1000px" alt="marching square" style={{ width: "1000px", height: "400px", maxHeight: "400px", maxWidth: "400px", objectFit: "contain"}}/>
+</div> 
 
 ## 5. Further readings
 
@@ -176,4 +257,3 @@ Majk Shkurti, "Spatio-temporal public transport accessibility analysis and bench
 Matthew Wigginton Conway, Andrew Byrd, Marco Van Der Linden. "Evidence-Based Transit and Land Use Sketch Planning Using Interactive Accessibility Methods on Combined Schedule and Headway-Based Networks", 2017. url: https://journals.sagepub.com/doi/10.3141/2653-06 <span style={{color: "#FF0000"}}>TODO: @EPajares & @majkshkurti: I took this reference from the current docs but cannot find the text passage where it is cited. Do you know where this belongs to?</span>
 
 Geurs, Karst T., and Ritsema van Eck. 2001. “Accessibility Measures: Review and Applications.” RIVM Report 408505 006. url: https://rivm.openrepository.com/handle/10029/259808
-
