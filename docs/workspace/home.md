@@ -28,36 +28,39 @@ By clicking on the user icon, you can see your name, your organization and `Logo
   <img src={require('/img/home/user_icon.png').default} alt="user icon" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
 </div> 
 
+<span style={{color: "#FF0000"}}>TODO @iremkapucuoglu highlight user icon with the blue box. </span> 
+
 ### Status Bar
-When you click on the Status Bar in the upper right corner of the Home page, you will see the status of your tasks in GOAT. 
+When you click on the Status Bar in the upper right corner of the Home page, you will see the status of your tasks in GOAT. *Tasks* are operations like data upload or geoanalysis.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/home/status_bar.png').default} alt="status bar" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>
 </div> 
 
-### Recent Projects
-Here you can see your most recent projects with the last time they were updated. You can create a new project by clicking on the plus icon and view all your projects by clicking on the `See All` button. 
+<span style={{color: "#FF0000"}}>TODO @iremkapucuoglu highlight Status Bar icon with the blue box. </span> 
 
-:::tip Hint
-To learn more about Projects, you can visit [Projects](docs\workspace\projects.md)
-:::
+### Recent Projects
+Here you can see your latest projects and when they were last updated. You can create a new project by clicking on the plus icon and view all your projects by clicking on the `See All` button. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/home/recent_projects.png').default} alt="recent projects" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
-### Recent Datasets
-Here you can see your latest datasets with with the last time they were updated. You can add a new dataset by clicking on the plus icon and view all your datasets by clicking on the `See All` button.
-
 :::tip Hint
-To learn more about Projects, you can visit [Data Explorer/Datasets](docs\workspace\data_explorer.md)
+To learn more about Projects, you can visit [Projects](docs\workspace\projects.md)
 :::
+
+
+### Recent Datasets
+Here you can see your latest datasets and when they were last updated. You can add a new dataset by clicking on the plus icon and view all your datasets by clicking on the `See All` button.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/home/recent_datasets.png').default} alt="recent datasets" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
-
+:::tip Hint
+To learn more about Projects, you can visit [Data Explorer/Datasets](docs\workspace\data_explorer.md)
+:::
 
 ### Explore
 Here you can see the latest blog posts. You can click on the `Visit Blog` button to see all [blog posts](https://plan4better.de/en/blog/).

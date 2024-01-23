@@ -4,15 +4,15 @@ sidebar_position: 1
 
 # Welcome 
 
-Welcome to the documentation of our WebGIS **GOAT**. <img src={require('/img/welcome/hand_emoji.png').default} alt="emoji" style={{ maxHeight: "60px", maxWidth: "60px", objectFit: "cover"}}/> 
+Welcome to the documentation of our WebGIS **GOAT**. <img src={require('/img/welcome/hand_emoji.png').default} alt="emoji" style={{ maxHeight: "30px", maxWidth: "30px", objectFit: "cover"}}/> 
 
 GOAT is a **WebGIS platform** with planning intelligence for today's needs. It's built on a multi-tenant architecture that allows different stakeholders to participate in **urban and transport planning** projects. The platform offers a modern user interface and an intuitive user flow to simplify the planning process. GOAT's main goal is to enable smarter, more collaborative and efficient planning through its innovative features and design.
 
-- Once you have created your GOAT account, you will be taken to the [landing page](https://goat.plan4better.de/login).
+Once you have created your [GOAT](https://goat.plan4better.de/login) account, you will be taken to the [landing page - TODO: add link to Docs of Homepage](/workspace/home/).
 
 ![Welcome to GOAT Workspace](/img/home/home_general.png "Geo Open Accessibility Tool - GOAT- Workspace")
 
-- The GOAT map view becomes visible when you click on a project.
+The GOAT [map view - TODO: add link to Docs of Map Overview](/map/interface_overview) becomes visible when you click on a project.
 
 ![Welcome to GOAT](/img/welcome/welcome_2.png "Geo Open Accessibility Tool - GOAT")
 
