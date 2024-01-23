@@ -23,22 +23,25 @@ GOAT uses the **"Inner Join"** operation to calculate a join which combines rows
 - Summarize the count of population collected in a spreadsheet on a layer containing the zipcode geometries.
 - Merge and aggregate the data from a household survey with the geomtries of the census tract.
 
-TODO: Find some more examples
+<span style={{color: "#FF0000"}}>TODO: find more examples </span> 
 
 ## 3. How to use the tool?
 
+### Video Tutorial
+
 <span style={{color: "#FF0000"}}>TODO: add the video </span>  
 
+### Step-by-step Guideline
 <span style={{color: "#FF0000"}}>TODO: update the image </span>  
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/> </div>
+  <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Summarize data</code> menu, click on <code>Join</code></div>
+  <div class="content">Under the <code>Summarize data</code> menu, click on <code>Join</code>.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -49,27 +52,27 @@ TODO: Find some more examples
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">  Select your <b>Target Layer</b> (the primary table or layer to which you you want to add additional data) </div>
+  <div class="content">  Select your <b>Target Layer</b> (the primary table or layer to which you you want to add additional data). </div>
 </div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select your <b>Join Layer</b> (the secondary table or dataset that contains the records and attributes to be inserted into the Target Layer) </div>
+  <div class="content">Select your <b>Join Layer</b> (the secondary table or dataset that contains the records and attributes to be inserted into the Target Layer). </div>
 </div>
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content"> Now, you should select your fields to match. Pick your <b>Target Field</b> (the column in the Target Layer that is used to match records with the Join Layer) </div>
+  <div class="content"> Now, you should select your fields to match. Pick your <b>Target Field</b> (the column in the Target Layer that is used to match records with the Join Layer). </div>
 </div>
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content"> Select your <b>Join Field</b> the column in the Join Layer to match the records in the Target Layer) </div>
+  <div class="content"> Select your <b>Join Field</b> (the column in the Join Layer to match the records in the Target Layer). </div>
 </div>
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content"> Select the statistical method to be used to join the field under <b>Statistics</b> </div>
+  <div class="content"> Select the statistical method to be used to join the field under <b>Statistics</b>. </div>
 </div>
 
 To aggregate the in the **Statistics** section, you have to select the method and attribute to be used. Available methods are listed in the following. The available methods depend on the data type of the chosen attribute:
@@ -86,7 +89,7 @@ To aggregate the in the **Statistics** section, you have to select the method an
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content"> As the last step, click on <code>Run</code>, and the result will be both added to the project and to the Data Explorer in your project folder</div>
+  <div class="content"> As the last step, click on <code>Run</code>, and the result will be both added to the project and to the Data Explorer in your project folder.</div>
 </div>
 
 
