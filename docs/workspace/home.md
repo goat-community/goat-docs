@@ -28,7 +28,6 @@ By clicking on the user icon, you can see your name, your organization and `Logo
   <img src={require('/img/home/user_icon.png').default} alt="user icon" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
 </div> 
 
-<span style={{color: "#FF0000"}}>TODO @iremkapucuoglu highlight user icon with the blue box. </span> 
 
 ### Status Bar
 When you click on the Status Bar in the upper right corner of the Home page, you will see the status of your tasks in GOAT. *Tasks* are operations like data upload or geoanalysis.
@@ -37,7 +36,6 @@ When you click on the Status Bar in the upper right corner of the Home page, you
   <img src={require('/img/home/status_bar.png').default} alt="status bar" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>
 </div> 
 
-<span style={{color: "#FF0000"}}>TODO @iremkapucuoglu highlight Status Bar icon with the blue box. </span> 
 
 ### Recent Projects
 Here you can see your latest projects and when they were last updated. You can create a new project by clicking on the plus icon and view all your projects by clicking on the `See All` button. 

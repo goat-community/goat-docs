@@ -16,27 +16,27 @@ Follow these steps to add a dataset to Workspace:
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Open the "Datasets" menu from the sidebar</div>
+  <div class="content">Open the <b>"Datasets"</b> menu from the sidebar.</div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Click on <code>+ Add Dataset</code> </div>
+  <div class="content">Click on <code>+ Add Dataset</code>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select your file</div>
+  <div class="content">Select your file.</div>
 </div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the folder destination where you want your data to reside (personal, team-based or organisational groupings) and edit your file's metadata</div>
+  <div class="content">Select the folder destination where you want your data to reside (personal, team-based or organisational groupings) and edit your file's metadata.</div>
 </div>
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Check the information about your dataset and click on <code>Upload</code></div>
+  <div class="content">Check the information about your dataset and click on <code>Upload</code>.</div>
 </div>
 
 ---------------------------------------------------------------------------------------------------
@@ -46,26 +46,26 @@ Utilize the `+ Add Dataset`  feature to integrate datasets either from from eith
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>+ Add Layer</code> button under the "Layers" menu </div>
+  <div class="content">Click on <code>+ Add Layer</code> button under the "Layers" menu. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">The "Dataset Upload" procedure mirrors the instructions described in the "Add data from Workspace"</div>
+  <div class="content">The "Dataset Upload" procedure mirrors the instructions described in the "Add data from Workspace".</div>
 </div>
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content"> Within the "Dataset Explorer" interface, you may select and utilize datasets previously imported to the workspace</div>
+  <div class="content"> Within the "Dataset Explorer" interface, you may select and utilize datasets previously imported to the workspace.</div>
 </div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the file you want to import</div>
+  <div class="content">Select the file you want to import.</div>
 </div>
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Click on <code>+ Add Layer</code></div>
+  <div class="content">Click on <code>+ Add Layer</code>.</div>
 </div>
 

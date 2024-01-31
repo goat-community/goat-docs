@@ -13,7 +13,7 @@ The **Filter**  <img src={require('/img/filter/filter_icon.png').default} alt="f
 
 The tool can be used for the attributes of both **point layers** and **polygon layers** with different types of data (`number` and `string`).
 
-Please note that the **filter operation does not alter the original data**. This feature facilitates efficient handling of large datasets by preserving the applied filters. As a result, you can **use the filtered data for various tools within GOAT**, such as [scenario analysis](/docs/scenarios/buildings.md) and [heatmap calculations](/docs/toolbox/accessibility_indicators/heatmap_closest_facilities.md).
+Please note that the **filter operation does not alter the original data**. This feature facilitates efficient handling of large datasets by preserving the applied filters. As a result, you can **use the filtered data for various tools within GOAT**, such as [scenario analysis](../scenarios/buildings) and [heatmap calculations](../toolbox/accessibility_indicators/heatmap_closest_facilities).
 
 
 ## 2. Example use cases

@@ -4,19 +4,21 @@ sidebar_position: 7
 
 # Public Transport Trip Count
 
-INTRODUCTION / TEASER TEXT (2 sentences, can be used as tooltip in GOAT)
+This indicator displays the **average number of public transport departures** per hour in pie charts, where the size and color of the pie chart signify the number of departures and the type of service, respectively. 
 
 ## 1. Explanation
 
-General explanation of the indicator (in easy words, reuse texts from tutorials)
+This indicator shows the **average number of public transport departures per hour for** a selected **time interval** in pie charts. The size of the pie chart represents the number of departures: the larger the pie chart, the more departures. The colours represent the type of service (e.g. bus, metro).
 
-show sample image of result
+This indicator serves as the foundation for the [ÖV Güteklassen](/docs/toolbox/accessibility_indicators/oev_gueteklassen.md), but can also be utilized on its own as a straightforward measure for public transport offer at a **station level**. It gives a summary of a station’s departures during a specific time window and day, providing a valuable overview of the public transport offer in a city. Thus, the indicator is often used in **weak point analyses of local transport plans** (see, among others, [Guideline for Local Transport Planning in Bavaria](https://www.demografie-leitfaden-bayern.de/index.html)).
 
-## 2. Which questions can be answered? 
+<span style={{color: "#FF0000"}}>TODO: add sample image</span>
 
-For what can this indicator be used? (planning question list from tutorials)
+## 2. Example use cases
 
-Among others, xxx can be used to answer the following planning questions:
+- Which stations in the city serve as main hubs?
+- Which stations have low service rates in comparison to others?
+- How does the public transport quality vary over different times of the week or day?
 
 ## 3. How to use the indicator?
 
@@ -25,11 +27,16 @@ Show as many samples as necessary to explain a feature
 
 ### Video Tutorial
 
-### Tool parameters
+<span style={{color: "#FF0000"}}>TODO: add video</span>
+
+### Step-by-step guideline
+
 
 ## 4. Technical details
 
-further technical details that were too complex for the "explanation" section
+### Calculation
+
+Similar to the ÖV Güteklassen (public transport quality classes), this indicator is calculated on the basis of GTFS data. Based on the selected day and time window, the average number of departures per hour (regardless of direction) is calculated.
 
 ## 5. Further readings
 
@@ -39,4 +46,4 @@ Related docs
 
 ## 6. Resources
 
-bibliography of cited literature
+Shkurti, Majk (2022). [Spatio-temporal public transport accessibility analysis and benchmarking in an interactive WebGIS](https://www.researchgate.net/publication/365790691_Spatio-temporal_public_transport_accessibility_analysis_and_benchmarking_in_an_interactive_WebGIS)
