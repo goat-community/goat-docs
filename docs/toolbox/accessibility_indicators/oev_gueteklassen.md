@@ -1,21 +1,21 @@
 ---
 sidebar_position: 5
 ---
+import thematicIcon from "/img/indicators/join/toolbox.webp";
 
 # Public Transport Quality Classes (ÖV Güteklassen)
 
 
 The Public Transport Quality Classes <i>(German: ÖV Güteklassen)</i> show the **attractiveness of public transport services**. This indicator helps to understand how public transport supply varies across a city or region. 
 
-<span style={{color: "#FF0000"}}>TODO: unify use of "ÖV Güteklassen" & "Public Transport Quality Classes"</span> 
+Public transport services are classified into different **quality classes**. Each class represents a level of service quality, with **higher classes indicating better and more efficient** public transport options. The specifics of these classes may vary by region or country, but they generally range from **basic services** (lower classes) to **high-frequency, well-integrated** services (higher classes).
 
 ## 1. Explanation
 
-<span style={{color: "#FF0000"}}>TODO: General explanation of the indicator (in easy words, reuse texts from tutorials)</span> 
+Public transport quality classes, also known as **ÖV-Güteklassen**, are a classification system used to evaluate and categorise the **quality of public transport** services in a given area. The concept is used to plan and evaluate public transport services to ensure that they meet certain standards and effectively serve the needs of the population.
 
-## 2. Which planning questions can be answered? 
+## 2. Example use cases
 
-Among others, the Public Transport Quality Classes (ÖV Güteklassen) can be used to answer the following planning questions:
 - How good is public transport supply in different parts of the city?
 - How many people are underserved by public transport? Where is the need for further supply?
 - How does the quality of public transport services differ at different times of the week and day?
@@ -31,7 +31,31 @@ Among others, the Public Transport Quality Classes (ÖV Güteklassen) can be use
 
 ### Step-by-step guideline
 
-<span style={{color: "#FF0000"}}>TODO</span> 
+<div class="step">
+  <div class="step-number">1</div>
+  <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+</div>
+
+<div class="step">
+  <div class="step-number">2</div>
+  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Public Transport Quality Classses (ÖV Güteklassen)</code>.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">3</div>
+  <div class="content">Select the <code>reference area</code>.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Define the <code>time window</code> (the day and the time).</div>
+</div>
+
+<div class="step">
+  <div class="step-number">5</div>
+  <div class="content">Define the <code>station config</code>.</div>
+</div>
+
 
 ## 4. Technical details
 

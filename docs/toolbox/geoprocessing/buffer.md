@@ -3,76 +3,134 @@ sidebar_position: 1
 ---
 
 import thematicIcon from "/img/general/interface_overview/thematic_icon.webp"
-import bufferSettings from "/img/indicators/catchments/buffer/tutorial_2.png"
-import bufferResult from "/img/indicators/catchments/buffer/tutorial_6.png"
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Buffer
 
-TODO: ADJUST TEXT & STRUCTURE. BUFFER NOW IN DATA OPPERATIONS. will be available for points, lines, polygons, ... 
-
-The buffer creates a **straight line circle** around a given starting point. Therewith, **catchment areas** can be calculated, e.g. around public transport stops.  
+The buffer creates a **straight line circle** around a given starting **points, lines or polygons** to a specified distance. 
 
 
 ## 1. Explanation
 
-A **buffer** is an simple accessibility indicator that shows the catchment area of a specific point. The buffer ``distance`` can be selected by the user. In contrary to the [isochrones](isochrones/), which are calculated based on the real transport network, the buffer calculates the catchment areas **as the crow flies**. The resulting catchment areas can be intersected with further spatial data sets, such as population and POI data. Therewith it can be assessed how many people or POIs are located within the buffer area.  
+A **buffer** is a tool used to delineate the catchment area around a specific point, line or polygon illustrating the extent of influence or reach from that point. Users can define the ``distance`` of the buffer, thereby customising the radius of the area covered.
 
-![GOAT buffer](/img/indicators/catchments/buffer/buffer.png "GOAT buffer")
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/geoprocessing/buffer/buffer_types.png').default} alt="buffer types" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>
+</div> 
 
-## 2. Which tasks can be fulfilled? 
+## 2. Example use cases 
 
-For what can this function be used? 
-Among others, xxx can be used to accomplish the following tasks:
 - How many people live within a 500m distance from the train station? 
 - How many shops are accessible within a 1000m distance from a bus stop?
-- .... TODO .... 
+
 
 ## 3. How to use the function?
 
 ### Video Tutorial
 
-<span style={{color: "#FF0000"}}>TODO: create video tutorial (@iremkapucuoglu) --> very short sequence showing the described steps below (when v2 is ready to be used)</span>
+<span style={{color: "#FF0000"}}>TODO: create video tutorial</span>
 
 
 ### Step-by-step guideline
 
-1. Go into the tab ``CATCHMENTS`` and pick _buffer_ as ``routing`` mode. 
+<div class="step">
+  <div class="step-number">1</div>
+  <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+</div>
 
-![Buffer Calculation in GOAT](/img/indicators/catchments/buffer/tutorial_1.png "Buffer Calculation in GOAT")
-   
-2. Select the ``Catchment Calculation`` type _single_. 
-   
-3. Zoom in into the area where you want to calculate the buffer. Place the ``Starting point`` on the map. 
+<div class="step">
+  <div class="step-number">2</div>
+  <div class="content">Under the <code>Geoprocessing</code> menu, click on <code>Buffer</code>.</div>
+</div>
 
-<img src={bufferSettings} alt="bufferSettings" width="1000px" style={{width: "300px", height: "180px", maxHeight: "300px", maxWidth: "500px", objectFit: "contain"}}/> 
+
+<span style={{color: "#FF0000"}}>TODO: add general ss from buffer menu</span> 
+
+<div class="step">
+  <div class="step-number">3</div>
+  <div class="content">Select your Layer.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Define the <code>maximum distance</code> (how far out from your points, lines, or shapes the buffer should extend) in meters.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">5</div>
+  <div class="content">Define the <code>distance step</code> (how thick each circle or shape around your point, line, or shape should be) in meters.</div>
+</div>
+
+:::tip HINT
+If you want to improve your analysis on buffer, you can use **Polygon Union** and **Polygon Difference** tools.
+:::
+
+<Tabs>
+  <TabItem value="polygonunion" label="Polygon Union" default className="tabItemBox">
+
+#### Polygon Union
+The  ``Polygon Union`` tool creates separate buffers around specified start points, lines or polygons. GOAT allows users to create a **geometric union** of the buffers with all the touching buffer polygons. This tool is useful if you want to see the total area covered by all your buffers combined.
+
+<div class="step">
+  <div class="step-number">6</div>
+  <div class="content">Click on <code>Polygon Union</code>.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">7</div>
+  <div class="content">Click on <code>Run</code>.</div>
+</div>
+
+
+<div style={{ display: 'flex', flexDirection: 'column' }}>
+  <img src={require('/img/geoprocessing/buffer/polygon_union.png').default} alt="polygon union" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>
+</div> 
+
+
+- The **union** operation combines multiple polygons into a single polygon that encompasses all the areas of the individual polygons. The irregularly shaped outline represents the area covered by the **buffers** when they are merged together.
+
+
+  </TabItem>
+  <TabItem value="polygondifference" label="Polygon Difference" className="tabItemBox">
+
+#### Polygon Difference 
+The  ``Polygon Difference`` tool creates separate buffers around specified start points, lines or polygons. GOAT allows users to create a **geometric difference** of the buffers.
+
+<div class="step">
+  <div class="step-number">6</div>
+  <div class="content">Click on <code>Polygon Difference</code>.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">7</div>
+  <div class="content">Click on <code>Run</code>.</div>
+</div>
+
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/geoprocessing/buffer/polygon_difference.png').default} alt="polygon difference" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+</div> 
+
+
+- The **difference** operation subtracts one polygon from another. In this context, it represents subtracting one buffer zone from another, resulting in the areas where the **buffers do not overlap**.
+
+:::tip NOTE
+Note that to use ``Polygon Difference`` feature, you need to have the ``Polygon Union`` feature turned on and it can be used only if the **maximum_distance/step_distance** (you defined while calculating buffer) ratio is lower than 20.
+:::
+
+  </TabItem>
+</Tabs>
+
+
+
 
 :::tip Tip
 
-Want to calculate buffers from multiple starting points? See [Multi-Isochrones](multi-isochrones/).
+Want to style your buffers and print nice looking maps? See [Styling & Print](/docs/map/layer_design/styling.md).
 
 :::
 
-4. As a result, the buffer catchment area is shown in the map. The result table shows the number of population that lives within the buffer area. 
 
-![Buffer Catchment Area in GOAT](/img/indicators/catchments/buffer/tutorial_3.png "Buffer Catchment Area in GOAT")
-
-5. If you want to intersect the buffer area with POI data, you can go into the ``Thematic Data Filter`` <img src={thematicIcon} alt="thematic icon" style={{width: "25px"}}/> and enable the desired POI categories. The result table dynamically reacts on the selection.
-
-![Buffer intersection with POI data in GOAT](/img/indicators/catchments/buffer/tutorial_4.png "Buffer intersection with POI data in GOAT")
-
-6. The buffer ``distance`` can be adjusted via the distance slider. The result table dynamically reacts on the changes.
-
-![Adjust buffer distance in GOAT](/img/indicators/catchments/buffer/tutorial_5.png "Adjust buffer distance in GOAT")
-
-7. The results can be visualized in different forms (table, graph, pie chart) and can be downloaded as GeoJSON, CSV, Geobuf, Shapefile, GeoPackage, KML and XLSX. 
-
-<img src={bufferResult} alt="bufferResult" width="1000px" style={{width: "300px", height: "280px", maxHeight: "500px", maxWidth: "500px", objectFit: "contain"}}/> 
-
-:::tip Tip
-
-Want to style your buffers and print nice looking maps? See [Styling & Print](../../styling_and_print/).
-
-:::
 
 ## 4. Technical details
 

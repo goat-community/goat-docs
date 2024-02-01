@@ -75,7 +75,7 @@ GOAT uses the **"Inner Join"** operation to calculate a join which combines rows
   <div class="content"> Select the statistical method to be used to join the field under <b>Statistics</b>. </div>
 </div>
 
-To aggregate the in the **Statistics** section, you have to select the method and attribute to be used. Available methods are listed in the following. The available methods depend on the data type of the chosen attribute:
+To aggregate in the **Statistics** section, you have to select the method and attribute to be used. Available methods are listed in the following. The available methods depend on the data type of the chosen attribute:
 
 | Method | Type | Description |
 | -------|------| ------------|
