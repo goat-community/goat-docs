@@ -7,16 +7,19 @@ sidebar_position: 3
 <span style={{color: "#FF0000"}}>TODO: Show how to filter the datasets
 How to create folders and move the dataset to different folders and organizations</span> 
 
-This page is designated for the upload, management, and distribution of datasets. Within the "Workspace", users are presented with an organized view of their datasets, categorized by personal, team-based, or organizational groupings.
+On the **Dataset** page, data can be **uploaded, managed and shared**. The page provides users with an organised view of their datasets, categorised by personal datasets, team datasets and datasets that are shared with the whole organization. Furthermore, datasets can be organized in **folders**, **filtered** and **sorted** based on alphabet, creation date or their last update. Projects can also be **deleted**, **downloaded** and their **metadata** edited. 
 
-## Add data from Workspace
+## Add data
 
-Utilize the `+ Add Dataset` feature to incorporate datasets from your personal computing device. GOAT supports the importation of GeoPackage, GeoJSON, Shapefile, KML, CSV, and XLSX files.
-Follow these steps to add a dataset to Workspace:
+New datasets can be uploaded to GOAT either in the [Workspace](../workspace/home) or directly in the [Map](../map/interface_overview). GOAT supports the upload of **GeoPackage, GeoJSON, Shapefile, KML, CSV**, and **XLSX** files.
+
+### Add data via Workspace
+
+Follow these steps to add a dataset via the Workspace:
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Open the <b>"Datasets"</b> menu from the sidebar.</div>
+  <div class="content">Open the <b>"Datasets"</b> page via the sidebar.</div>
 </div>
 
 <div class="step">
@@ -26,22 +29,24 @@ Follow these steps to add a dataset to Workspace:
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select your file.</div>
+  <div class="content">Select the file from your local device.</div>
 </div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the folder destination where you want your data to reside (personal, team-based or organisational groupings) and edit your file's metadata.</div>
+  <div class="content">Select the <b>Destination Folder</b> and define the <b>Name</b> of your new dataset. Furthermore, you can add a <b>Description</b> if you like.</div>
 </div>
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Check the information about your dataset and click on <code>Upload</code>.</div>
+  <div class="content">Check the information and click on <code>Upload</code>.</div>
 </div>
 
 ---------------------------------------------------------------------------------------------------
+<span style={{color: "#FF0000"}}>This line is interesting. When do we use it? I haven't seen it in the other sections so far.</span> 
 
-## Add data from GOAT
+
+### Add data via Map
 Utilize the `+ Add Dataset`  feature to integrate datasets either from from either your individual computing device or access those previously established within your workspace. Follow these steps to add a dataset to GOAT: 
 
 <div class="step">
