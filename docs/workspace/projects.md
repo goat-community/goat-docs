@@ -11,7 +11,7 @@ On the **Projects** page, projects can be **created, managed and shared**. The p
 </div> 
 
 
-## Create a new project
+## Creating a new project
 Follow these steps to add a new project to your GOAT workspace:
 
 <div class="step">
