@@ -3,6 +3,6 @@
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "TODO"
+    "description": "Whenever you open a project, you will be directed to the map. In the map, you can perform geospatial analysis and visualize and style your feature layers."
   }
 }
