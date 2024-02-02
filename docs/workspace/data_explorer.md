@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Data Explorer / Datasets
+# Datasets Explorer
 
 <span style={{color: "#FF0000"}}>TODO: Show how to filter the datasets
 How to create folders and move the dataset to different folders and organizations</span> 
