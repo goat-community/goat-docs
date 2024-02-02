@@ -19,7 +19,7 @@ Follow these steps to add a dataset via the Workspace:
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Open the <b>"Datasets"</b> page via the sidebar.</div>
+  <div class="content">Navigate to the <b>"Datasets"</b> page via the sidebar.</div>
 </div>
 
 <div class="step">
@@ -47,30 +47,36 @@ Follow these steps to add a dataset via the Workspace:
 
 
 ### Add data via Map
-Utilize the `+ Add Dataset`  feature to integrate datasets either from from either your individual computing device or access those previously established within your workspace. Follow these steps to add a dataset to GOAT: 
+Utilize the `+ Add Dataset` feature to integrate datasets either from your local device or access those previously uploaded within your workspace. Follow these steps to add a dataset to the map: 
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>+ Add Layer</code> button under the "Layers" menu. </div>
+  <div class="content">Navigate to the <b>"Layers"</b> menu via the left sidebar.</div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">The "Dataset Upload" procedure mirrors the instructions described in the "Add data from Workspace".</div>
+  <div class="content">Click on <code>+ Add Layer</code>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content"> Within the "Dataset Explorer" interface, you may select and utilize datasets previously imported to the workspace.</div>
+  <div class="content">Select if you like to <b>upload</b> a new dataset, integrate an dataset from your data <b>explorer</b> or add an <b>external dataset</b>.</div>
 </div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the file you want to import.</div>
+  <div class="content"> Within the "Dataset Explorer" interface, you may select and utilize datasets previously imported to the workspace.</div>
 </div>
 
 <div class="step">
   <div class="step-number">5</div>
+  <div class="content">Select the file you want to import.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">6</div>
   <div class="content">Click on <code>+ Add Layer</code>.</div>
 </div>
 
+<span style={{color: "#FF0000"}}>TODO / NOTE : For steps 4-6, I am missing the different options, as the steps differ based on the selection in Step 3.</span> 
