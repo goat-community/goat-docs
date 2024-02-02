@@ -4,11 +4,14 @@ sidebar_position: 3
 
 # Layers
 
-<span style={{color: "#FF0000"}}>TODO: further explain what can be done in this menu</span> 
+On the **Layers** section, layers can be **added and organized**. Among others, the layer order can be adjusted, layers can be enabled/disabled, duplicated, renamed, downloaded and removed.
+
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/map/layers/overview.png').default} alt="recent datasets" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+</div> 
 
 
-
-## Add Layer
+## Add Layers
 
 You can add two two kinds of layers to your map: [internal layers](../data/layer_types) or [external layers](../data/layer_types). For adding new internal layers, you can either integrate **datasets from your data explorer** or upload new **datasets from your local device** (GeoPackage, GeoJSON, Shapefile, KML, CSV or XLSX). External layers can be added by inserting the **url of the external source** (WMS, WMTS or MVT). 
 
@@ -51,3 +54,7 @@ Follow these steps to add a layer to the map:
 You can manage all your datasets in the [Data Explorer](../workspace/data_explorer). 
 
 :::
+
+## Organize Layers
+
+<span style={{color: "#FF0000"}}>TODO</span>
