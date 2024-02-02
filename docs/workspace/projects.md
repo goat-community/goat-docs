@@ -16,7 +16,7 @@ Follow these steps to add a new project to your GOAT workspace:
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Open the <b>"Projects"</b> page via the sidebar.</div>
+  <div class="content">Navigate to the <b>"Projects"</b> page via the sidebar.</div>
 </div>
 
 <div class="step">
