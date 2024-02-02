@@ -2,12 +2,21 @@
 sidebar_position: 3
 ---
 
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+=======
+# Layers
+
+On the **Layers** section, layers can be **added and organized**. Among others, the layer order can be adjusted, layers can be enabled/disabled, duplicated, renamed, downloaded and removed.
+
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/map/layers/overview.png').default} alt="recent datasets" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+</div> 
 
 # Layers
 
-## Add Layer
+## Add Layers
 
 You can add two two kinds of layers to your map: [internal layers](../data/layer_types) or [external layers](../data/layer_types). For adding new internal layers, you can either integrate **datasets from your data explorer** or upload new **datasets from your local device** (GeoPackage, GeoJSON, Shapefile, KML, CSV or XLSX). External layers can be added by inserting the **url of the external source** (WMS, WMTS or MVT). 
 
@@ -87,3 +96,7 @@ Once you have added your dataset into GOAT, your dataset will be visible on the 
 You can manage all your datasets in the [Data Explorer](../workspace/data_explorer). 
 
 :::
+
+## Organize Layers
+
+<span style={{color: "#FF0000"}}>TODO</span>
