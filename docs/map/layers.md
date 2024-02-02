@@ -2,11 +2,10 @@
 sidebar_position: 3
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Layers
-
-<span style={{color: "#FF0000"}}>TODO: further explain what can be done in this menu</span> 
-
-
 
 ## Add Layer
 
@@ -26,25 +25,62 @@ Follow these steps to add a layer to the map:
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select if you like to <b>upload</b> a new dataset, integrate an dataset from your data <b>explorer</b> or add an <b>external dataset</b>.</div>
+  <div class="content">Select if you like to <b>upload</b> a new dataset, integrate an dataset from your <b>data explorer</b> or add an <b>external dataset</b>.</div>
 </div>
+
+<Tabs>
+  <TabItem value="Dataset Upload" label="Dataset Upload" default className="tabItemBox">
+
+### Upload a New Dataset
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content"> Within the "Dataset Explorer" interface, you may select and utilize datasets previously imported to the workspace.</div>
-</div>
-
-<div class="step">
-  <div class="step-number">5</div>
   <div class="content">Select the file you want to import.</div>
 </div>
 
 <div class="step">
+  <div class="step-number">5</div>
+  <div class="content">Define the name and the metadata of your dataset.</div>
+</div>
+
+<div class="step">
   <div class="step-number">6</div>
+  <div class="content">Click on <code>Upload</code>.</div>
+</div>
+
+  </TabItem>
+  <TabItem value="Dataset Explorer" label="Dataset Explorer" className="tabItemBox">
+
+### Import Data from Dataset Explorer
+
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Select the file you want to import.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">5</div>
   <div class="content">Click on <code>+ Add Layer</code>.</div>
 </div>
 
-<span style={{color: "#FF0000"}}>TODO / NOTE : For steps 4-6, I am missing the different options, as the steps differ based on the selection in Step 3.</span> 
+
+  </TabItem>
+  <TabItem value="Dataset External" label="Dataset External" className="tabItemBox">
+
+  ### Import an External Dataset
+
+<span style={{color: "#FF0000"}}>TODO : complete this section. </span> 
+
+  </TabItem>
+</Tabs>
+
+## Managing Layers
+
+Once you have added your dataset into GOAT, your dataset will be visible on the **Layers** menu. By clicking on **"Options"** <img src={require('/img/filter/3dots.png').default} alt="options_icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> you can manage your layers.
+
+<img src={require('/img/map-layers/layer_options.png').default} alt="layer_options" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> 
+
+
 
 :::tip tip
 
