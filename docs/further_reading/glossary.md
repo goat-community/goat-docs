@@ -87,12 +87,12 @@ A **planning support system** is a digital tool used to support the planning and
 ### Point of Interest (POI)
 A **Point of Interest (POI)** refers to a distinct location or site that holds significant relevance or value within a specific context, study, or analysis. In the context of GOAT, POIs mainly refer to amenities of daily need, such as supermarkets, kindergartens or restaurants. 
 
-### Quintile Classification
-**Quintile classification** is a commonly used method in Geographic Information Systems (GIS) to divide data into equal groups based on their values. This method is useful for analyzing and visualizing patterns in data and can help identify trends and patterns that may not be obvious easily. 
+### Quantile Classification
+**Quantile classification** is a commonly used method in Geographic Information Systems (GIS) to divide data into equal groups based on their values. This method is useful for analyzing and visualizing patterns in data and can help identify trends and patterns that may not be obvious easily. 
 
-In GIS, quintile classification is often used to create choropleth maps, which are maps that use color to represent different values of a variable. For example, a choropleth map of the population density of a city. The map would be divided into five color-coded categories, with each category representing a different range of population densities. 
+In GIS, quantile classification is often used to create choropleth maps, which are maps that use color to represent different values of a variable. For example, a choropleth map of the population density of a city. The map would be divided into e.g. five color-coded categories, with each category representing a different range of population densities. 
 
-The accessibility heatmaps in GOAT use quintile classification to determine what is high or low accessible. For the classification, we first assign all zero values which have “no accessibility” and then we sort the data from lowest to highest. We divide the data into 6 equal groups, each containing 20% of the total data. The values in each group are assigned a rank from 0 to 5, with 0 being the lowest (no accessibility) and 5 being the highest (very high accessibility). 
+The quantile classification can be used for attribute-based styling in GOAT. 
 
 ### Routing 
 **Routing** <img src="https://plan4better.de/images/docs/technical_documentation/glossary/routing_logo.webp" width="1000px" alt="routing" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/> 
