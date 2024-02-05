@@ -6,6 +6,8 @@ import connectivityFormula from "/img/indicators/connectivity/formula_en.webp"
 
 # Connectivity
 
+<span style={{color: "#FF0000"}}> TODO. Still included in the new version??</span> 
+
 The Connectivity Heatmap shows **how well the walking network is connected** on a hexagonal grid. It helps to detect network gaps across the city. 
 
 ## 1. Explanation
@@ -71,6 +73,8 @@ The resulting connectivity values are classified into six levels, from highest t
 ### Visualization 
 
 The connectivity heatmap is visualized using a **hexagonal grid** with an edge length of approximately 174 m per cell. Accordingly the resolution for the visualization is lower than the resolution used for the calculation. The higher resolution for the calculation is necessary to ensure a precise calculation of the connectivity. While the lower resolution for the visualization is chosen to ensure a **smooth rendering** of the connectivity heatmap. The data on the higher resolution is aggregated to the lower resolution by computing the average connectivity.
+
+<span style={{color: "#FF0000"}}>Hint Philipp: calculation on resolution 10, so we have a edge length of approx. 75m and visualize on resolution 8 (edge length: approx. 530m)?</span>
 
 ## 5. Further readings
 

@@ -89,7 +89,7 @@ To aggregate in the **Statistics** section, you have to select the method and at
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content"> As the last step, click on <code>Run</code>, and the result will be both added to the project and to the Data Explorer in your project folder.</div>
+  <div class="content"> As the last step, click on <code>Run</code>, and the result will be both added to the project and to the Datasets in your project folder.</div>
 </div>
 
 

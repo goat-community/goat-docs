@@ -6,6 +6,8 @@ sidebar_position: 0
 
 @iremkapucuoglu this can be started.
 
+<span style={{color: "#FF0000"}}> TODO. Is this page still needed??</span> 
+
 INTRODUCTION / TEASER TEXT (2 sentences, can be used as tooltip in GOAT)
 
 ## 1. Explanation

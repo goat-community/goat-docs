@@ -34,7 +34,7 @@ Here you can see your latest projects and when they were last updated. You can c
 
 
 ### Recent Datasets
-Here you can see your latest datasets and when they were last updated. You can add a new dataset by clicking on the plus icon and access the **[Datasets](../workspace/data_explorer)** page by clicking on the `See All` button.
+Here you can see your latest datasets and when they were last updated. You can add a new dataset by clicking on the plus icon and access the **[Datasets](../workspace/datasets)** page by clicking on the `See All` button.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/home/recent_datasets.png').default} alt="recent datasets" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>

@@ -8,69 +8,76 @@ sidebar_position: 20
 # Core Styling Elements
 
 
-By using **smart mapping** options, GOAT allows you experiment with many styling options. The style suggestions you get when using the <code>Layer Design</code> option depend on the **type of data** you have. You can change the look of your layer and see the changes instantly on the map once you've decided how you want to present it - for example, using circles or colors to indicate POIs. GOAT allows you to adjust visual aspects such as **strokes**, **opacity** and **color ramps**.
+When you add a new layer to your project, it is assigned a default style depending on the type of data. By customising the <code>Layer Style</code>, you can adjust the visualization of the datasets to your wishes and **create appealing maps**. The styling options available depend on the type of data, i.e. whether it is points, lines or polygons. Thereby, multiple visual aspects, such as **colors**, **strokes** and **opacities** can be adjusted.
 
 
-:::tip HINT
-When you make styling adjustments to a layer, GOAT ensures that these **changes are saved independently**. This means that even if you remove your dataset from the project, **the styling modifications you've made will still be accessible** and can be applied consistently in the future.
-:::
-
-
-:::tip HINT
-For **smart styling** options, please visit [Attribute-based Styling](../layer_design/smart_styling)
-:::
-
-## Color Styles
+## Color Settings
 
 ### Fill Color
 
-Fill color is used to represent the **interior** of point or polygon features on a map. Fill color is an aspect of cartography and GIS visualisation because it helps to improve the overall readability of the map. For color types, you can check [Color Picker](#color-picker).
+Fill color is used to represent the **interior** of **point or polygon features** on a map. Fill color is an aspect of cartography and GIS visualisation because it helps to improve the overall readability of the map. The [Color Picker](#color-picker) provides different options to select the colors of your choice.
+
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+  <img src={require('/img/styling/fill_color.gif').default} alt="fill-stroke-color" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+</div> 
 
 #### Opacity
 
-To adjust the opacity of your layer styles for Fill Color, simply change the value **between 0 and 1**. This numerical scale allows you to define the exact level of opacity you want, where **0 is full transparency** and **1 is full opacity**. Adjust the opacity to your preference, either by using the slider or by typing the exact level directly into the text box provided.
+To adjust the opacity of your layer styles for Fill Color, simply change the opacity to any **value between 0 and 1**. This numerical scale allows you to define the exact level of opacity you want, where **0 is full transparency** and **1 is full opacity**. Adjust the opacity to your preference, either by using the slider or by typing the exact level directly into the text box provided.
 
-<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'right'}}>
-  <img src={require('/img/styling/opacity.png').default} alt="opacity" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+  <img src={require('/img/styling/opacity.gif').default} alt="fill-stroke-color" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 
 ### Stroke Color
 
-Stroke color refers to the color applied to the **outlines or edges** of map features such as polygons, lines and points. It is used to delineate the edges of spatial entities, distinguishing them from one another and enhancing their visibility on the map. For color types, you can check [Color Picker](#color-picker).
+Similar to the fill color, also the stroke color can be adjusted. Stroke color refers to the color applied to the **outlines or edges** of map features such as polygons, lines and points. It is used to delineate the edges of spatial entities, distinguishing them from one another and enhancing their visibility on the map. The [Color Picker](#color-picker) provides different options to select the colors of your choice.
+
+
+### Color Picker & Preset Colors
+
+Whenever you want to change a color, may it be **Fill Color** or **Stroke Color**, the color menu opens. You can either set the colors from the <code>Color Picker</code> by **moving the picker** in the color field or by defining **hex code** or **RGB values**, or you can select one of the colors we provide in the <code>Preset Colors</code>.
+
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+  <img src={require('/img/styling/color_picker.gif').default} alt="fill-stroke-color" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+</div> 
+
+<span style={{color: "#FF0000"}}>TODO: Update the gif (bug in RGB values)</span> 
+
+## Width & Radius
 
 ### Stroke Width
 
-This feature gives you the flexibility to change **line thickness**. Adjust the line width to your preference, either by using the width slider or by typing the exact size directly into the text box provided.
+Besides the color, also the **line thickness** of strokes can be defined. Adjust the line width to your preference, either by using the width slider or by typing the exact size directly into the text box provided.
 
-<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'right'}}>
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/styling/stroke_width.png').default} alt="stroke width" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
 </div> 
 
-### Color Picker
-
-The <code>Layer Design</code> section in GOAT allows you to change the **Fill Color** and **Stroke Color** of your data. You can either set the colors from the **"Color Picker"** by defining **hex code** or **RGB values**, or you can select the color you want from the **"Preset Colors"**.
-
-<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-  <img src={require('/img/styling/fill_stroke.gif').default} alt="fill-stroke-color" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
-</div> 
-
-<span style={{color: "#FF0000"}}> Update the gif </span> 
 
 ### Radius
 
-This option allows you to change the **radius of point datasets**. To adjust the predefined radius, you can either use the Radius slider to make incremental changes, or enter the desired radius size directly in the text box for precise control.
+For **point datasets**, the **radius** can be adjusted. Therefore, you can either use the Radius slider to make incremental changes, or enter the desired radius size directly in the text box for precise control.
 
-<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'right'}}>
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/styling/radius.png').default} alt="radius" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
 </div> 
 
 
-### Default Settings 
+## Default Settings 
 
-<span style={{color: "#FF0000"}}> add text and image here </span> 
+By clicking on the **three dots**, the default style settings open. 
+
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+  <img src={require('/img/styling/default.png').default} alt="default settings" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+</div> 
+
+If you select <code>Save as default</code>, the current style settings will be attached to the dataset. Whenever you add this dataset to a project, this default style will be used (*Note: existing projects where this dataset is displayed will not be effected*). 
+
+By clicking on <code>Reset</code>, you can reset the current style settings back to the default. 
 
 
-:::tip NOTE
-By clicking on <code>Reset</code> you can return to the default styling.
+:::tip HINT
+Interested in **smart styling** options? Check our [Attribute-based Styling](../layer_design/smart_styling).
 :::

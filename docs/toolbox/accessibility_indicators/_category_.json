@@ -3,6 +3,6 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "TODO"
+    "description": "Various tools are provided for accessibility analysis, including the calculation of catchment areas, heatmaps and public transport indicators."
   }
 }

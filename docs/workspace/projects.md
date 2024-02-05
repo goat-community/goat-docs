@@ -36,8 +36,5 @@ Follow these steps to add a new project to your GOAT workspace:
 
 
 ## Managing projects
-By clicking on **"Options"** <img src={require('/img/filter/3dots.png').default} alt="options icon" style={{ maxHeight: "40px", maxWidth: "40px"}}/>, you can view and edit the metadata of projects, move a project into another folder, or share projects with other people.
-<img src={require('/img/home/projects/project_managing.png').default} alt="project manager" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
-
-
-<span style={{color: "#FF0000"}}>TODO: here, a gif could be nice so the user sees where they need to click. Or alternatively make the screenshot a bit bigger. NOTE: the "download" option was removed, so we anyhow need to update the screenshot</span>
+By clicking on the **three dots**, you can view and edit the metadata of projects, move a project into another folder, or share projects with other people.
+<img src={require('/img/home/projects/options.gif').default} alt="options" style={{ maxHeight: "300px", maxWidth: "300px"}}/>

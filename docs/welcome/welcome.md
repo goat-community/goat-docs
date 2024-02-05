@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: /
 ---
 
 # Welcome 
@@ -40,7 +41,7 @@ The list below gives you access to all the content in the documentation. You can
 - [Home](../workspace/home)
 - [Projects](../workspace/projects)
 - [Settings](../workspace/settings)
-- [Data Explorer/Datasets](../workspace/data_explorer)
+- [Datasets](../workspace/datasets)
 - [Data Catalog](../workspace/data_catalog)
 
 

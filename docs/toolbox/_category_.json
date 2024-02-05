@@ -3,6 +3,6 @@
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "TODO"
+    "description": "The toolbox contains all spatial analysis, such as accessibility indicators, data management tools, geoanalysis and geoprocessing."
   }
 }
