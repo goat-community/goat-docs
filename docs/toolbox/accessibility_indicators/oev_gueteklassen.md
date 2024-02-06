@@ -8,11 +8,14 @@ import thematicIcon from "/img/indicators/join/toolbox.webp";
 
 The Public Transport Quality Classes <i>(German: ÖV Güteklassen)</i> show the **attractiveness of public transport services**. This indicator helps to understand how public transport supply varies across a city or region. 
 
-Public transport services are classified into different **quality classes**. Each class represents a level of service quality, with **higher classes indicating better and more efficient** public transport options. The specifics of these classes may vary by region or country, but they generally range from **basic services** (lower classes) to **high-frequency, well-integrated** services (higher classes).
 
 ## 1. Explanation
 
-Public transport quality classes, also known as **ÖV-Güteklassen**, are a classification system used to evaluate and categorise the **quality of public transport** services in a given area. The concept is used to plan and evaluate public transport services to ensure that they meet certain standards and effectively serve the needs of the population.
+Public transport quality classes, also known as **ÖV-Güteklassen**, are a classification system used to evaluate and categorise the **quality of public transport** services in a given area. The concept is used to plan and evaluate public transport services to ensure that they meet certain standards and effectively serve the needs of the population. The **quality classes** thereby range from **<span style={{color: "#199741"}}>A</span>** (very good offer) to **<span style={{color: "#E4696A"}}>F</span>** (very poor offer).
+
+![ÖV-Güteklassen in GOAT](/img/indicators/public_transport/gueteklassen/example.png "ÖV-Güteklassen in GOAT")
+
+<span style={{color: "#FF0000"}}>TODO: redo screenshot when correct styling is applied and legend is added</span> 
 
 ## 2. Example use cases
 
@@ -22,15 +25,6 @@ Public transport quality classes, also known as **ÖV-Güteklassen**, are a clas
 
 ## 3. How to use the indicator?
 
-### Video Tutorial
-
-<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/766394906" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen data-uk-responsive width="700" height="400"></iframe>
-
-
-<span style={{color: "#FF0000"}}>TODO: insert new video or move this version to "further readings" as use case (version 1.5)</span>  
-
-### Step-by-step guideline
-
 <div class="step">
   <div class="step-number">1</div>
   <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
@@ -38,24 +32,39 @@ Public transport quality classes, also known as **ÖV-Güteklassen**, are a clas
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Public Transport Quality Classses (ÖV Güteklassen)</code>.</div>
+  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Public Transport Quality Classses (ÖV Güteklassen)</code>. This opens the setting menu.</div>
 </div>
+
+![Menu Overview for ÖV-Güteklassen](/img/indicators/public_transport/gueteklassen/overview.png "Menu Overview for ÖV-Güteklassen")
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select the <code>reference area</code>.</div>
+  <div class="content">Define the <code>Calculation Time</code> (the day and the time).</div>
 </div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Define the <code>time window</code> (the day and the time).</div>
+  <div class="content">Select the <code>Reference Area Layer</code> for which you like to calculate the indicator. This can be any polygon feature layer.</div>
 </div>
+
 
 <div class="step">
   <div class="step-number">5</div>
   <div class="content">Define the <code>station config</code>.</div>
 </div>
 
+<span style={{color: "#FF0000"}}>TODO /NOTE: Step 5 is not implemented yet. Remove it?</span> 
+
+<div class="step">
+  <div class="step-number">6</div>
+  <div class="content">Click on <code>Run</code>. This starts the calculation of the Public Transport Quality Classes for the selected area.</div>
+</div>
+
+:::tip Hint
+
+Depending on the size of the selected area, the calculation might take some minutes. The [status bar](../../workspace/home#status-bar) shows the current progress.
+
+:::
 
 ## 4. Technical details
 
