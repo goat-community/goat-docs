@@ -115,6 +115,7 @@ By clicking on <img src={require('/img/filter/3dots.png').default} alt="options_
 
 :::tip tip
 
-Want to change the design of your layers? See [Layer Style](../category/layer-style). 
+Want to change the design of your layers? See [Layer Style](../category/layer-style).  
+Only want to visualize parts of your dataset? See [Filter](../filter). 
 
 :::

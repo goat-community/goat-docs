@@ -53,7 +53,7 @@ In addition to the color palette, the **color scale** can be adjusted. The color
 
 ### Quantile
 
-The quantile classification, divides data into **groups with equal number of values in each class** based on their attribute values. This method is useful for analyzing and visualizing patterns in data and can help identify trends and patterns that may not be obvious easily. The fact that the data values are grouped in equal quantities within each class makes this approach **ideal for data that is linearly distributed**. Per default, the data is distributed into 7 classes. 
+The Quantile classification, divides data into **groups with equal number of values in each class** based on their attribute values. This method is useful for analyzing and visualizing patterns in data and can help identify trends and patterns that may not be obvious easily. The fact that the data values are grouped in equal quantities within each class makes this approach **ideal for data that is linearly distributed**. Per default, the data is distributed into 7 classes. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/styling/quantile.png').default} alt="quantile" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
@@ -66,7 +66,7 @@ Want to deeper understand what quantile classification is? Check our [Glossary](
 
 ### Standard Deviation
 
-The standard deviation method is a **statistical approach** used in data visualisation. It uses the concept of standard deviation, a measure of the **amount of variation or dispersion in a set of values**, to determine how data points are assigned to different color categories. This method is valuable for its ability to provide a statistical perspective on the data, allowing users to quickly grasp the **relative dispersion and distribution of values** within the dataset. Per default, the data is distributed into 7 classes. 
+The Standard Deviation method is a **statistical approach** used in data visualisation. It uses the concept of standard deviation, a measure of the **amount of variation or dispersion in a set of values**, to determine how data points are assigned to different color categories. This method is valuable for its ability to provide a statistical perspective on the data, allowing users to quickly grasp the **relative dispersion and distribution of values** within the dataset. Per default, the data is distributed into 7 classes. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/styling/standard_deviation.png').default} alt="standard_deviation" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
@@ -74,7 +74,7 @@ The standard deviation method is a **statistical approach** used in data visuali
 
 ### Equal Interval
 
-The range of the **continuous variable is divided into equal interval classes** using the equal interval scale. Users can select multiple colors for these classes containing the data values using color palettes. Per default, the data is distributed into 7 classes. 
+For the Equal Interval classification, the range of the attribute values is divided into **equal interval classes**. Per default, the data is distributed into 7 classes. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/styling/equal_interval.png').default} alt="equal_interval" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
@@ -82,14 +82,14 @@ The range of the **continuous variable is divided into equal interval classes** 
 
 ### Heads and Tails
 
-The heads and tails method is used to deal with **datasets with a skewed distribution**. It's designed to highlight extremes in the data, focusing on the **'heads' (the very high values)** and the **'tails' (the very low values)**. This method is particularly useful for datasets where the most important information is found in the extremes, and where highlighting these values can lead to greater insight and understanding. Per default, the data is distributed into 7 classes. 
+The Heads and Tails method is used to deal with **datasets with a skewed distribution**. It's designed to highlight extremes in the data, focusing on the **'heads' (the very high values)** and the **'tails' (the very low values)**. This method is particularly useful for datasets where the most important information is found in the extremes, and where highlighting these values can lead to greater insight and understanding. Per default, the data is distributed into 7 classes. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/styling/heads_tails.png').default} alt="heads_tails" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 
-### Custom Breaks for <code>number</code>
+### Custom Breaks (for <code>numbers</code>)
 
 There are several options you can customize the <code>number</code> data:
 
@@ -97,9 +97,17 @@ The Custom Break method is a data visualisation method used for numerical data, 
 
 <span style={{color: "#FF0000"}}>TODO: add image </span> 
 
-### Custom Order for <code>string</code>
+### Custom Ordinal (for <code>strings</code>)
 
-The Custom Order Method is a data sorting and visualisation method applied to string data, such as categories, labels or text-based variables. Unlike numerical data, where ordering is typically based on magnitude, string data often lacks a natural order. The Custom Order method addresses this challenge by allowing users to **define their own ordering rules for strings**, creating a customised sequence tailored to their specific needs. This level of customisation **enhances the interpretability** and **utility of visualisations**.
+The Custom Ordinal classification is a data sorting and visualisation method applied to **string data**, such as categories, labels or text-based variables. Unlike numerical data, where ordering is typically based on magnitude, string data often lacks a natural order. The Custom Order method therefore allows users to **define their own ordering rules for strings**, creating a customised sequence tailored to their specific needs. 
 
-<span style={{color: "#FF0000"}}>TODO: add image </span> 
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+  <img src={require('/img/styling/ordinal.png').default} alt="heads_tails" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+</div>   
 
+
+Therefore, additional steps can be added and multiple string values selected per group from a drop-down menu. The drop-down menu thereby lists all attribute values of the dataset. 
+
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+  <img src={require('/img/styling/custom_ordinal.gif').default} alt="heads_tails" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+</div> 
