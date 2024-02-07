@@ -87,7 +87,7 @@ Related docs
 - https://www.itv.com/news/2023-02-20/what-is-a-15-minute-city-and-why-is-the-idea-so-controversial
 - https://www.eiturbanmobility.eu/wp-content/uploads/2022/11/EIT-UrbanMobilityNext9_15-min-City_144dpi.pdf 
 
-## 6. Resources
+## 6. References
 
 bibliography of cited literature
 

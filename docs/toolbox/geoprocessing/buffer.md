@@ -25,7 +25,7 @@ A **buffer** is a tool used to delineate the catchment area around a specific po
 - How many shops are accessible within a 1000m distance from a bus stop?
 
 
-## 3. How to use the function?
+## 3. How to use the tool?
 
 ### Video Tutorial
 
@@ -144,7 +144,7 @@ Want to style your buffers and print nice looking maps? See [Styling & Print](/d
 Links to videos  
 Related docs  
 
-## 6. Resources
+## 6. References
 
 **TODO:**
 bibliography of cited literature

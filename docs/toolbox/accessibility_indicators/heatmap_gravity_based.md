@@ -54,7 +54,7 @@ GOAT allows you to calculate and visualize gravity-based accessibility measures,
 ### Scientific background
 
 From the scientific background, the Local Accessibility Heatmap is a  _gravity-based measures_ (also known as _potential measures_, _Hansen-type measures_, etc.). 
-They are **advanced to contour-based measures**, such as [isochrones > TODO: check link](isochrones "Docs on isochrones"), as they take further into account that **people are more likely to visit closer destinations** than those that are more distant ([Geurs and van Eck 2001](isochrones#6-resources)). 
+They are **advanced to contour-based measures**, such as [isochrones > TODO: check link](isochrones "Docs on isochrones"), as they take further into account that **people are more likely to visit closer destinations** than those that are more distant ([Geurs and van Eck 2001](isochrones#6-references)). 
 
 
 ### Calculation
@@ -104,7 +104,7 @@ In order to visualize the resulting accessibility levels that were computed for 
 Links to videos  
 Related docs  
 
-## 6. Resources
+## 6. References
 
 Kwan, Mei-Po. 1998. “Space-Time and Integral Measures of Individual Accessibility: A Comparative Analysis Using a Point-Based Framework.” Geographical Analysis 30 (3): 191–216. [https://doi.org/10.1111/j.1538-4632.1998.tb00396.x](https://doi.org/10.1111/j.1538-4632.1998.tb00396.x).
 

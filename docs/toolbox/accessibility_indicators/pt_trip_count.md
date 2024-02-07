@@ -5,17 +5,16 @@ import thematicIcon from "/img/indicators/join/toolbox.webp";
 
 # Public Transport Trip Count
 
-This indicator displays the **average number of public transport departures** per hour in pie charts, where the size and color of the pie chart signify the number of departures and the type of service, respectively. 
+This indicator displays the **average number of public transport departures** per hour for each public transport stop. 
 
 ## 1. Explanation
 
-This indicator shows the **average number of public transport departures per hour for** a selected **time interval** in pie charts. The size of the pie chart represents the number of departures: the larger the pie chart, the more departures. The colours represent the type of service (e.g. bus, metro).
-
-<span style={{color: "#FF0000"}}>TODO: @EPajares will the style be still the same as in v1.5?</span>  
+This indicator shows the **average number of public transport departures per hour for** a selected **time interval** for each public transport stop on a point layer. The results can be visualized either as a sum of all transport modes or by focussing on one dedicated mode (e.g. bus, tram, metro, rail).
 
 This indicator serves as the foundation for the [ÖV Güteklassen](/docs/toolbox/accessibility_indicators/oev_gueteklassen.md), but can also be utilized on its own as a straightforward measure for public transport offer at a **station level**. It gives a summary of a station’s departures during a specific time window and day, providing a valuable overview of the public transport offer in a city. Thus, the indicator is often used in **weak point analyses of local transport plans** (see, among others, [Guideline for Local Transport Planning in Bavaria](https://www.demografie-leitfaden-bayern.de/index.html)).
 
-<span style={{color: "#FF0000"}}>TODO: add sample image</span>
+![Public Transport Trip Count](/img/indicators/public_transport/trip_count/sample.png "[Public Transport Trip Count")
+
 
 ## 2. Example use cases
 
@@ -62,31 +61,33 @@ Depending on the size of the selected area, the calculation might take some minu
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layer will be added to the map.</div>
+  <div class="content">As soon as the calculation process is finished, the resulting layer called "Trip Count Station" will be added to the map.</div>
 </div>
 
-<span style={{color: "#FF0000"}}>TODO: add result screenshot</span>
+
+![Menu Overview for Public Transport Trip Count](/img/indicators/public_transport/trip_count/result.png "[Menu Overview for Public Transport Trip Count")
+
+<div class="step">
+  <div class="step-number">7</div>
+  <div class="content">When clicking on a point in the map, further details, such as station name and teh separated departure counts per mode, become visible.</div>
+</div>
+
+
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+  <img src={require('/img/indicators/public_transport/trip_count/details.png').default} alt="fill-stroke-color" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+</div> 
+
+
+:::tip Hint
+
+If you are interested in one specific mode, e.g. only busses, you can use the [attribute-based styling](../../map/layer_style/smart_styling) to adjust the point color based on that desired column.
+
+:::
 
 ## 4. Technical details
 
-### Calculation
-
 Similar to the Public Transport Quality Classes <i>(German: ÖV Güteklassen)</i> , this indicator is calculated on the basis of **GTFS data** (see [Data Basis](../../data/data_basis)). Based on the selected day and time window, the average number of departures per hour (regardless of direction) is calculated.
 
-### Visualization 
-
-<span style={{color: "#FF0000"}}>TODO: description when style is applied.</span>
-
-## 5. Further readings
-
-(Links to tutorials)  
-Links to videos  
-Related docs  
-
-<span style={{color: "#FF0000"}}>TODO</span>
-
-## 6. Resources
+## 5. References
 
 Shkurti, Majk (2022). [Spatio-temporal public transport accessibility analysis and benchmarking in an interactive WebGIS](https://www.researchgate.net/publication/365790691_Spatio-temporal_public_transport_accessibility_analysis_and_benchmarking_in_an_interactive_WebGIS)
-
-<span style={{color: "#FF0000"}}>TODO:@EPajares to which text passages does this reference belong to? I would suggest that we either cite it in the text or move it to the section "Further readings".</span>

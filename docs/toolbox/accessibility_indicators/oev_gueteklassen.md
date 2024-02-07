@@ -49,15 +49,9 @@ Public Transport Quality Classes, also known as **ÖV-Güteklassen**, are a clas
 
 ![Reference Area Selection](/img/indicators/public_transport/gueteklassen/reference_area.png "Reference Area Selection")
 
+
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Define the <code>station config</code>.</div>
-</div>
-
-<span style={{color: "#FF0000"}}>TODO /NOTE: Step 5 is not implemented (yet). Remove it?</span> 
-
-<div class="step">
-  <div class="step-number">6</div>
   <div class="content">Click on <code>Run</code>. This starts the calculation of the Public Transport Quality Classes for the selected area.</div>
 </div>
 
@@ -68,11 +62,13 @@ Depending on the size of the selected area, the calculation might take some minu
 :::
 
 <div class="step">
-  <div class="step-number">7</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layer will be added to the map.</div>
+  <div class="step-number">6</div>
+  <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called "ÖV-Güteklassen", showing the Public Transport Quality Classes, and one layer called "ÖV-Güteklassen Stations" which provides all stations that were used for the calculation of this indicator.</div>
 </div>
 
 ![Result - Public Transport Quality Classes](/img/indicators/public_transport/gueteklassen/result.png "Result - Public Transport Quality Classes")
+
+<span style={{color: "#FF0000"}}>TODO: add isochrone starting points to image.</span>
 
 ## 4. Technical details
 
@@ -109,7 +105,7 @@ Sample projects where ÖV-Güteklassen were used:
 - [Calculation of public transport quality classes in Austria](https://plan4better.de/en/references/g%C3%BCteklassen-%C3%B6sterreich/)
 - [Calculation of public transport quality classes in Germany](https://plan4better.de/en/references/g%C3%BCteklassen-deutschland/)
 
-## 6. Resources
+## 6. References
 
 Bundesamt für Raumentwicklung ARE, 2022. [ÖV-Güteklassen Berechnungsmethodik ARE (Grundlagenbericht)](https://www.are.admin.ch/are/de/home/medien-und-publikationen/publikationen/verkehr/ov-guteklassen-berechnungsmethodik-are.html "Open Reference").
 

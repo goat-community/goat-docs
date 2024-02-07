@@ -84,7 +84,7 @@ The connectivity heatmap is visualized using a **hexagonal grid** with an edge l
 Links to videos  
 Related docs  
 
-## 6. Resources
+## 6. References
 
 bibliography of cited literature
 

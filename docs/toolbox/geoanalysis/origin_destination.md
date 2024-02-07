@@ -2,29 +2,34 @@
 sidebar_position: 4
 ---
 
-import thematicIcon from "/img/general/interface_overview/thematic_icon.webp"
+import thematicIcon from "/img/indicators/join/toolbox.webp"
 
 # Origin Destination
 
-**Origin-Destination** analysis is a fundamental tool used in various fields such as transport planning and urban planning to study **movement or flow** between different locations within a **defined area**.
+The **Origin-Destination** analysis is a fundamental tool used in various fields such as transport planning and urban planning to study **movements or flows between different locations** within a defined area.
 
 ## 1. Explanation
 
-Origin-destination is a tool for studying **movement patterns between locations**, providing insights into the **spatial interactions**. This analytical approach focuses on identifying the **starting points (origins)** and **end points (destinations)** of movements that may involve people, goods or vehicles. Such analysis is essential for understanding how and why movement occurs in different contexts, and assists in the assessment and planning of transport networks and urban infrastructure. It supports more informed decision-making by highlighting patterns and trends in spatial interactions, which can help improve the efficiency and sustainability of transport systems and urban layouts.
+The Origin-Destination (OD) tool is suited for studying **movement patterns between locations**, such as commuter flows, providing insights into the spatial interactions. This analytical process thereby visualizes the relationships between **starting points (origins)** and **end points (destinations)** by **connecting them with a straight line**. 
+
+Such analyses are helpful for understanding how and why movement occurs in different contexts, and assists in the assessment and planning of transport networks and urban infrastructure. It supports data-driven decision-making by **highlighting patterns and trends in spatial interactions**, which can help improve the efficiency and sustainability of transport systems and urban layouts.
+
+The example below shows an *Input Table (Matrix Layer)* and the resulting *Origin-Destination Lines* based on the *Zipcode Areas (Geometry Layer)*.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/geoanalysis/origin_destination/od_example.png').default} alt="polygon_aggregation" style={{ maxHeight: "600px", maxWidth: "800px", objectFit: "cover"}}/>
 </div> 
 
+<span style={{color: "#FF0000"}}>TODO: Adjust colors (use grey instead of black texts), currently it's hard to read in the dark mode. Heading "Origin Destination" can be removed. Can't find original file.</span>
 
 ## 2. Example use cases
 
-- Examine the residential areas (origin) and business districts (destinations) of commuters identifying busy routes and times of day.
-- Where do most passengers start and end their public transport journeys?
-- Examine the people flow from home areas to shopping locations.
+- Visualising the commuter flows between residential areas (origins) and workplaces (destinations).
+- Assessing the public transport passenger flows between different stations.
+- Analysing the flow of people from residential areas (origins)  to shopping locations (destinations).
 
 
-## 3. How to use the function?
+## 3. How to use the tool?
 
 ### Step-by-step guideline
 
@@ -40,17 +45,18 @@ Origin-destination is a tool for studying **movement patterns between locations*
   <div class="content">Under the <code>Geoanalysis</code> menu, click on <code>Origin Destination</code>.</div>
 </div>
 
-<span style={{color: "#FF0000"}}>TODO: add the image</span> 
-
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+  <img src={require('/img/geoanalysis/origin_destination/overview.png').default} alt="polygon_aggregation" style={{ maxHeight: "600px", maxWidth: "800px", objectFit: "cover"}}/>
+</div> 
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select your <code>Geometry Layer</code> (this layer should contain the geometry of origins and destinations).</div>
+  <div class="content">Select your <code>Geometry Layer</code> (this should be a feature layer contain the geometries of the origins and destinations and a column that can be used as an identifier to match the OD-connections with the geometries).</div>
 </div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select your <code>Origin Column</code> (the column that contains the origins in the origin destination matrix).</div>
+  <div class="content">Select the <code>Matrix Layer</code> (the table with the origin destination matrix).</div>
 </div>
 
 <div class="step">
@@ -78,6 +84,6 @@ further technical details that were too complex for the "explanation" section
 Links to videos  
 Related docs  
 
-## 6. Resources
+## 6. References
 
 bibliography of cited literature

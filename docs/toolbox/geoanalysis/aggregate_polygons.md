@@ -2,37 +2,32 @@
 sidebar_position: 3
 ---
 
-import thematicIcon from "/img/general/interface_overview/thematic_icon.webp"
+import thematicIcon from "/img/indicators/join/toolbox.webp"
 
 # Aggregate Polygons
 
-The **Aggregate Polygon** tool simplifies spatial data, improving the efficiency of datasets and providing clearer insights into **spatial patterns** and **relationships**.
+The **Aggregate Polygons** tool can be used to **aggregate data from one polygon layer to another** and therewith providing valuable insights into spatial patterns and relationships.
 
 ## 1. Explanation
 
-Aggregate Polygons, is the tool for combining or aggregating data from different spatial layers based on their **spatial relationships**. These spatial relationships are calculated using different **statistical approaches**. This technique is useful for analysing and visualising how different geographical entities **interact**, making them easier to analyse and interpret.
+With the Aggregate Polygons tool, data can be combined or aggregated between different polygon layers based on their **spatial relationships**. These spatial relationships are calculated using different **statistical approaches**. This technique is useful for analysing and visualising how different geographical entities **interact**, making them easier to analyse and interpret.
 
-The example below shows the geometry of the source layer remains the same, while its attribute table is merged with that of the aggregated layer.
+The example below shows the geometry of the *Source Layer* remains the same, while its attribute table will be enriched by aggregating information from the *Area of Aggregation*.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-  <img src={require('/img/geoanalysis/aggregation/polygon_aggregation.png').default} alt="polygon_aggregation" style={{ maxHeight: "600px", maxWidth: "800px", objectFit: "cover"}}/>
+  <img src={require('/img/geoanalysis/aggregate_polygons/polygon_aggregation.png').default} alt="Polygon Aggregation" style={{ maxHeight: "600px", maxWidth: "800px", objectFit: "cover"}}/>
 </div> 
 
 
 ## 2. Example use cases
 
-- How many buildings are there in Augsburg?
-- How many parks are there in a defined zipcode area?
-- What is the population density around Munich?
+- Visualizing the number of parks per city district.
+- Calculating the mean building size in an area.
+- Aggregating population numbers on a hexagonal grid and calculating population densities.
 
-## 3. How to use the function?
+## 3. How to use the tool?
 
-### Video Tutorial
-
-
-<span style={{color: "#FF0000"}}>TODO: create video tutorial </span>
-
-### Step-by-step guideline
+<span style={{color: "#FF0000"}}>TODO: Check again when implementation is finalised.</span>
 
 <div class="step">
   <div class="step-number">1</div>
@@ -44,7 +39,9 @@ The example below shows the geometry of the source layer remains the same, while
   <div class="content">Under the <code>Geoanalysis</code> menu, click on <code>Aggregate Polygons</code>.</div>
 </div>
 
-<span style={{color: "#FF0000"}}>TODO: add the image</span> 
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+  <img src={require('/img/geoanalysis/aggregate_polygons/overview.png').default} alt="Polygon Aggregation" style={{ maxHeight: "600px", maxWidth: "800px", objectFit: "cover"}}/>
+</div> 
 
 
 <div class="step">
@@ -89,25 +86,10 @@ To aggregate in the **Statistics** section, you have to select the method. Avail
   <div class="content">Click on <code>Run</code>.</div>
 </div>
 
+<span style={{color: "#FF0000"}}>TODO: Add a result image.</span>
+
 
 :::tip NOTE
 If you select H3 grid as the <code>Area Type</code>, you must define the **resolution** of the H3 grid.
 :::
 
-## 4. Technical details
-
-further technical details that were too complex for the "explanation" section
-
-## 5. Further readings
-
-(Links to tutorials)  
-Links to videos  
-Related docs  
-
-## 6. Resources
-
-bibliography of cited literature
-
-
-
-add general image for aggregations

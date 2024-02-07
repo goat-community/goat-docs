@@ -37,6 +37,6 @@ further technical details that were too complex for the "explanation" section
 Links to videos  
 Related docs  
 
-## 6. Resources
+## 6. References
 
 bibliography of cited literature

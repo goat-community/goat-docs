@@ -20,9 +20,9 @@ For what can this function be used?
 
 Among others, xxx can be used to accomplish the following tasks:
 
-## 3. How to use the function?
+## 3. How to use the tool?
 
-How to use the function? 
+How to use the tool? 
 Show as many samples as necessary to explain a feature
 
 ### Video Tutorial
@@ -39,6 +39,6 @@ further technical details that were too complex for the "explanation" section
 Links to videos  
 Related docs  
 
-## 6. Resources
+## 6. References
 
 bibliography of cited literature

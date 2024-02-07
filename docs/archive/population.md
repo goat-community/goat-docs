@@ -73,7 +73,7 @@ The population density heatmap is visualized using a **hexagonal grid** with an 
 
 Pajares E, Muñoz Nieto R, Meng L, Wulfhorst G. Population Disaggregation on the Building Level Based on Outdated Census Data. ISPRS International Journal of Geo-Information. 2021; 10(10):662. https://doi.org/10.3390/ijgi10100662 
 
-## 6. Resources
+## 6. References
 
 
 <span style={{color: "#FF0000"}}>TODO: bibliography of cited literature </span> 

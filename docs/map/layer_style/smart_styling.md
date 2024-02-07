@@ -2,11 +2,7 @@
 sidebar_position: 21
 ---
 
-
-
 # Attribute-based Styling
-
-<span style={{color: "#FF0000"}}>TODO: unify wording of docs & v2. In v2: "field" instead of "attribute".</span> 
 
 GOAT allows users to apply **attribute-based styling** techniques to enhance the visual appearance of elements (such as point, lines or polygons) on the map. This approach allows the visual representation to **reflect variations and patterns in the data**, making it easier to recognise and understand complex information spatially.
 

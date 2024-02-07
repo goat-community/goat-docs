@@ -23,7 +23,7 @@ The Aggregate Points tool is used to compile data within specified locations. It
 - Highlight areas with high traffic incidents or high public transport usage.
 - Compilation of point data on natural resources such as water bodies or mineral deposits to produce resource distribution maps.
 
-## 3. How to use the function?
+## 3. How to use the tool?
 
 ### Video Tutorial
 
@@ -93,6 +93,6 @@ further technical details that were too complex for the "explanation" section
 Links to videos  
 Related docs  
 
-## 6. Resources
+## 6. References
 
 bibliography of cited literature

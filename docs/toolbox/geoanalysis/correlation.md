@@ -5,6 +5,9 @@ sidebar_position: 4
 import thematicIcon from "/img/general/interface_overview/thematic_icon.webp"
 
 # Correlation
+
+<span style={{color: "#FF0000"}}>TODO: remove if not implemented.</span>
+
 COMPARISION OF 2 DATASETS > Corellation (case study: Accessibility and Population Density)
 
 idea: use Accessibility and Population Density as a case study (either here or in video / on dedicated section)
@@ -35,7 +38,7 @@ Among others, the Accessibility and Population Density Heatmap can be used to an
 - Where is potential for redensification?
 - Where is an improvement of accessibility to specific amenities or public transport stations needed?
 
-## 3. How to use the function?
+## 3. How to use the tool?
 
 ### Video Tutorial
 <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/754241640" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen data-uk-responsive width="700" height="400"></iframe>
@@ -103,7 +106,7 @@ The population density heatmap is visualized using a **hexagonal grid** with an 
 Links to videos  
 Related docs  
 
-## 6. Resources
+## 6. References
 
 <span style={{color: "#FF0000"}}>TODO:</span>  
 bibliography of cited literature

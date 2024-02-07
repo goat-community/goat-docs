@@ -26,6 +26,6 @@ Same as the cycling standard profile, but with an increased cycling speed of 23 
 <span style={{color: "#FF0000"}}>@EPajares & @majkshkurti: are there any further information we should add here? Is it still up-to-date or are we using R5 now for all modes?</span>   
 
 
-## Resources
+## References
 
 https://www.sciencedirect.com/science/article/pii/S0966692321001332?via%3Dihub#f0045

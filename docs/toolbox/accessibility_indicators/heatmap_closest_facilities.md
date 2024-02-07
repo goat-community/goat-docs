@@ -6,6 +6,8 @@ sidebar_position: 3
 
 INTRODUCTION / TEASER TEXT (2 sentences, can be used as tooltip in GOAT)
 
+<span style={{color: "#FF0000"}}>TODO: remove if not implemented.</span>
+
 ## 1. Explanation
 
 General explanation of the indicator (in easy words, reuse texts from tutorials)
@@ -37,6 +39,6 @@ further technical details that were too complex for the "explanation" section
 Links to videos  
 Related docs  
 
-## 6. Resources
+## 6. References
 
 bibliography of cited literature
