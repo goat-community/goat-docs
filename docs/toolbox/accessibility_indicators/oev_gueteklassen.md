@@ -11,7 +11,7 @@ The Public Transport Quality Classes <i>(German: ÖV Güteklassen)</i> show the 
 
 ## 1. Explanation
 
-Public transport quality classes, also known as **ÖV-Güteklassen**, are a classification system used to evaluate and categorise the **quality of public transport** services in a given area. The concept is used to plan and evaluate public transport services to ensure that they meet certain standards and effectively serve the needs of the population. The **quality classes** thereby range from **<span style={{color: "#199741"}}>A</span>** (very good offer) to **<span style={{color: "#E4696A"}}>F</span>** (very poor offer).
+Public Transport Quality Classes, also known as **ÖV-Güteklassen**, are a classification system used to evaluate and categorise the **quality of public transport** services in a given area. The concept is used to plan and evaluate public transport services to ensure that they meet certain standards and effectively serve the needs of the population. The **quality classes** thereby range from **<span style={{color: "#199741"}}>A</span>** (very good offer) to **<span style={{color: "#E4696A"}}>F</span>** (very poor offer).
 
 ![ÖV-Güteklassen in GOAT](/img/indicators/public_transport/gueteklassen/example.png "ÖV-Güteklassen in GOAT")
 
@@ -47,13 +47,14 @@ Public transport quality classes, also known as **ÖV-Güteklassen**, are a clas
   <div class="content">Select the <code>Reference Area Layer</code> for which you like to calculate the indicator. This can be any polygon feature layer.</div>
 </div>
 
+![Reference Area Selection](/img/indicators/public_transport/gueteklassen/reference_area.png "Reference Area Selection")
 
 <div class="step">
   <div class="step-number">5</div>
   <div class="content">Define the <code>station config</code>.</div>
 </div>
 
-<span style={{color: "#FF0000"}}>TODO /NOTE: Step 5 is not implemented yet. Remove it?</span> 
+<span style={{color: "#FF0000"}}>TODO /NOTE: Step 5 is not implemented (yet). Remove it?</span> 
 
 <div class="step">
   <div class="step-number">6</div>
@@ -66,42 +67,47 @@ Depending on the size of the selected area, the calculation might take some minu
 
 :::
 
+<div class="step">
+  <div class="step-number">7</div>
+  <div class="content">As soon as the calculation process is finished, the resulting layer will be added to the map.</div>
+</div>
+
+![Result - Public Transport Quality Classes](/img/indicators/public_transport/gueteklassen/result.png "Result - Public Transport Quality Classes")
+
 ## 4. Technical details
 
 ### Scientific Background
 
-The quality of accessibility is a **decisive indicator in public transport and spatial planning**. It can be used to highlight deficits in accessibility and to identify well-serviced locations as attractive areas for development. The approach of public transport quality classes <i>(German: ÖV Güteklassen)</i> is **methodologically superior** compared to common catchment areas. In 2011, the Swiss Federal Office for Spatial Development (ARE) used the indicator of <i>ÖV Güteklassen</i> in order to include the **attractiveness of public transport services** in the assessment of development quality; since then, these have been considered an important instrument in formal planning processes in Switzerland. In addition, the Swiss model served as an inspiration for application in Austria (e.g. Voralberg).  
+The quality and frequency of transit services is a **decisive indicator in public transport and spatial planning**. It can be used to highlight deficits in the public transport offer and to identify well-serviced locations as attractive areas for development. The approach of Public Transport Quality Classes <i>(German: ÖV Güteklassen)</i> is **methodologically superior** compared to common catchment areas. In 2011, the [Swiss Federal Office for Spatial Development (ARE)](https://www.are.admin.ch/are/de/home.html) started to use the indicator of <i>ÖV Güteklassen</i> in order to include the **attractiveness of public transport services** in the assessment of development quality; since then, these have been considered an important instrument in formal planning processes in Switzerland. In addition, the Swiss model served as an inspiration for application in Austria (e.g. Voralberg) and finds first application in Germany (e.g. by [KCW](https://plan4better.de/en/references/g%C3%BCteklassen-deutschland/) and [Agora Verkehrswende](https://plan4better.de/en/references/agora/)).  
 
 The institutionalization of the indicator in German-speaking countries, as well as the comprehensible and at the same time differentiated calculation methodology, are important advantages of the <i>ÖV Güteklassen</i>. 
 
 ### Calculation
 
-In the Swiss version of the indicator, the calculation of the quality classes is usually carried out for departures on weekdays between 6 AM and 8 PM. For the use in GOAT, the **calculation period** was made more **flexible** so that the indicator can be calculated for any day of the week and time of day. Furthermore, the indicator was adapted to the conditions in Germany. 
+In the Swiss version of the indicator, the calculation of the quality classes is usually carried out for departures on weekdays between 6 AM and 8 PM. For the use in GOAT, the **calculation period** was made more flexible so that the indicator can be calculated **for any day of the week and time of day**. Furthermore, the indicator was adapted to the conditions in Germany. 
 
-The calculations are carried out on the basis of **GTFS data**. First, the number of departures per public transport mode (metro, tram, bus and train) is dynamically calculated for each station. The sum of the departures is divided by two to calculate the frequency, in order to eliminate the outward and return directions. In the next step, the **average frequency** for the selected time interval is calculated. The higher-value service is selected as the **station type** in the case of service by several means of transport. For example, in the case of bus and train, this is the train. With the help of the table below, as well as the station type and the frequency, the station category can now be determined. 
+The calculations are carried out on the basis of **GTFS data** (see [Data Basis](../../data/data_basis)). First, the number of departures per public transport mode (train, metro, tram and bus) is dynamically calculated for each station. The sum of the departures is divided by two to calculate the frequency, in order to eliminate the outward and return directions. In the next step, the **average frequency** for the selected time interval is calculated. The higher-value service is selected as the **station type** in the case of service by several means of transport. For example, in the case of bus and train, this is the train. With the help of the table below, as well as the station type and the frequency, the station category can now be determined. 
 
 ![Classification of transport stops](/img/indicators/public_transport/gueteklassen/classification_stations_en.webp "Classification of transport stops")
 
 Subsequently, **buffers** of the size shown are calculated for the corresponding station categories. This creates several buffers that are merged. For overlapping buffers, the higher quality class is used. 
 
-![Determination of the "ÖV Güteklassen"](/img/indicators/public_transport/gueteklassen/determination_oev_gueteklasse_en.webp "Determination of public transport quality classes")
+![Determination of the "ÖV Güteklassen"](/img/indicators/public_transport/gueteklassen/determination_oev_gueteklasse_en.webp "Determination of Public Transport Quality Classes")
 
 ### Visualization
 
 The created buffers are visualized around the stations in the corresponding colours to highlight the **quality class** (<span style={{color: "#199741"}}>A</span>-<span style={{color: "#E4696A"}}>F</span>).
 
-
-
-
 ![Visualization of the ÖV-Güteklassen](/img/indicators/public_transport/gueteklassen/visualization.png "Visualization of the ÖV-Güteklassen")
+
+<span style={{color: "#FF0000"}}>TODO: redo screenshot when correct styling is applied and legend is added</span> 
 
 ## 5. Further readings
 
-<span style={{color: "#FF0000"}}>TODO</span> 
-
-(Links to tutorials)  
-Links to videos  
-Related docs  
+Sample projects where ÖV-Güteklassen were used:
+- [Accessibility analyses for the "Mobility Guarantee" and "Public Transport Atlas" projects](https://plan4better.de/en/references/agora/) 
+- [Calculation of public transport quality classes in Austria](https://plan4better.de/en/references/g%C3%BCteklassen-%C3%B6sterreich/)
+- [Calculation of public transport quality classes in Germany](https://plan4better.de/en/references/g%C3%BCteklassen-deutschland/)
 
 ## 6. Resources
 
@@ -112,3 +118,5 @@ Hiess, H., 2017. [Entwicklung eines Umsetzungskonzeptes für österreichweite Ö
 metron, 2017. [Bedienungsqualität und Erschließungsgüte im Öffentlichen Verkehr](https://vorarlberg.at/documents/302033/472144/1-+Schlussbericht.pdf/81c5f0d7-a0f0-54c7-e951-462cd5cf2831?t=1616147848364 "Open Reference").
 
 Shkurti, Majk, 2022. "Spatio-temporal public transport accessibility analysis and benchmarking in an interactive WebGIS". url: https://www.researchgate.net/publication/365790691_Spatio-temporal_public_transport_accessibility_analysis_and_benchmarking_in_an_interactive_WebGIS 
+
+<span style={{color: "#FF0000"}}>TODO:@EPajares to which text passages do these references belong to? I would suggest that we either cite them in the text or move them to the section "Further readings".</span>
