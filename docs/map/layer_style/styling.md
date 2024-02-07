@@ -45,6 +45,14 @@ Whenever you want to change a color, may it be **Fill Color** or **Stroke Color*
 
 <span style={{color: "#FF0000"}}>TODO: Update the gif (bug in RGB values)</span> 
 
+## Custom Marker
+
+For point layers, Custom Markers can be used for the visualization. Therefor, the marker can be selected from an **icon** list. The Marker Size can be adjusted via the slider.
+
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+  <img src={require('/img/styling/marker.gif').default} alt="fill-stroke-color" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+</div> 
+
 ## Width & Radius
 
 ### Stroke Width
