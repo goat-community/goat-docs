@@ -5,8 +5,6 @@ sidebar_position: 21
 
 # Filter
 
-<span style={{color: "#FF0000"}}>TODO: unify wording of docs & v2. In v2: "field" instead of "attribute".</span> 
-
 The **Filter** can be used to limit the data that is visible on the map. You can thereby either filter by **logic expression** (e.g. only vizualizing supermarkets with a certain name) or by **spatial expression** (e.g. only show points within a specific bounding box)
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -17,7 +15,7 @@ The **Filter** can be used to limit the data that is visible on the map. You can
 
 The **Filter** <img src={require('/img/filter/filter_icon.png').default} alt="filter icon" style={{ maxHeight: "30px", maxWidth: "30px"}}/> allows users to **display only certain elements** from a larger dataset based on specific criteria. This tool helps to visualize selected elements from a large geospatial dataset and therewith allows users to focus on the information that is most relevant to their needs.
 
-Logic and spatial expressions can be added based on the attribute fields of **point layers** and **polygon layers** with different types of data (`number` and `string`).
+Logic and spatial expressions can be added based on the attributes of **point layers** and **polygon layers** with different types of data (`number` and `string`).
 
 :::info
 
@@ -69,7 +67,7 @@ The **filter operation does not alter the original data**. But you can use the f
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Select the <code>Target Field</code>, i.e. the attribute which you like to use for the filtering</div>
+  <div class="content">Select the <code>Target Attribute</code>, i.e. the attribute which you like to use for the filtering</div>
 </div>
 
 <div class="step">
