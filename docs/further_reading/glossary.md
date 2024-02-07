@@ -53,7 +53,7 @@ An **indicator** is a mean to analyze a specific attribute or topic in a quantit
 ### Isochrone
 An **isochrone** or catchment area is an indicator that shows how far people can travel in a given time with a given speed from a selected location. Isochrones can be calculated for any mode such as walking, cycling, car or public transport. Depending on the selected mode, the corresponding routing network is used.  
 
-You can find further information on how we perform isochrone calculations in our [indicator documentation](docs\toolbox\indicators\catchments\isochrones.md "Isochrone documentation"). 
+You can find further information on how we perform isochrone calculations in our [indicator documentation](../toolbox/accessibility_indicators/catchments "Isochrone documentation"). 
 
 
 ### Land Use

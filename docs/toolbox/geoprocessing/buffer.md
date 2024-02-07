@@ -126,7 +126,7 @@ Note that to use ``Polygon Difference`` feature, you need to have the ``Polygon 
 
 :::tip Tip
 
-Want to style your buffers and print nice looking maps? See [Styling & Print](/docs/map/layer_design/styling.md).
+Want to style your buffers and print nice looking maps? See [Styling & Print](/docs/map/layer_design/styling).
 
 :::
 

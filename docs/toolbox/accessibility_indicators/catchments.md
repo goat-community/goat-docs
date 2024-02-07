@@ -205,7 +205,7 @@ Further information: [Routing/Car](/docs/routing/car.md)
 </div>
 
 :::tip Tip
-Want to style your catchment areas and create nice looking maps? See [Styling](/docs/map/layer_design/styling.md).
+Want to style your catchment areas and create nice looking maps? See [Styling](/docs/map/layer_design/styling).
 :::
 
 ## 4. Technical details
