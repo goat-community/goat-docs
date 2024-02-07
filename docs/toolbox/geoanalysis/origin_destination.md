@@ -74,16 +74,3 @@ The example below shows an *Input Table (Matrix Layer)* and the resulting *Origi
   <div class="content">Click on <code>Run</code>.</div>
 </div>
 
-## 4. Technical details
-
-further technical details that were too complex for the "explanation" section
-
-## 5. Further readings
-
-(Links to tutorials)  
-Links to videos  
-Related docs  
-
-## 6. References
-
-bibliography of cited literature
