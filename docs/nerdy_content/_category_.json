@@ -1,8 +1,8 @@
 {
-  "label": "Nerdy Content",
+  "label": "Technical Insights",
   "position": 18,
   "link": {
     "type": "generated-index",
-    "description": "TODO"
+    "description": "Here you can find technical insights into the software architecture of GOAT."
   }
 }
