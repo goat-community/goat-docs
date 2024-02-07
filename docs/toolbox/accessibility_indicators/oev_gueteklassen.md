@@ -15,7 +15,6 @@ Public Transport Quality Classes, also known as **ÖV-Güteklassen**, are a clas
 
 ![ÖV-Güteklassen in GOAT](/img/indicators/public_transport/gueteklassen/example.png "ÖV-Güteklassen in GOAT")
 
-<span style={{color: "#FF0000"}}>TODO: redo screenshot when correct styling is applied and legend is added</span> 
 
 ## 2. Example use cases
 
@@ -63,12 +62,12 @@ Depending on the size of the selected area, the calculation might take some minu
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called "ÖV-Güteklassen", showing the Public Transport Quality Classes, and one layer called "ÖV-Güteklassen Stations" which provides all stations that were used for the calculation of this indicator.</div>
+  <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called "ÖV-Güteklassen", showing the Public Transport Quality Classes, and one layer called "ÖV-Güteklassen Stations" which provides all stations that were used for the calculation of this indicator. The station points that are visualized in grey have a too low service frequency and thus do not contribute to any Public Transport Quality Class.</div>
 </div>
 
 ![Result - Public Transport Quality Classes](/img/indicators/public_transport/gueteklassen/result.png "Result - Public Transport Quality Classes")
 
-<span style={{color: "#FF0000"}}>TODO: add isochrone starting points to image.</span>
+<span style={{color: "#FF0000"}}>TODO: redo screenshot when layer order can be adjusted</span> 
 
 ## 4. Technical details
 
