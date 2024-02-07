@@ -8,7 +8,7 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "My Site",
-  tagline: "Dinosaurs are cool",
+  tagline: "GOATs are cool",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
