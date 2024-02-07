@@ -114,4 +114,3 @@ metron, 2017. [Bedienungsqualität und Erschließungsgüte im Öffentlichen Verk
 
 Shkurti, Majk, 2022. "Spatio-temporal public transport accessibility analysis and benchmarking in an interactive WebGIS". url: https://www.researchgate.net/publication/365790691_Spatio-temporal_public_transport_accessibility_analysis_and_benchmarking_in_an_interactive_WebGIS 
 
-<span style={{color: "#FF0000"}}>TODO:@EPajares to which text passages do these references belong to? I would suggest that we either cite them in the text or move them to the section "Further readings".</span>
