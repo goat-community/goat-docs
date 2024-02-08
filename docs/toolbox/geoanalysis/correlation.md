@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+sidebar_class_name: hidden
 ---
 
 import thematicIcon from "/img/general/interface_overview/thematic_icon.webp"
