@@ -5,7 +5,7 @@ sidebar_position: 21
 
 # Filter
 
-The **Filter** can be used to limit the data that is visible on the map. You can thereby either filter by **logic expression** (e.g. only vizualizing supermarkets with a certain name) or by **spatial expression** (e.g. only show points within a specific bounding box)
+The **Filter** can be used to limit the data that is visible on the map. You can thereby either filter by **logic expression** (e.g. only vizualizing supermarkets with a certain name) or by **spatial expression** (e.g. only show points within a specific bounding box).
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/filter/filter.gif').default} alt="filter general" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
