@@ -4,10 +4,7 @@ sidebar_position: 3
 
 # Datasets
 
-<span style={{color: "#FF0000"}}>TODO: Show how to filter the datasets
-How to create folders and move the dataset to different folders and organizations</span> 
-
-On the **Dataset** page, data can be **uploaded, managed and shared**. The page provides users with an organised view of their datasets, categorised by personal datasets, team datasets and datasets that are shared with the whole organization. Furthermore, datasets can be organized in **folders**, **filtered** and **sorted** based on alphabet, creation date or their last update. Projects can also be **deleted**, **downloaded** and their **metadata** edited. 
+On the **Datasets** page, data can be **uploaded, managed and shared**. The page provides users with an organised view of their datasets, categorised by personal datasets, team datasets and datasets that are shared with the whole organization. Furthermore, datasets can be organized in **folders**, **filtered** and **sorted** based on alphabet, creation date or their last update. Projects can also be **deleted**, **downloaded** and their **metadata** edited. 
 
 ## Upload data
 
