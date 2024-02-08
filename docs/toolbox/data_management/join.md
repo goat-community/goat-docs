@@ -86,11 +86,16 @@ In the **Statistics** section, the user can choose between several statistical o
 
 <div class="step">
   <div class="step-number">9</div>
-  <div class="content"> As the last step, click on <code>Run</code>, and the result will be both added to the project and to the Datasets in your project folder.</div>
+  <div class="content"> As the last step, click on <code>Run</code>, and the result layer "Join" will be both added to the project and to the Datasets in your project folder.</div>
 </div>
 
-<span style={{color: "#FF0000"}}>TODO: add result image</span>  
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/indicators/join/result.png').default} alt="target layer" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+</div> 
 
 
+:::tip Tip
 
+Want to adjust the appearance of the result layer? Check out the [attribute-based styling](../../map/layer_style/smart_styling).
 
+:::
