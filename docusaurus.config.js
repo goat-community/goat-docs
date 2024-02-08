@@ -56,10 +56,10 @@ const config = {
           lastVersion: "current",
           // includeCurrentVersion: false,
           versions: {
-            "docusaurus-tutorials": {
-              label: "docusaurus-tutorials",
-              path: "docusaurus-tutorials",
-            },
+            // "docusaurus-tutorials": {
+            //   label: "docusaurus-tutorials",
+            //   path: "docusaurus-tutorials",
+            // },
             //while working with this activate the code below, when finished comment it and create the push request
             current: {
               label: "2.0 - Beta",
