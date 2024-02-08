@@ -27,7 +27,6 @@ The example below shows the geometry of the *Source Layer* remains the same, whi
 
 ## 3. How to use the tool?
 
-<span style={{color: "#FF0000"}}>TODO: Check again when implementation is finalised.</span>
 
 <div class="step">
   <div class="step-number">1</div>
@@ -86,7 +85,6 @@ To aggregate in the **Statistics** section, you have to select the method. Avail
   <div class="content">Click on <code>Run</code>.</div>
 </div>
 
-<span style={{color: "#FF0000"}}>TODO: Add a result image.</span>
 
 
 :::tip NOTE

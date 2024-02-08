@@ -35,8 +35,6 @@ The Aggregate Points tool can be used to **analyse the characteristics of points
   <div class="content">Under the <code>Geoanalysis</code> menu, click on <code>Aggregate Points</code>.</div>
 </div>
 
-<span style={{color: "#FF0000"}}>TODO: update the image</span> 
-
 <img src={require('/img/geoanalysis/aggregation/agg_general.png').default} alt="aggregtion " style={{ maxHeight: "auto", maxWidth: "auto"}}/>
 
 <div class="step">
@@ -75,5 +73,3 @@ To aggregate in the **Statistics** section, you have to select the method. Avail
   <div class="step-number">7</div>
   <div class="content">Click on <code>Run</code>.</div>
 </div>
-
-<span style={{color: "#FF0000"}}>TODO: Add a result image.</span>
