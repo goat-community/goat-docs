@@ -84,11 +84,8 @@ The Heads and Tails method is used to deal with **datasets with a skewed distrib
 
 ### Custom Breaks (for <code>numbers</code>)
 
-There are several options you can customize the <code>number</code> data:
+The Custom Break classification is a data visualisation method used for **numerical data**. It allows users to define **custom breakpoints** or **thresholds** and therewith provides a tailored approach for context-specific visualisations. 
 
-The Custom Break method is a data visualisation method used for numerical data, such as quantities or numerical variables. It gives users control over how data is categorised and displayed by allowing them to define **custom breakpoints** or **thresholds**. It provides a tailored approach to data classification, enabling more **accurate** and **context-specific visualisations**. 
-
-<span style={{color: "#FF0000"}}>TODO: add image </span> 
 
 ### Custom Ordinal (for <code>strings</code>)
 
