@@ -1,5 +1,6 @@
 ---
 sidebar_position: 9
+sidebar_class_name: hidden
 ---
 
 # 15-Min-Score
