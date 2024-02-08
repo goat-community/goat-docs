@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-import thematicIcon from "/img/indicators/join/toolbox.webp"
+import thematicIcon from "/img/indicators/join/toolbox.webp";
 
 # Aggregate Polygons
 

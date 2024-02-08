@@ -1,15 +1,15 @@
 ---
 sidebar_position: 1
 ---
-import thematicIcon from "/img/general/interface_overview/thematic_icon.webp"
+import thematicIcon from "/img/indicators/join/toolbox.webp";
 
 # Aggregate Points
 
-The **Aggregate Points** tool compiles and summarizes the characteristics and **total count of points** within each specified boundary area, along with any provided statistical data.
+The **Aggregate Points** tool performs statistical analysis of points, e.g. **count, sum, min or max**, and aggregates the information on polygons.
 
 ## 1. Explanation
 
-The Aggregate Points tool is used to compile data within specified locations. It aggregates the characteristics of each point and uses **statistics** to calculate the total number of points within each **specified boundary** polygon. This tool is useful for analysing and understanding the distribution of points in a given spatial context.
+The Aggregate Points tool can be used to **analyse the characteristics of points within a given area**. It aggregates the information of the points and therewith allows to calculate the point **count**, the **sum** of point attributes or derive e.g. the **maximum** value of a certain point attribute within a polygon. As polygon layer, either a feature layer (e.g. city districts) or a hexagonal grid can be used. 
 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -19,9 +19,9 @@ The Aggregate Points tool is used to compile data within specified locations. It
 
 ## 2. Example use cases
 
-- Identify areas with a high concentration of public facilities such as parks, hospitals or schools.
-- Highlight areas with high traffic incidents or high public transport usage.
-- Compilation of point data on natural resources such as water bodies or mineral deposits to produce resource distribution maps.
+- Aggregating the population numbers on a hexagon grid.
+- Deriving the sum of traffic accidents within a city district.
+- Visualizing the average number of carsharing vehicles available per station on a district-level. 
 
 ## 3. How to use the tool?
 
