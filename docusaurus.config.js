@@ -22,7 +22,7 @@ const config = {
   organizationName: "facebook", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
 
-  onBrokenLinks: "throw",
+  onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -62,8 +62,8 @@ const config = {
             },
             //while working with this activate the code below, when finished comment it and create the push request
             current: {
-              label: "1.5",
-              path: "1.5",
+              label: "3.0",
+              path: "3.0",
             },
           },
         },
@@ -117,11 +117,11 @@ const config = {
           //   label: "Api",
           //   position: "left",
           // },
-          {
-            to: "/Storybook",
-            label: "Storybook",
-            position: "left",
-          },
+          // {
+          //   to: "/Storybook",
+          //   label: "Storybook",
+          //   position: "left",
+          // },
           {
             to: "https://plan4better.de/en/blog/",
             label: "Blog",
