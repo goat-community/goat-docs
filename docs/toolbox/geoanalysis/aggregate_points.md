@@ -25,13 +25,6 @@ The Aggregate Points tool is used to compile data within specified locations. It
 
 ## 3. How to use the tool?
 
-### Video Tutorial
-
-<span style={{color: "#FF0000"}}>TODO: create video tutorial </span>
-
-
-### Step-by-step guideline
-
 <div class="step">
   <div class="step-number">1</div>
   <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
