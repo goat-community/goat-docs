@@ -45,9 +45,9 @@ The example below shows an *Input Table (Matrix Layer)* and the resulting *Origi
   <div class="content">Under the <code>Geoanalysis</code> menu, click on <code>Origin Destination</code>.</div>
 </div>
 
-<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-  <img src={require('/img/geoanalysis/origin_destination/overview.png').default} alt="polygon_aggregation" style={{ maxHeight: "600px", maxWidth: "800px", objectFit: "cover"}}/>
-</div> 
+
+<img src={require('/img/geoanalysis/origin_destination/overview.png').default} alt="polygon_aggregation" style={{ maxHeight: "600px", maxWidth: "800px", objectFit: "cover"}}/>
+
 
 <div class="step">
   <div class="step-number">3</div>
