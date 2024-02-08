@@ -2,13 +2,13 @@
 sidebar_position: 1
 ---
 
-import thematicIcon from "/img/general/interface_overview/thematic_icon.webp"
+import thematicIcon from "/img/indicators/join/toolbox.webp"
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 # Buffer
 
-The buffer creates a **straight line circle** around a given starting **points, lines or polygons** to a specified distance. 
+The buffer creates a **circle** around given starting **points, lines or polygons** with a specified buffer distance. 
 
 
 ## 1. Explanation
@@ -16,23 +16,17 @@ The buffer creates a **straight line circle** around a given starting **points, 
 A **buffer** is a tool used to delineate the catchment area around a specific point, line or polygon illustrating the extent of influence or reach from that point. Users can define the ``distance`` of the buffer, thereby customising the radius of the area covered.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/geoprocessing/buffer/buffer_types.png').default} alt="buffer types" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>
+  <img src={require('/img/geoprocessing/buffer/buffer_types.png').default} alt="buffer types" style={{ maxHeight: "500px", maxWidth: "500px", objectFit: "cover"}}/>
 </div> 
 
 ## 2. Example use cases 
 
-- How many people live within a 500m distance from the train station? 
-- How many shops are accessible within a 1000m distance from a bus stop?
+- How many people live within a 500m buffer distance from the train station? 
+- How many shops are accessible within a 1000m buffer distance from a bus stop?
 
 
 ## 3. How to use the tool?
 
-### Video Tutorial
-
-<span style={{color: "#FF0000"}}>TODO: create video tutorial</span>
-
-
-### Step-by-step guideline
 
 <div class="step">
   <div class="step-number">1</div>
@@ -44,79 +38,114 @@ A **buffer** is a tool used to delineate the catchment area around a specific po
   <div class="content">Under the <code>Geoprocessing</code> menu, click on <code>Buffer</code>.</div>
 </div>
 
-
-<span style={{color: "#FF0000"}}>TODO: add general ss from buffer menu</span> 
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/geoprocessing/buffer/overview.png').default} alt="buffer types" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+</div> 
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select your Layer.</div>
+  <div class="content">Select the <code>Target Layer</code>, around which you like to create the buffer.</div>
 </div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Define the <code>maximum distance</code> (how far out from your points, lines, or shapes the buffer should extend) in meters.</div>
+  <div class="content">Define via the buffer <code>Distance</code> how many meters from your points, lines, or shapes the buffer should extend.</div>
 </div>
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Define the <code>distance step</code> (how thick each circle or shape around your point, line, or shape should be) in meters.</div>
+  <div class="content">Define in how many <code>Steps</code> the buffer should be divided.</div>
 </div>
 
 :::tip HINT
-If you want to improve your analysis on buffer, you can use **Polygon Union** and **Polygon Difference** tools.
-:::
+Depending on which geometric results you are aiming for, you can first select, if all geometries shall be combined (**Polygon Union**). This means, if e.g. a buffer is created around neighboring points, whether you like to have **single buffers** (**no union**) or **combined buffers** (**union**) as a result.
 
-<Tabs>
-  <TabItem value="polygonunion" label="Polygon Union" default className="tabItemBox">
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/geoprocessing/buffer/no_union_vs_union.png').default} alt="buffer types" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>
+</div> 
 
-#### Polygon Union
-The  ``Polygon Union`` tool creates separate buffers around specified start points, lines or polygons. GOAT allows users to create a **geometric union** of the buffers with all the touching buffer polygons. This tool is useful if you want to see the total area covered by all your buffers combined.
-
-<div class="step">
-  <div class="step-number">6</div>
-  <div class="content">Click on <code>Polygon Union</code>.</div>
-</div>
-
-<div class="step">
-  <div class="step-number">7</div>
-  <div class="content">Click on <code>Run</code>.</div>
-</div>
+In addition, if you decide for a Polygon Union, you can choose whether you like to have each buffer as a **filled polygon (no difference)** or if you like to apply a **geometric difference between each buffer step (difference)**.
 
 
-<div style={{ display: 'flex', flexDirection: 'column' }}>
-  <img src={require('/img/geoprocessing/buffer/polygon_union.png').default} alt="polygon union" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/geoprocessing/buffer/union_vs_union+difference.png').default} alt="buffer types" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>
 </div> 
 
 
-- The **union** operation combines multiple polygons into a single polygon that encompasses all the areas of the individual polygons. The irregularly shaped outline represents the area covered by the **buffers** when they are merged together.
+:::
 
+<Tabs>
+<TabItem value="nounion" label="No Union" default className="tabItemBox">
 
-  </TabItem>
-  <TabItem value="polygondifference" label="Polygon Difference" className="tabItemBox">
-
-#### Polygon Difference 
-The  ``Polygon Difference`` tool creates separate buffers around specified start points, lines or polygons. GOAT allows users to create a **geometric difference** of the buffers.
+#### No Union
+If you calculate buffers **without union**, GOAT will generate single buffers around each input geometry. 
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Click on <code>Polygon Difference</code>.</div>
+  <div class="content">Disable <code>Polygon Union</code>.</div>
 </div>
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Click on <code>Run</code>.</div>
+  <div class="content">Click on <code>Run</code>. This starts the calculation of the buffer. As soon as this task is accomplished, the resulting layer called "Buffer" will be added to your map.</div>
 </div>
+
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/geoprocessing/buffer/result_no_union.png').default} alt="polygon difference" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+</div> 
+
+</TabItem>
+
+  <TabItem value="polygonunion" label="Union" default className="tabItemBox">
+
+#### Polygon Union
+The  ``Polygon Union`` creates a **geometric union** of all steps of the buffer polygons. It **combines** multiple polygons into a single polygon that encompasses all the areas of the individual polygons, i.e. the buffer with the biggest extend also includes all buffer areas of the smaller extend. This approach is useful if you want to see the total area covered by all your buffer steps combined. 
+
+<div style={{ display: 'flex', flexDirection: 'column' }}>
+  <img src={require('/img/geoprocessing/buffer/polygon_union.png').default} alt="polygon union" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+</div> 
+
+
+<div class="step">
+  <div class="step-number">6</div>
+  <div class="content">Enable <code>Polygon Union</code>.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">7</div>
+  <div class="content">Click on <code>Run</code>. This starts the calculation of the buffer. As soon as this task is accomplished, the resulting layer called "Buffer" will be added to your map.</div>
+</div>
+
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/geoprocessing/buffer/result_union.png').default} alt="polygon difference" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+</div> 
+
+
+  </TabItem>
+  <TabItem value="polygondifference" label="Union + Difference " className="tabItemBox">
+
+#### Polygon Union + Polygon Difference 
+The  ``Polygon Difference`` operation creates a **geometric difference** of the buffers. It subtracts one polygon from another, resulting in polygon shapes where the **buffers do not overlap**.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/geoprocessing/buffer/polygon_difference.png').default} alt="polygon difference" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
+<div class="step">
+  <div class="step-number">6</div>
+  <div class="content">Enable <code>Polygon Difference</code>.</div>
+</div>
 
-- The **difference** operation subtracts one polygon from another. In this context, it represents subtracting one buffer zone from another, resulting in the areas where the **buffers do not overlap**.
+<div class="step">
+  <div class="step-number">7</div>
+  <div class="content">Click on <code>Run</code>. This starts the calculation of the buffer. As soon as this task is accomplished, the resulting layer called "Buffer" will be added to your map.</div>
+</div>
 
-:::tip NOTE
-Note that to use ``Polygon Difference`` feature, you need to have the ``Polygon Union`` feature turned on and it can be used only if the **maximum_distance/step_distance** (you defined while calculating buffer) ratio is lower than 20.
-:::
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/geoprocessing/buffer/result_union.png').default} alt="polygon difference" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+</div> 
+
+
 
   </TabItem>
 </Tabs>
@@ -126,25 +155,7 @@ Note that to use ``Polygon Difference`` feature, you need to have the ``Polygon 
 
 :::tip Tip
 
-Want to style your buffers and print nice looking maps? See [Styling & Print](/docs/map/layer_design/styling).
+Want to style your buffers and create nice looking maps? See [Styling](../../map/layer_style/smart_styling).
 
 :::
 
-
-
-## 4. Technical details
-
-<span style={{color: "#FF0000"}}>TODO: @EPajares & @majkshkurti are there any further technical details that should be mentioned here?</span>
-
-## 5. Further readings
-
-
-<span style={{color: "#FF0000"}}>TODO:</span> 
-(Links to tutorials)  
-Links to videos  
-Related docs  
-
-## 6. References
-
-**TODO:**
-bibliography of cited literature
