@@ -29,6 +29,13 @@ Within the GOAT framework, there are three different types of feature layers, to
 Table Layers refer to a **non-spatial dataset**, which differ from the geospatial layers due to its lack of geographic reference points. These datasets can be used for the overall analysis and data management process. Users can import table layers in widely-used formats such as **CSV** (Comma-Separated Values) and **XLSX** (Microsoft Excel Open XML Spreadsheet). 
 
 ## External Layers
+
+:::info coming soon
+
+We currently implement this functionality. 🧑🏻‍💻
+
+:::
+
 Unlike internal layers, which are stored and managed directly within GOAT, **External Layers** are sourced from third-party services. These layers primarily include [Imagery Layers](#1-imagery-layer) and [Vector Tile Layers](#2-vectortilelayer), each serving distinct purposes.
 
 ### 1. Imagery Layer
@@ -44,5 +51,4 @@ Consequently, the visual presentation of the map imagery, including elements suc
 ### 2. Vector Tile Layer
 **Vector Tile Layers** allow the integration of **MVT** (Mapbox Vector Tile) (e.g. mapbox://mapbox.mapbox-terrain-v2) into GOAT, allowing these efficient vector tiles to be used as static maps. 
 
-<span style={{color: "#FF0000"}}>TODO : show how you can add this from GOAT</span>
 
