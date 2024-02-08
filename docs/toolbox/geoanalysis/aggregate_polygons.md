@@ -15,7 +15,7 @@ With the Aggregate Polygons tool, data can be combined or aggregated between dif
 The example below shows the geometry of the *Source Layer* remains the same, while its attribute table will be enriched by aggregating information from the *Area of Aggregation*.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-  <img src={require('/img/geoanalysis/aggregate_polygons/polygon_aggregation.png').default} alt="Polygon Aggregation" style={{ maxHeight: "600px", maxWidth: "800px", objectFit: "cover"}}/>
+  <img src={require('/img/geoanalysis/aggregate_polygons/polygon_aggregation.png').default} alt="Polygon Aggregation" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 
@@ -39,9 +39,9 @@ The example below shows the geometry of the *Source Layer* remains the same, whi
   <div class="content">Under the <code>Geoanalysis</code> menu, click on <code>Aggregate Polygons</code>.</div>
 </div>
 
-<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-  <img src={require('/img/geoanalysis/aggregate_polygons/overview.png').default} alt="Polygon Aggregation" style={{ maxHeight: "600px", maxWidth: "800px", objectFit: "cover"}}/>
-</div> 
+
+<img src={require('/img/geoanalysis/aggregate_polygons/overview.png').default} alt="Polygon Aggregation" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+
 
 
 <div class="step">

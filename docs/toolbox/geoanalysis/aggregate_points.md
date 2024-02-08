@@ -76,16 +76,4 @@ To aggregate in the **Statistics** section, you have to select the method. Avail
   <div class="content">Click on <code>Run</code>.</div>
 </div>
 
-## 4. Technical details
-
-further technical details that were too complex for the "explanation" section
-
-## 5. Further readings
-
-(Links to tutorials)  
-Links to videos  
-Related docs  
-
-## 6. References
-
-bibliography of cited literature
+<span style={{color: "#FF0000"}}>TODO: Add a result image.</span>

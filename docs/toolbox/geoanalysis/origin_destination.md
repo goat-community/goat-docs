@@ -17,7 +17,7 @@ Such analyses are helpful for understanding how and why movement occurs in diffe
 The example below shows an *Input Table (Matrix Layer)* and the resulting *Origin-Destination Lines* based on the *Zipcode Areas (Geometry Layer)*.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-  <img src={require('/img/geoanalysis/origin_destination/od_example.png').default} alt="polygon_aggregation" style={{ maxHeight: "600px", maxWidth: "800px", objectFit: "cover"}}/>
+  <img src={require('/img/geoanalysis/origin_destination/od_example.png').default} alt="polygon_aggregation" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 
@@ -41,7 +41,7 @@ The example below shows an *Input Table (Matrix Layer)* and the resulting *Origi
 </div>
 
 
-<img src={require('/img/geoanalysis/origin_destination/overview.png').default} alt="polygon_aggregation" style={{ maxHeight: "600px", maxWidth: "800px", objectFit: "cover"}}/>
+<img src={require('/img/geoanalysis/origin_destination/overview.png').default} alt="polygon_aggregation" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
 
 <div class="step">
@@ -80,4 +80,4 @@ Depending on the complexity of the OD-matrix, the calculation might take some mi
   <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called <b>"Origin Destination Relations"</b>, showing the lines between the origins and destinations, and one layer called <b>"Origin Destination Points"</b> which provides all origins and destination points (for polygon geometries, the centroids are used).</div>
 </div>
 
-<img src={require('/img/geoanalysis/origin_destination/result.png').default} alt="results" style={{ maxHeight: "600px", maxWidth: "800px", objectFit: "cover"}}/>
+<img src={require('/img/geoanalysis/origin_destination/result.png').default} alt="results" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>

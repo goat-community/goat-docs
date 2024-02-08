@@ -38,9 +38,8 @@ A **buffer** is a tool used to delineate the catchment area around a specific po
   <div class="content">Under the <code>Geoprocessing</code> menu, click on <code>Buffer</code>.</div>
 </div>
 
-<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/geoprocessing/buffer/overview.png').default} alt="buffer types" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
-</div> 
+<img src={require('/img/geoprocessing/buffer/overview.png').default} alt="buffer types" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+
 
 <div class="step">
   <div class="step-number">3</div>
