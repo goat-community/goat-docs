@@ -73,8 +73,12 @@ Follow these steps to add a layer to the map:
   </TabItem>
   <TabItem value="Dataset External" label="Dataset External" className="tabItemBox">
 
+:::info coming soon
 
-<span style={{color: "#FF0000"}}>TODO : complete this section. </span> 
+We currently implement this functionality. 🧑🏻‍💻
+
+:::
+
 
   </TabItem>
 </Tabs>

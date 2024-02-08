@@ -151,55 +151,25 @@ const config = {
       footer: {
         links: [
           {
-            title: "Subscribe To Newsletter",
-            items: [
-              {
-                html: `
-                  <div>
-                    <input type="email" placeholder="Enter your email" class="input_subscription"/>
-                    <button class="subscription_button">Subscribe</button>
-                  </div>
-                `,
-              },
-            ],
-          },
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Software Architecture",
-                to: "/",
-              },
-              {
-                label: "Frontend",
-                to: "/",
-              },
-              {
-                label: "Data Preperation",
-                to: "/",
-              },
-            ],
-          },
-          {
             title: "Community",
             items: [
               {
-                label: "Linkedin",
+                label: "LinkedIn",
                 href: "https://www.linkedin.com/company/plan4better/",
               },
               {
-                label: "Github",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://github.com/goat-community/",
+                label: "GitHub",
+                href: "https://github.com/goat-community",
               },
             ],
           },
           {
             title: "More",
             items: [
+              {
+                label: "Plan4Better",
+                to: "https://plan4better.de/en/",
+              },
               {
                 label: "Blog",
                 to: "https://plan4better.de/en/blog/",

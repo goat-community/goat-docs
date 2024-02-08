@@ -1,12 +1,13 @@
 ---
 sidebar_position: 2
+sidebar_class_name: hidden
 ---
 
 import connectivityFormula from "/img/indicators/connectivity/formula_en.webp"
 
 # Connectivity
 
-<span style={{color: "#FF0000"}}> TODO. Still included in the new version??</span> 
+<span style={{color: "#FF0000"}}> TODO.</span> 
 
 The Connectivity Heatmap shows **how well the walking network is connected** on a hexagonal grid. It helps to detect network gaps across the city. 
 

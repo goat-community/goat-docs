@@ -1,12 +1,11 @@
 ---
-sidebar_position: 0
+sidebar_position: 2
+sidebar_class_name: hidden
 ---
 
 # Spatial Join
 
-@iremkapucuoglu this can be started.
-
-<span style={{color: "#FF0000"}}> TODO. Is this page still needed??</span> 
+<span style={{color: "#FF0000"}}> TODO</span> 
 
 INTRODUCTION / TEASER TEXT (2 sentences, can be used as tooltip in GOAT)
 

@@ -6,7 +6,7 @@ import thematicIcon from "/img/indicators/join/toolbox.webp"
 
 # Origin Destination
 
-The **Origin-Destination** analysis is a fundamental tool used in various fields such as transport planning and urban planning to study **movements or flows between different locations** within a defined area.
+The **Origin-Destination** analysis is used in various fields such as transport planning and urban planning to study **movements or flows between different locations**.
 
 ## 1. Explanation
 
@@ -20,7 +20,6 @@ The example below shows an *Input Table (Matrix Layer)* and the resulting *Origi
   <img src={require('/img/geoanalysis/origin_destination/od_example.png').default} alt="polygon_aggregation" style={{ maxHeight: "600px", maxWidth: "800px", objectFit: "cover"}}/>
 </div> 
 
-<span style={{color: "#FF0000"}}>TODO: Adjust colors (use grey instead of black texts), currently it's hard to read in the dark mode. Heading "Origin Destination" can be removed. Can't find original file.</span>
 
 ## 2. Example use cases
 
@@ -30,10 +29,6 @@ The example below shows an *Input Table (Matrix Layer)* and the resulting *Origi
 
 
 ## 3. How to use the tool?
-
-### Step-by-step guideline
-
-<span style={{color: "#FF0000"}}>TODO: check the steps </span> 
 
 <div class="step">
   <div class="step-number">1</div>
@@ -45,9 +40,9 @@ The example below shows an *Input Table (Matrix Layer)* and the resulting *Origi
   <div class="content">Under the <code>Geoanalysis</code> menu, click on <code>Origin Destination</code>.</div>
 </div>
 
-<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-  <img src={require('/img/geoanalysis/origin_destination/overview.png').default} alt="polygon_aggregation" style={{ maxHeight: "600px", maxWidth: "800px", objectFit: "cover"}}/>
-</div> 
+
+<img src={require('/img/geoanalysis/origin_destination/overview.png').default} alt="polygon_aggregation" style={{ maxHeight: "600px", maxWidth: "800px", objectFit: "cover"}}/>
+
 
 <div class="step">
   <div class="step-number">3</div>
@@ -56,7 +51,7 @@ The example below shows an *Input Table (Matrix Layer)* and the resulting *Origi
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the <code>Matrix Layer</code> (the table with the origin destination matrix).</div>
+  <div class="content">Select the <code>Matrix Layer</code> (the table with the origin-destination-matrix).</div>
 </div>
 
 <div class="step">
@@ -74,3 +69,15 @@ The example below shows an *Input Table (Matrix Layer)* and the resulting *Origi
   <div class="content">Click on <code>Run</code>.</div>
 </div>
 
+:::tip Hint
+
+Depending on the complexity of the OD-matrix, the calculation might take some minutes. The [status bar](../../workspace/home#status-bar) shows the current progress.
+
+:::
+
+<div class="step">
+  <div class="step-number">8</div>
+  <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called <b>"Origin Destination Relations"</b>, showing the lines between the origins and destinations, and one layer called <b>"Origin Destination Points"</b> which provides all origins and destination points (for polygon geometries, the centroids are used).</div>
+</div>
+
+<img src={require('/img/geoanalysis/origin_destination/result.png').default} alt="results" style={{ maxHeight: "600px", maxWidth: "800px", objectFit: "cover"}}/>

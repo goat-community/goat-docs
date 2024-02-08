@@ -44,9 +44,6 @@ The color palette provides several customization options. You can define your **
 
 In addition to the color palette, the **color scale** can be adjusted. The color scale is a **data classification method** that associates data values with a spectrum of colors. It converts a given data value within a given range (domain) into a corresponding color from a given color spectrum (range). GOAT provides six predefined color scale methods: [Quantile](#quantile), [Standard Deviation](#standard-deviation), [Equal Interval](#equal-interval), [Heads and Tails](#heads-and-tails), [Custom Breaks](#custom-breaks-for-number), [Custom Ordinal](#custom-order-for-string).
 
-<span style={{color: "#FF0000"}}>TODO: Update all the images below. Make them same color and use population or grid data. Choose the one better. Use white basemap for all the images here </span> 
-
-
 ### Quantile
 
 The Quantile classification, divides data into **groups with equal number of values in each class** based on their attribute values. This method is useful for analyzing and visualizing patterns in data and can help identify trends and patterns that may not be obvious easily. The fact that the data values are grouped in equal quantities within each class makes this approach **ideal for data that is linearly distributed**. Per default, the data is distributed into 7 classes. 
@@ -87,11 +84,8 @@ The Heads and Tails method is used to deal with **datasets with a skewed distrib
 
 ### Custom Breaks (for <code>numbers</code>)
 
-There are several options you can customize the <code>number</code> data:
+The Custom Break classification is a data visualisation method used for **numerical data**. It allows users to define **custom breakpoints** or **thresholds** and therewith provides a tailored approach for context-specific visualisations. 
 
-The Custom Break method is a data visualisation method used for numerical data, such as quantities or numerical variables. It gives users control over how data is categorised and displayed by allowing them to define **custom breakpoints** or **thresholds**. It provides a tailored approach to data classification, enabling more **accurate** and **context-specific visualisations**. 
-
-<span style={{color: "#FF0000"}}>TODO: add image </span> 
 
 ### Custom Ordinal (for <code>strings</code>)
 

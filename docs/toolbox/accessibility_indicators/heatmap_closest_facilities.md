@@ -1,12 +1,13 @@
 ---
 sidebar_position: 3
+sidebar_class_name: hidden
 ---
 
 # Heatmap - Closest Facilities
 
 INTRODUCTION / TEASER TEXT (2 sentences, can be used as tooltip in GOAT)
 
-<span style={{color: "#FF0000"}}>TODO: remove if not implemented.</span>
+<span style={{color: "#FF0000"}}>TODO</span>
 
 ## 1. Explanation
 

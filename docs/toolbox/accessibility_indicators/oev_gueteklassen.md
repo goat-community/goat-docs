@@ -62,12 +62,11 @@ Depending on the size of the selected area, the calculation might take some minu
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called "ÖV-Güteklassen", showing the Public Transport Quality Classes, and one layer called "ÖV-Güteklassen Stations" which provides all stations that were used for the calculation of this indicator. The station points that are visualized in grey have a too low service frequency and thus do not contribute to any Public Transport Quality Class.</div>
+  <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called <b>"ÖV-Güteklassen"</b>, showing the Public Transport Quality Classes, and one layer called <b>"ÖV-Güteklassen Stations"</b> which provides all stations that were used for the calculation of this indicator. The station points that are visualized in grey have a too low service frequency and thus do not contribute to any Public Transport Quality Class.</div>
 </div>
 
 ![Result - Public Transport Quality Classes](/img/indicators/public_transport/gueteklassen/result.png "Result - Public Transport Quality Classes")
 
-<span style={{color: "#FF0000"}}>TODO: redo screenshot when layer order can be adjusted</span> 
 
 ## 4. Technical details
 
@@ -87,7 +86,7 @@ The calculations are carried out on the basis of **GTFS data** (see [Data Basis]
 
 Subsequently, **buffers** of the size shown are calculated for the corresponding station categories. This creates several buffers that are merged. For overlapping buffers, the higher quality class is used. 
 
-![Determination of the "ÖV Güteklassen"](/img/indicators/public_transport/gueteklassen/determination_oev_gueteklasse_en.webp "Determination of Public Transport Quality Classes")
+![Determination of Public Transport Quality Classes](/img/indicators/public_transport/gueteklassen/determination_oev_gueteklasse_en.webp "Determination of Public Transport Quality Classes")
 
 ### Visualization
 
@@ -95,7 +94,6 @@ The created buffers are visualized around the stations in the corresponding colo
 
 ![Visualization of the ÖV-Güteklassen](/img/indicators/public_transport/gueteklassen/visualization.png "Visualization of the ÖV-Güteklassen")
 
-<span style={{color: "#FF0000"}}>TODO: redo screenshot when correct styling is applied and legend is added</span> 
 
 ## 5. Further readings
 

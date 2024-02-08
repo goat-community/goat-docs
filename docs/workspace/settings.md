@@ -1,7 +1,8 @@
 ---
 sidebar_position: 5
+sidebar_class_name: hidden
 ---
 
 # Settings
 
-<span style={{color: "#FF0000"}}>TODO: provide overview of this page. @iremkapucuoglu this can be done together with @AnaSasso. Where to find what? Explain different sections (see QGIS).</span>
+<span style={{color: "#FF0000"}}>TODO</span>
