@@ -50,6 +50,10 @@ html[data-theme='dark'] {
   color: #F8F7F3;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .subscription_button {
   background-color: #ffffff; 
   cursor: pointer;
