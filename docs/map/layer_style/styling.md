@@ -43,7 +43,6 @@ Whenever you want to change a color, may it be **Fill Color** or **Stroke Color*
   <img src={require('/img/styling/color_picker.gif').default} alt="fill-stroke-color" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
 </div> 
 
-<span style={{color: "#FF0000"}}>TODO: Update the gif (bug in RGB values)</span> 
 
 ## Custom Marker
 
