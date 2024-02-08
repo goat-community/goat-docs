@@ -1,5 +1,5 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
 ---
 
 import thematicIcon from "/img/indicators/join/toolbox.webp"
