@@ -1,7 +1,7 @@
 ---
 sidebar_position: 7
 ---
-import thematicIcon from "/img/indicators/join/toolbox.webp";
+import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 # Public Transport Trip Count
 
@@ -13,7 +13,7 @@ This indicator shows the **average number of public transport departures per hou
 
 This indicator serves as the foundation for the [ÖV Güteklassen](/docs/toolbox/accessibility_indicators/oev_gueteklassen.md), but can also be utilized on its own as a straightforward measure for public transport offer at a **station level**. It gives a summary of a station’s departures during a specific time window and day, providing a valuable overview of the public transport offer in a city. Thus, the indicator is often used in **weak point analyses of local transport plans** (see, among others, [Guideline for Local Transport Planning in Bavaria](https://www.demografie-leitfaden-bayern.de/index.html)).
 
-![Public Transport Trip Count](/img/indicators/public_transport/trip_count/sample.png "[Public Transport Trip Count")
+![Public Transport Trip Count](/img/toolbox/accessibility_indicators/trip_count/sample.png "[Public Transport Trip Count")
 
 
 ## 2. Example use cases
@@ -35,7 +35,7 @@ This indicator serves as the foundation for the [ÖV Güteklassen](/docs/toolbox
 </div>
 
 
-![Menu Overview for Public Transport Trip Count](/img/indicators/public_transport/trip_count/overview.png "[Menu Overview for Public Transport Trip Count")
+![Menu Overview for Public Transport Trip Count](/img/toolbox/accessibility_indicators/trip_count/overview.png "[Menu Overview for Public Transport Trip Count")
 
 <div class="step">
   <div class="step-number">3</div>
@@ -65,7 +65,7 @@ Depending on the size of the selected area, the calculation might take some minu
 </div>
 
 
-![Menu Overview for Public Transport Trip Count](/img/indicators/public_transport/trip_count/result.png "[Menu Overview for Public Transport Trip Count")
+![Menu Overview for Public Transport Trip Count](/img/toolbox/accessibility_indicators/trip_count/result.png "[Menu Overview for Public Transport Trip Count")
 
 <div class="step">
   <div class="step-number">7</div>
@@ -74,7 +74,7 @@ Depending on the size of the selected area, the calculation might take some minu
 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-  <img src={require('/img/indicators/public_transport/trip_count/details.png').default} alt="fill-stroke-color" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+  <img src={require('/img/toolbox/accessibility_indicators/trip_count/details.png').default} alt="fill-stroke-color" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
 </div> 
 
 

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 5
 ---
-import thematicIcon from "/img/indicators/join/toolbox.webp";
+import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 # Public Transport Quality Classes (ÖV Güteklassen)
 
@@ -13,7 +13,7 @@ The Public Transport Quality Classes <i>(German: ÖV Güteklassen)</i> show the 
 
 Public Transport Quality Classes, also known as **ÖV-Güteklassen**, are a classification system used to evaluate and categorise the **quality of public transport** services in a given area. The concept is used to plan and evaluate public transport services to ensure that they meet certain standards and effectively serve the needs of the population. The **quality classes** thereby range from **<span style={{color: "#199741"}}>A</span>** (very good offer) to **<span style={{color: "#E4696A"}}>F</span>** (very poor offer).
 
-![ÖV-Güteklassen in GOAT](/img/indicators/public_transport/gueteklassen/example.png "ÖV-Güteklassen in GOAT")
+![ÖV-Güteklassen in GOAT](/img/toolbox/accessibility_indicators/gueteklassen/example.png "ÖV-Güteklassen in GOAT")
 
 
 ## 2. Example use cases
@@ -34,7 +34,7 @@ Public Transport Quality Classes, also known as **ÖV-Güteklassen**, are a clas
   <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Public Transport Quality Classses (ÖV Güteklassen)</code>. This opens the setting menu.</div>
 </div>
 
-![Menu Overview for ÖV-Güteklassen](/img/indicators/public_transport/gueteklassen/overview.png "Menu Overview for ÖV-Güteklassen")
+![Menu Overview for ÖV-Güteklassen](/img/toolbox/accessibility_indicators/gueteklassen/overview.png "Menu Overview for ÖV-Güteklassen")
 
 <div class="step">
   <div class="step-number">3</div>
@@ -46,7 +46,7 @@ Public Transport Quality Classes, also known as **ÖV-Güteklassen**, are a clas
   <div class="content">Select the <code>Reference Area Layer</code> for which you like to calculate the indicator. This can be any polygon feature layer.</div>
 </div>
 
-![Reference Area Selection](/img/indicators/public_transport/gueteklassen/reference_area.png "Reference Area Selection")
+![Reference Area Selection](/img/toolbox/accessibility_indicators/gueteklassen/reference_area.png "Reference Area Selection")
 
 
 <div class="step">
@@ -65,7 +65,7 @@ Depending on the size of the selected area, the calculation might take some minu
   <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called <b>"ÖV-Güteklassen"</b>, showing the Public Transport Quality Classes, and one layer called <b>"ÖV-Güteklassen Stations"</b> which provides all stations that were used for the calculation of this indicator. The station points that are visualized in grey have a too low service frequency and thus do not contribute to any Public Transport Quality Class.</div>
 </div>
 
-![Result - Public Transport Quality Classes](/img/indicators/public_transport/gueteklassen/result.png "Result - Public Transport Quality Classes")
+![Result - Public Transport Quality Classes](/img/toolbox/accessibility_indicators/gueteklassen/result.png "Result - Public Transport Quality Classes")
 
 
 ## 4. Technical details
@@ -82,17 +82,17 @@ In the Swiss version of the indicator, the calculation of the quality classes is
 
 The calculations are carried out on the basis of **GTFS data** (see [Data Basis](../../data/data_basis)). First, the number of departures per public transport mode (train, metro, tram and bus) is dynamically calculated for each station. The sum of the departures is divided by two to calculate the frequency, in order to eliminate the outward and return directions. In the next step, the **average frequency** for the selected time interval is calculated. The higher-value service is selected as the **station type** in the case of service by several means of transport. For example, in the case of bus and train, this is the train. With the help of the table below, as well as the station type and the frequency, the station category can now be determined. 
 
-![Classification of transport stops](/img/indicators/public_transport/gueteklassen/classification_stations_en.webp "Classification of transport stops")
+![Classification of transport stops](/img/toolbox/accessibility_indicators/gueteklassen/classification_stations_en.webp "Classification of transport stops")
 
 Subsequently, **buffers** of the size shown are calculated for the corresponding station categories. This creates several buffers that are merged. For overlapping buffers, the higher quality class is used. 
 
-![Determination of Public Transport Quality Classes](/img/indicators/public_transport/gueteklassen/determination_oev_gueteklasse_en.webp "Determination of Public Transport Quality Classes")
+![Determination of Public Transport Quality Classes](/img/toolbox/accessibility_indicators/gueteklassen/determination_oev_gueteklasse_en.webp "Determination of Public Transport Quality Classes")
 
 ### Visualization
 
 The created buffers are visualized around the stations in the corresponding colours to highlight the **quality class** (<span style={{color: "#199741"}}>A</span>-<span style={{color: "#E4696A"}}>F</span>).
 
-![Visualization of the ÖV-Güteklassen](/img/indicators/public_transport/gueteklassen/visualization.png "Visualization of the ÖV-Güteklassen")
+![Visualization of the ÖV-Güteklassen](/img/toolbox/accessibility_indicators/gueteklassen/visualization.png "Visualization of the ÖV-Güteklassen")
 
 
 ## 5. Further readings

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-import thematicIcon from "/img/indicators/join/toolbox.webp";
+import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 # Aggregate Points
 
@@ -13,7 +13,7 @@ The Aggregate Points tool can be used to **analyse the characteristics of points
 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-  <img src={require('/img/geoanalysis/aggregation/point_aggregation.png').default} alt="point aggregation" style={{ maxHeight: "600px", maxWidth: "600px", objectFit: "cover"}}/>
+  <img src={require('/img/toolbox/geoanalysis/aggregate_points/point_aggregation.png').default} alt="point aggregation" style={{ maxHeight: "600px", maxWidth: "600px", objectFit: "cover"}}/>
 </div> 
 
 
@@ -35,7 +35,7 @@ The Aggregate Points tool can be used to **analyse the characteristics of points
   <div class="content">Under the <code>Geoanalysis</code> menu, click on <code>Aggregate Points</code>.</div>
 </div>
 
-<img src={require('/img/geoanalysis/aggregation/agg_general.png').default} alt="aggregtion " style={{ maxHeight: "auto", maxWidth: "auto"}}/>
+<img src={require('/img/toolbox/geoanalysis/aggregate_points/agg_general.png').default} alt="aggregtion " style={{ maxHeight: "auto", maxWidth: "auto"}}/>
 
 <div class="step">
   <div class="step-number">3</div>
