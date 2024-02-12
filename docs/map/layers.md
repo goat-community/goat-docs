@@ -12,7 +12,7 @@ import TabItem from '@theme/TabItem';
 On the **Layers** section, layers can be **added and organized**. Among others, the layer order can be adjusted, layers can be enabled/disabled, duplicated, renamed, downloaded and removed.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/map/layers/overview.png').default} alt="recent datasets" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/map/layers/overview.png').default} alt="Layer View in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 ## Add Layers
@@ -99,7 +99,7 @@ When visualizing several data sets at once, the layer order is crucial for crati
 When hovering over the left border of the layer in the layer list, an arrow symbol appears. By drag and drop, the layer can be moved. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-  <img src={require('/img/map/layers/layer_order.gif').default} alt="color_palette" style={{ maxHeight: "600px", maxWidth: "600px", objectFit: "cover"}}/>
+  <img src={require('/img/map/layers/layer_order.gif').default} alt="Layer Order" style={{ maxHeight: "600px", maxWidth: "600px", objectFit: "cover"}}/>
 </div> 
 
 ### Show / Hide Layers
@@ -107,14 +107,14 @@ When hovering over the left border of the layer in the layer list, an arrow symb
 To temporarily **hide** a layer from the map view, click the eye icon for that layer in the layer list. Clicking the eye again will make the layer **visible** again.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-  <img src={require('/img/map/layers/hide_layers.gif').default} alt="color_palette" style={{ maxHeight: "600px", maxWidth: "600px", objectFit: "cover"}}/>
+  <img src={require('/img/map/layers/hide_layers.gif').default} alt="Hide Layer" style={{ maxHeight: "600px", maxWidth: "600px", objectFit: "cover"}}/>
 </div> 
 
 ### Options
 
-By clicking on <img src={require('/img/filter/3dots.png').default} alt="options_icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> you have further options to manage and organize the selected layer.
+By clicking on <img src={require('/img/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> you have further options to manage and organize the selected layer.
 
-<img src={require('/img/map/layers/options.png').default} alt="layer_options" style={{ maxHeight: "250px", maxWidth: "250px", objectFit: "cover"}}/> 
+<img src={require('/img/map/layers/options.png').default} alt="Layer Options" style={{ maxHeight: "250px", maxWidth: "250px", objectFit: "cover"}}/> 
 
 
 :::tip tip

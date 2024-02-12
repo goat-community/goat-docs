@@ -7,7 +7,7 @@ sidebar_position: 2
 On the **Projects** page, projects can be **created, managed and shared**. The page provides users with an organised view of their projects, categorised by personal projects, team projects and projects that are shared with the whole organization. Furthermore, projects can be organized in **folders**, **filtered** and **sorted** based on alphabet, creation date or their last update. Projects can also be **deleted** and their **metadata** edited. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-  <img src={require('/img/home/projects/projects_general.png').default} alt="projects page" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/home/projects/projects_general.png').default} alt="Projects Page in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 
@@ -37,4 +37,4 @@ Follow these steps to add a new project to your GOAT workspace:
 
 ## Managing projects
 By clicking on the **three dots**, you can view and edit the metadata of projects, move a project into another folder, or share projects with other people.
-<img src={require('/img/home/projects/options.gif').default} alt="options" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+<img src={require('/img/home/projects/options.gif').default} alt="Options" style={{ maxHeight: "300px", maxWidth: "300px"}}/>

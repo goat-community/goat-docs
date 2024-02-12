@@ -16,7 +16,7 @@ The buffer creates a **circle** around given starting **points, lines or polygon
 A **buffer** is a tool used to delineate the catchment area around a specific point, line or polygon illustrating the extent of influence or reach from that point. Users can define the ``distance`` of the buffer, thereby customising the radius of the area covered.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/geoprocessing/buffer/buffer_types.png').default} alt="buffer types" style={{ maxHeight: "500px", maxWidth: "500px", objectFit: "cover"}}/>
+  <img src={require('/img/geoprocessing/buffer/buffer_types.png').default} alt="Buffer Types" style={{ maxHeight: "500px", maxWidth: "500px", objectFit: "cover"}}/>
 </div> 
 
 ## 2. Example use cases 
@@ -38,7 +38,7 @@ A **buffer** is a tool used to delineate the catchment area around a specific po
   <div class="content">Under the <code>Geoprocessing</code> menu, click on <code>Buffer</code>.</div>
 </div>
 
-<img src={require('/img/geoprocessing/buffer/overview.png').default} alt="buffer types" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+<img src={require('/img/geoprocessing/buffer/overview.png').default} alt="Buffer Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
 
 <div class="step">
@@ -60,14 +60,14 @@ A **buffer** is a tool used to delineate the catchment area around a specific po
 Depending on which geometric results you are aiming for, you can first select, if all geometries shall be combined (**Polygon Union**). This means, if e.g. a buffer is created around neighboring points, whether you like to have **single buffers** (**no union**) or **combined buffers** (**union**) as a result.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/geoprocessing/buffer/no_union_vs_union.png').default} alt="buffer types" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>
+  <img src={require('/img/geoprocessing/buffer/no_union_vs_union.png').default} alt="Buffer Union-No union Comparison" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>
 </div> 
 
 In addition, if you decide for a Polygon Union, you can choose whether you like to have each buffer as a **filled polygon (no difference)** or if you like to apply a **geometric difference between each buffer step (difference)**.
 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/geoprocessing/buffer/union_vs_union+difference.png').default} alt="buffer types" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>
+  <img src={require('/img/geoprocessing/buffer/union_vs_union+difference.png').default} alt="Buffer Union-Buffer Difference Comparison" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>
 </div> 
 
 
@@ -90,7 +90,7 @@ If you calculate buffers **without union**, GOAT will generate single buffers ar
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/geoprocessing/buffer/result_no_union.png').default} alt="polygon difference" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/geoprocessing/buffer/result_no_union.png').default} alt="No union Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 </TabItem>
@@ -101,7 +101,7 @@ If you calculate buffers **without union**, GOAT will generate single buffers ar
 The  ``Polygon Union`` creates a **geometric union** of all steps of the buffer polygons. It **combines** multiple polygons into a single polygon that encompasses all the areas of the individual polygons, i.e. the buffer with the biggest extend also includes all buffer areas of the smaller extend. This approach is useful if you want to see the total area covered by all your buffer steps combined. 
 
 <div style={{ display: 'flex', flexDirection: 'column' }}>
-  <img src={require('/img/geoprocessing/buffer/polygon_union.png').default} alt="polygon union" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/geoprocessing/buffer/polygon_union.png').default} alt="Polygon Union in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 
@@ -116,7 +116,7 @@ The  ``Polygon Union`` creates a **geometric union** of all steps of the buffer 
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/geoprocessing/buffer/result_union.png').default} alt="polygon difference" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/geoprocessing/buffer/result_union.png').default} alt="Polygon Union Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 
@@ -127,7 +127,7 @@ The  ``Polygon Union`` creates a **geometric union** of all steps of the buffer 
 The  ``Polygon Difference`` operation creates a **geometric difference** of the buffers. It subtracts one polygon from another, resulting in polygon shapes where the **buffers do not overlap**.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/geoprocessing/buffer/polygon_difference.png').default} alt="polygon difference" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/geoprocessing/buffer/polygon_difference.png').default} alt="Polygon Union+ Polygon Difference Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 <div class="step">
@@ -141,7 +141,7 @@ The  ``Polygon Difference`` operation creates a **geometric difference** of the 
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/geoprocessing/buffer/result_union.png').default} alt="polygon difference" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/geoprocessing/buffer/result_union.png').default} alt="Polygon Difference Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 
