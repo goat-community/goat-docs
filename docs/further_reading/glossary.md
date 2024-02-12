@@ -18,7 +18,7 @@ An **accessibility instrument** is a tool used to calculate and analyze the acce
 **Active mobility** refers to the use of human-powered modes of transport, such as walking, and cycling. It is an important part of sustainable transport as it reduces car dependency and is emission-free. Active mobility also has many health benefits, such as reducing the risk of obesity and cardiovascular disease. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/general/glossary/active_mobility_freepik.webp').default} alt="Active Mobility" style={{ mixBlendMode: 'multiply'}}/>
+  <img src={require('/img/literature/glossary/active_mobility_freepik.webp').default} alt="Active Mobility" style={{ mixBlendMode: 'multiply'}}/>
   <p style={{ textAlign: 'center' }}>Image: Designed by pch.vector / <a href="http://www.freepik.com">Freepik</a></p>
 </div>
 
@@ -72,7 +72,7 @@ You can find further information on how we perform isochrone calculations in our
 **Micromobility** is a growing trend in urban transportation, involving small, lightweight vehicles like electric scooters and skateboards. These compact modes of transport offer convenient solutions for short-distance travel. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/general/glossary/micromobility_freepik.webp').default} 
+  <img src={require('/img/literature/glossary/micromobility_freepik.webp').default} 
   alt="Micromobility" style={{ width: "600px", height: "300px", mixBlendMode: 'multiply'}} />
   <p style={{ textAlign: 'center' }}>Image: Designed by pch.vector / <a href="http://www.freepik.com">Freepik</a></p>
 </div>
