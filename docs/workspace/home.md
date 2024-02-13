@@ -9,7 +9,9 @@ When you log in to GOAT, you will arrive at the **Home** page. From here, you ca
 Interface Overview:
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+
   <img src={require('/img/home/overview.png').default} alt="Home Interface Overview in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+
 </div>   
 
 
@@ -25,11 +27,14 @@ The list below explains the navigation toolbar in the Workspace.
 | <img src={require('/img/home/settings_n.png').default} alt="settings" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | The page where you can edit your profile and preferences settings |
 
 
+
 ### Recent Projects
 Here you can see your latest projects and when they were last updated. You can create a new project by clicking on the plus icon and access the **[Projects](../workspace/projects)** page by clicking on the `See All` button. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+
   <img src={require('/img/home/recent_projects.png').default} alt="Recent Projects" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+
 </div> 
 
 
@@ -37,7 +42,9 @@ Here you can see your latest projects and when they were last updated. You can c
 Here you can see your latest datasets and when they were last updated. You can add a new dataset by clicking on the plus icon and access the **[Datasets](../workspace/datasets)** page by clicking on the `See All` button.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+
   <img src={require('/img/home/recent_datasets.png').default} alt="Recent Datasets" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+
 </div> 
 
 
@@ -45,13 +52,17 @@ Here you can see your latest datasets and when they were last updated. You can a
 Here you can see the latest blog posts and further materials that might be of interest for you. You can click on the `Visit Blog` button to see all [blog posts](https://plan4better.de/en/blog/).
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+
   <img src={require('/img/home/explore.png').default} alt="Explore" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+
 </div> 
 
 ### User Icon 
 By clicking on the user icon, you can see your name, your organization and the `Logout`  button.
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+
   <img src={require('/img/home/user_icon.png').default} alt="User Icon" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+
 </div> 
 
 
@@ -59,6 +70,8 @@ By clicking on the user icon, you can see your name, your organization and the `
 When you click on the Status Bar in the upper right corner of the Home page, you will see the status of your tasks in GOAT. *Tasks* are operations like data upload or geoanalysis.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+
   <img src={require('/img/home/status_bar.png').default} alt="Status Bar" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>
+
 </div> 
 

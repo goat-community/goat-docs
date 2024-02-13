@@ -8,10 +8,13 @@ sidebar_position: 21
 The **Filter** can be used to limit the data that is visible on the map. You can thereby either filter by **logic expression** (e.g. only vizualizing supermarkets with a certain name) or by **spatial expression** (e.g. only show points within a specific bounding box).
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+
   <img src={require('/img/filter/filter.gif').default} alt="Filter tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+
 </div> 
 
 ## 1. Explanation
+
 
 The **Filter** <img src={require('/img/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "30px", maxWidth: "30px"}}/> allows users to **display only certain elements** from a larger dataset based on specific criteria. This tool helps to visualize selected elements from a large geospatial dataset and therewith allows users to focus on the information that is most relevant to their needs.
 
@@ -42,11 +45,13 @@ The **filter operation does not alter the original data**. But you can use the f
 
 <div class="step">
   <div class="step-number">2</div>
+
   <div class="content">Click on <code>Filter</code> <img src={require('/img/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "30px", maxWidth: "30px"}}/>. </div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/filter/filter_general.png').default} alt="Filter tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+
 </div> 
 <p></p>
 <div class="step">
@@ -106,7 +111,9 @@ For the expressions **"includes"** and **"excludes"**, multiple values can be se
 
 If you like, you can **combine multiple filters** for multi expression filtering. Therefore, simply repeat the Steps 4-8 above for each additional expression. In the field <code>Logic Operator</code>, you can choose between the combination logics **AND** and **OR**. 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+
   <img src={require('/img/filter/logic_operators.png').default} alt="Logic Operators" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+
 </div> 
 
 When choosing **AND**, only those elements will be shown for which all filter expressions are true. When choosing **OR**, elements will be shown as soon as one of the filter expressions is true.
@@ -118,16 +125,20 @@ Multi expression filtering should be applied carefully and logically to achieve 
 
 ### Delete Expressions and Filters
 
+
 You can either **remove single expressions** from the filter by clicking on the three dots <img src={require('/img/filter/3dots.png').default} alt="Options" style={{ maxHeight: "40px", maxWidth: "40px"}}/> next to the expression and then click on `Delete`.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/filter/delete_expression.png').default} alt="Delete" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+
 </div> 
 
 Or you can **remove the whole filter** by clicking on `Clear Expression` on the bottom of the Filter menu. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+
   <img src={require('/img/filter/clear_expression.png').default} alt="Clear Expressions" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+
 </div> 
 
 

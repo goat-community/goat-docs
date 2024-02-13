@@ -18,7 +18,7 @@ An **accessibility instrument** is a tool used to calculate and analyze the acce
 **Active mobility** refers to the use of human-powered modes of transport, such as walking, and cycling. It is an important part of sustainable transport as it reduces car dependency and is emission-free. Active mobility also has many health benefits, such as reducing the risk of obesity and cardiovascular disease. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/general/glossary/active_mobility_freepik.webp').default} alt="Active Mobility" style={{ mixBlendMode: 'multiply'}}/>
+  <img src={require('/img/literature/glossary/active_mobility_freepik.webp').default} alt="Active Mobility" style={{ mixBlendMode: 'multiply'}}/>
   <p style={{ textAlign: 'center' }}>Image: Designed by pch.vector / <a href="http://www.freepik.com">Freepik</a></p>
 </div>
 
@@ -33,14 +33,13 @@ Connectivity has a direct impact on accessibility, as it is decisive for the tra
 
 ### H3 Grid
 
-The **H3 grid** <img src="https://plan4better.de/images/docs/technical_documentation/glossary/H3_grid_logo.webp" width="1000px" alt="H3 grid logo" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/> 
+The **H3 grid** <img src={require('/img/literature/glossary/H3_grid_logo.webp').default} width="1000px" alt="H3 grid logo" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/> 
 is a geospatial indexing system by [Uber Technologies](https://investor.uber.com/home/default.aspx "About Uber Technologies") that partitions the Earth's surface into a hierarchical grid of hexagonal cells for more efficient and accurate representation and analysis of geospatial data. It uses a hexagonal tiling approach based on an icosahedron, creating a hierarchical structure with multiple levels of resolution. The hexagonal shape allows for equidistant and consistent spatial representation, with different resolutions. The resolution 10 (approx. 75m edge length) is used in GOAT for computing travel-times and resolution 9 (approx. 200m edge length) or higher is used for visualization of heatmaps. Values are aggregated from the higher to lower resolution by computing the mean. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src="https://plan4better.de/images/docs/technical_documentation/glossary/H3_grid.webp"  alt="H3 Grid" style={{ width: "600px", height: "200px", objectFit: "cover", mixBlendMode: 'multiply'}}/>
+  <img src={require('/img/literature/glossary/H3_grid.webp').default}  alt="H3 Grid" style={{ width: "600px", height: "200px", objectFit: "cover", mixBlendMode: 'multiply'}}/>
   <p style={{ textAlign: 'center' }}>Image: <a href="https://www.uber.com/en-TR/blog/h3/">UBER</a></p>
 </div>
-
 
 ### Heatmap
 A **heatmap** is a graphical visualization form that uses different colors to indicate the different values of a dataset. This allows for a quick understanding of the data presented. 
@@ -60,7 +59,7 @@ You can find further information on how we perform isochrone calculations in our
 **Land use** is the categorization and management of land according to its functional role within a specific area. This includes a range of purposes such as residential, commercial, industrial, and natural or conservation uses. Additionally, land use incorporates aspects of urban planning and environmental management, as the manner in which land is utilized significantly influences factors like population density and the distribution of destinations. Consequently, land use has a direct and substantial impact on accessibility, affecting the availability of services, transport connectivity, and liveability of an area.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src="https://plan4better.de/images/docs/technical_documentation/glossary/landuse.webp"  alt="Landuse" style={{ width: "350px", height: "300px", objectFit: "cover"}}/>
+  <img src={require('/img/literature/glossary/landuse.webp').default}  alt="Landuse" style={{ width: "350px", height: "300px", objectFit: "cover"}}/>
 <p style={{ textAlign: 'center' }}>Image: <a href="https://accelerator.chathamhouse.org/article/land-use-challenges">Chatham House Sustainability Accelerator</a></p>
 </div>
 
@@ -72,14 +71,13 @@ You can find further information on how we perform isochrone calculations in our
 **Micromobility** is a growing trend in urban transportation, involving small, lightweight vehicles like electric scooters and skateboards. These compact modes of transport offer convenient solutions for short-distance travel. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/general/glossary/micromobility_freepik.webp').default} 
+  <img src={require('/img/literature/glossary/micromobility_freepik.webp').default} 
   alt="Micromobility" style={{ width: "600px", height: "300px", mixBlendMode: 'multiply'}} />
   <p style={{ textAlign: 'center' }}>Image: Designed by pch.vector / <a href="http://www.freepik.com">Freepik</a></p>
 </div>
 
 ### Open Source 
-**Open source** <img src="https://plan4better.de/images/docs/technical_documentation/glossary/open_source.webp" width="1000px" alt="opensource" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/> 
-refers to software or other products that are made available to the public with their source code freely accessible and modifiable. This allows individuals and organizations to modify and improve the product as needed, without restrictions on use or distribution. 
+**Open source** <img src={require('/img/literature/glossary/open_source.webp').default} width="1000px" alt="opensource" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/> refers to software or other products that are made available to the public with their source code freely accessible and modifiable. This allows individuals and organizations to modify and improve the product as needed, without restrictions on use or distribution. 
 
 ### Planning Support System (PSS)
 A **planning support system** is a digital tool used to support the planning and decision-making process for urban and regional development. It uses data and models to provide information on various aspects of planning, such as land use, transportation, and environmental impact. A PPS allows planners to explore different scenarios and evaluate the potential outcomes of their decisions. 
@@ -95,12 +93,10 @@ In GIS, quantile classification is often used to create choropleth maps, which a
 The quantile classification can be used for [attribute-based styling](../../map/layer_style/smart_styling) in GOAT. 
 
 ### Routing 
-**Routing** <img src="https://plan4better.de/images/docs/technical_documentation/glossary/routing_logo.webp" width="1000px" alt="routing" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/> 
-refers to the process of finding the fastest or shortest path from one location to another. This is commonly used in transportation planning and navigation systems to help people get from point A to point B but is also crucial to accessibility analysis.
+**Routing** <img src={require('/img/literature/glossary/routing_logo.webp').default} width="1000px" alt="routing" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/> refers to the process of finding the fastest or shortest path from one location to another. This is commonly used in transportation planning and navigation systems to help people get from point A to point B but is also crucial to accessibility analysis.
 
 ### Sustainability  
-**Sustainability** <img src="https://plan4better.de/images/docs/technical_documentation/glossary/sustainability.webp" width="1000px" alt="sustainability" style={{width: "100px", height: "200px", maxHeight: "50px", maxWidth: "100px", objectFit: "cover"}}/> 
-refers to meeting the needs of the present without compromising the ability of future generations to meet their own needs. In the context of urban and regional development, sustainability involves balancing economic, social, and environmental factors to create livable and resilient communities. This includes reducing carbon emissions, promoting active mobility, and preserving natural resources. 
+**Sustainability** <img src={require('/img/literature/glossary/sustainability.webp').default} width="1000px" alt="sustainability" style={{width: "100px", height: "200px", maxHeight: "50px", maxWidth: "100px", objectFit: "cover"}}/> refers to meeting the needs of the present without compromising the ability of future generations to meet their own needs. In the context of urban and regional development, sustainability involves balancing economic, social, and environmental factors to create livable and resilient communities. This includes reducing carbon emissions, promoting active mobility, and preserving natural resources. 
 
 ### Transport Mode
 **Transport mode** refers to the type of transportation used for a particular trip or journey. This can include modes such as transit (bus, train, subway), cycling (pedelec, bike), walking, and driving. The choice of transport mode can have a significant impact on factors such as travel time, cost, and environmental impact. 
