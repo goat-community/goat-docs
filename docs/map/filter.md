@@ -9,14 +9,14 @@ The **Filter** can be used to limit the data that is visible on the map. You can
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
-  <img src={require('/img/filter/filter.gif').default} alt="Filter tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/map/filter/filter.gif').default} alt="Filter tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
 </div> 
 
 ## 1. Explanation
 
 
-The **Filter** <img src={require('/img/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "30px", maxWidth: "30px"}}/> allows users to **display only certain elements** from a larger dataset based on specific criteria. This tool helps to visualize selected elements from a large geospatial dataset and therewith allows users to focus on the information that is most relevant to their needs.
+The **Filter** <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "30px", maxWidth: "30px"}}/> allows users to **display only certain elements** from a larger dataset based on specific criteria. This tool helps to visualize selected elements from a large geospatial dataset and therewith allows users to focus on the information that is most relevant to their needs.
 
 Logic and spatial expressions can be added based on the attributes of **point layers** and **polygon layers** with different types of data (`number` and `string`).
 
