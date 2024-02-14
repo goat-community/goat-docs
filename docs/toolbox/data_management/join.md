@@ -13,7 +13,9 @@ The **Join** tool is used to append attributes from one layer to another using a
 This tool facilitates the combination of two datasets. By defining relationships, the tool aligns data from both layers. The resulting output is a new layer that contains the attributes from the *Target Layer* and a new column that summarizes a chosen attribute from the *Join Layer*. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/toolbox/data_management/join/join.png').default} alt="join" style={{ maxHeight: "400px", maxWidth: "200px", objectFit: "cover"}}/>
+
+  <img src={require('/img/indicators/join/join.png').default} alt="Join Schema" style={{ maxHeight: "400px", maxWidth: "200px", objectFit: "cover"}}/>
+
 </div> 
 
 GOAT uses the **"Inner Join"** operation to calculate a join which combines rows from a target and a join layer based on a related column between them. It only selects records that have matching values in both tables. This means that for every row in the target layer, there must be at least one row in the source layer to realise a successful match. Any rows that do not match will not be returned as a result.
@@ -38,7 +40,9 @@ GOAT uses the **"Inner Join"** operation to calculate a join which combines rows
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/toolbox/data_management/join/overview.png').default} alt="target layer" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+
+  <img src={require('/img/indicators/join/overview.png').default} alt="Join Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+
 </div> 
 
 <p> </p>
@@ -90,7 +94,9 @@ In the **Statistics** section, the user can choose between several statistical o
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/toolbox/data_management/join/result.png').default} alt="target layer" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+
+  <img src={require('/img/indicators/join/result.png').default} alt="Join Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+
 </div> 
 
 

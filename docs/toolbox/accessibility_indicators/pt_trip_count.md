@@ -74,7 +74,9 @@ Depending on the size of the selected area, the calculation might take some minu
 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-  <img src={require('/img/toolbox/accessibility_indicators/trip_count/details.png').default} alt="fill-stroke-color" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+
+  <img src={require('/img/indicators/public_transport/trip_count/details.png').default} alt="Trip Count Further Details" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+
 </div> 
 
 

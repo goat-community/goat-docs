@@ -39,8 +39,8 @@ The example below shows the geometry of the *Source Layer* remains the same, whi
 </div>
 
 
-<img src={require('/img/toolbox/geoanalysis/aggregate_polygons/overview.png').default} alt="Polygon Aggregation" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
+<img src={require('/img/geoanalysis/aggregate_polygons/overview.png').default} alt="Polygon Aggregation Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
 
 <div class="step">

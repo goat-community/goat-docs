@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Layer Types
 
-The data in GOAT is managed in **layers**. It is thereby distinguished between internal and external layers. **Internal Layers** those that are stored within GOAT, while **External Layers** are sourced from third-party services.
+Data in GOAT is managed in **Layers**. A distinction is made between **internal and external layers**. Internal layers are those that are stored within GOAT, while external layers are those that are sourced from third party services. 
 
 ## Internal Layers 
 
