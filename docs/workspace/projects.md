@@ -8,6 +8,9 @@ The **Projects** page allows users to **create, manage and share** projects. The
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/projects/projects_general.png').default} alt="Projects Page in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+
+  <img src={require('/img/home/projects/projects_general.png').default} alt="Projects Page in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+
 </div> 
 
 

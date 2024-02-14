@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-import thematicIcon from "/img/indicators/join/toolbox.webp";
+import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 # Aggregate Polygons
 
@@ -15,7 +15,7 @@ With the Aggregate Polygons tool, data can be combined or aggregated between dif
 The example below shows the geometry of the *Source Layer* remains the same, while its attribute table will be enriched by aggregating information from the *Area of Aggregation*.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-  <img src={require('/img/geoanalysis/aggregate_polygons/polygon_aggregation.png').default} alt="Polygon Aggregation" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/toolbox/geoanalysis/aggregate_polygons/polygon_aggregation.png').default} alt="Polygon Aggregation" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 
@@ -39,8 +39,8 @@ The example below shows the geometry of the *Source Layer* remains the same, whi
 </div>
 
 
-<img src={require('/img/geoanalysis/aggregate_polygons/overview.png').default} alt="Polygon Aggregation Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
+<img src={require('/img/geoanalysis/aggregate_polygons/overview.png').default} alt="Polygon Aggregation Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
 
 <div class="step">

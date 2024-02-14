@@ -16,7 +16,7 @@ The data collection process involves gathering and evaluating information from d
 
 At GOAT, we ensure that our data is up-to-date by updating it at least once a year. However, more frequent updates are possible when necessary, especially for rapidly changing points of interest (POIs). The figure below illustrates the core datasets used, and each dataset is described in more detail.
 
-![GOAT data basis](/img/data/original_files/data_en_blue.png "GOAT data basis")
+![GOAT data basis](/img/data/data_basis/original_files/data_en_blue.png "GOAT data basis")
 
 - **Points Of Interest:** For POIs a combination of diverse data sources is used. In addition to  OpenStreetMap [OpenStreetMap (OSM)](https://wiki.openstreetmap.org/), we use a wide range of other sources, including data from government departments and agencies, health insurance companies and retailer companies. The different datasets are combined using a combination of automated and manual processes. Meanwhile, the data is checked for completeness and accuracy. If needed, we also carry out our own data collection in the field. 
 

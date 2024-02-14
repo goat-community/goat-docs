@@ -55,6 +55,7 @@ From the **Members** menu, you can view a comprehensive **list of individuals wi
 <p>
 </p>
 
+
 :::info
 
 You can delete your organization from the **Organization Settings** page.
