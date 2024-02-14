@@ -18,7 +18,7 @@ At GOAT, we ensure that our data is up-to-date by updating it at least once a ye
 
 ![GOAT data basis](/img/data/data_basis/original_files/data_en_blue.png "GOAT data basis")
 
-- **Points Of Interest:** For POIs a combination of diverse data sources is used. In addition to  OpenStreetMap [OpenStreetMap (OSM)](https://wiki.openstreetmap.org/), we use a wide range of other sources, including data from government departments and agencies, health insurance companies and retailer companies. The different datasets are combined using a combination of automated and manual processes. Meanwhile, the data is checked for completeness and accuracy. If needed, we also carry out our own data collection in the field. 
+- **Points Of Interest:** For POIs a combination of diverse data sources is used. In addition to [OpenStreetMap (OSM)](https://wiki.openstreetmap.org/), we use a wide range of other sources, including data from government departments and agencies, health insurance companies and retailer companies. The different datasets are combined using a combination of automated and manual processes. Meanwhile, the data is checked for completeness and accuracy. If needed, we also carry out our own data collection in the field. 
 
 - **Population and Buildings:** The population is disaggregated to the building level based on census data and district or municipality population counts, as well as various land use data. The processing is supported by 3D city models where available.
 
