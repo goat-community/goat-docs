@@ -7,17 +7,18 @@ sidebar_position: 1
 
 ### Data as an important basis for our analysis
 
-At Plan4Better, we recognize that data is the fuel powering our analyses, making it our most valuable asset. To deliver accurate insights based on high-quality information at reasonable costs, our applications [GOAT](/en/goat/ "What is GOAT?") and [Map4Citizens](/en/posts/2022-12-31-map4citizens/ "What is Map4Citzens?") integrates diverse sets of spatial and non-spatial data from various sources. However, processing inconsistent geospatial data from different sources with varying degrees of accuracy can pose a significant challenge. To address this issue, we leverage a range of techniques, including efficient data integration, disaggregation, and fusion workflows, to ensure seamless data handling.
+At Plan4Better, we recognize that data is the fuel that powers our analyses, making it our most valuable asset. To deliver accurate insights based on high-quality information at reasonable costs, our [GOAT](/en/goat/ "What is GOAT?") and [Map4Citizens](/en/posts/2022-12-31-map4citizens/ "What is Map4Citzens?") applications integrate diverse spatial and non-spatial datasets from various sources. However, processing inconsistent geospatial data from different sources with varying degrees of accuracy can pose a significant challenge. To address this issue, we leverage a range of techniques, including efficient data integration, disaggregation, and fusion workflows, to ensure seamless data handling.
+
 
 ### Data collection and data preparation
 
-The process of data collection involves gathering and assessing information from various sources to meet the specific requirements. To this end, relevant data sources are identified and the data is collected ideally from open data portals or initiatives available to the public. Depending on the data source, different data schemas and formats such as shapefiles and GeoJSON may be used. Therefore, it is crucial to prepare and convert the data into a common schema and format for consistency and comparability.
+The data collection process involves gathering and evaluating information from different sources to meet the specific requirements. This involves identifying relevant data sources and collecting data, ideally from open data portals or publicly available initiatives. Depending on the data source, different data schemas and formats such as shapefiles and GeoJSON may be used. It is therefore essential to prepare and convert the data into a common schema and format to ensure consistency and comparability.
 
-At GOAT, we ensure our data remains up-to-date by updating it at least once a year. However, more frequent updates are possible when necessary, especially for rapidly changing points of interest (POIs). The figure below illustrates the core datasets used, and each dataset is further described in detail.
+At GOAT, we ensure that our data is up-to-date by updating it at least once a year. However, more frequent updates are possible when necessary, especially for rapidly changing points of interest (POIs). The figure below illustrates the core datasets used, and each dataset is described in more detail.
 
 ![GOAT data basis](/img/data/original_files/data_en_blue.png "GOAT data basis")
 
-- **Points Of Interest:** For POIs a combination of diverse data sources is used. Among OpenStreetMap [OpenStreetMap (OSM)](https://wiki.openstreetmap.org/), we are using a wide range of other sources, including data from ministries and public authorities, as well as health insurance and retail companies. The different datasets are combined using a combination of automated and manual processes. Meanwhile, the data is checked for completeness and accuracy. When needed also own field data collection is carried out. 
+- **Points Of Interest:** For POIs a combination of diverse data sources is used. In addition to  OpenStreetMap [OpenStreetMap (OSM)](https://wiki.openstreetmap.org/), we use a wide range of other sources, including data from government departments and agencies, health insurance companies and retailer companies. The different datasets are combined using a combination of automated and manual processes. Meanwhile, the data is checked for completeness and accuracy. If needed, we also carry out our own data collection in the field. 
 
 - **Population and Buildings:** The population is disaggregated to the building level based on census data and district or municipality population counts, as well as various land use data. The processing is supported by 3D city models where available.
 

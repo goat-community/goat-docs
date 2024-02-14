@@ -104,13 +104,12 @@ For the expressions **"includes"** and **"excludes"**, multiple values can be se
 
 ### Multiple Expressions Filtering
 
-If you like, you can **combine multiple filters** for multi expression filtering. Therefore, simply repeat the Steps 4-8 above for each additional expression. In the field <code>Logic Operator</code>, you can choose between the combination logics **AND** and **OR**. 
+If you wish, you can **combine multiple filters** for multi-expression filtering. To do this, simply repeat the Steps 4-8 above for each additional expression. In the <code>Logic Operator</code> field, you can choose between the **AND** and **OR** logic combinations.  
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/filter/logic_operators.png').default} alt="Logic Operators" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
 </div> 
 
-When choosing **AND**, only those elements will be shown for which all filter expressions are true. When choosing **OR**, elements will be shown as soon as one of the filter expressions is true.
-
+If you select **AND**, only items for which all the filter expressions are true will be displayed. If you choose **OR**, items will be shown if any of the filter terms are true. 
 
 :::tip NOTE
 Multi expression filtering should be applied carefully and logically to achieve the best result.

@@ -4,10 +4,10 @@ sidebar_position: 2
 
 # Projects
 
-On the **Projects** page, projects can be **created, managed and shared**. The page provides users with an organised view of their projects, categorised by personal projects, team projects and projects that are shared with the whole organization. Furthermore, projects can be organized in **folders**, **filtered** and **sorted** based on alphabet, creation date or their last update. Projects can also be **deleted** and their **metadata** edited. 
+The **Projects** page allows users to **create, manage and share** projects. The page provides users with an organised view of their projects, categorised into personal projects, team projects and projects shared with the whole organisation. In addition, projects can be organised into **folders** and can be **filtered** and **sorted** based on alphabetical order, date of creation or date of last update. It is also possible to **delete projects** and to **edit their metadata**. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-  <img src={require('/img/home/projects/projects_general.png').default} alt="Projects Page in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/workspace/projects/projects_general.png').default} alt="Projects Page in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 
@@ -36,5 +36,5 @@ Follow these steps to add a new project to your GOAT workspace:
 
 
 ## Managing projects
-By clicking on the **three dots**, you can view and edit the metadata of projects, move a project into another folder, or share projects with other people.
-<img src={require('/img/home/projects/options.gif').default} alt="Options" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+By clicking on the three dots <img src={require('/img/filter/3dots.png').default} alt="Options" style={{ maxHeight: "40px", maxWidth: "40px"}}/> , you can view and edit the metadata of projects, move a project into another folder, or share projects with other people.
+<img src={require('/img/workspace/projects/options.gif').default} alt="Options" style={{ maxHeight: "300px", maxWidth: "300px"}}/>

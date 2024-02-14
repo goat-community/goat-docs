@@ -15,11 +15,11 @@ Want to know more about GOAT? Visit our website: https://plan4better.de/en/goat/
 
 :::
 
-Once you have created your [GOAT](https://goat.plan4better.de/login) account, you will be taken to the [landing page](../workspace/home).
+After signing up, you will land on the [homepage](../workspace/home.md) to begin exploring [GOAT](https://goat.plan4better.de/login). 
 
-![Welcome to GOAT Workspace](/img/home/home_general.png "Geo Open Accessibility Tool - GOAT- Workspace")
+![Welcome to GOAT Workspace](/img/workspace/home/home_general.png "Geo Open Accessibility Tool - GOAT- Workspace")
 
-When you click on a project, the GOAT [map view](../map/interface_overview) becomes visible.
+When you click on a project, the GOAT [map view](../map/interface_overview.md) becomes visible.
 
 ![Welcome to GOAT](/img/welcome/welcome_2.png "Geo Open Accessibility Tool - GOAT")
 
