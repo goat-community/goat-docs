@@ -14,7 +14,7 @@ The Aggregate Points tool can be used to **analyse the characteristics of points
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-  <img src={require('/img/geoanalysis/aggregation/point_aggregation.png').default} alt="Point Aggregation" style={{ maxHeight: "600px", maxWidth: "600px", objectFit: "cover"}}/>
+  <img src={require('/img/toolbox/geoanalysis/aggregate_points/point_aggregation.png').default} alt="Point Aggregation" style={{ maxHeight: "600px", maxWidth: "600px", objectFit: "cover"}}/>
 
 </div> 
 
@@ -38,7 +38,7 @@ The Aggregate Points tool can be used to **analyse the characteristics of points
 </div>
 
 
-<img src={require('/img/geoanalysis/aggregation/agg_general.png').default} alt="Point Aggregation Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
+<img src={require('/img/toolbox/geoanalysis/aggregate_points/agg_general.png').default} alt="Point Aggregation Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
 
 
 <div class="step">

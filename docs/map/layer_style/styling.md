@@ -19,7 +19,7 @@ Fill color is used to represent the **interior** of **point or polygon features*
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-  <img src={require('/img/styling/fill_color.gif').default} alt="Fill-Stroke Color" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/map/styling/fill_color.gif').default} alt="Fill-Stroke Color" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
 </div> 
 
@@ -29,7 +29,7 @@ To adjust the opacity of your layer styles for Fill Color, simply change the opa
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-  <img src={require('/img/styling/opacity.gif').default} alt="Opacity" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/map/styling/opacity.gif').default} alt="Opacity" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
 </div> 
 
@@ -45,7 +45,7 @@ Whenever you want to change a color, may it be **Fill Color** or **Stroke Color*
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-  <img src={require('/img/styling/color_picker.gif').default} alt="Color Picker" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+  <img src={require('/img/map/styling/color_picker.gif').default} alt="Color Picker" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
 
 </div> 
 
@@ -56,7 +56,7 @@ For point layers, Custom Markers can be used for the visualization. Therefor, th
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-  <img src={require('/img/styling/marker.gif').default} alt="Marker" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+  <img src={require('/img/map/styling/marker.gif').default} alt="Marker" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
 
 </div> 
 
@@ -68,7 +68,7 @@ Besides the color, also the **line thickness** of strokes can be defined. Adjust
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-  <img src={require('/img/styling/stroke_width.png').default} alt="Stroke Width" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+  <img src={require('/img/map/styling/stroke_width.png').default} alt="Stroke Width" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
 
 </div> 
 
@@ -79,7 +79,7 @@ For **point datasets**, the **radius** can be adjusted. Therefore, you can eithe
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-  <img src={require('/img/styling/radius.png').default} alt="Radius" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+  <img src={require('/img/map/styling/radius.png').default} alt="Radius" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
 
 </div> 
 
@@ -90,7 +90,7 @@ By clicking on the **three dots**, the default style settings open.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-  <img src={require('/img/styling/default.png').default} alt="Default Settings" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+  <img src={require('/img/map/styling/default.png').default} alt="Default Settings" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
 
 </div> 
 

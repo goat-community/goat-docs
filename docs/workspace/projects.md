@@ -9,8 +9,6 @@ The **Projects** page allows users to **create, manage and share** projects. The
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/projects/projects_general.png').default} alt="Projects Page in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
-  <img src={require('/img/home/projects/projects_general.png').default} alt="Projects Page in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
-
 </div> 
 
 
@@ -39,5 +37,5 @@ Follow these steps to add a new project to your GOAT workspace:
 
 
 ## Managing projects
-By clicking on the three dots <img src={require('/img/filter/3dots.png').default} alt="Options" style={{ maxHeight: "40px", maxWidth: "40px"}}/> , you can view and edit the metadata of projects, move a project into another folder, or share projects with other people.
+By clicking on the three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "40px", maxWidth: "40px"}}/> , you can view and edit the metadata of projects, move a project into another folder, or share projects with other people.
 <img src={require('/img/workspace/projects/options.gif').default} alt="Options" style={{ maxHeight: "300px", maxWidth: "300px"}}/>

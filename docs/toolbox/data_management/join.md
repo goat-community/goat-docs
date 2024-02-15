@@ -14,7 +14,7 @@ This tool facilitates the combination of two datasets. By defining relationships
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
-  <img src={require('/img/indicators/join/join.png').default} alt="Join Schema" style={{ maxHeight: "400px", maxWidth: "200px", objectFit: "cover"}}/>
+  <img src={require('/img/toolbox/data_management/join/join.png').default} alt="Join Schema" style={{ maxHeight: "400px", maxWidth: "200px", objectFit: "cover"}}/>
 
 </div> 
 
@@ -41,7 +41,7 @@ GOAT uses the **"Inner Join"** operation to calculate a join which combines rows
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
-  <img src={require('/img/indicators/join/overview.png').default} alt="Join Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/toolbox/data_management/join/overview.png').default} alt="Join Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
 </div> 
 
@@ -95,7 +95,7 @@ In the **Statistics** section, the user can choose between several statistical o
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
-  <img src={require('/img/indicators/join/result.png').default} alt="Join Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/toolbox/data_management/join/result.png').default} alt="Join Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
 </div> 
 
