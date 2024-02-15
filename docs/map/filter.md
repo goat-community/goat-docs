@@ -46,11 +46,11 @@ The **filter operation does not alter the original data**. But you can use the f
 <div class="step">
   <div class="step-number">2</div>
 
-  <div class="content">Click on <code>Filter</code> <img src={require('/img/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "30px", maxWidth: "30px"}}/>. </div>
+  <div class="content">Click on <code>Filter</code> <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "30px", maxWidth: "30px"}}/>. </div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/filter/filter_general.png').default} alt="Filter tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/map/filter/filter_general.png').default} alt="Filter tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
 </div> 
 <p></p>
@@ -112,7 +112,7 @@ For the expressions **"includes"** and **"excludes"**, multiple values can be se
 If you wish, you can **combine multiple filters** for multi-expression filtering. To do this, simply repeat the Steps 4-8 above for each additional expression. In the <code>Logic Operator</code> field, you can choose between the **AND** and **OR** logic combinations.  
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
-  <img src={require('/img/filter/logic_operators.png').default} alt="Logic Operators" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+  <img src={require('/img/map/filter/logic_operators.png').default} alt="Logic Operators" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
 
 </div> 
 
@@ -125,10 +125,10 @@ Multi expression filtering should be applied carefully and logically to achieve 
 ### Delete Expressions and Filters
 
 
-You can either **remove single expressions** from the filter by clicking on the three dots <img src={require('/img/filter/3dots.png').default} alt="Options" style={{ maxHeight: "40px", maxWidth: "40px"}}/> next to the expression and then click on `Delete`.
+You can either **remove single expressions** from the filter by clicking on the three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "40px", maxWidth: "40px"}}/> next to the expression and then click on `Delete`.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/filter/delete_expression.png').default} alt="Delete" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+  <img src={require('/img/map/filter/delete_expression.png').default} alt="Delete" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
 
 </div> 
 
@@ -136,7 +136,7 @@ Or you can **remove the whole filter** by clicking on `Clear Expression` on the 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
-  <img src={require('/img/filter/clear_expression.png').default} alt="Clear Expressions" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+  <img src={require('/img/map/filter/clear_expression.png').default} alt="Clear Expressions" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
 
 </div> 
 

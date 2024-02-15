@@ -95,6 +95,9 @@ html[data-theme='dark'] {
   padding-right: 30px; /* Space between the number and the line */
   margin-right: 20px; /* Additional space if needed */
 }
+[data-theme='dark'] .step-number {
+  color: #F8F7F3;
+}
 
 .step-number::after {
   content: ''; 
@@ -104,6 +107,9 @@ html[data-theme='dark'] {
   transform: translateY(-50%); /* Center the line with respect to the number */
   border-left: 2px solid #3a3a3a; /* Solid line to the right of the number */
   height: 60px; /* Length of the line */
+}
+[data-theme='dark'] .step-number::after {
+  border-left: 2px solid #F8F7F3;
 }
 
 

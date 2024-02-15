@@ -46,7 +46,7 @@ We currently implement this functionality. 🧑🏻‍💻
 
 The **Organization Settings** page gives you the flexibility to **change your organization's name, avatar and even subscribe to our newsletter**. You can also take the step to **delete your organization** if you wish.
 
-From the **Members** menu, you can view a comprehensive **list of individuals within your organization,** by clicking on three dots <img src={require('/img/filter/3dots.png').default} alt="Options" style={{ maxHeight: "40px", maxWidth: "40px"}}/> you can **manage their roles and personal information**, and **add new members** to monitor growth.
+From the **Members** menu, you can view a comprehensive **list of individuals within your organization,** by clicking on three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "40px", maxWidth: "40px"}}/> you can **manage their roles and personal information**, and **add new members** to monitor growth.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/settings/organization_settings.png').default} alt="Organization Settings" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
