@@ -7,7 +7,7 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
+  title: "GOAT DOCS",
   tagline: "GOATs are cool",
   favicon: "img/favicon.ico",
 
