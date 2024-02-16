@@ -3,9 +3,9 @@ sidebar_position: 1
 slug: /
 ---
 
-# Welcome 
+# Welcome
 
-Welcome to the documentation of our WebGIS **GOAT**. <img src={require('/img/welcome/hand_emoji.png').default} alt="emoji" style={{ maxHeight: "30px", maxWidth: "30px", objectFit: "cover"}}/> 
+Welcome to the documentation of our WebGIS **GOAT**.
 
 GOAT is a **WebGIS platform** with planning intelligence for **urban and transport planning**. Equipped with rich [data](../data/data_basis) and functionalities, it provides planners and GIS-analysts with fact-based analysis. Besides the calculation of benchmarks and analysis of the current situation, also **scenarios** can be created and assessed. The platform offers a modern user interface and an intuitive user flow to simplify the planning process. GOAT's main goal is to enable **smarter, more collaborative and efficient planning** through its innovative features and design. 
 
