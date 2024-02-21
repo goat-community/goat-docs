@@ -45,7 +45,7 @@ Whenever you want to change a color, may it be **Fill Color** or **Stroke Color*
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
-  <img src={require('/img/map/styling/color_picker.gif').default} alt="Color Picker" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+  <img src={require('/img/map/styling/color_picker.gif').default} alt="Color Picker" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>
 
 </div> 
 
