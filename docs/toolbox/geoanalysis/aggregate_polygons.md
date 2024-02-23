@@ -40,7 +40,7 @@ The example below shows the geometry of the *Source Layer* remains the same, whi
 
 
 
-<img src={require('/img/toolbox/geoanalysis/aggregate_polygons/overview.png').default} alt="Polygon Aggregation Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+<img src={require('/img/toolbox/geoanalysis/aggregate_polygons/aggregate_polygons.png').default} alt="Polygon Aggregation Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
 
 <div class="step">
@@ -50,17 +50,17 @@ The example below shows the geometry of the *Source Layer* remains the same, whi
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select your <code>area of aggregation</code> (this layer contains additional data that you want to analyze in relation to the source layer).</div>
+  <div class="content">Select your <code> Area Type</code> (the areas used to aggregate the source layer. This can be a feature layer or an H3 grid. The area calculates dynamic fields by looking at the intersection of polygons (touching geometries) based on their geometrical size.) and <code> Area Layer</code>.</div>
 </div>
+
+:::tip NOTE
+If you select H3 grid as the <code>Area Type</code>, you must define the **resolution** of the H3 grid.
+:::
+
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Select your <b>Area Type</b> (the areas used to aggregate the source layer. This can be a feature layer or an H3 grid. The area calculates dynamic fields by looking at the intersection of polygons (touching geometries) based on their geometrical size).</div>
-</div>
-
-<div class="step">
-  <div class="step-number">6</div>
-  <div class="content">Select your <b>Field</b>, <b>Method</b> and <b>Field Group</b> (the field in the source layer that is used to group the aggregated points.) for Statistics.</div>
+  <div class="content">Select the <code> Statistics Method</code> and <code>Field Statistics</code> (the field in the source layer that is used to group the aggregation.).</div>
 </div>
 
 To aggregate in the **Statistics** section, you have to select the method. Available methods are listed in the following. The available methods depend on the data type of the chosen attribute:
@@ -77,7 +77,7 @@ To aggregate in the **Statistics** section, you have to select the method. Avail
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Select the <b>Weighted by Intersection Area</b> (the aggregated values are weighted by the share of the intersection area between the source layer and the aggregation layer.).</div>
+  <div class="content">If you wish, you can enable the <b>Weighted by Intersection Area</b> by clicking on the <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> While calculating <b>Weighted by Intersection Area</b> aggregated values are weighted by the share of the intersection area between the source layer and the aggregation layer.</div>
 </div>
 
 <div class="step">
@@ -85,9 +85,18 @@ To aggregate in the **Statistics** section, you have to select the method. Avail
   <div class="content">Click on <code>Run</code>.</div>
 </div>
 
+:::tip Hint
 
+Depending on the size of the datasets, the calculation might take some minutes. The [status bar](../../workspace/home#status-bar) shows the current progress.
 
-:::tip NOTE
-If you select H3 grid as the <code>Area Type</code>, you must define the **resolution** of the H3 grid.
 :::
+
+<div class="step">
+  <div class="step-number">9</div>
+  <div class="content">As soon as the calculation process is finished, the resulting layer will be added to the map. The result layer will be consist of the information of the <b>source layer</b> and a column comes from the <b>statistical operation</b>. You can see the table by clicking on the polygon on the map.</div>
+</div>
+
+<img src={require('/img/toolbox/geoanalysis/aggregate_polygons/aggregate_polygons_result.png').default} alt="Polygon Aggregation Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
+
+
 
