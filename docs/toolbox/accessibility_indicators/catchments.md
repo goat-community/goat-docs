@@ -203,45 +203,10 @@ The following settings can be adjusted:
   </TabItem>
 </Tabs>
 
-<div class="step">
-  <div class="step-number">6</div>
-  <div class="content">Choose how you like to define the starting point(s) of the isochrone under <code>Starting</code> menu.</div>
-</div>
-
-<Tabs>
-  <TabItem value="Select on Map" label="Select on Map" default className="tabItemBox">
-
- #### Select on Map
-
-<div class="step">
-  <div class="step-number">7</div>
-  <div class="content">Click on <code>Select on map</code>. Select the starting point(s) by clicking on the respective location(s) in the map. You can add <b>as many starting points</b> as you like.</div>
-</div>
-
-
-  </TabItem>
-  <TabItem value="Select From Layer" label="Select From Layer" className="tabItemBox">
-
- #### Select From Layer
-
- <div class="step">
-  <div class="step-number">7</div>
-  <div class="content">Select the <code>Point layer</code> which you like to use as starting points. You can add <b>as many starting points</b> as you like.</div>
-</div>
-
-
-  </TabItem>
-</Tabs>
-
 ### Advanced Configurations
 
 <div class="step">
-  <div class="step-number">8</div>
-  <div class="content">Select the <code>Routing type</code> you like to calculate.</div>
-</div>
-
-<div class="step">
-  <div class="step-number">9</div>
+  <div class="step-number">6</div>
   <div class="content">Click on <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. When you click on <code> Catchment area shape</code>, you can choose between <b>Polygon (for active mobility or public transport)</b>, <b>Network (for active mobility)</b> and <b>Rectangular Grid (for active mobility or public transport)</b>.</div>
 </div>
 
@@ -285,7 +250,38 @@ If you enable **Polygon Difference**, only the "incremental" (or differential) p
 
 
 <div class="step">
-  <div class="step-number">10</div>
+  <div class="step-number">7</div>
+  <div class="content">Choose how you like to define the starting point(s) of the isochrone under <code>Starting</code> menu.</div>
+</div>
+
+<Tabs>
+  <TabItem value="Select on Map" label="Select on Map" default className="tabItemBox">
+
+ #### Select on Map
+
+<div class="step">
+  <div class="step-number">8</div>
+  <div class="content">Click on <code>Select on map</code>. Select the starting point(s) by clicking on the respective location(s) in the map. You can add <b>as many starting points</b> as you like.</div>
+</div>
+
+
+  </TabItem>
+  <TabItem value="Select From Layer" label="Select From Layer" className="tabItemBox">
+
+ #### Select From Layer
+
+ <div class="step">
+  <div class="step-number">8</div>
+  <div class="content">Select the <code>Point layer</code> which you like to use as starting points. You can add <b>as many starting points</b> as you like.</div>
+</div>
+
+
+  </TabItem>
+</Tabs>
+
+
+<div class="step">
+  <div class="step-number">9</div>
   <div class="content">Click on <code>Run</code>. This starts the calculation of the <b>catchment areas</b> from the selected starting point(s).</div>
 </div>
 
@@ -296,7 +292,7 @@ Depending on the chosen settings, the calculation might take some minutes. The [
 :::
 
 <div class="step">
-  <div class="step-number">11</div>
+  <div class="step-number">10</div>
   <div class="content">As soon as the calculation process is finished, the resulting layer will be added to the map.</div>
 </div>
 

@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Aggregate Points
 
@@ -51,9 +53,43 @@ The Aggregate Points tool can be used to **analyse the characteristics of points
   <div class="content">Select on which <code> Area Type</code> you like to aggregate the source layer. You can choose between <b>Polygon</b> or <b>H3 grid</b>.</div>
 </div>
 
+<Tabs>
+  <TabItem value="Polygon" label="Polygon" default className="tabItemBox">
+
+ #### Polygon
 
 <div class="step">
   <div class="step-number">5</div>
+  <div class="content">Set the configurations for <code>Area Type</code> and <code>Area Layer</code>. If your area type is polygon, you need to select the polygon layer which you want to use for the aggregation.</div>
+</div>
+
+
+  </TabItem>
+  <TabItem value="H3 Grid" label="H3 Grid" className="tabItemBox">
+
+ #### H3 Grid
+
+ <div class="step">
+  <div class="step-number">5</div>
+  <div class="content">Set the configurations for <code>Area Type</code> and <code>H3 Grid Resolution</code>. If your area type is a H3 grid, you need to define the resolution of it. The resolution changes between <b>3 and 10</b>.</div>
+</div>
+
+The resolution is given in terms of the area of the hexagon, and it varies depending on the level. For example, at **level 0** there is only one hexagon that covers the entire earth, while at higher levels there are many more hexagons, each covering a smaller area.
+
+The resolution of H3 grids is typically described in terms of the **edge length of the hexagon** at each level. For example, at resolution **3**, the hexagons cover a **relatively large area**, similar to the **size of countries or large states/provinces**, whereas at **resolution 10**, the hexagons are **much smaller and cover a more localized area**, similar to the size of smaller administrative divisions such as **counties, cities, or neighborhoods**. 
+
+:::tip NOTE
+
+To learn more about H3 grid, you can visit the [Glossary](../../further_reading/glossary#H3-grid).
+
+:::
+
+  </TabItem>
+</Tabs>
+
+
+<div class="step">
+  <div class="step-number">6</div>
   <div class="content">Select the <code>Statistics Method</code>, and <code>Field Statistics</code> (the field in the source layer that is used to group the aggregated points for statistics).</div>
 </div>
 
@@ -70,7 +106,7 @@ To aggregate in the **Statistics** section, you have to select the method. Avail
 
 
 <div class="step">
-  <div class="step-number">6</div>
+  <div class="step-number">7</div>
   <div class="content">Click on <code>Run</code>.</div>
 </div>
 
@@ -81,7 +117,7 @@ Depending on the size of the datasets, the calculation might take some minutes. 
 :::
 
 <div class="step">
-  <div class="step-number">7</div>
+  <div class="step-number">8</div>
   <div class="content">As soon as the calculation process is finished, the resulting layer will be added to the map. The result layer will be consist of the information of the <b>source layer</b> and a column comes from the <b>statistical operation</b>. You can see the table by clicking on the polygon on the map.</div>
 </div>
 

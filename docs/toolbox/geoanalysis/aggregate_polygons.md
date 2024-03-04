@@ -3,6 +3,8 @@ sidebar_position: 3
 ---
 
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Aggregate Polygons
 
@@ -53,13 +55,43 @@ The example below shows the geometry of the *Source Layer* remains the same, whi
   <div class="content">Select your <code> Area Type</code> (the areas used to aggregate the source layer. This can be a feature layer or an H3 grid. The area calculates dynamic fields by looking at the intersection of polygons (touching geometries) based on their geometrical size.) and <code> Area Layer</code>.</div>
 </div>
 
-:::tip NOTE
-If you select H3 grid as the <code>Area Type</code>, you must define the **resolution** of the H3 grid.
-:::
+<Tabs>
+  <TabItem value="Polygon" label="Polygon" default className="tabItemBox">
 
+ #### Polygon
 
 <div class="step">
   <div class="step-number">5</div>
+  <div class="content">Set the configurations for <code>Area Type</code> and <code>Area Layer</code>. If your area type is polygon, you need to select the polygon layer which you want to use for the aggregation.</div>
+</div>
+
+
+  </TabItem>
+  <TabItem value="H3 Grid" label="H3 Grid" className="tabItemBox">
+
+ #### H3 Grid
+
+ <div class="step">
+  <div class="step-number">5</div>
+  <div class="content">Set the configurations for <code>Area Type</code> and <code>H3 Grid Resolution</code>. If your area type is a H3 grid, you need to define the resolution of it. The resolution changes between <b>3 and 10</b>.</div>
+</div>
+
+The resolution is given in terms of the area of the hexagon, and it varies depending on the level. For example, at **level 0** there is only one hexagon that covers the entire earth, while at higher levels there are many more hexagons, each covering a smaller area.
+
+The resolution of H3 grids is typically described in terms of the **edge length of the hexagon** at each level. For example, at resolution **3**, the hexagons cover a **relatively large area**, similar to the **size of countries or large states/provinces**, whereas at **resolution 10**, the hexagons are **much smaller and cover a more localized area**, similar to the size of smaller administrative divisions such as **counties, cities, or neighborhoods**. 
+
+:::tip NOTE
+
+To learn more about H3 grid, you can visit the [Glossary](../../further_reading/glossary#H3-grid).
+
+:::
+
+  </TabItem>
+</Tabs>
+
+
+<div class="step">
+  <div class="step-number">6</div>
   <div class="content">Select the <code> Statistics Method</code> and <code>Field Statistics</code> (the field in the source layer that is used to group the aggregation.).</div>
 </div>
 
