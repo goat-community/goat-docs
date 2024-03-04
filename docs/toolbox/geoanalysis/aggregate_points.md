@@ -43,13 +43,14 @@ The Aggregate Points tool can be used to **analyse the characteristics of points
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select your <code> Source Layer</code>.</div>
+  <div class="content">Select your <code> Source Layer</code>, which contains the data you like to aggregate.</div>
 </div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select your <code> Area Type</code> (the areas that are used to aggregate the source layer. It can be a feature layer or a H3 grid.) and <code> Area Layer</code>.</div>
+  <div class="content">Select on which <code> Area Type</code> you like to aggregate the source layer. You can choose between <b>Polygon</b> or <b>H3 grid</b>.</div>
 </div>
+
 
 <div class="step">
   <div class="step-number">5</div>
@@ -69,7 +70,7 @@ To aggregate in the **Statistics** section, you have to select the method. Avail
 
 
 <div class="step">
-  <div class="step-number">7</div>
+  <div class="step-number">6</div>
   <div class="content">Click on <code>Run</code>.</div>
 </div>
 
@@ -80,7 +81,7 @@ Depending on the size of the datasets, the calculation might take some minutes. 
 :::
 
 <div class="step">
-  <div class="step-number">8</div>
+  <div class="step-number">7</div>
   <div class="content">As soon as the calculation process is finished, the resulting layer will be added to the map. The result layer will be consist of the information of the <b>source layer</b> and a column comes from the <b>statistical operation</b>. You can see the table by clicking on the polygon on the map.</div>
 </div>
 
