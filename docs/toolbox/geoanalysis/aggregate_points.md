@@ -60,7 +60,7 @@ The Aggregate Points tool can be used to **analyse the characteristics of points
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Set the configurations for <code>Area Type</code> and <code>Area Layer</code>. If your area type is polygon, you need to select the polygon layer which you want to use for the aggregation.</div>
+  <div class="content">Select the <code>Area Layer</code> which contains the polygons on which you like to aggregate your point data.</div>
 </div>
 
 
@@ -71,12 +71,8 @@ The Aggregate Points tool can be used to **analyse the characteristics of points
 
  <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Set the configurations for <code>Area Type</code> and <code>H3 Grid Resolution</code>. If your area type is a H3 grid, you need to define the resolution of it. The resolution changes between <b>3 and 10</b>.</div>
+  <div class="content">Select the <code>H3 Grid Resolution</code>. You can choose resolutions between <b>3</b> (average edge length of 69km) and <b>10</b> (average edge length of 70m).</div>
 </div>
-
-The resolution is given in terms of the area of the hexagon, and it varies depending on the level. For example, at **level 0** there is only one hexagon that covers the entire earth, while at higher levels there are many more hexagons, each covering a smaller area.
-
-The resolution of H3 grids is typically described in terms of the **edge length of the hexagon** at each level. For example, at resolution **3**, the hexagons cover a **relatively large area**, similar to the **size of countries or large states/provinces**, whereas at **resolution 10**, the hexagons are **much smaller and cover a more localized area**, similar to the size of smaller administrative divisions such as **counties, cities, or neighborhoods**. 
 
 :::tip NOTE
 
@@ -90,10 +86,10 @@ To learn more about H3 grid, you can visit the [Glossary](../../further_reading/
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Select the <code>Statistics Method</code>, and <code>Field Statistics</code> (the field in the source layer that is used to group the aggregated points for statistics).</div>
+  <div class="content">Select the <code>Statistics Method</code>, and the field you like to use for the <code>Field Statistics</code> (the field in the source layer that is used to group the aggregated points for statistics).</div>
 </div>
 
-To aggregate in the **Statistics** section, you have to select the method. Available methods are listed in the following. The available methods depend on the data type of the chosen attribute:
+Available **Statistics Methods** are listed in the following. The available methods depend on the data type of the chosen attribute:
 
 | Method | Type | Description |
 | -------|------| ------------|
@@ -118,7 +114,7 @@ Depending on the size of the datasets, the calculation might take some minutes. 
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layer will be added to the map. The result layer will be consist of the information of the <b>source layer</b> and a column comes from the <b>statistical operation</b>. You can see the table by clicking on the polygon on the map.</div>
+  <div class="content">As soon as the calculation process is finished, the resulting layer will be added to the map. The result layer will consist of the information of the <b>source layer</b> and an additional column showing the results from the <b>statistical operation</b>. You can see the table by clicking on the polygon on the map.</div>
 </div>
 
 <img src={require('/img/toolbox/geoanalysis/aggregate_points/aggregate_points_result.png').default} alt="Point Aggregation Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
