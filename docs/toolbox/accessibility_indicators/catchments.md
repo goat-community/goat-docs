@@ -14,9 +14,9 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 **Catchment areas** show how far a person can travel from selected starting point(s) within a given travel time or a given travel distance. The catchment calculation routes on the **real transport network**. Therefore, the user can select the `routing mode` (_Walking_, _Bike_, _Pedelec_, _Transit_ or _Car_). 
 
-Catchment areas can be used as an **accessibility indicator** in a specific location or area. The catchment area gives insights into the network connectivity. Furthermore, the catchment area can be intersected with further spatial datasets, such as population and POI data. Therewith it can be assessed how many people or POIs can be reached from certain starting point(s) and thus e.g. identified which share of inhabitants has access to important destinations of daily life within a specific travel time. 
+Catchment areas can be used as an **accessibility indicator** in a specific location or area. The catchment area gives insights into the network connectivity. Furthermore, the catchment area can be intersected with further spatial datasets, such as population and [POI](../../further_reading/glossary#point-of-interest-poi "What is a POI?") data. Therewith it can be assessed how many people or POIs can be reached from certain starting point(s) and thus e.g. identified which share of inhabitants has access to important destinations of daily life within a specific travel time. 
 
-![GOAT catchment example](/img/toolbox/accessibility_indicators/catchments/catchment_sample.png "GOAT catchment example")
+![Catchment Area in GOAT](/img/toolbox/accessibility_indicators/catchments/catchment_sample.png "Catchment Area in GOAT")
   
 
 :::tip Hint
@@ -24,18 +24,20 @@ You might know this feature from our previous software versions under the terms 
 :::
 
 :::info 
-A **geofence** is used to calculate the catchment areas. This geofence covers most European countries, as shown in the image below.
+The calculation of Catchment Areas is only possible in areas where the transport network of the selected routing mode is integrated in GOAT. As soon as you selected a routing mode, you will see the **geofence** in which the calculation is possible.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/toolbox/accessibility_indicators/catchments/geofence.png').default} alt="Geofence for catchment area calculation in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
 </div> 
+
+In case you need to perform analysis beyond this geofence, fell free to contact the [Support](https://plan4better.de/en/contact/ "Contact Support") and we will check what is possible. 
 :::
 
 ## 2. Example use cases
 
 - Which amenities can be reached from a certain point in a 15-minute walk?
 - How many inhabitants have access to a supermarket within 10 minutes cycling?
-- What proportion of the population has a GP within 500m distance?
+- What share of the population has a GP within 500m distance?
 - How big is the catchment area of a workplace by car vs. by public transport? How many employees live within these catchment areas? 
 - How well are kindergartens currently distributed across the city? In which districts are there accessibility deficits?
 
