@@ -10,7 +10,7 @@ The **Aggregate Polygons** tool can be used to **aggregate data from one polygon
 
 ## 1. Explanation
 
-With the Aggregate Polygons tool, data can be combined or aggregated between different polygon layers based on their **spatial relationships**. These spatial relationships are calculated using different **statistical approaches**. This technique is useful for analysing and visualising how different geographical entities **interact**, making them easier to analyse and interpret.
+With the Aggregate Polygons tool, data can be combined or aggregated between different polygon layers based on their **spatial relationships**. These spatial relationships are calculated using different **statistical approaches**. This technique is useful for analysing and visualising how different geographical entities interact, making them easier to analyse and interpret.
 
 The example below shows the geometry of the *Source Layer* remains the same, while its attribute table will be enriched by aggregating information from the *Area of Aggregation*.
 
@@ -45,7 +45,7 @@ The example below shows the geometry of the *Source Layer* remains the same, whi
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select your <code>Source Layer</code> (primary layer of interest).</div>
+  <div class="content">Select your <code>Source Layer</code>, which contains the data you like to aggregate.</div>
 </div>
 
 <div class="step">
@@ -77,7 +77,7 @@ To aggregate in the **Statistics** section, you have to select the method. Avail
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">If you wish, you can enable the <b>Weighted by Intersection Area</b> by clicking on the <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> While calculating <b>Weighted by Intersection Area</b> aggregated values are weighted by the share of the intersection area between the source layer and the aggregation layer.</div>
+  <div class="content">If you wish, you can enable the <b>Weighted by Intersection Area</b> by clicking on the <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. While calculating <b>Weighted by Intersection Area</b> aggregated values are weighted by the share of the intersection area between the source layer and the aggregation layer.</div>
 </div>
 
 <div class="step">
