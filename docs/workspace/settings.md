@@ -67,7 +67,7 @@ If you scroll down to the Danger zone, you also find an option to **delete your 
 </div> 
 :::
 
-In the <code>Members</code> tab, you can view the **members list** of your organization. By clicking on three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "40px", maxWidth: "40px"}}/> you can **manage their roles** and personal information. Furthermore, you can **invite new members** to join your organization by email.
+In the <code>Members</code> tab, you can view the **members list** of your organization. By clicking on three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> you can **manage their roles** and personal information. Furthermore, you can **invite new members** to join your organization by email.
 
 
 <p>

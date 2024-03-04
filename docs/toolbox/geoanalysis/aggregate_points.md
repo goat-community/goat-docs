@@ -34,31 +34,26 @@ The Aggregate Points tool can be used to **analyse the characteristics of points
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Geoanalysis</code> menu, click on <code>Aggregate Points</code>.</div>
+  <div class="content">Under the <code>Geoanalysis</code> menu, click on <code>Aggregate points</code>.</div>
 </div>
 
 
-<img src={require('/img/toolbox/geoanalysis/aggregate_points/agg_general.png').default} alt="Point Aggregation Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
+<img src={require('/img/toolbox/geoanalysis/aggregate_points/aggregate_points.png').default} alt="Point Aggregation Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
 
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select your Layer.</div>
+  <div class="content">Select your <code> Source Layer</code>.</div>
 </div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select your area of aggregation.</div>
+  <div class="content">Select your <code> Area Type</code> (the areas that are used to aggregate the source layer. It can be a feature layer or a H3 grid.) and <code> Area Layer</code>.</div>
 </div>
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Select your <b>Area Type</b> (the areas that are used to aggregate the source layer. It can be a feature layer or a H3 grid.).</div>
-</div>
-
-<div class="step">
-  <div class="step-number">6</div>
-  <div class="content">Select your <b>Field</b>, <b>Method</b> and <b>Field Group</b> (the field in the source layer that is used to group the aggregated points.) for Statistics.</div>
+  <div class="content">Select the <code>Statistics Method</code>, and <code>Field Statistics</code> (the field in the source layer that is used to group the aggregated points for statistics).</div>
 </div>
 
 To aggregate in the **Statistics** section, you have to select the method. Available methods are listed in the following. The available methods depend on the data type of the chosen attribute:
@@ -77,3 +72,16 @@ To aggregate in the **Statistics** section, you have to select the method. Avail
   <div class="step-number">7</div>
   <div class="content">Click on <code>Run</code>.</div>
 </div>
+
+:::tip Hint
+
+Depending on the size of the datasets, the calculation might take some minutes. The [status bar](../../workspace/home#status-bar) shows the current progress.
+
+:::
+
+<div class="step">
+  <div class="step-number">8</div>
+  <div class="content">As soon as the calculation process is finished, the resulting layer will be added to the map. The result layer will be consist of the information of the <b>source layer</b> and a column comes from the <b>statistical operation</b>. You can see the table by clicking on the polygon on the map.</div>
+</div>
+
+<img src={require('/img/toolbox/geoanalysis/aggregate_points/aggregate_points_result.png').default} alt="Point Aggregation Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>

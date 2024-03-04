@@ -125,7 +125,7 @@ Multi expression filtering should be applied carefully and logically to achieve 
 ### Delete Expressions and Filters
 
 
-You can either **remove single expressions** from the filter by clicking on the three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "40px", maxWidth: "40px"}}/> next to the expression and then click on `Delete`.
+You can either **remove single expressions** from the filter by clicking on the three dots <img src={require('/img/map/filter/3dots_horizontal.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> next to the expression and then click on `Delete`.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/map/filter/delete_expression.png').default} alt="Delete" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>

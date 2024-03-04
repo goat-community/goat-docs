@@ -86,7 +86,7 @@ For **point datasets**, the **radius** can be adjusted. Therefore, you can eithe
 
 ## Default Settings 
 
-By clicking on the **three dots**, the default style settings open. 
+By clicking on the three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>, the default style settings open. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
