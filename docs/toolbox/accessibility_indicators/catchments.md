@@ -306,13 +306,13 @@ Want to style your catchment areas and create nice looking maps? See [Styling](/
 
 ## 4. Technical details
 
-Catchment areas are **isolines** connecting all points that can be reached from one or more starting points within a certain time interval (called *isochrones*) or distance (called *isodistance*). Depending on the chosen travel mode, the according transport networks are used for the [routing](/docs/routing/walking.md). 
+Catchment areas are **isolines** connecting all points that can be reached from one or more starting points within a certain time interval (called *isochrones*) or distance (called *isodistance*). Depending on the chosen travel mode, the according transport networks are used for the [routing](/docs/routing/walking). 
 
 The catchment areas are dynamically created in the front end based on a travel time/distance grid. Therefore, catchment areas can be created fast and for different intervals on the fly.
 
 ### Scientific background
 
-From the scientific background, catchments are _contour-based measures_ (also known as _cumulative opportunities_). They are valued for their **easily interpretable results** ([Geurs and van Eck 2001](isochrones#6-references); [Albacete 2016](isochrones#6-references)), but have the drawback of not distinguishing between different travel times within the **cut-off range** ([Bertolini, le Clercq, and Kapoen 2005](isochrones#6-references)), as it is done by [heatmaps](/docs/toolbox/accessibility_indicators/heatmap_closest_facilities.md).
+From the scientific background, catchments are _contour-based measures_ (also known as _cumulative opportunities_). They are valued for their **easily interpretable results** ([Geurs and van Eck 2001](isochrones#6-references); [Albacete 2016](isochrones#6-references)), but have the drawback of not distinguishing between different travel times within the **cut-off range** ([Bertolini, le Clercq, and Kapoen 2005](isochrones#6-references)), as it is done by [heatmaps](/docs/toolbox/accessibility_indicators/heatmap_closest_facilities).
 
 ### Visualization 
 
