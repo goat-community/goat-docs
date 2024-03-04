@@ -46,7 +46,7 @@ The example below shows an *Input Table (Matrix Layer)* and the resulting *Origi
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select your <code>Geometry Layer</code> (this should be a feature layer contain the geometries of the origins and destinations and a column that can be used as an identifier to match the OD-connections with the geometries).</div>
+  <div class="content">Select your <code>Geometries Layer</code> (this should be a feature layer contain the geometries of the origins and destinations and an attribute that can be used as an identifier to match the OD-connections with the geometries).</div>
 </div>
 
 <div class="step">
@@ -56,12 +56,12 @@ The example below shows an *Input Table (Matrix Layer)* and the resulting *Origi
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Select your <code>Destination Column</code> (the column that contains the destinations in the origin destination matrix).</div>
+  <div class="content">Select your <code>Destination Attribute</code> (the attribute that contains the destinations in the origin destination matrix).</div>
 </div>
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Select your <code>Weight Column</code> (the column that contains the weights in the origin destination matrix).</div>
+  <div class="content">Select your <code>Weight Attribute</code> (the attribute that contains the weights in the origin destination matrix).</div>
 </div>
 
 <div class="step">

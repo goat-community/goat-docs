@@ -6,7 +6,7 @@ sidebar_position: 21
 
 GOAT allows users to apply **attribute-based styling** techniques to enhance the visual appearance of elements (such as point, lines or polygons) on the map. This approach allows the visual representation to **reflect variations and patterns in the data**, making it easier to recognise and understand complex information spatially.
 
-In the <code>Layer Style</code> menu, you will often come across the **options button** <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. By enabeling it, the options for styling based on dataset attributes become visible.
+In the <code>Layer Style</code> <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> menu, you will often come across the <b>options button</b><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. By enabeling it, the options for styling based on dataset attributes become visible.
 
 
 :::tip HINT
