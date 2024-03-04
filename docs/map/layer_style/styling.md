@@ -8,7 +8,7 @@ sidebar_position: 20
 # Core Styling Elements
 
 
-When you add a new layer to your project, it is assigned a default style depending on the type of data. By customizing the <code>Layer Style</code>, you can adjust the visualization of the datasets to your wishes and **create appealing maps**. The styling options available depend on the type of data, i.e. whether it is points, lines or polygons. Thereby, multiple visual aspects, such as **colors**, **strokes** and **opacities** can be adjusted.
+When you add a new layer to your project, it is assigned a default style depending on the type of data. By customizing the <code>Layer Style</code> <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> menu, you can adjust the visualization of the datasets to your wishes and **create appealing maps**. The styling options available depend on the type of data, i.e. whether it is points, lines or polygons. Thereby, multiple visual aspects, such as **colors**, **strokes** and **opacities** can be adjusted.
 
 
 ## Color Settings
