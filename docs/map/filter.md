@@ -16,7 +16,7 @@ The **Filter** can be used to limit the data that is visible on the map. You can
 ## 1. Explanation
 
 
-The **Filter** <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "30px", maxWidth: "30px"}}/> allows users to **display only certain elements** from a larger dataset based on specific criteria. This tool helps to visualize selected elements from a large geospatial dataset and therewith allows users to focus on the information that is most relevant to their needs.
+The **Filter** <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "20px", maxWidth: "20px"}}/> allows users to **display only certain elements** from a larger dataset based on specific criteria. This tool helps to visualize selected elements from a large geospatial dataset and therewith allows users to focus on the information that is most relevant to their needs.
 
 Logic and spatial expressions can be added based on the attributes of **point layers** and **polygon layers** with different types of data (`number` and `string`).
 
@@ -46,7 +46,7 @@ The **filter operation does not alter the original data**. But you can use the f
 <div class="step">
   <div class="step-number">2</div>
 
-  <div class="content">Click on <code>Filter</code> <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "30px", maxWidth: "30px"}}/>. </div>
+  <div class="content">Click on <code>Filter</code> <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "20px", maxWidth: "20px"}}/>. </div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
