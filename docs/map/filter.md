@@ -51,8 +51,8 @@ The **filter operation does not alter the original data**. But you can use the f
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/map/filter/filter_general.png').default} alt="Filter tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
-
 </div> 
+
 <p></p>
 <div class="step">
   <div class="step-number">3</div>
@@ -103,9 +103,12 @@ For the expressions **"includes"** and **"excludes"**, multiple values can be se
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Define your filter criteria. The map will be automatically updated with your filtered data. </div>
+  <div class="content">Define your filter criteria. The map will be automatically updated with your filtered data and the filter icon will appear on the filtered layer.</div>
 </div>
 
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/map/filter/filter_result.png').default} alt="Filter Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+</div> 
 
 ### Multiple Expressions Filtering
 
