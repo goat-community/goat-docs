@@ -8,7 +8,7 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 # Catchment Area
 
-**Catchment areas** show how far people can travel within a given **travel time** or **distance**. The catchment areas are calculated on the real transport network and start from one or more selected points. 
+**Catchment areas** show how far people can travel within a given **travel time** or **distance** from one or more selected points and are calculated on the real transport network.
 
 ## 1. Explanation
 
