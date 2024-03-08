@@ -16,7 +16,7 @@ The **Filter** can be used to limit the data that is visible on the map. You can
 ## 1. Explanation
 
 
-The **Filter** <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "30px", maxWidth: "30px"}}/> allows users to **display only certain elements** from a larger dataset based on specific criteria. This tool helps to visualize selected elements from a large geospatial dataset and therewith allows users to focus on the information that is most relevant to their needs.
+The **Filter** <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "20px", maxWidth: "20px"}}/> allows users to **display only certain elements** from a larger dataset based on specific criteria. This tool helps to visualize selected elements from a large geospatial dataset and therewith allows users to focus on the information that is most relevant to their needs.
 
 Logic and spatial expressions can be added based on the attributes of **point layers** and **polygon layers** with different types of data (`number` and `string`).
 
@@ -46,13 +46,13 @@ The **filter operation does not alter the original data**. But you can use the f
 <div class="step">
   <div class="step-number">2</div>
 
-  <div class="content">Click on <code>Filter</code> <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "30px", maxWidth: "30px"}}/>. </div>
+  <div class="content">Click on <code>Filter</code> <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "20px", maxWidth: "20px"}}/>. </div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/map/filter/filter_general.png').default} alt="Filter tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
-
 </div> 
+
 <p></p>
 <div class="step">
   <div class="step-number">3</div>
@@ -103,9 +103,12 @@ For the expressions **"includes"** and **"excludes"**, multiple values can be se
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Define your filter criteria. The map will be automatically updated with your filtered data. </div>
+  <div class="content">Define your filter criteria. The map will be automatically updated with your filtered data and the filter icon will appear on the filtered layer.</div>
 </div>
 
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/map/filter/filter_result.png').default} alt="Filter Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+</div> 
 
 ### Multiple Expressions Filtering
 
