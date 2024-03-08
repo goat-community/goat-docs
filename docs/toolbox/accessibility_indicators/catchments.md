@@ -8,11 +8,11 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 # Catchment Area
 
-**Catchment areas** show how far people can travel within a given **travel time** or **distance** from one or more selected points and are calculated on the real transport network.
+**Catchment Areas** show how far people can travel within a set **travel time** or **distance** from one or more selected points.
 
 ## 1. Explanation
 
-**Catchment areas** show how far a person can travel from selected starting point(s) within a given travel time or a given travel distance. The catchment calculation routes on the **real transport network**. Therefore, the user can select the `routing mode` (_Walking_, _Bike_, _Pedelec_, _Transit_ or _Car_). 
+**Catchment Areas** show how far a person can travel from selected starting point(s) within a given travel time or a given travel distance. The catchment calculation routes on the **real transport network**. Therefore, the user can select the `routing mode` (_Walking_, _Bike_, _Pedelec_, _Transit_ or _Car_). 
 
 Catchment areas can be used as an **accessibility indicator** in a specific location or area. The catchment area gives insights into the network connectivity. Furthermore, the catchment area can be intersected with further spatial datasets, such as population and [POI](../../further_reading/glossary#point-of-interest-poi "What is a POI?") data. Therewith it can be assessed how many people or POIs can be reached from certain starting point(s) and thus e.g. identified which share of inhabitants has access to important destinations of daily life within a specific travel time. 
 
