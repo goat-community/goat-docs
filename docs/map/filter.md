@@ -72,7 +72,7 @@ The **filter operation does not alter the original data**. But you can use the f
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Select the <code>Target Attribute</code>, i.e. the attribute which you like to use for the filtering</div>
+  <div class="content">Select the <code>Target Attribute</code>, i.e. the attribute which you like to use for the filtering.</div>
 </div>
 
 <div class="step">
@@ -103,7 +103,7 @@ For the expressions **"includes"** and **"excludes"**, multiple values can be se
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Define your filter criteria. The map will be automatically updated with your filtered data and the filter icon will appear on the filtered layer.</div>
+  <div class="content">Set your filter criteria. The map will automatically update with your filtered data and the filter icon will appear on the filtered layer.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
