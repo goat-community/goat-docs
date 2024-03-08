@@ -28,7 +28,7 @@ A **geofence** is used to calculate the nearby stations. This geofence covers mo
 </div> 
 :::
 
-## 2. Example use cases (should be checked not sure)
+## 2. Example use cases 
 
 - Which public transport stations are nearby and provide convenient access to key attractions and landmarks for tourists exploring a new city?
 - When considering daily commuting to work, which nearby public transport stations offer optimal routes and schedules for a seamless journey?
