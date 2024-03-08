@@ -7,15 +7,16 @@ import TabItem from '@theme/TabItem';
 
 # Public Transport Nearby Stations
 
-**Public Transport Nearby Stations** provides insight into how they contribute to accessibility and connectivity within urban environments.
+The **Public Transport Nearby Stations** tool provides an overview of all public transport stops and connections in the proximity of selected starting point(s).
 
 ## 1. Explanation
 
-**Proximity to nearby stations** is essential for various aspects of urban life, including accessibility, connectivity, and urban planning.
+The Public Transport Nearby Stations access analysis is a suitable tool to **visualize public transport stops and their connections** that are accessible by walking/cycling from one or more starting point(s). For detailed information on public transport services, the public transport connections to/from any point can be displayed. The nearest stops, the public transport lines available there, their frequency and the journey time to reach the stop on foot and by bike are provided as a result.
+
+**Proximity to nearby stations** is essential for various aspects of urban life and is important urban planning.
 
 **The close vicinity of public transport hubs** significantly improves accessibility for residents, workers, and visitors, particularly those facing mobility challenges or concerned about environmental impact.
 
-Nearby stations **facilitate seamless connectivity between different modes of transportation**, enabling effortless transfers and navigation of intricate routes across broader areas. This promotes multi-modal travel options and contributes to the overall sustainability of transportation systems.
 
 ![Nearby Stations in GOAT](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_example.png "[Nearby Stations in GOAT")
 
@@ -118,3 +119,7 @@ Depending on the size of the selected area, the calculation might take some minu
 :::tip Tip
 Want to style your catchment areas and create nice looking maps? See [Styling](../../map/layer_style/styling).
 :::
+
+## 4. Technical details
+
+The Nearby Stations are received from the GTFS data.
