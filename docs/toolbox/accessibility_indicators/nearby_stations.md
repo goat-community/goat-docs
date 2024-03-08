@@ -5,13 +5,13 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Public Transport Nearby Stations
+# PT Nearby Stations
 
-The **Public Transport Nearby Stations** tool provides an overview of all public transport stops and connections in the proximity of selected starting point(s).
+The **PT Nearby Stations** tool provides an overview of all public transport stops and connections in the proximity of selected starting point(s).
 
 ## 1. Explanation
 
-The Public Transport Nearby Stations access analysis is a suitable tool to **visualize public transport stops and their connections** that are accessible by walking/cycling from one or more starting point(s). For detailed information on public transport services, the public transport connections to/from any point can be displayed. The nearest stops, the public transport lines available there, their frequency and the journey time to reach the stop on foot and by bike are provided as a result.
+The Public Transport (PT) Nearby Stations access analysis is a suitable tool to **visualize public transport stops and their connections** that are accessible by walking/cycling from one or more starting point(s). For detailed information on public transport services, the public transport connections to/from any point can be displayed. The nearest stops, the public transport lines available there, their frequency and the journey time to reach the stop on foot and by bike are provided as a result.
 
 **Proximity to nearby stations** is essential for various aspects of urban life and is important urban planning.
 
@@ -45,7 +45,7 @@ A **geofence** is used to calculate the nearby stations. This geofence covers mo
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Nearby Stations</code>.</div>
+  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>PT Nearby Stations</code>.</div>
 </div>
 
 ![Menu Overview for Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_overview.png "[Menu Overview for Public Transport Nearby Stations")
