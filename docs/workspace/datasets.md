@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Datasets
 
-On the **Datasets** page, data can be **uploaded, managed and shared**. The page provides users with an organised view of their datasets, categorised by personal datasets, team datasets and datasets that are shared with the whole organization. Furthermore, datasets can be organized in **folders**, **filtered** and **sorted** based on alphabet, creation date or their last update. Projects can also be **deleted**, **downloaded** and their **metadata** edited. 
+On the **Datasets** page, data can be **uploaded, managed and shared**. The page provides users with an organised view of their datasets, categorised by personal datasets, team datasets and datasets that are shared with the whole organization. Furthermore, datasets can be organized in **folders**, **filtered** and **sorted** based on alphabet, creation date or their last update. Datasets can also be **deleted**, **downloaded** and their **metadata** edited. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/datasets/datasets_general.png').default} alt="Datasets Page in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
@@ -47,6 +47,7 @@ You can also upload datasets directly in the [Map](../map/layers).
 
 :::
 
+
 ## Filter datasets
 
 Datasets can be sorted based on the [dataset type](../data/layer_types "What are the dataset types?"), i.e. *features, tables, external imagery*, and *external vector tiles*. Simply click on the filter icon <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "20px", maxWidth: "20px"}}/> to choose the desired dataset type for filtering.
@@ -60,9 +61,15 @@ By clicking on the three dots <img src={require('/img/map/filter/3dots.png').def
 <img src={require('/img/workspace/datasets/managing_datasets.gif').default} alt="Options" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
 
 
-## Organize datasets into folders
+## See metadata of the datasets
 
-### 1. Create folders
+The **metadata** of datasets can be viewed and edited by clicking on <code>Info</code> under the three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> or by clicking directly on the dataset. This grants access to a detailed **summary** of the data, the **attribute table**, and a **map preview with a legend**.
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+  <img src={require('/img/workspace/datasets/metadata.gif').default} alt="Metadata of the datasets in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+</div> 
+
+
+## Create folders
 
 To organize your data, you can create new folders within the workspace. Therefore, click on the ``folder icon`` <img src={require('/img/workspace/datasets/folder_icon.png').default} alt="Folder Icon" style={{ maxHeight: "25px", maxWidth: "25px"}}/> and define the name of the new folder.
 
@@ -71,7 +78,7 @@ To organize your data, you can create new folders within the workspace. Therefor
 </div> 
 
 
-### 2. Move datasets to folders
+## Move datasets to folders
 
 To move a dataset into a folder, click on three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px"}}/> and select **"Move to folder"**. From the dropdown menu, choose the folder to which you want to move your dataset.
 
