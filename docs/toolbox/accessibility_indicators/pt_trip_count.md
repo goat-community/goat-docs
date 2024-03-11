@@ -3,15 +3,15 @@ sidebar_position: 7
 ---
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
-# Public Transport Trip Count
+# PT Trip Count
 
 This indicator displays the **average number of public transport departures** per hour for each public transport stop. 
 
 ## 1. Explanation
 
-This indicator shows the **average number of public transport departures per hour for** a selected **time interval** for each public transport stop on a point layer. The results can be visualized either as a sum of all transport modes or by focussing on one dedicated mode (e.g. bus, tram, metro, rail).
+The Public Transport (PT) Trip Count shows the **average number of public transport departures per hour** for a selected **time interval** for each public transport stop on a point layer. The results can be visualized either as a sum of all transport modes or by focussing on one dedicated mode (e.g. bus, tram, metro, rail).
 
-This indicator serves as the foundation for the [ÖV Güteklassen](/docs/toolbox/accessibility_indicators/oev_gueteklassen.md), but can also be utilized on its own as a straightforward measure for public transport offer at a **station level**. It gives a summary of a station’s departures during a specific time window and day, providing a valuable overview of the public transport offer in a city. Thus, the indicator is often used in **weak point analyses of local transport plans** (see, among others, [Guideline for Local Transport Planning in Bavaria](https://www.demografie-leitfaden-bayern.de/index.html)).
+This indicator serves as the foundation for the [ÖV-Güteklassen](/docs/toolbox/accessibility_indicators/oev_gueteklassen.md), but can also be utilized on its own as a straightforward measure for public transport offer at a **station level**. It gives a summary of a station’s departures during a specific time window and day, providing a valuable overview of the public transport offer in a city. Thus, the indicator is often used in **weak point analyses of local transport plans** (see, among others, [Guideline for Local Transport Planning in Bavaria](https://www.demografie-leitfaden-bayern.de/index.html)).
 
 ![Public Transport Trip Count](/img/toolbox/accessibility_indicators/trip_count/sample.png "[Public Transport Trip Count")
 
@@ -31,7 +31,7 @@ This indicator serves as the foundation for the [ÖV Güteklassen](/docs/toolbox
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Trip Count</code>. This opens the setting menu.</div>
+  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>PT Trip Count</code>. This opens the setting menu.</div>
 </div>
 
 
@@ -88,7 +88,7 @@ If you are interested in one specific mode, e.g. only busses, you can use the [a
 
 ## 4. Technical details
 
-Similar to the Public Transport Quality Classes <i>(German: ÖV Güteklassen)</i> , this indicator is calculated on the basis of **GTFS data** (see [Data Basis](../../data/data_basis)). Based on the selected day and time window, the average number of departures per hour (regardless of direction) is calculated.
+Similar to the Public Transport Quality Classes <i>(German: ÖV-Güteklassen)</i> , this indicator is calculated on the basis of **GTFS data** (see [Data Basis](../../data/data_basis)). Based on the selected day and time window, the average number of departures per hour (regardless of direction) is calculated.
 
 ## 5. References
 

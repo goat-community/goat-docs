@@ -3,10 +3,10 @@ sidebar_position: 5
 ---
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
-# Public Transport Quality Classes (ÖV Güteklassen)
+# ÖV-Güteklassen
 
 
-The Public Transport Quality Classes <i>(German: ÖV Güteklassen)</i> show the **attractiveness of public transport services**. This indicator helps to understand how public transport supply varies across a city or region. 
+The Public Transport Quality Classes <i>(German: ÖV-Güteklassen)</i> show the **attractiveness of public transport services** for a selected area.  
 
 
 ## 1. Explanation
@@ -31,7 +31,7 @@ Public Transport Quality Classes, also known as **ÖV-Güteklassen**, are a clas
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Public Transport Quality Classses (ÖV Güteklassen)</code>. This opens the setting menu.</div>
+  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>ÖV-Güteklassen</code>. This opens the setting menu.</div>
 </div>
 
 ![Menu Overview for ÖV-Güteklassen](/img/toolbox/accessibility_indicators/gueteklassen/overview.png "Menu Overview for ÖV-Güteklassen")
@@ -72,9 +72,9 @@ Depending on the size of the selected area, the calculation might take some minu
 
 ### Scientific Background
 
-The quality and frequency of transit services is a **decisive indicator in public transport and spatial planning**. It can be used to highlight deficits in the public transport offer and to identify well-serviced locations as attractive areas for development. The approach of Public Transport Quality Classes <i>(German: ÖV Güteklassen)</i> is **methodologically superior** compared to common catchment areas. In 2011, the [Swiss Federal Office for Spatial Development (ARE)](https://www.are.admin.ch/are/de/home.html) started to use the indicator of <i>ÖV Güteklassen</i> in order to include the **attractiveness of public transport services** in the assessment of development quality; since then, these have been considered an important instrument in formal planning processes in Switzerland. In addition, the Swiss model served as an inspiration for application in Austria (e.g. Voralberg) and finds first application in Germany (e.g. by [KCW](https://plan4better.de/en/references/g%C3%BCteklassen-deutschland/) and [Agora Verkehrswende](https://plan4better.de/en/references/agora/)).  
+The quality and frequency of transit services is a **decisive indicator in public transport and spatial planning**. It can be used to highlight deficits in the public transport offer and to identify well-serviced locations as attractive areas for development. The approach of Public Transport Quality Classes <i>(German: ÖV-Güteklassen)</i> is **methodologically superior** compared to common catchment areas. In 2011, the [Swiss Federal Office for Spatial Development (ARE)](https://www.are.admin.ch/are/de/home.html) started to use the indicator of <i>ÖV-Güteklassen</i> in order to include the **attractiveness of public transport services** in the assessment of development quality; since then, these have been considered an important instrument in formal planning processes in Switzerland. In addition, the Swiss model served as an inspiration for application in Austria (e.g. Voralberg) and finds first application in Germany (e.g. by [KCW](https://plan4better.de/en/references/g%C3%BCteklassen-deutschland/) and [Agora Verkehrswende](https://plan4better.de/en/references/agora/)).  
 
-The institutionalization of the indicator in German-speaking countries, as well as the comprehensible and at the same time differentiated calculation methodology, are important advantages of the <i>ÖV Güteklassen</i>. 
+The institutionalization of the indicator in German-speaking countries, as well as the comprehensible and at the same time differentiated calculation methodology, are important advantages of the <i>ÖV-Güteklassen</i>. 
 
 ### Calculation
 
