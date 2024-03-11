@@ -17,7 +17,7 @@ On the **Layers** section, layers can be **added and organized**. Among others, 
 
 ## Add Layers
 
-You can add two two kinds of layers to your map: [internal layers](../data/layer_types) or [external layers](../data/layer_types). For adding new internal layers, you can either integrate **datasets from your data explorer** or upload new **datasets from your local device** (GeoPackage, GeoJSON, Shapefile, KML, CSV or XLSX). External layers can be added by inserting the **url of the external source** (WMS, WMTS or MVT). 
+You can add two two kinds of layers to your map: [internal layers](../data/dataset_types) or [external layers](../data/dataset_types). For adding new internal layers, you can either integrate **datasets from your data explorer** or upload new **datasets from your local device** (GeoPackage, GeoJSON, Shapefile, KML, CSV or XLSX). External layers can be added by inserting the **url of the external source** (WMS, WMTS or MVT). 
 
 Follow these steps to add a layer to the map: 
 

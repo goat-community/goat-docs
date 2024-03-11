@@ -249,7 +249,7 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
 - Provides an easy-to-understand visualization of the catchment area.
 - One polygon is produced for each <code>step</code>.
 
-<img src={require('/img/toolbox/accessibility_indicators/catchments/pt_polygon.png').default} alt="Catchment Area Shape (Polygon) Public Transport in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
+<img src={require('/img/toolbox/accessibility_indicators/catchments/pt_polygon.png').default} alt="Catchment Area Shape (Polygon) Public Transport in GOAT" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
 
 :::tip NOTE
 
@@ -267,7 +267,7 @@ If you enable **Polygon Difference**, only the "incremental" (or differential) p
 - Enables easy correlation to actual streets and their accessibility within the catchment area.
 - Fine-grained detail compared to the other catchment types.
 
-<img src={require('/img/toolbox/accessibility_indicators/catchments/pt_network.png').default} alt="Catchment Area Shape (Network) Public Transport in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
+<img src={require('/img/toolbox/accessibility_indicators/catchments/pt_network.png').default} alt="Catchment Area Shape (Network) Public Transport in GOAT" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
 
   </TabItem>
   <TabItem value="Rectangular Grid" label="Rectangular Grid" className="tabItemBox">
@@ -276,7 +276,7 @@ If you enable **Polygon Difference**, only the "incremental" (or differential) p
 - It is a *grid cell-based representation* of the catchments.
 - Appears similar to a “heatmap” visualization, however, differs conceptually & computationally (this represents egress from a specified origin to various other locations while heatmaps represent access from various locations to a specified destination).
 
-<img src={require('/img/toolbox/accessibility_indicators/catchments/pt_grid.png').default} alt="Catchment Area Shape (Grid) Public Transport in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
+<img src={require('/img/toolbox/accessibility_indicators/catchments/pt_grid.png').default} alt="Catchment Area Shape (Grid) Public Transport in GOAT" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
 
   </TabItem>
 </Tabs>
