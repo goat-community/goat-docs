@@ -76,7 +76,7 @@ Considering all paths accessible by foot.
 
 :::tip Hint
 
-For further insights into the Routing algorithm, visit [Routing/Walk](/docs/routing/walking).
+For further insights into the Routing algorithm, visit [Routing/Walk](../../routing/walking).
 
 :::
 
@@ -141,7 +141,7 @@ Considering all paths accessible by bicycle. Depending on the surface, smoothnes
 
 :::tip Hint
 
-For further insights into the Routing algorithm, visit [Routing/Bicycle](/docs/routing/cycling). In addition, you can check this [Publication](https://doi.org/10.1016/j.jtrangeo.2021.103080).
+For further insights into the Routing algorithm, visit [Routing/Bicycle](../../routing/cycling). In addition, you can check this [Publication](https://doi.org/10.1016/j.jtrangeo.2021.103080).
 
 :::
 
@@ -206,7 +206,7 @@ In this routing mode, users can compute intermodal accessibility centered around
 
 :::tip Hint
 
-For further insights into the Routing algorithm, visit [Routing/Public Transport](/docs/routing/public_transport).
+For further insights into the Routing algorithm, visit [Routing/Public Transport](../../routing/public_transport).
 
 :::
 
