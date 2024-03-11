@@ -49,7 +49,7 @@ You can also upload datasets directly in the [Map](../map/layers).
 
 ## Filter datasets
 
-Datasets can be sorted based on the [dataset type](../data/layer_types "What are the dataset types?"), i.e. *features, tables, external imagery*, and *external vector tiles*. Simply click on the filter icon <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "20px", maxWidth: "20px"}}/> to choose the desired dataset type for filtering.
+Datasets can be sorted based on the [dataset type](../data/dataset_types "What are the dataset types?"), i.e. *features, tables, external imagery*, and *external vector tiles*. Simply click on the filter icon <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "20px", maxWidth: "20px"}}/> to choose the desired dataset type for filtering.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/datasets/dataset_filter.gif').default} alt="Datasets filtering in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
