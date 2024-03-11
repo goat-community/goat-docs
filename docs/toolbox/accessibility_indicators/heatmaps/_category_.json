@@ -1,0 +1,8 @@
+{
+  "label": "Heatmaps",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "description": "Heatmaps are a suitable visualization form to represent data on a larger area, providing quick insight into patterns and trends within a dataset. GOAT provides three different accessibility indicators as heatmaps: Connectivity, Closest Facilities and Gravity-Based."
+  }
+}

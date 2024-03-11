@@ -22,7 +22,7 @@ Logic and spatial expressions can be added based on the attributes of **point la
 
 :::info
 
-The **filter operation does not alter the original data**. But you can use the filtered data for various tools within GOAT, such as [scenario analysis](../scenarios/buildings) and [heatmap calculations](../toolbox/accessibility_indicators/heatmap_closest_facilities).
+The **filter operation does not alter the original data**. But you can use the filtered data for various tools within GOAT, such as [scenario analysis](../scenarios/ways) and [heatmap calculations](../toolbox/accessibility_indicators/heatmaps/closest_facilities).
 
 :::
 

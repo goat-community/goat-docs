@@ -18,7 +18,7 @@ The Public Transport (PT) Nearby Stations access analysis is a suitable tool to 
 **The close vicinity of public transport hubs** significantly improves accessibility for residents, workers, and visitors, particularly those facing mobility challenges or concerned about environmental impact.
 
 
-![Nearby Stations in GOAT](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_example.png "[Nearby Stations in GOAT")
+![Nearby Stations in GOAT](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_example.png "Nearby Stations in GOAT")
 
 :::info 
 A **geofence** is used to calculate the nearby stations. This geofence covers most Germany, Denmark, Netherlands, Belgium, Switzerland and Austria as shown in the image below.
@@ -48,7 +48,7 @@ A **geofence** is used to calculate the nearby stations. This geofence covers mo
   <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>PT Nearby Stations</code>.</div>
 </div>
 
-![Menu Overview for Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_overview.png "[Menu Overview for Public Transport Nearby Stations")
+![Menu Overview for Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_overview.png "Menu Overview for Public Transport Nearby Stations")
 
 <div class="step">
   <div class="step-number">3</div>
@@ -70,7 +70,7 @@ A **geofence** is used to calculate the nearby stations. This geofence covers mo
   <div class="content">Set the configurations for <code>Public transport mode</code> by changing <code>Day</code> and <code>Time</code>.</div>
 </div>
 
-![Configurations for Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_config.png "[Configurations for Public Transport Nearby Stations")
+![Configurations for Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_config.png "Configurations for Public Transport Nearby Stations")
 
 
 <div class="step">
@@ -114,7 +114,7 @@ Depending on the size of the selected area, the calculation might take some minu
 
 :::
 
-![Result of Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_result.png "[Result of Public Transport Nearby Stations")
+![Result of Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_result.png "Result of Public Transport Nearby Stations")
 
 :::tip Tip
 Want to style your catchment areas and create nice looking maps? See [Styling](../../map/layer_style/styling).
