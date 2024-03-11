@@ -1,0 +1,8 @@
+{
+  "label": "Heatmaps",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "description": "Heatmaps visually represent the intensity or density of data, providing quick insight into patterns and trends within a dataset."
+  }
+}
