@@ -85,7 +85,7 @@ We currently implement this functionality. 🧑🏻‍💻
 
 :::tip tip
 
-You can manage all your datasets in the [Data Explorer](../workspace/data_explorer). 
+You can manage all your datasets in the [Datasets page](../workspace/datasets). 
 
 :::
 
@@ -122,6 +122,6 @@ By clicking on three dots <img src={require('/img/map/filter/3dots.png').default
 :::tip tip
 
 Want to change the design of your layers? See [Layer Style](../category/layer-style).  
-Only want to visualize parts of your dataset? See [Filter](../filter). 
+Only want to visualize parts of your dataset? See [Filter](../map/filter). 
 
 :::

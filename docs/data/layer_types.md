@@ -15,7 +15,7 @@ To see the data types supported by GOAT for internal layers, see [**Data Types**
 :::
 
 ### 1. Feature Layer
-Feature Layers serve as a dynamic repository of **spatial features**, such as points, lines or polygons. Users can upload and utilise data from **Shapefiles**, **Geopackages**, **GeoJSON** and **KML** files. Feature layers can be visualised on the map, [styled](../map/layer_design/styling) and used for analyses with any tools from the [toolbox](../category/toolbox). Furthermore, feature layer can serve as a data basis for the [scenario creation](../category/scenarios).
+Feature Layers serve as a dynamic repository of **spatial features**, such as points, lines or polygons. Users can upload and utilise data from **Shapefiles**, **Geopackages**, **GeoJSON** and **KML** files. Feature layers can be visualised on the map, [styled](../category/layer-style) and used for analyses with any tools from the [toolbox](../category/toolbox). Furthermore, feature layer can serve as a data basis for the [scenario creation](../category/scenarios).
 
 Within the GOAT framework, there are three different types of feature layers, to address different aspects of geospatial functionality:
 
@@ -36,7 +36,7 @@ We currently implement this functionality. 🧑🏻‍💻
 
 :::
 
-Unlike internal layers, which are stored and managed directly within GOAT, **External Layers** are sourced from third-party services. These layers primarily include [Imagery Layers](#1-imagery-layer) and [Vector Tile Layers](#2-vectortilelayer), each serving distinct purposes.
+Unlike internal layers, which are stored and managed directly within GOAT, **External Layers** are sourced from third-party services. These layers primarily include [Imagery Layers](#1-imagery-layer) and [Vector Tile Layers](#2-vector-tile-layer), each serving distinct purposes.
 
 ### 1. Imagery Layer
 Imagery Layers are layers that are provided by **external sources** as **WMS** (Web Map Service) or **WMTS** (Web Map Tile Service). Therewith, a wide range of georeferenced map images, such as topographic maps, can be obtained from external servers and integrated in GOAT. While these images can be incorporated as static maps, it is important to note that they do not support analytical functions. 
