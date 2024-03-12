@@ -56,7 +56,7 @@ The **filter operation does not alter the original data**. But you can use the f
 <p></p>
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select the layer, on which you like to apply the filter.</div>
+  <div class="content">The <code>Active Layer</code> shows the currently selected layer on which the filter will be applied.</div>
 </div>
 
 <div class="step">
@@ -66,13 +66,13 @@ The **filter operation does not alter the original data**. But you can use the f
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Select if you like to filter based on a <b>logical expression</b> or a <b>spatial expression</b>. 
+  <div class="content">Select if you like to filter based on a <b>Logical Expression</b> or a <b>Spatial Expression</b>. 
   </div>
 </div>
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Select the <code>Target Field</code>, i.e. the attribute which you like to use for the filtering.</div>
+  <div class="content">Select the <code>Target Attribute</code>, i.e. the attribute which you like to use for the filtering.</div>
 </div>
 
 <div class="step">
