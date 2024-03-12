@@ -15,7 +15,7 @@ You can find out which data types are supported by GOAT for internal data sets u
 :::
 
 ### 1. Features
-Feature datasets serve as a dynamic repository of **spatial features**, such as points, lines or polygons. Users can upload and utilise data from **Shapefiles**, **Geopackages**, **GeoJSON** and **KML** files. Feature datasets can be visualised on the map, [styled](../map/layer_design/styling) and used for analyses with any tools from the [toolbox](../category/toolbox). Furthermore, feature datasets can serve as a data basis for the [scenario creation](../category/scenarios).
+Feature datasets serve as a dynamic repository of **spatial features**, such as points, lines or polygons. Users can upload and utilise data from **Shapefiles**, **Geopackages**, **GeoJSON** and **KML** files. Feature datasets can be visualised on the map, [styled](../category/layer-style) and used for analyses with any tools from the [toolbox](../category/toolbox). Furthermore, feature datasets can serve as a data basis for the [scenario creation](../category/scenarios).
 
 Within the GOAT framework, there are three different types of feature datasets, to address different aspects of geospatial functionality:
 
