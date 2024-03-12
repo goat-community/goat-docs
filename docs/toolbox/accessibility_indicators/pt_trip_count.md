@@ -44,7 +44,7 @@ This indicator serves as the foundation for the [ÖV-Güteklassen](/docs/toolbox
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the <code>Reference Area Layer</code> for which you like to calculate the indicator. This can be any polygon feature layer.</div>
+  <div class="content">Select the <code>Reference Layer</code> for which you like to calculate the indicator. This can be any polygon feature layer.</div>
 </div>
 
 
