@@ -6,7 +6,7 @@ sidebar_position: 21
 
 GOAT allows users to apply **attribute-based styling** techniques to enhance the visual appearance of elements (such as point, lines or polygons) on the map. This approach allows the visual representation to **reflect variations and patterns in the data**, making it easier to recognise and understand complex information spatially.
 
-In the <code>Layer Style</code> <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> menu, you will often come across the <b>options button</b><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. By enabeling it, the options for styling based on dataset attributes become visible.
+In the <code>Layer design</code> <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> menu, you will often come across the <b>options button</b><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. By enabeling it, the options for styling based on dataset attributes become visible.
 
 
 :::tip HINT
@@ -47,7 +47,7 @@ The color palette provides several customization options. You can define your **
 
 ## Color Scale
 
-In addition to the color palette, the **color scale** can be adjusted. The color scale is a **data classification method** that associates data values with a spectrum of colors. It converts a given data value within a given range (domain) into a corresponding color from a given color spectrum (range). GOAT provides six predefined color scale methods: [Quantile](#quantile), [Standard Deviation](#standard-deviation), [Equal Interval](#equal-interval), [Heads and Tails](#heads-and-tails), [Custom Breaks](#custom-breaks-for-number), [Custom Ordinal](#custom-order-for-string).
+In addition to the color palette, the **color scale** can be adjusted. The color scale is a **data classification method** that associates data values with a spectrum of colors. It converts a given data value within a given range (domain) into a corresponding color from a given color spectrum (range). GOAT provides six predefined color scale methods: [Quantile](#quantile), [Standard Deviation](#standard-deviation), [Equal Interval](#equal-interval), [Heads and Tails](#heads-and-tails), [Custom Breaks](#custom-breaks-for-numbers), [Custom Ordinal](#custom-ordinal-for-strings).
 
 ### Quantile
 

@@ -43,7 +43,7 @@ Public Transport Quality Classes, also known as **ÖV-Güteklassen**, are a clas
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the <code>Reference Area Layer</code> for which you like to calculate the indicator. This can be any polygon feature layer.</div>
+  <div class="content">Select the <code>Reference Layer</code> for which you like to calculate the indicator. This can be any polygon feature layer.</div>
 </div>
 
 ![Reference Area Selection](/img/toolbox/accessibility_indicators/gueteklassen/reference_area.png "Reference Area Selection")
