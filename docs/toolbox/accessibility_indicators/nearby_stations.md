@@ -11,21 +11,22 @@ The **PT Nearby Stations** tool provides an overview of all public transport sto
 
 ## 1. Explanation
 
-The Public Transport (PT) Nearby Stations access analysis is a suitable tool to **visualize public transport stops and their connections** that are accessible by walking/cycling from one or more starting point(s). For detailed information on public transport services, the public transport connections to/from any point can be displayed. The nearest stops, the public transport lines available there, their frequency and the journey time to reach the stop on foot and by bike are provided as a result.
+The Public Transport (PT) Nearby Stations access analysis is a suitable tool to **visualize public transport stops and their connections** that are accessible by walking/cycling from one or more starting point(s). The nearest stops, the public transport lines available there, their frequency and the journey time to reach the stop on foot and by bike are provided as a result.
 
-**Proximity to nearby stations** is essential for various aspects of urban life and is important urban planning.
-
-**The close vicinity of public transport hubs** significantly improves accessibility for residents, workers, and visitors, particularly those facing mobility challenges or concerned about environmental impact.
+**Proximity to nearby stations** is essential for various aspects of urban life and is important urban planning. The availability of public transport connections significantly improves accessibility for residents, workers, and visitors.
 
 
 ![Nearby Stations in GOAT](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_example.png "Nearby Stations in GOAT")
 
 :::info 
-A **geofence** is used to calculate the nearby stations. This geofence covers most Germany, Denmark, Netherlands, Belgium, Switzerland and Austria as shown in the image below.
+The calculation of PT Nearby Stations is only possible in areas where the GTFS data is integrated in GOAT. As soon as you open the tool, you will see the **geofence** in which the calculation is possible. It covers Germany, Denmark, Netherlands, Belgium, Switzerland and Austria as shown in the image below.
+
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/toolbox/accessibility_indicators/nearby_stations/geofence.png').default} alt="Geofence for nearby stations calculation in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
 </div> 
+
+In case you need to perform analysis beyond this geofence, fell free to contact the [Support](https://plan4better.de/en/contact/ "Contact Support") and we will check what is possible. 
 :::
 
 ## 2. Example use cases 
