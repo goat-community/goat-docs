@@ -63,7 +63,7 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Pick which <code>Public transport modes</code> shall be considered for the nearby stations.</div>
+  <div class="content">Set <code>Station Configuration</code> to pick which <code>Public transport modes</code> shall be considered for the nearby stations.</div>
 </div>
 
 <div class="step">
@@ -76,7 +76,7 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Select under the <code>Starting point method</code> how you like to define the starting point(s) for the trips. You can either <b>Select on map</b> or <b>Select from layer</b>.</div>
+  <div class="content">From the <code>Starting Points</code> menu, select <code>Starting point method</code> to define how you like to define the starting point(s) for the trip(s). You can either <b>Select on map</b> or <b>Select from layer</b>.</div>
 </div>
 
 <Tabs>
@@ -117,11 +117,16 @@ Depending on the number of the selected starting points, the calculation might t
 
 <div class="step">
   <div class="step-number">10</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called <b>"Nearby Stations"</b>, showing the Nearby PT Stations, and one layer called <b>"Starting Points - Nearby Stations"</b> which provides all starting points that were used for the calculation of this indicator. </div>
+  <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called <b>"Nearby Stations"</b>, showing the Nearby PT Stations, and one layer called <b>"Starting Points - Nearby Stations"</b> which provides all starting points that were used for the calculation of this indicator. 
+  <p></p>
+  When clicking on a point in the map, further details, such as stop name, access time and aggregation frequency (overall frequency in minutes), become visible.
+</div>
 </div>
 
 
 ![Result of Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_result.png "Result of Public Transport Nearby Stations")
+
+
 
 :::tip Tip
 Want to style your results and create nice looking maps? See [Styling](../../map/layer_style/styling).
