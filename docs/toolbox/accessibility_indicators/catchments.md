@@ -339,7 +339,7 @@ If you enable **Polygon Difference**, only the "incremental" (or differential) p
 
  <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Select the <code>Point layer</code> which you like to use as starting points. You can add <b>as many starting points</b> as you like.</div>
+  <div class="content">Click on <code>Select from layer</code>. Select the <code>Point layer</code> which contains the starting point(s) you like to use.</div>
 </div>
 
 
