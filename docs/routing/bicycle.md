@@ -3,7 +3,7 @@ sidebar_position: 2
 
 ---
 
-# Cycling
+# Bicycle/Pedelec
 
 :::info coming soon
 
