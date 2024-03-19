@@ -53,22 +53,22 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select the <code>Station Access</code> mode (walk, bicycle or pedelec) you would like to calculate the nearby stations.</div>
+  <div class="content">Select the <code>Station Access</code> mode (<i>walk, bicycle or pedelec</i>), which shall be used for the way to the PT station.</div>
 </div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Set the configurations for the <code>Station Access</code> by changing <code>Travel time limit (min)</code> and <code>Travel speed(km/h)</code>.</div>
+  <div class="content">Set the configurations for the Station Access by choosing <code>Travel time limit (min)</code> and <code>Travel speed (km/h)</code>.</div>
 </div>
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Pick for which <code>Public transport mode</code> mode you would like to calculate the nearby stations.</div>
+  <div class="content">Pick which <code>Public transport modes</code> shall be considered for the nearby stations.</div>
 </div>
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Set the configurations for <code>Public transport mode</code> by changing <code>Day</code> and <code>Time</code>.</div>
+  <div class="content">Select for which <code>Day</code> and time (<code>From Time</code> and <code>To Time</code>) you would like to see the public transport connections.</div>
 </div>
 
 ![Configurations for Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_config.png "Configurations for Public Transport Nearby Stations")
@@ -76,7 +76,7 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Choose how you like to define the starting point(s) of the isochrone under <code>Starting</code> menu.</div>
+  <div class="content">Select under the <code>Starting point method</code> how you like to define the starting point(s) for the trips. You can either <b>Select on map</b> or <b>Select from layer</b>.</div>
 </div>
 
 <Tabs>
@@ -97,7 +97,7 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 
  <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Select the <code>Point layer</code> which you like to use as starting points. You can add <b>as many starting points</b> as you like.</div>
+  <div class="content">Click on <code>Select from layer</code>. Select the <code>Point layer</code> which contains the starting point(s) you like to use.</div>
 </div>
 
 
@@ -111,16 +111,22 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 
 :::tip Hint
 
-Depending on the size of the selected area, the calculation might take some minutes. The [status bar](../../workspace/home#status-bar) shows the current progress.
+Depending on the number of the selected starting points, the calculation might take some minutes. The [status bar](../../workspace/home#status-bar) shows the current progress.
 
 :::
+
+<div class="step">
+  <div class="step-number">10</div>
+  <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called <b>"Nearby Stations"</b>, showing the Nearby PT Stations, and one layer called <b>"Starting Points - Nearby Stations"</b> which provides all starting points that were used for the calculation of this indicator. </div>
+</div>
+
 
 ![Result of Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_result.png "Result of Public Transport Nearby Stations")
 
 :::tip Tip
-Want to style your catchment areas and create nice looking maps? See [Styling](../../map/layer_style/styling).
+Want to style your results and create nice looking maps? See [Styling](../../map/layer_style/styling).
 :::
 
 ## 4. Technical details
 
-The Nearby Stations are received from the GTFS data.
+The PT Nearby Stations are received from the GTFS data.
