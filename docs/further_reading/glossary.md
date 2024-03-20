@@ -31,6 +31,10 @@ An **Area of Interest (AOI)** is a specific geographical region or boundary that
 
 Connectivity has a direct impact on accessibility, as it is decisive for the travel time to reach a certain destination. High connectivity is especially important for active modes, as these modes are particularly sensitive to detours. Thus, high connectivity is key to ensure accessibility to services and amenities and to promote sustainable mobility. 
 
+### Geospatial Data
+
+ A geospatial dataset refers to a collection of data that is associated with specific geographic locations on the Earth's surface. This data typically includes information such as coordinates, attributes, and sometimes even metadata about the geographic features being represented. Geospatial datasets are used in various applications such as mapping, navigation, urban planning, environmental monitoring, and more. They are crucial for analyzing and understanding spatial relationships and patterns in the real world.
+
 ### H3 Grid
 
 The **H3 grid** <img src={require('/img/literature/glossary/H3_grid_logo.webp').default} width="1000px" alt="H3 grid logo" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/> 
