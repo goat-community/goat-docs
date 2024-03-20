@@ -86,7 +86,7 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Click on <code>Select on map</code>. Select the starting point(s) by clicking on the respective location(s) in the map. You can add <b>as many starting points</b> as you like.</div>
+  <div class="content">Click on <code>Select on map</code>. Select the starting point(s) by clicking on the respective location(s) in the map. You can add as many starting points as you like.</div>
 </div>
 
 
@@ -106,7 +106,7 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 
 <div class="step">
   <div class="step-number">9</div>
-  <div class="content">Click on <code>Run</code>. This starts the calculation of the Nearby Stations from the selected starting point(s).</div>
+  <div class="content">Click on <code>Run</code>. This starts the capturing of the Nearby Stations from the selected starting point(s).</div>
 </div>
 
 :::tip Hint
@@ -119,7 +119,7 @@ Depending on the number of the selected starting points, the calculation might t
   <div class="step-number">10</div>
   <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called <b>"Nearby Stations"</b>, showing the Nearby PT Stations, and one layer called <b>"Starting Points - Nearby Stations"</b> which provides all starting points that were used for the calculation of this indicator. 
   <p></p>
-  When clicking on a point in the map, further details, such as stop name, access time and aggregation frequency (overall frequency in minutes), become visible.
+  When clicking on a point in the map, further details, such as <b>stop name</b>, <b>access time [min]</b> and <b>frequency of the PT Service [min]</b>, become visible.
 </div>
 </div>
 
