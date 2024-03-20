@@ -33,7 +33,7 @@ Connectivity has a direct impact on accessibility, as it is decisive for the tra
 
 ### Geospatial Data
 
- A geospatial dataset refers to a collection of data that is associated with specific geographic locations on the Earth's surface. This data typically includes information such as coordinates, attributes, and sometimes even metadata about the geographic features being represented. Geospatial datasets are used in various applications such as mapping, navigation, urban planning, environmental monitoring, and more. They are crucial for analyzing and understanding spatial relationships and patterns in the real world.
+**Geospatial data** refers to data that is associated with specific geographic locations on the Earth's surface. This data typically includes information such as coordinates, attributes, and sometimes even metadata about the geographic features being represented. Geospatial data is used in various applications such as mapping, navigation, urban planning, environmental monitoring, and more. They are crucial for analyzing and understanding spatial relationships and patterns in the real world.
 
 ### H3 Grid
 
