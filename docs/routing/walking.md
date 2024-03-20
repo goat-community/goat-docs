@@ -16,7 +16,7 @@ Routing is a critical process in computer networking that serves the general pur
 
 ### Routing Network
 
-Data from **[Overture Maps Foundation](https://overturemaps.org/)** is used for routing network in GOAT. It includes transportation themes with **segments/edges** (for any continuous path not bisected by another) and **connectors/nodes** (for any point where two distinct paths intersect), representing real-world networks.
+Data from the **[Overture Maps Foundation](https://overturemaps.org/)** is used as routing network in GOAT. It includes the transportation infrastructure with **edges** (for any continuous path not bisected by another) and **nodes** (for any point where two distinct paths intersect), representing real-world networks.
 
 
 ### Topography and Elevation
@@ -30,10 +30,10 @@ Elevation data is sourced from **[Copernicus](https://www.copernicus.eu/en)** as
 
 The following steps are performed on the data to enable **quick** and **accurate** routing:
 
- - **Attribute Parsing:** Categorizing attributes of segments and connectors.
+ - **Attribute Parsing:** Categorizing attributes of edges and nodes.
  - **Geospatial Indexing:**  Utilizing **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** indexing for efficient routing.
  - **Surface Impedance Computation:** Calculating impedance considering surface properties.
- - **Slope Impedance Computation:** Overlaying DEM on segments to compute slope profiles.
+ - **Slope Impedance Computation:** Overlaying DEM on edges to compute slope profiles.
 
 
 ### Routing Process Steps
@@ -41,27 +41,26 @@ The following steps are performed on the data to enable **quick** and **accurate
 #### Sub-network Extraction
 
 - **Buffer Region:** Based on user-origin, travel time, and speed.
-- **Segment Filtering:**  Include only relevant segments for walking.
+- **Edge Filtering:**  Include only relevant edges for walking.
 
-Segments are considered for pedestrian routing:
-`secondary` `tertiary` `residential` `livingStreet` `trunk`
-`unclassified` `parkingAisle` `driveway` `pedestrian` `footway`
-`steps` `track` `bridleway` `unknown`
+For pedestrian routing, the edges of the following street types are considered :
+`secondary`, `tertiary`, `residential`, `livingStreet`, `trunk`,
+`unclassified`, `parkingAisle`, `driveway`, `pedestrian`, `footway`,
+`steps`, `track`, `bridleway` and `unknown`. *(You can find further information on this classification in the [OSM Wiki](https://wiki.openstreetmap.org/wiki/Key:highway).)*
 
-#### Artificial Segment Creation
+#### Artificial Edge Creation
 
-User-provided origin points are typically located a short distance away from the street network. In order to account for the additional time (or cost) of walking from the origin to its nearest street, artificial (or simulated) segments are created.
+User-provided origin points are typically located a short distance away from the street network. In order to account for the additional time (or cost) of walking from the origin to its nearest street, artificial (or simulated) edges are created.
 
-#### Segment Cost Computation
+#### Edge Cost Computation
 
-For all segments in the sub-network, a cost value (represented as time) is calculated based on various parameters.
-
+For all edges in the sub-network, a cost value (represented as time) is calculated based on path length and walking speed.
 Cost function for walking:
 `cost = length / speed`
 
 #### Network Propagation
 
-To compute the shortest path from the origin point to various destinations, a custom implementation is used of the well-known [Dijkstra Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm).
+To compute the shortest path from the origin point to various destinations, a custom implementation of the well-known [Dijkstra Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) is used.
 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -71,10 +70,14 @@ To compute the shortest path from the origin point to various destinations, a cu
 
 
 
-The implementation has a time complexity of *O(V^2)* (TBC), is written in **Python** and uses the just-in-time compiler **Numba**.
+The implementation has a time complexity of *O(V^2)* <span style={{color: "#E4696A"}}>(TBC)</span>, is written in **Python** and uses the just-in-time compiler **Numba**.
 
 
 ## 4. Further Readings
+
+<span style={{color: "#E4696A"}}>
+TODO:
  - list of papers 
  - list of libraries we are using (R5)
+</span>
  
