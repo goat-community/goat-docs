@@ -5,12 +5,12 @@ sidebar_position: 1
  
 # Walk
  
-**Routing** is the process of guiding data packets from origin to destination through various contexts, adapting transmission speeds to changing conditions and priorities.
+The **Walk Routing** is used for all analyses in GOAT that contain walking trips. 
 
  
 ## 1. Objectives
 
-Routing is a critical process in computer networking that serves the general purpose of **directing data packages from their source to their destination**. It plays an important role in a variety of contexts, including **local networks**, and **catchment areas**. By determining the optimal path for data transmission, routing ensures efficient and reliable communication between devices and networks. In addition, routing allows the speed of data transmission to be adjusted, enabling networks to adapt effectively to changing conditions and priorities.
+Walk routing is used for many indicators in GOAT, such as [Catchment Areas](../toolbox/accessibility_indicators/catchments "Visit Docs on Catchment Areas"), [Heatmaps](../toolbox/accessibility_indicators/heatmaps "Visit Docs on Heatmaps") and [PT Nearby Stations](../toolbox/accessibility_indicators/nearby_stations "Visit Docs on PT Nearby Stations"). As GOAT also allows to create [Scenarios on the Paths Network](../scenarios/ways), a **custom routing algorithm** is needed that also reflects the changes of the scenario in the accessibility analyses. For the mode of walking, we thereby **only consider paths that are suitable for pedestrians**. The walking `speed` can be adjusted by the user whenever an accessibility analysis is performed. 
 
 ## 2. Data
 
@@ -19,34 +19,27 @@ Routing is a critical process in computer networking that serves the general pur
 Data from the **[Overture Maps Foundation](https://overturemaps.org/)** is used as routing network in GOAT. It includes the transportation infrastructure with **edges** (for any continuous path not bisected by another) and **nodes** (for any point where two distinct paths intersect), representing real-world networks.
 
 
-### Topography and Elevation
-
-Elevation data is sourced from **[Copernicus](https://www.copernicus.eu/en)** as **Digital Elevation Model (DEM)** tiles.
-
-
 ## 3. Technical Details
 
 ### Data Pre-processing
 
-The following steps are performed on the data to enable **quick** and **accurate** routing:
+The following steps are performed on the data to enable **quick** and **accurate** routing for walking:
 
- - **Attribute Parsing:** Categorizing attributes of edges and nodes.
- - **Geospatial Indexing:**  Utilizing **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** indexing for efficient routing.
- - **Surface Impedance Computation:** Calculating impedance considering surface properties.
- - **Slope Impedance Computation:** Overlaying DEM on edges to compute slope profiles.
+ 1. **Attribute Parsing:** Categorizing attributes of edges (road `class`).
+ 2. **Geospatial Indexing:**  Utilizing **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** indexing for efficient routing.
 
 
 ### Routing Process Steps
 
 #### Sub-network Extraction
 
-- **Buffer Region:** Based on user-origin, travel time, and speed.
-- **Edge Filtering:**  Include only relevant edges for walking.
+1. **Buffer Region:** Based on user-origin, travel time, and speed.
+2. **Edge Filtering:**  Include only relevant edges for walking.
 
-For pedestrian routing, the edges of the following street types are considered :
+For pedestrian routing, the edges of the following road classes are considered :
 `secondary`, `tertiary`, `residential`, `livingStreet`, `trunk`,
 `unclassified`, `parkingAisle`, `driveway`, `pedestrian`, `footway`,
-`steps`, `track`, `bridleway` and `unknown`. *(You can find further information on this classification in the [OSM Wiki](https://wiki.openstreetmap.org/wiki/Key:highway).)*
+`steps`, `track`, `bridleway` and `unknown`. *(You can find further information on this classification in the [Overture Wiki](https://docs.overturemaps.org/themes/transportation/roads#road-class).)*
 
 #### Artificial Edge Creation
 
@@ -68,16 +61,6 @@ To compute the shortest path from the origin point to various destinations, a cu
 <p style={{ textAlign: 'center' }}>GIF: <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra Algorithm</a></p>
 </div>
 
+The implementation has a time complexity of *O(ElogV)*, is written in **Python** and uses the just-in-time compiler **Numba**.
 
 
-The implementation has a time complexity of *O(V^2)* <span style={{color: "#E4696A"}}>(TBC)</span>, is written in **Python** and uses the just-in-time compiler **Numba**.
-
-
-## 4. Further Readings
-
-<span style={{color: "#E4696A"}}>
-TODO:
- - list of papers 
- - list of libraries we are using (R5)
-</span>
- 
