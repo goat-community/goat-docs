@@ -8,14 +8,14 @@ sidebar_position: 20
 # Core Styling Elements
 
 
-When you add a new layer to your project, it is assigned a default style depending on the type of data. By customizing the <code>Layer Style</code> <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> menu, you can adjust the visualization of the datasets to your wishes and **create appealing maps**. The styling options available depend on the type of data, i.e. whether it is points, lines or polygons. Thereby, multiple visual aspects, such as **colors**, **strokes** and **opacities** can be adjusted.
+When you add a new layer to your project, it is assigned a default style depending on the type of data. By customizing the <code>Layer design</code> <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> menu, you can adjust the visualization of the datasets to your wishes and **create appealing maps**. The styling options available depend on the type of data, i.e. whether it is points, lines or polygons. Thereby, multiple visual aspects, such as **colors**, **strokes** and **opacities** can be adjusted.
 
 
 ## Color Settings
 
 ### Fill Color
 
-Fill color is used to represent the **interior** of **point or polygon features** on a map. Fill color is an aspect of cartography and GIS visualisation because it helps to improve the overall readability of the map. The [Color Picker](#color-picker) provides different options to select the colors of your choice.
+Fill color is used to represent the **interior** of **point or polygon features** on a map. Fill color is an aspect of cartography and GIS visualisation because it helps to improve the overall readability of the map. The [Color Picker](#color-picker--preset-colors) provides different options to select the colors of your choice.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -25,7 +25,7 @@ Fill color is used to represent the **interior** of **point or polygon features*
 
 #### Opacity
 
-To adjust the opacity of your layer styles for Fill Color, simply change the opacity to any **value between 0 and 1**. This numerical scale allows you to define the exact level of opacity you want, where **0 is full transparency** and **1 is full opacity**. Adjust the opacity to your preference, either by using the slider or by typing the exact level directly into the text box provided.
+To adjust the opacity of your layer styles for fill color, simply change the opacity to any **value between 0 and 1**. This numerical scale allows you to define the exact level of opacity you want, where **0 is full transparency** and **1 is full opacity**. Adjust the opacity to your preference, either by using the slider or by typing the exact level directly into the text box provided.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -36,7 +36,7 @@ To adjust the opacity of your layer styles for Fill Color, simply change the opa
 
 ### Stroke Color
 
-Similar to the fill color, also the stroke color can be adjusted. Stroke color refers to the color applied to the **outlines or edges** of map features such as polygons, lines and points. It is used to delineate the edges of spatial entities, distinguishing them from one another and enhancing their visibility on the map. The [Color Picker](#color-picker) provides different options to select the colors of your choice.
+Similar to the fill color, also the stroke color can be adjusted. Stroke color refers to the color applied to the **outlines or edges** of map features such as polygons, lines and points. It is used to delineate the edges of spatial entities, distinguishing them from one another and enhancing their visibility on the map. The [Color Picker](#color-picker--preset-colors) provides different options to select the colors of your choice.
 
 
 ### Color Picker & Preset Colors
@@ -100,5 +100,5 @@ By clicking on <code>Reset</code>, you can reset the current style settings back
 
 
 :::tip HINT
-Interested in **smart styling** options? Check our [Attribute-based Styling](../layer_design/smart_styling).
+Interested in **smart styling** options? Check our [Attribute-based Styling](../layer_style/smart_styling).
 :::

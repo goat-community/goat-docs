@@ -126,5 +126,7 @@ Depending on the size of the datasets, the calculation might take some minutes. 
 
 <img src={require('/img/toolbox/geoanalysis/aggregate_polygons/aggregate_polygons_result.png').default} alt="Polygon Aggregation Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
 
-
+:::tip Tip
+Want to style your result layer and create nice looking maps? See [Styling](../../map/layer_style/styling).
+:::
 

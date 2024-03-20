@@ -12,7 +12,7 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 ## 1. Explanation
 
-**Catchment Areas** show how far a person can travel from selected starting point(s) within a given travel time or a given travel distance. The catchment calculation routes on the **real transport network**. Therefore, the user can select the `routing mode` (_Walking_, _Bike_, _Pedelec_, _Transit_ or _Car_). 
+**Catchment Areas** show how far a person can travel from selected starting point(s) within a given travel time or a given travel distance. The catchment calculation routes on the **real transport network**. Therefore, the user can select the `routing type` (_Walking_, _Bike_, _Pedelec_, _Transit_ or _Car_). 
 
 Catchment areas can be used as an **accessibility indicator** in a specific location or area. The catchment area gives insights into the network connectivity. Furthermore, the catchment area can be intersected with further spatial datasets, such as population and [POI](../../further_reading/glossary#point-of-interest-poi "What is a POI?") data. Therewith it can be assessed how many people or POIs can be reached from certain starting point(s) and thus e.g. identified which share of inhabitants has access to important destinations of daily life within a specific travel time. 
 
@@ -97,6 +97,12 @@ For further insights into the Routing algorithm, visit [Routing/Walk](../../rout
 
 <img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_time.png').default} alt="walking-time configurations" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
 
+:::tip Hint
+
+For defining which travel time limits are suitable for which amenity, the ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
+
+:::
+
 #### Advanced Configurations
 
 Per default, the catchment areas are calculated in polygon shape. In case you want to adjust that, you find further options in the advanced configurations. 
@@ -117,6 +123,13 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
 </div>
 
 <img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_distance.png').default} alt="walking-distance configurations" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+
+:::tip Hint
+
+For defining which travel distances are suitable for which amenity, the ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
+
+:::
+
 
 #### Advanced Configurations
 
@@ -162,6 +175,13 @@ For further insights into the Routing algorithm, visit [Routing/Bicycle](../../r
 
 <img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_time.png').default} alt="walking-time configurations" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
 
+:::tip Hint
+
+For defining which travel time limits are suitable for which amenity, the ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
+
+:::
+
+
 #### Advanced Configurations
 
 Per default, the catchment areas are calculated in polygon shape. In case you want to adjust that, you find further options in the advanced configurations. 
@@ -182,6 +202,13 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
 </div>
 
 <img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_distance.png').default} alt="walking-distance configurations" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+
+:::tip Hint
+
+For defining which travel distances are suitable for which amenity, the ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
+
+:::
+
 
 #### Advanced Configurations
 
@@ -226,6 +253,13 @@ For further insights into the Routing algorithm, visit [Routing/Public Transport
 </div>
 
 <img src={require('/img/toolbox/accessibility_indicators/catchments/pt_config.png').default} alt="Public Transport Configurations" style={{ maxHeight: "400px", maxWidth: "400px"}}/>
+
+:::tip Hint
+
+For defining which travel time limits are suitable for which amenity, the ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
+
+:::
+
 
 #### Advanced Configurations
 
@@ -284,7 +318,7 @@ If you enable **Polygon Difference**, only the "incremental" (or differential) p
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Select under the <code>Starting point method</code> how you like to define the starting point(s) of the catchment area. You can either <b>Select on map</b> or <b>Select from layer</b>.</div>
+  <div class="content">From the <code>Starting</code> menu, select the <code>Starting point method</code> to define how you like to define the starting point(s) for the catchment areas. You can either <b>Select on map</b> or <b>Select from layer</b>.</div>
 </div>
 
 <Tabs>
@@ -305,7 +339,7 @@ If you enable **Polygon Difference**, only the "incremental" (or differential) p
 
  <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Select the <code>Point layer</code> which you like to use as starting points. You can add <b>as many starting points</b> as you like.</div>
+  <div class="content">Click on <code>Select from layer</code>. Select the <code>Point layer</code> which contains the starting point(s) you like to use.</div>
 </div>
 
 

@@ -83,3 +83,6 @@ Depending on the complexity of the OD-matrix, the calculation might take some mi
 
 <img src={require('/img/toolbox/geoanalysis/origin_destination/result.png').default} alt="Origin Destination Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
+:::tip Tip
+Want to style your result layer and create nice looking maps? See [Styling](../../map/layer_style/styling).
+:::
