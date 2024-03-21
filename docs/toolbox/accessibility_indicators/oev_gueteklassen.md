@@ -2,6 +2,8 @@
 sidebar_position: 5
 ---
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
+import thematicIcon2 from "/img/heading_icons/time_icon.png";
+import thematicIcon3 from "/img/heading_icons/reference_layer_icon.png";
 
 # ÖV-Güteklassen
 
@@ -36,14 +38,18 @@ Public Transport Quality Classes, also known as **ÖV-Güteklassen**, are a clas
 
 ![Menu Overview for ÖV-Güteklassen](/img/toolbox/accessibility_indicators/gueteklassen/overview.png "Menu Overview for ÖV-Güteklassen")
 
+### <img src={thematicIcon2} alt="toolbox" style={{width: "25px"}}/> Calculation Time
+
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Define the <code>Calculation Time</code> (the day and the time).</div>
+  <div class="content">Define the Calculation Time (the day and the time).</div>
 </div>
+
+### <img src={thematicIcon3} alt="toolbox" style={{width: "25px"}}/> Reference Layer
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the <code>Reference Layer</code> for which you like to calculate the indicator. This can be any polygon feature layer.</div>
+  <div class="content">Select the Reference Layer for which you like to calculate the indicator. This can be any polygon feature layer.</div>
 </div>
 
 ![Reference Area Selection](/img/toolbox/accessibility_indicators/gueteklassen/reference_area.png "Reference Area Selection")

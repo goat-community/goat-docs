@@ -5,6 +5,9 @@ sidebar_position: 1
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
+import thematicIcon2 from "/img/heading_icons/routing_icon.png";
+import thematicIcon3 from "/img/heading_icons/gears_icon.png";
+import thematicIcon4 from "/img/heading_icons/location_icon.png";
 
 # Catchment Area
 
@@ -55,6 +58,8 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
   <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Catchment Area</code>.</div>
 </div>
 
+### <img src={thematicIcon2} alt="toolbox" style={{width: "25px"}}/> Routing
+
 <div class="step">
   <div class="step-number">3</div>
   <div class="content">Pick for which <code>Routing Type</code> you would like to calculate an isochrone.</div>
@@ -66,6 +71,7 @@ Catchment calculation for **Car** coming soon. We currently implement this funct
 
 :::
 
+### <img src={thematicIcon3} alt="toolbox" style={{width: "25px"}}/> Configuration
 
 <Tabs>
   <TabItem value="walk" label="Walk" default className="tabItemBox">
@@ -84,6 +90,8 @@ For further insights into the Routing algorithm, visit [Routing/Walk](../../rout
   <div class="step-number">4</div>
   <div class="content">Pick if you like to calculate the catchment area based on <b>time</b> or <b>distance</b>.</div>
 </div>
+
+
 
 <Tabs>
   <TabItem value="time" label="Time" default className="tabItemBox">
@@ -315,10 +323,11 @@ If you enable **Polygon Difference**, only the "incremental" (or differential) p
   </TabItem>
 </Tabs>
 
+### <img src={thematicIcon4} alt="toolbox" style={{width: "25px"}}/> Starting
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">From the <code>Starting</code> menu, select the <code>Starting point method</code> to define how you like to define the starting point(s) for the catchment areas. You can either <b>Select on map</b> or <b>Select from layer</b>.</div>
+  <div class="content">From the Starting menu, select the <code>Starting point method</code> to define how you like to define the starting point(s) for the catchment areas. You can either <b>Select on map</b> or <b>Select from layer</b>.</div>
 </div>
 
 <Tabs>
