@@ -6,6 +6,7 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+
 # Aggregate Polygons
 
 The **Aggregate Polygons** tool can be used to **aggregate data from one polygon layer to another** and therewith providing valuable insights into spatial patterns and relationships.
@@ -44,6 +45,7 @@ The example below shows the geometry of the *Source Layer* remains the same, whi
 
 <img src={require('/img/toolbox/geoanalysis/aggregate_polygons/aggregate_polygons.png').default} alt="Polygon Aggregation Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
+### Layer to aggregate
 
 <div class="step">
   <div class="step-number">3</div>
@@ -85,6 +87,7 @@ To learn more about H3 grid, you can visit the [Glossary](../../further_reading/
   </TabItem>
 </Tabs>
 
+### Statistics
 
 <div class="step">
   <div class="step-number">6</div>

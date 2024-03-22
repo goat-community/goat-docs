@@ -42,6 +42,7 @@ The Aggregate Points tool can be used to **analyse the characteristics of points
 
 <img src={require('/img/toolbox/geoanalysis/aggregate_points/aggregate_points.png').default} alt="Point Aggregation Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
 
+### Layer to aggregate
 
 <div class="step">
   <div class="step-number">3</div>
@@ -83,6 +84,7 @@ To learn more about H3 grid, you can visit the [Glossary](../../further_reading/
   </TabItem>
 </Tabs>
 
+### Statistics
 
 <div class="step">
   <div class="step-number">6</div>

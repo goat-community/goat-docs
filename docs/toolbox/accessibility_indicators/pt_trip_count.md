@@ -31,20 +31,25 @@ This indicator serves as the foundation for the [ÖV-Güteklassen](/docs/toolbox
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>PT Trip Count</code>. This opens the setting menu.</div>
+  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Trip Count</code>. This opens the setting menu.</div>
 </div>
 
 
 ![Menu Overview for Public Transport Trip Count](/img/toolbox/accessibility_indicators/trip_count/overview.png "[Menu Overview for Public Transport Trip Count")
 
+
+### Calculation Time
+
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Define the <code>Calculation Time</code> (the day and the time).</div>
+  <div class="content">Define the Calculation Time (the day and the time).</div>
 </div>
+
+### Reference Layer
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the <code>Reference Layer</code> for which you like to calculate the indicator. This can be any polygon feature layer.</div>
+  <div class="content">Select the Reference Layer for which you like to calculate the indicator. This can be any polygon feature layer.</div>
 </div>
 
 

@@ -5,6 +5,7 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+
 # PT Nearby Stations
 
 The **PT Nearby Stations** tool provides an overview of all public transport stops and connections in the proximity of selected starting point(s).
@@ -46,14 +47,16 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>PT Nearby Stations</code>.</div>
+  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Nearby Stations</code>.</div>
 </div>
 
 ![Menu Overview for Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_overview.png "Menu Overview for Public Transport Nearby Stations")
 
+### Station Access
+
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select the <code>Station Access</code> mode (<i>walk, bicycle or pedelec</i>), which shall be used for the way to the PT station.</div>
+  <div class="content">Select the Station Access mode (<i>walk, bicycle or pedelec</i>), which shall be used for the way to the PT station.</div>
 </div>
 
 <div class="step">
@@ -61,9 +64,11 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
   <div class="content">Set the configurations for the Station Access by choosing <code>Travel time limit (min)</code> and <code>Travel speed (km/h)</code>.</div>
 </div>
 
+### Station Configuration
+
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Set <code>Station Configuration</code> to pick which <code>Public transport modes</code> shall be considered for the nearby stations.</div>
+  <div class="content">Set Station Configuration to pick which <code>Public transport modes</code> shall be considered for the nearby stations.</div>
 </div>
 
 <div class="step">
@@ -73,10 +78,11 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 
 ![Configurations for Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_config.png "Configurations for Public Transport Nearby Stations")
 
+### Starting Points
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">From the <code>Starting Points</code> menu, select <code>Starting point method</code> to define how you like to define the starting point(s) for the trip(s). You can either <b>Select on map</b> or <b>Select from layer</b>.</div>
+  <div class="content">From the Starting Points menu, select <code>Starting point method</code> to define how you like to define the starting point(s) for the trip(s). You can either <b>Select on map</b> or <b>Select from layer</b>.</div>
 </div>
 
 <Tabs>

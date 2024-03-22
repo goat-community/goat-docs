@@ -18,15 +18,15 @@ At GOAT, we ensure that our data is up-to-date by updating it at least once a ye
 
 ![GOAT data basis](/img/data/data_basis/original_files/data_en_blue.png "GOAT data basis")
 
-- **Points Of Interest:** For POIs a combination of diverse data sources is used. In addition to [OpenStreetMap (OSM)](https://wiki.openstreetmap.org/), we use a wide range of other sources, including data from government departments and agencies, health insurance companies and retailer companies. The different datasets are combined using a combination of automated and manual processes. Meanwhile, the data is checked for completeness and accuracy. If needed, we also carry out our own data collection in the field. 
+- **Points Of Interest:** For POIs a combination of diverse data sources is used. In addition to [Overture Maps Foundation](https://overturemaps.org/) *(Overture Maps Foundation provides data in five broad categories - Admins, Base, Buildings, Places and Transportation. It also covers the data from [Open Street Map (OSM)](https://wiki.openstreetmap.org/))*, we use a wide range of other sources, including data from government departments and agencies, health insurance companies and retailer companies. The different datasets are combined using a combination of automated and manual processes. Meanwhile, the data is checked for completeness and accuracy. If needed, we also carry out our own data collection in the field. 
 
 - **Population and Buildings:** The population is disaggregated to the building level based on census data and district or municipality population counts, as well as various land use data. The processing is supported by 3D city models where available.
 
-- **Public Transport Network:** For the public transport network and schedule, GTFS (General Transit Feed Specification) data is used to provide realistic and temporal dynamic travel times for public transport. 
+- **Public Transport Network:** For the public transport network and schedule, [GTFS (General Transit Feed Specification)](https://gtfs.org/) data is used to provide realistic and temporal dynamic travel times for public transport. 
 
 - **Administrative Boundaries:** The data is used to delimit the boundary of a geographical area under the jurisdiction of some governmental or administrative entities, such as municipalities, districts or counties.
 
-- **Street Network:** For walking and cycling, OSM is mainly used, but the road network data is flexible, so some other datasets are used as well. For cars, calibrated car routing networks from commercial providers are used to calculate travel times including varying network saturation at different times of the day.
+- **Street Network:** For walking and cycling, Overture Map Foundation data is used primarily. Data from the Transport theme is used, which represents real-world transport networks and their components: roads, motorways, interchanges, dedicated paths and more. However, the road network data is flexible, so some other datasets are also used. For cars, calibrated car routing networks from commercial providers are used to calculate travel times, including varying network saturation at different times of the day.
 
 - **Additional Data:** There are a number of other datasets that allow users to connect geoportals and enhance the visualisation by choosing from different base maps. In addition, elevation models, street noise and accident point data sets are used to improve and vary the analysis carried out using GOAT. 
 

@@ -2,7 +2,8 @@
 sidebar_position: 1
 ---
 
-import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp"
+import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
+
 
 # Join
 
@@ -47,6 +48,8 @@ GOAT uses the **"Inner Join"** operation to calculate a join which combines rows
 
 <p> </p>
 
+### Select layers to join 
+
 <div class="step">
   <div class="step-number">3</div>
   <div class="content">  Select your <b>Target Layer</b> (the primary table or layer to which you want to add additional data). </div>
@@ -57,6 +60,8 @@ GOAT uses the **"Inner Join"** operation to calculate a join which combines rows
   <div class="content">Select your <b>Join Layer</b> (the secondary table or dataset that contains the records and attributes to be inserted into the Target Layer). </div>
 </div>
 
+### Fields to match
+
 <div class="step">
   <div class="step-number">5</div>
   <div class="content">Define the attribute which you like to use for matching the records of both layers. Therefore, pick your <b>Target Attribute</b>. </div>
@@ -66,6 +71,8 @@ GOAT uses the **"Inner Join"** operation to calculate a join which combines rows
   <div class="step-number">6</div>
   <div class="content"> Select the same attribute of the Join Layer as the <b>Join Attribute</b>. </div>
 </div>
+
+### Statistics
 
 <div class="step">
   <div class="step-number">7</div>
