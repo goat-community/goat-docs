@@ -326,7 +326,7 @@ If you enable **Polygon Difference**, only the "incremental" (or differential) p
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">From the Starting menu, select the <code>Starting point method</code> to define how you like to define the starting point(s) for the catchment areas. You can either <b>Select on map</b> or <b>Select from layer</b>.</div>
+  <div class="content">Select the <code>Starting point method</code> to define how you like to define the starting point(s) for the catchment areas. You can either <b>Select on map</b> or <b>Select from layer</b>.</div>
 </div>
 
 <Tabs>
@@ -365,6 +365,8 @@ If you enable **Polygon Difference**, only the "incremental" (or differential) p
 Depending on the chosen settings, the calculation might take some minutes. The [status bar](../../workspace/home#status-bar) shows the current progress.
 
 :::
+
+### Results
 
 <div class="step">
   <div class="step-number">10</div>

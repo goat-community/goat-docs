@@ -47,7 +47,7 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Nearby Stations</code>.</div>
+  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>PT Nearby Stations</code>.</div>
 </div>
 
 ![Menu Overview for Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_overview.png "Menu Overview for Public Transport Nearby Stations")
@@ -56,7 +56,7 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select the Station Access mode (<i>walk, bicycle or pedelec</i>), which shall be used for the way to the PT station.</div>
+  <div class="content">Select the <code>Station Access</code> mode (<i>walk, bicycle or pedelec</i>), which shall be used for the way to the PT station.</div>
 </div>
 
 <div class="step">
@@ -120,6 +120,8 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 Depending on the number of the selected starting points, the calculation might take some minutes. The [status bar](../../workspace/home#status-bar) shows the current progress.
 
 :::
+
+### Results
 
 <div class="step">
   <div class="step-number">10</div>

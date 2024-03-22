@@ -40,14 +40,14 @@ Public Transport Quality Classes, also known as **ÖV-Güteklassen**, are a clas
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Define the Calculation Time (the day and the time).</div>
+  <div class="content">Define the <code>Day</code> and the time (<code>From Time</code> and <code>To Time</code>), for which you like to perform the analysis.</div>
 </div>
 
 ### Reference Layer
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the Reference Layer for which you like to calculate the indicator. This can be any polygon feature layer.</div>
+  <div class="content">Select the <code>Reference Layer</code> for which you like to calculate the indicator. This can be any polygon feature layer.</div>
 </div>
 
 ![Reference Area Selection](/img/toolbox/accessibility_indicators/gueteklassen/reference_area.png "Reference Area Selection")
@@ -63,6 +63,8 @@ Public Transport Quality Classes, also known as **ÖV-Güteklassen**, are a clas
 Depending on the size of the selected area, the calculation might take some minutes. The [status bar](../../workspace/home#status-bar) shows the current progress.
 
 :::
+
+### Results
 
 <div class="step">
   <div class="step-number">6</div>
