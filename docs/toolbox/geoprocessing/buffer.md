@@ -5,8 +5,7 @@ sidebar_position: 1
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp"
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import thematicIcon2 from "/img/heading_icons/reference_layer_icon.png";
-import thematicIcon3 from "/img/heading_icons/gears_icon.png";
+
 
 
 # Buffer
@@ -46,7 +45,7 @@ A **buffer** is a tool used to delineate the catchment area around a specific po
 
 <img src={require('/img/toolbox/geoprocessing/buffer/overview.png').default} alt="Buffer Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
-### <img src={thematicIcon2} alt="toolbox" style={{width: "25px"}}/> Select layer to buffer 
+### Select layer to buffer 
 
 
 <div class="step">
@@ -54,7 +53,7 @@ A **buffer** is a tool used to delineate the catchment area around a specific po
   <div class="content">Select the <code>Layer to buffer</code>, around which you like to create the buffer.</div>
 </div>
 
-### <img src={thematicIcon3} alt="toolbox" style={{width: "25px"}}/> Buffer Settings 
+### Buffer Settings 
 
 
 <div class="step">

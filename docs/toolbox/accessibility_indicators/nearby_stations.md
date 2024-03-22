@@ -4,9 +4,7 @@ sidebar_position: 8
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import thematicIcon2 from "/img/heading_icons/routing_icon.png";
-import thematicIcon3 from "/img/heading_icons/gears_icon.png";
-import thematicIcon4 from "/img/heading_icons/location_icon.png";
+
 
 # PT Nearby Stations
 
@@ -54,7 +52,7 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 
 ![Menu Overview for Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_overview.png "Menu Overview for Public Transport Nearby Stations")
 
-### <img src={thematicIcon2} alt="toolbox" style={{width: "25px"}}/> Station Access
+### Station Access
 
 <div class="step">
   <div class="step-number">3</div>
@@ -66,7 +64,7 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
   <div class="content">Set the configurations for the Station Access by choosing <code>Travel time limit (min)</code> and <code>Travel speed (km/h)</code>.</div>
 </div>
 
-### <img src={thematicIcon3} alt="toolbox" style={{width: "25px"}}/> Station Configuration
+### Station Configuration
 
 <div class="step">
   <div class="step-number">5</div>
@@ -80,7 +78,7 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 
 ![Configurations for Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_config.png "Configurations for Public Transport Nearby Stations")
 
-### <img src={thematicIcon4} alt="toolbox" style={{width: "25px"}}/> Starting Points
+### Starting Points
 
 <div class="step">
   <div class="step-number">7</div>

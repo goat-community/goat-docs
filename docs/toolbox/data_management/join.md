@@ -3,9 +3,7 @@ sidebar_position: 1
 ---
 
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
-import thematicIcon2 from "/img/heading_icons/reference_layer_icon.png";
-import thematicIcon3 from "/img/heading_icons/table_icon.png";
-import thematicIcon4 from "/img/heading_icons/statistics_icon.png";
+
 
 # Join
 
@@ -50,7 +48,7 @@ GOAT uses the **"Inner Join"** operation to calculate a join which combines rows
 
 <p> </p>
 
-### <img src={thematicIcon2} alt="toolbox" style={{width: "25px"}}/> Select layers to join 
+### Select layers to join 
 
 <div class="step">
   <div class="step-number">3</div>
@@ -62,7 +60,7 @@ GOAT uses the **"Inner Join"** operation to calculate a join which combines rows
   <div class="content">Select your <b>Join Layer</b> (the secondary table or dataset that contains the records and attributes to be inserted into the Target Layer). </div>
 </div>
 
-### <img src={thematicIcon3} alt="toolbox" style={{width: "25px"}}/> Fields to match
+### Fields to match
 
 <div class="step">
   <div class="step-number">5</div>
@@ -74,7 +72,7 @@ GOAT uses the **"Inner Join"** operation to calculate a join which combines rows
   <div class="content"> Select the same attribute of the Join Layer as the <b>Join Attribute</b>. </div>
 </div>
 
-### <img src={thematicIcon4} alt="toolbox" style={{width: "25px"}}/> Statistics
+### Statistics
 
 <div class="step">
   <div class="step-number">7</div>

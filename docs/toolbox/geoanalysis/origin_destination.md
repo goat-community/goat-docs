@@ -3,8 +3,6 @@ sidebar_position: 4
 ---
 
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
-import thematicIcon2 from "/img/heading_icons/reference_layer_icon.png";
-import thematicIcon3 from "/img/heading_icons/table_icon.png";
 
 # Origin Destination
 
@@ -46,14 +44,14 @@ The example below shows an *Input Table (Matrix Layer)* and the resulting *Origi
 <img src={require('/img/toolbox/geoanalysis/origin_destination/overview.png').default} alt="Origin Destination Tool Overview" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
 
-### <img src={thematicIcon2} alt="toolbox" style={{width: "25px"}}/> Layer
+### Layer
 
 <div class="step">
   <div class="step-number">3</div>
   <div class="content">Select your <code>Geometries Layer</code> (this should be a feature layer contain the geometries of the origins and destinations and an attribute that can be used as an identifier to match the OD-connections with the geometries) and <code>Unique Id Attribute</code>.</div>
 </div>
 
-### <img src={thematicIcon3} alt="toolbox" style={{width: "25px"}}/> Matrix
+### Matrix
 
 <div class="step">
   <div class="step-number">4</div>

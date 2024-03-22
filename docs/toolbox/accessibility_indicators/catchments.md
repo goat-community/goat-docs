@@ -5,9 +5,7 @@ sidebar_position: 1
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
-import thematicIcon2 from "/img/heading_icons/routing_icon.png";
-import thematicIcon3 from "/img/heading_icons/gears_icon.png";
-import thematicIcon4 from "/img/heading_icons/location_icon.png";
+
 
 # Catchment Area
 
@@ -58,7 +56,8 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
   <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Catchment Area</code>.</div>
 </div>
 
-### <img src={thematicIcon2} alt="toolbox" style={{width: "25px"}}/> Routing
+### Routing
+
 
 <div class="step">
   <div class="step-number">3</div>
@@ -71,7 +70,7 @@ Catchment calculation for **Car** coming soon. We currently implement this funct
 
 :::
 
-### <img src={thematicIcon3} alt="toolbox" style={{width: "25px"}}/> Configuration
+### Configuration
 
 <Tabs>
   <TabItem value="walk" label="Walk" default className="tabItemBox">
@@ -323,7 +322,7 @@ If you enable **Polygon Difference**, only the "incremental" (or differential) p
   </TabItem>
 </Tabs>
 
-### <img src={thematicIcon4} alt="toolbox" style={{width: "25px"}}/> Starting
+### Starting
 
 <div class="step">
   <div class="step-number">7</div>

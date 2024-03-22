@@ -2,8 +2,6 @@
 sidebar_position: 7
 ---
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
-import thematicIcon2 from "/img/heading_icons/time_icon.png";
-import thematicIcon3 from "/img/heading_icons/reference_layer_icon.png";
 
 # PT Trip Count
 
@@ -40,14 +38,14 @@ This indicator serves as the foundation for the [ÖV-Güteklassen](/docs/toolbox
 ![Menu Overview for Public Transport Trip Count](/img/toolbox/accessibility_indicators/trip_count/overview.png "[Menu Overview for Public Transport Trip Count")
 
 
-### <img src={thematicIcon2} alt="toolbox" style={{width: "25px"}}/> Calculation Time
+### Calculation Time
 
 <div class="step">
   <div class="step-number">3</div>
   <div class="content">Define the Calculation Time (the day and the time).</div>
 </div>
 
-### <img src={thematicIcon3} alt="toolbox" style={{width: "25px"}}/> Reference Layer
+### Reference Layer
 
 <div class="step">
   <div class="step-number">4</div>
