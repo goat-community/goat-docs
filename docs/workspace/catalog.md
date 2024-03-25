@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Catalog
 
-**Data Catalog** is a comprehensive listing of all [geospatial datasets](../further_reading/glossary#geospatial-data) available for exploration and analysis. A wide range of datasets are provided by Plan4Better, our authoritative partners and [open source](../further_reading/glossary#open-source) datasets, ensuring **reliability and accuracy** for your GIS projects.
+The **Data Catalog** is a comprehensive listing of all [geospatial datasets](../further_reading/glossary#geospatial-data) available for exploration and analysis. A wide range of datasets are provided by Plan4Better, our authoritative partners and [open source](../further_reading/glossary#open-source) libraries, ensuring a **reliabile and accurate** database for your GIS projects.
 
 ![Data Catalog in GOAT](/img/workspace/catalog/catalog_general.png "Data Catalog in GOAT")
 
