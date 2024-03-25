@@ -122,9 +122,11 @@ Depending on the size of the datasets, the calculation might take some minutes. 
 
 :::
 
+### Results
+
 <div class="step">
   <div class="step-number">9</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layer <b>"Aggregation Polygon"</b> will be added to the map. The result layer will consist of the information of the <b>source layer</b> and an additional column showing the results from the <b>statistical operation</b>. You can see the table by clicking on the polygon on the map.</div>
+  <div class="content">As soon as the calculation process is finished, the resulting layer <b>"Aggregation Polygon"</b> will be added to the map. The result layer will consist of the information of the source layer and an <b>additional column</b> showing the results from the <b>statistical operation</b>. You can see the table by clicking on the polygon on the map.</div>
 </div>
 
 <img src={require('/img/toolbox/geoanalysis/aggregate_polygons/aggregate_polygons_result.png').default} alt="Polygon Aggregation Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>

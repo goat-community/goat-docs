@@ -100,7 +100,14 @@ If you calculate buffers **without union**, GOAT will generate single buffers ar
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Click on <code>Run</code>. This starts the calculation of the buffer. As soon as this task is accomplished, the resulting layer called "Buffer" will be added to your map.</div>
+  <div class="content">Click on <code>Run</code>. This starts the calculation of the buffer.</div>
+</div>
+
+### Results
+
+<div class="step">
+  <div class="step-number">8</div>
+  <div class="content">As soon as this task is accomplished, the resulting layer called <b>"Buffer"</b> will be added to your map.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -130,7 +137,14 @@ The  ``Polygon Union`` creates a **geometric union** of all steps of the buffer 
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Click on <code>Run</code>. This starts the calculation of the buffer. As soon as this task is accomplished, the resulting layer called "Buffer" will be added to your map.</div>
+  <div class="content">Click on <code>Run</code>. This starts the calculation of the buffer.</div>
+</div>
+
+### Results
+
+<div class="step">
+  <div class="step-number">8</div>
+  <div class="content">As soon as this task is accomplished, the resulting layer called <b>"Buffer"</b> will be added to your map.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -159,7 +173,14 @@ The  ``Polygon Difference`` operation creates a **geometric difference** of the 
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Click on <code>Run</code>. This starts the calculation of the buffer. As soon as this task is accomplished, the resulting layer called "Buffer" will be added to your map.</div>
+  <div class="content">Click on <code>Run</code>. This starts the calculation of the buffer.</div>
+</div>
+
+### Results
+
+<div class="step">
+  <div class="step-number">8</div>
+  <div class="content">As soon as this task is accomplished, the resulting layer called <b>"Buffer"</b> will be added to your map.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
