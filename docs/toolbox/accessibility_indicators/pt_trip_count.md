@@ -76,7 +76,7 @@ Depending on the size of the selected area, the calculation might take some minu
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">When clicking on a point in the map, further details, such as station name and teh separated departure counts per mode, become visible.</div>
+  <div class="content">When clicking on a point in the map, further details, such as station name and the separated departure counts per mode, become visible.</div>
 </div>
 
 
