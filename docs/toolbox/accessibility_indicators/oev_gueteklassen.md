@@ -68,7 +68,9 @@ Depending on the size of the selected area, the calculation might take some minu
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called <b>"ÖV-Güteklassen"</b>, showing the Public Transport Quality Classes, and one layer called <b>"ÖV-Güteklassen Stations"</b> which provides all stations that were used for the calculation of this indicator. The station points that are visualized in grey have a too low service frequency and thus do not contribute to any Public Transport Quality Class.</div>
+  <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called <b>"ÖV-Güteklassen"</b>, showing the Public Transport Quality Classes, and one layer called <b>"ÖV-Güteklassen Stations"</b> which provides all stations that were used for the calculation of this indicator. The station points that are visualized in grey have a too low service frequency and thus do not contribute to any Public Transport Quality Class.
+  <p></p>
+  If you click on an "ÖV-Güteklassen" on the map, you will see further details such as pt_class and pt_class_name, which indicate <a href="#calculation">the quality of public transport</a>.</div>
 </div>
 
 ![Result - Public Transport Quality Classes](/img/toolbox/accessibility_indicators/gueteklassen/result.png "Result - Public Transport Quality Classes")
