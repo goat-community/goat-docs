@@ -161,7 +161,7 @@ Considering all paths accessible by bicycle. Depending on the surface, smoothnes
 
 :::tip Hint
 
-For further insights into the Routing algorithm, visit [Routing/Bicycle](../../routing/cycling). In addition, you can check this [Publication](https://doi.org/10.1016/j.jtrangeo.2021.103080).
+For further insights into the Routing algorithm, visit [Routing/Bicycle](../../routing/bicycle). In addition, you can check this [Publication](https://doi.org/10.1016/j.jtrangeo.2021.103080).
 
 :::
 
@@ -336,7 +336,7 @@ If you enable **Polygon Difference**, only the "incremental" (or differential) p
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Choose on <code>Select on map</code>. Select the starting point(s) by clicking on the respective location(s) in the map. You can add <b>as many starting points</b> as you like.</div>
+  <div class="content">Choose <code>Select on map</code>. Select the starting point(s) by clicking on the respective location(s) in the map. You can add <b>as many starting points</b> as you like.</div>
 </div>
 
 
