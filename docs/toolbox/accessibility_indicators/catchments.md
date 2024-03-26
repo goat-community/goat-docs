@@ -372,7 +372,7 @@ Depending on the chosen settings, the calculation might take some minutes. The [
   <div class="step-number">10</div>
   <div class="content">As soon as the calculation process is finished, the resulting layer(s) will be added to the map. The layer called <b>"Isochrone"</b> contains the calculated catchments. If the starting points were created by clicking on the map, they will also be saved in a layer called <b>"Starting Points"</b>.
   <p></p>
-  If you click on an isochrone polygon on the map, you will see further details as <b>travel_cost</b>, which shows the value you selected when calculating the isochrone. If you have selected travel time, the travel_cost will show the <b>time in minutes</b>, or if you have selected distance, the travel_cost will show the <b>distance in meters</b>.</div>
+  If you click on a catchment polygon on the map, you will see further details in its attribute table. The attribute <b>travel_cost</b> shows the travel distance or time, depending which unit you picked for the calculation. If you have selected travel time, the travel_cost will show the <b>time in minutes</b>. If you have selected distance, the travel_cost will show the <b>distance in meters</b>.</div>
 </div>
 
 ![Catchment Area Calculation Result in GOAT](/img/toolbox/accessibility_indicators/catchments/catchment_result.png "Catchment Area Calculation Result in GOAT")
