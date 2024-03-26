@@ -36,10 +36,14 @@ Public Transport Quality Classes, also known as **ÖV-Güteklassen**, are a clas
 
 ![Menu Overview for ÖV-Güteklassen](/img/toolbox/accessibility_indicators/gueteklassen/overview.png "Menu Overview for ÖV-Güteklassen")
 
+### Calculation Time
+
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Define the <code>Calculation Time</code> (the day and the time).</div>
+  <div class="content">Define the <code>Day</code> and the time (<code>From Time</code> and <code>To Time</code>), for which you like to perform the analysis.</div>
 </div>
+
+### Reference Layer
 
 <div class="step">
   <div class="step-number">4</div>
@@ -59,6 +63,8 @@ Public Transport Quality Classes, also known as **ÖV-Güteklassen**, are a clas
 Depending on the size of the selected area, the calculation might take some minutes. The [status bar](../../workspace/home#status-bar) shows the current progress.
 
 :::
+
+### Results
 
 <div class="step">
   <div class="step-number">6</div>

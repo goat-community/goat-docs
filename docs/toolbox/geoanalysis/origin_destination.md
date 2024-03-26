@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp"
+import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 # Origin Destination
 
@@ -44,15 +44,21 @@ The example below shows an *Input Table (Matrix Layer)* and the resulting *Origi
 <img src={require('/img/toolbox/geoanalysis/origin_destination/overview.png').default} alt="Origin Destination Tool Overview" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
 
+### Layer
+
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select your <code>Geometries Layer</code> (this should be a feature layer contain the geometries of the origins and destinations and an attribute that can be used as an identifier to match the OD-connections with the geometries).</div>
+  <div class="content">Select your <code>Geometries Layer</code> (this should be a feature layer contain the geometries of the origins and destinations and an attribute that can be used as an identifier to match the OD-connections with the geometries) and <code>Unique Id Attribute</code>.</div>
 </div>
+
+### Matrix
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the <code>Matrix Layer</code> (the table with the origin-destination-matrix).</div>
+  <div class="content">Select the <code>Matrix Table</code> (the table with the origin-destination-matrix) and <code>Origin Attribute</code>.</div>
 </div>
+
+
 
 <div class="step">
   <div class="step-number">5</div>
@@ -74,6 +80,8 @@ The example below shows an *Input Table (Matrix Layer)* and the resulting *Origi
 Depending on the complexity of the OD-matrix, the calculation might take some minutes. The [status bar](../../workspace/home#status-bar) shows the current progress.
 
 :::
+
+### Results 
 
 <div class="step">
   <div class="step-number">8</div>

@@ -42,6 +42,7 @@ The Aggregate Points tool can be used to **analyse the characteristics of points
 
 <img src={require('/img/toolbox/geoanalysis/aggregate_points/aggregate_points.png').default} alt="Point Aggregation Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
 
+### Layer to aggregate
 
 <div class="step">
   <div class="step-number">3</div>
@@ -83,6 +84,7 @@ To learn more about H3 grid, you can visit the [Glossary](../../further_reading/
   </TabItem>
 </Tabs>
 
+### Statistics
 
 <div class="step">
   <div class="step-number">6</div>
@@ -112,9 +114,11 @@ Depending on the size of the datasets, the calculation might take some minutes. 
 
 :::
 
+### Results
+
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layer <b>"Aggregation Point"</b> will be added to the map. This layer consist of the information of the <b>Source Layer</b> and an additional column showing the results from the <b>statistical operation</b>. You can see the table by clicking on the polygon on the map.</div>
+  <div class="content">As soon as the calculation process is finished, the resulting layer <b>"Aggregation Point"</b> will be added to the map. This layer consist of the information of the source layer and an <b>additional column</b> showing the results from the <b>statistical operation</b>. You can see the table by clicking on the polygon on the map.</div>
 </div>
 
 <img src={require('/img/toolbox/geoanalysis/aggregate_points/aggregate_points_result.png').default} alt="Point Aggregation Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>

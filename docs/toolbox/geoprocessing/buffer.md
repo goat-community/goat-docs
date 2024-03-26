@@ -6,6 +6,8 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp"
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+
+
 # Buffer
 
 The buffer creates a **circle** around given starting **points, lines or polygons** with a specified buffer distance. 
@@ -43,21 +45,25 @@ A **buffer** is a tool used to delineate the catchment area around a specific po
 
 <img src={require('/img/toolbox/geoprocessing/buffer/overview.png').default} alt="Buffer Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
+### Select layer to buffer 
 
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select the <code>Target Layer</code>, around which you like to create the buffer.</div>
+  <div class="content">Select the <code>Layer to buffer</code>, around which you like to create the buffer.</div>
 </div>
+
+### Buffer Settings 
+
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Define via the buffer <code>Distance</code> how many meters from your points, lines, or shapes the buffer should extend.</div>
+  <div class="content">Define via the buffer <code>Buffer Distance</code> how many meters from your points, lines, or shapes the buffer should extend.</div>
 </div>
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Define in how many <code>Steps</code> the buffer should be divided.</div>
+  <div class="content">Define in how many <code>Buffer Steps</code> the buffer should be divided.</div>
 </div>
 
 :::tip HINT
@@ -94,7 +100,14 @@ If you calculate buffers **without union**, GOAT will generate single buffers ar
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Click on <code>Run</code>. This starts the calculation of the buffer. As soon as this task is accomplished, the resulting layer called "Buffer" will be added to your map.</div>
+  <div class="content">Click on <code>Run</code>. This starts the calculation of the buffer.</div>
+</div>
+
+### Results
+
+<div class="step">
+  <div class="step-number">8</div>
+  <div class="content">As soon as this task is accomplished, the resulting layer called <b>"Buffer"</b> will be added to your map.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -124,7 +137,14 @@ The  ``Polygon Union`` creates a **geometric union** of all steps of the buffer 
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Click on <code>Run</code>. This starts the calculation of the buffer. As soon as this task is accomplished, the resulting layer called "Buffer" will be added to your map.</div>
+  <div class="content">Click on <code>Run</code>. This starts the calculation of the buffer.</div>
+</div>
+
+### Results
+
+<div class="step">
+  <div class="step-number">8</div>
+  <div class="content">As soon as this task is accomplished, the resulting layer called <b>"Buffer"</b> will be added to your map.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -153,7 +173,14 @@ The  ``Polygon Difference`` operation creates a **geometric difference** of the 
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Click on <code>Run</code>. This starts the calculation of the buffer. As soon as this task is accomplished, the resulting layer called "Buffer" will be added to your map.</div>
+  <div class="content">Click on <code>Run</code>. This starts the calculation of the buffer.</div>
+</div>
+
+### Results
+
+<div class="step">
+  <div class="step-number">8</div>
+  <div class="content">As soon as this task is accomplished, the resulting layer called <b>"Buffer"</b> will be added to your map.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

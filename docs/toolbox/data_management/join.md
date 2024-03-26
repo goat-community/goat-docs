@@ -2,7 +2,8 @@
 sidebar_position: 1
 ---
 
-import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp"
+import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
+
 
 # Join
 
@@ -47,32 +48,38 @@ GOAT uses the **"Inner Join"** operation to calculate a join which combines rows
 
 <p> </p>
 
+### Select layers to join 
+
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">  Select your <b>Target Layer</b> (the primary table or layer to which you want to add additional data). </div>
+  <div class="content">  Select your <code>Target Layer</code> (the primary table or layer to which you want to add additional data). </div>
 </div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select your <b>Join Layer</b> (the secondary table or dataset that contains the records and attributes to be inserted into the Target Layer). </div>
+  <div class="content">Select your <code>Join Layer</code> (the secondary table or dataset that contains the records and attributes to be inserted into the Target Layer). </div>
 </div>
+
+### Fields to match
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Define the attribute which you like to use for matching the records of both layers. Therefore, pick your <b>Target Attribute</b>. </div>
+  <div class="content">Define the attribute which you like to use for matching the records of both layers. Therefore, pick your <code>Target Attribute</code>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content"> Select the same attribute of the Join Layer as the <b>Join Attribute</b>. </div>
+  <div class="content"> Select the same attribute of the Join Layer as the <code>Join Attribute</code>. </div>
 </div>
+
+### Statistics
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content"> Select the statistical method to be used to join the attribute under <b>Statistics</b>. </div>
+  <div class="content"> Select the statistical <code>Method</code> to be used to join the attribute. </div>
 </div>
 
-In the **Statistics** section, the user can choose between several statistical operations. Some methods are only available for specific data types. The following list provides an overview of the available methods:
+You can choose between several statistical operations. Some methods are only available for specific data types. The following list provides an overview of the available methods:
 
 | Method | Data Types | Description |
 | -------|------| ------------|
@@ -85,13 +92,23 @@ In the **Statistics** section, the user can choose between several statistical o
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Select the <b>Join attribute</b> for which you like to apply the statistical operation.</div>
+  <div class="content">Select the <code>Join Attribute</code> for which you like to apply the statistical operation.</div>
 </div>
 
 <div class="step">
   <div class="step-number">9</div>
-  <div class="content"> As the last step, click on <code>Run</code>, and the result layer "Join" will be both added to the project and to the Datasets in your project folder.</div>
+  <div class="content">Click on <code>Run</code>.</div>
 </div>
+
+
+### Results
+  
+<div class="step">
+  <div class="step-number">10</div>
+  <div class="content">The result layer <b>"Join"</b> will be both added to the project and to the Datasets in your project folder.</div>
+</div>
+
+
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 

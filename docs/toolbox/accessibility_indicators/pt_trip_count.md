@@ -31,20 +31,25 @@ This indicator serves as the foundation for the [ÖV-Güteklassen](/docs/toolbox
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>PT Trip Count</code>. This opens the setting menu.</div>
+  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Trip Count</code>. This opens the setting menu.</div>
 </div>
 
 
 ![Menu Overview for Public Transport Trip Count](/img/toolbox/accessibility_indicators/trip_count/overview.png "[Menu Overview for Public Transport Trip Count")
 
+
+### Calculation Time
+
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Define the <code>Calculation Time</code> (the day and the time).</div>
+  <div class="content">Select for which <code>Day</code> and time (<code>From Time</code> and <code>To Time</code>) you would like to calculate the public transport trip count.</div>
 </div>
+
+### Reference Layer
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the <code>Reference Layer</code> for which you like to calculate the indicator. This can be any polygon feature layer.</div>
+  <div class="content">Select the <code>Reference Layer</code> that contains the area for which you like to calculate the indicator. This can be any polygon feature layer.</div>
 </div>
 
 
@@ -59,9 +64,11 @@ Depending on the size of the selected area, the calculation might take some minu
 
 :::
 
+### Results
+
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layer called "Trip Count Station" will be added to the map.</div>
+  <div class="content">As soon as the calculation process is finished, the resulting layer called <b>"Trip Count Station"</b> will be added to the map.</div>
 </div>
 
 
@@ -69,7 +76,7 @@ Depending on the size of the selected area, the calculation might take some minu
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">When clicking on a point in the map, further details, such as station name and teh separated departure counts per mode, become visible.</div>
+  <div class="content">When clicking on a point in the map, you can see the <b>station name</b>, <b>total departure count</b> and the <b>departure counts per mode</b>.</div>
 </div>
 
 
@@ -88,7 +95,7 @@ If you are interested in one specific mode, e.g. only busses, you can use the [a
 
 ## 4. Technical details
 
-Similar to the Public Transport Quality Classes <i>(German: ÖV-Güteklassen)</i> , this indicator is calculated on the basis of **GTFS data** (see [Data Basis](../../data/data_basis)). Based on the selected day and time window, the average number of departures per hour (regardless of direction) is calculated.
+Similar to the Public Transport Quality Classes <i>(German: ÖV-Güteklassen)</i>, this indicator is calculated on the basis of **GTFS data** (see [Data Basis](../../data/data_basis)). Based on the selected day and time window, the average number of departures per hour (regardless of direction) is calculated.
 
 ## 5. References
 
