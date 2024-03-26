@@ -68,7 +68,7 @@ Depending on the size of the selected area, the calculation might take some minu
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layer called "Trip Count Station" will be added to the map.</div>
+  <div class="content">As soon as the calculation process is finished, the resulting layer called <b>"Trip Count Station"</b> will be added to the map.</div>
 </div>
 
 
