@@ -68,7 +68,7 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Set Station Configuration to pick which <code>Public transport modes</code> shall be considered for the nearby stations.</div>
+  <div class="content">Pick which <code>Public transport modes</code> shall be considered for the nearby stations.</div>
 </div>
 
 <div class="step">
@@ -82,7 +82,7 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">From the Starting Points menu, select <code>Starting point method</code> to define how you like to define the starting point(s) for the trip(s). You can either <b>Select on map</b> or <b>Select from layer</b>.</div>
+  <div class="content">Select the <code>Starting point method</code> to define how you like to define the starting point(s) for the trip(s). You can either <b>Select on map</b> or <b>Select from layer</b>.</div>
 </div>
 
 <Tabs>
@@ -142,4 +142,4 @@ Want to style your results and create nice looking maps? See [Styling](../../map
 
 ## 4. Technical details
 
-The PT Nearby Stations are received from the GTFS data.
+Similar to the Public Transport Quality Classes <i>(German: ÖV-Güteklassen)</i>, this indicator is calculated on the basis of **GTFS data** (see [Data Basis](../../data/data_basis)). Based on the selected modes, day and time window, the PT Nearby Stations are received.
