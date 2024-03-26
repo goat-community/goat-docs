@@ -85,7 +85,8 @@ Depending on the complexity of the OD-matrix, the calculation might take some mi
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called <b>"Origin Destination Relations"</b>, showing the lines between the origins and destinations, and one layer called <b>"Origin Destination Points"</b> which provides all origins and destination points (for polygon geometries, the centroids are used).</div>
+  <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called <b>"O-D Relation"</b>, showing the lines between the origins and destinations, and one layer called <b>"O-D Point"</b> which provides all origins and destination points (for polygon geometries, the centroids are used).<p></p>
+  If you click on an "O-D Relation" item on the map, you can view the attribute details, such as the <b>origin</b>, <b>destination</b> and <b>weight</b> of this relation.</div>
 </div>
 
 
