@@ -52,31 +52,31 @@ GOAT uses the **"Inner Join"** operation to calculate a join which combines rows
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">  Select your <code>Target Layer</code> (the primary table or layer to which you want to add additional data). </div>
+  <div class="content">  Select your <code>Target layer</code> (the primary table or layer to which you want to add additional data). </div>
 </div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select your <code>Join Layer</code> (the secondary table or dataset that contains the records and attributes to be inserted into the Target Layer). </div>
+  <div class="content">Select your <code>Join layer</code> (the secondary table or dataset that contains the records and attributes to be inserted into the Target Layer). </div>
 </div>
 
 ### Fields to match
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Define the attribute which you like to use for matching the records of both layers. Therefore, pick your <code>Target Attribute</code>. </div>
+  <div class="content">Select the <code>Target attribute</code> of the target layer, which you like to use for matching the records of both layers.</div>
 </div>
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content"> Select the same attribute of the Join Layer as the <code>Join Attribute</code>. </div>
+  <div class="content"> Select the matching attribute of the Join Layer as the <code>Join attribute</code>. </div>
 </div>
 
 ### Statistics
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content"> Select the statistical <code>Method</code> to be used to join the attribute. </div>
+  <div class="content"> Select the <code>Statistical method</code> to be used to join the attribute. </div>
 </div>
 
 You can choose between several statistical operations. Some methods are only available for specific data types. The following list provides an overview of the available methods:
@@ -92,7 +92,7 @@ You can choose between several statistical operations. Some methods are only ava
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Select the <code>Join Attribute</code> for which you like to apply the statistical operation.</div>
+  <div class="content">Select the <code>Statistics attribute</code> for which you like to apply the statistical operation.</div>
 </div>
 
 <div class="step">
@@ -105,7 +105,7 @@ You can choose between several statistical operations. Some methods are only ava
   
 <div class="step">
   <div class="step-number">10</div>
-  <div class="content">The result layer <b>"Join"</b> will be both added to the project and to the Datasets in your project folder.</div>
+  <div class="content">The result layer <b>"Join"</b> will be added to the project, as well as to the <a href="../../workspace/datasets">Datasets</a> in your workspace. This layer consist of the information of the target layer and an <b>additional column</b> showing the results from the <b>statistical operation</b>. You can see the attributes by clicking on one of the features in the map.</div>
 </div>
 
 
