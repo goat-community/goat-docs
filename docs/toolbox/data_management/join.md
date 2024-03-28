@@ -5,9 +5,9 @@ sidebar_position: 1
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 
-# Join
+# Join & Group
 
-The **Join** tool is used to append attributes from one layer to another using a matching attribute on both layers. 
+Append and group fields from one layer to another using a matching field on both layers.
 
 ## 1. Explanation
 
@@ -37,7 +37,7 @@ GOAT uses the **"Inner Join"** operation to calculate a join which combines rows
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Data Management</code> menu, click on <code>Join</code>.</div>
+  <div class="content">Under the <code>Data Management</code> menu, click on <code>Join & Group</code>.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -76,7 +76,7 @@ GOAT uses the **"Inner Join"** operation to calculate a join which combines rows
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content"> Select the <code>Statistical method</code> to be used to join the attribute. </div>
+  <div class="content"> Select the <code>Statistic method</code> to be used to join the attribute. </div>
 </div>
 
 You can choose between several statistical operations. Some methods are only available for specific data types. The following list provides an overview of the available methods:
