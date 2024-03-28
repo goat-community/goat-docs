@@ -36,7 +36,7 @@ The Aggregate Points tool can be used to **analyse the characteristics of points
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Geoanalysis</code> menu, click on <code>Aggregate points</code>.</div>
+  <div class="content">Under the <code>Geoanalysis</code> menu, click on <code>Aggregate Points</code>.</div>
 </div>
 
 

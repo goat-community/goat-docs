@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem';
 
 # Aggregate Polygons
 
-The **Aggregate Polygons** tool can be used to **aggregate data from one polygon layer to another** and therewith providing valuable insights into spatial patterns and relationships.
+The **Aggregate Polygon** tool performs statistical analysis of polygons, e.g. count, sum, min or max, and **aggregates the information on polygons**.
 
 ## 1. Explanation
 
