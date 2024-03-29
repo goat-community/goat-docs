@@ -40,7 +40,7 @@ Public Transport Quality Classes, also known as **ÖV-Güteklassen**, are a clas
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Define the <code>Day</code> and the time (<code>From Time</code> and <code>To Time</code>), for which you like to perform the analysis.</div>
+  <div class="content">Define the <code>Day</code>, <code>Start Time</code> and <code>End Time</code>, for which you like to perform the analysis.</div>
 </div>
 
 ### Reference Layer
