@@ -88,7 +88,7 @@ To learn more about H3 grid, you can visit the [Glossary](../../further_reading/
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Select the <code>Statistics Method</code>, and the field you like to use for the <code>Field Statistics</code> (the field in the source layer that is used to group the aggregated points for statistics).</div>
+  <div class="content">Select the <code>Statistic Method</code>, and the field you like to use for the <code>Field Statistics</code> (the field in the source layer that is used to group the aggregated points for statistics).</div>
 </div>
 
 Available **Statistics Methods** are listed in the following. The available methods depend on the data type of the chosen attribute:
