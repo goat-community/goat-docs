@@ -256,7 +256,7 @@ For further insights into the Routing algorithm, visit [Routing/Public Transport
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Set the configurations for <code>Travel time limit</code>, <code>Number of breaks</code>, <code>Day</code> <i>(Weekday, Saturday</i> or <i>Sunday</i>) and Time period (<code>From time</code> and <code>To time</code>).</div>
+  <div class="content">Set the configurations for <code>Travel time limit</code>, <code>Number of breaks</code>, <code>Day</code> <i>(Weekday, Saturday</i> or <i>Sunday</i>) and Time period (<code>Start Time</code> and <code>End Time</code>).</div>
 </div>
 
 <img src={require('/img/toolbox/accessibility_indicators/catchments/pt_config.png').default} alt="Public Transport Configurations" style={{ maxHeight: "400px", maxWidth: "400px"}}/>
@@ -274,7 +274,7 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Click on <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Here you can select the <code> Catchment area shape</code>. For public transport, you can choose between <b>Polygon</b> and <b>Rectangular Grid</b>.</div>
+  <div class="content">Click on <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Here you can select the <code> Catchment area shape</code>. You can choose between <b>Polygon</b>, <b>Network</b> and <b>Rectangular Grid</b>.</div>
 </div>
 
   </TabItem>
@@ -322,7 +322,7 @@ If you enable **Polygon Difference**, only the "incremental" (or differential) p
   </TabItem>
 </Tabs>
 
-### Starting
+### Starting Points
 
 <div class="step">
   <div class="step-number">7</div>

@@ -10,8 +10,7 @@ import TabItem from '@theme/TabItem';
 
 # Buffer
 
-The buffer creates a **circle** around given starting **points, lines or polygons** with a specified buffer distance. 
-
+The buffer creates a **zone around** given **points, lines or polygons** with a specified buffer distance.
 
 ## 1. Explanation
 

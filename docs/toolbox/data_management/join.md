@@ -5,9 +5,9 @@ sidebar_position: 1
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 
-# Join
+# Join & Group
 
-The **Join** tool is used to append attributes from one layer to another using a matching attribute on both layers. 
+Append and group fields from one layer to another using a matching field on both layers.
 
 ## 1. Explanation
 
@@ -37,7 +37,7 @@ GOAT uses the **"Inner Join"** operation to calculate a join which combines rows
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Data Management</code> menu, click on <code>Join</code>.</div>
+  <div class="content">Under the <code>Data Management</code> menu, click on <code>Join & Group</code>.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -64,19 +64,19 @@ GOAT uses the **"Inner Join"** operation to calculate a join which combines rows
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Select the <code>Target attribute</code> of the target layer, which you like to use for matching the records of both layers.</div>
+  <div class="content">Select the <code>Target field</code> of the target layer, which you like to use for matching the records of both layers.</div>
 </div>
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content"> Select the matching attribute of the Join Layer as the <code>Join attribute</code>. </div>
+  <div class="content"> Select the matching attribute of the Join Layer as the <code>Join field</code>. </div>
 </div>
 
 ### Statistics
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content"> Select the <code>Statistical method</code> to be used to join the attribute. </div>
+  <div class="content"> Select the <code>Statistic Method</code> to be used to join the attribute. </div>
 </div>
 
 You can choose between several statistical operations. Some methods are only available for specific data types. The following list provides an overview of the available methods:
@@ -92,7 +92,7 @@ You can choose between several statistical operations. Some methods are only ava
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Select the <code>Statistics attribute</code> for which you like to apply the statistical operation.</div>
+  <div class="content">Select the <code>Field Statistics</code> for which you like to apply the statistical operation.</div>
 </div>
 
 <div class="step">
