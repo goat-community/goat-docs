@@ -3,7 +3,7 @@ sidebar_position: 1
 slug: /
 ---
 
-# Welcome
+# Welcome 👋
 
 Welcome to the documentation of our WebGIS platform **GOAT**.
 
