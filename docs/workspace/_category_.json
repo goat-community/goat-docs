@@ -3,6 +3,6 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "The Workspace is the first page that opens when you access GOAT. From here, you can manage and access your projects, your datasets and your settings."
+    "description": "The first page you see when you enter GOAT. From here, you can access & manage your projects, datasets and settings."
   }
 }
