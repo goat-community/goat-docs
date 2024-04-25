@@ -116,7 +116,7 @@ To temporarily **hide** a layer from the map view, click the eye icon for that l
 By clicking on three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> you have further options to manage and organize the selected layer.
 
 
-<img src={require('/img/map/layers/options.png').default} alt="Layer Options" style={{ maxHeight: "250px", maxWidth: "250px", objectFit: "cover"}}/> 
+<img src={require('/img/map/layers/layer_options.png').default} alt="Layer Options" style={{ maxHeight: "250px", maxWidth: "250px", objectFit: "cover"}}/> 
 
 
 :::tip tip
