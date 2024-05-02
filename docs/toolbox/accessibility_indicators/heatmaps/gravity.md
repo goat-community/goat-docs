@@ -236,9 +236,9 @@ Depending on your configuration, the calculation might take a few minutes. The [
   Clicking on any of the heatmap's hexagonal cells will reveal the computed accessibility value for this cell.</div>
 </div>
 
-TODO: Update result image
 
 ![Heatmap Gravity-Based Calculation Result in GOAT](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/heatmap_gravity_result.webp "Heatmap Gravity-Based Calculation Result in GOAT")
+
 
 :::tip Tip
 Want to style your heatmaps and create nice looking maps? See [Styling](../../map/layer_style/styling).
@@ -249,7 +249,7 @@ Want to style your heatmaps and create nice looking maps? See [Styling](../../ma
 ### Calculation
 The calculation of the heatmap is calculated with the help of gravity-based measures and can be operationalized as:
 
-TODO: Add image of accessibility formula
+![Accessibility Formula](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/place-based_accessibility_measures.webp "Accessibility Formula")
 
 where the accessibility A of origin i is the sum of all opportunities O available at destinations j weighted by some function of the travel time tij between i and j. GOAT uses the modified gaussian function as an impedance function for the calculation:
 
@@ -264,7 +264,7 @@ where the accessibility A of origin i is the sum of all opportunities O availabl
 Travel times is computed in minutes. For a maximum travel time of 30 minutes destinations which are further than 30 minutes are considered as non-accessible, thus not considered into the calculation of the accessibility. 
 The *sensitivity* parameter defines how accessibility changes with increasing travel time. As the *sensitivity* parameter is decisive when measuring accessibility, GOAT allows you to adjust them. The following graphs show the influence of the *sensitivity* parameter on accessibility.
 
-TODO: Add sensitivity index images (currently not implemented in GOAT)
+🚨🚨 TODO: Add sensitivity index images (currently not implemented in GOAT)
 
 Similarly, the *destination potential* can be changed. Thus, for example, one POI type (e.g. hypermarkets) can be assigned a higher accessibility effect than other POI types (e.g. discount supermarkets).
 
@@ -275,33 +275,33 @@ In order to classify the accessibility levels that were computed for each grid c
 #### Calculation travel times
 The following example illustrates how the local accessibility heatmap is computed. The travel times are calculated for each grid cell to the concerning destination on the street network.
 
-TODO: Add image of simplified hexagonal heatmap example
+![Hexagonal Grid on Heatmap](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/Traveltime_grid.webp "Hexagonal Grid on Heatmap")
 
 For the hexagon shown here, the calculation yields the following results, depending on the sensitivity parameter:
 
-Uniform sensitivity parameter:
-TODO: Add image for accessibility calculation in new GOAT v2.0
+##### Uniform sensitivity parameter:
+🚨🚨 TODO: Add image for accessibility calculation in new GOAT v2.0
 
-Varying sensitivity parameter for Hypermarket:
-TODO: Add image for accessibility calculation in new GOAT v2.0
+##### Varying sensitivity parameter for Hypermarket:
+🚨🚨 TODO: Add image for accessibility calculation in new GOAT v2.0
 
 Applied in GOAT, the following differences arise:
 
 #### Calculation with uniform sensitivity parameter
 In the first example, the accessibility for grocery shops in 15 min is calculated using a uniform sensitivity parameter (β=300,000) for all shops. The result looks like this:
 
-TODO: Image for GOAT local accessibility to grocery shops
+![Local Accessibility to grocery shops](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/Local_accessibility_grocery.webp "Local Accessibility to grocery shops")
 
 #### Calculation with different sensitivity parameters
 In the second example, the accessibility of grocery shops in 15 min is performed using different sensitivity parameters (β=300,000 and β=400,000). This means that the sensitivity parameter depends on the different grocery shop types. For this example, we used β=400,000 for hypermarkets and β=300,000 for discounters and supermarkets. This gives the following result:
 
-TODO: Image for result with different sensitivity parameters
+🚨🚨 TODO: Image for result with different sensitivity parameters
 
 By comparing the two results, you can get a sense of the impact *sensitivity* has on accessibility.
 
 ### Scientific background
 
-TODO: Is this available?
+🚨🚨 TODO: Is this available?
 
 ### Visualization 
 
@@ -309,7 +309,7 @@ Heatmaps in GOAT utilize **[Uber's H3 grid-based](../further_reading/glossary#h3
 
 ## 5. Further readings
 
-TODO: Not sure if this is available for heatmaps?
+🚨🚨TODO: Not sure if this is available for heatmaps?
 
 ## 6. References
 
