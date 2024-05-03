@@ -8,12 +8,11 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 
 # Heatmap - Gravity
-
-**Gravity-based Heatmaps** uses a color-coded map to visualize the accessibility of a points cluster, eg.: [POIs](../../further_reading/glossary#point-of-interest-poi "What is a POI?"). 
+**Gravity-based Heatmaps** use a color-coded map to visualize the accessibility of a points cluster, eg.: [POIs](../../further_reading/glossary#point-of-interest-poi "What is a POI?"). 
 
 ## 1. Explanation
 
-Visualized as a color-coded hexagonal grid, heatmaps takes into account real-world transport and streets networks, to compute accessibility. Specify a routing mode (`Walk` or `Bicycle`), select `Opportunity Layer`. Set a maximum travel duration. The result shall display the color-coded hexagonal grid for all the areas accessible under those conditions. The color scale referes to the local accessibility.
+Visualized as a color-coded hexagonal grid, heatmaps take into account real-world transport and street networks, to compute accessibility. Specify a routing mode (`Walk` or `Bicycle`), select `Opportunity Layer`. Set a maximum travel duration. The result shall display the color-coded hexagonal grid for all the areas accessible under those conditions. The color scale refers to the local accessibility.
 
 :::info INFO
 
@@ -21,7 +20,7 @@ The `Opportunity Layer` is a layer with points data type. View more in [**Data T
 
 :::
 
-Unique to the **Gravity-based Heatmap**, customizable properties such as *sensitivity*, the *impedance function* and *destination potential* give you minute control over the method used and metadata taken into account while computing the accessibility value for an area. Influenced by these properties, the accessibility of a point can model complex real-world human behaviour and is a powerful measure for transport and accessibility planning.
+Unique to the **Gravity-based Heatmap**, customizable properties such as *sensitivity*, the *impedance function* and *destination potential* give you minute control over the method used and metadata taken into account while computing the accessibility value for an area. Influenced by these properties, the accessibility of a point can model complex real-world human behavior and is a powerful measure for transport and accessibility planning.
 
 :::tip Pro tip
 
@@ -33,11 +32,11 @@ Described succinctly, Accessibility Heatmaps are a visualization representing *a
   
 :::info 
 
-The Heatmaps are available for specific regions. 
+Heatmaps are available for specific regions. 
 Upon selecting a `Routing Mode` the **geofence** for heatmap will be displayed on the map, indicating supported regions.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/toolbox/accessibility_indicators/catchments/geofence.png').default} alt="Geofence for catchment area calculation in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
+  <img src={require('/img/toolbox/accessibility_indicators/heatmaps/gravity_based/geofence.png').default} alt="Geofence for Gravity-based Heatmaps in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
 </div> 
 
 
@@ -214,7 +213,7 @@ For defining which travel time limits are suitable for which amenity, the ["Stan
 
 :::tip Pro-tip
 
-The *destination_potential* is a useful way to prioritize certain opportunities over others. For example, let's suppose a bus stop is nearer than another, therefore receiving a higher accessibility score due to its proximity. However, the bus stop farther away is served by more routes, providing riders frequent service. The *destination_potential* allows you to use this additional property (such as the number of routes serving a bus stop) to assign opportunities a "potential" and employ qualitative information to compute accessibility.
+The *destination_potential* is a useful way to prioritize certain opportunities over others. For example, let's suppose a bus stop is nearer than another, therefore receiving a higher accessibility score due to its proximity. However, the bus stop farther away is served by more routes, providing riders with frequent service. The *destination_potential* allows you to use this additional property (such as the number of routes serving a bus stop) to assign opportunities a "potential" and employ qualitative information to compute accessibility.
 
 :::
 
@@ -250,7 +249,7 @@ Depending on your configuration, the calculation might take a few minutes. The [
 
 :::tip Tip
 
-Want to style your heatmaps and create nice looking maps? See [Styling](../../map/layer_style/styling).
+Want to style your heatmaps and create nice-looking maps? See [Styling](../../map/layer_style/styling).
 
 :::
 
@@ -263,7 +262,7 @@ The calculation of the heatmap is calculated with the help of gravity-based meas
 
 ![Accessibility Formula](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/place-based_accessibility_measures.webp "Accessibility Formula")
 
-where the accessibility A of origin i is the sum of all opportunities O available at destinations j weighted by some function of the travel time tij between i and j. GOAT uses the modified gaussian function as an impedance function for the calculation:
+where the accessibility A of origin i is the sum of all opportunities O available at destinations j weighted by some function of the travel time tij between i and j. GOAT uses the modified Gaussian function as an impedance function for the calculation:
 
 *Modified Gaussian, (Kwan,1998):*
 
@@ -283,7 +282,7 @@ where the accessibility A of origin i is the sum of all opportunities O availabl
 
 ![Cumulative Opportunities Linear, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/cumulative_opportunities_linear.png "Cumulative Opportunities Linear, (Kwan,1998)")
 
-Travel times is computed in minutes. For a maximum travel time of 30 minutes destinations which are further than 30 minutes are considered as non-accessible, thus not considered into the calculation of the accessibility. 
+Travel times are computed in minutes. For a maximum travel time of 30 minutes, destinations that are further than 30 minutes are considered non-accessible and therefore not considered in the calculation of the accessibility.
 The *sensitivity* parameter defines how accessibility changes with increasing travel time. As the *sensitivity* parameter is decisive when measuring accessibility, GOAT allows you to adjust them. The following graphs show the influence of the *sensitivity* parameter on accessibility.
 
 🚨🚨 TODO: Add sensitivity index images (currently not implemented in GOAT)
@@ -327,7 +326,7 @@ By comparing the two results, you can get a sense of the impact *sensitivity* ha
 
 ### Visualization 
 
-Heatmaps in GOAT utilize **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** solution for efficient computation and easy-to-understand visualization. Behind the scenes, a pre-computed travel time matrix for each *routing type* employs this solution and is queried and further processed in real-time to compute accessibility and produce a final heatmap.
+Heatmaps in GOAT utilize **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** solution for efficient computation and easy-to-understand visualization. Behind the scenes, a pre-computed travel time matrix for each *routing type* employs this solution and is queried and further processed in real time to compute accessibility and produce a final heatmap.
 
 ## 5. Further readings
 
