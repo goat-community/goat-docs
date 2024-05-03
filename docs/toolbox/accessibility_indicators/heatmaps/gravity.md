@@ -12,11 +12,11 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 ## 1. Explanation
 
-Visualized as a color-coded hexagonal grid, heatmaps take into account real-world transport and street networks, to compute accessibility. Specify a routing mode (`Walk` or `Bicycle`), select `Opportunity Layer`. Set a maximum travel duration. The result shall display the color-coded hexagonal grid for all the areas accessible under those conditions. The color scale refers to the local accessibility.
+Visualized as a color-coded hexagonal grid, heatmaps take into account real-world transport and street networks to compute accessibility. Specify a routing mode (`Walk`, `Bicycle`, `Pedelec` or `Car`) and select one or more `Opportunity Layers`. Set a maximum travel duration. The result shall display a color-coded hexagonal grid for all the areas accessible under those conditions. The color scale refers to the local accessibility.
 
 :::info INFO
 
-The `Opportunity Layer` is a layer with points data type. View more in [**Data Types**](../data/data_types).
+An `Opportunity Layer` is a layer with *geographic points* data. Learns more in [**Data Types**](../../../data/data_types).
 
 :::
 
@@ -134,11 +134,11 @@ For further insights into the Routing algorithm, visit [Routing/Car](../../routi
 
 <Tabs>
 
-<TabItem value="gaussian" label="Gaussian" default className="tabItemBox">
+<TabItem value="gaussian" label="Gaussian (default)" default className="tabItemBox">
 
 #### Gaussian
 
-This function computes accessibilities according to a Gaussian curve, influenced by the `sensitivity` and `destination_potential` you define. More details about *sensitivity* and *destination_potential* in the next section.
+This function calculates accessibilities based on a Gaussian curve, which is influenced by the `sensitivity` and `destination_potential` you define. For a more in-depth understanding, refer to the [Technical details](./gravity#4-technical-details) section.
 
 **Simplified Explanation**
 
@@ -150,11 +150,7 @@ Typically, a bus stop ten minutes away would presumably be twice as accessible a
 
 #### Linear
 
-:::info coming soon
-
-Documentation of the functionality will be online soon. 🧑🏻‍💻
-
-:::
+This function maintains a direct correlation between travel time and accessibility, which is modulated by the `destination_potential` you specify. For a more in-depth understanding, refer to the [Technical details](./gravity#4-technical-details) section.
 
 </TabItem>
 
@@ -162,11 +158,7 @@ Documentation of the functionality will be online soon. 🧑🏻‍💻
 
 #### Exponential
 
-:::info coming soon
-
-Documentation of the functionality will be online soon. 🧑🏻‍💻
-
-:::
+This function calculates accessibilities based on an exponential curve, which is influenced by the `sensitivity` and `destination_potential` you define. For a more in-depth understanding, refer to the [Technical details](./gravity#4-technical-details) section.
 
 </TabItem>
 
@@ -174,11 +166,7 @@ Documentation of the functionality will be online soon. 🧑🏻‍💻
 
 #### Power
 
-:::info coming soon
-
-Documentation of the functionality will be online soon. 🧑🏻‍💻
-
-:::
+This function calculates accessibilities based on a power curve, which is influenced by the `sensitivity` and `destination_potential` you define. For a more in-depth understanding, refer to the [Technical details](./gravity#4-technical-details) section.
 
 </TabItem>
 
@@ -256,38 +244,48 @@ Want to style your heatmaps and create nice-looking maps? See [Styling](../../ma
 ## 4. Technical details
 
 ### Calculation
-The calculation of the heatmap is calculated with the help of gravity-based measures and can be operationalized as:
+The accessibility value of each hexagonal cell within a heatmap is calculated with the help of gravity-based measures and can be operationalized as:
 
 *Accessibility Formula:*
 
 ![Accessibility Formula](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/place-based_accessibility_measures.webp "Accessibility Formula")
 
-where the accessibility A of origin i is the sum of all opportunities O available at destinations j weighted by some function of the travel time tij between i and j. GOAT uses the modified Gaussian function as an impedance function for the calculation:
+where the accessibility **A** of origin **i** is the sum of all opportunities **O** available at destinations **j** weighted by some function of the travel time **tij** between **i** and **j**. The function **f(tij)** is the impedance function, which can be `gaussian`, `linear`, `exponential`, or `power`. The *sensitivity* parameter **β** and the *destination potential* **D** are used to adjust the accessibility value.
+
+#### GOAT uses the following formulas for its impedance functions:
 
 *Modified Gaussian, (Kwan,1998):*
 
 ![Modified Gaussian, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/modified_gaussian.png "Modified Gaussian, (Kwan,1998)")
 
-#### GOAT uses the following formulas for its impedance functions:
+*Cumulative Opportunities Linear, (Kwan,1998):*
 
-*Inverse Power, (Kwan,1998):*
-
-![Inverse Power, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/inverse_power.png "Inverse Power, (Kwan,1998)")
+![Cumulative Opportunities Linear, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/cumulative_opportunities_linear.png "Cumulative Opportunities Linear, (Kwan,1998)")
 
 *Negative Exponential, (Kwan,1998):*
 
 ![Negative Exponential, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/negative_exponetial.png "Negative Exponential, (Kwan,1998)")
 
-*Cumulative Opportunities Linear, (Kwan,1998):*
+*Inverse Power, (Kwan,1998):*
 
-![Cumulative Opportunities Linear, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/cumulative_opportunities_linear.png "Cumulative Opportunities Linear, (Kwan,1998)")
+![Inverse Power, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/inverse_power.png "Inverse Power, (Kwan,1998)")
 
-Travel times are computed in minutes. For a maximum travel time of 30 minutes, destinations that are further than 30 minutes are considered non-accessible and therefore not considered in the calculation of the accessibility.
-The *sensitivity* parameter defines how accessibility changes with increasing travel time. As the *sensitivity* parameter is decisive when measuring accessibility, GOAT allows you to adjust them. The following graphs show the influence of the *sensitivity* parameter on accessibility.
+Travel times are measured in minutes. For a maximum travel time of 30 minutes, destinations that are farther than 30 minutes are considered non-accessible and therefore not considered in the calculation of the accessibility.
+The *sensitivity* parameter determines how accessibility changes with increasing travel time. As the *sensitivity* parameter is decisive when measuring accessibility, GOAT allows you to adjust this. The following graphs show the influence of the *sensitivity* parameter on accessibility:
 
-🚨🚨 TODO: Add sensitivity index images (currently not implemented in GOAT)
+:::info coming soon
 
-Similarly, the *destination potential* can be changed. Thus, for example, one POI type (e.g. hypermarkets) can be assigned a higher accessibility effect than other POI types (e.g. discount supermarkets).
+Examples of this functionality will be online soon. 🧑🏻‍💻
+
+:::
+
+Similarly, the *destination potential* can be changed. Thus, for example, one POI type (e.g. hypermarkets) can be assigned a higher accessibility effect than other POI types (e.g. discount supermarkets). The following images show the influence of the *destination potential* parameter on accessibility:
+
+:::info coming soon
+
+Examples of this functionality will be online soon. 🧑🏻‍💻
+
+:::
 
 ### Classification
 In order to classify the accessibility levels that were computed for each grid cell (for color-coded visualization), a classification based on quantiles is used.
