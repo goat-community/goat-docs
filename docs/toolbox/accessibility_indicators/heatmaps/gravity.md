@@ -16,18 +16,23 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 Visualized as a color-coded hexagonal grid, heatmaps takes into account real-world transport and streets networks, to compute accessibility. Specify a routing mode (`Walk` or `Bicycle`), select `Opportunity Layer`. Set a maximum travel duration. The result shall display the color-coded hexagonal grid for all the areas accessible under those conditions. The color scale referes to the local accessibility.
 
 :::info INFO
+
 The `Opportunity Layer` is a layer with points data type. View more in [**Data Types**](../data/data_types).
+
 :::
 
 Unique to the **Gravity-based Heatmap**, customizable properties such as *sensitivity*, the *impedance function* and *destination potential* give you minute control over the method used and metadata taken into account while computing the accessibility value for an area. Influenced by these properties, the accessibility of a point can model complex real-world human behaviour and is a powerful measure for transport and accessibility planning.
 
 :::tip Pro tip
+
 Described succinctly, Accessibility Heatmaps are a visualization representing *access* from various unspecified origins, to one or more specified destinations. This is in contrast to catchment areas which represent *egress* from one or more specified origins to various unspecified destinations.
+
 :::
 
 ![Gravity-based Heatmap in GOAT](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/heatmap_gravity_based.webp "Gravity-based Heatmap in GOAT")
   
 :::info 
+
 The Heatmaps are available for specific regions. 
 Upon selecting a `Routing Mode` the **geofence** for heatmap will be displayed on the map, indicating supported regions.
 
@@ -37,6 +42,7 @@ Upon selecting a `Routing Mode` the **geofence** for heatmap will be displayed o
 
 
 If you would like to perform analyses beyond this geofence, feel free to [contact us](https://plan4better.de/en/contact/ "Contact us"). We would be happy to discuss further options.
+
 :::
 
 ## 2. Example use cases
@@ -101,6 +107,7 @@ Considering all paths accessible by bicycle. Depending on the surface, smoothnes
 For further insights into the Routing algorithm, visit [Routing/Bicycle](../../routing/bicycle). In addition, you can check this [Publication](https://doi.org/10.1016/j.jtrangeo.2021.103080).
 
 :::
+
 </TabItem>
 
 <TabItem value="car" label="Car" className="tabItemBox">
@@ -114,6 +121,7 @@ Considering all paths accessible by car. This routing mode takes into account sp
 For further insights into the Routing algorithm, visit [Routing/Car](../../routing/car).
 
 :::
+
 </TabItem>
 
 </Tabs>
@@ -237,11 +245,13 @@ Depending on your configuration, the calculation might take a few minutes. The [
 </div>
 
 
-![Heatmap Gravity-Based Calculation Result in GOAT](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/heatmap_gravity_result.webp "Heatmap Gravity-Based Calculation Result in GOAT")
+![Heatmap Gravity-Based Calculation Result in GOAT](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/heatmap_gravity_result.png "Heatmap Gravity-Based Calculation Result in GOAT")
 
 
 :::tip Tip
+
 Want to style your heatmaps and create nice looking maps? See [Styling](../../map/layer_style/styling).
+
 :::
 
 ## 4. Technical details
@@ -249,15 +259,27 @@ Want to style your heatmaps and create nice looking maps? See [Styling](../../ma
 ### Calculation
 The calculation of the heatmap is calculated with the help of gravity-based measures and can be operationalized as:
 
+*Accessibility Formula:*
+
 ![Accessibility Formula](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/place-based_accessibility_measures.webp "Accessibility Formula")
 
 where the accessibility A of origin i is the sum of all opportunities O available at destinations j weighted by some function of the travel time tij between i and j. GOAT uses the modified gaussian function as an impedance function for the calculation:
 
+*Modified Gaussian, (Kwan,1998):*
+
+![Modified Gaussian, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/modified_gaussian.png "Modified Gaussian, (Kwan,1998)")
+
+#### GOAT uses the following formulas for its impedance functions:
+
+*Inverse Power, (Kwan,1998):*
+
 ![Inverse Power, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/inverse_power.png "Inverse Power, (Kwan,1998)")
+
+*Negative Exponential, (Kwan,1998):*
 
 ![Negative Exponential, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/negative_exponetial.png "Negative Exponential, (Kwan,1998)")
 
-![Modified Gaussian, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/modified_gaussian.png "Modified Gaussian, (Kwan,1998)")
+*Cumulative Opportunities Linear, (Kwan,1998):*
 
 ![Cumulative Opportunities Linear, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/cumulative_opportunities_linear.png "Cumulative Opportunities Linear, (Kwan,1998)")
 
