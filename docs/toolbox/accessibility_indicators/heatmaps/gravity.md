@@ -8,7 +8,7 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 
 # Heatmap - Gravity
-**Gravity-based Heatmaps** use a color-coded map to visualize the accessibility of a points cluster, eg.: [POIs](../../further_reading/glossary#point-of-interest-poi "What is a POI?"). 
+**Gravity-based Heatmaps** use a color-coded map to visualize the accessibility of a points cluster, eg.: [POIs](../../../further_reading/glossary#point-of-interest-poi "What is a POI?"). 
 
 ## 1. Explanation
 
