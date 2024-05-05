@@ -299,38 +299,46 @@ The following example illustrates how the local accessibility heatmap is compute
 For the hexagon shown here, the calculation yields the following results, depending on the sensitivity parameter:
 
 ##### Uniform sensitivity parameter:
-🚨🚨 TODO: Add image for accessibility calculation in new GOAT v2.0
+:::info coming soon
+
+Examples of this functionality will be online soon. 🧑🏻‍💻
+
+:::
 
 ##### Varying sensitivity parameter for Hypermarket:
-🚨🚨 TODO: Add image for accessibility calculation in new GOAT v2.0
+:::info coming soon
+
+Examples of this functionality will be online soon. 🧑🏻‍💻
+
+:::
 
 Applied in GOAT, the following differences arise:
 
 #### Calculation with uniform sensitivity parameter
 In the first example, the accessibility for grocery shops in 15 min is calculated using a uniform sensitivity parameter (β=300,000) for all shops. The result looks like this:
 
-![Local Accessibility to grocery shops](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/Local_accessibility_grocery.webp "Local Accessibility to grocery shops")
+:::info coming soon
+
+Examples of this functionality will be online soon. 🧑🏻‍💻
+
+:::
 
 #### Calculation with different sensitivity parameters
 In the second example, the accessibility of grocery shops in 15 min is performed using different sensitivity parameters (β=300,000 and β=400,000). This means that the sensitivity parameter depends on the different grocery shop types. For this example, we used β=400,000 for hypermarkets and β=300,000 for discounters and supermarkets. This gives the following result:
 
-🚨🚨 TODO: Image for result with different sensitivity parameters
+:::info coming soon
+
+Examples of this functionality will be online soon. 🧑🏻‍💻
+
+:::
 
 By comparing the two results, you can get a sense of the impact *sensitivity* has on accessibility.
-
-### Scientific background
-
-🚨🚨 TODO: Is this available?
 
 ### Visualization 
 
 Heatmaps in GOAT utilize **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** solution for efficient computation and easy-to-understand visualization. Behind the scenes, a pre-computed travel time matrix for each *routing type* employs this solution and is queried and further processed in real time to compute accessibility and produce a final heatmap.
 
-## 5. Further readings
-
-🚨🚨TODO: Not sure if this is available for heatmaps?
-
-## 6. References
+## 5. References
 
 Kwan, Mei-Po. 1998. “Space-Time and Integral Measures of Individual Accessibility: A Comparative Analysis Using a Point-Based Framework.” Geographical Analysis 30 (3): 191–216. [https://doi.org/10.1111/j.1538-4632.1998.tb00396.x](https://doi.org/10.1111/j.1538-4632.1998.tb00396.x).
 
