@@ -12,21 +12,19 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 ## 1. Explanation
 
-Visualized as a color-coded hexagonal grid, heatmaps take into account real-world transport and street networks to compute connectivity. Specify a routing mode (`Walk`, `Bicycle`, `Pedelec`, or `Car`) and set a maximum travel duration. The result shall display a color-coded hexagonal grid representing the relative connectivity of all locations within the specified AOI.
+Visualized as a color-coded hexagonal grid, heatmaps take into account real-world transport and street networks to compute connectivity. After specifying a *routing type* (Walk, Bicycle, etc.) and *travel time limit*, the result shall display a color-coded hexagonal grid representing the relative connectivity of all locations within the specified AOI.
 
-### What do we mean by connectivity?
-Unlike our other heatmaps which focus on visualizing the accessibility of specific points of interest ([POIs](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) or amenities from surrounding areas, connectivity-based heatmaps represent the overall connectivity of an area. This means that all locations within your AOI are considered to be destinations, and for each location, its "connectivity" represents the geographic area (within and outside the AOI) from which the location is accessible, considering the specified `Routing type` and `Travel time limit`.
+Unlike our other heatmaps which focus on visualizing the accessibility to specific points (such as [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) or amenities from surrounding areas, connectivity-based heatmaps represent the overall connectivity of an area. This means that all locations within your AOI are considered to be destinations, and for each location, its "connectivity" represents the geographic area (within and outside the AOI) from which the location is accessible, considering the specified *routing type* and *travel time limit*.
 
-🚨🚨 TODO: Update image
+🚨🚨 TODO: Add image here
 
 :::info 
 
-Heatmaps are available for specific regions. 
-Upon selecting a `Routing Mode` the **geofence** for heatmap will be displayed on the map, indicating supported regions.
+Heatmaps are available in certain regions. Upon selecting a `Routing type`, a **geofence** will be displayed on the map to highlight supported regions.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/toolbox/accessibility_indicators/heatmaps/gravity_based/geofence.png').default} alt="Geofence for Gravity-based Heatmaps in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
-</div> 
+  <img src={require('/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/geofence.png').default} alt="Geofence for Connectivity-based Heatmaps in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
+</div>
 
 
 If you would like to perform analyses beyond this geofence, feel free to [contact us](https://plan4better.de/en/contact/ "Contact us"). We would be happy to discuss further options.
@@ -183,3 +181,7 @@ To classify the connectivity levels that were computed for each grid cell (for c
 ### Visualization 
 
 Heatmaps in GOAT utilize **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** solution for efficient computation and easy-to-understand visualization. Behind the scenes, a pre-computed travel time matrix for each *routing type* employs this solution and is queried and further processed in real-time to compute accessibility and produce a final heatmap.
+
+## 5. References
+
+🚨🚨 TODO: Check if any references are available
