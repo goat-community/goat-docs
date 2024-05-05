@@ -8,15 +8,15 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 
 # Heatmap - Gravity
-**Gravity-based Heatmaps** use a color-coded map to visualize the accessibility of a points cluster, eg.: [POIs](../../../further_reading/glossary#point-of-interest-poi "What is a POI?"). 
+**Gravity-based Heatmaps** use a color-coded map to visualize the accessibility of points (such as [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) from surrounding areas.
 
 ## 1. Explanation
 
-Visualized as a color-coded hexagonal grid, heatmaps take into account real-world transport and street networks to compute accessibility. Specify a routing mode (`Walk`, `Bicycle`, `Pedelec` or `Car`) and select one or more `Opportunity Layers`. Set a maximum travel duration. The result shall display a color-coded hexagonal grid for all the areas accessible under those conditions. The color scale refers to the local accessibility.
+Visualized as a color-coded hexagonal grid, heatmaps take into account real-world transport and street networks to compute accessibility. After specifying a *routing type* (Walk, Bicycle, etc.), *opportunity layer* and *travel time limit*, the result shall display a color-coded hexagonal grid for all areas accessible under these conditions. The color scale refers to the local accessibility.
 
 :::info INFO
 
-An `Opportunity Layer` is a layer with *geographic points* data. Learns more in [**Data Types**](../../../data/data_types).
+An `Opportunity layer` contains [geographic point](../../../data/data_types "What are geographic points?") data. Select one or more such layers containing your destination points (opportunities) as input to the heatmap.
 
 :::
 
@@ -24,7 +24,7 @@ Unique to the **Gravity-based Heatmap**, customizable properties such as *sensit
 
 :::tip Pro tip
 
-Described succinctly, Accessibility Heatmaps are a visualization representing *access* from various unspecified origins, to one or more specified destinations. This is in contrast to catchment areas which represent *egress* from one or more specified origins to various unspecified destinations.
+Described succinctly, accessibility heatmaps are a visualization representing *access* from various unspecified origins, to one or more specified destinations. This is in contrast to catchment areas which represent *egress* from one or more specified origins to various unspecified destinations.
 
 :::
 
@@ -32,8 +32,7 @@ Described succinctly, Accessibility Heatmaps are a visualization representing *a
   
 :::info 
 
-Heatmaps are available for specific regions. 
-Upon selecting a `Routing Mode` the **geofence** for heatmap will be displayed on the map, indicating supported regions.
+Heatmaps are available in certain regions. Upon selecting a `Routing type`, a **geofence** will be displayed on the map to highlight supported regions.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/toolbox/accessibility_indicators/heatmaps/gravity_based/geofence.png').default} alt="Geofence for Gravity-based Heatmaps in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
@@ -174,7 +173,7 @@ This function calculates accessibilities based on a power curve, which is influe
 
 ### Opportunities
 
-Opportunities are essentially [POIs](../../further_reading/glossary#point-of-interest-poi "What is a POI?") or point-based data for which you would like to compute a heatmap. These are the "destinations" (such as transit stations, schools, other amenities, or your own custom point-based data) while surrounding areas will be "origins" for which an accessibility value will be computed and visualized.
+Opportunities are essentially point-based data (such as [POI](../../further_reading/glossary#point-of-interest-poi "What is a POI?")) for which you would like to compute a heatmap. These are the "destinations" (such as transit stations, schools, other amenities, or your own custom point-based data) while surrounding areas will be "origins" for which an accessibility value will be computed and visualized.
 
 Additionally, you may create more opportunities via the `+ Add Opportunity` button at the bottom of the drawer. All opportunity layers will be combined to produce a unified heatmap.
 
@@ -250,7 +249,7 @@ The accessibility value of each hexagonal cell within a heatmap is calculated wi
 
 ![Accessibility Formula](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/place-based_accessibility_measures.webp "Accessibility Formula")
 
-where the accessibility **A** of origin **i** is the sum of all opportunities **O** available at destinations **j** weighted by some function of the travel time **tij** between **i** and **j**. The function **f(tij)** is the impedance function, which can be `gaussian`, `linear`, `exponential`, or `power`. The *sensitivity* parameter **β** and the *destination potential* **D** are used to adjust the accessibility value.
+where the accessibility **A** of origin **i** is the sum of all opportunities **O** available at destinations **j** weighted by some function of the travel time **tij** between **i** and **j**. The function **f(tij)** is the impedance function, which can be `gaussian`, `linear`, `exponential`, or `power`. The *sensitivity* parameter **β** and the *destination potential* are used to adjust the accessibility value.
 
 #### GOAT uses the following formulas for its impedance functions:
 
@@ -336,7 +335,7 @@ By comparing the two results, you can get a sense of the impact *sensitivity* ha
 
 ### Visualization 
 
-Heatmaps in GOAT utilize **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** solution for efficient computation and easy-to-understand visualization. Behind the scenes, a pre-computed travel time matrix for each *routing type* employs this solution and is queried and further processed in real time to compute accessibility and produce a final heatmap.
+Heatmaps in GOAT utilize **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** solution for efficient computation and easy-to-understand visualization. Behind the scenes, a pre-computed travel time matrix for each *routing type* employs this solution and is queried and further processed in real-time to compute accessibility and produce a final heatmap.
 
 ## 5. References
 
