@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 
 ---
 
@@ -7,7 +7,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
-# Heatmap - Connectivity
+# Heatmap Connectivity
 **Connectivity-based Heatmaps** use a color-coded map to visualize the connectivity of locations within an area of interest ([AOI](../../../further_reading/glossary#area-of-interest-aoi "What is an AOI?")).
 
 ## 1. Explanation
