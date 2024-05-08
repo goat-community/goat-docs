@@ -4,9 +4,9 @@ sidebar_position: 21
 
 # Attribute-based Styling
 
-GOAT allows users to apply **attribute-based styling** techniques to enhance the visual appearance of elements (such as point, lines or polygons) on the map. This approach allows the visual representation to **reflect variations and patterns in the data**, making it easier to recognise and understand complex information spatially.
+GOAT allows users to apply **attribute-based styling** techniques to enhance the data visualisation on maps. This approach allows the visual representation to **reflect variations and patterns in the data**, making it easier to recognise and understand complex information spatially.
 
-Access the <code>Layer design</code> <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> menu, you will find the available styling settings for the layer selected.  <code>Fill Color</code>, <code>Stroke Color</code> and <code>Labels</code>. When enabled each has the <b>options button</b><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Under it you will find the attribute-based styling, for that specific style setting (either Fill Color, Stroke Color or Label). Style your mapa based on its dataset attributes. 
+Under the <code>Layer design</code> <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> menu, you will find the available styling settings for the layer selected.  <code>Fill Color</code>, <code>Stroke Color</code>, <code>Custom Marker</code> and <code>Labels</code>. Each option has the <b>options button</b><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Under it you will find the attribute-based styling, for that specific style setting (either Fill Color, Stroke Color, Custom marker or Label). Style your mapa based on its dataset attributes. To edit the style attribute make sure the attribute toggle is ON, and then clikc the <b>options button</b><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>.
 
 
 :::tip HINT
@@ -32,6 +32,8 @@ For the attribute-based styling, first select the attribute which you like to vi
  
  GOAT provides a comprehensive set of predefined palettes, each of which has been designed to provide a **visually impactful representation of spatial data**. These palettes are categorised into four different groups for ease of selection and application.
 
+The color palette provides several customization options. You can define your **number of steps** for a palette, you can **reverse** the colors and you can also define your own **custom palette**.
+
 <p></p>
 
 | Palette Type| Example | Description |
@@ -41,7 +43,6 @@ For the attribute-based styling, first select the attribute which you like to vi
 | Qualitative | <img src={require('/img/map/styling/qualitative_palette.png').default} alt="qualitative" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | This color palette is designed for data that is categorised into specific, distinct groups or classes. Qualitative color palettes are designed to distinguish between discrete categories. Importantly, these palettes do so without suggesting any inherent order or relative importance between the different categories. |
 | Singlehue | <img src={require('/img/map/styling/singlehue_palette.png').default} alt="singlehue" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | This color palette is a type of color scheme used in data visualisation that uses different hues, shades and tones of a single color. This approach creates a visually coherent and harmonious aesthetic that can be particularly effective in conveying information without the distraction of multiple colors. |
 
-The color palette provides several customization options. You can define your **number of steps** for a palette, you can **reverse** the colors and you can also define your own **custom palette**.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -51,8 +52,7 @@ The color palette provides several customization options. You can define your **
 
 ## Color Scale
 
-Under the <code>Color Scale</code> is both the **data classification method** and the 
-The **color scale** is a representation of the  **data classification method** that associates data values with a spectrum of colors. It converts a given data value within a given range (domain) into a corresponding color from a given color spectrum (range). GOAT provides six predefined color scale methods: [Quantile](#quantile), [Standard Deviation](#standard-deviation), [Equal Interval](#equal-interval), [Heads and Tails](#heads-and-tails), [Custom Breaks](#custom-breaks-for-numbers), [Custom Ordinal](#custom-ordinal-for-strings).
+Under the <code>Color Scale</code> you will find the **data classification method** and the **color scale** that associates data values with a spectrum of colors. It converts a given data value within a given range (domain) into a corresponding color from a given color spectrum (range). GOAT provides six predefined **data classification methods**: [Quantile](#quantile), [Standard Deviation](#standard-deviation), [Equal Interval](#equal-interval), [Heads and Tails](#heads-and-tails), [Custom Breaks](#custom-breaks-for-numbers), [Custom Ordinal](#custom-ordinal-for-strings).
 
 ## Data Classification Methods
 
