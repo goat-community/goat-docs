@@ -7,7 +7,7 @@ import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 # Heatmap Closest Average
-**Closest-average-based Heatmaps** use a color-coded map to visualize the average travel time to points (such as [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) from surrounding areas.
+**Closest-average-based Heatmaps** uses a color-coded map to visualize the average travel time to points (such as [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) from surrounding areas.
 
 ## 1. Explanation
 
@@ -27,7 +27,8 @@ Described succinctly, accessibility heatmaps are a visualization representing *a
 
 :::
 
-🚨🚨 TODO: Add image here
+![Closest Average-based Heatmap in GOAT](/img/toolbox/accessibility_indicators/heatmaps/closest_average_based/closest_avg.png "Closest Average-based Heatmap in GOAT")
+
   
 :::info 
 
@@ -175,8 +176,7 @@ Depending on your configuration, the calculation might take a few minutes. The [
 </div>
 
 
-🚨🚨 TODO: Add image/GIF of calculation process and result
-
+<img src={require('/img/toolbox/accessibility_indicators/heatmaps/closest_average_based/clst-avg-calculation.gif').default} alt="Options" style={{ maxHeight: "800px", maxWidth: "800px"}}/>
 
 :::tip Tip
 
@@ -192,7 +192,7 @@ Once all input opportunity layers are combined, a grid of surrounding hexagonal 
 
 Average travel time formula:
 
-🚨🚨 TODO: Add formula image
+![Closest Average Formula](/img/toolbox/accessibility_indicators/heatmaps/closest_average_based/closest_avg_formula.png "Closest Average Formula")
 
 where the average travel time for cell **i** is the sum of upto **n** travel times from cell **i** to opportunity **j** (**tij**) divided by the number of opportunities **n** which must be less than the *Number of destinations* parameter specified.
 
@@ -201,7 +201,7 @@ In order to classify the accessibility levels that were computed for each grid c
 
 ### Example of calculation
 
-🚨🚨 TODO: Add example calculation image with varying number of destinations specified
+![Closest Average Heatmaps for different destinations](/img/toolbox/accessibility_indicators/heatmaps/closest_average_based/cls-avg-destinations.png "Closest Average Heatmaps for different destinations")
 
 ### Visualization 
 

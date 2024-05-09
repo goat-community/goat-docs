@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 # Heatmap Connectivity
-**Connectivity-based Heatmaps** use a color-coded map to visualize the connectivity of locations within an area of interest ([AOI](../../../further_reading/glossary#area-of-interest-aoi "What is an AOI?")).
+**Connectivity-based Heatmaps** uses a color-coded map to visualize the connectivity of locations within an area of interest ([AOI](../../../further_reading/glossary#area-of-interest-aoi "What is an AOI?")).
 
 ## 1. Explanation
 
@@ -16,7 +16,7 @@ Visualized as a color-coded hexagonal grid, heatmaps take into account real-worl
 
 Unlike our other heatmaps which focus on visualizing the accessibility to specific points (such as [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) or amenities from surrounding areas, connectivity-based heatmaps represent the overall connectivity of an area. This means that all locations within your AOI are considered to be destinations, and for each location, its "connectivity" represents the geographic area (within and outside the AOI) from which the location is accessible, considering the specified *routing type* and *travel time limit*.
 
-🚨🚨 TODO: Add image here
+![Connectivity-based Heatmap in GOAT](/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/connectivity.png "Connectivity-based Heatmap in GOAT")
 
 :::info 
 
@@ -146,7 +146,7 @@ Depending on your configuration, the calculation might take a few minutes. The [
 </div>
 
 
-🚨🚨 TODO: Update image
+![Connectivity-based Heatmap Result in GOAT](/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/connectivity_heatmap_result.png "Connectivity-based Heatmap Result in GOAT")
 
 
 :::tip Tip
@@ -167,7 +167,7 @@ For each cell of the hexagonal grid (within your AOI), the full extent of surrou
 
 Connectivity formula:
 
-🚨🚨 TODO: Add formula image
+![Connectivity Formula](/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/connectivity_formula.png "Connectivity Formula")
 
 Where ***i*** is a travel time step and ***n*** is the travel time limit. With an average edge length of 66 meters per cell, this function computes the total geographic area (in sq. meters) from which the destination cell in your AOI is accessible.
 
@@ -176,7 +176,7 @@ To classify the connectivity levels that were computed for each grid cell (for c
 
 ### Example of calculation
 
-🚨🚨 TODO: Add example calculation image/GIF
+<img src={require('/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/connectivity-calculation.gif').default} alt="Options" style={{ maxHeight: "800px", maxWidth: "800px"}}/>
 
 ### Visualization 
 
