@@ -126,3 +126,38 @@ Therefore, additional steps can be added and multiple string values selected per
 
 </div> 
 
+
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+## Style Settings
+
+<Tabs>
+  <TabItem value="fill color" label="Fill Color" default> Fill Color can either be one single color or a color palette. GOAT offers a set of preset colors and palettes to style your map. 
+    For attribute based Fill Color select a Field from the selected <code>Layer</code>.
+    GOAT applies a random color palette to your results. 
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+
+   <img src={require('/img/map/layers/fill-color.gif').default} alt="Custom Ordinal for strings" style={{ maxHeight: "500px", maxWidth: "500px", objectFit: "cover"}}/>
+
+   </div> 
+
+  </TabItem>
+  <TabItem value="stroke color" label="Stroke Color"> Stroke Color by default is one single color. Apply attribute based styling to apply a color scale to the layer stroke. 
+    For attribute based Stroke Color select a Field from the selected <code>Layer</code>.
+    GOAT applies a random color palette to your results. 
+
+   <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+
+   <img src={require('/img/map/layers/stroke-color.gif').default} alt="Custom Ordinal for strings" style={{ maxHeight: "500px", maxWidth: "500px", objectFit: "cover"}}/>
+
+   </div> 
+
+
+
+  </TabItem>
+  <TabItem value="custom marker" label="Custom Marker"> When available, custom marker has an icon library to best represent your data set. 
+
+  </TabItem>
+</Tabs>
