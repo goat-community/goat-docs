@@ -7,12 +7,12 @@ import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 
-# Heatmap Gravity
-**Gravity-based Heatmaps** uses a color-coded map to visualize the accessibility of points (such as [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) from surrounding areas.
+# Heatmap - Gravity
+A color-coded map to visualize the accessibility of points (such as [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) from surrounding areas.
 
 ## 1. Explanation
 
-Visualized as a color-coded hexagonal grid, heatmaps take into account real-world transport and street networks to compute accessibility. After specifying a *routing type* (Walk, Bicycle, etc.), *opportunity layer* and *travel time limit*, the result shall display a color-coded hexagonal grid for all areas accessible under these conditions. The color scale refers to the local accessibility.
+Visualized as a color-coded hexagonal grid, heatmaps take into account real-world transport and street networks to compute accessibility. After specifying a *routing type* (Walk, Bicycle, etc.), *opportunity layer* and *travel time limit*, the result will display a color-coded hexagonal grid for all areas accessible under these conditions. The color scale refers to local accessibility.
 
 :::info INFO
 
@@ -20,7 +20,7 @@ An `Opportunity layer` contains [geographic point](../../../data/data_types "Wha
 
 :::
 
-Unique to the **Gravity-based Heatmap**, customizable properties such as *sensitivity*, the *impedance function* and *destination potential* give you minute control over the method used and metadata taken into account while computing the accessibility value for an area. Influenced by these properties, the accessibility of a point can model complex real-world human behavior and is a powerful measure for transport and accessibility planning.
+Unique to the gravity-based heatmap, customizable properties such as *sensitivity*, the *impedance function* and *destination potential* give you minute control over the method used and metadata taken into account while computing the accessibility value for an area. Influenced by these properties, the accessibility of a point can model complex real-world human behavior and is a powerful measure for transport and accessibility planning.
 
 :::tip Pro tip
 
@@ -84,7 +84,7 @@ If you would like to perform analyses beyond this geofence, feel free to [contac
 
 #### Walk
 
-Considering all paths accessible by foot.
+Considers all paths accessible by foot. For heatmaps, a walking speed of 5 km/h is assumed.
 
 :::tip Hint
 
@@ -94,11 +94,25 @@ For further insights into the Routing algorithm, visit [Routing/Walk](../../rout
 
 </TabItem>
   
-<TabItem value="cycling" label="Bicycle/Pedelec" className="tabItemBox">
+<TabItem value="cycling" label="Bicycle" className="tabItemBox">
 
-#### Bicycle/Pedelec
+#### Bicycle
 
-Considering all paths accessible by bicycle. Depending on the surface, smoothness and slope of the different street segments, the speed is adjusted accordingly. For Pedelecs, slopes are considered with a lower impedance than for standard bicycles.
+Considers all paths accessible by bicycle. This routing mode takes into account the surface, smoothness and slope of streets while computing accessibility. For heatmaps, a cycling speed of 15 km/h is assumed.
+
+:::tip Hint
+
+For further insights into the Routing algorithm, visit [Routing/Bicycle](../../routing/bicycle). In addition, you can check this [Publication](https://doi.org/10.1016/j.jtrangeo.2021.103080).
+
+:::
+
+</TabItem>
+
+<TabItem value="pedelec" label="Pedelec" className="tabItemBox">
+
+#### Pedelec
+
+Considers all paths accessible by pedelec. This routing mode takes into account the surface and smoothness of streets while computing accessibility. For heatmaps, a pedelec speed of 23 km/h is assumed.
 
 :::tip Hint
 
@@ -112,7 +126,7 @@ For further insights into the Routing algorithm, visit [Routing/Bicycle](../../r
 
 #### Car
 
-Considering all paths accessible by car. This routing mode takes into account speed limits and one-way access restrictions for computing car accessibility.
+Considers all paths accessible by car. This routing mode takes into account speed limits and one-way access restrictions while computing accessibility.
 
 :::tip Hint
 
@@ -133,15 +147,19 @@ For further insights into the Routing algorithm, visit [Routing/Car](../../routi
 
 <Tabs>
 
-<TabItem value="gaussian" label="Gaussian (default)" default className="tabItemBox">
+<TabItem value="gaussian" label="Gaussian" default className="tabItemBox">
 
 #### Gaussian
 
 This function calculates accessibilities based on a Gaussian curve, which is influenced by the `sensitivity` and `destination_potential` you define. For a more in-depth understanding, refer to the [Technical details](./gravity#4-technical-details) section.
 
-**Simplified Explanation**
+:::tip Pro tip
 
-Typically, a bus stop ten minutes away would presumably be twice as accessible as a bus stop twenty minutes away. However, the Gaussian function allows you to model an additional aspect of human behaviour. Leveraging the *sensitivity* you define, a bus stop ten minutes away could actually be 2.5 times as accessible as a bus stop twenty minutes away. This introduces non-linearity in the relationship between travel time and accessibility which often represents real-world behaviour more accurately.
+As studies have shown, the relationship between travel time and accessibility is often non-linear. This means that people may be willing to travel a short distance to reach an amenity, but as the distance increases, their willingness to travel rapidly decreases (often disproportionately).
+
+Leveraging the *sensitivity* you define, the Gaussian function allows you to model this aspect of real-world behaviour more accurately.
+
+:::
 
 </TabItem>
   
@@ -173,7 +191,7 @@ This function calculates accessibilities based on a power curve, which is influe
 
 ### Opportunities
 
-Opportunities are essentially point-based data (such as [POI](../../further_reading/glossary#point-of-interest-poi "What is a POI?")) for which you would like to compute a heatmap. These are the "destinations" (such as transit stations, schools, other amenities, or your own custom point-based data) while surrounding areas will be "origins" for which an accessibility value will be computed and visualized.
+Opportunities are essentially point-based data (such as [POI](../../further_reading/glossary#point-of-interest-poi "What is a POI?")) for which you would like to compute a heatmap. These are the "destinations" (such as transit stations, schools, other amenities, or your own custom point-based data) while surrounding areas are "origins" for which an accessibility value will be computed and visualized.
 
 Additionally, you may create more opportunities via the `+ Add Opportunity` button at the bottom of the drawer. All opportunity layers will be combined to produce a unified heatmap.
 
@@ -189,7 +207,7 @@ Additionally, you may create more opportunities via the `+ Add Opportunity` butt
 
 :::tip Hint
 
-For defining which travel time limits are suitable for which amenity, the ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
+Need help choosing a suitable travel time limit for various common amenities? The ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
 
 :::
 
@@ -292,8 +310,6 @@ In order to classify the accessibility levels that were computed for each grid c
 ### Example of calculation
 #### Calculation travel times
 The following example illustrates how the local accessibility heatmap is computed. The travel times are calculated for each grid cell to the concerning destination on the street network.
-
-![Hexagonal Grid on Heatmap](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/Traveltime_grid.webp "Hexagonal Grid on Heatmap")
 
 For the hexagon shown here, the calculation yields the following results, depending on the sensitivity parameter:
 
