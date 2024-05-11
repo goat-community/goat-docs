@@ -7,12 +7,12 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
-# Heatmap Connectivity
-**Connectivity-based Heatmaps** uses a color-coded map to visualize the connectivity of locations within an area of interest ([AOI](../../../further_reading/glossary#area-of-interest-aoi "What is an AOI?")).
+# Heatmap - Connectivity
+A color-coded map to visualize the connectivity of locations within an area of interest ([AOI](../../../further_reading/glossary#area-of-interest-aoi "What is an AOI?")).
 
 ## 1. Explanation
 
-Visualized as a color-coded hexagonal grid, heatmaps take into account real-world transport and street networks to compute connectivity. After specifying a *routing type* (Walk, Bicycle, etc.) and *travel time limit*, the result shall display a color-coded hexagonal grid representing the relative connectivity of all locations within the specified AOI.
+Visualized as a color-coded hexagonal grid, heatmaps take into account real-world transport and street networks to compute connectivity. After specifying a *routing type* (Walk, Bicycle, etc.) and *travel time limit*, the result will display a color-coded hexagonal grid representing the relative connectivity of all locations within the specified AOI.
 
 Unlike our other heatmaps which focus on visualizing the accessibility to specific points (such as [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) or amenities from surrounding areas, connectivity-based heatmaps represent the overall connectivity of an area. This means that all locations within your AOI are considered to be destinations, and for each location, its "connectivity" represents the geographic area (within and outside the AOI) from which the location is accessible, considering the specified *routing type* and *travel time limit*.
 
@@ -66,7 +66,7 @@ If you would like to perform analyses beyond this geofence, feel free to [contac
 
 #### Walk
 
-Considering all paths accessible by foot.
+Considers all paths accessible by foot. For heatmaps, a walking speed of 5 km/h is assumed.
 
 :::tip Hint
 
@@ -76,11 +76,25 @@ For further insights into the Routing algorithm, visit [Routing/Walk](../../rout
 
 </TabItem>
   
-<TabItem value="cycling" label="Bicycle/Pedelec" className="tabItemBox">
+<TabItem value="cycling" label="Bicycle" className="tabItemBox">
 
-#### Bicycle/Pedelec
+#### Bicycle
 
-Considering all paths accessible by bicycle. Depending on the surface, smoothness and slope of the different street segments, the speed is adjusted accordingly. For Pedelecs, slopes are considered with a lower impedance than for standard bicycles.
+Considers all paths accessible by bicycle. This routing mode takes into account the surface, smoothness and slope of streets while computing accessibility. For heatmaps, a cycling speed of 15 km/h is assumed.
+
+:::tip Hint
+
+For further insights into the Routing algorithm, visit [Routing/Bicycle](../../routing/bicycle). In addition, you can check this [Publication](https://doi.org/10.1016/j.jtrangeo.2021.103080).
+
+:::
+
+</TabItem>
+
+<TabItem value="pedelec" label="Pedelec" className="tabItemBox">
+
+#### Pedelec
+
+Considers all paths accessible by pedelec. This routing mode takes into account the surface and smoothness of streets while computing accessibility. For heatmaps, a pedelec speed of 23 km/h is assumed.
 
 :::tip Hint
 
@@ -94,7 +108,7 @@ For further insights into the Routing algorithm, visit [Routing/Bicycle](../../r
 
 #### Car
 
-Considering all paths accessible by car. This routing mode takes into account speed limits and one-way access restrictions for computing car accessibility.
+Considers all paths accessible by car. This routing mode takes into account speed limits and one-way access restrictions while computing accessibility.
 
 :::tip Hint
 
@@ -115,7 +129,7 @@ For further insights into the Routing algorithm, visit [Routing/Car](../../routi
 
 :::tip Hint
 
-For defining which travel time limits are suitable for which amenity, the ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
+Need help choosing a suitable travel time limit for various common amenities? The ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
 
 :::
 
@@ -175,6 +189,8 @@ Where ***i*** is a travel time step and ***n*** is the travel time limit. With a
 To classify the connectivity levels that were computed for each grid cell (for color-coded visualization), a classification based on quantiles is used.
 
 ### Example of calculation
+
+The following example illustrates the computation of a connectivity-based heatmap for a specific AOI. The heatmap is computed for a `Travel time limit` of 15 minutes and a `Routing type` of `Walk`.
 
 <img src={require('/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/connectivity-calculation.gif').default} alt="Options" style={{ maxHeight: "800px", maxWidth: "800px"}}/>
 

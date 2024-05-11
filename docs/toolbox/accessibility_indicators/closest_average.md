@@ -6,12 +6,12 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
-# Heatmap Closest Average
-**Closest-average-based Heatmaps** uses a color-coded map to visualize the average travel time to points (such as [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) from surrounding areas.
+# Heatmap - Closest Average
+A color-coded map to visualize the average travel time to points (such as [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) from surrounding areas.
 
 ## 1. Explanation
 
-Visualized as a color-coded hexagonal grid, heatmaps take into account real-world transport and street networks to compute travel times. After specifying a *routing type* (Walk, Bicycle, etc.), *opportunity layer* and *travel time limit*, the result shall display a color-coded hexagonal grid for all areas accessible under these conditions. The color scale refers to the average travel time.
+Visualized as a color-coded hexagonal grid, heatmaps take into account real-world transport and street networks to compute travel times. After specifying a *routing type* (Walk, Bicycle, etc.), *opportunity layer* and *travel time limit*, the result will display a color-coded hexagonal grid for all areas accessible under these conditions. The color scale refers to average travel time.
 
 :::info INFO
 
@@ -82,7 +82,7 @@ If you would like to perform analyses beyond this geofence, feel free to [contac
 
 #### Walk
 
-Considering all paths accessible by foot.
+Considers all paths accessible by foot. For heatmaps, a walking speed of 5 km/h is assumed.
 
 :::tip Hint
 
@@ -92,11 +92,25 @@ For further insights into the Routing algorithm, visit [Routing/Walk](../../rout
 
 </TabItem>
   
-<TabItem value="cycling" label="Bicycle/Pedelec" className="tabItemBox">
+<TabItem value="cycling" label="Bicycle" className="tabItemBox">
 
-#### Bicycle/Pedelec
+#### Bicycle
 
-Considering all paths accessible by bicycle. Depending on the surface, smoothness and slope of the different street segments, the speed is adjusted accordingly. For Pedelecs, slopes are considered with a lower impedance than for standard bicycles.
+Considers all paths accessible by bicycle. This routing mode takes into account the surface, smoothness and slope of streets while computing accessibility. For heatmaps, a cycling speed of 15 km/h is assumed.
+
+:::tip Hint
+
+For further insights into the Routing algorithm, visit [Routing/Bicycle](../../routing/bicycle). In addition, you can check this [Publication](https://doi.org/10.1016/j.jtrangeo.2021.103080).
+
+:::
+
+</TabItem>
+
+<TabItem value="pedelec" label="Pedelec" className="tabItemBox">
+
+#### Pedelec
+
+Considers all paths accessible by pedelec. This routing mode takes into account the surface and smoothness of streets while computing accessibility. For heatmaps, a pedelec speed of 23 km/h is assumed.
 
 :::tip Hint
 
@@ -110,7 +124,7 @@ For further insights into the Routing algorithm, visit [Routing/Bicycle](../../r
 
 #### Car
 
-Considering all paths accessible by car. This routing mode takes into account speed limits and one-way access restrictions for computing car accessibility.
+Considers all paths accessible by car. This routing mode takes into account speed limits and one-way access restrictions while computing accessibility.
 
 :::tip Hint
 
@@ -124,7 +138,7 @@ For further insights into the Routing algorithm, visit [Routing/Car](../../routi
 
 ### Opportunities
 
-Opportunities are essentially point-based data (such as [POI](../../further_reading/glossary#point-of-interest-poi "What is a POI?")) for which you would like to compute a heatmap. These are the "destinations" (such as transit stations, schools, other amenities, or your own custom point-based data) while surrounding areas will be "origins" for which an accessibility value will be computed and visualized.
+Opportunities are essentially point-based data (such as [POI](../../further_reading/glossary#point-of-interest-poi "What is a POI?")) for which you would like to compute a heatmap. These are the "destinations" (such as transit stations, schools, other amenities, or your own custom point-based data) while surrounding areas are "origins" for which an accessibility value will be computed and visualized.
 
 Additionally, you may create more opportunities via the `+ Add Opportunity` button at the bottom of the drawer. All opportunity layers will be combined to produce a unified heatmap.
 
@@ -140,7 +154,7 @@ Additionally, you may create more opportunities via the `+ Add Opportunity` butt
 
 :::tip Hint
 
-For defining which travel time limits are suitable for which amenity, the ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
+Need help choosing a suitable travel time limit for various common amenities? The ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
 
 :::
 
@@ -188,20 +202,24 @@ Want to style your heatmaps and create nice-looking maps? See [Styling](../../ma
 
 ### Calculation
 
-Once all input opportunity layers are combined, a grid of surrounding hexagonal cells is identified. This is done by considering cells where at least one opportunity is accessible taking into account the specified *routing type* and *travel time limit*. Next, the average travel time for each cell within this grid is computed, considering the nearest *n* opportunities as specified in the opportunity layer.
+Once all input opportunity layers are combined, a grid of surrounding hexagonal cells is identified. This is done by considering cells where at least one opportunity is accessible taking into account the specified `Routing type` and `Travel time limit`. Next, the average travel time for each cell within this grid is computed, considering the nearest *n* opportunities as specified in the opportunity layer.
 
 Average travel time formula:
 
 ![Closest Average Formula](/img/toolbox/accessibility_indicators/heatmaps/closest_average_based/closest_avg_formula.png "Closest Average Formula")
 
-where the average travel time for cell **i** is the sum of upto **n** travel times from cell **i** to opportunity **j** (**tij**) divided by the number of opportunities **n** which must be less than the *Number of destinations* parameter specified.
+where the average travel time for cell **i** is the sum of upto **n** travel times from cell **i** to opportunity **j** (**tij**) divided by the number of opportunities **n** which must be less than the `Number of destinations` parameter specified.
 
 ### Classification
 In order to classify the accessibility levels that were computed for each grid cell (for color-coded visualization), a classification based on quantiles is used.
 
 ### Example of calculation
 
+The following examples illustrate the computation of a closest-average-based heatmap for the same opportunities, with a varying `Number of destinations` value.
+
 ![Closest Average Heatmaps for different destinations](/img/toolbox/accessibility_indicators/heatmaps/closest_average_based/cls-avg-destinations.png "Closest Average Heatmaps for different destinations")
+
+In the first example, the average travel time is computed considering only the closest destination, while in the second example, the closest 5 destinations are considered.
 
 ### Visualization 
 
