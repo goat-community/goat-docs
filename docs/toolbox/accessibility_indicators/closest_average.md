@@ -11,7 +11,7 @@ A color-coded map to visualize the average travel time to points (such as [POI](
 
 ## 1. Explanation
 
-Visualized as a color-coded hexagonal grid, heatmaps take into account real-world transport and street networks to compute travel times. After specifying a *routing type* (Walk, Bicycle, etc.), *opportunity layer* and *travel time limit*, the result will display a color-coded hexagonal grid for all areas accessible under these conditions. The color scale refers to average travel time.
+Visualized as a color-coded hexagonal grid, the heatmap takes into account real-world transport and street networks to compute travel times. After specifying a *routing type* (Walk, Bicycle, etc.), *opportunity layer* and *travel time limit*, the result will display a color-coded hexagonal grid for all areas accessible under these conditions. The color scale refers to average travel time.
 
 :::info INFO
 
@@ -213,6 +213,32 @@ where the average travel time for cell **i** is the sum of upto **n** travel tim
 ### Classification
 In order to classify the accessibility levels that were computed for each grid cell (for color-coded visualization), a classification based on quantiles is used.
 
+### Visualization 
+
+Heatmaps in GOAT utilize **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** solution for efficient computation and easy-to-understand visualization. Behind the scenes, a pre-computed travel time matrix for each *routing type* utilizes this solution and is queried and further processed in real-time to compute accessibility and produce a final heatmap.
+
+The resolution and dimensions of the hexagonal grid used depend on the selected *routing type*:
+
+#### Walk
+- Resolution: 10
+- Average hexagon area: 11285.6 m²
+- Average hexagon edge length: 65.9 m
+
+#### Bicycle
+- Resolution: 9
+- Average hexagon area: 78999.4 m²
+- Average hexagon edge length: 174.4 m
+
+#### Pedelec
+- Resolution: 9
+- Average hexagon area: 78999.4 m²
+- Average hexagon edge length: 174.4 m
+
+#### Car
+- Resolution: 8
+- Average hexagon area: 552995.7 m²
+- Average hexagon edge length: 461.4 m
+
 ### Example of calculation
 
 The following examples illustrate the computation of a closest-average-based heatmap for the same opportunities, with a varying `Number of destinations` value.
@@ -220,11 +246,3 @@ The following examples illustrate the computation of a closest-average-based hea
 ![Closest Average Heatmaps for different destinations](/img/toolbox/accessibility_indicators/heatmaps/closest_average_based/cls-avg-destinations.png "Closest Average Heatmaps for different destinations")
 
 In the first example, the average travel time is computed considering only the closest destination, while in the second example, the closest 5 destinations are considered.
-
-### Visualization 
-
-Heatmaps in GOAT utilize **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** solution for efficient computation and easy-to-understand visualization. Behind the scenes, a pre-computed travel time matrix for each *routing type* employs this solution and is queried and further processed in real-time to compute accessibility and produce a final heatmap.
-
-## 5. References
-
-🚨🚨 TODO: Check if any references are available

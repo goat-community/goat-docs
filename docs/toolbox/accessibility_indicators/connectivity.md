@@ -12,7 +12,7 @@ A color-coded map to visualize the connectivity of locations within an area of i
 
 ## 1. Explanation
 
-Visualized as a color-coded hexagonal grid, heatmaps take into account real-world transport and street networks to compute connectivity. After specifying a *routing type* (Walk, Bicycle, etc.) and *travel time limit*, the result will display a color-coded hexagonal grid representing the relative connectivity of all locations within the specified AOI.
+Visualized as a color-coded hexagonal grid, the heatmap takes into account real-world transport and street networks to compute connectivity. After specifying a *routing type* (Walk, Bicycle, etc.) and *travel time limit*, the result will display a color-coded hexagonal grid representing the relative connectivity of all locations within the specified AOI.
 
 Unlike our other heatmaps which focus on visualizing the accessibility to specific points (such as [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) or amenities from surrounding areas, connectivity-based heatmaps represent the overall connectivity of an area. This means that all locations within your AOI are considered to be destinations, and for each location, its "connectivity" represents the geographic area (within and outside the AOI) from which the location is accessible, considering the specified *routing type* and *travel time limit*.
 
@@ -183,21 +183,39 @@ Connectivity formula:
 
 ![Connectivity Formula](/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/connectivity_formula.png "Connectivity Formula")
 
-Where ***i*** is a travel time step and ***n*** is the travel time limit. With an average edge length of 66 meters per cell, this function computes the total geographic area (in sq. meters) from which the destination cell in your AOI is accessible.
+Where ***i*** is a travel time step and ***n*** is the travel time limit. This function computes the total geographic area (in sq. meters) from which the destination cell in your AOI is accessible.
 
 ### Classification
 To classify the connectivity levels that were computed for each grid cell (for color-coded visualization), a classification based on quantiles is used.
+
+### Visualization 
+
+Heatmaps in GOAT utilize **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** solution for efficient computation and easy-to-understand visualization. Behind the scenes, a pre-computed travel time matrix for each *routing type* utilizes this solution and is queried and further processed in real-time to compute accessibility and produce a final heatmap.
+
+The resolution and dimensions of the hexagonal grid used depend on the selected *routing type*:
+
+#### Walk
+- Resolution: 10
+- Average hexagon area: 11285.6 m²
+- Average hexagon edge length: 65.9 m
+
+#### Bicycle
+- Resolution: 9
+- Average hexagon area: 78999.4 m²
+- Average hexagon edge length: 174.4 m
+
+#### Pedelec
+- Resolution: 9
+- Average hexagon area: 78999.4 m²
+- Average hexagon edge length: 174.4 m
+
+#### Car
+- Resolution: 8
+- Average hexagon area: 552995.7 m²
+- Average hexagon edge length: 461.4 m
 
 ### Example of calculation
 
 The following example illustrates the computation of a connectivity-based heatmap for a specific AOI. The heatmap is computed for a `Travel time limit` of 15 minutes and a `Routing type` of `Walk`.
 
 <img src={require('/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/connectivity-calculation.gif').default} alt="Options" style={{ maxHeight: "800px", maxWidth: "800px"}}/>
-
-### Visualization 
-
-Heatmaps in GOAT utilize **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** solution for efficient computation and easy-to-understand visualization. Behind the scenes, a pre-computed travel time matrix for each *routing type* employs this solution and is queried and further processed in real-time to compute accessibility and produce a final heatmap.
-
-## 5. References
-
-🚨🚨 TODO: Check if any references are available
