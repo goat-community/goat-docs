@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 6
 ---
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
@@ -31,7 +31,7 @@ This indicator serves as the foundation for the [ÖV-Güteklassen](/docs/toolbox
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Trip Count</code>. This opens the setting menu.</div>
+  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>PT Trip Count</code>. This opens the setting menu.</div>
 </div>
 
 
@@ -42,7 +42,7 @@ This indicator serves as the foundation for the [ÖV-Güteklassen](/docs/toolbox
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select for which <code>Day</code> and time (<code>From Time</code> and <code>To Time</code>) you would like to calculate the public transport trip count.</div>
+  <div class="content">Select for which <code>Day</code>, <code>Start Time</code> and <code>End Time</code> you would like to calculate the public transport trip count.</div>
 </div>
 
 ### Reference Layer

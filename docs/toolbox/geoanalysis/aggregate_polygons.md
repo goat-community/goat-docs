@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem';
 
 # Aggregate Polygons
 
-The **Aggregate Polygons** tool can be used to **aggregate data from one polygon layer to another** and therewith providing valuable insights into spatial patterns and relationships.
+The **Aggregate Polygon** tool performs statistical analysis of polygons, e.g. count, sum, min or max, and **aggregates the information on polygons**.
 
 ## 1. Explanation
 
@@ -91,7 +91,7 @@ To learn more about H3 grid, you can visit the [Glossary](../../further_reading/
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Select the <code> Statistics Method</code> and <code>Field Statistics</code> (the field in the source layer that is used to group the aggregation.).</div>
+  <div class="content">Select the <code> Statistic Method</code> and <code>Field Statistics</code> (the field in the source layer that is used to group the aggregation.).</div>
 </div>
 
 Available **Statistics Methods** are listed in the following. The available methods depend on the data type of the chosen attribute:

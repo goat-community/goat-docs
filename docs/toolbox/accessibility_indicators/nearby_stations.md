@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 7
 ---
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 import Tabs from '@theme/Tabs';
@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 # PT Nearby Stations
 
-The **PT Nearby Stations** tool provides an overview of all public transport stops and connections in the proximity of selected starting point(s).
+The **PT Nearby Station Access** analysis is used to find stops and their departures that are accessible by walking/cycling.
 
 ## 1. Explanation
 
@@ -73,7 +73,7 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Select for which <code>Day</code> and time (<code>From Time</code> and <code>To Time</code>) you would like to see the public transport connections.</div>
+  <div class="content">Select for which <code>Day</code>, <code>Start Time</code> and <code>End Time</code> you would like to see the public transport connections.</div>
 </div>
 
 ![Configurations for Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_config.png "Configurations for Public Transport Nearby Stations")

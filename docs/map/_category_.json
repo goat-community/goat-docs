@@ -3,6 +3,6 @@
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "Whenever you open a project, you will be directed to the map. In the map, you can perform geospatial analysis and visualize and style your feature layers."
+    "description": "Upon opening a project, you will see the map. Here, you can perform a wide variety of geospatial analyses, compute stats & benchmarks, or visualize and style feature layers."
   }
 }

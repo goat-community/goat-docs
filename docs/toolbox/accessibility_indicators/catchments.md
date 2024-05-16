@@ -256,7 +256,7 @@ For further insights into the Routing algorithm, visit [Routing/Public Transport
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Set the configurations for <code>Travel time limit</code>, <code>Number of breaks</code>, <code>Day</code> <i>(Weekday, Saturday</i> or <i>Sunday</i>) and Time period (<code>From time</code> and <code>To time</code>).</div>
+  <div class="content">Set the configurations for <code>Travel time limit</code>, <code>Number of breaks</code>, <code>Day</code> <i>(Weekday, Saturday</i> or <i>Sunday</i>) and Time period (<code>Start Time</code> and <code>End Time</code>).</div>
 </div>
 
 <img src={require('/img/toolbox/accessibility_indicators/catchments/pt_config.png').default} alt="Public Transport Configurations" style={{ maxHeight: "400px", maxWidth: "400px"}}/>
@@ -274,7 +274,7 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Click on <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Here you can select the <code> Catchment area shape</code>. For public transport, you can choose between <b>Polygon</b> and <b>Rectangular Grid</b>.</div>
+  <div class="content">Click on <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Here you can select the <code> Catchment area shape</code>. You can choose between <b>Polygon</b>, <b>Network</b> and <b>Rectangular Grid</b>.</div>
 </div>
 
   </TabItem>
@@ -322,7 +322,7 @@ If you enable **Polygon Difference**, only the "incremental" (or differential) p
   </TabItem>
 </Tabs>
 
-### Starting
+### Starting Points
 
 <div class="step">
   <div class="step-number">7</div>
@@ -370,7 +370,9 @@ Depending on the chosen settings, the calculation might take some minutes. The [
 
 <div class="step">
   <div class="step-number">10</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layer(s) will be added to the map. The layer called <b>"Isochrone"</b> contains the calculated catchments. If the starting points were created by clicking on the map, they will also be saved in a layer called <b>"Starting Points"</b>.</div>
+  <div class="content">As soon as the calculation process is finished, the resulting layer(s) will be added to the map. The layer called <b>"Isochrone"</b> contains the calculated catchments. If the starting points were created by clicking on the map, they will also be saved in a layer called <b>"Starting Points"</b>.
+  <p></p>
+  If you click on a catchment polygon on the map, you will see further details in its attribute table. The attribute <b>travel_cost</b> shows the travel distance or time, depending which unit you picked for the calculation. If you have selected travel time, the travel_cost will show the <b>time in minutes</b>. If you have selected distance, the travel_cost will show the <b>distance in meters</b>.</div>
 </div>
 
 ![Catchment Area Calculation Result in GOAT](/img/toolbox/accessibility_indicators/catchments/catchment_result.png "Catchment Area Calculation Result in GOAT")
