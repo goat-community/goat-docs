@@ -232,6 +232,84 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
 
 
   </TabItem>
+
+  <TabItem value="car" label="Car" className="tabItemBox">
+
+#### Car
+
+In this routing mode, users can compute accessibility for the car street network.
+
+:::tip Hint
+
+For further insights into the Routing algorithm, visit [Car](../../routing/car).
+
+:::
+
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Pick if you like to calculate the catchment area based on <b>time</b> or <b>distance</b>.</div>
+</div>
+
+<Tabs>
+  <TabItem value="time" label="Time" default className="tabItemBox">
+
+#### Time
+
+<div class="step">
+  <div class="step-number">5</div>
+  <div class="content">Set the configurations for <code>Travel time limit</code>, <code>Travel speed</code>, and <code> Number of breaks</code>.</div>
+</div>
+
+<img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_time.png').default} alt="walking-time configurations" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+
+:::tip Hint
+
+For defining which travel time limits are suitable for which amenity, the ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
+
+:::
+
+
+#### Advanced Configurations
+
+Per default, the catchment areas are calculated in polygon shape. In case you want to adjust that, you find further options in the advanced configurations. 
+
+<div class="step">
+  <div class="step-number">6</div>
+  <div class="content">Click on <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Here you can select the <code> Catchment area shape</code>. You can choose between <b>Polygon</b>, <b>Network</b> and <b>Rectangular Grid</b>.</div>
+</div>
+
+  </TabItem>
+  <TabItem value="distance" label="Distance" default className="tabItemBox">
+
+#### Distance
+
+<div class="step">
+  <div class="step-number">5</div>
+  <div class="content">Set the configurations for <code>Travel distance</code> and <code> Number of breaks</code>.</div>
+</div>
+
+<img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_distance.png').default} alt="walking-distance configurations" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+
+:::tip Hint
+
+For defining which travel distances are suitable for which amenity, the ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
+
+:::
+
+
+#### Advanced Configurations
+
+Per default, the catchment areas are calculated in polygon shape. In case you want to adjust that, you find further options in the advanced configurations. 
+
+<div class="step">
+  <div class="step-number">6</div>
+  <div class="content">Click on <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Here you can select the <code> Catchment area shape</code>. You can choose between <b>Polygon</b>, <b>Network</b> and <b>Rectangular Grid</b>.</div>
+</div>
+
+  </TabItem>
+</Tabs>
+
+  </TabItem>
   <TabItem value="public transport" label="Public Transport (PT)" className="tabItemBox">
 
 #### Public Transport (PT)
@@ -279,7 +357,6 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
 
   </TabItem>
 </Tabs>
-
 
 
 <Tabs>
