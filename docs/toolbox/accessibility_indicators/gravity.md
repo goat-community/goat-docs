@@ -12,7 +12,7 @@ A color-coded map to visualize the accessibility of points (such as [POI](../../
 
 ## 1. Explanation
 
-Visualized as a color-coded hexagonal grid, heatmaps take into account real-world transport and street networks to compute accessibility. After specifying a *routing type* (Walk, Bicycle, etc.), *opportunity layer* and *travel time limit*, the result will display a color-coded hexagonal grid for all areas accessible under these conditions. The color scale refers to local accessibility.
+Visualized as a color-coded hexagonal grid, the heatmap takes into account real-world transport and street networks to compute accessibility. After specifying a *routing type* (Walk, Bicycle, etc.), *opportunity layer* and *travel time limit*, the result will display a color-coded hexagonal grid for all areas accessible under these conditions. The color scale refers to local accessibility.
 
 :::info INFO
 
@@ -218,7 +218,7 @@ Need help choosing a suitable travel time limit for various common amenities? Th
 
 :::tip Pro-tip
 
-The *destination_potential* is a useful way to prioritize certain opportunities over others. For example, let's suppose a bus stop is nearer than another, therefore receiving a higher accessibility score due to its proximity. However, the bus stop farther away is served by more routes, providing riders with frequent service. The *destination_potential* allows you to use this additional property (such as the number of routes serving a bus stop) to assign opportunities a "potential" and employ qualitative information to compute accessibility.
+*Destination potential* is a useful way to prioritize certain opportunities over others. For example, if there are two supermarkets and one is nearer than the other, it would typically receive a higher accessibility score due to its proximity. However, if the supermarket farther away is larger, you may want to give it a higher level of importance. *Destination potential* allows you to use an additional property (such as the size of supermarkets) to assign opportunities a "potential" and employ qualitative information while computing accessibility.
 
 :::
 
@@ -307,6 +307,32 @@ Examples of this functionality will be online soon. 🧑🏻‍💻
 ### Classification
 In order to classify the accessibility levels that were computed for each grid cell (for color-coded visualization), a classification based on quantiles is used.
 
+### Visualization 
+
+Heatmaps in GOAT utilize **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** solution for efficient computation and easy-to-understand visualization. Behind the scenes, a pre-computed travel time matrix for each *routing type* utilizes this solution and is queried and further processed in real-time to compute accessibility and produce a final heatmap.
+
+The resolution and dimensions of the hexagonal grid used depend on the selected *routing type*:
+
+#### Walk
+- Resolution: 10
+- Average hexagon area: 11285.6 m²
+- Average hexagon edge length: 65.9 m
+
+#### Bicycle
+- Resolution: 9
+- Average hexagon area: 78999.4 m²
+- Average hexagon edge length: 174.4 m
+
+#### Pedelec
+- Resolution: 9
+- Average hexagon area: 78999.4 m²
+- Average hexagon edge length: 174.4 m
+
+#### Car
+- Resolution: 8
+- Average hexagon area: 552995.7 m²
+- Average hexagon edge length: 461.4 m
+
 ### Example of calculation
 #### Calculation travel times
 The following example illustrates how the local accessibility heatmap is computed. The travel times are calculated for each grid cell to the concerning destination on the street network.
@@ -348,10 +374,6 @@ Examples of this functionality will be online soon. 🧑🏻‍💻
 :::
 
 By comparing the two results, you can get a sense of the impact *sensitivity* has on accessibility.
-
-### Visualization 
-
-Heatmaps in GOAT utilize **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** solution for efficient computation and easy-to-understand visualization. Behind the scenes, a pre-computed travel time matrix for each *routing type* employs this solution and is queried and further processed in real-time to compute accessibility and produce a final heatmap.
 
 ## 5. References
 
