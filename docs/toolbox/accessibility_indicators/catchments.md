@@ -25,10 +25,10 @@ You might know this feature from our previous software versions under the terms 
 :::
 
 :::info 
-The calculation of Catchment Areas is only possible in areas where the transport network of the selected routing mode is integrated into GOAT. As soon as you select a routing mode, you will see the **geofence** in which the calculation is possible.
+The calculation of the catchment areas is only available for areas where the transport network of the selected routing mode is integrated into GOAT. As soon as you select a routing mode, you will see the **geofence** in which the calculation is possible.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/toolbox/accessibility_indicators/catchments/geofence.png').default} alt="Geofence for catchment area calculation in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
+  <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence for catchment area calculation in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
 </div> 
 
 In case you need to perform analysis beyond this geofence, feel free to contact the [Support](https://plan4better.de/en/contact/ "Contact Support") and we will check what is possible. 

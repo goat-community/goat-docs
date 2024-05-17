@@ -20,15 +20,15 @@ The Public Transport (PT) Nearby Stations access analysis is a suitable tool to 
 ![Nearby Stations in GOAT](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_example.png "Nearby Stations in GOAT")
 
 :::info 
-The calculation of PT Nearby Stations is only possible in areas where the GTFS data is integrated into GOAT. As soon as you open the tool, you will see the **geofence** in which the calculation is possible. It covers Germany, Denmark, Netherlands, Belgium, Switzerland, and Austria as shown in the image below.
-
+The calculation of the nearby stations is only available for areas where the transport network of the selected routing mode is integrated into GOAT. As soon as you select a routing mode, you will see the **geofence** in which the calculation is possible.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/toolbox/accessibility_indicators/nearby_stations/geofence.png').default} alt="Geofence for nearby stations calculation in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
+  <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence for catchment area calculation in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
 </div> 
 
 In case you need to perform analysis beyond this geofence, feel free to contact the [Support](https://plan4better.de/en/contact/ "Contact Support") and we will check what is possible. 
 :::
+
 
 ## 2. Example use cases 
 
