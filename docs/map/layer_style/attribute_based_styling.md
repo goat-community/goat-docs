@@ -157,7 +157,13 @@ import TabItem from '@theme/TabItem';
 
 
   </TabItem>
-  <TabItem value="custom marker" label="Custom Marker"> When available, the custom marker has an icon library to best represent your data set. 
+  <TabItem value="custom marker" label="Custom Marker"> When available, the custom marker has an icon library to best represent your data set.
+
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+
+   <img src={require('/img/map/layers/attribute-based-custom-marker.gif').default} alt="Custom Ordinal for strings" style={{ maxHeight: "500px", maxWidth: "500px", objectFit: "cover"}}/>
+
+   </div> 
 
   </TabItem>
 </Tabs>
