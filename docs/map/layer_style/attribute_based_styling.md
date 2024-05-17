@@ -4,9 +4,9 @@ sidebar_position: 21
 
 # Attribute-based Styling
 
-GOAT allows users to apply **attribute-based styling** techniques to enhance the data visualisation on maps. This approach allows the visual representation to **reflect variations and patterns in the data**, making it easier to recognise and understand complex information spatially.
+GOAT allows users to apply **attribute-based styling** techniques to enhance the data visualization on maps. This approach allows the visual representation to **reflect variations and patterns in the data**, making it easier to recognize and understand complex information spatially.
 
-Under the <code>Layer design</code> <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> menu, you will find the available styling settings for the layer selected.  <code>Fill Color</code>, <code>Stroke Color</code>, <code>Custom Marker</code> and <code>Labels</code>. Each option has the <b>options button</b><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Under it you will find the attribute-based styling, for that specific style setting (either Fill Color, Stroke Color, Custom marker or Label). Style your mapa based on its dataset attributes. To edit the style attribute make sure the attribute toggle is ON, and then clikc the <b>options button</b><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>.
+Under the <code>Layer design</code> <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> menu, you will find the available styling settings for the layer selected.  <code>Fill Color</code>, <code>Stroke Color</code>, <code>Custom Marker</code>, and <code>Labels</code>. Each option has the <b>options button</b><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Under it, you will find the attribute-based styling, for that specific style setting (either Fill Color, Stroke Color, Custom marker, or Label). Style your map based on its dataset attributes. To edit the style attribute make sure the attribute toggle is ON, and then click the <b>options button</b><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>.
 
 
 :::tip HINT
@@ -15,7 +15,7 @@ If you like to save your styling settings and use them in further projects, you 
 
 ## Select Attribute 
 
-For the attribute-based styling, first select the attribute which you like to visualize in the field <code>Color based on</code>. The data them shall be order by a **data classification method** and associated to a <code>Color Palette</code>and a <code>Color Scale</code>.
+For the attribute-based styling, first, select the attribute that you like to visualize in the field <code>Color based on</code>. The data shall be ordered by a **data classification method** and associated with a <code>Color Palette</code>, and a <code>Color Scale</code>.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -25,14 +25,14 @@ For the attribute-based styling, first select the attribute which you like to vi
 
 ## Color Palette
 
- Under Palette you will find GOATs comprehensive set of palettes, all designed to provide **visually impactful spatial-data representation**. 
- For further customization you may set different <code>Palette Type</code>, <code>Palette Steps</code>,  
+ Under Palette, you will find GOAT's comprehensive set of palettes, all designed to provide **visually impactful spatial data representation**. 
+ For further customization, you may set different <code>Palette Type</code>, <code>Palette Steps</code>,  
  A color palette is a collection of colors chosen to represent the values scale or categories, within your dataset. 
- Under the Palette you may select from different pallete types
+ Under the Palette, you may select from different pallettes types.
  
- GOAT provides a comprehensive set of predefined palettes, each of which has been designed to provide a **visually impactful representation of spatial data**. These palettes are categorised into four different groups for ease of selection and application.
+ GOAT provides a comprehensive set of predefined palettes, each of which has been designed to provide a **visually impactful representation of spatial data**. These palettes are categorized into four different groups for ease of selection and application.
 
-The color palette provides several customization options. You can define your **number of steps** for a palette, you can **reverse** the colors and you can also define your own **custom palette**.
+The color palette provides several customization options. You can define your **number of steps** for a palette, you can **reverse** the colors and you can also define your **custom palette**.
 
 <p></p>
 
@@ -52,13 +52,13 @@ The color palette provides several customization options. You can define your **
 
 ## Color Scale
 
-Under the <code>Color Scale</code> you will find the **data classification method** and the **color scale** that associates data values with a spectrum of colors. It converts a given data value within a given range (domain) into a corresponding color from a given color spectrum (range). GOAT provides six predefined **data classification methods**: [Quantile](#quantile), [Standard Deviation](#standard-deviation), [Equal Interval](#equal-interval), [Heads and Tails](#heads-and-tails), [Custom Breaks](#custom-breaks-for-numbers), [Custom Ordinal](#custom-ordinal-for-strings).
+Under the <code>Color Scale</code>, you will find the **data classification method** and the **color scale** that associates data values with a spectrum of colors. It converts a given data value within a given range (domain) into a corresponding color from a given color spectrum (range). GOAT provides six predefined **data classification methods**: [Quantile](#quantile), [Standard Deviation](#standard-deviation), [Equal Interval](#equal-interval), [Heads and Tails](#heads-and-tails), [Custom Breaks](#custom-breaks-for-numbers), [Custom Ordinal](#custom-ordinal-for-strings).
 
 ## Data Classification Methods
 
 ### Quantile
 
-The Quantile classification, divides data into **groups with equal number of values in each class** based on their attribute values. This method is useful for analyzing and visualizing patterns in data and can help identify trends and patterns that may not be obvious easily. The fact that the data values are grouped in equal quantities within each class makes this approach **ideal for data that is linearly distributed**. Per default, the data is distributed into 7 classes. 
+The Quantile classification divides data into **groups with an equal number of values in each class** based on their attribute values. This method is useful for analyzing and visualizing patterns in data and can help identify trends and patterns that may not be obvious easily. The fact that the data values are grouped in equal quantities within each class makes this approach **ideal for data that is linearly distributed**. Per default, the data is distributed into 7 classes. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -73,7 +73,7 @@ Want to deeper understand what quantile classification is? Check our [Glossary](
 
 ### Standard Deviation
 
-The Standard Deviation method is a **statistical approach** used in data visualisation. It uses the concept of standard deviation, a measure of the **amount of variation or dispersion in a set of values**, to determine how data points are assigned to different color categories. This method is valuable for its ability to provide a statistical perspective on the data, allowing users to quickly grasp the **relative dispersion and distribution of values** within the dataset. Per default, the data is distributed into 7 classes. 
+The Standard Deviation method is a **statistical approach** used in data visualization. It uses the concept of standard deviation, a measure of the **amount of variation or dispersion in a set of values**, to determine how data points are assigned to different color categories. This method is valuable for its ability to provide a statistical perspective on the data, allowing users to quickly grasp the **relative dispersion and distribution of values** within the dataset. Per default, the data is distributed into 7 classes. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -104,12 +104,12 @@ The Heads and Tails method is used to deal with **datasets with a skewed distrib
 
 ### Custom Breaks (for <code>numbers</code>)
 
-The Custom Break classification is a data visualisation method used for **numerical data**. It allows users to define **custom breakpoints** or **thresholds** and therewith provides a tailored approach for context-specific visualisations. 
+The Custom Break classification is a data visualization method used for **numerical data**. It allows users to define **custom breakpoints** or **thresholds** and therewith provides a tailored approach for context-specific visualizations. 
 
 
 ### Custom Ordinal (for <code>strings</code>)
 
-The Custom Ordinal classification is a data sorting and visualisation method applied to **string data**, such as categories, labels or text-based variables. Unlike numerical data, where ordering is typically based on magnitude, string data often lacks a natural order. The Custom Order method therefore allows users to **define their own ordering rules for strings**, creating a customised sequence tailored to their specific needs. 
+The Custom Ordinal classification is a data sorting and visualisation method applied to **string data**, such as categories, labels, or text-based variables. Unlike numerical data, where order is typically based on magnitude, string data often lacks a natural order. The Custom Order method therefore allows users to **define their own ordering rules for strings**, creating a customised sequence tailored to their specific needs. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -135,7 +135,7 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="fill color" label="Fill Color" default> Fill Color can either be one single color or a color palette. GOAT offers a set of preset colors and palettes to style your map. 
-    For attribute based Fill Color select a Field from the selected <code>Layer</code>.
+    For attribute-based Fill Color select a Field from the selected <code>Layer</code>.
     GOAT applies a random color palette to your results. 
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -144,8 +144,8 @@ import TabItem from '@theme/TabItem';
    </div> 
 
   </TabItem>
-  <TabItem value="stroke color" label="Stroke Color"> Stroke Color by default is one single color. Apply attribute based styling to apply a color scale to the layer stroke. 
-    For attribute based Stroke Color select a Field from the selected <code>Layer</code>.
+  <TabItem value="stroke color" label="Stroke Color"> Stroke Color by default is one single color. Apply attribute-based styling to apply a color scale to the layer stroke. 
+    For attribute-based Stroke Color select a Field from the selected <code>Layer</code>.
     GOAT applies a random color palette to your results. 
 
    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -157,7 +157,7 @@ import TabItem from '@theme/TabItem';
 
 
   </TabItem>
-  <TabItem value="custom marker" label="Custom Marker"> When available, custom marker has an icon library to best represent your data set. 
+  <TabItem value="custom marker" label="Custom Marker"> When available, the custom marker has an icon library to best represent your data set. 
 
   </TabItem>
 </Tabs>

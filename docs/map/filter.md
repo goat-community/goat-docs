@@ -5,7 +5,7 @@ sidebar_position: 21
 
 # Filter
 
-The **Filter** can be used to limit the data that is visible on the map. You can thereby either filter by **logic expression** (e.g. only vizualizing supermarkets with a certain name) or by **spatial expression** (e.g. only show points within a specific bounding box).
+The **Filter** can be used to limit the data that is visible on the map. You can thereby either filter by **logic expression** (e.g. only visualizing supermarkets with a certain name) or by **spatial expression** (e.g. only showing points within a specific bounding box).
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
@@ -16,13 +16,13 @@ The **Filter** can be used to limit the data that is visible on the map. You can
 ## 1. Explanation
 
 
-The **Filter** <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "20px", maxWidth: "20px"}}/> allows users to **display only certain elements** from a larger dataset based on specific criteria. This tool helps to visualize selected elements from a large geospatial dataset and therewith allows users to focus on the information that is most relevant to their needs.
+The **Filter** <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "20px", maxWidth: "20px"}}/> allows users to **display only certain elements** from a larger dataset based on specific criteria. This tool helps to visualize selected elements from a large geospatial dataset and there with allows users to focus on the information that is most relevant to their needs.
 
 Logic and spatial expressions can be added based on the attributes of **point layers** and **polygon layers** with different types of data (`number` and `string`).
 
 :::info
 
-The **filter operation does not alter the original data**. But you can use the filtered data for various tools within GOAT, such as [scenario analysis](../category/scenarios) and [heatmap calculations](../category/Heatmaps).
+The **filter operation does not alter the original data**. However, you can use the filtered data for various tools within GOAT, such as [scenario analysis](../category/scenarios) and [heatmap calculations](../category/Heatmaps).
 
 :::
 
@@ -112,7 +112,7 @@ For the expressions **"includes"** and **"excludes"**, multiple values can be se
 
 ### Multiple Expressions Filtering
 
-If you wish, you can **combine multiple filters** for multi-expression filtering. To do this, simply repeat the Steps 4-8 above for each additional expression. In the <code>Logic Operator</code> field, you can choose between the **AND** and **OR** logic combinations.  
+If you wish, you can **combine multiple filters** for multi-expression filtering. To do this, simply repeat steps 4-8 above for each additional expression. In the <code>Logic Operator</code> field, you can choose between the **AND** and **OR** logic combinations.  
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
   <img src={require('/img/map/filter/logic_operators.png').default} alt="Logic Operators" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
@@ -122,7 +122,7 @@ If you wish, you can **combine multiple filters** for multi-expression filtering
 If you select **AND**, only items for which all the filter expressions are true will be displayed. If you choose **OR**, items will be shown if any of the filter terms are true. 
 
 :::tip NOTE
-Multi expression filtering should be applied carefully and logically to achieve the best result.
+Multi-expression filtering should be applied carefully and logically to achieve the best result.
 :::
 
 ### Delete Expressions and Filters
@@ -135,7 +135,7 @@ You can either **remove single expressions** from the filter by clicking on the 
 
 </div> 
 
-Or you can **remove the whole filter** by clicking on `Clear Filter` on the bottom of the Filter menu. 
+Or you can **remove the whole filter** by clicking on `Clear Filter` at the bottom of the Filter menu. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 

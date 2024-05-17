@@ -12,22 +12,22 @@ The **PT Nearby Station Access** analysis is used to find stops and their depart
 
 ## 1. Explanation
 
-The Public Transport (PT) Nearby Stations access analysis is a suitable tool to **visualize public transport stops and their connections** that are accessible by walking/cycling from one or more starting point(s). The nearest stops, the public transport lines available there, their frequency and the journey time to reach the stop on foot and by bike are provided as a result.
+The Public Transport (PT) Nearby Stations access analysis is a suitable tool to **visualize public transport stops and their connections** that are accessible by walking/cycling from one or more starting point(s). The nearest stops, the public transport lines available there, their frequency, and the journey time to reach the stop on foot and by bike are provided as a result.
 
-**Proximity to nearby stations** is essential for various aspects of urban life and is important urban planning. The availability of public transport connections significantly improves accessibility for residents, workers, and visitors.
+**Proximity to nearby stations** is essential for various aspects of urban life and is important in urban planning. The availability of public transport connections significantly improves accessibility for residents, workers, and visitors.
 
 
 ![Nearby Stations in GOAT](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_example.png "Nearby Stations in GOAT")
 
 :::info 
-The calculation of PT Nearby Stations is only possible in areas where the GTFS data is integrated in GOAT. As soon as you open the tool, you will see the **geofence** in which the calculation is possible. It covers Germany, Denmark, Netherlands, Belgium, Switzerland and Austria as shown in the image below.
+The calculation of PT Nearby Stations is only possible in areas where the GTFS data is integrated into GOAT. As soon as you open the tool, you will see the **geofence** in which the calculation is possible. It covers Germany, Denmark, Netherlands, Belgium, Switzerland, and Austria as shown in the image below.
 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/toolbox/accessibility_indicators/nearby_stations/geofence.png').default} alt="Geofence for nearby stations calculation in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
 </div> 
 
-In case you need to perform analysis beyond this geofence, fell free to contact the [Support](https://plan4better.de/en/contact/ "Contact Support") and we will check what is possible. 
+In case you need to perform analysis beyond this geofence, feel free to contact the [Support](https://plan4better.de/en/contact/ "Contact Support") and we will check what is possible. 
 :::
 
 ## 2. Example use cases 
@@ -56,7 +56,7 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select the <code>Station Access</code> mode (<i>walk, bicycle or pedelec</i>), which shall be used for the way to the PT station.</div>
+  <div class="content">Select the <code>Station Access</code> mode (<i>walk, bicycle, or pedelec</i>), which shall be used for the way to the PT station.</div>
 </div>
 
 <div class="step">
@@ -137,9 +137,9 @@ Depending on the number of the selected starting points, the calculation might t
 
 
 :::tip Tip
-Want to style your results and create nice looking maps? See [Styling](../../map/layer_style/styling).
+Want to style your results and create nice-looking maps? See [Styling](../../map/layer_style/styling).
 :::
 
 ## 4. Technical details
 
-Similar to the Public Transport Quality Classes <i>(German: ÖV-Güteklassen)</i>, this indicator is calculated on the basis of **GTFS data** (see [Data Basis](../../data/data_basis)). Based on the selected modes, day and time window, the PT Nearby Stations are received.
+Similar to the Public Transport Quality Classes <i>(German: ÖV-Güteklassen)</i>, this indicator is calculated based on **GTFS data**** (see [Data Basis](../../data/data_basis)). Based on the selected modes, day, and time window, the PT Nearby Stations are received.

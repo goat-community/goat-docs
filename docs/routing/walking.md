@@ -10,13 +10,13 @@ The **Walk Routing** is used for all analyses in GOAT that contain walking trips
  
 ## 1. Objectives
 
-Walk routing is used for many indicators in GOAT, such as [Catchment Areas](../toolbox/accessibility_indicators/catchments "Visit Docs on Catchment Areas"), [Heatmaps](../toolbox/accessibility_indicators/heatmaps "Visit Docs on Heatmaps") and [PT Nearby Stations](../toolbox/accessibility_indicators/nearby_stations "Visit Docs on PT Nearby Stations"). As GOAT also allows to create [Scenarios on the Paths Network](../scenarios/ways), a **custom routing algorithm** is needed that also reflects the changes of the scenario in the accessibility analyses. For the mode of walking, we thereby **only consider paths that are suitable for pedestrians**. The walking `speed` can be adjusted by the user whenever an accessibility analysis is performed. 
+Walk routing is used for many indicators in GOAT, such as [Catchment Areas](../toolbox/accessibility_indicators/catchments "Visit Docs on Catchment Areas"), [Heatmaps](../toolbox/accessibility_indicators/heatmaps "Visit Docs on Heatmaps"), and [PT Nearby Stations](../toolbox/accessibility_indicators/nearby_stations "Visit Docs on PT Nearby Stations"). As GOAT also allows to creation of [Scenarios on the Paths Network](../scenarios/ways), a **custom routing algorithm** is needed that also reflects the changes of the scenario in the accessibility analyses. For the mode of walking, we thereby **only consider paths that are suitable for pedestrians**. The walking `speed` can be adjusted by the user whenever an accessibility analysis is performed. 
 
 ## 2. Data
 
 ### Routing Network
 
-Data from the **[Overture Maps Foundation](https://overturemaps.org/)** is used as routing network in GOAT. It includes the transportation infrastructure with **edges** (for any continuous path not bisected by another) and **nodes** (for any point where two distinct paths intersect), representing real-world networks.
+Data from the **[Overture Maps Foundation](https://overturemaps.org/)** is used as a routing network in GOAT. It includes the transportation infrastructure with **edges** (for any continuous path not bisected by another) and **nodes** (for any point where two distinct paths intersect), representing real-world networks.
 
 
 ## 3. Technical Details
@@ -36,19 +36,19 @@ The following steps are performed on the data to enable **quick** and **accurate
 1. **Buffer Region:** Based on user-origin, travel time, and speed.
 2. **Edge Filtering:**  Include only relevant edges for walking.
 
-For pedestrian routing, the edges of the following road classes are considered :
+For pedestrian routing, the edges of the following road classes are considered:
 `secondary`, `tertiary`, `residential`, `livingStreet`, `trunk`,
 `unclassified`, `parkingAisle`, `driveway`, `pedestrian`, `footway`,
-`steps`, `track`, `bridleway` and `unknown`. *(You can find further information on this classification in the [Overture Wiki](https://docs.overturemaps.org/themes/transportation/roads#road-class).)*
+`steps`, `track`, `bridleway`, and `unknown`. *(You can find further information on this classification in the [Overture Wiki](https://docs.overturemaps.org/themes/transportation/roads#road-class).)*
 
 #### Artificial Edge Creation
 
-User-provided origin points are typically located a short distance away from the street network. In order to account for the additional time (or cost) of walking from the origin to its nearest street, artificial (or simulated) edges are created.
+User-provided origin points are typically located a short distance away from the street network. To account for the additional time (or cost) of walking from the origin to its nearest street, artificial (or simulated) edges are created.
 
 #### Edge Cost Computation
 
 For all edges in the sub-network, a cost value (represented as time) is calculated based on path length and walking speed.
-Cost function for walking:
+The cost function for walking:
 `cost = length / speed`
 
 #### Network Propagation
@@ -61,6 +61,6 @@ To compute the shortest path from the origin point to various destinations, a cu
 <p style={{ textAlign: 'center' }}>GIF: <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra Algorithm</a></p>
 </div>
 
-The implementation has a time complexity of *O(ElogV)*, is written in **Python** and uses the just-in-time compiler **Numba**.
+The implementation has a time complexity of *O(ElogV)*, is written in **Python**, and uses the just-in-time compiler **Numba**.
 
 

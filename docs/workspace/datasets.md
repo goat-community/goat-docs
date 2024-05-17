@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Datasets
 
-On the **Datasets** page, data can be **uploaded, managed and shared**. The page provides users with an organised view of their datasets, categorised by personal datasets, team datasets and datasets that are shared with the whole organization. Furthermore, datasets can be organized in **folders**, **filtered** and **sorted** based on alphabet, creation date or their last update. Datasets can also be **deleted**, **downloaded** and their **metadata** edited. 
+On the **Datasets** page, data can be **uploaded, managed, and shared**. The page provides users with an organized view of their datasets, categorized by personal datasets, team datasets, and datasets that are shared with the whole organization. Furthermore, datasets can be organized in **folders**, **filtered**, and **sorted** based on the alphabet, creation date, or their last update. Datasets can also be **deleted**, **downloaded** and their **metadata** edited. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/datasets/datasets_general.png').default} alt="Datasets Page in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>

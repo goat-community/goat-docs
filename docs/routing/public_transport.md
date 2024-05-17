@@ -5,11 +5,11 @@ sidebar_position: 3
 
 # Public Transport
 
-The **Public Transport Routing**  in GOAT is essential for performing analyses that include public transport trips.
+The **Public Transport Routing** in GOAT is essential for performing analyses that include public transport trips.
 
 ## 1. Objectives
 
-Public transport routing facilitates **intermodal analysis** by integrating access and egress modes, such as walking or biking to and from the station. This is more complex than the other routing modes  as it requires the merging of different datasets (such as sidewalks & bike lanes, public transport stops & schedules, etc.) and calculation approaches.
+Public transport routing facilitates **intermodal analysis** by integrating access and egress modes, such as walking or biking to and from the station. This is more complex than the other routing modes as it requires the merging of different datasets (such as sidewalks & bike lanes, public transport stops & schedules, etc.) and calculation approaches.
 
 Public transport routing is used for many indicators in GOAT, such as [Catchment Areas](../toolbox/accessibility_indicators/catchments) and [Heatmaps](../toolbox/accessibility_indicators/heatmaps/closest_facilities.md).
 
@@ -18,7 +18,7 @@ Moreover, with [Scenarios on the Paths Network](../scenarios/ways), a **flexible
 ### Configurable Options for Analyses
 
 - `weekday`: Choose from Weekday, Saturday, or Sunday.
-- `start time` and `end time`: Specify analysis time window.
+- `start time` and `end time`: Specify the analysis time window.
 
 
 

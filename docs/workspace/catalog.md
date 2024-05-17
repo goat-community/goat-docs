@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Catalog
 
-The **Data Catalog** is a comprehensive listing of all [geospatial datasets](../further_reading/glossary#geospatial-data) available for exploration and analysis. A wide range of datasets are provided by Plan4Better, our authoritative partners and [open source](../further_reading/glossary#open-source) libraries, ensuring a **reliabile and accurate** database for your GIS projects.
+The **Data Catalog** is a comprehensive listing of all [geospatial datasets](../further_reading/glossary#geospatial-data) available for exploration and analysis. A wide range of datasets are provided by Plan4Better, our authoritative partners, and [open source](../further_reading/glossary#open-source) libraries, ensuring a **reliable and accurate** database for your GIS projects.
 
 <div class="content"><img src={require('/img/workspace/catalog/catalog-menu.png').default} alt="Data Catalog" style={{ maxHeight: "700px", maxWidth: "160px"}}/></div>
 
@@ -34,7 +34,7 @@ The **Data Catalog** is a comprehensive listing of all [geospatial datasets](../
 Once the dataset is set as a layer within your project <code><img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "16px", maxWidth: "16px"}}/> Filter</code> your data. Read more [filter datasets.](../workspace/datasets#filter-datasets "Filter dataset")
 :::
 
-## Explore GOAT data catalog:
+## Explore the GOAT data catalog:
 
 Clicking on a dataset within the Catalog page (accessible from the [Workspace](../category/workspace)), will take you to the **metadata** section. Here, you can explore detailed information about the dataset, including its **description**, **[dataset type](../data/dataset_types)**, **geographical and language codes** (based on the [ISO 3166-1 alpha-2](https://www.iso.org/iso-3166-country-codes.html)), **distributor name**, and **license details**. You can also preview the **dataset map** and associated data directly from the data page.
 
@@ -57,6 +57,6 @@ Our catalog features an extensive collection of datasets spanning different them
 
 - **People:** Demographic data related to human populations, such as population density, population distribution, age groups, and socio-economic characteristics.
 
-- **Transportation:** Information pertaining to transportation networks and infrastructure, including roads, highways, railways, airports, ports, and public transport systems.
+- **Transportation**:** Information on transportation networks and infrastructure, including roads, highways, railways, airports, ports, and public transport systems.
 
-- **Places:** Points of interest and geographic landmarks such as schools, car sharing locations, tourist attractions, and hospitals.
+- **Places:** Points of interest and geographic landmarks such as schools, car-sharing locations, tourist attractions, and hospitals.
