@@ -48,7 +48,7 @@ is a geospatial indexing system by [Uber Technologies](https://investor.uber.com
 ### Heatmap
 A **heatmap** is a graphical visualization form that uses different colors to indicate the different values of a dataset. This allows for a quick understanding of the data presented. 
 
-In GOAT, we, among others, use heatmaps to analyze the local accessibility of different amenities, such as cafes, restaurants, or supermarkets. The heatmap utilizes a range of colors to represent various accessibility values. By analyzing this data, we can gain insights into the distribution of destinations and the quality of infrastructure available.
+In GOAT, we use - amongst other indicators - heatmaps to analyze the local accessibility of different amenities, such as cafes, restaurants, or supermarkets. The heatmap utilizes a range of colors to represent various accessibility values. By analyzing this data, we can gain insights into the distribution of destinations and the quality of infrastructure available.
 
 ### Indicator
 An **indicator** is a means to analyze a specific attribute or topic quantitatively. Usually, a standardized procedure is applied for this, e.g. by using a formula. In planning, indicators can be used to assess the current situation, to compare different locations with each other, as well as to monitor the progress towards specific goals or objectives, such as improving accessibility. 
