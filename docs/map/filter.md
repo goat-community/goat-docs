@@ -50,7 +50,7 @@ The **filter operation does not alter the original data**. However, you can use 
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/map/filter/filter_general.png').default} alt="Filter tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/map/filter/filter.png').default} alt="Filter tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 <p></p>
@@ -115,7 +115,7 @@ For the expressions **"includes"** and **"excludes"**, multiple values can be se
 If you wish, you can **combine multiple filters** for multi-expression filtering. To do this, simply repeat steps 4-8 above for each additional expression. In the <code>Logic Operator</code> field, you can choose between the **AND** and **OR** logic combinations.  
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
-  <img src={require('/img/map/filter/logic_operators.png').default} alt="Logic Operators" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+  <img src={require('/img/map/filter/filter-results.png').default} alt="Logic Operators" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
 
 </div> 
 

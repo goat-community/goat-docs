@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Catalog
 
-The **Data Catalog** is a comprehensive listing of all [geospatial datasets](../further_reading/glossary#geospatial-data) available for exploration and analysis. A wide range of datasets are provided by Plan4Better, our authoritative partners, and [open source](../further_reading/glossary#open-source) libraries, ensuring a **reliable and accurate** database for your GIS projects.
+The **Data Catalog** is a comprehensive listing of all [geospatial datasets](../further_reading/glossary#geospatial-data) available for exploration and analysis. A wide range of datasets are provided by Plan4Better, our partners, and [open source](../further_reading/glossary#open-source) libraries, ensuring a **reliable and accurate** database for your GIS projects.
 
 <div class="content"><img src={require('/img/workspace/catalog/catalog-menu.png').default} alt="Data Catalog" style={{ maxHeight: "700px", maxWidth: "160px"}}/></div>
 

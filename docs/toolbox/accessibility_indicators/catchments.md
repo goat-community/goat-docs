@@ -25,10 +25,16 @@ You might know this feature from our previous software versions under the terms 
 :::
 
 :::info 
-The calculation of the catchment areas is only available for areas where the transport network of the selected routing mode is integrated into GOAT. As soon as you select a routing mode, you will see the **geofence** in which the calculation is possible.
+Catchment areas are available for certain regions. Upon selecting a <code>Routing type</code>, GOAT will dynamically display a geofence for supported regions.
+For <code>Routing Type</code>s: <code>Walk</code>, <code>Bicycle</code>, <code>Pedelec</code>, and <code>Car</code>, the geofence reaches more than 30 European countries:
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence for catchment area calculation in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
+  <img src={require('/img/toolbox/accessibility_indicators/catchments/geofence.png').default} alt="Geofence for catchment area calculation in GOAT" style={{ maxHeight: "300px", maxWidth: "400px", alignItems:'center'}}/>
+</div> 
+
+For <code>Routing Type</code> <code>Public Transport</code> the geofence reaches the entire Germany.
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence for catchment area calculation in GOAT" style={{ maxHeight: "300px", maxWidth: "400px", alignItems:'center'}}/>
 </div> 
 
 In case you need to perform analysis beyond this geofence, feel free to contact the [Support](https://plan4better.de/en/contact/ "Contact Support") and we will check what is possible. 
@@ -64,11 +70,6 @@ In case you need to perform analysis beyond this geofence, feel free to contact 
   <div class="content">Pick for which <code>Routing Type</code> you would like to calculate an isochrone.</div>
 </div>
 
-:::info coming soon
-
-Catchment calculation for **Car** coming soon. We currently implement this functionality. 🧑🏻‍💻
-
-:::
 
 ### Configuration
 
@@ -77,7 +78,10 @@ Catchment calculation for **Car** coming soon. We currently implement this funct
 
 #### Walk
 
-Considering all paths accessible by foot.
+Considering all paths accessible for pedestrian, the edges of the following road classes are considered:
+`secondary`, `tertiary`, `residential`, `livingStreet`, `trunk`,
+`unclassified`, `parkingAisle`, `driveway`, `pedestrian`, `footway`,
+`steps`, `track`, `bridleway`, and `unknown`.
 
 :::tip Hint
 
@@ -157,7 +161,8 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
     
 #### Bicycle/Pedelec
 
-Considering all paths accessible by bicycle. Depending on the surface, smoothness, and slope of the different street segments, the speed is adjusted accordingly. For Pedelecs, slopes are considered with a lower impedance than for standard bicycles.
+Considering all paths accessible by bicycle. Depending on the surface, smoothness, and slope of the different street segments, the speed is adjusted accordingly. For Pedelecs, slopes are considered with a lower impedance than for standard bicycles. For bicycle/pedelec routing, the edges of the following street classes are considered:
+`secondary`, `tertiary`, `residential`, `livingStreet`, `trunk`, `unclassified`, `parkingAisle`, `driveway`, `pedestrian`, `track`, `cycleway`, `bridleway`, and `unknown`.
 
 :::tip Hint
 
@@ -237,11 +242,12 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
 
 #### Car
 
-In this routing mode, users can compute accessibility for the car street network.
+In this routing mode, users can compute accessibility for the car street network. The edges of the following street classes are considered:
+ `motorway`, `primary`, `secondary`, `tertiary`, `residential`, `living_street`, `trunk`, `parking_aisle`, `driveway`, `alley`, and `track`.
 
 :::tip Hint
 
-For further insights into the Routing algorithm, visit [Car](../../routing/car).
+For further insights into the Routing algorithm, visit [Routing/Car](../../routing/car).
 
 :::
 
@@ -260,13 +266,8 @@ For further insights into the Routing algorithm, visit [Car](../../routing/car).
   <div class="content">Set the configurations for <code>Travel time limit</code>, <code>Travel speed</code>, and <code> Number of breaks</code>.</div>
 </div>
 
-<img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_time.png').default} alt="walking-time configurations" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+<img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_time.png').default} alt="travel-time configurations" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
 
-:::tip Hint
-
-For defining which travel time limits are suitable for which amenity, the ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
-
-:::
 
 
 #### Advanced Configurations
@@ -288,13 +289,8 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
   <div class="content">Set the configurations for <code>Travel distance</code> and <code> Number of breaks</code>.</div>
 </div>
 
-<img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_distance.png').default} alt="walking-distance configurations" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+<img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_distance.png').default} alt="travel-distance configurations" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
 
-:::tip Hint
-
-For defining which travel distances are suitable for which amenity, the ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
-
-:::
 
 
 #### Advanced Configurations
@@ -315,6 +311,9 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
 #### Public Transport (PT)
 
 In this routing mode, users can compute intermodal accessibility centered around public transport. 
+The public transport modes considered are
+`bus`, `tram`, `rail`, `subway`, `ferry`, `cable_car`, `gondola`, and `funicular`.
+
 
 :::tip Hint
 

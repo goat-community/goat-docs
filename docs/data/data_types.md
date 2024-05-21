@@ -32,7 +32,7 @@ Under <img src={require('/img/map/filter/3dots.png').default} alt="Options" styl
 
 Scroll the data table. On top of each field you will find the data type:
 
-![More Options](/img/data/data-table.png "More Options")
+![More Options](/img/data/data-table.png  "More Options" )
 
 
 ::::

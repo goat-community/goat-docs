@@ -16,10 +16,10 @@ This indicator serves as the foundation for the [ÖV-Güteklassen](/docs/toolbox
 ![Public Transport Trip Count](/img/toolbox/accessibility_indicators/trip_count/sample.png "[Public Transport Trip Count")
 
 :::info 
-The public transport (PT) trip count is only available in areas where the transport network of the selected routing mode is integrated into GOAT. As soon as you select a routing mode, you will see the **geofence** in which the calculation is possible.
+The public transport (PT) trip count is only available in areas where the transport network is integrated into GOAT. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence for catchment area calculation in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
+  <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence for public transport trip count calculation in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
 </div> 
 
 In case you need to perform analysis beyond this geofence, feel free to contact the [Support](https://plan4better.de/en/contact/ "Contact Support") and we will check what is possible. 
