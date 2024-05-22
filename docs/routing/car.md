@@ -5,20 +5,20 @@ sidebar_position: 4
 
 # Car
 
-The  **Car Routing**  is used for all analyses in GOAT that contain car trips.
+The **Car Routing** is used for all analyses in GOAT that contain car trips.
 
 
 ## 1. Objectives
 
 Car routing is used for many indicators in GOAT, such as [Catchment Areas](../toolbox/accessibility_indicators/catchments) and [Heatmaps](../toolbox/accessibility_indicators/heatmaps/closest_facilities.md). 
 
-As GOAT also allows to create [Scenarios on the Paths Network](../scenarios/ways), a  **custom routing algorithm**  is needed that also reflects the changes of the scenario in the accessibility analyses. For the mode of car, we thereby  **only consider paths that are suitable for driving**.
+As GOAT also allows the creation of [Scenarios on the Paths Network](../scenarios/ways), a **custom routing algorithm** is needed that also reflects the changes of the scenario in the accessibility analyses. For the mode of the car, we thereby **only consider paths that are suitable for driving**.
 
 ## 2. Data
 
 ### Routing Network
 
-Data from the  **[Overture Maps Foundation](https://overturemaps.org/)**  is used as routing network in GOAT. It includes the transportation infrastructure with  **edges**  (for any continuous path not bisected by another) and  **nodes**  (for any point where two distinct paths intersect), representing real-world networks.
+Data from the  **[Overture Maps Foundation](https://overturemaps.org/)**  is used as a routing network in GOAT. It includes the transportation infrastructure with **edges**  (for any continuous path not bisected by another) and **nodes**  (for any point where two distinct paths intersect), representing real-world networks.
 
 
 ## 3. Technical Details
@@ -27,7 +27,7 @@ Data from the  **[Overture Maps Foundation](https://overturemaps.org/)**  is use
 
 The following steps are performed on the data to enable  **quick**  and  **accurate**  routing for cars:
 
-1.  **Attribute Parsing:**  Categorizing attributes of edges (street  `class`  and  `surface`).
+1.  **Attribute Parsing:**  Categorizing attributes of edges (street `class` and `surface`).
 2.  **Geospatial Indexing:**  Utilizing  **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)**  indexing for efficient routing.
 3.  **Extracting Restrictions:**  Identifying one-way access restrictions in addition to speed limits for both directions of the edge (`maxspeed_forward` and `maxspeed_backward`).
 
@@ -43,7 +43,7 @@ For car routing, the edges of the following street classes are considered:
 
 #### Artificial Edge Creation
 
-User-provided origin points are typically located a short distance away from the street network. In order to account for the additional time (or cost) of driving from the origin to its nearest street (e.g. using an unmarked driveway), artificial (or simulated) edges are created.
+User-provided origin points are typically located a short distance away from the street network. To account for the additional time (or cost) of driving from the origin to its nearest street (e.g. using an unmarked driveway), artificial (or simulated) edges are created.
 
 
 #### Edge Cost Computation
@@ -70,4 +70,4 @@ To compute the shortest path from the origin point to various destinations, a cu
 <p style={{ textAlign: 'center' }}>GIF: <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra Algorithm</a></p>
 </div>
 
-The implementation has a time complexity of *O(ElogV)*, is written in **Python** and uses the just-in-time compiler **Numba**.
+The implementation has a time complexity of *O(ElogV)*, is written in **Python**, and uses the just-in-time compiler **Numba**.

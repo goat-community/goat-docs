@@ -13,7 +13,7 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 ## 1. Explanation
 
-**Catchment Areas** show how far a person can travel from selected starting point(s) within a given travel time or a given travel distance. The catchment calculation routes on the **real transport network**. Therefore, the user can select the `routing type` (_Walking_, _Bike_, _Pedelec_, _Transit_ or _Car_). 
+**Catchment Areas** show how far a person can travel from a selected starting point(s) within a given travel time or a given travel distance. The catchment calculation routes on the **real transport network**. Therefore, the user can select the `routing type` (_Walking_, _Bike_, _Pedelec_, _Transit_ or _Car_). 
 
 Catchment areas can be used as an **accessibility indicator** in a specific location or area. The catchment area gives insights into the network connectivity. Furthermore, the catchment area can be intersected with further spatial datasets, such as population and [POI](../../further_reading/glossary#point-of-interest-poi "What is a POI?") data. Therewith it can be assessed how many people or POIs can be reached from certain starting point(s) and thus e.g. identified which share of inhabitants has access to important destinations of daily life within a specific travel time. 
 
@@ -25,19 +25,25 @@ You might know this feature from our previous software versions under the terms 
 :::
 
 :::info 
-The calculation of Catchment Areas is only possible in areas where the transport network of the selected routing mode is integrated in GOAT. As soon as you selected a routing mode, you will see the **geofence** in which the calculation is possible.
+Catchment areas are available for certain regions. Upon selecting a <code>Routing type</code>, GOAT will dynamically display a geofence for supported regions.
+For <code>Routing Type</code>s: <code>Walk</code>, <code>Bicycle</code>, <code>Pedelec</code>, and <code>Car</code>, the geofence reaches more than 30 European countries:
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/toolbox/accessibility_indicators/catchments/geofence.png').default} alt="Geofence for catchment area calculation in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
+  <img src={require('/img/toolbox/accessibility_indicators/catchments/geofence.png').default} alt="Geofence for catchment area calculation in GOAT" style={{ maxHeight: "300px", maxWidth: "400px", alignItems:'center'}}/>
 </div> 
 
-In case you need to perform analysis beyond this geofence, fell free to contact the [Support](https://plan4better.de/en/contact/ "Contact Support") and we will check what is possible. 
+For <code>Routing Type</code> <code>Public Transport</code> the geofence reaches the entire Germany.
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence for catchment area calculation in GOAT" style={{ maxHeight: "300px", maxWidth: "400px", alignItems:'center'}}/>
+</div> 
+
+In case you need to perform analysis beyond this geofence, feel free to contact the [Support](https://plan4better.de/en/contact/ "Contact Support") and we will check what is possible. 
 :::
 
 ## 2. Example use cases
 
 - Which amenities can be reached from a certain point in a 15-minute walk?
-- How many inhabitants have access to a supermarket within 10 minutes cycling?
+- How many inhabitants have access to a supermarket within 10 minutes of cycling?
 - What share of the population has a GP within 500m distance?
 - How big is the catchment area of a workplace by car vs. by public transport? How many employees live within these catchment areas? 
 - How well are kindergartens currently distributed across the city? In which districts are there accessibility deficits?
@@ -64,11 +70,6 @@ In case you need to perform analysis beyond this geofence, fell free to contact 
   <div class="content">Pick for which <code>Routing Type</code> you would like to calculate an isochrone.</div>
 </div>
 
-:::info coming soon
-
-Catchment calculation for **Car** coming soon. We currently implement this functionality. 🧑🏻‍💻
-
-:::
 
 ### Configuration
 
@@ -77,7 +78,10 @@ Catchment calculation for **Car** coming soon. We currently implement this funct
 
 #### Walk
 
-Considering all paths accessible by foot.
+Considering all paths accessible for pedestrian, the edges of the following road classes are considered:
+`secondary`, `tertiary`, `residential`, `livingStreet`, `trunk`,
+`unclassified`, `parkingAisle`, `driveway`, `pedestrian`, `footway`,
+`steps`, `track`, `bridleway`, and `unknown`.
 
 :::tip Hint
 
@@ -157,7 +161,8 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
     
 #### Bicycle/Pedelec
 
-Considering all paths accessible by bicycle. Depending on the surface, smoothness and slope of the different street segments, the speed is adjusted accordingly. For Pedelecs, slopes are considered with a lower impedance than for standard bicycles.
+Considering all paths accessible by bicycle. Depending on the surface, smoothness, and slope of the different street segments, the speed is adjusted accordingly. For Pedelecs, slopes are considered with a lower impedance than for standard bicycles. For bicycle/pedelec routing, the edges of the following street classes are considered:
+`secondary`, `tertiary`, `residential`, `livingStreet`, `trunk`, `unclassified`, `parkingAisle`, `driveway`, `pedestrian`, `track`, `cycleway`, `bridleway`, and `unknown`.
 
 :::tip Hint
 
@@ -232,11 +237,83 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
 
 
   </TabItem>
+
+  <TabItem value="car" label="Car" className="tabItemBox">
+
+#### Car
+
+In this routing mode, users can compute accessibility for the car street network. The edges of the following street classes are considered:
+ `motorway`, `primary`, `secondary`, `tertiary`, `residential`, `living_street`, `trunk`, `parking_aisle`, `driveway`, `alley`, and `track`.
+
+:::tip Hint
+
+For further insights into the Routing algorithm, visit [Routing/Car](../../routing/car).
+
+:::
+
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Pick if you like to calculate the catchment area based on <b>time</b> or <b>distance</b>.</div>
+</div>
+
+<Tabs>
+  <TabItem value="time" label="Time" default className="tabItemBox">
+
+#### Time
+
+<div class="step">
+  <div class="step-number">5</div>
+  <div class="content">Set the configurations for <code>Travel time limit</code>, <code>Travel speed</code>, and <code> Number of breaks</code>.</div>
+</div>
+
+<img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_time.png').default} alt="travel-time configurations" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+
+
+
+#### Advanced Configurations
+
+Per default, the catchment areas are calculated in polygon shape. In case you want to adjust that, you find further options in the advanced configurations. 
+
+<div class="step">
+  <div class="step-number">6</div>
+  <div class="content">Click on <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Here you can select the <code> Catchment area shape</code>. You can choose between <b>Polygon</b>, <b>Network</b> and <b>Rectangular Grid</b>.</div>
+</div>
+
+  </TabItem>
+  <TabItem value="distance" label="Distance" default className="tabItemBox">
+
+#### Distance
+
+<div class="step">
+  <div class="step-number">5</div>
+  <div class="content">Set the configurations for <code>Travel distance</code> and <code> Number of breaks</code>.</div>
+</div>
+
+<img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_distance.png').default} alt="travel-distance configurations" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+
+
+
+#### Advanced Configurations
+
+Per default, the catchment areas are calculated in polygon shape. In case you want to adjust that, you find further options in the advanced configurations. 
+
+<div class="step">
+  <div class="step-number">6</div>
+  <div class="content">Click on <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Here you can select the <code> Catchment area shape</code>. You can choose between <b>Polygon</b>, <b>Network</b> and <b>Rectangular Grid</b>.</div>
+</div>
+
+  </TabItem>
+</Tabs>
+
+  </TabItem>
   <TabItem value="public transport" label="Public Transport (PT)" className="tabItemBox">
 
 #### Public Transport (PT)
 
 In this routing mode, users can compute intermodal accessibility centered around public transport. 
+The public transport modes considered are
+`bus`, `tram`, `rail`, `subway`, `ferry`, `cable_car`, `gondola`, and `funicular`.
+
 
 :::tip Hint
 
@@ -281,7 +358,6 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
 </Tabs>
 
 
-
 <Tabs>
   <TabItem value="Polygon" label="Polygon" default className="tabItemBox">
 
@@ -304,7 +380,7 @@ If you enable **Polygon Difference**, only the "incremental" (or differential) p
   <TabItem value="Network" label="Network" className="tabItemBox">
 
  #### Network
-- It is a *street level representation* of the catchments.
+- It is a *street-level representation* of the catchments.
 - Enables easy correlation to actual streets and their accessibility within the catchment area.
 - Fine-grained detail compared to the other catchment types.
 
@@ -372,7 +448,7 @@ Depending on the chosen settings, the calculation might take some minutes. The [
   <div class="step-number">10</div>
   <div class="content">As soon as the calculation process is finished, the resulting layer(s) will be added to the map. The layer called <b>"Isochrone"</b> contains the calculated catchments. If the starting points were created by clicking on the map, they will also be saved in a layer called <b>"Starting Points"</b>.
   <p></p>
-  If you click on a catchment polygon on the map, you will see further details in its attribute table. The attribute <b>travel_cost</b> shows the travel distance or time, depending which unit you picked for the calculation. If you have selected travel time, the travel_cost will show the <b>time in minutes</b>. If you have selected distance, the travel_cost will show the <b>distance in meters</b>.</div>
+  If you click on a catchment polygon on the map, you will see further details in its attribute table. The attribute <b>travel_cost</b> shows the travel distance or time, depending on which unit you picked for the calculation. If you have selected travel time, the travel_cost will show the <b>time in minutes</b>. If you have selected distance, the travel_cost will show the <b>distance in meters</b>.</div>
 </div>
 
 ![Catchment Area Calculation Result in GOAT](/img/toolbox/accessibility_indicators/catchments/catchment_result.png "Catchment Area Calculation Result in GOAT")
@@ -393,7 +469,7 @@ From the scientific background, catchments are _contour-based measures_ (also kn
 
 ### Visualization 
 
-The catchment shape is derived from the routing grid using the [Marching square contour line algorithm](https://en.wikipedia.org/wiki/Marching_squares "Wikipedia: Marching Squares"), a computer graphics algorithm that can generate two-dimensional contour lines from a rectangular array of values ([de Queiroz Neto et al. 2016](catchments#6-references)). This algorithm transforms the grid from a 2D array to a shape to visualize or analyzed. An illustration of 2D image processing is shown in the figure. 
+The catchment shape is derived from the routing grid using the [Marching square contour line algorithm](https://en.wikipedia.org/wiki/Marching_squares "Wikipedia: Marching Squares"), a computer graphics algorithm that can generate two-dimensional contour lines from a rectangular array of values ([de Queiroz Neto et al. 2016](catchments#6-references)). This algorithm transforms the grid from a 2D array to a shape to visualize or analyze. An illustration of 2D image processing is shown in the figure. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src="https://plan4better.de/images/docs/technical_documentation/isochrone/wiki.webp" width="1000px" alt="marching square" style={{ width: "1000px", height: "400px", maxHeight: "400px", maxWidth: "400px", objectFit: "contain"}}/>

@@ -19,7 +19,7 @@ This tool facilitates the combination of two datasets. By defining relationships
 
 </div> 
 
-GOAT uses the **"Inner Join"** operation to calculate a join which combines rows from a target and a join layer based on a related column between them. It only selects records that have matching values in both tables. This means that for every row in the target layer, there must be at least one row in the source layer to realise a successful match. Any rows that do not match will not be returned as a result.
+GOAT uses the **"Inner Join"** operation to calculate a join which combines rows from a target and a join layer based on a related column between them. It only selects records that have matching values in both tables. This means that for every row in the target layer, there must be at least one row in the source layer to realize a successful match. Any rows that do not match will not be returned as a result.
 
 ## 2. Example use cases
 
@@ -105,7 +105,7 @@ You can choose between several statistical operations. Some methods are only ava
   
 <div class="step">
   <div class="step-number">10</div>
-  <div class="content">The result layer <b>"Join"</b> will be added to the project, as well as to the <a href="../../workspace/datasets">Datasets</a> in your workspace. This layer consist of the information of the target layer and an <b>additional column</b> showing the results from the <b>statistical operation</b>. You can see the attributes by clicking on one of the features in the map.</div>
+  <div class="content">The resulting layer <b>"Join"</b> will be added to the project, as well as to the <a href="../../workspace/datasets">Datasets</a> in your workspace. This layer consists of the information of the target layer and an <b>additional column</b> showing the results from the <b>statistical operation</b>. You can see the attributes by clicking on one of the features in the map.</div>
 </div>
 
 
