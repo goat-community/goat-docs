@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem';
 
 # Layers
 
-On the **Layers** section, layers can be **added and organized**. Among others, the layer order can be adjusted, layers can be enabled/disabled, duplicated, renamed, downloaded and removed.
+In the **Layers** section, layers can be **added and organized**. Among others, the layer order can be adjusted, layers can be enabled/disabled, duplicated, renamed, downloaded, and removed.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/map/layers/overview.png').default} alt="Layer View in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
@@ -17,7 +17,7 @@ On the **Layers** section, layers can be **added and organized**. Among others, 
 
 ## Add Layers
 
-You can add two two kinds of layers to your map: [internal layers](../data/dataset_types) or [external layers](../data/dataset_types). For adding new internal layers, you can either integrate **datasets from your data explorer** or upload new **datasets from your local device** (GeoPackage, GeoJSON, Shapefile, KML, CSV or XLSX). External layers can be added by inserting the **url of the external source** (WMS, WMTS or MVT). 
+You can add two kinds of layers to your map: [internal layers](../data/dataset_types) or [external layers](../data/dataset_types). For adding new internal layers, you can either integrate **datasets from your data explorer** or upload new **datasets from your local device** (GeoPackage, GeoJSON, Shapefile, KML, CSV, or XLSX). External layers can be added by inserting the **url of the external source** (WMS, WMTS, or MVT). 
 
 Follow these steps to add a layer to the map: 
 
@@ -85,7 +85,7 @@ We currently implement this functionality. 🧑🏻‍💻
 
 :::tip tip
 
-You can manage all your datasets in the [Datasets page](../workspace/datasets). 
+You can manage all your datasets on the [Datasets page](../workspace/datasets). 
 
 :::
 
@@ -95,7 +95,7 @@ Once you have added a dataset to the map, it will be visible in the **Layer List
 
 ### Layer Order
 
-When visualizing several data sets at once, the layer order is crucial for crating nice maps. Therefore, the **layer order** can be changed interactively.
+When visualizing several data sets at once, the layer order is crucial for creating nice maps. Therefore, the **layer order** can be changed interactively.
 When hovering over the left border of the layer in the layer list, an arrow symbol appears. By drag and drop, the layer can be moved. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>

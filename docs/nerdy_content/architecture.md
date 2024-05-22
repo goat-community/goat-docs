@@ -22,10 +22,10 @@ To describe the software architecture the [C4 Model](https://c4model.com/) is us
 The client represents the application's user interface, comprising both a map view and a dashboard view. The dashboard serves multiple functions; it facilitates user account management, project creation, and oversees data management. In contrast, the map view is geared towards project execution, performance of analyses, and visualization and export of results, enabling users to interactively engage with their data.
 
 #### Authentication
-The authentication system is responsible for managing users, organizations and groups. It is used to authenticate users and check their roles. 
+The authentication system is responsible for managing users, organizations, and groups. It is used to authenticate users and check their roles. 
 
 #### Authorization
-The authorization system takes charge of supervising permissions and subscriptions. Its principal function involves verifying whether a user possesses the requisite permissions to undertake a specific action, thereby maintaining a robust control over application access and user activities.
+The authorization system takes charge of supervising permissions and subscriptions. Its principal function involves verifying whether a user possesses the requisite permissions to undertake a specific action, thereby maintaining robust control over application access and user activities.
 
 #### GOAT Application
 The GOAT application forms the heart of the GOAT platform. Its role includes managing projects, conducting analyses, and generating results. In addition to these duties, the application also performs analyses and accurately delivers the related data, making it a complete solution for data processing and interpretation.
@@ -44,16 +44,16 @@ The following container diagram is a high-level overview of the different servic
 
 
 ### Authentication
-Keycloak is an open-source solution, used for managing users and groups as well as organizations, with the help of the PhaseTwo extension. This tool identifies users and knows their roles, organization and groups they belong too. Keycloak-related data, including those related to organizations, is stored in a PostgreSQL Database.
+Keycloak is an open-source solution, used for managing users and groups as well as organizations, with the help of the PhaseTwo extension. This tool identifies users and knows their roles, organization, and groups they belong to. Keycloak-related data, including those related to organizations, is stored in a PostgreSQL Database.
 
 #### Keycloak API
-The Keycloak API is a REST API that is used to manage users, groups and organizations. The web application is directly interacting with the API to authenticate users. 
+The Keycloak API is a REST API that is used to manage users, groups, and organizations. The web application is directly interacting with the API to authenticate users. 
 
 #### Keycloak Database
-THe Keycloak Database is a PostgreSQL Database that is used to store the Keycloak data. It is managed by the Keycloak system and we are not directly interacting with it. 
+The Keycloak Database is a PostgreSQL Database that is used to store the Keycloak data. It is managed by the Keycloak system and we are not directly interacting with it. 
 
 ### Authorization 
-The GOAT backend is comprised of several containers, with the authorization container serving as the central communication hub. The authorization API is written in Python using FastAPI. It is responsible for managing all incoming requests from the frontend, communicating with other containers as necessary. Though authentication is handled in the authentication layer, within the authorization system lies the authorization mechanism. This involves verifying that a user possesses proper permissions and subscriptions (in SaaS installations) before granting access to the requested action. All related data is stored in a PostgreSQL database, accessed through SQLAlchemy.
+The GOAT backend is comprised of several containers, with the authorization container serving as the central communication hub. The authorization API is written in Python using FastAPI. It is responsible for managing all incoming requests from the front end and communicating with other containers as necessary. Though authentication is handled in the authentication layer, within the authorization system lies the authorization mechanism. This involves verifying that a user possesses proper permissions and subscriptions (in SaaS installations) before granting access to the requested action. All related data is stored in a PostgreSQL database, accessed through SQLAlchemy.
 
 #### Authorization and Accounts API
 
@@ -69,7 +69,7 @@ We utilize a PostgreSQL database to store detailed user, organization, and group
 ### GOAT Application
 
 #### GOAT API 
-The GOAT API, developed using Python and FastAPI, serves as the central core of the application. It takes on the critical tasks of managing projects, performing analyses, and generating results. The API maintains direct interaction with the GOAT database, and is furnished with a variety of built-in algorithms. Additionally, it utilizes the R5 Engine for conducting travel time analyses and computing diverse indicators. It also facilitates the distribution of spatial data, providing it in a wide range of formats, types, and resolutions to cater to different needs.
+The GOAT API, developed using Python and FastAPI, serves as the central core of the application. It takes on the critical tasks of managing projects, performing analyses, and generating results. The API maintains direct interaction with the GOAT database and is furnished with a variety of built-in algorithms. Additionally, it utilizes the R5 Engine for conducting travel time analyses and computing diverse indicators. It also facilitates the distribution of spatial data, providing it in a wide range of formats, types, and resolutions to cater to different needs.
 
 #### GOAT Database
 
@@ -77,7 +77,7 @@ The GOAT database is a comprehensive PostgreSQL database, equipped with the Post
 
 #### Organization Database
 
-Database for the organization data. Each organization is receiving it own database to clearly seperate the data of the different organizations. It is used to store the custom data of the organization or users of the organization. And it is used store the data that is produced using the GOAT application. 
+Database for the organization data. Each organization receives its database to separate the data of the different organizations. It is used to store the custom data of the organization or users of the organization. And it is used to store the data that is produced using the GOAT application. 
 
 #### R5 Engine
 

@@ -9,11 +9,11 @@ import TabItem from '@theme/TabItem';
 
 # Aggregate Polygons
 
-The **Aggregate Polygon** tool performs statistical analysis of polygons, e.g. count, sum, min or max, and **aggregates the information on polygons**.
+The **Aggregate Polygon** tool performs statistical analysis of polygons, e.g. count, sum, min, or max, and **aggregates the information on polygons**.
 
 ## 1. Explanation
 
-With the Aggregate Polygons tool, data can be combined or aggregated between different polygon layers based on their **spatial relationships**. These spatial relationships are calculated using different **statistical approaches**. This technique is useful for analysing and visualising how different geographical entities interact, making them easier to analyse and interpret.
+With the Aggregate Polygons tool, data can be combined or aggregated between different polygon layers based on their **spatial relationships**. These spatial relationships are calculated using different **statistical approaches**. This technique is useful for analyzing and visualizing how different geographical entities interact, making them easier to analyze and interpret.
 
 The example below shows the geometry of the *Source Layer* remains the same, while its attribute table will be enriched by aggregating information from the *Area of Aggregation*.
 
@@ -80,7 +80,7 @@ The example below shows the geometry of the *Source Layer* remains the same, whi
 
 :::tip NOTE
 
-To learn more about H3 grid, you can visit the [Glossary](../../further_reading/glossary#H3-grid).
+To learn more about the H3 grid, you can visit the [Glossary](../../further_reading/glossary#H3-grid).
 
 :::
 
@@ -132,6 +132,6 @@ Depending on the size of the datasets, the calculation might take some minutes. 
 <img src={require('/img/toolbox/geoanalysis/aggregate_polygons/aggregate_polygons_result.png').default} alt="Polygon Aggregation Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
 
 :::tip Tip
-Want to style your result layer and create nice looking maps? See [Styling](../../map/layer_style/styling).
+Want to style your result layer and create nice-looking maps? See [Styling](../../map/layer_style/styling).
 :::
 
