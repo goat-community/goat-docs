@@ -78,10 +78,7 @@ In case you need to perform analysis beyond this geofence, feel free to contact 
 
 #### Walk
 
-Considering all paths accessible for pedestrian, the edges of the following road classes are considered:
-`secondary`, `tertiary`, `residential`, `livingStreet`, `trunk`,
-`unclassified`, `parkingAisle`, `driveway`, `pedestrian`, `footway`,
-`steps`, `track`, `bridleway`, and `unknown`.
+Considering all paths accessible for pedestrians.
 
 :::tip Hint
 
@@ -161,8 +158,7 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
     
 #### Bicycle/Pedelec
 
-Considering all paths accessible by bicycle. Depending on the surface, smoothness, and slope of the different street segments, the speed is adjusted accordingly. For Pedelecs, slopes are considered with a lower impedance than for standard bicycles. For bicycle/pedelec routing, the edges of the following street classes are considered:
-`secondary`, `tertiary`, `residential`, `livingStreet`, `trunk`, `unclassified`, `parkingAisle`, `driveway`, `pedestrian`, `track`, `cycleway`, `bridleway`, and `unknown`.
+Considering all paths accessible by bicycle. Depending on the surface, smoothness, and slope of the different street segments, the speed is adjusted accordingly. For Pedelecs, slopes are considered with a lower impedance than for standard bicycles.
 
 :::tip Hint
 
@@ -242,8 +238,7 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
 
 #### Car
 
-In this routing mode, users can compute accessibility for the car street network. The edges of the following street classes are considered:
- `motorway`, `primary`, `secondary`, `tertiary`, `residential`, `living_street`, `trunk`, `parking_aisle`, `driveway`, `alley`, and `track`.
+In this routing mode, users can compute accessibility for the car street network.
 
 :::tip Hint
 
@@ -311,8 +306,6 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
 #### Public Transport (PT)
 
 In this routing mode, users can compute intermodal accessibility centered around public transport. 
-The public transport modes considered are
-`bus`, `tram`, `rail`, `subway`, `ferry`, `cable_car`, `gondola`, and `funicular`.
 
 
 :::tip Hint
@@ -465,7 +458,7 @@ The catchment areas are dynamically created in the front end based on a travel t
 
 ### Scientific background
 
-From the scientific background, catchments are _contour-based measures_ (also known as _cumulative opportunities_). They are valued for their **easily interpretable results** ([Geurs and van Eck 2001](catchments#6-references); [Albacete 2016](catchments#6-references)), but have the drawback of not distinguishing between different travel times within the **cut-off range** ([Bertolini, le Clercq, and Kapoen 2005](catchments#6-references)), as it is done by [heatmaps](/docs/toolbox/accessibility_indicators/heatmap_closest_facilities).
+From the scientific background, catchments are _contour-based measures_ (also known as _cumulative opportunities_). They are valued for their **easily interpretable results** ([Geurs and van Eck 2001](catchments#6-references); [Albacete 2016](catchments#6-references)), but have the drawback of not distinguishing between different travel times within the **cut-off range** ([Bertolini, le Clercq, and Kapoen 2005](catchments#6-references)), as it is done by [heatmaps](../accessibility_indicators/heatmaps/closest_facilities.md).
 
 ### Visualization 
 
@@ -489,8 +482,7 @@ J. F. de Queiroz Neto, E. M. d. Santos, and C. A. Vidal. “MSKDE - Using
 Marching Squares to Quickly Make High Quality Crime Hotspot Maps”. en.
 In: 2016 29th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI).
 Sao Paulo, Brazil: IEEE, Oct. 2016, pp. 305–312. isbn: 978-1-5090-3568-7. doi:
-10.1109/SIBGRAPI.2016.049. url: https://ieeexplore.ieee.org/document/
-7813048/
+10.1109/SIBGRAPI.2016.049. url: https://ieeexplore.ieee.org/document/7813048
 
 https://fr.wikipedia.org/wiki/Marching_squares#/media/Fichier:Marching_Squares_Isoline.svg
 
