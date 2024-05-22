@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 # PT Nearby Stations
 
-The **PT Nearby Station Access** analysis is used to find stops and their departures that are accessible by walking/cycling.
+The **PT Nearby Stations** analysis is used to find public transport stops accessible by walking or cycling within a given time. For each stop, departure information by mode and route is provided.
 
 ## 1. Explanation
 
@@ -86,32 +86,21 @@ In case you need to perform analysis beyond this geofence, feel free to contact 
 </div>
 
 <Tabs>
-  <TabItem value="Select on Map" label="Select on Map" default className="tabItemBox">
-
- #### Select on Map
-
-<div class="step">
-  <div class="step-number">8</div>
-  <div class="content">Click on <code>Select on map</code>. Select the starting point(s) by clicking on the respective location(s) in the map. You can add as many starting points as you like.</div>
-</div>
-
+  <TabItem value="Select on map" label="Select on map" default className="tabItemBox">
+ 
+  Click on <code>Select on map</code>. Select the starting point(s) by clicking on the respective location(s) in the map. You can add as many starting points as you like.
 
   </TabItem>
-  <TabItem value="Select From Layer" label="Select From Layer" className="tabItemBox">
 
- #### Select From Layer
-
- <div class="step">
-  <div class="step-number">8</div>
-  <div class="content">Click on <code>Select from layer</code>. Select the <code>Point layer</code> which contains the starting point(s) you like to use.</div>
-</div>
-
-
+  <TabItem value="Select from layer" label="Select from layer" className="tabItemBox">
+  
+  Click on <code>Select from layer</code>. Select the <code>Point layer</code> which contains the starting point(s) you would like to use.
+  
   </TabItem>
 </Tabs>
 
 <div class="step">
-  <div class="step-number">9</div>
+  <div class="step-number">8</div>
   <div class="content">Click on <code>Run</code>. This starts the capturing of the Nearby Stations from the selected starting point(s).</div>
 </div>
 
@@ -124,10 +113,10 @@ Depending on the number of the selected starting points, the calculation might t
 ### Results
 
 <div class="step">
-  <div class="step-number">10</div>
+  <div class="step-number">9</div>
   <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called <b>"Nearby Stations"</b>, showing the Nearby PT Stations, and one layer called <b>"Starting Points - Nearby Stations"</b> which provides all starting points that were used for the calculation of this indicator. 
   <p></p>
-  When clicking on a point in the map, further details, such as <b>stop name</b>, <b>access time [min]</b> and <b>frequency of the PT Service [min]</b>, become visible.
+  When clicking on a point in the map, further details, such as <b>stop name</b>, <b>access time [min]</b> and <b>aggregate frequency of PT service [min]</b>, become visible.
 </div>
 </div>
 
