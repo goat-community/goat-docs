@@ -3,6 +3,6 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "An analysis can only be as good as its input data. GOAT is therefore equipped with a variety of high quality data sets. You can also upload and integrate your own data sets."
+    "description": "High-quality input data is a crucial part of perfoming analyses. GOAT is therefore equipped with a variety of such datasets and also allows you to upload your own."
   }
 }
