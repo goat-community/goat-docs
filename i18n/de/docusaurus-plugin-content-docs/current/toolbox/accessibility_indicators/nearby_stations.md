@@ -8,37 +8,36 @@ import TabItem from '@theme/TabItem';
 
 # PT Nearby Stations
 
-The **PT Nearby Stations** analysis is used to find public transport stops accessible by walking or cycling within a given time. For each stop, departure information by mode and route is provided.
+Die **PT Nearby Stations**-Analyse wird verwendet, um öffentliche Verkehrshaltestellen zu finden, die zu Fuß oder mit dem Fahrrad innerhalb einer bestimmten Zeit erreichbar sind. Für jede Haltestelle werden Abfahrtsinformationen nach Verkehrsmittel und Route bereitgestellt.
 
-## 1. Explanation
+## 1. Erklärung
 
-The Public Transport (PT) Nearby Stations access analysis is a suitable tool to **visualize public transport stops and their connections** that are accessible by walking/cycling from one or more starting point(s). The nearest stops, the public transport lines available there, their frequency, and the journey time to reach the stop on foot and by bike are provided as a result.
+Die Nahverkehrsanalyse (PT Nearby Stations) ist ein geeignetes Werkzeug, um **öffentliche Verkehrshaltestellen und deren Verbindungen** zu visualisieren, die zu Fuß oder mit dem Fahrrad von einem oder mehreren Ausgangspunkten erreichbar sind. Die nächstgelegenen Haltestellen, die dort verfügbaren öffentlichen Verkehrslinien, ihre Frequenz und die Reisezeit zu Fuß und mit dem Fahrrad werden als Ergebnis bereitgestellt.
 
-**Proximity to nearby stations** is essential for various aspects of urban life and is important in urban planning. The availability of public transport connections significantly improves accessibility for residents, workers, and visitors.
+**Die Nähe zu nahegelegenen Stationen** ist für verschiedene Aspekte des städtischen Lebens wesentlich und wichtig in der Stadtplanung. Die Verfügbarkeit von öffentlichen Verkehrsverbindungen verbessert die Erreichbarkeit für Bewohner, Arbeiter und Besucher erheblich.
 
 
 ![Nearby Stations in GOAT](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_example.png "Nearby Stations in GOAT")
 
 :::info 
-The calculation of the nearby stations is only available for areas where the public transport network is integrated into GOAT.
+Die Berechnung der nahegelegenen Stationen ist nur für Gebiete verfügbar, in denen das öffentliche Verkehrsnetz in GOAT integriert ist.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence for nearby stations calculation in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
 </div> 
 
-In case you need to perform analysis beyond this geofence, feel free to contact the [Support](https://plan4better.de/en/contact/ "Contact Support") and we will check what is possible. 
+Falls Sie eine Analyse außerhalb dieses Geofence durchführen müssen, wenden Sie sich bitte an den [Support](https://plan4better.de/en/contact/ "Contact Support") und wir werden prüfen, was möglich ist.
 :::
 
 
-## 2. Example use cases 
+## 2. Anwendungsbeispiele
 
-- Which public transport stations are nearby and provide convenient access to key attractions and landmarks for tourists exploring a new city?
-- When considering daily commuting to work, which nearby public transport stations offer optimal routes and schedules for a seamless journey?
-- What are the nearby public transport stations for convenient access to shopping centers?
+- Welche öffentlichen Verkehrshaltestellen befinden sich in der Nähe und bieten bequemen Zugang zu wichtigen Sehenswürdigkeiten und Wahrzeichen für Touristen, die eine neue Stadt erkunden?
+- Bei der täglichen Pendelstrecke zur Arbeit, welche nahegelegenen öffentlichen Verkehrshaltestellen bieten optimale Routen und Fahrpläne für eine nahtlose Reise?
+- Welche nahegelegenen öffentlichen Verkehrshaltestellen bieten bequemen Zugang zu Einkaufszentren?
 
 
-
-## 3. How to use the indicator?
+## 3. Wie verwendet man den Indikator?
 
 <div class="step">
   <div class="step-number">1</div>
@@ -52,7 +51,7 @@ In case you need to perform analysis beyond this geofence, feel free to contact 
 
 ![Menu Overview for Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_overview.png "Menu Overview for Public Transport Nearby Stations")
 
-### Station Access
+### Zugang zur Haltestelle
 
 <div class="step">
   <div class="step-number">3</div>
@@ -64,7 +63,7 @@ In case you need to perform analysis beyond this geofence, feel free to contact 
   <div class="content">Set the configurations for the Station Access by choosing <code>Travel time limit (min)</code> and <code>Travel speed (km/h)</code>.</div>
 </div>
 
-### Station Configuration
+### Konfiguration der Haltestelle
 
 <div class="step">
   <div class="step-number">5</div>
@@ -78,7 +77,7 @@ In case you need to perform analysis beyond this geofence, feel free to contact 
 
 ![Configurations for Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_config.png "Configurations for Public Transport Nearby Stations")
 
-### Starting Points
+### Ausgangspunkte
 
 <div class="step">
   <div class="step-number">7</div>
@@ -88,13 +87,13 @@ In case you need to perform analysis beyond this geofence, feel free to contact 
 <Tabs>
   <TabItem value="Select on map" label="Select on map" default className="tabItemBox">
  
-  Click on <code>Select on map</code>. Select the starting point(s) by clicking on the respective location(s) in the map. You can add as many starting points as you like.
+  Klicken Sie auf <code>Auf der Karte auswählen</code>. Wählen Sie den/die Ausgangspunkt(e) aus, indem Sie auf die jeweiligen Position(en) in der Karte klicken. Sie können beliebig viele Ausgangspunkte hinzufügen.
 
   </TabItem>
 
   <TabItem value="Select from layer" label="Select from layer" className="tabItemBox">
   
-  Click on <code>Select from layer</code>. Select the <code>Point layer</code> which contains the starting point(s) you would like to use.
+  Klicken Sie auf <code>Aus Ebene auswählen</code>. Wählen Sie die <code>Punktebene</code> aus, die die Ausgangspunkte enthält, die Sie verwenden möchten.
   
   </TabItem>
 </Tabs>
@@ -104,13 +103,13 @@ In case you need to perform analysis beyond this geofence, feel free to contact 
   <div class="content">Click on <code>Run</code>. This starts the capturing of the Nearby Stations from the selected starting point(s).</div>
 </div>
 
-:::tip Hint
+:::tip Hinweis
 
-Depending on the number of the selected starting points, the calculation might take some minutes. The [status bar](../../workspace/home#status-bar) shows the current progress.
+Je nach Anzahl der ausgewählten Ausgangspunkte kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../workspace/home#status-bar) zeigt den aktuellen Fortschritt an.
 
 :::
 
-### Results
+### Ergebnisse
 
 <div class="step">
   <div class="step-number">9</div>
@@ -125,10 +124,10 @@ Depending on the number of the selected starting points, the calculation might t
 
 
 
-:::tip Tip
-Want to style your results and create nice-looking maps? See [Styling](../../map/layer_style/styling).
+:::tip Tipp
+Möchten Sie Ihre Ergebnisse stylen und ansprechende Karten erstellen? Siehe [Styling](../../map/layer_style/styling).
 :::
 
-## 4. Technical details
+## 4. Technische Details
 
-Similar to the Public Transport Quality Classes <i>(German: ÖV-Güteklassen)</i>, this indicator is calculated based on **GTFS data**** (see [Data Basis](../../data/data_basis)). Based on the selected modes, day, and time window, the PT Nearby Stations are received.
+Ähnlich wie die Public Transport Quality Classes (ÖV-Güteklassen) wird dieser Indikator auf Basis von **GTFS-Daten** berechnet (siehe [Datenbasis](../../data/data_basis)). Basierend auf den ausgewählten Verkehrsmitteln, dem Tag und dem Zeitfenster werden die nahegelegenen PT-Stationen ermittelt.
