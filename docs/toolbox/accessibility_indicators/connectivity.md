@@ -186,7 +186,7 @@ Connectivity formula:
 Where ***i*** is a travel time step and ***n*** is the travel time limit. This function computes the total geographic area (in sq. meters) from which the destination cell in your AOI is accessible.
 
 ### Classification
-To classify the connectivity levels that were computed for each grid cell (for color-coded visualization), a classification based on quantiles is used.
+To classify the connectivity levels that were computed for each grid cell (for color-coded visualization), a classification based on quantiles is used by default. However, various other classification methods may be used instead. Read more in the **[Data Classification Methods](../../map/layer_style/attribute_based_styling#data-classification-methods)** section of the *Attribute-based Styling* page.
 
 ### Visualization 
 
