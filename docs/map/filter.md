@@ -22,7 +22,7 @@ Logic and spatial expressions can be added based on the attributes of **point la
 
 :::info
 
-The **filter operation does not alter the original data**. However, you can use the filtered data for various tools within GOAT, such as [scenario analysis](../category/scenarios) and [heatmap calculations](../category/Heatmaps).
+The **filter operation does not alter the original data**. It can be used on any layer to constrain the data used for visualization and analysis, without changing the underlying dataset. If reset, all original data associated with the layer will once again be visible.
 
 :::
 
