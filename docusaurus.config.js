@@ -129,12 +129,7 @@ const config = {
           },
           {
             type: "localeDropdown",
-            position: "right",
-            dropdownItemsAfter: [
-              {
-                to: "https://my-site.com/help-us-translate",
-              },
-            ],
+            position: "right"
           },
           {
             type: "docsVersionDropdown",
