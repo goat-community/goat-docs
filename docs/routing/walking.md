@@ -10,7 +10,7 @@ The **Walk Routing** is used for all analyses in GOAT that contain walking trips
  
 ## 1. Objectives
 
-Walk routing is used for many indicators in GOAT, such as [Catchment Areas](../toolbox/accessibility_indicators/catchments "Visit Docs on Catchment Areas"), [Heatmaps](../toolbox/accessibility_indicators/heatmaps/connectivity.md "Visit Docs on Heatmaps"), and [PT Nearby Stations](../toolbox/accessibility_indicators/nearby_stations "Visit Docs on PT Nearby Stations"). As GOAT also allows the creation of [Scenarios on the Paths Network](../scenarios/ways), a **custom routing algorithm** is needed that also reflects the changes of the scenario in the accessibility analyses. For the mode of walking, we thereby **only consider paths that are suitable for pedestrians**. The walking `speed` can be adjusted by the user whenever an accessibility analysis is performed. 
+Walk routing is used for many indicators in GOAT, such as [Catchment Areas](../toolbox/accessibility_indicators/catchments "Visit Docs on Catchment Areas"), [Heatmaps](../toolbox/accessibility_indicators/connectivity "Visit Docs on Heatmaps"), and [PT Nearby Stations](../toolbox/accessibility_indicators/nearby_stations "Visit Docs on PT Nearby Stations"). As GOAT also allows the creation of [Scenarios on the Paths Network](../scenarios/ways), a **custom routing algorithm** is needed that also reflects the changes of the scenario in the accessibility analyses. For the mode of walking, we thereby **only consider paths that are suitable for pedestrians**. The walking `speed` can be adjusted by the user whenever an accessibility analysis is performed. 
 
 ## 2. Data
 
@@ -37,9 +37,10 @@ The following steps are performed on the data to enable **quick** and **accurate
 2. **Edge Filtering:**  Include only relevant edges for walking.
 
 For pedestrian routing, the edges of the following road classes are considered:
-`secondary`, `tertiary`, `residential`, `livingStreet`, `trunk`,
-`unclassified`, `parkingAisle`, `driveway`, `pedestrian`, `footway`,
-`steps`, `track`, `bridleway`, and `unknown`. *(You can find further information on this classification in the [Overture Wiki](https://docs.overturemaps.org/themes/transportation/roads#road-class).)*
+
+`secondary`, `tertiary`, `residential`, `living_street`, `trunk`, `unclassified`, `parking_aisle`, `driveway`, `alley`, `pedestrian`, `footway`, `sidewalk`, `crosswalk`, `steps`, `track`, `bridleway` and `unknown`.
+
+You can find further information on this classification in the [Overture Wiki](https://docs.overturemaps.org/schema/reference/transportation/segment).
 
 #### Artificial Edge Creation
 

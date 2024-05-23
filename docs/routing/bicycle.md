@@ -12,7 +12,7 @@ The **Bicycle/Pedelec Routing** is used for all analyses in GOAT that contain cy
  
 ## 1. Objectives
 
-Bicycle/Pedelec routing is used for many indicators in GOAT, such as [Catchment Areas](../toolbox/accessibility_indicators/catchments "Visit Docs on Catchment Areas"), [Heatmaps](../toolbox/accessibility_indicators/heatmaps "Visit Docs on Heatmaps") and [PT Nearby Stations](../toolbox/accessibility_indicators/nearby_stations "Visit Docs on PT Nearby Stations"). As GOAT also allows the creation of [Scenarios on the Paths Network](../scenarios/ways), a **custom routing algorithm** is needed that also reflects the changes of the scenario in the accessibility analyses. For the mode of bicycle/pedelec, we thereby **only consider paths that are suitable for cycling**. Furthermore, the `surface` and `slope` have an impact on the cycling speed and are therefore considered in the routing. The average cycling `speed` can be adjusted by the user whenever an accessibility analysis is performed. Depending on the slope and surface of a path segment, the speed is adjusted accordingly. 
+Bicycle/Pedelec routing is used for many indicators in GOAT, such as [Catchment Areas](../toolbox/accessibility_indicators/catchments "Visit Docs on Catchment Areas"), [Heatmaps](../toolbox/accessibility_indicators/connectivity "Visit Docs on Heatmaps") and [PT Nearby Stations](../toolbox/accessibility_indicators/nearby_stations "Visit Docs on PT Nearby Stations"). As GOAT also allows the creation of [Scenarios on the Paths Network](../scenarios/ways), a **custom routing algorithm** is needed that also reflects the changes of the scenario in the accessibility analyses. For the mode of bicycle/pedelec, we thereby **only consider paths that are suitable for cycling**. Furthermore, the `surface` and `slope` have an impact on the cycling speed and are therefore considered in the routing. The average cycling `speed` can be adjusted by the user whenever an accessibility analysis is performed. Depending on the slope and surface of a path segment, the speed is adjusted accordingly. 
 
 
 ## 2. Data
@@ -47,9 +47,10 @@ The following steps are performed on the data to enable **quick** and **accurate
 2. **Edge Filtering:**  Include only relevant edges for cycling.
 
 For bicycle/pedelec routing, the edges of the following street classes are considered:
-`secondary`, `tertiary`, `residential`, `livingStreet`, `trunk`,
-`unclassified`, `parkingAisle`, `driveway`, `pedestrian`, 
-`track`, `cycleway`, `bridleway`, and `unknown`. *(You can find further information on this classification in the [Overture Wiki](https://docs.overturemaps.org/schema/reference/transportation/segment).)*
+
+`secondary`, `tertiary`, `residential`, `living_street`, `trunk`, `unclassified`, `parking_aisle`, `driveway`, `alley`, `pedestrian`, `crosswalk`, `track`, `cycleway`, `bridleway` and `unknown`.
+
+You can find further information on this classification in the [Overture Wiki](https://docs.overturemaps.org/schema/reference/transportation/segment).
 
 #### Artificial Edge Creation
 
@@ -58,15 +59,14 @@ User-provided origin points are typically located a short distance away from the
 #### Edge Cost Computation
 
 For all edges in the sub-network, a cost value (represented as time) is calculated based on path length and cycling speed.
+
 Cost function for **bicycle**:
 `cost = (length * (1 + slope impedance + surface impedance)) / speed`
 
 Cost function for **pedelec**:
 `cost = (length * (1 + surface impedance)) / speed`
 
-If an edge is of class `pedestrian`, we assume the rider would dismount and walk their bicycle/pedelec. The cost for this type of segment even for routing mode bicycle/pedelec is:
-`cost = length / speed`
-
+If an edge is of class `pedestrian` or `crosswalk`, we assume the rider would dismount and walk their bicycle/pedelec. The cost for this type of segment is: `cost = length / speed`
 
 #### Network Propagation
 
