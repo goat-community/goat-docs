@@ -52,7 +52,7 @@ The color palette provides several customization options. You can define your **
 
 ## Color Scale
 
-Under the <code>Color Scale</code>, you will find the **data classification method** and the **color scale** that associates data values with a spectrum of colors. It converts a given data value within a given range (domain) into a corresponding color from a given color spectrum (range). GOAT provides six predefined **data classification methods**: [Quantile](#quantile), [Standard Deviation](#standard-deviation), [Equal Interval](#equal-interval), [Heads and Tails](#heads-and-tails), [Custom Breaks](#custom-breaks-for-numbers), [Custom Ordinal](#custom-ordinal-for-strings).
+Under the <code>Color Scale</code>, you will find the **data classification method** and the **color scale** that associates data values with a spectrum of colors. It converts a given data value within a given range (domain) into a corresponding color from a given color spectrum (range). GOAT provides six predefined **data classification methods**: [Quantile](#quantile), [Standard Deviation](#standard-deviation), [Equal Interval](#equal-interval), [Heads and Tails](#heads-and-tails), [Custom Breaks](#custom-breaks-for-numbers), and [Custom Ordinal](#custom-ordinal-for-strings).
 
 ## Data Classification Methods
 

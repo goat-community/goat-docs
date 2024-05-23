@@ -6,33 +6,8 @@ sidebar_position: 4
 
 The **Data Catalog** is a comprehensive listing of all [geospatial datasets](../further_reading/glossary#geospatial-data) available for exploration and analysis. A wide range of datasets are provided by Plan4Better, our partners, and [open source](../further_reading/glossary#open-source) libraries, ensuring a **reliable and accurate** database for your GIS projects.
 
-<div class="content"><img src={require('/img/workspace/catalog/catalog-menu.png').default} alt="Data Catalog" style={{ maxHeight: "700px", maxWidth: "160px"}}/></div>
+<div class="content"><img src={require('/img/workspace/catalog/home-catalog.png').default} alt="Data Catalog" style={{ maxHeight: "700px", maxWidth: "800px"}}/></div>
 
-
-## Use catalog data on your GOAT project:
-
-<div class="step">
-  <div class="step-number">1</div>
-  <div class="content"> Under the <b>Layer</b> tab click <code> + Add Layer</code>.</div>
-</div>
-
-<div class="step">
-  <div class="step-number">2</div>
-  <div class="content"> Select <code>Catalog Explorer</code> and browse the <b>Data Catalog</b>.</div>
-</div>
-
-<div class="content"><img src={require('/img/workspace/catalog/catalog-explorer.png').default} alt="Catalog Explorer" style={{ maxHeight: "700px", maxWidth: "160px"}}/></div>
-
-<div class="step">
-  <div class="step-number">3</div>
-  <div class="content"> Select a <i>dataset</i> and click <code>Add Layer</code>.</div>
-</div>
-
-<div class="content"><img src={require('/img/workspace/catalog/add-layer.png').default} alt="Catalog Explorer" style={{ maxHeight: "700px", maxWidth: "400px"}}/></div>
-
-:::tip HINT
-Once the dataset is set as a layer within your project <code><img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "16px", maxWidth: "16px"}}/> Filter</code> your data. Read more [filter datasets.](../workspace/datasets#filter-datasets "Filter dataset")
-:::
 
 ## Explore the GOAT data catalog:
 
@@ -60,3 +35,37 @@ Our catalog features an extensive collection of datasets spanning different them
 - **Transportation**:** Information on transportation networks and infrastructure, including roads, highways, railways, airports, ports, and public transport systems.
 
 - **Places:** Points of interest and geographic landmarks such as schools, car-sharing locations, tourist attractions, and hospitals.
+
+
+## Use catalog data on your GOAT project:
+
+<div class="step">
+  <div class="step-number">1</div>
+  <div class="content"> Under the <b>Layer</b> tab click <code> + Add Layer</code>.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">2</div>
+  <div class="content"> Select <code>Catalog Explorer</code> and browse the <b>Data Catalog</b>.</div>
+</div>
+
+<div class="content"><img src={require('/img/workspace/catalog/map-catalog.png').default} alt="Catalog Explorer" style={{ maxHeight: "700px", maxWidth: "800px"}}/></div>
+
+<div class="step">
+  <div class="step-number">3</div>
+  <div class="content"> Select a <i>dataset</i> and click <code>Add Layer</code>.</div>
+</div>
+
+<div class="content"><img src={require('/img/workspace/catalog/add-layer.png').default} alt="Catalog Explorer" style={{ maxHeight: "700px", maxWidth: "800px"}}/></div>
+
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content"> Apply <code>Filter</code> to the new <code>Layer</code> added and improve your analysis.</div>
+</div>
+
+
+:::tip HINT
+
+Once the dataset is set as a layer within your project <code><img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "16px", maxWidth: "16px"}}/> Filter</code> your data. Read more [filter datasets.](../map/filter.md "Filter dataset")
+
+:::

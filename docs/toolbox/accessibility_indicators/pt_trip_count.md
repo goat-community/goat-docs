@@ -98,7 +98,7 @@ Depending on the size of the selected area, the calculation might take some minu
 
 :::tip Hint
 
-If you are interested in one specific mode, e.g. only busses, you can use the [attribute-based styling](../../map/layer_style/smart_styling) to adjust the point color based on that desired column.
+If you are interested in one specific mode, e.g. only busses, you can use the [attribute-based styling](../../map/layer_style/attribute_based_styling.md) to adjust the point color based on that desired column.
 
 :::
 

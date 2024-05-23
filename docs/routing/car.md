@@ -10,7 +10,7 @@ The **Car Routing** is used for all analyses in GOAT that contain car trips.
 
 ## 1. Objectives
 
-Car routing is used for many indicators in GOAT, such as [Catchment Areas](../toolbox/accessibility_indicators/catchments) and [Heatmaps](../toolbox/accessibility_indicators/heatmaps/closest_facilities.md). 
+Car routing is used for many indicators in GOAT, such as [Catchment Areas](../toolbox/accessibility_indicators/catchments) and [Heatmaps](../toolbox/accessibility_indicators/heatmaps/connectivity.md). 
 
 As GOAT also allows the creation of [Scenarios on the Paths Network](../scenarios/ways), a **custom routing algorithm** is needed that also reflects the changes of the scenario in the accessibility analyses. For the mode of the car, we thereby **only consider paths that are suitable for driving**.
 
@@ -39,7 +39,7 @@ The following steps are performed on the data to enable  **quick**  and  **accur
 2.  **Edge Filtering:**  Include only relevant edges for driving.
 
 For car routing, the edges of the following street classes are considered:
- `motorway`, `primary`, `secondary`, `tertiary`, `residential`, `living_street`, `trunk`, `parking_aisle`, `driveway`, `alley`, `track`.  *(You can find further information on this classification in the  [Overture Wiki](https://docs.overturemaps.org/themes/transportation/roads#road-class)*.)
+ `motorway`, `primary`, `secondary`, `tertiary`, `residential`, `living_street`, `trunk`, `parking_aisle`, `driveway`, `alley`, `track`.  *(You can find further information on this classification in the  [Overture Wiki](https://docs.overturemaps.org/schema/reference/transportation/segment)*.)
 
 #### Artificial Edge Creation
 

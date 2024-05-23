@@ -49,7 +49,7 @@ The following steps are performed on the data to enable **quick** and **accurate
 For bicycle/pedelec routing, the edges of the following street classes are considered:
 `secondary`, `tertiary`, `residential`, `livingStreet`, `trunk`,
 `unclassified`, `parkingAisle`, `driveway`, `pedestrian`, 
-`track`, `cycleway`, `bridleway`, and `unknown`. *(You can find further information on this classification in the [Overture Wiki](https://docs.overturemaps.org/themes/transportation/roads#road-class).)*
+`track`, `cycleway`, `bridleway`, and `unknown`. *(You can find further information on this classification in the [Overture Wiki](https://docs.overturemaps.org/schema/reference/transportation/segment).)*
 
 #### Artificial Edge Creation
 

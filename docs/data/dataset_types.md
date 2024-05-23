@@ -41,9 +41,12 @@ Unlike internal datasets, which are stored and managed directly within GOAT, ext
 ### 1. Imageries
 Imagery datasets are datasets that are provided by external sources such as **WMS** (Web Map Service) or **WMTS** (Web Map Tile Service). Therewith, a wide range of georeferenced map images, such as topographic maps, can be obtained from external servers and integrated into GOAT. While these images can be incorporated as static maps, it is important to note that they do not support analytical functions. 
 
+
 :::tip Note
+
 The styling of these external image datasets is dependent on the external service providing the WMS (e.g. service from GeoServer "https://wms.websitehai.com/geoserver/ows?SERVICE=WMS&") or WMTS. 
 Consequently, the visual presentation of the map imagery, including elements such as color schemes and representation of geographic features, cannot be changed within the GOAT framework.
+
 :::
 
 

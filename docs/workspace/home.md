@@ -18,11 +18,11 @@ The list below explains the navigation toolbar in the Workspace.
 
 | Icon and Label| Usage |
 | :-: | --- |
-| <img src={require('/img/workspace/home/home_n.png').default} alt="home" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | The landing page when you login |
-| <img src={require('/img/workspace/home/projects_n.png').default} alt="projects" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Here, you can manage your projects |
-| <img src={require('/img/workspace/home/datasets_n.png').default} alt="datasets" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Here, you can manage your datasets |
-| <img src={require('/img/workspace/home/catalog_n.png').default} alt="catalog" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Here, you can browse all the datasets available within GOAT |
-| <img src={require('/img/workspace/home/settings_n.png').default} alt="settings" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | The page where you can edit your profile and preferences settings |
+| <img src={require('/img/workspace/home/bar-home.png').default} alt="home" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | The landing page when you login |
+| <img src={require('/img/workspace/home/bar-projects.png').default} alt="projects" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Here, you can manage your projects |
+| <img src={require('/img/workspace/home/bar-dataset.png').default} alt="datasets" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Here, you can manage your datasets |
+| <img src={require('/img/workspace/home/bar-catalog.png').default} alt="catalog" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Here, you can browse all the datasets available within GOAT |
+| <img src={require('/img/workspace/home/bar-settings.png').default} alt="settings" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | The page where you can edit your profile and preferences settings |
 
 
 ### Recent Projects

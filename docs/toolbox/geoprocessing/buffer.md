@@ -198,7 +198,7 @@ The  ``Polygon Difference`` operation creates a **geometric difference** of the 
 
 :::tip Tip
 
-Want to style your buffers and create nice-looking maps? See [Styling](../../map/layer_style/smart_styling).
+Want to style your buffers and create nice-looking maps? See [Styling](../../map/layer_style/styling.md).
 
 :::
 
