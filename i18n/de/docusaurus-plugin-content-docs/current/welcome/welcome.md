@@ -5,7 +5,7 @@ slug: /
 
 # Willkommen 👋
 
-GOAT ist eine **WebGIS-Plattform** mit Planungsintelligenz für die Bereiche der ****Stadt- und Verkehrsplanung**. Ausgestattet mit umfangreichen Daten [data](../data/data_basis.md) und Funktionalitäten bietet sie Planern und GIS-Nutzern eine faktenbasierte Analyse. Neben der Berechnung von Benchmarks und der Analyse bestehender Situationen können potenzielle **Szenarien** erstellt und bewertet werden. Die Plattform bietet eine moderne Möglichkeit und einen intuitiven „User-Flow“, um den Planungsprozess zu vereinfachen. Das Hauptziel von GOAT ist es, durch innovative Funktionen und Designs ****intelligentere**, ****kollaborativere** und ****effizientere** Planung zu ermöglichen.
+GOAT ist eine **WebGIS-Plattform** mit Planungsintelligenz für die Bereiche der **Stadt- und Verkehrsplanung**. Ausgestattet mit umfangreichen Daten [data](../data/data_basis.md) und Funktionalitäten bietet sie Planern und GIS-Nutzern eine faktenbasierte Analyse. Neben der Berechnung von Benchmarks und der Analyse bestehender Situationen können potenzielle **Szenarien** erstellt und bewertet werden. Die Plattform bietet eine moderne Möglichkeit und einen intuitiven „User-Flow“, um den Planungsprozess zu vereinfachen. Das Hauptziel von GOAT ist es, durch innovative Funktionen und Designs **intelligentere**, **kollaborativere** und **effizientere** Planung zu ermöglichen.
 
 :::tip Tip
 
