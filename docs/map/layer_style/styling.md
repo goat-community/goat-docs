@@ -100,5 +100,5 @@ By clicking on <code>Reset</code>, you can reset the current style settings back
 
 
 :::tip HINT
-Interested in **smart styling** options? Check our [Attribute-based Styling](../layer_style/smart_styling).
+Interested in **smart styling** options? Check our [Attribute-based Styling](../layer_style/attribute_based_styling).
 :::
