@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Our Datasets
+# Unsere Datensätze
 
 
 ### Data as an important basis for analyses
