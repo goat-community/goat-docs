@@ -1,12 +1,12 @@
 ---
 sidebar_position: 2
-
+sidebar_class_name: hidden
 ---
 
 # Spatial Join
 
 :::info coming soon
 
-Documentation of the functionality will be online soon. 🧑🏻‍💻
+This feature is currently under development. 🧑🏻‍💻
 
 :::
