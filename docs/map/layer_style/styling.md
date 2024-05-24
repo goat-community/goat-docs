@@ -2,13 +2,9 @@
 sidebar_position: 20
 ---
 
+# Basic Styling
 
-
-
-# Core Styling Elements
-
-
-When you add a new layer to your project, it is assigned a default style depending on the type of data. By customizing the <code>Layer design</code> <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> menu, you can adjust the visualization of the datasets to your wishes and **create appealing maps**. The styling options available depend on the type of data, i.e. whether it is points, lines, or polygons. Thereby, multiple visual aspects, such as **colors**, **strokes**, and **opacities** can be adjusted.
+When you add a new layer to your project, it is assigned a default style based on the type of data. By customizing options in the <code>Layer design <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "15px", maxWidth: "15px", objectFit: "cover"}}/></code> menu, you can adjust the visualization of the layer and **create appealing maps**. The styling options available depend on the type of data contained by a layer, i.e. whether it is points, lines, or polygons. Thereby, multiple visual aspects, such as **colors**, **strokes**, and **opacities** can be adjusted.
 
 
 ## Color Settings
@@ -25,7 +21,7 @@ Fill color is used to represent the **interior** of **point or polygon features*
 
 #### Opacity
 
-To adjust the opacity of your layer styles for fill color, simply change the opacity to any **value between 0 and 1**. This numerical scale allows you to define the exact level of opacity you want, where **0 is full transparency** and **1 is full opacity**. Adjust the opacity to your preference, either by using the slider or by typing the exact level directly into the text box provided.
+To adjust the opacity of your layer styles for fill color, simply change the opacity to any **value between 0 and 1**. This numerical scale allows you to define the exact level of opacity you want, where **0 is transparent** and **1 is opaque**. Adjust the opacity to your preference, either by using the slider or by typing the exact level directly into the text box provided.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
