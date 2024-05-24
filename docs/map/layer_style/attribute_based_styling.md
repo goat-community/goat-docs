@@ -4,18 +4,20 @@ sidebar_position: 21
 
 # Attribute-based Styling
 
-GOAT allows users to apply **attribute-based styling** techniques to enhance the data visualization on maps. This approach allows the visual representation to **reflect variations and patterns in the data**, making it easier to recognize and understand complex information spatially.
+GOAT supports **attribute-based styling** to enhance the visualization of data on maps. This approach allows the visual representation to reflect variations and patterns in the data, making it easier to understand complex spatial information.
 
-Under the <code>Layer design</code> <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> menu, you will find the available styling settings for the layer selected.  <code>Fill Color</code>, <code>Stroke Color</code>, <code>Custom Marker</code>, and <code>Labels</code>. Each option has the <b>options button</b><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Under it, you will find the attribute-based styling, for that specific style setting (either Fill Color, Stroke Color, Custom marker, or Label). Style your map based on its dataset attributes. To edit the style attribute make sure the attribute toggle is ON, and then click the <b>options button</b><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>.
+In the <code>Layer design <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "15px", maxWidth: "21px", objectFit: "cover"}}/></code> menu, you will find styling options for your selected layer. Each aspect of a layer's visualization (<i>Fill Color</i>, <i>Stroke Color</i>, <i>Custom Marker</i> and <i>Labels</i>) can be individually styled according to a field or attribute within the layer's data. To enable attribute-based styling for any of these, ensure its attribute toggle is ON, and then click the <b>options button</b> <code><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "15px", maxWidth: "15px", objectFit: "cover"}}/></code>.
 
 
 :::tip HINT
-If you like to save your styling settings and use them in further projects, you can do so by [saving a style as default](../layer_style/styling/#default-settings). 
+If you would like to save your styling settings and use them in further projects, you can do so by [saving a style as default](../layer_style/styling/#default-settings). 
 :::
 
 ## Select Attribute 
 
-For the attribute-based styling, first, select the attribute that you like to visualize in the field <code>Color based on</code>. The data shall be ordered by a **data classification method** and associated with a <code>Color Palette</code>, and a <code>Color Scale</code>.
+To style based on an attribute, select it from the <code>Color based on</code> field's dropdown menu. This will list all the attributes or columns available in your layer's data.
+
+The visualization will then be styled automatically according to the range of values in the data. A <code>Color Palette</code> and <code>Color Scale</code> is assigned by default, but can all be customized to better suit your data and visualization needs. The *color scale* uses a [**data classification method**](#data-classification-methods) to determine how data values are assigned to different color categories.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -25,14 +27,11 @@ For the attribute-based styling, first, select the attribute that you like to vi
 
 ## Color Palette
 
- Under Palette, you will find GOAT's comprehensive set of palettes, all designed to provide **visually impactful spatial data representation**. 
- For further customization, you may set different <code>Palette Type</code>, <code>Palette Steps</code>,  
- A color palette is a collection of colors chosen to represent the values scale or categories, within your dataset. 
- Under the Palette, you may select from different pallettes types.
+In this section, you will find GOAT's comprehensive set of palettes, all designed to provide **visually impactful spatial data representation**. A palette is a collection of colors chosen to represent the scale of values or categories within your layer's data.
  
- GOAT provides a comprehensive set of predefined palettes, each of which has been designed to provide a **visually impactful representation of spatial data**. These palettes are categorized into four different groups for ease of selection and application.
-
-The color palette provides several customization options. You can define your **number of steps** for a palette, you can **reverse** the colors and you can also define your **custom palette**.
+ For further customization, you may choose a different palette <code>Type</code>, number of <code>Steps</code>, or <code>Reverse</code> the colors. You can also define a custom range of colors by enabling the <code>Custom</code> toggle button.
+ 
+ GOAT provides a comprehensive set of predefined palettes, categorized into four different *palette types* for ease of selection and application.
 
 <p></p>
 
