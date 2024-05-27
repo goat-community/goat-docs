@@ -45,19 +45,19 @@ Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Click on <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Heatmap Connectivity</code>.</div>
+  <div class="content">Under the <code>Erreichbarkeitsindikatoren</code> menu, klicken Sie auf<code>Heatmap Konnektivität</code>.</div>
 </div>
 
 ### Routing
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Pick the <code>Routing Type</code> you would like to use for the heatmap.</div>
+  <div class="content">Wählen Sie ein <code>Verkehrsmittel</code> welches Sie für die Heatmap verwenden möchten.</div>
 </div>
 
 <Tabs>
@@ -124,7 +124,7 @@ Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Car](..
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Choose a <code>Travel Time Limit</code> for your heatmap. This will be used in the context of your previously selected <i>Routing Type</i>.</div>
+  <div class="content">Wählen Sie ein <code>Reisezeitlimit</code> für Ihre Heatmap aus. Dies wird im Zusammenhang mit Ihrem zuvor ausgewählten <i>Verkehrsmittel</i> verwendet.</div>
 </div>
 
 :::tip Hinweis
@@ -135,13 +135,13 @@ Benötigen Sie Hilfe bei der Auswahl einer geeigneten Reisezeit für verschieden
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Select the <code>Reference Layer</code> (layer containing your AOI) for which you would like to calculate the heatmap. This can be any polygon feature layer.</div>
+  <div class="content">Wählen Sie die <code>Referenzlayer</code> (Layer, der Ihren AOI enthält), für den Sie die Heatmap berechnen möchten. Dies kann eine beliebiger Polygon-Feature-Layer sein.</div>
 </div>
 
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Click <code>Run</code> to start the calculation of the heatmap.</div>
+  <div class="content">Klicken Sie auf <code>Ausführen</code>, um mit der Berechnung der Heatmap zu beginnen.</div>
 </div>
 
 :::tip Hinweis
@@ -154,9 +154,9 @@ Je nach Ihrer Konfiguration kann die Berechnung einige Minuten dauern. Die [Stat
 
 <div class="step">
   <div class="step-number">10</div>
-  <div class="content">Once the calculation is complete, a result layer will be added to the map. This <i>Heatmap Connectivity</i> layer will contain your color-coded heatmap.
+  <div class="content">Nach Abschluss der Berechnung wird ein Ergebnisslayer zur Karte hinzugefügt. Dieser Layer "<i>Heatmap Konnektivität</i>" wird Ihre farblich gekennzeichnete Heatmap enthalten.
   <p></p>
-  Clicking on any of the heatmap's hexagonal cells will reveal the computed connectivity value for this cell.</div>
+  Durch Klicken auf eine der hexagonalen Zellen der Heatmap wird der berechnete Konnektivitätswert für diese Zelle angezeigt.</div>
 </div>
 
 
