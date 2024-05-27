@@ -3,74 +3,74 @@ sidebar_position: 2
 
 ---
 
-# Bicycle/Pedelec
+# Fahrrad/Pedelec
 
 
-The **Bicycle/Pedelec Routing** is used for all analyses in GOAT that contain cycling trips. 
+Das **Fahrrad/Pedelec-Routing** wird für alle Analysen in GOAT verwendet, die Fahrradfahrten enthalten. 
 
 
  
-## 1. Objectives
+## 1. Zielsetzung
 
-Bicycle/Pedelec routing is used for many indicators in GOAT, such as [Catchment Areas](../toolbox/accessibility_indicators/catchments "Visit Docs on Catchment Areas"), [Heatmaps](../toolbox/accessibility_indicators/connectivity "Visit Docs on Heatmaps") and [PT Nearby Stations](../toolbox/accessibility_indicators/nearby_stations "Visit Docs on PT Nearby Stations"). As GOAT also allows the creation of [Scenarios on the Paths Network](../scenarios/ways), a **custom routing algorithm** is needed that also reflects the changes of the scenario in the accessibility analyses. For the mode of bicycle/pedelec, we thereby **only consider paths that are suitable for cycling**. Furthermore, the `surface` and `slope` have an impact on the cycling speed and are therefore considered in the routing. The average cycling `speed` can be adjusted by the user whenever an accessibility analysis is performed. Depending on the slope and surface of a path segment, the speed is adjusted accordingly. 
-
-
-## 2. Data
-
-### Routing Network
-
-Data from the **[Overture Maps Foundation](https://overturemaps.org/)** is used as a routing network in GOAT. It includes the transportation infrastructure with **edges** (for any continuous path not bisected by another) and **nodes** (for any point where two distinct paths intersect), representing real-world networks.
+Das Fahrrad-/Pedelec-Routing wird für viele Indikatoren in GOAT verwendet, wie z.B. [Catchment Areas](../toolbox/accessibility_indicators/catchments "Visit Docs on Catchment Areas"), [Heatmaps](../toolbox/accessibility_indicators/connectivity "Visit Docs on Heatmaps") und [PT Nearby Stations](../toolbox/accessibility_indicators/nearby_stations "Visit Docs on PT Nearby Stations"). Da GOAT auch die Erstellung von [Scenarios on the Paths Network](../scenarios/ways) erlaubt, wird ein **angepasster Routing-Algorithmus** benötigt, der auch die Änderungen des Szenarios in den Erreichbarkeitsanalysen widerspiegelt. Für den Verkehrsträger Fahrrad/Pedelec werden dabei **nur Wege berücksichtigt, die für den Radverkehr geeignet sind**. Darüber hinaus haben die `surface` und die `slope` einen Einfluss auf die Radfahrgeschwindigkeit und werden daher bei der Routenplanung berücksichtigt. Die durchschnittliche `speed` einer radfahrender Person kann vom Benutzer bei jeder Erreichbarkeitsanalyse angepasst werden. Abhängig von der Steigung und Oberfläche eines Wegabschnitts wird die Geschwindigkeit entsprechend angepasst. 
 
 
-### Topography and Elevation
+## 2. Daten
 
-Elevation data is sourced from **[Copernicus](https://www.copernicus.eu/en)** as **Digital Elevation Model (DEM)** tiles.
+### Routing-Netzwerk
 
-
-## 3. Technical Details
-
-### Data Pre-processing
-
-The following steps are performed on the data to enable **quick** and **accurate** routing for bicycle/pedelec:
-
- 1. **Attribute Parsing:** Categorizing attributes of edges (street `class` and `surface`).
- 2. **Geospatial Indexing:**  Utilizing **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** indexing for efficient routing.
- 3. **Surface Impedance Computation:** Calculating impedance considering surface properties.
- 4. **Slope Impedance Computation:** Overlaying DEM on edges to compute slope profiles.
+Die Daten der **[Overture Maps Foundation](https://overturemaps.org/)** iwerden in GOAT als Routing-Netzwerk verwendet. Es umfasst die Verkehrsinfrastruktur mit **Kanten** (für jeden durchgehenden Weg, der nicht von einem anderen halbiert wird) und **Knoten** (für jeden Punkt, an dem sich zwei verschiedene Wege kreuzen), die reale Netzwerke darstellen.
 
 
-### Routing Process Steps
+### Topographie und Höhenlage
 
-#### Sub-network Extraction
+Die Höhendaten stammen von **[Copernicus](https://www.copernicus.eu/en)** als **Digital Elevation Model (DEM)** Kacheln.
 
-1. **Buffer Region:** Based on user-origin, travel time, and speed.
-2. **Edge Filtering:**  Include only relevant edges for cycling.
 
-For bicycle/pedelec routing, the edges of the following street classes are considered:
+## 3. Technische Details
+
+### Datenvorverarbeitung
+
+Die folgenden Schritte werden an den Daten durchgeführt, um ein **schnelles** und **genaues** Routing für Fahrrad/Pedelec zu ermöglichen:
+
+ 1. **Attribute Parsing:**  Kategorisierung der Attribute der Kanten (Straßen `class` und `surface`).
+ 2. **Geospatial Indexing:**  Nutzen des **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** Indexing für effizientes Routing.
+ 3. **Oberflächenimpedanzberechnung:** Berechnung der Impedanz unter Berücksichtigung der Oberflächeneigenschaften.
+ 4. **Steigungsimpedanzberechnung:** Überlagerung von DEM auf Kanten zur Berechnung von Steigungsprofilen.
+
+
+### Routing-Prozess-Schritte
+
+#### Extraktion von Teilnetzen
+
+1. **Pufferregion:** Basierend auf Benutzerherkunft, Reisezeit und Geschwindigkeit.
+2. **Kantenfilterung:** Es werden nur die für den Radverkehr relevanten Kanten berücksichtigt.
+
+Für das Fahrrad-/Pedelec-Routing werden die Kanten der folgenden Straßenklassen berücksichtigt:
 
 `secondary`, `tertiary`, `residential`, `living_street`, `trunk`, `unclassified`, `parking_aisle`, `driveway`, `alley`, `pedestrian`, `crosswalk`, `track`, `cycleway`, `bridleway` and `unknown`.
 
-You can find further information on this classification in the [Overture Wiki](https://docs.overturemaps.org/schema/reference/transportation/segment).
+Weitere Informationen zu diesen Klassifizierunged sind im [Overture Wiki](https://docs.overturemaps.org/schema/reference/transportation/segment) zu finden.
 
-#### Artificial Edge Creation
+#### Erstellung künstlicher Kanten
 
-User-provided origin points are typically located a short distance away from the street network. To account for the additional time (or cost) of cycling from the origin to its nearest street, artificial (or simulated) edges are created.
+Die vom Benutzer bereitgestellten Ausgangspunkte befinden sich in der Regel in geringer Entfernung zum Straßennetz. Um die zusätzliche Zeit (oder die Kosten) für die Fahrt vom Ausgangspunkt zur nächstgelegenen Straße zu berücksichtigen, werden künstliche (oder simulierte) Kanten erstellt.
 
-#### Edge Cost Computation
+#### Berechnung der Kantenkosten
 
-For all edges in the sub-network, a cost value (represented as time) is calculated based on path length and cycling speed.
+Für alle Kanten im Teilnetz wird ein Kostenwert (dargestellt als Zeit) auf der Grundlage der Weglänge und der Radfahrgeschwindigkeit berechnet.
 
-Cost function for **bicycle**:
+Kostenfunktion für **Fahrrad**:
 `cost = (length * (1 + slope impedance + surface impedance)) / speed`
 
-Cost function for **pedelec**:
+Kostenfunktion für **Pedelec**:
 `cost = (length * (1 + surface impedance)) / speed`
 
-If an edge is of class `pedestrian` or `crosswalk`, we assume the rider would dismount and walk their bicycle/pedelec. The cost for this type of segment is: `cost = length / speed`
+Wenn eine Kante der Klasse `pedestrian` oder `crosswalk` angehört, gehen wir davon aus, dass der Fahrer absteigt und sein Fahrrad/Pedelec geht. Die Kosten für diese Art von Segmenten sind: `cost = length / speed`
 
-#### Network Propagation
+#### Netzausbreitung
 
-To compute the shortest path from the origin point to various destinations, a custom implementation of the well-known [Dijkstra Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) is used.
+Um den kürzesten Weg vom Ausgangspunkt zu verschiedenen Zielen zu berechnen, wird eine eigene Implementierung des bekannten [Dijkstra Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) verwendet.
 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -79,9 +79,9 @@ To compute the shortest path from the origin point to various destinations, a cu
 </div>
 
 
-The implementation has a time complexity of *O(ElogV)*, is written in **Python**, and uses the just-in-time compiler **Numba**.
+Die Implementierung hat eine Zeitkomplexität von *O(ElogV)*, ist in **Python** geschrieben und verwendet den just-in-time compiler **Numba**.
 
 
-## 4. Further Readings
+## 4. Weitere Lektüre
 
 - E. Pajares, B. Büttner, U. Jehle, A. Nichols, and G. Wulfhorst, ‘Accessibility by proximity: Addressing the lack of interactive accessibility instruments for active mobility’, *Journal of Transport Geography*, Vol. 93, p. 103080, May 2021, [doi: 10.1016/j.jtrangeo.2021.103080](https://doi.org/10.1016/j.jtrangeo.2021.103080).
