@@ -7,54 +7,50 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 
-# Aggregate Polygons
+# Polygone aggregieren
 
-The **Aggregate Polygon** tool performs statistical analysis of polygons, e.g. count, sum, min, or max, and **aggregates the information on polygons**.
+Das **Polygone aggregieren**-Werkzeug führt statistische Analysen von Polygonen durch, z.B. Anzahl, Summe, Minimum oder Maximum, und **aggregiert die Informationen auf Polygonen**.
 
-## 1. Explanation
+## 1. Erklärung
 
-With the Aggregate Polygons tool, data can be combined or aggregated between different polygon layers based on their **spatial relationships**. These spatial relationships are calculated using different **statistical approaches**. This technique is useful for analyzing and visualizing how different geographical entities interact, making them easier to analyze and interpret.
+Mit dem Polygone aggregieren-Werkzeug können Daten zwischen verschiedenen Polygon-Layern basierend auf ihren **räumlichen Beziehungen** kombiniert oder aggregiert werden. Diese räumlichen Beziehungen werden mithilfe verschiedener **statistischer Ansätze** berechnet. Diese Technik ist nützlich, um zu analysieren und zu visualisieren, wie verschiedene geografische Entitäten interagieren, was die Analyse und Interpretation erleichtert.
 
-The example below shows the geometry of the *Source Layer* remains the same, while its attribute table will be enriched by aggregating information from the *Area of Aggregation*.
+Das untenstehende Beispiel zeigt, dass die Geometrie der *Referenz-Layer* gleich bleibt, während ihre Attributtabelle durch die Aggregation von Informationen aus der *Aggregationsfläche* erweitert wird.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/toolbox/geoanalysis/aggregate_polygons/polygon_aggregation.png').default} alt="Polygon Aggregation" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
+## 2. Anwendungsbeispiele
 
-## 2. Example use cases
+- Visualisierung der Anzahl von Parks pro Stadtteil.
+- Berechnung der durchschnittlichen Gebäudegröße in einem Gebiet.
+- Aggregation der Bevölkerungszahlen auf einem hexagonalen Raster und Berechnung der Bevölkerungsdichten.
 
-- Visualizing the number of parks per city district.
-- Calculating the mean building size in an area.
-- Aggregating population numbers on a hexagonal grid and calculating population densities.
-
-## 3. How to use the tool?
-
+## 3. Wie benutzt man das Werkzeug?
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Klicke auf <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Geoanalysis</code> menu, click on <code>Aggregate Polygons</code>.</div>
+  <div class="content">Klicke im Menü <code>Geoanalyse</code> auf <code>Polygone aggregieren</code>.</div>
 </div>
-
-
 
 <img src={require('/img/toolbox/geoanalysis/aggregate_polygons/aggregate_polygons.png').default} alt="Polygon Aggregation Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
-### Layer to aggregate
+### Layer zum Aggregieren
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select your <code>Source Layer</code>, which contains the data you like to aggregate.</div>
+  <div class="content">Wähle deinen <code>Referenz-Layer</code>, der die Daten enthält, die du aggregieren möchtest.</div>
 </div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select on which <code> Area Type</code> you like to aggregate the source layer. You can choose between <b>Polygon</b> or <b>H3 grid</b>.</div>
+  <div class="content">Wähle, auf welchem <code>Gebietstyp</code> du die Referenz-Layer aggregieren möchtest. Du kannst zwischen <b>Polygon</b> oder <b>H3-Raster</b> wählen.</div>
 </div>
 
 <Tabs>
@@ -64,74 +60,72 @@ The example below shows the geometry of the *Source Layer* remains the same, whi
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Select the <code>Area Layer</code> which contains the polygons on which you like to aggregate your point data.</div>
+  <div class="content">Wähle die <code>Gebiets-Layer</code>, die die Polygone enthält, auf denen du deine Punktdaten aggregieren möchtest.</div>
 </div>
 
-
   </TabItem>
-  <TabItem value="H3 Grid" label="H3 Grid" className="tabItemBox">
+  <TabItem value="H3 Grid" label="H3-Raster" className="tabItemBox">
 
- #### H3 Grid
+ #### H3-Raster
 
  <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Select the <code>H3 Grid Resolution</code>. You can choose resolutions between <b>3</b> (average edge length of 69km) and <b>10</b> (average edge length of 70m).</div>
+  <div class="content">Wähle die <code>H3-Rasterauflösung</code>. Du kannst zwischen Auflösungen von <b>3</b> (durchschnittliche Kantenlänge von 69 km) und <b>10</b> (durchschnittliche Kantenlänge von 70 m) wählen.</div>
 </div>
 
-:::tip NOTE
+:::tip HINWEIS
 
-To learn more about the H3 grid, you can visit the [Glossary](../../further_reading/glossary#H3-grid).
+Um mehr über das H3-Raster zu erfahren, kannst du das [Glossar](../../further_reading/glossary#H3-grid) besuchen.
 
 :::
 
   </TabItem>
 </Tabs>
 
-### Statistics
+### Statistiken
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Select the <code> Statistic Method</code> and <code>Field Statistics</code> (the field in the source layer that is used to group the aggregation.).</div>
+  <div class="content">Wähle die <code>Statistische Methode</code> und <code>Feldstatistik</code> (das Feld in der Referenz-Layer, das zur Gruppierung der Aggregation verwendet wird).</div>
 </div>
 
-Available **Statistics Methods** are listed in the following. The available methods depend on the data type of the chosen attribute:
+Die verfügbaren **Statistischen Methoden** sind im Folgenden aufgeführt. Die verfügbaren Methoden hängen vom Datentyp des ausgewählten Attributs ab:
 
-| Method | Type | Description |
+| Methode | Typ | Beschreibung |
 | -------|------| ------------|
-| Count  | `string`,`number`    | Counts the number of non-null values in the selected column|
-| Sum    | `number`   | Calculates the sum of all the numbers in the selected column|
-| Mean   | `number`   | Calculates the average (mean) value of all numeric values in the selected column|
-| Median | `number`   | Yields the middle value in the selected column's sorted list of numeric values|
-| Min    | `number`   | Yields the minimum value of the selected column|
-| Max    | `number`   | Yields the maximum value of the selected column|
-
+| Anzahl | `string`,`number`    | Zählt die Anzahl der Nicht-Null-Werte in der ausgewählten Spalte|
+| Summe  | `number`   | Berechnet die Summe aller Zahlen in der ausgewählten Spalte|
+| Mittelwert | `number`   | Berechnet den Durchschnitt (Mittelwert) aller numerischen Werte in der ausgewählten Spalte|
+| Median | `number`   | Gibt den Mittelwert in der sortierten Liste der numerischen Werte der ausgewählten Spalte zurück|
+| Min    | `number`   | Gibt den Minimalwert der ausgewählten Spalte zurück|
+| Max    | `number`   | Gibt den Maximalwert der ausgewählten Spalte zurück|
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">If you wish, you can enable the <b>Weighted by Intersection Area</b> by clicking on the <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Therewith, aggregated values are weighted by the share of the intersection area between the <i>Source Layer</i> and the <i>Aggregation Layer</i>.</div>
+  <div class="content">Wenn du möchtest, kannst du die Option <b>Gewichtet nach Schnittfläche</b> aktivieren, indem du auf die <b>Optionsschaltfläche</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> klickst. Dadurch werden aggregierte Werte nach dem Anteil der Schnittfläche zwischen dem <i>Referenz-Layer</i> und dem <i>Aggregations-Layer</i> gewichtet.</div>
 </div>
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Click on <code>Run</code>.</div>
+  <div class="content">Klicke auf <code>Ausführen</code>.</div>
 </div>
 
-:::tip Hint
+:::tip HINWEIS
 
-Depending on the size of the datasets, the calculation might take some minutes. The [status bar](../../workspace/home#status-bar) shows the current progress.
+Abhängig von der Größe der Datensätze kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../workspace/home#status-bar) zeigt den aktuellen Fortschritt an.
 
 :::
 
-### Results
+### Ergebnisse
 
 <div class="step">
   <div class="step-number">9</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layer <b>"Aggregation Polygon"</b> will be added to the map. The result layer will consist of the information of the source layer and an <b>additional column</b> showing the results from the <b>statistical operation</b>. You can see the table by clicking on the polygon on the map.</div>
+  <div class="content">Sobald der Berechnungsprozess abgeschlossen ist, wird die resultierende Ebene <b>"Aggregation Polygon"</b> der Karte hinzugefügt. Die Ergebnis-Ebene besteht aus den Informationen der Referenz-Layer und einer <b>zusätzlichen Spalte</b>, die die Ergebnisse der <b>statistischen Operation</b> anzeigt. Du kannst die Tabelle sehen, indem du auf das Polygon auf der Karte klickst.</div>
 </div>
 
 <img src={require('/img/toolbox/geoanalysis/aggregate_polygons/aggregate_polygons_result.png').default} alt="Polygon Aggregation Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
 
-:::tip Tip
-Want to style your result layer and create nice-looking maps? See [Styling](../../map/layer_style/styling).
+:::tip Tipp
+Möchtest du deinen Ergebnislayer stylen und ansprechende Karten erstellen? Siehe [Styling](../../map/layer_style/styling).
 :::
 
