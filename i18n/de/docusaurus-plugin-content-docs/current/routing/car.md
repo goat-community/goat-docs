@@ -3,71 +3,67 @@ sidebar_position: 4
 
 ---
 
-# Car
+# Auto
 
-The **Car Routing** is used for all analyses in GOAT that contain car trips.
-
-
-## 1. Objectives
-
-Car routing is used for many indicators in GOAT, such as [Catchment Areas](../toolbox/accessibility_indicators/catchments) and [Heatmaps](../toolbox/accessibility_indicators/connectivity). 
-
-As GOAT also allows the creation of [Scenarios on the Paths Network](../scenarios/ways), a **custom routing algorithm** is needed that also reflects the changes of the scenario in the accessibility analyses. For the mode of the car, we thereby **only consider paths that are suitable for driving**.
-
-## 2. Data
-
-### Routing Network
-
-Data from the  **[Overture Maps Foundation](https://overturemaps.org/)**  is used as a routing network in GOAT. It includes the transportation infrastructure with **edges**  (for any continuous path not bisected by another) and **nodes**  (for any point where two distinct paths intersect), representing real-world networks.
+Das **Car Routing** wird für alle Analysen in GOAT verwendet, die Autofahrten enthalten.
 
 
-## 3. Technical Details
+## 1. Ziele
 
-### Data Pre-processing
+Car Routing wird für viele Indikatoren in GOAT verwendet, wie z.B. [Catchment Areas](../toolbox/accessibility_indicators/catchments) und [Heatmaps](../toolbox/accessibility_indicators/connectivity). 
 
-The following steps are performed on the data to enable  **quick**  and  **accurate**  routing for cars:
+Da GOAT auch die Erstellung von [Scenarios on the Paths Network](../scenarios/ways) erlaubt, wird ein **angepasster Routing-Algorithmus** benötigt, der auch die Änderungen des Szenarios in den Erreichbarkeitsanalysen widerspiegelt. Für den Verkehrsträger Auto werden dabei **nur Wege berücksichtigt, die für das Fahren geeignet sind**.
 
-1.  **Attribute Parsing:**  Categorizing attributes of edges (street `class` and `surface`).
-2.  **Geospatial Indexing:**  Utilizing  **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)**  indexing for efficient routing.
-3.  **Extracting Restrictions:**  Identifying one-way access restrictions in addition to speed limits for both directions of the edge (`maxspeed_forward` and `maxspeed_backward`).
+## 2. Daten
 
-### Routing Process Steps
+### Routing Netzwerk
 
-#### Sub-network Extraction
+Daten von der  **[Overture Maps Foundation](https://overturemaps.org/)**  werden in GOAT als Routing-Netzwerk verwendet. Dieses beschreibt die Verkehrsinfrastruktur mit **Kanten** (für jeden durchgehenden Weg, der nicht von einem anderen halbiert wird) und **Knoten** (für jeden Punkt, an dem sich zwei verschiedene Wege kreuzen), die reale Netzwerke darstellen.
 
-1.  **Buffer Region:**  Based on user-origin, travel time, and maximum potential driving speed.
-2.  **Edge Filtering:**  Include only relevant edges for driving.
 
-For car routing, the edges of the following street classes are considered:
+## 3. Technische Details
+
+### Datenvorverarbeitung
+
+Die folgenden Schritte werden an den Daten durchgeführt, um ein **schnelles** und **genaues** Routing für Autos zu ermöglichen:
+
+1.  **Attribut-Parsing:** Kategorisierung der Attribute von Kanten (Straßen `class` und `surface`).
+2.  **Geospatial Indexing:**  Nutzung des  **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)**  Indexing für effizientes Routing.
+3.  **Extrahieren von Beschränkungen:** Identifizieren von Einweg-Zugangsbeschränkungen zusätzlich zu den Geschwindigkeitsbegrenzungen für beide Richtungen der Kante (`maxspeed_forward` and `maxspeed_backward`).
+
+### Routing-Prozess-Schritte
+
+#### Extraktion von Teilnetzen
+
+1.  **Pufferregion:** Basierend auf der Herkunft des Nutzers, der Reisezeit und der maximal möglichen Fahrgeschwindigkeit.
+2.  **Kantenfilterung:** Es werden nur die für die Fahrt relevanten Kanten berücksichtigt.
+
+Für das Auto-Routing werden die Kanten der folgenden Straßenklassen berücksichtigt:
 
 `motorway`, `primary`, `secondary`, `tertiary`, `residential`, `living_street`, `trunk`, `parking_aisle`, `driveway`, `alley` and `track`.
     
-You can find further information on this classification in the [Overture Wiki](https://docs.overturemaps.org/schema/reference/transportation/segment).
+Weitere Informationen zu dieser Klassifizierung finden Sie im [Overture Wiki](https://docs.overturemaps.org/schema/reference/transportation/segment).
 
-#### Artificial Edge Creation
+#### Erstellung künstlicher Kanten
 
-User-provided origin points are typically located a short distance away from the street network. To account for the additional time (or cost) of driving from the origin to its nearest street (e.g. using an unmarked driveway), artificial (or simulated) edges are created.
+Für alle Kanten im Teilnetz wird ein Kostenwert (dargestellt als Zeit) auf der Grundlage von Weglänge und Fahrgeschwindigkeit berechnet.
 
-
-#### Edge Cost Computation
-
-For all edges in the sub-network, a cost value (represented as time) is calculated based on path length and driving speed.
-
-Cost function for car:
+Kostenfunktion für Auto:
 
 `cost_forward = length / maxspeed_forward`
 
 `cost_reverse = length / maxspeed_backward`
 
-When calculating `cost_reverse`, if an edge contains a one-way restriction and therefore must not be traversed in the reverse direction, it is given a very large cost. This prevents the routing algorithm from considering such edges for routing in the reverse direction.
+Bei der Berechnung von `cost_reverse` wird eine Kante, die eine Einbahnstraßenbeschränkung enthält und daher nicht in umgekehrter Richtung befahren werden darf, mit sehr hohen Kosten belegt. Dadurch wird verhindert, dass der Routing-Algorithmus solche Kanten für das Routing in umgekehrter Richtung in Betracht zieht.
+
 
 :::info Note
-GOAT's routing algorithm does not currently take into account **historic traffic patterns** for car routing. This feature is currently under development. 🧑🏻‍💻
+Der Routing-Algorithmus von GOAT berücksichtigt derzeit keine **historischen Verkehrsmuster** für das Routing von Fahrzeugen. Diese Funktion befindet sich derzeit in der Entwicklung. 🧑🏻‍💻
 :::
 
-#### Network Propagation
+#### Netzwerkausbreitung
 
-To compute the shortest path from the origin point to various destinations, a custom implementation of the well-known [Dijkstra Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) is used.
+Um den kürzesten Weg vom Ausgangspunkt zu verschiedenen Zielen zu berechnen, wird eine benutzerdefinierte Implementierung des bekannten [Dijkstra Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) verwendet.
 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -75,4 +71,4 @@ To compute the shortest path from the origin point to various destinations, a cu
 <p style={{ textAlign: 'center' }}>GIF: <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra Algorithm</a></p>
 </div>
 
-The implementation has a time complexity of *O(ElogV)*, is written in **Python**, and uses the just-in-time compiler **Numba**.
+Die Implementierung hat eine Zeitkomplexität von *O(ElogV)*, ist in **Python** geschrieben und verwendet den Just-in-Time-Compiler **Numba**.
