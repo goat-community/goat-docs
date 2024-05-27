@@ -3,66 +3,66 @@ sidebar_position: 3
 
 ---
 
-# Public Transport
+# Öffentliche Verkehrsmittel
 
-The **Public Transport Routing** in GOAT is essential for performing analyses that include public transport trips.
+Das **ÖPNV-Routing** in GOAT ist essentiell für die Durchführung von Analysen, welche Fahrten mit öffentlichen Verkehrsmitteln beinhalten.
 
-## 1. Objectives
+## 1. Zielsetzung
 
-Public transport routing facilitates **intermodal analysis** by integrating access and egress modes, such as walking or biking to and from the station. This is more complex than the other routing modes as it requires the merging of different datasets (such as sidewalks & bike lanes, public transport stops & schedules, etc.) and calculation approaches.
+Das ÖPNV-Routing erleichtert die **intermodale Analyse** durch die Integration von Ein- und Ausstiegsmodi, wie z.B. zu Fuß oder mit dem Fahrrad zum und vom Bahnhof. Dies ist komplexer als die anderen Routing-Modi, da es die Zusammenführung verschiedener Datensätze (z. B. Bürgersteige und Radwege, Haltestellen und Fahrpläne des öffentlichen Verkehrs usw.) und Berechnungsansätze erfordert.
 
-Public transport routing is used for many indicators in GOAT, such as [Catchment Areas](../toolbox/accessibility_indicators/catchments) and [Heatmaps](../toolbox/accessibility_indicators/connectivity).
+ÖPNV-Routing wird für viele Indikatoren in GOAT verwendet, wie z. B. [Catchment Areas](../toolbox/accessibility_indicators/catchments) und [Heatmaps](../toolbox/accessibility_indicators/connectivity).
 
-Moreover, with [Scenarios on the Paths Network](../scenarios/ways), a **flexible routing algorithm** adapts to scenario changes in accessibility analyses in GOAT.
+Darüber hinaus passt sich mit [Scenarios on the Paths Network](../scenarios/ways), ein **flexibler Routing-Algorithmus** an Szenarienänderungen bei Erreichbarkeitsanalysen in GOAT an.
 
-### Configurable Options for Analyses
+### Konfigurierbare Optionen für Analysen
 
-- `weekday`: Choose from Weekday, Saturday, or Sunday.
-- `start time` and `end time`: Specify the analysis time window.
-
-
-
-## 2. Data
-
-### Transit Data
-
-Utilizes data in **[GTFS](https://developers.google.com/transit/gtfs)** (General Transit Feed Specification) for static public transport network information (stops, routes, schedules, transfers).
+- `weekday`: Wählen Sie zwischen Wochentag, Samstag oder Sonntag.
+- `start time` und `end time`: Geben Sie das Zeitfenster für die Analyse an.
 
 
-### Street Data
 
-Incorporates street-level information from  **[OpenStreetMap](https://wiki.openstreetmap.org/)** to support multi-modal routing and real-world path connections (includes sidewalks, bike paths, and crosswalks).
+## 2. Daten
 
+### Transit-Daten
 
-## 3. Technical Details
-
-Public transport routing is performed using the **[R5 Routing Engine](https://github.com/conveyal/r5)** (_Rapid Realistic Routing on Real-world and Reimagined networks_). R5 is the routing engine from **[Conveyal](https://conveyal.com/)**, a web-based platform that allows users to create transportation scenarios and evaluate them in terms of cumulative opportunities and accessibility indicators.
+Verwendet Daten in **[GTFS](https://developers.google.com/transit/gtfs)** (General Transit Feed Specification) für statische Informationen zum öffentlichen Verkehrsnetz (Haltestellen, Routen, Fahrpläne, Umsteigeverbindungen).
 
 
-### Routing Options
+### Straßendaten
 
-#### Modes
+Bezieht Informationen auf Straßenebene von  **[OpenStreetMap](https://wiki.openstreetmap.org/)** ein, um multimodales Routing und reale Wegeverbindungen zu unterstützen (einschließlich Bürgersteige, Radwege und Fußgängerüberwege).
+
+
+## 3. Technische Einzelheiten
+
+PDas Routing für den öffentlichen Verkehr wird mit der **[R5 Routing Engine](https://github.com/conveyal/r5)** (_Rapid Realistic Routing on Real-world and Reimagined networks_) durchgeführt. R5 ist die Routing-Engine von **[Conveyal](https://conveyal.com/)**, einer webbasierten Plattform, die es den Nutzern ermöglicht, Verkehrsszenarien zu erstellen und sie im Hinblick auf kumulative Möglichkeiten und Erreichbarkeitsindikatoren zu bewerten.
+
+
+### Routing-Optionen
+
+#### Modi
 `bus` `tram` `rail` `subway` `ferry` `cable_car` `gondola` `funicular`
 
-#### Access and Egress Modes
+#### Zugangs- und Ausstiegsmodi
 
-- **Access Mode:** How users get to a transit stop from their starting location (`walk` `bicycle` `car`).
-- **Egress Mode:** How users proceed to their destination from a transit stop (`walk` `bicycle`).
+- **Zugangsmodus:** Wie die Nutzer von ihrem Ausgangsort zu einer Haltestelle gelangen (`walk` `bicycle` `car`).
+- **Ausstiegsmodus:** Wie die Benutzer von einer Haltestelle zu ihrem Ziel gelangen (`walk` `bicycle`).
 
 
-#### Other (Default Configurations)
+#### Sonstiges (Standardkonfigurationen)
 
-The following default configurations are used while performing public transport routing. They are not currently user-configurable.
+Die folgenden Standardkonfigurationen werden beim Routing für den öffentlichen Verkehr verwendet. Sie sind derzeit nicht vom Benutzer konfigurierbar.
 
-- **Decay function type:** logistic
-- **Standard deviation:** 12 minutes
-- **Width:** 10 minutes
-- **Walk speed:** 1.39 km/h
-- **Maximum walk time:** 20 minutes
-- **Bike speed:** 4.166666666666667 km/h
-- **Maximum bike time:** 20 minutes
-- **Bike traffic stress:** 4
-- **Maximum rides:** 4
-- **Zoom level:** 9
-- **Percentiles:** 5
-- **Monte Carlo draws:** 200
+- **Abklingfunktionstyp:** logistisch
+- **Standardabweichung:** 12 Minuten
+- **Breite:** 10 Minuten
+- **Gehgeschwindigkeit:** 1,39 km/h
+- **Maximale Gehzeit:** 20 Minuten
+- **Fahrradgeschwindigkeit:** 4,166666666666667 km/h
+- **Maximale Fahrradzeit:** 20 Minuten
+- **Radverkehrsbelastung:** 4
+- **Maximale Fahrten:** 4
+- **Zoomstufe:** 9
+- **Perzentile:** 5
+- **Monte Carlo zieht:** 200
