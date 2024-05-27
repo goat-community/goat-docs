@@ -8,23 +8,23 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 
 # Heatmap - Gravity
-A color-coded map to visualize the accessibility of points (such as [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) from surrounding areas.
+Eine farbkodierte Karte zur Visualisierung der Erreichbarkeit von Punkten (wie z.B. [POI](../../../further_reading/glossary#point-of-interest-poi „What is a POI?“)) aus der Umgebung.
 
-## 1. Explanation
+## 1. Erklärung
 
-Visualized as a color-coded hexagonal grid, the heatmap takes into account real-world transport and street networks to compute accessibility. After specifying a *routing type* (Walk, Bicycle, etc.), *opportunity layer* and *travel time limit*, the result will display a color-coded hexagonal grid for all areas accessible under these conditions. The color scale refers to local accessibility.
+Die Heatmap wird als farblich gekennzeichnetes sechseckiges Raster dargestellt und berücksichtigt reale Verkehrs- und Straßennetze, um die Erreichbarkeit zu berechnen. Nach Angabe einer *routing type*(zu Fuß, mit dem Fahrrad usw.), einer *opportunity layer* und einer *travel time limit* zeigt das Ergebnis ein farbkodiertes sechseckiges Raster für alle unter diesen Bedingungen erreichbaren Gebiete an. Die Farbskala bezieht sich auf die lokale Erreichbarkeit.
 
 :::info INFO
 
-An `Opportunity layer` contains [geographic point](../../../data/data_types "What are geographic points?") data. Select one or more such layers containing your destination points (opportunities) as input to the heatmap.
+Ein `Opportunity layer` enthält [geografische Punkte](../../../data/data_types „Was sind geografische Punkte?“). Wählen Sie einen oder mehrere solcher Layer mit Ihren Zielpunkten (Opportunities) als Input für die Heatmap.
 
 :::
 
-Unique to the gravity-based heatmap, customizable properties such as *sensitivity*, the *impedance function* and *destination potential* give you minute control over the method used and metadata taken into account while computing the accessibility value for an area. Influenced by these properties, the accessibility of a point can model complex real-world human behavior and is a powerful measure for transport and accessibility planning.
+Einzigartig an der Schwerkraft-basierten Heatmap sind die anpassbaren Eigenschaften wie *Empfindlichkeit*, *Impedanzfunktion* und *Zielpotenzial*, die Ihnen eine genaue Kontrolle über die verwendete Methode und die Metadaten geben, die bei der Berechnung des Erreichbarkeitswertes für ein Gebiet berücksichtigt werden. Beeinflusst durch diese Eigenschaften kann die Erreichbarkeit eines Punktes komplexes menschliches Verhalten in der realen Welt modellieren und ist ein leistungsfähiges Maß für die Verkehrs- und Erreichbarkeitsplanung.
 
-:::tip Pro tip
+:::tip Profi-Tipp
 
-Described succinctly, accessibility heatmaps are a visualization representing *access* from various unspecified origins, to one or more specified destinations. This is in contrast to catchment areas which represent *egress* from one or more specified origins to various unspecified destinations.
+Kurz gesagt, sind Erreichbarkeits-Heatmaps eine Visualisierung, die den *Zugang* von verschiedenen, nicht spezifizierten Ausgangspunkten zu einem oder mehreren spezifizierten Zielen darstellt. Dies steht im Gegensatz zu Einzugsgebieten, die den *Ausgang* von einem oder mehreren bestimmten Ursprüngen zu verschiedenen, nicht spezifizierten Zielen darstellen.
 
 :::
 
@@ -32,63 +32,63 @@ Described succinctly, accessibility heatmaps are a visualization representing *a
   
 :::info 
 
-Heatmaps are available in certain regions. Upon selecting a `Routing type`, a **geofence** will be displayed on the map to highlight supported regions.
+Heatmaps sind in bestimmten Regionen verfügbar. Bei der Auswahl eines „Routing type“ wird auf der Karte ein **geofence** angezeigt, um die unterstützten Regionen hervorzuheben.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/toolbox/accessibility_indicators/heatmaps/gravity_based/geofence.png').default} alt="Geofence for Gravity-based Heatmaps in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
 </div> 
 
 
-If you would like to perform analyses beyond this geofence, feel free to [contact us](https://plan4better.de/en/contact/ "Contact us"). We would be happy to discuss further options.
+Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie sich bitte an [contact us](https://plan4better.de/en/contact/ „Contact us“). Wir besprechen mit Ihnen gerne weitere Möglichkeiten.
 
 :::
 
-## 2. Example use cases
+## 2. Beispielhafte Anwendungsfälle
 
- - Which neighborhoods or areas have limited access to public amenities, such as parks, recreational facilities, or cultural institutions, and may require targeted interventions to improve accessibility?
+ - Welche Stadtteile oder Gebiete haben nur begrenzten Zugang zu öffentlichen Einrichtungen wie Parks, Freizeiteinrichtungen oder Kultureinrichtungen und erfordern möglicherweise gezielte Maßnahmen zur Verbesserung der Zugänglichkeit?
 
- - Are there areas with high potential for transit-oriented development or opportunities for improving non-motorized transportation infrastructure, such as bike lanes or pedestrian-friendly streets?
+ - Gibt es Gebiete mit hohem Potenzial für eine verkehrsorientierte Entwicklung oder Möglichkeiten zur Verbesserung der Infrastruktur für den nicht motorisierten Verkehr, z. B. Radwege oder fußgängerfreundliche Straßen?
 
- - What is the impact of a new amenity on local accessibility?
+ - Wie wirkt sich eine neue Einrichtung auf die lokale Erreichbarkeit aus?
 
- - Is there potential to expand the availability of services such as bike sharing or car sharing stations?
+ - Besteht die Möglichkeit, die Verfügbarkeit von Dienstleistungen wie Bike-Sharing oder Car-Sharing-Stationen zu erweitern?
 
- - How does the accessibility in various neighborhoods compare when taking into account the qualitative aspects of amenities (such as frequency of service at bus stops, size of supermarkets, capacity of schools, etc)?
+ - Wie ist die Erreichbarkeit in verschiedenen Stadtteilen im Vergleich, wenn man die qualitativen Aspekte der Einrichtungen berücksichtigt (z. B. Häufigkeit der Bushaltestellen, Größe der Supermärkte, Kapazität der Schulen usw.)?
 
- - What is the real-world accessibility of public transport stations when travel times to these stations impact their accessibility in a non-linear way?
+ - Wie sieht die reale Erreichbarkeit von Bahnhöfen des öffentlichen Verkehrs aus, wenn sich die Fahrtzeiten zu diesen Bahnhöfen nicht linear auf ihre Erreichbarkeit auswirken?
 
 
 
-## 3. How to use the indicator?
+## 3. Wie ist der Indikator zu verwenden?
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Click on <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Heatmap Gravity</code>.</div>
+  <div class="content">Under the <code>Erreichbarkeitsindikatoren</code> menu, click on <code>Heatmap Gravity</code>.</div>
 </div>
 
 ### Routing
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Pick the <code>Routing Type</code> you would like to use for the heatmap.</div>
+  <div class="content">Pick the <code>Verkehrsmittel</code> you would like to use for the heatmap.</div>
 </div>
 
 <Tabs>
 
 <TabItem value="walk" label="Walk" default className="tabItemBox">
 
-#### Walk
+#### Gehen
 
-Considers all paths accessible by foot. For heatmaps, a walking speed of 5 km/h is assumed.
+Berücksichtigt alle zu Fuß begehbaren Wege. Für Heatmaps wird eine Gehgeschwindigkeit von 5 km/h angenommen.
 
-:::tip Hint
+:::tip Tipp
 
-For further insights into the Routing algorithm, visit [Routing/Walk](../../routing/walking).
+Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Gehen](../../routing/walking).
 
 :::
 
@@ -96,13 +96,13 @@ For further insights into the Routing algorithm, visit [Routing/Walk](../../rout
   
 <TabItem value="cycling" label="Bicycle" className="tabItemBox">
 
-#### Bicycle
+#### Fahrrad
 
-Considers all paths accessible by bicycle. This routing mode takes into account the surface, smoothness and slope of streets while computing accessibility. For heatmaps, a cycling speed of 15 km/h is assumed.
+Berücksichtigt alle mit dem Fahrrad befahrbaren Wege. Dieser Routing-Modus berücksichtigt bei der Berechnung der Zugänglichkeit die Oberfläche, die Glätte und die Steigung der Straßen. Für Heatmaps wird eine Fahrradgeschwindigkeit von 15 km/h angenommen.
 
-:::tip Hint
+:::tip Tipp
 
-For further insights into the Routing algorithm, visit [Routing/Bicycle](../../routing/bicycle). In addition, you can check this [Publication](https://doi.org/10.1016/j.jtrangeo.2021.103080).
+Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Fahrrad](../../routing/fahrrad). Darüber hinaus können Sie diese [Publikation](https://doi.org/10.1016/j.jtrangeo.2021.103080) lesen.
 
 :::
 
@@ -112,11 +112,11 @@ For further insights into the Routing algorithm, visit [Routing/Bicycle](../../r
 
 #### Pedelec
 
-Considers all paths accessible by pedelec. This routing mode takes into account the surface and smoothness of streets while computing accessibility. For heatmaps, a pedelec speed of 23 km/h is assumed.
+Berücksichtigt alle mit dem Pedelec befahrbaren Wege. Dieser Routing-Modus berücksichtigt bei der Berechnung der Erreichbarkeit die Oberfläche und Glätte der Straßen. Für Heatmaps wird eine Pedelec-Geschwindigkeit von 23 km/h angenommen.
 
-:::tip Hint
+:::tip Tipp
 
-For further insights into the Routing algorithm, visit [Routing/Bicycle](../../routing/bicycle). In addition, you can check this [Publication](https://doi.org/10.1016/j.jtrangeo.2021.103080).
+Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Fahrrad](../../routing/fahrrad). Darüber hinaus können Sie diese [Publikation](https://doi.org/10.1016/j.jtrangeo.2021.103080) lesen.
 
 :::
 
@@ -124,13 +124,13 @@ For further insights into the Routing algorithm, visit [Routing/Bicycle](../../r
 
 <TabItem value="car" label="Car" className="tabItemBox">
 
-#### Car
+#### Auto
 
-Considers all paths accessible by car. This routing mode takes into account speed limits and one-way access restrictions while computing accessibility.
+Berücksichtigt alle mit dem Auto befahrbaren Wege. Dieser Routing-Modus berücksichtigt bei der Berechnung der Erreichbarkeit Geschwindigkeitsbegrenzungen und Einbahnstraßenbeschränkungen.
 
-:::tip Hint
+:::tip Tipp
 
-For further insights into the Routing algorithm, visit [Routing/Car](../../routing/car).
+Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Car](../../routing/car).
 
 :::
 
@@ -138,26 +138,26 @@ For further insights into the Routing algorithm, visit [Routing/Car](../../routi
 
 </Tabs>
 
-### Configuration
+### Konfiguration
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Pick the <code>Impedance Function</code> you would like to use for the heatmap.</div>
+  <div class="content">Wählen Sie die <code>Widerstandsfunktion</code> welche Sie für die Heatmap anwenden möchten.</div>
 </div>
 
 <Tabs>
 
 <TabItem value="gaussian" label="Gaussian" default className="tabItemBox">
 
-#### Gaussian
+#### Gaussfunktion
 
-This function calculates accessibilities based on a Gaussian curve, which is influenced by the `sensitivity` and `destination_potential` you define. For a more in-depth understanding, refer to the [Technical details](./gravity#4-technical-details) section.
+Diese Funktion berechnet die Zugänglichkeiten auf der Grundlage einer Gaußschen Kurve, die durch die von Ihnen definierten Parameter „Empfindlichkeit“ und „Zielpotential“ beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
-:::tip Pro tip
+:::tip Pro Tipp
 
-As studies have shown, the relationship between travel time and accessibility is often non-linear. This means that people may be willing to travel a short distance to reach an amenity, but as the distance increases, their willingness to travel rapidly decreases (often disproportionately).
+Wie Studien gezeigt haben, ist die Beziehung zwischen Reisezeit und Erreichbarkeit oft nicht linear. Das bedeutet, dass Menschen bereit sein können, eine kurze Strecke zurückzulegen, um eine Einrichtung zu erreichen, aber mit zunehmender Entfernung nimmt ihre Bereitschaft, diese Strecke zurückzulegen, schnell ab (oft überproportional).
 
-Leveraging the *sensitivity* you define, the Gaussian function allows you to model this aspect of real-world behaviour more accurately.
+Mit Hilfe der von Ihnen definierten *sensitivity* ermöglicht die Gauß-Funktion eine genauere Modellierung dieses Aspekts des Verhaltens in der realen Welt.
 
 :::
 
@@ -165,121 +165,120 @@ Leveraging the *sensitivity* you define, the Gaussian function allows you to mod
   
 <TabItem value="linear" label="Linear" default className="tabItemBox">
 
-#### Linear
+#### Lineare Funktion
 
-This function maintains a direct correlation between travel time and accessibility, which is modulated by the `destination_potential` you specify. For a more in-depth understanding, refer to the [Technical details](./gravity#4-technical-details) section.
+Diese Funktion stellt eine direkte Korrelation zwischen Reisezeit und Erreichbarkeit her, die durch das von Ihnen angegebene „destination_potential“ moduliert wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
 </TabItem>
 
 <TabItem value="exponential" label="Exponential" default className="tabItemBox">
 
-#### Exponential
+#### Exponentiale Funktion
 
-This function calculates accessibilities based on an exponential curve, which is influenced by the `sensitivity` and `destination_potential` you define. For a more in-depth understanding, refer to the [Technical details](./gravity#4-technical-details) section.
+Diese Funktion berechnet die Zugänglichkeiten auf der Grundlage einer Exponentialkurve, die von der von Ihnen definierten `sensitivity` und dem `destination_potential`  beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
 </TabItem>
 
 <TabItem value="power" label="Power" default className="tabItemBox">
 
-#### Power
+#### Powerfunktion
 
-This function calculates accessibilities based on a power curve, which is influenced by the `sensitivity` and `destination_potential` you define. For a more in-depth understanding, refer to the [Technical details](./gravity#4-technical-details) section.
+Diese Funktion berechnet die Zugänglichkeiten auf der Grundlage einer Leistungskurve, die durch die von Ihnen definierte `sensitivity` und das `destination_potential` beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
 </TabItem>
 
 </Tabs>
 
-### Opportunities
+### Gelegenheiten
 
-Opportunities are essentially point-based data (such as [POI](../../further_reading/glossary#point-of-interest-poi "What is a POI?")) for which you would like to compute a heatmap. These are the "destinations" (such as transit stations, schools, other amenities, or your own custom point-based data) while surrounding areas are "origins" for which an accessibility value will be computed and visualized.
+Gelegenheiten sind im Wesentlichen punktbasierte Daten (wie [POI](../../further_reading/glossary#point-of-interest-poi „Was ist ein POI?“)), für die Sie eine Heatmap berechnen möchten. Dies sind die „destinations“ (z. B. Bahnhöfe, Schulen, andere Einrichtungen oder Ihre eigenen punktbasierten Daten), während die umliegenden Gebiete „origins“ sind, für die ein Erreichbarkeitswert berechnet und visualisiert wird.
 
-Additionally, you may create more opportunities via the `+ Add Opportunity` button at the bottom of the drawer. All opportunity layers will be combined to produce a unified heatmap.
+Zusätzlich können Sie weitere Opportunities über die Schaltfläche `+ Add Opportunity`am unteren Rand der Leiste erstellen. Alle Opportunity-Layer werden kombiniert, um eine einheitliche Heatmap zu erstellen.
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Select your <code>Opportunity Layer</code> from the drop-down menu. This can be any previously created layer containing point-based data.</div>
+  <div class="content">Wählen Sie Ihren <code>Gelegenheitslayer</code> aus dem Dropdown-Menü aus. Dies kann ein zuvor erstellter Layer sein, der punktbasierte Daten enthält.</div>
 </div>
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Choose a <code>Travel Time Limit</code> for your heatmap. This will be used in the context of your previously selected <i>Routing Type</i>.</div>
+  <div class="content">Wählen Sie eine <code>Reisezeitbegrenzung</code> für Ihre Heatmap aus. Dies wird im Kontext Ihres zuvor ausgewählten <i>Verkehrsmittel</i> verwendet.</div>
 </div>
 
-:::tip Hint
+:::tip Tipp
 
-Need help choosing a suitable travel time limit for various common amenities? The ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
+Benötigen Sie Hilfe bei der Auswahl einer geeigneten Reisezeit für verschiedene Gemeinschaftseinrichtungen? Das [„Standort-Werkzeug“] (https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) der Stadt Chemnitz kann Ihnen dabei behilflich sein.
 
 :::
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">If required, choose a <code>Destination Potential Field</code>. This must be a numeric field from your <i>Opportunity Layer</i> which will be used as a coefficient by the accessibility function.</div>
+  <div class="content">Wenn erforderlich, wählen Sie ein <code>Zielpotenzialfeld</code> aus. Dies muss ein numerisches Feld aus Ihrem <i>Gelegenheitslayer</i> sein, das als Koeffizient von der Zugänglichkeitsfunktion verwendet wird.</div>
 </div>
 
-:::tip Pro-tip
+:::Tipp Pro-Tipp
 
-*Destination potential* is a useful way to prioritize certain opportunities over others. For example, if there are two supermarkets and one is nearer than the other, it would typically receive a higher accessibility score due to its proximity. However, if the supermarket farther away is larger, you may want to give it a higher level of importance. *Destination potential* allows you to use an additional property (such as the size of supermarkets) to assign opportunities a "potential" and employ qualitative information while computing accessibility.
+Das *Zielpotenzial* ist eine nützliche Methode, um bestimmte Möglichkeiten gegenüber anderen zu bevorzugen. Wenn es zum Beispiel zwei Supermärkte gibt und einer näher liegt als der andere, würde er aufgrund seiner Nähe in der Regel eine höhere Erreichbarkeitsbewertung erhalten. Wenn der weiter entfernte Supermarkt jedoch größer ist, sollten Sie ihm eine höhere Priorität einräumen. Mit *Destination potential* können Sie eine zusätzliche Eigenschaft (z. B. die Größe von Supermärkten) verwenden, um Opportunities ein "potential" zuzuweisen und bei der Berechnung der Erreichbarkeit qualitative Informationen zu verwenden.
 
 :::
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Specify a <code>Sensitivity</code> value. This must be numeric and will be used by the heatmap function to determine how accessibility changes with increasing travel time.</div>
+  <div class="content">Geben Sie einen Wert für die <code>Sensitivität</code> an. Dieser muss numerisch sein und wird von der Heatmap-Funktion verwendet, um zu bestimmen, wie sich die Zugänglichkeit mit zunehmender Reisezeit ändert.</div>
 </div>
-
 
 <div class="step">
   <div class="step-number">9</div>
-  <div class="content">Click <code>Run</code> to start the calculation of the heatmap.</div>
+  <div class="content">Klicken Sie auf <code>Ausführen</code>, um die Berechnung der Heatmap zu starten.</div>
 </div>
 
-:::tip Hint
+:::tip Tipp
 
-Depending on your configuration, the calculation might take a few minutes. The [status bar](../../workspace/home#status-bar) displays current progress.
+Je nach Ihrer Konfiguration kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../Arbeitsbereich/home#status-bar) zeigt den aktuellen Fortschritt an.
 
 :::
 
-### Results
+### Ergebnisse
 
 <div class="step">
   <div class="step-number">10</div>
-  <div class="content">Once the calculation is complete, a result layer will be added to the map. This <i>Heatmap Gravity</i> layer will contain your color-coded heatmap.
+  <div class="content">Sobald die Berechnung abgeschlossen ist, wird ein Ergebnislayer zur Karte hinzugefügt. Dieser Layer namens <i>Heatmap Gravity</i> enthält Ihre farblich gekennzeichnete Heatmap.
   <p></p>
-  Clicking on any of the heatmap's hexagonal cells will reveal the computed accessibility value for this cell.</div>
+  Durch Klicken auf eine der hexagonalen Zellen der Heatmap wird der berechnete Zugänglichkeitswert für diese Zelle angezeigt.</div>
 </div>
 
 
-![Heatmap Gravity-Based Calculation Result in GOAT](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/heatmap_gravity_result.png "Heatmap Gravity-Based Calculation Result in GOAT")
+![Ergebnis der Schwerkraftbasierten Heatmap-Berechnung in GOAT](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/heatmap_gravity_result.png "Ergebnis der Schwerkraftbasierten Heatmap-Berechnung in GOAT")
 
 
-:::tip Tip
+:::tip Tipp
 
-Want to style your heatmaps and create nice-looking maps? See [Styling](../../map/layer_style/styling).
+Möchten Sie Ihre Heatmaps editieren und schöne Karten erstellen? Siehe [Styling](../../map/layer_style/styling).
 
 :::
 
-## 4. Technical details
+## 4. Technische Details
 
-### Calculation
-The accessibility value of each hexagonal cell within a heatmap is calculated with the help of gravity-based measures and can be operationalized as:
+### Berechnung
+Der Erreichbarkeitswert jeder sechseckigen Zelle innerhalb einer Heatmap wird mit Hilfe von Schwerkraftmaßen berechnet und kann wie folgt operationalisiert werden:
 
 *Accessibility Formula:*
 
-![Accessibility Formula](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/place-based_accessibility_measures.webp "Accessibility Formula")
+![Accessibility Formula](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/place-based_accessibility_measures.webp „Zugänglichkeitsformel“)
 
-where the accessibility **A** of origin **i** is the sum of all opportunities **O** available at destinations **j** weighted by some function of the travel time **tij** between **i** and **j**. The function **f(tij)** is the impedance function, which can be `gaussian`, `linear`, `exponential`, or `power`. The *sensitivity* parameter **β** and the *destination potential* are used to adjust the accessibility value.
+wobei die Erreichbarkeit **A** des Ausgangspunkts **i** die Summe aller am Zielort **j** verfügbaren Möglichkeiten **O** ist, gewichtet mit einer Funktion der Reisezeit **tij** zwischen **i** und **j**. Die Funktion **f(tij)** ist die Impedanzfunktion, die `gaussian`, `linear`, `exponential`, oder `power`. sein kann. Der Parameter **β** für die *Empfindlichkeit* und das *destination potential* werden verwendet, um den Erreichbarkeitswert einzustellen.
 
-#### GOAT uses the following formulas for its impedance functions:
+#### GOAT verwendet die folgenden Formeln für seine Impedanzfunktionen:
 
-*Modified Gaussian, (Kwan,1998):*
+*Modifizierter Gauß, (Kwan,1998):*
 
 ![Modified Gaussian, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/modified_gaussian.png "Modified Gaussian, (Kwan,1998)")
 
-*Cumulative Opportunities Linear, (Kwan,1998):*
+*Lineare kumulative Chancen, (Kwan,1998):*
 
 ![Cumulative Opportunities Linear, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/cumulative_opportunities_linear.png "Cumulative Opportunities Linear, (Kwan,1998)")
 
-*Negative Exponential, (Kwan,1998):*
+*Negative Exponentialfunktion, (Kwan,1998):*
 
 ![Negative Exponential, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/negative_exponetial.png "Negative Exponential, (Kwan,1998)")
 
@@ -287,95 +286,91 @@ where the accessibility **A** of origin **i** is the sum of all opportunities **
 
 ![Inverse Power, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/inverse_power.png "Inverse Power, (Kwan,1998)")
 
-Travel times are measured in minutes. For a maximum travel time of 30 minutes, destinations that are farther than 30 minutes are considered non-accessible and therefore not considered in the calculation of the accessibility.
-The *sensitivity* parameter determines how accessibility changes with increasing travel time. As the *sensitivity* parameter is decisive when measuring accessibility, GOAT allows you to adjust this. The following graphs show the influence of the *sensitivity* parameter on accessibility:
+Die Reisezeit wird in Minuten gemessen. Bei einer maximalen Reisezeit von 30 Minuten gelten Ziele, die weiter als 30 Minuten entfernt sind, als nicht erreichbar und werden daher bei der Berechnung der Erreichbarkeit nicht berücksichtigt.
+Der Parameter *sensitivity*bestimmt, wie sich die Erreichbarkeit mit zunehmender Reisezeit verändert. Da der Parameter *sensitivity* für die Messung der Erreichbarkeit entscheidend ist, können Sie ihn in GOAT anpassen. Die folgenden Diagramme zeigen den Einfluss des Parameters *sensitivity* auf die Erreichbarkeit:
 
-:::info coming soon
+:::info demnächst
 
-Examples of this functionality will be online soon. 🧑🏻‍💻
-
-:::
-
-Similarly, the *destination potential* can be changed. Thus, for example, one POI type (e.g. hypermarkets) can be assigned a higher accessibility effect than other POI types (e.g. discount supermarkets). The following images show the influence of the *destination potential* parameter on accessibility:
-
-:::info coming soon
-
-Examples of this functionality will be online soon. 🧑🏻‍💻
+Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
 
 :::
 
-### Classification
-In order to classify the accessibility levels that were computed for each grid cell (for color-coded visualization), a classification based on quantiles is used by default. However, various other classification methods may be used instead. Read more in the **[Data Classification Methods](../../map/layer_style/attribute_based_styling#data-classification-methods)** section of the *Attribute-based Styling* page.
+In ähnlicher Weise kann auch das *destination potential* verändert werden. So kann z.B. einem POI-Typ (z.B. Verbrauchermärkte) ein höherer Erreichbarkeitseffekt zugeordnet werden als anderen POI-Typen (z.B. Discounter). Die folgenden Bilder zeigen den Einfluss des Parameters *Destinationspotenzial* auf die Erreichbarkeit:
 
-### Visualization 
+:::info demnächst
 
-Heatmaps in GOAT utilize **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** solution for efficient computation and easy-to-understand visualization. Behind the scenes, a pre-computed travel time matrix for each *routing type* utilizes this solution and is queried and further processed in real-time to compute accessibility and produce a final heatmap.
+Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
 
-The resolution and dimensions of the hexagonal grid used depend on the selected *routing type*:
+:::
 
-#### Walk
-- Resolution: 10
-- Average hexagon area: 11285.6 m²
-- Average hexagon edge length: 65.9 m
+### Klassifizierung
+Zur Klassifizierung der Erreichbarkeitsstufen, die für jede Rasterzelle berechnet wurden (für die farbige Visualisierung), wird standardmäßig eine Klassifizierung auf der Grundlage von Quantilen verwendet. Es können jedoch auch verschiedene andere Klassifizierungsmethoden verwendet werden. Weitere Informationen finden Sie im Abschnitt **[Datenklassifizierungsmethoden](../../map/layer_style/attribute_based_styling#data-classification-methods)** auf der Seite *Attribute-based Styling*.
 
-#### Bicycle
-- Resolution: 9
-- Average hexagon area: 78999.4 m²
-- Average hexagon edge length: 174.4 m
+### Visualisierung
+
+Heatmaps in GOAT nutzen die **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** Lösung für effiziente Berechnungen und leicht verständliche Visualisierungen. Hinter den Kulissen wird eine vorberechnete Reisezeitmatrix für jeden *routing type* mit dieser Lösung abgefragt und in Echtzeit weiterverarbeitet, um die Erreichbarkeit zu berechnen und eine endgültige Heatmap zu erstellen.
+
+Die Auflösung und die Abmessungen des verwendeten hexagonalen Gitters hängen von der gewählten *routing type* ab:
+
+#### Gehen
+- Auflösung: 10
+- Durchschnittliche Sechseckfläche: 11285.6 m²
+- Durchschnittliche Kantenlänge des Sechsecks: 65,9 m
+
+#### Fahrrad
+- Auflösung: 9
+- Durchschnittliche Sechseckfläche: 78999.4 m²
+- Durchschnittliche Kantenlänge des Sechsecks: 174,4 m
 
 #### Pedelec
-- Resolution: 9
-- Average hexagon area: 78999.4 m²
-- Average hexagon edge length: 174.4 m
+- Auflösung: 9
+- Durchschnittliche Sechseckfläche: 78999.4 m²
+- Durchschnittliche Kantenlänge des Sechsecks: 174,4 m
 
-#### Car
-- Resolution: 8
-- Average hexagon area: 552995.7 m²
-- Average hexagon edge length: 461.4 m
+#### Auto
+- Auflösung: 8
+- Durchschnittliche Sechseckfläche: 552995.7 m²
+- Durchschnittliche Kantenlänge des Sechsecks: 461,4 m
 
-### Example of calculation
-#### Calculation travel times
-The following example illustrates how the local accessibility heatmap is computed. The travel times are calculated for each grid cell to the concerning destination on the street network.
+### Beispiel einer Berechnung
+#### Berechnung der Reisezeiten
+Das folgende Beispiel veranschaulicht, wie die Heatmap der lokalen Erreichbarkeit berechnet wird. Für jede Rasterzelle werden die Fahrtzeiten zum jeweiligen Ziel im Straßennetz berechnet.
 
-For the hexagon shown here, the calculation yields the following results, depending on the sensitivity parameter:
+Für das hier dargestellte Sechseck ergibt die Berechnung je nach Sensitivitätsparameter folgende Ergebnisse:
 
-##### Uniform sensitivity parameter:
-:::info coming soon
+##### Einheitlicher Empfindlichkeitsparameter:
+:::info in Kürze
 
-Examples of this functionality will be online soon. 🧑🏻‍💻
+Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
 
-:::
+##### Variierender Empfindlichkeitsparameter für Hypermarkt:
+:::info in Kürze
 
-##### Varying sensitivity parameter for Hypermarket:
-:::info coming soon
-
-Examples of this functionality will be online soon. 🧑🏻‍💻
+Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
 
 :::
 
-Applied in GOAT, the following differences arise:
+In GOAT angewandt, ergeben sich folgende Unterschiede:
 
-#### Calculation with uniform sensitivity parameter
-In the first example, the accessibility for grocery shops in 15 min is calculated using a uniform sensitivity parameter (β=300,000) for all shops. The result looks like this:
+#### Berechnung mit einheitlichem Empfindlichkeitsparameter
+Im ersten Beispiel wird die Erreichbarkeit von Lebensmittelgeschäften in 15 min mit einem einheitlichen Empfindlichkeitsparameter (β=300.000) für alle Geschäfte berechnet. Das Ergebnis sieht wie folgt aus:
 
-:::info coming soon
+:::info in Kürze
 
-Examples of this functionality will be online soon. 🧑🏻‍💻
-
-:::
-
-#### Calculation with different sensitivity parameters
-In the second example, the accessibility of grocery shops in 15 min is performed using different sensitivity parameters (β=300,000 and β=400,000). This means that the sensitivity parameter depends on the different grocery shop types. For this example, we used β=400,000 for hypermarkets and β=300,000 for discounters and supermarkets. This gives the following result:
-
-:::info coming soon
-
-Examples of this functionality will be online soon. 🧑🏻‍💻
+Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
 
 :::
 
-By comparing the two results, you can get a sense of the impact *sensitivity* has on accessibility.
+#### Berechnung mit verschiedenen Empfindlichkeitsparametern
+Im zweiten Beispiel wird die Erreichbarkeit von Lebensmittelgeschäften in 15 min mit unterschiedlichen Sensitivitätsparametern (β=300.000 und β=400.000) durchgeführt. Das bedeutet, dass der Sensitivitätsparameter von den verschiedenen Lebensmittelladentypen abhängt. Für dieses Beispiel haben wir β=400.000 für Hypermärkte und β=300.000 für Discounter und Supermärkte verwendet. Daraus ergibt sich das folgende Ergebnis:
 
-## 5. References
+:::info coming soon
+
+Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
+
+Wenn Sie die beiden Ergebnisse vergleichen, bekommen Sie einen Eindruck davon, wie sich die *sensitivity*auf die Zugänglichkeit auswirkt.
+
+## 5. Referenzen
 
 Kwan, Mei-Po. 1998. “Space-Time and Integral Measures of Individual Accessibility: A Comparative Analysis Using a Point-Based Framework.” Geographical Analysis 30 (3): 191–216. [https://doi.org/10.1111/j.1538-4632.1998.tb00396.x](https://doi.org/10.1111/j.1538-4632.1998.tb00396.x).
 

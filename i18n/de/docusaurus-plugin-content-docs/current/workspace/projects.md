@@ -2,9 +2,9 @@
 sidebar_position: 2
 ---
 
-# Projects
+# Projekte
 
-The **Projects** page allows users to **create, manage, and share** projects. The page provides users with an organized view of their projects, categorized into personal projects, team projects, and projects shared with the whole organization. In addition, projects can be organized into **folders** and can be **filtered** and **sorted** based on alphabetical order, date of creation, or date of last update. It is also possible to **delete projects** and **edit their metadata**. 
+Die **Projekte**-Seite ermöglicht es Benutzern, Projekte zu **erstellen, zu verwalten und zu teilen**. Die Seite bietet den Nutzern eine übersichtliche Darstellung ihrer Projekte, kategorisiert in persönliche Projekte, Teamprojekte und Projekte, die mit der gesamten Organisation geteilt werden. Darüber hinaus können Projekte in **Ordnern** organisiert und **gefiltert** und **sortiert** werden, basierend auf alphabetischer Reihenfolge, Erstellungsdatum oder Datum der letzten Aktualisierung. Es ist auch möglich, **Projekte zu löschen** und deren **Metadaten zu bearbeiten**.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/projects/projects_general.png').default} alt="Projects Page in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
@@ -12,8 +12,8 @@ The **Projects** page allows users to **create, manage, and share** projects. Th
 </div> 
 
 
-## Creating a new project
-Follow these steps to add a new project to your GOAT workspace:
+## Neues Projekt erstellen
+Folgen Sie diesen Schritten, um ein neues Projekt zu Ihrem GOAT-Arbeitsbereich hinzuzufügen:
 
 <div class="step">
   <div class="step-number">1</div>
@@ -36,6 +36,6 @@ Follow these steps to add a new project to your GOAT workspace:
 </div>
 
 
-## Managing projects
-By clicking on the three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> , you can view and edit the metadata of projects, move a project into another folder, or share projects with other people.
+## Projekte verwalten
+Durch Klicken auf die drei Punkte <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> , you can view and edit the metadata of projects, move a project into another folder, or share projects with other people.
 <img src={require('/img/workspace/projects/options.gif').default} alt="Options" style={{ maxHeight: "300px", maxWidth: "300px"}}/>

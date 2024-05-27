@@ -5,14 +5,13 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Aggregate Points
+# Punkte aggregieren
 
-The **Aggregate Points** tool performs statistical analysis of points, e.g. **count, sum, min, or max**, and aggregates the information on polygons.
+Das **Punkte aggregieren**-Werkzeug führt statistische Analysen von Punkten durch, z.B. **Anzahl, Summe, Minimum oder Maximum**, und aggregiert die Informationen auf Polygonen.
 
-## 1. Explanation
+## 1. Erklärung
 
-The Aggregate Points tool can be used to **analyze the characteristics of points within a given area**. It aggregates the information of the points and therewith allows calculation of the point **count**, the **sum** of point attributes, or derive e.g. the **maximum** value of a certain point attribute within a polygon. As a polygon layer, either a feature layer (e.g. city districts) or a hexagonal grid can be used. 
-
+Das Werkzeug Punkte aggregieren kann verwendet werden, um **die Eigenschaften von Punkten innerhalb eines bestimmten Gebiets zu analysieren**. Es aggregiert die Informationen der Punkte und ermöglicht so die Berechnung der Punktanzahl, die Summe der Punktattribute oder z.B. den maximalen Wert eines bestimmten Punktattributs innerhalb eines Polygons. Als Polygon-Layer kann entweder ein Feature-Layer (z.B. Stadtteile) oder ein hexagonales Raster verwendet werden.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -20,38 +19,36 @@ The Aggregate Points tool can be used to **analyze the characteristics of points
 
 </div> 
 
+## 2. Anwendungsbeispiele
 
-## 2. Example use cases
+- Aggregieren der Bevölkerungszahlen auf einem Hexagon-Raster.
+- Ableiten der Summe der Verkehrsunfälle innerhalb eines Stadtteils.
+- Visualisieren der durchschnittlichen Anzahl von Carsharing-Fahrzeugen pro Station auf Stadtebene.
 
-- Aggregating the population numbers on a hexagon grid.
-- Deriving the sum of traffic accidents within a city district.
-- Visualizing the average number of carsharing vehicles available per station on a district level. 
-
-## 3. How to use the tool?
+## 3. Wie benutzt man das Werkzeug?
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Klicke auf <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Geoanalysis</code> menu, click on <code>Aggregate Points</code>.</div>
+  <div class="content">Klicke im Menü <code>Geoanalyse</code> auf <code>Punkte aggregieren</code>.</div>
 </div>
-
 
 <img src={require('/img/toolbox/geoanalysis/aggregate_points/aggregate_points.png').default} alt="Point Aggregation Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
 
-### Layer to aggregate
+### Layer zum Aggregieren
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select your <code> Source Layer</code>, which contains the data you like to aggregate.</div>
+  <div class="content">Wähle deinen <code>Referenz-Layer</code>, der die Daten enthält, die du aggregieren möchtest.</div>
 </div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select on which <code> Area Type</code> you like to aggregate the source layer. You can choose between <b>Polygon</b> or <b>H3 grid</b>.</div>
+  <div class="content">Wähle, auf welchem <code>Gebietstyp</code> du die Referenz-Layer aggregieren möchtest. Du kannst zwischen <b>Polygon</b> oder <b>H3-Raster</b> wählen.</div>
 </div>
 
 <Tabs>
@@ -61,69 +58,66 @@ The Aggregate Points tool can be used to **analyze the characteristics of points
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Select the <code>Area Layer</code> which contains the polygons on which you like to aggregate your point data.</div>
+  <div class="content">Wähle den <code>Gebiets-Layer</code>, der die Polygone enthält, auf denen du deine Punktdaten aggregieren möchtest.</div>
 </div>
 
-
   </TabItem>
-  <TabItem value="H3 Grid" label="H3 Grid" className="tabItemBox">
+  <TabItem value="H3 Grid" label="H3-Raster" className="tabItemBox">
 
- #### H3 Grid
+ #### H3-Raster
 
  <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Select the <code>H3 Grid Resolution</code>. You can choose resolutions between <b>3</b> (average edge length of 69km) and <b>10</b> (average edge length of 70m).</div>
+  <div class="content">Wähle die <code>H3-Rasterauflösung</code>. Du kannst zwischen Auflösungen von <b>3</b> (durchschnittliche Kantenlänge von 69 km) und <b>10</b> (durchschnittliche Kantenlänge von 70 m) wählen.</div>
 </div>
 
-:::tip NOTE
+:::tip Tipp
 
-To learn more about the H3 grid, you can visit the [Glossary](../../further_reading/glossary#H3-grid).
+Um mehr über das H3-Raster zu erfahren, kannst du das [Glossar](../../further_reading/glossary#H3-grid) besuchen.
 
 :::
 
   </TabItem>
 </Tabs>
 
-### Statistics
+### Statistiken
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Select the <code>Statistic Method</code>, and the field you like to use for the <code>Field Statistics</code> (the field in the source layer that is used to group the aggregated points for statistics).</div>
+  <div class="content">Wähle die <code>Statistische Methode</code> und das Feld, das du für die <code>Feldstatistik</code> verwenden möchtest (das Feld in des Referenz-Layers, das verwendet wird, um die aggregierten Punkte für die Statistik zu gruppieren).</div>
 </div>
 
-Available **Statistics Methods** are listed in the following. The available methods depend on the data type of the chosen attribute:
+Die verfügbaren **Statistischen Methoden** sind im Folgenden aufgeführt. Die verfügbaren Methoden hängen vom Datentyp des ausgewählten Attributs ab:
 
-| Method | Type | Description |
+| Methode | Typ | Beschreibung |
 | -------|------| ------------|
-| Count  | `string`,`number`    | Counts the number of non-null values in the selected column|
-| Sum    | `number`   | Calculates the sum of all the numbers in the selected column|
-| Mean   | `number`   | Calculates the average (mean) value of all numeric values in the selected column|
-| Median | `number`   | Yields the middle value in the selected column's sorted list of numeric values|
-| Min    | `number`   | Yields the minimum value of the selected column|
-| Max    | `number`   | Yields the maximum value of the selected column|
-
+| Anzahl | `string`,`number`    | Zählt die Anzahl der Nicht-Null-Werte in der ausgewählten Spalte|
+| Summe  | `number`   | Berechnet die Summe aller Zahlen in der ausgewählten Spalte|
+| Mittelwert | `number`   | Berechnet den Durchschnitt (Mittelwert) aller numerischen Werte in der ausgewählten Spalte|
+| Median | `number`   | Gibt den Mittelwert in der sortierten Liste der numerischen Werte der ausgewählten Spalte zurück|
+| Min    | `number`   | Gibt den Minimalwert der ausgewählten Spalte zurück|
+| Max    | `number`   | Gibt den Maximalwert der ausgewählten Spalte zurück|
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Click on <code>Run</code>.</div>
+  <div class="content">Klicke auf <code>Ausführen</code>.</div>
 </div>
 
-:::tip Hint
+:::tip HINWEIS
 
-Depending on the size of the datasets, the calculation might take some minutes. The [status bar](../../workspace/home#status-bar) shows the current progress.
+Abhängig von der Größe der Datensätze kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../workspace/home#status-bar) zeigt den aktuellen Fortschritt an.
 
 :::
 
-### Results
+### Ergebnisse
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layer <b>"Aggregation Point"</b> will be added to the map. This layer consists of the information of the source layer and an <b>additional column</b> showing the results from the <b>statistical operation</b>. You can see the table by clicking on the polygon on the map.</div>
+  <div class="content">Sobald der Berechnungsprozess abgeschlossen ist, wird die resultierende Ebene <b>"Aggregation Point"</b> der Karte hinzugefügt. Diese Ebene besteht aus den Informationen der Quell-Ebene und einer <b>zusätzlichen Spalte</b>, die die Ergebnisse der <b>statistischen Operation</b> anzeigt. Du kannst die Tabelle sehen, indem du auf das Polygon auf der Karte klickst.</div>
 </div>
 
 <img src={require('/img/toolbox/geoanalysis/aggregate_points/aggregate_points_result.png').default} alt="Point Aggregation Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
 
-
-:::tip Tip
-Want to style your result layer and create nice-looking maps? See [Styling](../../map/layer_style/styling).
+:::tip Tipp
+Möchtest du deinen Ergebnislayer stylen und ansprechende Karten erstellen? Siehe [Styling](../../map/layer_style/styling).
 :::

@@ -6,120 +6,114 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 # ÖV-Güteklassen
 
 
-The Public Transport Quality Classes <i>(German: ÖV-Güteklassen)</i> show the **attractiveness of public transport services** for a selected area.  
+### Die ÖV-Güteklassen zeigen die **Attraktivität von öffentlichen Verkehrsmitteln** in einem ausgewählten Gebiet.
 
+## 1. Erklärung
 
-## 1. Explanation
-
-Public Transport Quality Classes, also known as **ÖV-Güteklassen**, are a classification system used to evaluate and categorize the **quality** of public transport** services in a given area. The concept is used to plan and evaluate public transport services to ensure that they meet certain standards and effectively serve the needs of the population. The **quality classes** thereby range from **<span style={{color: "#199741"}}>A</span>** (very good offer) to **<span style={{color: "#E4696A"}}>F</span>** (very poor offer).
+ÖV-Güteklassen, auch bekannt als **Public Transport Quality Classes**, sind ein Klassifizierungssystem zur Bewertung und Kategorisierung der **Qualität** von öffentlichen Verkehrsmitteln in einem bestimmten Gebiet. Das Konzept wird verwendet, um öffentliche Verkehrsdienste zu planen und zu bewerten, damit sie bestimmten Standards entsprechen und die Bedürfnisse der Bevölkerung erfüllen. Die **Güteklassen** reichen dabei von **<span style="color: #199741">A</span>** (sehr gutes Angebot) bis **<span style="color: #E4696A">F</span>** (sehr schlechtes Angebot).
 
 ![ÖV-Güteklassen in GOAT](/img/toolbox/accessibility_indicators/gueteklassen/example.png "ÖV-Güteklassen in GOAT")
 
-:::info 
-The calculation of the public transport quality classes is only available for areas where the transport network is integrated into GOAT.
+:::info
+Die Berechnung der ÖV-Güteklassen ist nur für Gebiete verfügbar, in denen das Verkehrsnetz in GOAT integriert ist.
 
-<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence for ÖV-Güteklassen calculation in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
-</div> 
+<div style="display: flex; flex-direction: column; align-items: center;">
+  <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence für ÖV-Güteklassen Berechnung in GOAT" style="max-height: 400px; max-width: 400px; align-items: center;"/>
+</div>
 
-In case you need to perform analysis beyond this geofence, feel free to contact the [Support](https://plan4better.de/en/contact/ "Contact Support") and we will check what is possible. 
+Falls Sie eine Analyse außerhalb dieses Geofence durchführen müssen, kontaktieren Sie bitte den [Support](https://plan4better.de/en/contact/ "Support kontaktieren") und wir prüfen, was möglich ist.
 :::
 
-## 2. Example use cases
+## 2. Anwendungsbeispiele
 
-- How good is public transport supply in different parts of the city?
-- How many people are underserved by public transport? Where is the need for further supply?
-- How does the quality of public transport services differ at different times of the week and day?
+- Wie gut ist das Angebot an öffentlichen Verkehrsmitteln in verschiedenen Teilen der Stadt?
+- Wie viele Menschen sind unterversorgt mit öffentlichen Verkehrsmitteln? Wo besteht Bedarf an weiteren Angeboten?
+- Wie unterscheidet sich die Qualität der öffentlichen Verkehrsmittel zu verschiedenen Zeiten der Woche und des Tages?
 
-## 3. How to use the indicator?
+## 3. Verwendung des Indikators
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Klicken Sie auf <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style="width: 25px;"/>.</div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>ÖV-Güteklassen</code>. This opens the settings menu.</div>
+  <div class="content">Klicken Sie im Menü <code>Accessibility Indicators</code> auf <code>ÖV-Güteklassen</code>. Dadurch wird das Einstellungsmenü geöffnet.</div>
 </div>
 
-![Menu Overview for ÖV-Güteklassen](/img/toolbox/accessibility_indicators/gueteklassen/overview.png "Menu Overview for ÖV-Güteklassen")
+![Menüübersicht für ÖV-Güteklassen](/img/toolbox/accessibility_indicators/gueteklassen/overview.png "Menüübersicht für ÖV-Güteklassen")
 
-### Calculation Time
+### Berechnungszeit
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Define the <code>Day</code>, <code>Start Time</code> and <code>End Time</code>, for which you like to perform the analysis.</div>
+  <div class="content">Definieren Sie den <code>Tag</code>, die <code>Startzeit</code> und die <code>Endzeit</code>, für die Sie die Analyse durchführen möchten.</div>
 </div>
 
-### Reference Layer
+### Referenzschicht
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the <code>Reference Layer</code> for which you like to calculate the indicator. This can be any polygon feature layer.</div>
+  <div class="content">Wählen Sie die <code>Referenzschicht</code> aus, für die Sie den Indikator berechnen möchten. Dies kann jede Polygon-Feature-Layer sein.</div>
 </div>
 
-![Reference Area Selection](/img/toolbox/accessibility_indicators/gueteklassen/reference_area.png "Reference Area Selection")
-
+![Auswahl des Referenzgebiets](/img/toolbox/accessibility_indicators/gueteklassen/reference_area.png "Auswahl des Referenzgebiets")
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Click on <code>Run</code>. This starts the calculation of the Public Transport Quality Classes for the selected area.</div>
+  <div class="content">Klicken Sie auf <code>Run</code>. Dies startet die Berechnung der ÖV-Güteklassen für das ausgewählte Gebiet.</div>
 </div>
 
-:::tip Hint
-
-Depending on the size of the selected area, the calculation might take some minutes. The [status bar](../../workspace/home#status-bar) shows the current progress.
-
+:::tip Tipp
+Je nach Größe des ausgewählten Gebiets kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../workspace/home#status-bar) zeigt den aktuellen Fortschritt an.
 :::
 
-### Results
+### Ergebnisse
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called <b>"ÖV-Güteklassen"</b>, showing the Public Transport Quality Classes, and one layer called <b>"ÖV-Güteklassen Stations"</b> which provides all stations that were used for the calculation of this indicator. The station points that are visualized in grey have a too low service frequency and thus do not contribute to any Public Transport Quality Class.
+  <div class="content">Sobald der Berechnungsprozess abgeschlossen ist, werden die resultierenden Ebenen zur Karte hinzugefügt. Die Ergebnisse bestehen aus einer Ebene namens <b>"ÖV-Güteklassen"</b>, die die ÖV-Güteklassen zeigt, und einer Ebene namens <b>"ÖV-Güteklassen Stationen"</b>, die alle Stationen enthält, die für die Berechnung dieses Indikators verwendet wurden. Die in Grau dargestellten Stationen haben eine zu geringe Servicefrequenz und tragen daher nicht zu einer ÖV-Güteklasse bei.
   <p></p>
-  If you click on an "ÖV-Güteklassen" item on the map, you will see further details such as its pt_class and pt_class_number, which indicate <a href="#calculation">the quality of public transport</a>.</div>
+  Wenn Sie auf ein "ÖV-Güteklassen"-Element auf der Karte klicken, sehen Sie weitere Details wie dessen pt_class und pt_class_number, die die <a href="#calculation">Qualität des öffentlichen Verkehrs</a> angeben.</div>
 </div>
 
-![Result - Public Transport Quality Classes](/img/toolbox/accessibility_indicators/gueteklassen/result.png "Result - Public Transport Quality Classes")
+![Ergebnis - ÖV-Güteklassen](/img/toolbox/accessibility_indicators/gueteklassen/result.png "Ergebnis - ÖV-Güteklassen")
 
+## 4. Technische Details
 
-## 4. Technical details
+### Wissenschaftlicher Hintergrund
 
-### Scientific Background
+Die Qualität und Häufigkeit von Verkehrsangeboten ist ein **entscheidender** Indikator in der öffentlichen Verkehrspolitik und Raumplanung. Er kann verwendet werden, um Defizite im Verkehrsangebot aufzuzeigen und gut versorgte Standorte als attraktive Entwicklungsgebiete zu identifizieren. Der Ansatz der ÖV-Güteklassen ist **methodisch überlegen** gegenüber den üblichen Einzugsgebieten. 2011 begann das [Schweizer Bundesamt für Raumentwicklung (ARE)](https://www.are.admin.ch/are/de/home.html) mit der Nutzung des Indikators ÖV-Güteklassen, um die **Attraktivität des öffentlichen Verkehrs** in die Bewertung der Entwicklungsqualität einzubeziehen; seitdem werden diese als wichtiges Instrument in formellen Planungsprozessen in der Schweiz betrachtet. Zudem diente das Schweizer Modell als Inspiration für die Anwendung in Österreich (z.B. Vorarlberg) und findet erste Anwendungen in Deutschland (z.B. durch [KCW](https://plan4better.de/en/references/g%C3%BCteklassen-deutschland/) und [Agora Verkehrswende](https://plan4better.de/en/references/agora/)).
 
-The quality and frequency of transit services is a **decisive** indicator in public transport and spatial planning**. It can be used to highlight deficits in the public transport offer and to identify well-serviced locations as attractive areas for development. The approach of Public Transport Quality Classes <i>(German: ÖV-Güteklassen)</i> is **methodologically superior** compared to common catchment areas. In 2011, the [Swiss Federal Office for Spatial Development (ARE)](https://www.are.admin.ch/are/de/home.html) started to use the indicator of <i>ÖV-Güteklassen</i> to include the **attractiveness of public transport services** in the assessment of development quality; since then, these have been considered an important instrument in formal planning processes in Switzerland. In addition, the Swiss model served as an inspiration for application in Austria (e.g. Voralberg) and finds first application in Germany (e.g. by [KCW](https://plan4better.de/en/references/g%C3%BCteklassen-deutschland/) and [Agora Verkehrswende](https://plan4better.de/en/references/agora/)).  
+Die Institutionalisierung des Indikators im deutschsprachigen Raum sowie die nachvollziehbare und zugleich differenzierte Berechnungsmethodik sind wichtige Vorteile der ÖV-Güteklassen.
 
-The institutionalization of the indicator in German-speaking countries, as well as the comprehensible and at the same time differentiated calculation methodology, are important advantages of the <i>ÖV-Güteklassen</i>. 
+### Berechnung
 
-### Calculation
+In der Schweizer Version des Indikators wird die Berechnung der Güteklassen üblicherweise für Abfahrten an Werktagen zwischen 6 Uhr und 20 Uhr durchgeführt. Für die Nutzung in GOAT wurde der **Berechnungszeitraum** flexibler gestaltet, sodass der Indikator **für jeden Wochentag und jede Tageszeit** berechnet werden kann. Zudem wurde der Indikator an die Bedingungen in Deutschland angepasst.
 
-In the Swiss version of the indicator, the calculation of the quality classes is usually carried out for departures on weekdays between 6 AM and 8 PM. For the use in GOAT, the **calculation period** was made more flexible so that the indicator can be calculated **for any day of the week and time of day**. Furthermore, the indicator was adapted to the conditions in Germany. 
+Die Berechnungen basieren auf **GTFS-Daten** (siehe [Datengrundlage](../../data/data_basis)). Zunächst wird die Anzahl der Abfahrten pro Verkehrsmittel (Zug, U-Bahn, Straßenbahn und Bus) für jede Station dynamisch berechnet. Die Summe der Abfahrten wird durch zwei geteilt, um die Frequenz zu berechnen und die Hin- und Rückrichtungen zu eliminieren. Im nächsten Schritt wird die **durchschnittliche Frequenz** für das ausgewählte Zeitintervall berechnet. Das höherwertige Angebot wird als **Stationstyp** ausgewählt, falls mehrere Verkehrsmittel die Station bedienen. Zum Beispiel ist bei Bussen und Zügen der Zug der höherwertige Service. Mithilfe der unten stehenden Tabelle sowie des Stationstyps und der Frequenz kann nun die Stationskategorie bestimmt werden.
 
-The calculations are carried out based on **GTFS data** (see [Data Basis](../../data/data_basis)). First, the number of departures per public transport mode (train, metro, tram, and bus) is dynamically calculated for each station. The sum of the departures is divided by two to calculate the frequency, to eliminate the outward and return directions. In the next step, the **average frequency** for the selected time interval is calculated. The higher-value service is selected as the **station type** in the case of service by several means of transport. For example, in the case of buses and trains, this is the train. With the help of the table below, as well as the station type and the frequency, the station category can now be determined. 
+![Klassifikation der Verkehrshaltestellen](/img/toolbox/accessibility_indicators/gueteklassen/classification_stations_en.webp "Klassifikation der Verkehrshaltestellen")
 
-![Classification of transport stops](/img/toolbox/accessibility_indicators/gueteklassen/classification_stations_en.webp "Classification of transport stops")
+Anschließend werden **Puffer** der angegebenen Größe für die entsprechenden Stationskategorien berechnet. Dadurch entstehen mehrere Puffer, die zusammengeführt werden. Bei überlappenden Puffern wird die höherwertige Klasse verwendet.
 
-Subsequently, **buffers** of the size shown are calculated for the corresponding station categories. This creates several buffers that are merged. For overlapping buffers, the higher-quality class is used. 
+![Bestimmung der ÖV-Güteklassen](/img/toolbox/accessibility_indicators/gueteklassen/determination_oev_gueteklasse_en.webp "Bestimmung der ÖV-Güteklassen")
 
-![Determination of Public Transport Quality Classes](/img/toolbox/accessibility_indicators/gueteklassen/determination_oev_gueteklasse_en.webp "Determination of Public Transport Quality Classes")
+### Visualisierung
 
-### Visualization
+Die erstellten Puffer werden um die Stationen in den entsprechenden Farben visualisiert, um die **Güteklasse** (<span style="color: #199741">A</span>-<span style="color: #E4696A">F</span>) hervorzuheben.
 
-The created buffers are visualized around the stations in the corresponding colors to highlight the **quality class** (<span style={{color: "#199741"}}>A</span>-<span style={{color: "#E4696A"}}>F</span>).
+![Visualisierung der ÖV-Güteklassen](/img/toolbox/accessibility_indicators/gueteklassen/visualization.png "Visualisierung der ÖV-Güteklassen")
 
-![Visualization of the ÖV-Güteklassen](/img/toolbox/accessibility_indicators/gueteklassen/visualization.png "Visualization of the ÖV-Güteklassen")
+## 5. Weitere Lektüre
 
+Beispielprojekte, in denen ÖV-Güteklassen verwendet wurden:
+- [Erreichbarkeitsanalysen für die Projekte "Mobilitätsgarantie" und "ÖPNV-Atlas"](https://plan4better.de/en/references/agora/)
+- [Berechnung der ÖV-Güteklassen in Österreich](https://plan4better.de/en/references/g%C3%BCteklassen-%C3%B6sterreich/)
+- [Berechnung der ÖV-Güteklassen in Deutschland](https://plan4better.de/en/references/g%C3%BCteklassen-deutschland/)
 
-## 5. Further readings
-
-Sample projects where ÖV-Güteklassen was used:
-- [Accessibility analyses for the "Mobility Guarantee" and "Public Transport Atlas" projects](https://plan4better.de/en/references/agora/) 
-- [Calculation of public transport quality classes in Austria](https://plan4better.de/en/references/g%C3%BCteklassen-%C3%B6sterreich/)
-- [Calculation of public transport quality classes in Germany](https://plan4better.de/en/references/g%C3%BCteklassen-deutschland/)
-
-## 6. References
+## 6. Referenzen
 
 Bundesamt für Raumentwicklung ARE, 2022. [ÖV-Güteklassen Berechnungsmethodik ARE (Grundlagenbericht)](https://www.are.admin.ch/are/de/home/medien-und-publikationen/publikationen/verkehr/ov-guteklassen-berechnungsmethodik-are.html "Open Reference").
 
@@ -127,5 +121,5 @@ Hiess, H., 2017. [Entwicklung eines Umsetzungskonzeptes für österreichweite Ö
 
 metron, 2017. [Bedienungsqualität und Erschließungsgüte im Öffentlichen Verkehr](https://vorarlberg.at/documents/302033/472144/1-+Schlussbericht.pdf/81c5f0d7-a0f0-54c7-e951-462cd5cf2831?t=1616147848364 "Open Reference").
 
-Shkurti, Majk, 2022. "Spatio-temporal public transport accessibility analysis and benchmarking in an interactive WebGIS". url: https://www.researchgate.net/publication/365790691_Spatio-temporal_public_transport_accessibility_analysis_and_benchmarking_in_an_interactive_WebGIS 
+Shkurti, Majk, 2022. "Spatio-temporal public transport accessibility analysis and benchmarking in an interactive WebGIS". url: https://www.researchgate.net/publication/365790691_Spatio-temporal_public_transport_accessibility_analysis_and_benchmarking_in_an_interactive_WebGIS
 

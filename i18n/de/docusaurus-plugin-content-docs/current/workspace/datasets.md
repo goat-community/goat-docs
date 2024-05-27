@@ -2,17 +2,19 @@
 sidebar_position: 3
 ---
 
-# Datasets
+# Datensätze
 
-On the **Datasets** page, data can be **uploaded, managed, and shared**. The page provides users with an organized view of their datasets, categorized by personal datasets, team datasets, and datasets that are shared with the whole organization. Furthermore, datasets can be organized in **folders**, **filtered**, and **sorted** based on their name, creation date, or their last update. Datasets can also be **deleted**, **downloaded** and their **metadata** edited. 
+Auf der **Datensätze**-Seite können Daten **hochgeladen, verwaltet und geteilt** werden. Die Seite bietet den Nutzern eine organisierte Ansicht ihrer Datensätze, kategorisiert nach persönlichen Datensätzen, Team-Datensätzen und Datensätzen, die mit der gesamten Organisation geteilt werden. Darüber hinaus können Datensätze in **Ordnern** organisiert, **gefiltert** und **sortiert** werden, basierend auf ihrem Namen, Erstellungsdatum oder ihrer letzten Aktualisierung. Datensätze können auch **gelöscht**, **heruntergeladen** und deren **Metadaten** bearbeitet werden.
+
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/datasets/datasets_general.png').default} alt="Datasets Page in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
-## Upload data
+## Daten hochladen
 
-GOAT supports the upload of **GeoPackage, GeoJSON, Shapefile, KML, CSV**, and **XLSX** files. Follow these steps to add a dataset via the Workspace:
+GOAT unterstützt das Hochladen von **GeoPackage-, GeoJSON-, Shapefile-, KML-, CSV**- und **XLSX**-Dateien. Folgen Sie diesen Schritten, um einen Datensatz über den Arbeitsbereich hinzuzufügen:
+
 
 <div class="step">
   <div class="step-number">1</div>
@@ -41,14 +43,13 @@ GOAT supports the upload of **GeoPackage, GeoJSON, Shapefile, KML, CSV**, and **
 
 
 
-:::tip tip
+:::tip Tipp
 
-You can also upload datasets directly in the [Map](../map/layers).
+Sie können Datensätze auch direkt in der [Karte](../map/layers) hochladen.
 
 :::
 
-
-## Filter datasets
+## Datensätze filtern
 
 Datasets can be sorted based on the [dataset type](../data/dataset_types "What are the dataset types?"), i.e. *features, tables, external imagery*, and *external vector tiles*. Simply click on the filter icon <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "20px", maxWidth: "20px"}}/> to choose the desired dataset type for filtering.
 
@@ -56,12 +57,12 @@ Datasets can be sorted based on the [dataset type](../data/dataset_types "What a
   <img src={require('/img/workspace/datasets/dataset_filter.gif').default} alt="Datasets filtering in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
-## Managing datasets
-By clicking on the three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> , you can view and edit the metadata of datasets, move a dataset into another folder, download it, share the dataset with other people, or delete it.
+## Datensätze verwalten
+Durch Klicken auf die drei Punkte <img src={require('/img/map/filter/3dots.png').default} alt="Optionen" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> können Sie die Metadaten von Datensätzen anzeigen und bearbeiten, einen Datensatz in einen anderen Ordner verschieben, ihn herunterladen, den Datensatz mit anderen Personen teilen oder ihn löschen.
 <img src={require('/img/workspace/datasets/managing_datasets.gif').default} alt="Options" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
 
 
-## See metadata of the datasets
+## Metadaten der Datensätze anzeigen
 
 The **metadata** of datasets can be viewed and edited by clicking on <code>Info</code> under the three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> or by clicking directly on the dataset. This grants access to a detailed **summary** of the data, the **attribute table**, and a **map preview with a legend**.
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -69,7 +70,7 @@ The **metadata** of datasets can be viewed and edited by clicking on <code>Info<
 </div> 
 
 
-## Create folders
+## Ordner erstellen
 
 To organize your data, you can create new folders within the workspace. Therefore, click on the ``folder icon`` <img src={require('/img/workspace/datasets/folder_icon.png').default} alt="Folder Icon" style={{ maxHeight: "25px", maxWidth: "25px"}}/> and define the name of the new folder.
 
@@ -78,7 +79,7 @@ To organize your data, you can create new folders within the workspace. Therefor
 </div> 
 
 
-## Move datasets to folders
+## Datensätze in Ordner verschieben
 
 To move a dataset into a folder, click on three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px"}}/> and select **"Move to folder"**. From the dropdown menu, choose the folder to which you want to move your dataset.
 
