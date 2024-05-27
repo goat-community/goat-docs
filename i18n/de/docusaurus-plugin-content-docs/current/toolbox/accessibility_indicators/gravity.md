@@ -10,9 +10,9 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 # Heatmap - Gravity
 Eine farbkodierte Karte zur Visualisierung der Erreichbarkeit von Punkten (wie z.B. [POI](../../../further_reading/glossary#point-of-interest-poi „What is a POI?“)) aus der Umgebung.
 
-## 1. Erläuterung
+## 1. Erklärung
 
-Die Heatmap wird als farbcodiertes sechseckiges Raster dargestellt und berücksichtigt reale Verkehrs- und Straßennetze, um die Erreichbarkeit zu berechnen. Nach Angabe einer *routing type*(zu Fuß, mit dem Fahrrad usw.), einer *opportunity layer* und einer *travel time limit* zeigt das Ergebnis ein farbkodiertes sechseckiges Raster für alle unter diesen Bedingungen erreichbaren Gebiete an. Die Farbskala bezieht sich auf die lokale Erreichbarkeit.
+Die Heatmap wird als farblich gekennzeichnetes sechseckiges Raster dargestellt und berücksichtigt reale Verkehrs- und Straßennetze, um die Erreichbarkeit zu berechnen. Nach Angabe einer *routing type*(zu Fuß, mit dem Fahrrad usw.), einer *opportunity layer* und einer *travel time limit* zeigt das Ergebnis ein farbkodiertes sechseckiges Raster für alle unter diesen Bedingungen erreichbaren Gebiete an. Die Farbskala bezieht sich auf die lokale Erreichbarkeit.
 
 :::info INFO
 
@@ -63,19 +63,19 @@ Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Click on <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Heatmap Gravity</code>.</div>
+  <div class="content">Under the <code>Erreichbarkeitsindikatoren</code> menu, click on <code>Heatmap Gravity</code>.</div>
 </div>
 
 ### Routing
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Pick the <code>Routing Type</code> you would like to use for the heatmap.</div>
+  <div class="content">Pick the <code>Verkehrsmittel</code> you would like to use for the heatmap.</div>
 </div>
 
 <Tabs>
@@ -142,14 +142,14 @@ Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Car](..
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Pick the <code>Impedance Function</code> you would like to use for the heatmap.</div>
+  <div class="content">Wählen Sie die <code>Widerstandsfunktion</code> welche Sie für die Heatmap anwenden möchten.</div>
 </div>
 
 <Tabs>
 
 <TabItem value="gaussian" label="Gaussian" default className="tabItemBox">
 
-#### Gaussian
+#### Gaussfunktion
 
 Diese Funktion berechnet die Zugänglichkeiten auf der Grundlage einer Gaußschen Kurve, die durch die von Ihnen definierten Parameter „Empfindlichkeit“ und „Zielpotential“ beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
@@ -165,7 +165,7 @@ Mit Hilfe der von Ihnen definierten *sensitivity* ermöglicht die Gauß-Funktion
   
 <TabItem value="linear" label="Linear" default className="tabItemBox">
 
-#### Linear
+#### Lineare Funktion
 
 Diese Funktion stellt eine direkte Korrelation zwischen Reisezeit und Erreichbarkeit her, die durch das von Ihnen angegebene „destination_potential“ moduliert wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
@@ -173,7 +173,7 @@ Diese Funktion stellt eine direkte Korrelation zwischen Reisezeit und Erreichbar
 
 <TabItem value="exponential" label="Exponential" default className="tabItemBox">
 
-#### Exponential
+#### Exponentiale Funktion
 
 Diese Funktion berechnet die Zugänglichkeiten auf der Grundlage einer Exponentialkurve, die von der von Ihnen definierten `sensitivity` und dem `destination_potential`  beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
@@ -181,7 +181,7 @@ Diese Funktion berechnet die Zugänglichkeiten auf der Grundlage einer Exponenti
 
 <TabItem value="power" label="Power" default className="tabItemBox">
 
-#### Power
+#### Powerfunktion
 
 Diese Funktion berechnet die Zugänglichkeiten auf der Grundlage einer Leistungskurve, die durch die von Ihnen definierte `sensitivity` und das `destination_potential` beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
@@ -197,12 +197,12 @@ Zusätzlich können Sie weitere Opportunities über die Schaltfläche `+ Add Opp
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Select your <code>Opportunity Layer</code> from the drop-down menu. This can be any previously created layer containing point-based data.</div>
+  <div class="content">Wählen Sie Ihren <code>Gelegenheitslayer</code> aus dem Dropdown-Menü aus. Dies kann ein zuvor erstellter Layer sein, der punktbasierte Daten enthält.</div>
 </div>
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Choose a <code>Travel Time Limit</code> for your heatmap. This will be used in the context of your previously selected <i>Routing Type</i>.</div>
+  <div class="content">Wählen Sie eine <code>Reisezeitbegrenzung</code> für Ihre Heatmap aus. Dies wird im Kontext Ihres zuvor ausgewählten <i>Verkehrsmittel</i> verwendet.</div>
 </div>
 
 :::tip Hinweis
@@ -213,7 +213,7 @@ Benötigen Sie Hilfe bei der Auswahl einer geeigneten Reisezeit für verschieden
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">If required, choose a <code>Destination Potential Field</code>. This must be a numeric field from your <i>Opportunity Layer</i> which will be used as a coefficient by the accessibility function.</div>
+  <div class="content">Wenn erforderlich, wählen Sie ein <code>Zielpotenzialfeld</code> aus. Dies muss ein numerisches Feld aus Ihrem <i>Gelegenheitslayer</i> sein, das als Koeffizient von der Zugänglichkeitsfunktion verwendet wird.</div>
 </div>
 
 :::Tipp Pro-Tipp
@@ -224,13 +224,12 @@ Das *Zielpotenzial* ist eine nützliche Methode, um bestimmte Möglichkeiten geg
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Specify a <code>Sensitivity</code> value. This must be numeric and will be used by the heatmap function to determine how accessibility changes with increasing travel time.</div>
+  <div class="content">Geben Sie einen Wert für die <code>Sensitivität</code> an. Dieser muss numerisch sein und wird von der Heatmap-Funktion verwendet, um zu bestimmen, wie sich die Zugänglichkeit mit zunehmender Reisezeit ändert.</div>
 </div>
-
 
 <div class="step">
   <div class="step-number">9</div>
-  <div class="content">Click <code>Run</code> to start the calculation of the heatmap.</div>
+  <div class="content">Klicken Sie auf <code>Ausführen</code>, um die Berechnung der Heatmap zu starten.</div>
 </div>
 
 :::tip Hinweis
@@ -239,17 +238,17 @@ Je nach Ihrer Konfiguration kann die Berechnung einige Minuten dauern. Die [Stat
 
 :::
 
-### Results
+### Ergebnisse
 
 <div class="step">
   <div class="step-number">10</div>
-  <div class="content">Once the calculation is complete, a result layer will be added to the map. This <i>Heatmap Gravity</i> layer will contain your color-coded heatmap.
+  <div class="content">Sobald die Berechnung abgeschlossen ist, wird ein Ergebnislayer zur Karte hinzugefügt. Dieser Layer namens <i>Heatmap Gravity</i> enthält Ihre farblich gekennzeichnete Heatmap.
   <p></p>
-  Clicking on any of the heatmap's hexagonal cells will reveal the computed accessibility value for this cell.</div>
+  Durch Klicken auf eine der hexagonalen Zellen der Heatmap wird der berechnete Zugänglichkeitswert für diese Zelle angezeigt.</div>
 </div>
 
 
-![Heatmap Gravity-Based Calculation Result in GOAT](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/heatmap_gravity_result.png "Heatmap Gravity-Based Calculation Result in GOAT")
+![Ergebnis der Schwerkraftbasierten Heatmap-Berechnung in GOAT](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/heatmap_gravity_result.png "Ergebnis der Schwerkraftbasierten Heatmap-Berechnung in GOAT")
 
 
 :::tip Tipp
