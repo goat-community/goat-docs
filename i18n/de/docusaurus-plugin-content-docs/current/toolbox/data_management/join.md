@@ -47,7 +47,7 @@ GOAT verwendet die **"Inner Join"**-Operation, um einen Join zu berechnen, der Z
 
 <p> </p>
 
-### Ebenen zum Join auswählen
+### Layer zum Join auswählen
 
 <div class="step">
   <div class="step-number">3</div>

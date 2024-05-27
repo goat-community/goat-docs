@@ -86,7 +86,7 @@ Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie
 
 Berücksichtigt alle zu Fuß begehbaren Wege. Für Heatmaps wird eine Gehgeschwindigkeit von 5 km/h angenommen.
 
-:::tip Hinweis
+:::tip Tipp
 
 Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Gehen](../../routing/walking).
 
@@ -100,7 +100,7 @@ Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Gehen](
 
 Berücksichtigt alle mit dem Fahrrad befahrbaren Wege. Dieser Routing-Modus berücksichtigt bei der Berechnung der Zugänglichkeit die Oberfläche, die Glätte und die Steigung der Straßen. Für Heatmaps wird eine Fahrradgeschwindigkeit von 15 km/h angenommen.
 
-:::tip Hinweis
+:::tip Tipp
 
 Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Fahrrad](../../routing/fahrrad). Darüber hinaus können Sie diese [Publikation](https://doi.org/10.1016/j.jtrangeo.2021.103080) lesen.
 
@@ -114,7 +114,7 @@ Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Fahrrad
 
 Berücksichtigt alle mit dem Pedelec befahrbaren Wege. Dieser Routing-Modus berücksichtigt bei der Berechnung der Erreichbarkeit die Oberfläche und Glätte der Straßen. Für Heatmaps wird eine Pedelec-Geschwindigkeit von 23 km/h angenommen.
 
-:::tip Hinweis
+:::tip Tipp
 
 Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Fahrrad](../../routing/fahrrad). Darüber hinaus können Sie diese [Publikation](https://doi.org/10.1016/j.jtrangeo.2021.103080) lesen.
 
@@ -128,7 +128,7 @@ Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Fahrrad
 
 Berücksichtigt alle mit dem Auto befahrbaren Wege. Dieser Routing-Modus berücksichtigt bei der Berechnung der Erreichbarkeit Geschwindigkeitsbegrenzungen und Einbahnstraßenbeschränkungen.
 
-:::tip Hinweis
+:::tip Tipp
 
 Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Car](../../routing/car).
 
@@ -153,7 +153,7 @@ Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Car](..
 
 Diese Funktion berechnet die Zugänglichkeiten auf der Grundlage einer Gaußschen Kurve, die durch die von Ihnen definierten Parameter „Empfindlichkeit“ und „Zielpotential“ beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
-:::tip Pro tip
+:::tip Pro Tipp
 
 Wie Studien gezeigt haben, ist die Beziehung zwischen Reisezeit und Erreichbarkeit oft nicht linear. Das bedeutet, dass Menschen bereit sein können, eine kurze Strecke zurückzulegen, um eine Einrichtung zu erreichen, aber mit zunehmender Entfernung nimmt ihre Bereitschaft, diese Strecke zurückzulegen, schnell ab (oft überproportional).
 
@@ -205,7 +205,7 @@ Zusätzlich können Sie weitere Opportunities über die Schaltfläche `+ Add Opp
   <div class="content">Wählen Sie eine <code>Reisezeitbegrenzung</code> für Ihre Heatmap aus. Dies wird im Kontext Ihres zuvor ausgewählten <i>Verkehrsmittel</i> verwendet.</div>
 </div>
 
-:::tip Hinweis
+:::tip Tipp
 
 Benötigen Sie Hilfe bei der Auswahl einer geeigneten Reisezeit für verschiedene Gemeinschaftseinrichtungen? Das [„Standort-Werkzeug“] (https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) der Stadt Chemnitz kann Ihnen dabei behilflich sein.
 
@@ -232,7 +232,7 @@ Das *Zielpotenzial* ist eine nützliche Methode, um bestimmte Möglichkeiten geg
   <div class="content">Klicken Sie auf <code>Ausführen</code>, um die Berechnung der Heatmap zu starten.</div>
 </div>
 
-:::tip Hinweis
+:::tip Tipp
 
 Je nach Ihrer Konfiguration kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../Arbeitsbereich/home#status-bar) zeigt den aktuellen Fortschritt an.
 
@@ -355,7 +355,7 @@ In GOAT angewandt, ergeben sich folgende Unterschiede:
 #### Berechnung mit einheitlichem Empfindlichkeitsparameter
 Im ersten Beispiel wird die Erreichbarkeit von Lebensmittelgeschäften in 15 min mit einem einheitlichen Empfindlichkeitsparameter (β=300.000) für alle Geschäfte berechnet. Das Ergebnis sieht wie folgt aus:
 
-:::info coming soon
+:::info in Kürze
 
 Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
 

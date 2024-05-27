@@ -73,7 +73,7 @@ Das untenstehende Beispiel zeigt, dass die Geometrie der *Referenz-Layer* gleich
   <div class="content">Wähle die <code>H3-Rasterauflösung</code>. Du kannst zwischen Auflösungen von <b>3</b> (durchschnittliche Kantenlänge von 69 km) und <b>10</b> (durchschnittliche Kantenlänge von 70 m) wählen.</div>
 </div>
 
-:::tip HINWEIS
+:::tip Tipp
 
 Um mehr über das H3-Raster zu erfahren, kannst du das [Glossar](../../further_reading/glossary#H3-grid) besuchen.
 
@@ -110,7 +110,7 @@ Die verfügbaren **Statistischen Methoden** sind im Folgenden aufgeführt. Die v
   <div class="content">Klicke auf <code>Ausführen</code>.</div>
 </div>
 
-:::tip HINWEIS
+:::tip Tipp
 
 Abhängig von der Größe der Datensätze kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../workspace/home#status-bar) zeigt den aktuellen Fortschritt an.
 

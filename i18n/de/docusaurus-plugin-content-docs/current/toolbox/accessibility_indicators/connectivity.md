@@ -68,7 +68,7 @@ Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie
 
 Berücksichtigt alle zu Fuß begehbaren Wege. Für Heatmaps wird eine Gehgeschwindigkeit von 5 km/h angenommen.
 
-:::tip Hinweis
+:::tip Tipp
 
 Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Walk](../../routing/walking).
 
@@ -96,7 +96,7 @@ Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Fahrrad
 
 Berücksichtigt alle mit dem Pedelec befahrbaren Wege. Dieser Routing-Modus berücksichtigt bei der Berechnung der Erreichbarkeit die Oberfläche und Glätte der Straßen. Für Heatmaps wird eine Pedelec-Geschwindigkeit von 23 km/h angenommen.
 
-:::tip Hinweis
+:::tip Tipp
 
 Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Fahrrad](../../routing/fahrrad). Darüber hinaus können Sie diese [Publikation](https://doi.org/10.1016/j.jtrangeo.2021.103080) lesen.
 
@@ -110,7 +110,7 @@ Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Fahrrad
 
 Berücksichtigt alle mit dem Auto befahrbaren Wege. Dieser Routing-Modus berücksichtigt bei der Berechnung der Erreichbarkeit Geschwindigkeitsbegrenzungen und Einbahnstraßenbeschränkungen.
 
-:::tip Hinweis
+:::tip Tipp
 
 Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Car](../../routing/car).
 
@@ -127,7 +127,7 @@ Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Car](..
   <div class="content">Wählen Sie ein <code>Reisezeitlimit</code> für Ihre Heatmap aus. Dies wird im Zusammenhang mit Ihrem zuvor ausgewählten <i>Verkehrsmittel</i> verwendet.</div>
 </div>
 
-:::tip Hinweis
+:::tip Tipp
 
 Benötigen Sie Hilfe bei der Auswahl einer geeigneten Reisezeit für verschiedene Gemeinschaftseinrichtungen? Das [„Standort-Werkzeug“] (https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) der Stadt Chemnitz kann Ihnen dabei behilflich sein.
 
@@ -144,7 +144,7 @@ Benötigen Sie Hilfe bei der Auswahl einer geeigneten Reisezeit für verschieden
   <div class="content">Klicken Sie auf <code>Ausführen</code>, um mit der Berechnung der Heatmap zu beginnen.</div>
 </div>
 
-:::tip Hinweis
+:::tip Tipp
 
 Je nach Ihrer Konfiguration kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../Arbeitsbereich/home#status-bar) zeigt den aktuellen Fortschritt an.
 
@@ -163,7 +163,7 @@ Je nach Ihrer Konfiguration kann die Berechnung einige Minuten dauern. Die [Stat
 ![Connectivity-based Heatmap Result in GOAT](/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/connectivity_heatmap_result.png "Connectivity-based Heatmap Result in GOAT")
 
 
-:::tip Tip
+:::tip Tipp
 
 Möchten Sie Ihre Heatmaps gestalten und schöne Karten erstellen? Siehe [Styling](../../map/layer_style/styling).
 :::

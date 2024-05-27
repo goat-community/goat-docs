@@ -68,7 +68,7 @@ Das untenstehende Beispiel zeigt eine *Eingabetabelle (Matrix)* und die resultie
   <div class="content">Klicke auf <code>Ausführen</code>.</div>
 </div>
 
-:::tip HINWEIS
+:::tip Tipp
 
 Abhängig von der Komplexität der OD-Matrix kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../workspace/home#status-bar) zeigt den aktuellen Fortschritt an.
 

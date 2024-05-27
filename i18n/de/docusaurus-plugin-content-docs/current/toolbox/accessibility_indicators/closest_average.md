@@ -192,7 +192,7 @@ Je nach Konfiguration kann die Berechnung einige Minuten dauern. Die [Statusleis
 
 <img src={require('/img/toolbox/accessibility_indicators/heatmaps/closest_average_based/clst-avg-calculation.gif').default} alt="Options" style={{ maxHeight: "800px", maxWidth: "800px"}}/>
 
-:::tip Tip
+:::tip Tipp
 
 Möchten Sie Ihre Heatmaps gestalten und ansprechende Karten erstellen? Siehe unter [Styling](../../map/layer_style/styling).
 

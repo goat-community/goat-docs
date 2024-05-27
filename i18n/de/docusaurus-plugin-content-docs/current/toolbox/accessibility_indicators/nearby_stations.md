@@ -103,7 +103,7 @@ Falls Sie eine Analyse außerhalb dieses Geofence durchführen müssen, wenden S
   <div class="content">Klicken Sie auf <code>Ausführen</code>. Dadurch wird die Erfassung der nahegelegenen Stationen von den ausgewählten Startpunkt(en) gestartet.</div>
 </div>
 
-:::tip Hinweis
+:::tip Tipp
 
 Je nach Anzahl der ausgewählten Ausgangspunkte kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../workspace/home#status-bar) zeigt den aktuellen Fortschritt an.
 
