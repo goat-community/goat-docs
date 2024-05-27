@@ -2,18 +2,18 @@
 sidebar_position: 5
 ---
 
-# Settings
+# Einstellungen
 
-On the **Settings** page, you can view and modify your preferences and settings related to your **account, teams, organization, and subscriptions**. 
+Auf der **Einstellungen**-Seite können Sie Ihre Präferenzen und Einstellungen in Bezug auf Ihr **Konto, Teams, Organisation und Abonnements** anzeigen und ändern.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/settings/settings_general.gif').default} alt="Settings Page in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
-## Account Settings
+## Kontoeinstellungen
 
-Under the **Account Settings**, you can adjust your profile and your preferences. 
-In the <code>Profile</code> tab, you can update your **first name, last name**, and **email address** and upload a **profile picture**.
+Unter den **Kontoeinstellungen** können Sie Ihr Profil und Ihre Präferenzen anpassen. 
+Im <code>Profil</code>-Tab können Sie Ihren **Vorname, Nachname** und **E-Mail-Adresse** aktualisieren und ein **Profilbild** hochladen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/settings/profile.png').default} alt="GOAT - Profile Settings" style={{ maxHeight: "auto", maxWidth: "600px", objectFit: "cover"}}/>
@@ -21,7 +21,7 @@ In the <code>Profile</code> tab, you can update your **first name, last name**, 
 
 :::info
 
-If you wish to **delete your account**, you can also do this in this section. Please only click on this button if you are certain about this step, as this cannot be undone. 
+Falls Sie Ihr **Konto löschen** möchten, können Sie dies ebenfalls in diesem Abschnitt tun. Bitte klicken Sie nur auf diesen Button, wenn Sie sich sicher sind, da dies nicht rückgängig gemacht werden kann.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/settings/delete_account.png').default} alt="Delete Account" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
@@ -29,7 +29,7 @@ If you wish to **delete your account**, you can also do this in this section. Pl
 :::
 
 
-In the <code>Preferences</code> tab, you can choose your preferred **language** (English or German), **theme** (light and dark mode), and **unit of measurement** (metric or imperial).
+Im <code>Präferenzen</code>-Tab können Sie Ihre bevorzugte **Sprache** (Englisch oder Deutsch), das **Design** (hell und dunkel Modus) und die **Maßeinheit** (metrisch oder imperial) wählen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/settings/preferences.png').default} alt="GOAT - Preferences" style={{ maxHeight: "300px", maxWidth: "600px", objectFit: "cover"}}/>
@@ -39,44 +39,46 @@ In the <code>Preferences</code> tab, you can choose your preferred **language** 
 </p>
 
 
-## Teams Settings
+## Teameinstellungen
 
-:::info coming soon
+:::infos folgen bald
 
-We currently implement this functionality. 🧑🏻‍💻
+Wir implementieren derzeit diese Funktion. 🧑🏻‍💻
 
 :::
 
-## Organization Settings
+## Organisationseinstellungen
 
-Under the **Organization Settings**, you can adjust the profile of your organization and manage the organization members.
+Unter den **Organisationseinstellungen** können Sie das Profil Ihrer Organisation anpassen und die Mitglieder der Organisation verwalten.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/settings/organization_settings.png').default} alt="Organization Settings" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 
-In the <code>Profile</code> tab, you can change your **organization's name** and upload a **logo or picture**. 
+Im <code>Profil</code>-Tab können Sie den **Namen Ihrer Organisation** ändern und ein **Logo oder Bild** hochladen.
 
 :::info
 
-If you scroll down to the Danger zone, you also find an option to **delete your organization**. Please only click on this button if you are certain about this step, as this cannot be undone. 
+Wenn Sie nach unten zur Gefahrenzone scrollen, finden Sie auch eine Option zum **Löschen Ihrer Organisation**. Bitte klicken Sie nur auf diesen Button, wenn Sie sich sicher sind, da dies nicht rückgängig gemacht werden kann.
+
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/settings/delete_organization.png').default} alt="Delete Organization" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 :::
 
-In the <code>Members</code> tab, you can view the **members list** of your organization. By clicking on three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> you can **manage their roles** and personal information. Furthermore, you can **invite new members** to join your organization by email.
+Im <code>Mitglieder</code>-Tab können Sie die **Mitgliederliste** Ihrer Organisation anzeigen. Durch Klicken auf die drei Punkte <img src={require('/img/map/filter/3dots.png').default} alt="Optionen" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> können Sie **deren Rollen verwalten** und persönliche Informationen bearbeiten. Außerdem können Sie **neue Mitglieder** per E-Mail einladen, Ihrer Organisation beizutreten.
 
 
 <p>
 </p>
 
 
-## Subscriptions
+## Abonnements
 
-In the **Subscriptions** menu, you can view and change the **details of your subscription**. This allows you to stay informed about your subscription status and make any necessary adjustments to better suit your requirements. 
+Im **Abonnements**-Menü können Sie die **Details Ihres Abonnements** anzeigen und ändern. Dies ermöglicht es Ihnen, stets über den Status Ihres Abonnements informiert zu bleiben und notwendige Anpassungen vorzunehmen, um Ihren Anforderungen besser gerecht zu werden.
+
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/settings/subscription_settings.png').default} alt="Subscription Details" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
@@ -84,6 +86,6 @@ In the **Subscriptions** menu, you can view and change the **details of your sub
 
 :::info
 
-Please feel free to contact the **[Support](https://plan4better.de/en/contact/ "Contact support")** anytime in case you have questions regarding your subscription. 
+Bitte zögern Sie nicht, den **[Support](https://plan4better.de/en/contact/ "Contact support")** jederzeit zu kontaktieren, falls Sie Fragen zu Ihrem Abonnement haben.
 
 :::

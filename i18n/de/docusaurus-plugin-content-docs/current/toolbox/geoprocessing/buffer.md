@@ -8,13 +8,13 @@ import TabItem from '@theme/TabItem';
 
 
 
-# Buffer
+# Puffer
 
-The buffer creates a **zone around** given **points, lines, or polygons** with a specified buffer distance.
+Der Puffer erstellt eine **Zone um** angegebene **Punkte, Linien oder Polygone** mit einer festgelegten Pufferdistanz.
 
-## 1. Explanation
+## 1. Erklärung
 
-A **buffer** is a tool used to delineate the catchment area around a specific point, line, or polygon illustrating the extent of influence or reach from that point. Users can define the ``distance`` of the buffer, thereby customizing the radius of the area covered.
+Ein **Puffer** ist ein Werkzeug, das verwendet wird, um das Einzugsgebiet um einen bestimmten Punkt, eine Linie oder ein Polygon zu definieren und das Ausmaß des Einflusses oder der Reichweite von diesem Punkt darzustellen. Benutzer können die ``Distanz`` des Puffers definieren und so den Radius des abgedeckten Bereichs anpassen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
@@ -22,51 +22,46 @@ A **buffer** is a tool used to delineate the catchment area around a specific po
 
 </div> 
 
-## 2. Example use cases 
+## 2. Anwendungsbeispiele 
 
-- How many people live within a 500m buffer distance from the train station? 
-- How many shops are accessible within a 1000m buffer distance from a bus stop?
+- Wie viele Menschen leben innerhalb einer 500m Pufferdistanz vom Bahnhof? 
+- Wie viele Geschäfte sind innerhalb einer 1000m Pufferdistanz von einer Bushaltestelle erreichbar?
 
-
-## 3. How to use the tool?
-
+## 3. Wie benutzt man das Werkzeug?
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Klicke auf <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Geoprocessing</code> menu, click on <code>Buffer</code>.</div>
+  <div class="content">Klicke im Menü <code>Geoverarbeitung</code> auf <code>Puffer</code>.</div>
 </div>
-
 
 <img src={require('/img/toolbox/geoprocessing/buffer/overview.png').default} alt="Buffer Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
-### Select layer to buffer 
-
+### Puffer-Layer auswählen
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select the <code>Layer to buffer</code>, around which you like to create the buffer.</div>
+  <div class="content">Wähle den <code>Puffer-Layer</code>, um den du einen Puffer erstellen möchtest.</div>
 </div>
 
-### Buffer Settings 
-
+### Puffer-Einstellungen
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Define via the buffer <code>Buffer Distance</code> how many meters from your points, lines, or shapes the buffer should extend.</div>
+  <div class="content">Definiere über die Puffer-<code>Distanz</code>, wie viele Meter sich der Puffer von deinen Punkten, Linien oder Formen ausdehnen soll.</div>
 </div>
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Define in how many <code>Buffer Steps</code> the buffer should be divided.</div>
+  <div class="content">Definiere, in wie viele <code>Pufferstufen</code> der Puffer unterteilt werden soll.</div>
 </div>
 
-:::tip HINT
-Depending on which geometric results you are aiming for, you can first select, if all geometries shall be combined (**Polygon Union**). This means, if e.g. a buffer is created around neighboring points, whether you like to have **single buffers** (**no union**) or **combined buffers** (**union**) as a result.
+:::tip HINWEIS
+Abhängig davon, welche geometrischen Ergebnisse du anstrebst, kannst du zuerst auswählen, ob alle Geometrien kombiniert werden sollen (**Polygonvereinigung**). Dies bedeutet, wenn z.B. ein Puffer um benachbarte Punkte erstellt wird, ob du **einzelne Puffer** (**keine Vereinigung**) oder **kombinierte Puffer** (**Vereinigung**) als Ergebnis haben möchtest.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
@@ -74,8 +69,7 @@ Depending on which geometric results you are aiming for, you can first select, i
 
 </div> 
 
-In addition, if you decide on a Polygon Union, you can choose whether you like to have each buffer as a **filled polygon (no difference)** or if you like to apply a **geometric difference between each buffer step (difference)**.
-
+Zusätzlich, wenn du dich für eine Polygonvereinigung entscheidest, kannst du wählen, ob jeder Puffer als **gefülltes Polygon (ohne Unterschied)** angezeigt werden soll oder ob du einen **geometrischen Unterschied zwischen jeder Pufferstufe(Unterschied)** anwenden möchtest.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
@@ -83,30 +77,29 @@ In addition, if you decide on a Polygon Union, you can choose whether you like t
 
 </div> 
 
-
 :::
 
 <Tabs>
-<TabItem value="nounion" label="No Union" default className="tabItemBox">
+<TabItem value="nounion" label="Keine Vereinigung" default className="tabItemBox">
 
-#### No Union
-If you calculate buffers **without a union**, GOAT will generate single buffers around each input geometry. 
+#### Keine Vereinigung
+Wenn du Puffer **ohne Vereinigung** berechnest, erstellt GOAT einzelne Puffer um jede Eingabegeometrie.
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Disable <code>Polygon Union</code>.</div>
+  <div class="content">Deaktiviere <code>Polygonvereinigung</code>.</div>
 </div>
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Click on <code>Run</code>. This starts the calculation of the buffer.</div>
+  <div class="content">Klicke auf <code>Ausführen</code>. Dies startet die Berechnung des Puffers.</div>
 </div>
 
-### Results
+### Ergebnisse
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">As soon as this task is accomplished, the resulting layer called <b>"Buffer"</b> will be added to your map.</div>
+  <div class="content">Sobald diese Aufgabe abgeschlossen ist, wird der resultierende Layer namens <b>"Puffer"</b> deiner Karte hinzugefügt.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -117,10 +110,10 @@ If you calculate buffers **without a union**, GOAT will generate single buffers 
 
 </TabItem>
 
-  <TabItem value="polygonunion" label="Union" default className="tabItemBox">
+  <TabItem value="polygonunion" label="Vereinigung" default className="tabItemBox">
 
-#### Polygon Union
-The  ``Polygon Union`` creates a **geometric union** of all steps of the buffer polygons. It **combines** multiple polygons into a single polygon that encompasses all the areas of the individual polygons, i.e. the buffer with the biggest extent also includes all buffer areas of the smaller extent. This approach is useful if you want to see the total area covered by all your buffer steps combined. 
+#### Polygonvereinigung
+Die ``Polygonvereinigung`` erstellt eine **geometrische Vereinigung** aller Schritte der Pufferpolygone. Sie **kombiniert** mehrere Polygone zu einem einzigen Polygon, das alle Bereiche der einzelnen Polygone umfasst, d.h. der Puffer mit der größten Ausdehnung schließt auch alle Pufferbereiche der kleineren Ausdehnung ein. Dieser Ansatz ist nützlich, wenn du die Gesamtfläche sehen möchtest, die durch alle deine Puffer-Schritte zusammen abgedeckt wird.
 
 <div style={{ display: 'flex', flexDirection: 'column' }}>
 
@@ -128,22 +121,21 @@ The  ``Polygon Union`` creates a **geometric union** of all steps of the buffer 
 
 </div> 
 
-
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Enable <code>Polygon Union</code>.</div>
+  <div class="content">Aktiviere <code>Polygonvereinigung</code>.</div>
 </div>
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Click on <code>Run</code>. This starts the calculation of the buffer.</div>
+  <div class="content">Klicke auf <code>Ausführen</code>. Dies startet die Berechnung des Puffers.</div>
 </div>
 
-### Results
+### Ergebnisse
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">As soon as this task is accomplished, the resulting layer called <b>"Buffer"</b> will be added to your map.</div>
+  <div class="content">Sobald diese Aufgabe abgeschlossen ist, wird der resultierende Layer namens <b>"Puffer"</b> deiner Karte hinzugefügt.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -152,12 +144,11 @@ The  ``Polygon Union`` creates a **geometric union** of all steps of the buffer 
 
 </div> 
 
-
   </TabItem>
-  <TabItem value="polygondifference" label="Union + Difference " className="tabItemBox">
+  <TabItem value="polygondifference" label="Vereinigung + Unterschied " className="tabItemBox">
 
-#### Polygon Union + Polygon Difference 
-The  ``Polygon Difference`` operation creates a **geometric difference** of the buffers. It subtracts one polygon from another, resulting in polygon shapes where the **buffers do not overlap**.
+#### Polygonvereinigung + Polygonunterschied 
+Die ``Polygonunterschied``-Operation erstellt einen **geometrischen Unterschied** der Puffer. Sie subtrahiert ein Polygon von einem anderen, was zu Polygonformen führt, bei denen sich die **Puffer nicht überlappen**.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
@@ -167,19 +158,19 @@ The  ``Polygon Difference`` operation creates a **geometric difference** of the 
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Enable <code>Polygon Difference</code>.</div>
+  <div class="content">Aktiviere <code>Polygonunterschied</code>.</div>
 </div>
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Click on <code>Run</code>. This starts the calculation of the buffer.</div>
+  <div class="content">Klicke auf <code>Ausführen</code>. Dies startet die Berechnung des Puffers.</div>
 </div>
 
-### Results
+### Ergebnisse
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">As soon as this task is accomplished, the resulting layer called <b>"Buffer"</b> will be added to your map.</div>
+  <div class="content">Sobald diese Aufgabe abgeschlossen ist, wird der resultierende Layer namens <b>"Puffer"</b> deiner Karte hinzugefügt.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -188,17 +179,14 @@ The  ``Polygon Difference`` operation creates a **geometric difference** of the 
 
 </div> 
 
-
-
   </TabItem>
+
+
 </Tabs>
 
+:::tip TIPP
 
-
-
-:::tip Tip
-
-Want to style your buffers and create nice-looking maps? See [Styling](../../map/layer_style/styling.md).
+Möchtest du deine Puffer bearbeiten und ansprechende Karten erstellen? Siehe [Styling](../../map/layer_style/styling.md).
 
 :::
 

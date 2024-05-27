@@ -2,19 +2,19 @@
 sidebar_position: 1
 ---
 
-# Home
+# Startseite
 
-When you log in to GOAT, you will arrive at the **Home** page. From here, you can easily access your [Recent Projects](#recent-projects) and [Recent Datasets](#recent-datasets). Furthermore, you can [Explore](#explore) interesting content, such as new blog posts.
+Wenn Sie sich bei GOAT anmelden, gelangen Sie auf die **Startseite**. Von hier aus können Sie problemlos auf Ihre [aktuellen Projekte](#recent-projects) und [aktuellen Datensätze](#recent-datasets) zugreifen. Darüber hinaus können Sie interessante Inhalte erkunden, wie z. B. neue Blogbeiträge unter [Erkunden](#explore).
 
-Interface Overview:
+Übersicht der Benutzeroberfläche:
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/workspace/home/overview.png').default} alt="Home Interface Overview in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div>   
 
 
-### Navigation Bar
-The list below explains the navigation toolbar in the Workspace.
+### Navigationsleiste
+Die folgende Liste erklärt die Navigationsleiste im Arbeitsbereich.
 
 | Icon and Label| Usage |
 | :-: | --- |
@@ -25,38 +25,38 @@ The list below explains the navigation toolbar in the Workspace.
 | <img src={require('/img/workspace/home/bar-settings.png').default} alt="settings" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | The page where you can edit your profile and preferences settings |
 
 
-### Recent Projects
-Here you can see your latest projects and when they were last updated. You can create a new project by clicking on the plus icon and access the **[Projects](../workspace/projects)** page by clicking on the `See All` button. 
+### Aktuelle Projekte
+Hier können Sie Ihre neuesten Projekte und deren letzte Aktualisierungen sehen. Sie können ein neues Projekt erstellen, indem Sie auf das Plus-Symbol klicken, und die **[Projekte](../workspace/projects)**-Seite aufrufen, indem Sie auf die Schaltfläche `Alle anzeigen` klicken.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/workspace/home/recent_projects.png').default} alt="Recent Projects" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 
-### Recent Datasets
-Here you can see your latest datasets and when they were last updated. You can add a new dataset by clicking on the plus icon and access the **[Datasets](../workspace/datasets)** page by clicking on the `See All` button.
+### Aktuelle Datensätze
+Hier können Sie Ihre neuesten Datensätze und deren letzte Aktualisierungen sehen. Sie können einen neuen Datensatz hinzufügen, indem Sie auf das Plus-Symbol klicken, und die **[Datensätze](../workspace/datasets)**-Seite aufrufen, indem Sie auf die Schaltfläche `Alle anzeigen` klicken.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/workspace/home/recent_datasets.png').default} alt="Recent Datasets" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 
-### Explore
-Here you can see the latest blog posts and further materials that might be of interest to you. You can click on the `Visit Blog` button to see all [blog posts](https://plan4better.de/en/blog/).
+### Erkunden
+Hier können Sie die neuesten Blogbeiträge und weitere interessante Materialien sehen. Sie können auf die Schaltfläche `Blog besuchen` klicken, um alle [Blogbeiträge](https://plan4better.de/en/blog/) zu sehen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/workspace/home/explore.png').default} alt="Explore" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
-### User Icon 
-By clicking on the user icon, you can see your name, your organization, and the `Logout` button.
+### Benutzer-Symbol 
+Durch Klicken auf das Benutzer-Symbol können Sie Ihren Namen, Ihre Organisation und die Schaltfläche `Abmelden` sehen.
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/workspace/home/user_icon.png').default} alt="User Icon" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
 </div> 
 
 
-### Status Bar
-When you click on the Status Bar in the upper right corner of the Home page, you will see the status of your tasks in GOAT. *Tasks* are operations like data upload or geoanalysis.
+### Statusleiste
+Wenn Sie auf die Statusleiste in der oberen rechten Ecke der Startseite klicken, sehen Sie den Status Ihrer Aufgaben in GOAT. *Aufgaben* sind Vorgänge wie Daten-Uploads oder Geoanalysen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/workspace/home/status_bar.png').default} alt="Status Bar" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>

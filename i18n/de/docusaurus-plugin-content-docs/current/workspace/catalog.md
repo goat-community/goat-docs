@@ -2,39 +2,39 @@
 sidebar_position: 4
 ---
 
-# Catalog
+# Katalog
 
-The **Data Catalog** is a comprehensive listing of all [geospatial datasets](../further_reading/glossary#geospatial-data) available for exploration and analysis. A wide range of datasets are provided by Plan4Better, our partners, and [open source](../further_reading/glossary#open-source) libraries, ensuring a **reliable and accurate** database for your GIS projects.
+Der **Datenkatalog** ist eine umfassende Liste aller verfügbaren [georäumlichen Datensätze](../further_reading/glossary#geospatial-data) zur Erkundung und Analyse. Eine breite Palette von Datensätzen wird von Plan4Better, unseren Partnern und [Open-Source](../further_reading/glossary#open-source)-Bibliotheken bereitgestellt, wodurch eine **zuverlässige und genaue** Datenbank für Ihre GIS-Projekte sichergestellt wird.
 
 <div class="content"><img src={require('/img/workspace/catalog/home-catalog.png').default} alt="Data Catalog" style={{ maxHeight: "700px", maxWidth: "800px"}}/></div>
 
-## Explore the catalog
+## Den Katalog erkunden
 
-Accessed from the [Workspace](../category/workspace) or via the [`+ Add layer`](../map/layers#add-layers) button in your GOAT project, you can search our collection of datasets by *keyword, applying spatial and non-spatial filters* for efficient discovery. You can also interactively preview datasets within our interface to assess content and quality, enabling visual exploration. Be assured of data quality with our collection of authoritative sources.
+Der Zugang erfolgt über den [Arbeitsbereich](../category/workspace) oder über die Schaltfläche [`+ Ebene hinzufügen`](../map/layers#add-layers) in Ihrem GOAT-Projekt. Sie können unsere Sammlung von Datensätzen nach *Schlüsselwörtern durchsuchen und räumliche und nicht-räumliche Filter* anwenden, um eine effiziente Entdeckung zu ermöglichen. Sie können auch Datensätze interaktiv in unserer Benutzeroberfläche vorab ansehen, um den Inhalt und die Qualität zu bewerten, und so eine visuelle Erkundung ermöglichen. Seien Sie versichert, dass unsere Sammlung aus autoritativen Quellen stammt und eine hohe Datenqualität aufweist.
 
-Our catalog features an extensive collection of datasets spanning different thematic areas, under different categories including:
+Unser Katalog bietet eine umfangreiche Sammlung von Datensätzen, die verschiedene thematische Bereiche abdecken und in verschiedenen Kategorien unterteilt sind, darunter:
 
-- **Basemap:** Foundational map layer providing essential geographic features such as coastlines, rivers, and terrain, serving as a backdrop for additional data layers.
+- **Grundkarte:** Grundlegende Kartenebene, die wesentliche geografische Merkmale wie Küstenlinien, Flüsse und Gelände enthält und als Hintergrund für zusätzliche Datenebenen dient.
 
-- **Imagery:** High-resolution visual data captured from satellites or aerial photography, offering detailed views of landscapes, urban areas, and infrastructure.
+- **Bildmaterial:** Hochauflösende visuelle Daten, die von Satelliten oder Luftaufnahmen erfasst wurden und detaillierte Ansichten von Landschaften, städtischen Gebieten und Infrastrukturen bieten.
 
-- **Boundary:** Spatial demarcations delineating administrative, political, or geographic boundaries, including country borders, state/province lines, and municipal districts.
+- **Grenzen:** Räumliche Abgrenzungen, die administrative, politische oder geografische Grenzen darstellen, einschließlich Landesgrenzen, Staats-/Provinzgrenzen und Gemeindebezirke.
 
-- **Landuse:** Categorization of land areas based on their primary usage, including classifications such as residential, commercial, industrial, agricultural, and recreational zones.
+- **Landnutzung:** Kategorisierung von Landflächen basierend auf ihrer primären Nutzung, einschließlich Klassifikationen wie Wohngebiete, Gewerbegebiete, Industriegebiete, Landwirtschafts- und Erholungszonen.
 
-- **Environment:** Data depicting natural features and phenomena, such as ecosystems, climate patterns, and ecological habitats.
+- **Umwelt:** Daten, die natürliche Merkmale und Phänomene darstellen, wie Ökosysteme, Klimamuster und ökologische Lebensräume.
 
-- **People:** Demographic data related to human populations, such as population density, population distribution, age groups, and socio-economic characteristics.
+- **Menschen:** Demografische Daten zu menschlichen Populationen, wie Bevölkerungsdichte, Bevölkerungsverteilung, Altersgruppen und sozioökonomische Merkmale.
 
-- **Transportation**:** Information on transportation networks and infrastructure, including roads, highways, railways, airports, ports, and public transport systems.
+- **Verkehr:** Informationen zu Verkehrsnetzen und Infrastrukturen, einschließlich Straßen, Autobahnen, Eisenbahnen, Flughäfen, Häfen und öffentlichen Verkehrssystemen.
 
-- **Places:** Points of interest and geographic landmarks such as schools, car-sharing locations, tourist attractions, and hospitals.
+- **Orte:** Sehenswürdigkeiten und geografische Wahrzeichen wie Schulen, Carsharing-Standorte, Touristenattraktionen und Krankenhäuser.
 
 ![Data Catalog in GOAT](/img/workspace/catalog/catalog_general.png "Data Catalog in GOAT")
 
-Clicking on a dataset within the Catalog page will take you to the **metadata** section. Here, you can explore detailed information about the dataset, including its **description**, **[dataset type](../data/dataset_types)**, **geographical and language codes** (based on the [ISO 3166-1 alpha-2](https://www.iso.org/iso-3166-country-codes.html)), **distributor name**, and **license details**. You can also preview the **dataset map** and associated data directly from the data page.
+Ein Klick auf einen Datensatz innerhalb der Katalogseite führt Sie zum **Metadaten**-Bereich. Hier können Sie detaillierte Informationen zum Datensatz erkunden, einschließlich seiner **Beschreibung**, des **[Datensatztyps](../data/dataset_types)**, der **geografischen und Sprachcodes** (basierend auf dem [ISO 3166-1 alpha-2](https://www.iso.org/iso-3166-country-codes.html)), des **Verteilernamens** und der **Lizenzdetails**. Sie können auch die **Kartenvorschau des Datensatzes** und die zugehörigen Daten direkt von der Datenseite aus ansehen.
 
-## Use catalog data in your GOAT project
+## Katalogdaten in Ihrem GOAT-Projekt verwenden
 
 <div class="step">
   <div class="step-number">1</div>
@@ -61,8 +61,8 @@ Clicking on a dataset within the Catalog page will take you to the **metadata** 
 </div>
 
 
-:::tip HINT
+:::tip HINWEIS
 
-To learn more about GOAT's advanced filtering capabilities, see the [Filter](../map/filter.md "Filter dataset") page.
+Um mehr über die erweiterten Filterfunktionen von GOAT zu erfahren, besuchen Sie die Seite [Filter](../map/filter.md "Filter dataset").
 
 :::

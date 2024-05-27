@@ -6,24 +6,26 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
-# Heatmap - Closest Average
-A color-coded map to visualize the average travel time to points (such as [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) from surrounding areas.
+# Heatmap - Durchschnitt Reisezeit
 
-## 1. Explanation
+Eine farbkodierte Karte zur Visualisierung der durchschnittlichen Reisezeit zu Punkten (wie [POI](../../../further_reading/glossary#point-of-interest-poi "Was ist ein POI?")) aus umliegenden Gebieten.
 
-Visualized as a color-coded hexagonal grid, the heatmap takes into account real-world transport and street networks to compute travel times. After specifying a *routing type* (Walk, Bicycle, etc.), *opportunity layer* and *travel time limit*, the result will display a color-coded hexagonal grid for all areas accessible under these conditions. The color scale refers to average travel time.
+## 1. Erklärung
+
+
+Visualisiert als farbkodiertes hexagonales Raster, berücksichtigt die Heatmap reale Transport- und Straßennetze, um Reisezeiten zu berechnen. Nach der Festlegung eines *Routing-Typs* (Gehen, Fahrrad, usw.), einer *Opportunity-Schicht* und eines *Reisezeitlimits* wird das Ergebnis ein farbkodiertes hexagonales Raster für alle unter diesen Bedingungen zugänglichen Bereiche anzeigen. Die Farbschattierung bezieht sich auf die durchschnittliche Reisezeit.
 
 :::info INFO
 
-An `Opportunity layer` contains [geographic point](../../../data/data_types "What are geographic points?") data. Select one or more such layers containing your destination points (opportunities) as input to the heatmap.
+Eine `Opportunity-Schicht` enthält [geografische Punkt](../../../data/data_types "Was sind geografische Punkte?")-Daten. Wählen Sie eine oder mehrere solcher Schichten mit Ihren Zielpunkten (Opportunities) als Eingabe für die Heatmap.
 
 :::
 
-With the configurable *number of destinations* property, you can restrict the calculation to consider only the *n* closest opportunities. This produces an easy-to-understand visualization which can be used to identify variation in average travel times even at a city or regional scale. The computed value for each cell in the heatmap represents the average travel time to the nearest *n* destinations.
+Mit der konfigurierbaren Eigenschaft *Anzahl der Ziele* können Sie die Berechnung auf die *n* nächstgelegenen Opportunities beschränken. Dies ergibt eine leicht verständliche Visualisierung, die verwendet werden kann, um Unterschiede in den durchschnittlichen Reisezeiten sogar auf Stadt- oder regionaler Ebene zu identifizieren. Der berechnete Wert für jede Zelle in der Heatmap stellt die durchschnittliche Reisezeit zu den nächstgelegenen *n* Zielen dar.
 
-:::tip Pro tip
+:::tip Pro Tipp
 
-Described succinctly, accessibility heatmaps are a visualization representing *access* from various unspecified origins, to one or more specified destinations. This is in contrast to catchment areas which represent *egress* from one or more specified origins to various unspecified destinations.
+Kurz beschrieben, sind Zugänglichkeits-Heatmaps eine Visualisierung, die den *Zugang* von verschiedenen unbestimmten Ursprungsorten zu einem oder mehreren festgelegten Zielen darstellt. Dies steht im Gegensatz zu Einzugsgebieten, die den *Abfluss* von einem oder mehreren festgelegten Ursprungsorten zu verschiedenen unbestimmten Zielen darstellen.
 
 :::
 
@@ -32,41 +34,36 @@ Described succinctly, accessibility heatmaps are a visualization representing *a
   
 :::info 
 
-Heatmaps are available in certain regions. Upon selecting a `Routing type`, a **geofence** will be displayed on the map to highlight supported regions.
+Heatmaps sind in bestimmten Regionen verfügbar. Beim Auswählen eines `Routing-Typs` wird auf der Karte ein **Geofence** angezeigt, um die unterstützten Regionen hervorzuheben.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/toolbox/accessibility_indicators/heatmaps/closest_average_based/geofence.png').default} alt="Geofence for Closest-average-based Heatmaps in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
 </div> 
 
 
-If you would like to perform analyses beyond this geofence, feel free to [contact us](https://plan4better.de/en/contact/ "Contact us"). We would be happy to discuss further options.
+Wenn Sie Analysen außerhalb dieses Geofence durchführen möchten, kontaktieren Sie uns bitte [hier](https://plan4better.de/en/contact/ "Kontaktieren Sie uns"). Wir würden uns freuen, weitere Optionen mit Ihnen zu besprechen.
 
 :::
 
-## 2. Example use cases
+## 2. Beispielanwendungsfälle
 
- - Do residents in certain areas have longer average travel times to amenities than others?
+- Haben Bewohner in bestimmten Gebieten längere durchschnittliche Reisezeiten zu Annehmlichkeiten als andere?
+- Gibt es einen signifikanten Unterschied in den durchschnittlichen Reisezeiten zu Annehmlichkeiten zwischen verschiedenen Vierteln?
+- Wie variieren die durchschnittlichen Reisezeiten zu Annehmlichkeiten je nach Verkehrsmittel?
+- Wie variieren die durchschnittlichen Reisezeiten zu verschiedenen Arten von Annehmlichkeiten?
+- Gibt es Gebiete mit hohen durchschnittlichen Reisezeiten zu Annehmlichkeiten, die von einer verbesserten Verkehrsinfrastruktur profitieren könnten?
+- Wenn Standards verlangen, dass eine Mindestanzahl von Annehmlichkeiten innerhalb einer bestimmten Reisezeit zugänglich sein muss, welche Gebiete erfüllen diese Standards?
 
- - Is there a significant difference in average travel times to amenities across different neighborhoods?
-
- - How does the average travel time to amenities vary across different modes of transport?
-
- - How does the average travel time vary across different types of amenities?
- 
- - Are there areas with high average travel times to amenities that could benefit from improved transport infrastructure?
-
- - If standards require that a minimum number of amenities be accessible within a certain travel time, which areas meet these standards?
-
-## 3. How to use the indicator?
+## 3. Wie verwendet man den Indikator?
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Click on <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Heatmap Closest Average</code>.</div>
+  <div class="content">Under the <code>Erreichbarkeitsindikatoren</code> menu, click on <code>Heatmap Durchschnitt Reisezeit</code>.</div>
 </div>
 
 ### Routing
@@ -80,13 +77,15 @@ If you would like to perform analyses beyond this geofence, feel free to [contac
 
 <TabItem value="walk" label="Walk" default className="tabItemBox">
 
-#### Walk
+##### Gehen
 
-Considers all paths accessible by foot. For heatmaps, a walking speed of 5 km/h is assumed.
+Berücksichtigt alle Wege, die zu Fuß zugänglich sind. Für Heatmaps wird eine Gehgeschwindigkeit von 5 km/h angenommen.
 
-:::tip Hint
+:::tip Tipp
 
-For further insights into the Routing algorithm, visit [Routing/Walk](../../routing/walking).
+Für weitere Einblicke in den Routing-Algorithmus, besuchen Sie [Routing/Gehen](../../routing/walking).
+
+:::
 
 :::
 
@@ -94,13 +93,13 @@ For further insights into the Routing algorithm, visit [Routing/Walk](../../rout
   
 <TabItem value="cycling" label="Bicycle" className="tabItemBox">
 
-#### Bicycle
+#### Fahrrad
 
-Considers all paths accessible by bicycle. This routing mode takes into account the surface, smoothness and slope of streets while computing accessibility. For heatmaps, a cycling speed of 15 km/h is assumed.
+Berücksichtigt alle Wege, die mit dem Fahrrad zugänglich sind. Dieser Routing-Modus berücksichtigt die Oberfläche, Glätte und Steigung der Straßen bei der Berechnung der Zugänglichkeit. Für Heatmaps wird eine Fahrradgeschwindigkeit von 15 km/h angenommen.
 
-:::tip Hint
+:::tip Tipp
 
-For further insights into the Routing algorithm, visit [Routing/Bicycle](../../routing/bicycle). In addition, you can check this [Publication](https://doi.org/10.1016/j.jtrangeo.2021.103080).
+Für weitere Einblicke in den Routing-Algorithmus, besuchen Sie [Routing/Fahrrad](../../routing/bicycle). Außerdem können Sie diese [Publikation](https://doi.org/10.1016/j.jtrangeo.2021.103080) lesen.
 
 :::
 
@@ -110,25 +109,26 @@ For further insights into the Routing algorithm, visit [Routing/Bicycle](../../r
 
 #### Pedelec
 
-Considers all paths accessible by pedelec. This routing mode takes into account the surface and smoothness of streets while computing accessibility. For heatmaps, a pedelec speed of 23 km/h is assumed.
+Berücksichtigt alle Wege, die mit dem Pedelec zugänglich sind. Dieser Routing-Modus berücksichtigt die Oberfläche und Glätte der Straßen bei der Berechnung der Zugänglichkeit. Für Heatmaps wird eine Pedelec-Geschwindigkeit von 23 km/h angenommen.
 
-:::tip Hint
+:::tip Tipp
 
-For further insights into the Routing algorithm, visit [Routing/Bicycle](../../routing/bicycle). In addition, you can check this [Publication](https://doi.org/10.1016/j.jtrangeo.2021.103080).
+Für weitere Einblicke in den Routing-Algorithmus, besuchen Sie [Routing/Fahrrad](../../routing/bicycle). Außerdem können Sie diese [Publikation](https://doi.org/10.1016/j.jtrangeo.2021.103080) lesen.
 
 :::
+
 
 </TabItem>
 
 <TabItem value="car" label="Car" className="tabItemBox">
 
-#### Car
+#### Auto
 
-Considers all paths accessible by car. This routing mode takes into account speed limits and one-way access restrictions while computing accessibility.
+Berücksichtigt alle Wege, die mit dem Auto zugänglich sind. Dieser Routing-Modus berücksichtigt Geschwindigkeitsbegrenzungen und Einbahnstraßenbeschränkungen bei der Berechnung der Zugänglichkeit.
 
-:::tip Hint
+:::tip Tipp
 
-For further insights into the Routing algorithm, visit [Routing/Car](../../routing/car).
+Für weitere Einblicke in den Routing-Algorithmus, besuchen Sie [Routing/Auto](../../routing/car).
 
 :::
 
@@ -138,111 +138,111 @@ For further insights into the Routing algorithm, visit [Routing/Car](../../routi
 
 ### Opportunities
 
-Opportunities are essentially point-based data (such as [POI](../../further_reading/glossary#point-of-interest-poi "What is a POI?")) for which you would like to compute a heatmap. These are the "destinations" (such as transit stations, schools, other amenities, or your own custom point-based data) while surrounding areas are "origins" for which an accessibility value will be computed and visualized.
+Opportunities sind im Wesentlichen punktbasierte Daten (wie [POI](../../further_reading/glossary#point-of-interest-poi "Was ist ein POI?")), für die Sie eine Heatmap berechnen möchten. Dies sind die "Ziele" (wie Transitstationen, Schulen, andere Annehmlichkeiten oder Ihre eigenen benutzerdefinierten punktbasierten Daten), während umliegende Gebiete "Ursprünge" sind, für die ein Zugänglichkeitswert berechnet und visualisiert wird.
 
-Additionally, you may create more opportunities via the `+ Add Opportunity` button at the bottom of the drawer. All opportunity layers will be combined to produce a unified heatmap.
+Zusätzlich können Sie über die Schaltfläche `+ Add Opportunity` am unteren Rand des Drawers weitere Opportunities erstellen. Alle Opportunity-Schichten werden kombiniert, um eine einheitliche Heatmap zu erzeugen.
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select your <code>Opportunity Layer</code> from the drop-down menu. This can be any previously created layer containing point-based data.</div>
+  <div class="content">Wählen Sie Ihre <code>Möglichkeitsdaten</code> aus dem Dropdown-Menü aus. Dies kann ein zuvor ersteller Layer sein, die punktbasierte Daten enthält.</div>
 </div>
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Choose a <code>Travel Time Limit</code> for your heatmap. This will be used in the context of your previously selected <i>Routing Type</i>.</div>
+  <div class="content">Wählen Sie ein <code>Reisezeitlimit</code> für Ihre Wärmekarte. Dies wird im Zusammenhang mit Ihrem zuvor ausgewählten <i>Routentyp</i> verwendet.</div>
 </div>
 
-:::tip Hint
+:::tip Tipp
 
-Need help choosing a suitable travel time limit for various common amenities? The ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
+Brauchen Sie Hilfe bei der Wahl eines geeigneten Reisezeitlimits für verschiedene gängige Annehmlichkeiten? Das ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) der Stadt Chemnitz kann hilfreiche Leitlinien bieten.
 
 :::
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Specify the <code>Number of destinations</code> which should be considered while computing the average travel time.</div>
+  <div class="content">Geben Sie die <code>Anzahl der Ziele</code> an, die beim Berechnen der durchschnittlichen Reisezeit berücksichtigt werden sollen.</div>
 </div>
 
-:::tip Hint
+:::tip Tipp
 
-As the *Number of destinations* parameter is specified once per opportunity layer, you have the flexibility to supply different values for each opportunity layer. This can be useful if distinct types of amenities have varying standards for accessibility.
+Da der Parameter *Anzahl der Ziele* einmal pro Opportunity-Schicht angegeben wird, haben Sie die Flexibilität, für jede Opportunity-Schicht unterschiedliche Werte anzugeben. Dies kann nützlich sein, wenn verschiedene Arten von Annehmlichkeiten unterschiedliche Zugänglichkeitsstandards haben.
 
 :::
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Click <code>Run</code> to start the calculation of the heatmap.</div>
+  <div class="content">Click <code>Run</code> um die Berechnung der Heatmap zu beginnen</div>
 </div>
 
-:::tip Hint
+:::tip Tipp
 
-Depending on your configuration, the calculation might take a few minutes. The [status bar](../../workspace/home#status-bar) displays current progress.
+Je nach Konfiguration kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../workspace/home#status-bar) zeigt den aktuellen Fortschritt an.
 
 :::
 
-### Results
+### Ergebnisse
 
 <div class="step">
   <div class="step-number">10</div>
-  <div class="content">Once the calculation is complete, a result layer will be added to the map. This <i>Heatmap Closest Average</i> layer will contain your color-coded heatmap.
+  <div class="content">Sobald die Berechnung abgeschlossen ist, wird eine Ergebnisschicht zur Karte hinzugefügt. Diese Schicht mit dem Namen <i>Heatmap Durchschnitt nächster Nachbarn</i> wird Ihre farbcodierte Heatmap enthalten.
   <p></p>
-  Clicking on any of the heatmap's hexagonal cells will reveal the computed average travel time value for this cell.</div>
+  Durch Klicken auf eine der hexagonalen Zellen der Heatmap wird der berechnete Durchschnittswert der Reisezeit für diese Zelle angezeigt.</div>
 </div>
 
 
 <img src={require('/img/toolbox/accessibility_indicators/heatmaps/closest_average_based/clst-avg-calculation.gif').default} alt="Options" style={{ maxHeight: "800px", maxWidth: "800px"}}/>
 
-:::tip Tip
+:::tip Tipp
 
-Want to style your heatmaps and create nice-looking maps? See [Styling](../../map/layer_style/styling).
+Möchten Sie Ihre Heatmaps gestalten und ansprechende Karten erstellen? Siehe unter [Styling](../../map/layer_style/styling).
 
 :::
 
-## 4. Technical details
+## 4. Technische Details
 
-### Calculation
+### Berechnung
 
-Once all input opportunity layers are combined, a grid of surrounding hexagonal cells is identified. This is done by considering cells where at least one opportunity is accessible taking into account the specified `Routing type` and `Travel time limit`. Next, the average travel time for each cell within this grid is computed, considering the nearest *n* opportunities as specified in the opportunity layer.
+Sobald alle eingegebenen Opportunity-Layer kombiniert sind, wird ein Gitter aus umliegenden sechseckigen Zellen identifiziert. Dies geschieht durch die Berücksichtigung von Zellen, in denen mindestens eine Opportunity erreichbar ist, unter Berücksichtigung des spezifizierten `Routing type` und `Travel time limit`. Anschließend wird die durchschnittliche Reisezeit für jede Zelle innerhalb dieses Gitters berechnet, wobei die nächstgelegenen *n* Gelegenheiten, wie in dem Opportunity-Layer angegeben, berücksichtigt werden.
 
-Average travel time formula:
+Formel für die durchschnittliche Fahrtzeit:
 
 ![Closest Average Formula](/img/toolbox/accessibility_indicators/heatmaps/closest_average_based/closest_avg_formula.png "Closest Average Formula")
 
-where the average travel time for cell **i** is the sum of upto **n** travel times from cell **i** to opportunity **j** (**tij**) divided by the number of opportunities **n** which must be less than the `Number of destinations` parameter specified.
+wobei die durchschnittliche Reisezeit für Zelle **i** die Summe von bis zu **n** Reisezeiten von Zelle **i** zu Möglichkeit **j** (**tij**) geteilt durch die Anzahl der Möglichkeiten **n** ist, die kleiner sein muss als der angegebene Parameter 'Anzahl der Ziele'.
 
-### Classification
-In order to classify the accessibility levels that were computed for each grid cell (for color-coded visualization), a classification based on quantiles is used by default. However, various other classification methods may be used instead. Read more in the **[Data Classification Methods](../../map/layer_style/attribute_based_styling#data-classification-methods)** section of the *Attribute-based Styling* page.
+### Klassifizierung
+Zur Klassifizierung der Erreichbarkeitsstufen, die für jede Rasterzelle berechnet wurden (für die farbige Visualisierung), wird standardmäßig eine Klassifizierung auf Basis von Quantilen verwendet. Es können jedoch auch verschiedene andere Klassifizierungsmethoden verwendet werden. Weitere Informationen finden Sie im Abschnitt **[Datenklassifizierungsmethoden](../../map/layer_style/attribute_based_styling#data-classification-methods)** auf der Seite *Attribute-based Styling*.
 
-### Visualization 
+### Visualisierung 
 
-Heatmaps in GOAT utilize **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** solution for efficient computation and easy-to-understand visualization. Behind the scenes, a pre-computed travel time matrix for each *routing type* utilizes this solution and is queried and further processed in real-time to compute accessibility and produce a final heatmap.
+Heatmaps in GOAT nutzen die **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** Lösung für effiziente Berechnungen und leicht verständliche Visualisierung. Hinter den Kulissen nutzt eine vorberechnete Reisezeitmatrix für jeden *Routentyp* diese Lösung und wird in Echtzeit abgefragt und weiterverarbeitet, um die Erreichbarkeit zu berechnen und eine endgültige Heatmap zu erstellen.
 
-The resolution and dimensions of the hexagonal grid used depend on the selected *routing type*:
+Die Auflösung und die Abmessungen des verwendeten hexagonalen Gitters hängen von der gewählten *Routenart* ab:
 
-#### Walk
-- Resolution: 10
-- Average hexagon area: 11285.6 m²
-- Average hexagon edge length: 65.9 m
+#### Gehen
+- Auflösung: 10
+- Durchschnittliche Sechseckfläche: 11285.6 m²
+- Durchschnittliche Kantenlänge des Sechsecks: 65,9 m
 
-#### Bicycle
-- Resolution: 9
-- Average hexagon area: 78999.4 m²
-- Average hexagon edge length: 174.4 m
+#### Fahrrad
+- Auflösung: 9
+- Durchschnittliche Sechseckfläche: 78999.4 m²
+- Durchschnittliche Kantenlänge des Sechsecks: 174,4 m
 
 #### Pedelec
-- Resolution: 9
-- Average hexagon area: 78999.4 m²
-- Average hexagon edge length: 174.4 m
+- Auflösung: 9
+- Durchschnittliche Sechseckfläche: 78999.4 m²
+- Durchschnittliche Kantenlänge des Sechsecks: 174,4 m
 
-#### Car
-- Resolution: 8
-- Average hexagon area: 552995.7 m²
-- Average hexagon edge length: 461.4 m
+#### Auto
+- Auflösung: 8
+- Durchschnittliche Sechseckfläche: 552995.7 m²
+- Durchschnittliche Kantenlänge des Sechsecks: 461,4 m
 
-### Example of calculation
+### Berechnungsbeispiel
 
-The following examples illustrate the computation of a closest-average-based heatmap for the same opportunities, with a varying `Number of destinations` value.
+Die folgenden Beispiele veranschaulichen die Berechnung einer auf dem nächstgelegenen Durchschnitt basierenden Heatmap für dieselben Opportunities mit einem variierenden Wert für die „Anzahl der Ziele“.
 
-![Closest Average Heatmaps for different destinations](/img/toolbox/accessibility_indicators/heatmaps/closest_average_based/cls-avg-destinations.png "Closest Average Heatmaps for different destinations")
+![Closest Average Heatmaps for different destinations](/img/toolbox/accessibility_indicators/heatmaps/closest_average_based/cls-avg-destinations.png „Closest Average Heatmaps for different destinations“)
 
-In the first example, the average travel time is computed considering only the closest destination, while in the second example, the closest 5 destinations are considered.
+Im ersten Beispiel wird die durchschnittliche Reisezeit nur für das nächstgelegene Ziel berechnet, während im zweiten Beispiel die 5 nächstgelegenen Ziele berücksichtigt werden.
