@@ -4,92 +4,86 @@ sidebar_position: 4
 
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
-# Origin Destination
+# Quell-Ziel
 
-The **Origin-Destination** analysis is used in various fields such as transport planning and urban planning to study **movements or flows between different locations**.
+Die **Quell-Ziel**-Analyse wird in verschiedenen Bereichen wie Verkehrsplanung und Stadtplanung verwendet, um **Bewegungen oder Flüsse zwischen verschiedenen Orten** zu untersuchen.
 
-## 1. Explanation
+## 1. Erklärung
 
-The Origin-Destination (OD) tool is suited for studying **movement patterns between locations**, such as commuter flows, providing insights into spatial interactions. This analytical process thereby visualizes the relationships between **starting points (origins)** and **endpoints (destinations)** by **connecting them with a straight line**. Such analyses help understand how and why movement occurs in different contexts and assist in the assessment and planning of transport networks and urban infrastructure. It supports data-driven decision-making by **highlighting patterns and trends in spatial interactions**, which can help improve the efficiency and sustainability of transport systems and urban layouts.
+Das Ursprung-Ziel (OD)-Werkzeug eignet sich zur Untersuchung von **Bewegungsmustern zwischen Standorten**, wie z.B. Pendlerströmen, und bietet Einblicke in räumliche Interaktionen. Dieser analytische Prozess visualisiert die Beziehungen zwischen **Ausgangspunkten (Quellen)** und **Endpunkten (Zielen)**, indem sie **mit einer geraden Linie verbunden** werden. Solche Analysen helfen zu verstehen, wie und warum Bewegungen in verschiedenen Kontexten stattfinden, und unterstützen die Bewertung und Planung von Verkehrsnetzen und städtischen Infrastrukturen. Es unterstützt datenbasierte Entscheidungen, indem **Muster und Trends in räumlichen Interaktionen** hervorgehoben werden, was zur Verbesserung der Effizienz und Nachhaltigkeit von Verkehrssystemen und Stadtstrukturen beiträgt.
 
-The example below shows an *Input Table (Matrix Layer)* and the resulting *Origin-Destination Lines* based on the *Zipcode Areas (Geometry Layer)*.
+Das untenstehende Beispiel zeigt eine *Eingabetabelle (Matrix)* und die resultierenden *Quell-Ziel-Linien* basierend auf den *Postleitzahlengebieten (Geometrien)*.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/toolbox/geoanalysis/origin_destination/od_example.png').default} alt="Origin Destination Tool in GOAT" style={{ maxHeight: "700px", maxWidth: "700px", objectFit: "cover"}}/>
 </div> 
 
 
-## 2. Example use cases
+## 2. Anwendungsbeispiele
 
-- Visualizing the commuter flows between residential areas (origins) and workplaces (destinations).
-- Assessing the public transport passenger flows between different stations.
-- Analyzing the flow of people from residential areas (origins)  to shopping locations (destinations).
+- Visualisierung der Pendlerströme zwischen Wohngebieten (Quellen) und Arbeitsplätzen (Zielen).
+- Bewertung der Passagierströme im öffentlichen Nahverkehr zwischen verschiedenen Stationen.
+- Analyse des Personenflusses von Wohngebieten (Quellen) zu Einkaufsorten (Zielen).
 
-
-## 3. How to use the tool?
+## 3. Wie benutzt man das Werkzeug?
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Klicke auf <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Geoanalysis</code> menu, click on <code>Origin Destination</code>.</div>
+  <div class="content">Klicke im Menü <code>Geoanalyse</code> auf <code>Quell-Ziel</code>.</div>
 </div>
 
-
 <img src={require('/img/toolbox/geoanalysis/origin_destination/overview.png').default} alt="Origin Destination Tool Overview" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
-
 
 ### Layer
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select your <code>Geometries Layer</code> (this should be a feature layer containing the geometries of the origins and destinations and an attribute that can be used as an identifier to match the OD-connections with the geometries) and <code>Unique Id Field</code>.</div>
+  <div class="content">Wähle deinen <code>Geometrie-Layer</code> (dies sollte ein Feature-Layer sein, der die Geometrien der Quellen und Ziele und ein Attribut enthält, das als Identifikator verwendet werden kann, um die OD-Verbindungen mit den Geometrien abzugleichen) und das <code>Feld für eindeutige IDs</code>.</div>
 </div>
 
 ### Matrix
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the <code>Matrix Table</code> (the table with the origin-destination-matrix) and <code>Origin Field</code>.</div>
+  <div class="content">Wähle die <code>Matrix-Tabelle</code> (die Tabelle mit der Ursprung-Ziel-Matrix) und das <code>Ursprungsfeld</code>.</div>
 </div>
-
-
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Select your <code>Destination Field</code> (the field that contains the destinations in the origin-destination matrix).</div>
+  <div class="content">Wähle dein <code>Zielfeld</code> (das Feld, das die Ziele in der Quell-Ziel-Matrix enthält).</div>
 </div>
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Select your <code>Weight Field</code> (the field that contains the weights in the origin-destination matrix).</div>
+  <div class="content">Wähle dein <code>Gewichtsfeld</code> (das Feld, das die Gewichte in der Quell-Ziel-Matrix enthält).</div>
 </div>
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Click on <code>Run</code>.</div>
+  <div class="content">Klicke auf <code>Ausführen</code>.</div>
 </div>
 
-:::tip Hint
+:::tip HINWEIS
 
-Depending on the complexity of the OD-matrix, the calculation might take some minutes. The [status bar](../../workspace/home#status-bar) shows the current progress.
+Abhängig von der Komplexität der OD-Matrix kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../workspace/home#status-bar) zeigt den aktuellen Fortschritt an.
 
 :::
 
-### Results 
+### Ergebnisse 
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called <b>"O-D Relation"</b>, showing the lines between the origins and destinations, and one layer called <b>"O-D Point"</b> which provides all origins and destination points (for polygon geometries, the centroids are used).<p></p>
-  If you click on an "O-D Relation" item on the map, you can view the attribute details, such as the <b>origin</b>, <b>destination</b> and <b>weight</b> of this relation.</div>
+  <div class="content">Sobald der Berechnungsprozess abgeschlossen ist, werden die resultierenden Layer zur Karte hinzugefügt. Die Ergebnisse bestehen aus einem Layer namens <b>"O-D-Relation"</b>, der die Linien zwischen den Ursprüngen und Zielen zeigt, und einem Layer namens <b>"O-D-Punkt"</b>, der alle Quell- und Zielpunkte bereitstellt (für Polygone werden die Zentroiden verwendet).<p></p>
+  Wenn du auf ein "O-D-Relation"-Element auf der Karte klickst, kannst du die Attributdetails anzeigen, wie z.B. die <b>Quelle</b>, das <b>Ziel</b> und das <b>Gewicht</b> dieser Beziehung.</div>
 </div>
-
 
 <img src={require('/img/toolbox/geoanalysis/origin_destination/result.png').default} alt="Origin Destination Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
-:::tip Tip
-Want to style your result layer and create nice-looking maps? See [Styling](../../map/layer_style/styling).
+:::tip TIPP
+Möchtest du deinen Ergebnisslayer bearbeiten und ansprechende Karten erstellen? Siehe [Styling](../../map/layer_style/styling).
 :::
