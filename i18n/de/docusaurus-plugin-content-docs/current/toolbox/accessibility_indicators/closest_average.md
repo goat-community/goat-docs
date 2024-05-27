@@ -7,13 +7,11 @@ import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 # Heatmap - Durchschnitt Reisezeit
-A color-coded map to visualize the average travel time to points (such as [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) from surrounding areas.
-
-## 1. Explanation
 
 Eine farbkodierte Karte zur Visualisierung der durchschnittlichen Reisezeit zu Punkten (wie [POI](../../../further_reading/glossary#point-of-interest-poi "Was ist ein POI?")) aus umliegenden Gebieten.
 
 ## 1. Erklärung
+
 
 Visualisiert als farbkodiertes hexagonales Raster, berücksichtigt die Heatmap reale Transport- und Straßennetze, um Reisezeiten zu berechnen. Nach der Festlegung eines *Routing-Typs* (Gehen, Fahrrad, usw.), einer *Opportunity-Schicht* und eines *Reisezeitlimits* wird das Ergebnis ein farbkodiertes hexagonales Raster für alle unter diesen Bedingungen zugänglichen Bereiche anzeigen. Die Farbschattierung bezieht sich auf die durchschnittliche Reisezeit.
 
@@ -60,12 +58,12 @@ Wenn Sie Analysen außerhalb dieses Geofence durchführen möchten, kontaktieren
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Click on <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Heatmap Closest Average</code>.</div>
+  <div class="content">Under the <code>Erreichbarkeitsindikatoren</code> menu, click on <code>Heatmap Durchschnitt Reisezeit</code>.</div>
 </div>
 
 ### Routing
@@ -146,12 +144,12 @@ Zusätzlich können Sie über die Schaltfläche `+ Add Opportunity` am unteren R
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select your <code>Opportunity Layer</code> from the drop-down menu. This can be any previously created layer containing point-based data.</div>
+  <div class="content">Wählen Sie Ihre <code>Möglichkeitsdaten</code> aus dem Dropdown-Menü aus. Dies kann ein zuvor ersteller Layer sein, die punktbasierte Daten enthält.</div>
 </div>
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Choose a <code>Travel Time Limit</code> for your heatmap. This will be used in the context of your previously selected <i>Routing Type</i>.</div>
+  <div class="content">Wählen Sie ein <code>Reisezeitlimit</code> für Ihre Wärmekarte. Dies wird im Zusammenhang mit Ihrem zuvor ausgewählten <i>Routentyp</i> verwendet.</div>
 </div>
 
 :::tip Tipp
@@ -162,7 +160,7 @@ Brauchen Sie Hilfe bei der Wahl eines geeigneten Reisezeitlimits für verschiede
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Specify the <code>Number of destinations</code> which should be considered while computing the average travel time.</div>
+  <div class="content">Geben Sie die <code>Anzahl der Ziele</code> an, die beim Berechnen der durchschnittlichen Reisezeit berücksichtigt werden sollen.</div>
 </div>
 
 :::tip Tipp
@@ -173,7 +171,7 @@ Da der Parameter *Anzahl der Ziele* einmal pro Opportunity-Schicht angegeben wir
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Click <code>Run</code> to start the calculation of the heatmap.</div>
+  <div class="content">Click <code>Run</code> um die Berechnung der Heatmap zu beginnen</div>
 </div>
 
 :::tip Tipp
@@ -186,9 +184,9 @@ Je nach Konfiguration kann die Berechnung einige Minuten dauern. Die [Statusleis
 
 <div class="step">
   <div class="step-number">10</div>
-  <div class="content">Once the calculation is complete, a result layer will be added to the map. This <i>Heatmap Closest Average</i> layer will contain your color-coded heatmap.
+  <div class="content">Sobald die Berechnung abgeschlossen ist, wird eine Ergebnisschicht zur Karte hinzugefügt. Diese Schicht mit dem Namen <i>Heatmap Durchschnitt nächster Nachbarn</i> wird Ihre farbcodierte Heatmap enthalten.
   <p></p>
-  Clicking on any of the heatmap's hexagonal cells will reveal the computed average travel time value for this cell.</div>
+  Durch Klicken auf eine der hexagonalen Zellen der Heatmap wird der berechnete Durchschnittswert der Reisezeit für diese Zelle angezeigt.</div>
 </div>
 
 
@@ -196,7 +194,7 @@ Je nach Konfiguration kann die Berechnung einige Minuten dauern. Die [Statusleis
 
 :::tip Tip
 
-Want to style your heatmaps and create nice-looking maps? See [Styling](../../map/layer_style/styling).
+Möchten Sie Ihre Heatmaps gestalten und ansprechende Karten erstellen? Siehe unter [Styling](../../map/layer_style/styling).
 
 :::
 
