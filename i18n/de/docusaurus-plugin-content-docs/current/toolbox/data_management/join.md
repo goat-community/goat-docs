@@ -7,11 +7,11 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 # Join & Group
 
-Append and group fields from one layer to another using a matching field on both layers.
+Füge Felder von einer Ebene zu einer anderen hinzu und gruppiere sie, indem du ein übereinstimmendes Feld in beiden Ebenen verwendest.
 
-## 1. Explanation
+## 1. Erklärung
 
-This tool facilitates the combination of two datasets. By defining relationships, the tool aligns data from both layers. The resulting output is a new layer that contains the attributes from the *Target Layer* and a new column that summarizes a chosen attribute from the *Join Layer*. 
+Dieses Werkzeug erleichtert die Kombination von zwei Datensätzen. Durch die Definition von Beziehungen werden die Daten aus beiden Ebenen abgeglichen. Das resultierende Ergebnis ist eine neue Ebene, die die Attribute der *Zielebene* und eine neue Spalte enthält, die ein ausgewähltes Attribut der *Joinebene* zusammenfasst.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
@@ -19,25 +19,24 @@ This tool facilitates the combination of two datasets. By defining relationships
 
 </div> 
 
-GOAT uses the **"Inner Join"** operation to calculate a join which combines rows from a target and a join layer based on a related column between them. It only selects records that have matching values in both tables. This means that for every row in the target layer, there must be at least one row in the source layer to realize a successful match. Any rows that do not match will not be returned as a result.
+GOAT verwendet die **"Inner Join"**-Operation, um einen Join zu berechnen, der Zeilen aus einer Ziel- und einer Joinebene basierend auf einer verwandten Spalte zwischen ihnen kombiniert. Es werden nur Datensätze ausgewählt, die übereinstimmende Werte in beiden Tabellen haben. Das bedeutet, dass für jede Zeile in der Zielebene mindestens eine Zeile in der Joinebene vorhanden sein muss, um eine erfolgreiche Übereinstimmung zu erzielen. Alle nicht übereinstimmenden Zeilen werden nicht zurückgegeben.
 
-## 2. Example use cases
+## 2. Anwendungsbeispiele
 
-- Summarizing population numbers from a table to a feature layer of zip-code areas (related column: zip-codes).
-- Merge and aggregate the data from a household survey with the geometries of the census tract (related column: census tract).
-- Joining the number of commuters from a table to a feature layer with the city boundaries (related column: city name). 
+- Zusammenfassung von Bevölkerungszahlen aus einer Tabelle in eine Feature-Ebene von Postleitzahlengebieten (verwandte Spalte: Postleitzahlen).
+- Zusammenführen und Aggregieren von Daten aus einer Haushaltsbefragung mit den Geometrien des Zensusgebiets (verwandte Spalte: Zensusgebiet).
+- Join der Anzahl von Pendlern aus einer Tabelle in eine Feature-Ebene mit den Stadtgrenzen (verwandte Spalte: Stadtname).
 
-
-## 3. How to use the tool?
+## 3. Wie benutzt man das Werkzeug?
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Klicke auf <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Data Management</code> menu, click on <code>Join & Group</code>.</div>
+  <div class="content">Klicke im Menü <code>Datenmanagement</code> auf <code>Join & Group</code>.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -48,67 +47,64 @@ GOAT uses the **"Inner Join"** operation to calculate a join which combines rows
 
 <p> </p>
 
-### Select layers to join 
+### Ebenen zum Join auswählen
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">  Select your <code>Target layer</code> (the primary table or layer to which you want to add additional data). </div>
+  <div class="content">Wähle deine <code>Ziellayer</code> (die primäre Tabelle oder Layer, denen du zusätzliche Daten hinzufügen möchtest). </div>
 </div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select your <code>Join layer</code> (the secondary table or dataset that contains the records and attributes to be inserted into the Target Layer). </div>
+  <div class="content">Wähle deine <code>Joinlayer</code> (die sekundäre Tabelle oder der Datensatz, der die Datensätze und Attribute enthält, die in den Ziellayer eingefügt werden sollen). </div>
 </div>
 
-### Fields to match
+### Übereinstimmende Felder
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Select the <code>Target field</code> of the target layer, which you like to use for matching the records of both layers.</div>
+  <div class="content">Wähle das <code>Zielfeld</code> der Zielebene, das du zum Abgleichen der Datensätze beider Ebenen verwenden möchtest.</div>
 </div>
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content"> Select the matching attribute of the Join Layer as the <code>Join field</code>. </div>
+  <div class="content">Wähle das übereinstimmende Attribut des Joinlayers als <code>Joinfeld</code>. </div>
 </div>
 
-### Statistics
+### Statistiken
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content"> Select the <code>Statistic Method</code> to be used to join the attribute. </div>
+  <div class="content">Wähle die <code>Statistische Methode</code>, die zum Join des Attributs verwendet werden soll. </div>
 </div>
 
-You can choose between several statistical operations. Some methods are only available for specific data types. The following list provides an overview of the available methods:
+Du kannst zwischen mehreren statistischen Operationen wählen. Einige Methoden sind nur für bestimmte Datentypen verfügbar. Die folgende Liste bietet einen Überblick über die verfügbaren Methoden:
 
-| Method | Data Types | Description |
+| Methode | Datentypen | Beschreibung |
 | -------|------| ------------|
-| Count  | `string`,`number`    | Counts the number of non-null values in the selected column|
-| Sum    | `number`   | Calculates the sum of all the numbers in the selected column|
-| Mean   | `number`   | Calculates the average (mean) value of all numeric values in the selected column|
-| Median | `number`   | Yields the middle value in the selected column's sorted list of numeric values|
-| Min    | `number`   | Yields the minimum value of the selected column|
-| Max    | `number`   | Yields the maximum value of the selected column|
+| Anzahl | `string`,`number`    | Zählt die Anzahl der Nicht-Null-Werte in der ausgewählten Spalte|
+| Summe  | `number`   | Berechnet die Summe aller Zahlen in der ausgewählten Spalte|
+| Mittelwert | `number`   | Berechnet den Durchschnitt (Mittelwert) aller numerischen Werte in der ausgewählten Spalte|
+| Median | `number`   | Gibt den Mittelwert in der sortierten Liste der numerischen Werte der ausgewählten Spalte zurück|
+| Min    | `number`   | Gibt den Minimalwert der ausgewählten Spalte zurück|
+| Max    | `number`   | Gibt den Maximalwert der ausgewählten Spalte zurück|
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Select the <code>Field Statistics</code> for which you like to apply the statistical operation.</div>
+  <div class="content">Wähle die <code>Feldstatistiken</code>, für die du die statistische Operation anwenden möchtest.</div>
 </div>
 
 <div class="step">
   <div class="step-number">9</div>
-  <div class="content">Click on <code>Run</code>.</div>
+  <div class="content">Klicke auf <code>Ausführen</code>.</div>
 </div>
 
+### Ergebnisse
 
-### Results
-  
 <div class="step">
   <div class="step-number">10</div>
-  <div class="content">The resulting layer <b>"Join"</b> will be added to the project, as well as to the <a href="../../workspace/datasets">Datasets</a> in your workspace. This layer consists of the information of the target layer and an <b>additional column</b> showing the results from the <b>statistical operation</b>. You can see the attributes by clicking on one of the features in the map.</div>
+  <div class="content">Der resultierende Layer<b>"Join"</b> wird dem Projekt sowie den <a href="../../workspace/datasets">Datensätzen</a> in deinem Arbeitsbereich hinzugefügt. Diese Ebene besteht aus den Informationen desZiellayers und einer <b>zusätzlichen Spalte</b>, die die Ergebnisse der <b>statistischen Operation</b> zeigt. Du kannst die Attribute sehen, indem du auf eines der Features in der Karte klickst.</div>
 </div>
-
-
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
@@ -116,9 +112,8 @@ You can choose between several statistical operations. Some methods are only ava
 
 </div> 
 
+:::tip Tipp
 
-:::tip Tip
-
-Want to adjust the appearance of the result layer? Check out the [attribute-based styling](../../map/layer_style/attribute_based_styling.md).
+Möchtest du das Aussehen des Ergebnislayer anpassen? Sieh dir das [attributbasierte Styling](../../map/layer_style/attribute_based_styling.md) an.
 
 :::
