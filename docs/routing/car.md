@@ -10,7 +10,7 @@ The **Car Routing** is used for all analyses in GOAT that contain car trips.
 
 ## 1. Objectives
 
-Car routing is used for many indicators in GOAT, such as [Catchment Areas](../toolbox/accessibility_indicators/catchments) and [Heatmaps](../toolbox/accessibility_indicators/heatmaps/connectivity.md). 
+Car routing is used for many indicators in GOAT, such as [Catchment Areas](../toolbox/accessibility_indicators/catchments) and [Heatmaps](../toolbox/accessibility_indicators/connectivity). 
 
 As GOAT also allows the creation of [Scenarios on the Paths Network](../scenarios/ways), a **custom routing algorithm** is needed that also reflects the changes of the scenario in the accessibility analyses. For the mode of the car, we thereby **only consider paths that are suitable for driving**.
 
@@ -39,7 +39,10 @@ The following steps are performed on the data to enable  **quick**  and  **accur
 2.  **Edge Filtering:**  Include only relevant edges for driving.
 
 For car routing, the edges of the following street classes are considered:
- `motorway`, `primary`, `secondary`, `tertiary`, `residential`, `living_street`, `trunk`, `parking_aisle`, `driveway`, `alley`, `track`.  *(You can find further information on this classification in the  [Overture Wiki](https://docs.overturemaps.org/schema/reference/transportation/segment)*.)
+
+`motorway`, `primary`, `secondary`, `tertiary`, `residential`, `living_street`, `trunk`, `parking_aisle`, `driveway`, `alley` and `track`.
+    
+You can find further information on this classification in the [Overture Wiki](https://docs.overturemaps.org/schema/reference/transportation/segment).
 
 #### Artificial Edge Creation
 
@@ -50,8 +53,10 @@ User-provided origin points are typically located a short distance away from the
 
 For all edges in the sub-network, a cost value (represented as time) is calculated based on path length and driving speed.
 
-Cost function for car: 
+Cost function for car:
+
 `cost_forward = length / maxspeed_forward`
+
 `cost_reverse = length / maxspeed_backward`
 
 When calculating `cost_reverse`, if an edge contains a one-way restriction and therefore must not be traversed in the reverse direction, it is given a very large cost. This prevents the routing algorithm from considering such edges for routing in the reverse direction.
