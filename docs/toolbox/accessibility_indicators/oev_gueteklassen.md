@@ -11,7 +11,7 @@ The Public Transport Quality Classes <i>(German: ÖV-Güteklassen)</i> show the 
 
 ## 1. Explanation
 
-Public Transport Quality Classes, also known as **ÖV-Güteklassen**, are a classification system used to evaluate and categorize the **quality** of public transport** services in a given area. The concept is used to plan and evaluate public transport services to ensure that they meet certain standards and effectively serve the needs of the population. The **quality classes** thereby range from **<span style={{color: "#199741"}}>A</span>** (very good offer) to **<span style={{color: "#E4696A"}}>F</span>** (very poor offer).
+Public Transport Quality Classes, also known as **ÖV-Güteklassen**, are a classification system used to evaluate and categorize the **quality** of public transport services in a given area. The concept is used to plan and evaluate public transport services to ensure that they meet certain standards and effectively serve the needs of the population. The quality classes thereby range from **<span style={{color: "#199741"}}>A</span>** (very good offer) to **<span style={{color: "#E4696A"}}>F</span>** (very poor offer).
 
 ![ÖV-Güteklassen in GOAT](/img/toolbox/accessibility_indicators/gueteklassen/example.png "ÖV-Güteklassen in GOAT")
 
@@ -77,7 +77,7 @@ Depending on the size of the selected area, the calculation might take some minu
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called <b>"ÖV-Güteklassen"</b>, showing the Public Transport Quality Classes, and one layer called <b>"ÖV-Güteklassen Stations"</b> which provides all stations that were used for the calculation of this indicator. The station points that are visualized in grey have a too low service frequency and thus do not contribute to any Public Transport Quality Class.
+  <div class="content">As soon as the calculation process is finished, the resulting layers will be added to the map. The results consist of one layer called <b>"ÖV-Güteklassen"</b>, showing the Public Transport Quality Classes, and one layer called <b>"ÖV-Güteklassen Stations"</b> which provides all stations that were used for the calculation of this indicator. The station points that are visualized in grey have a service frequency that is too low and thus do not contribute to any public transport quality class.
   <p></p>
   If you click on an "ÖV-Güteklassen" item on the map, you will see further details such as its pt_class and pt_class_number, which indicate <a href="#calculation">the quality of public transport</a>.</div>
 </div>
