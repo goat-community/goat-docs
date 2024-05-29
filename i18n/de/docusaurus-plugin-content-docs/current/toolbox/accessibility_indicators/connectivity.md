@@ -45,12 +45,12 @@ Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Klicken Sie auf<code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Erreichbarkeitsindikatoren</code> menu, klicken Sie auf<code>Heatmap Konnektivität</code>.</div>
+  <div class="content">Unter<code>Erreichbarkeitsindikatoren</code> wählen Sie<code>Heatmap Konnektivität</code>.</div>
 </div>
 
 ### Routing
@@ -64,7 +64,7 @@ Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie
 
 <TabItem value="walk" label="Walk" default className="tabItemBox">
 
-#### Gehen
+#### Zu Fuß
 
 Berücksichtigt alle zu Fuß begehbaren Wege. Für Heatmaps wird eine Gehgeschwindigkeit von 5 km/h angenommen.
 
@@ -193,7 +193,7 @@ Heatmaps in GOAT nutzen die **[Uber's H3 grid-based](../further_reading/glossary
 
 Die Auflösung und die Abmessungen des verwendeten hexagonalen Gitters hängen von der gewählten *Routenart* ab:
 
-#### Gehen
+#### Zu Fuß
 - Auflösung: 10
 - Durchschnittliche Sechseckfläche: 11285.6 m²
 - Durchschnittliche Kantenlänge des Sechsecks: 65,9 m
