@@ -33,7 +33,7 @@ Follow these steps to add a layer to the map:
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select if you like to integrate an dataset from your <b>data explorer</b>, <b>upload</b> a new dataset or add an <b>external dataset</b>.</div>
+  <div class="content">Select if you like to integrate an dataset from your <b>data explorer</b>, <b>upload</b> a new dataset or browse the <b>catalog explorer</b>.</div>
 </div>
 
 <Tabs>
@@ -71,13 +71,23 @@ Follow these steps to add a layer to the map:
 </div>
 
   </TabItem>
-  <TabItem value="Dataset External" label="Dataset External" className="tabItemBox">
+  <TabItem value="Catalog Explorer" label="Catalog Explorer" className="tabItemBox">
 
-:::info coming soon
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Browse GOAT Dataset Catalog.</div>
+</div>
 
-We currently implement this functionality. 🧑🏻‍💻
+<div class="step">
+  <div class="step-number">5</div>
+  <div class="content">Select the Dataset you want to import.</div>
+</div>
 
-:::
+<div class="step">
+  <div class="step-number">6</div>
+  <div class="content">Click on <code>+ Add Layer</code>.</div>
+</div>
+
 
 
   </TabItem>
