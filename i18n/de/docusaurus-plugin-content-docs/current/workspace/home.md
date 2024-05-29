@@ -16,13 +16,13 @@ Wenn Sie sich bei GOAT anmelden, gelangen Sie auf die **Startseite**. Von hier a
 ### Navigationsleiste
 Die folgende Liste erklärt die Navigationsleiste im Arbeitsbereich.
 
-| Icon and Label| Usage |
+| Symbol und Beschriftung | Verwendung |
 | :-: | --- |
-| <img src={require('/img/workspace/home/bar-home.png').default} alt="home" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | The landing page when you login |
-| <img src={require('/img/workspace/home/bar-projects.png').default} alt="projects" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Here, you can manage your projects |
-| <img src={require('/img/workspace/home/bar-dataset.png').default} alt="datasets" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Here, you can manage your datasets |
-| <img src={require('/img/workspace/home/bar-catalog.png').default} alt="catalog" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Here, you can browse all the datasets available within GOAT |
-| <img src={require('/img/workspace/home/bar-settings.png').default} alt="settings" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | The page where you can edit your profile and preferences settings |
+| <img src={require('/img/workspace/home/bar-home.png').default} alt="home" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Die Startseite, wenn Sie sich anmelden |
+| <img src={require('/img/workspace/home/bar-projects.png').default} alt="projects" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Hier können Sie Ihre Projekte verwalten |
+| <img src={require('/img/workspace/home/bar-dataset.png').default} alt="datasets" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Hier können Sie Ihre Datensätze verwalten |
+| <img src={require('/img/workspace/home/bar-catalog.png').default} alt="catalog" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Hier können Sie alle innerhalb von GOAT verfügbaren Datensätze durchsuchen |
+| <img src={require('/img/workspace/home/bar-settings.png').default} alt="settings" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Die Seite, auf der Sie Ihr Profil und Ihre Einstellungen bearbeiten können |
 
 
 ### Aktuelle Projekte
