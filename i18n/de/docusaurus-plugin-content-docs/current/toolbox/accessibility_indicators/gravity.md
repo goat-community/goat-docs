@@ -8,7 +8,7 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 
 # Heatmap - Gravity
-Eine farbkodierte Karte zur Visualisierung der Erreichbarkeit von Punkten (wie z.B. [POI](../../../further_reading/glossary#point-of-interest-poi „What is a POI?“)) aus der Umgebung.
+Eine farblich gekennzeichnete Karte zur Visualisierung der Erreichbarkeit von Punkten (wie z.B. [POI](../../../further_reading/glossary#point-of-interest-poi „What is a POI?“)) aus der Umgebung.
 
 ## 1. Erklärung
 
@@ -16,7 +16,7 @@ Die Heatmap wird als farblich gekennzeichnetes sechseckiges Raster dargestellt u
 
 :::info INFO
 
-Ein `Opportunity layer` enthält [geografische Punkte](../../../data/data_types „Was sind geografische Punkte?“). Wählen Sie einen oder mehrere solcher Layer mit Ihren Zielpunkten (Opportunities) als Input für die Heatmap.
+Ein `Opportunity Layer` enthält [geografische Punkte](../../../data/data_types „Was sind geografische Punkte?“). Wählen Sie einen oder mehrere solcher Layer mit Ihren Zielpunkten (Opportunities) als Input für die Heatmap.
 
 :::
 
@@ -63,26 +63,26 @@ Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Klicken Sie auf <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Erreichbarkeitsindikatoren</code> menu, click on <code>Heatmap Gravity</code>.</div>
+  <div class="content">Unter <code>Erreichbarkeitsindikatoren</code> wählen Sie <code>Heatmap Gravity</code>.</div>
 </div>
 
 ### Routing
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Pick the <code>Verkehrsmittel</code> you would like to use for the heatmap.</div>
+  <div class="content">Wählen Sie das <code>Verkehrsmittel</code> welches Sie für die Heatmap benutzen möchten.</div>
 </div>
 
 <Tabs>
 
 <TabItem value="walk" label="Walk" default className="tabItemBox">
 
-#### Gehen
+#### Zu Fuß
 
 Berücksichtigt alle zu Fuß begehbaren Wege. Für Heatmaps wird eine Gehgeschwindigkeit von 5 km/h angenommen.
 
@@ -173,7 +173,7 @@ Diese Funktion stellt eine direkte Korrelation zwischen Reisezeit und Erreichbar
 
 <TabItem value="exponential" label="Exponential" default className="tabItemBox">
 
-#### Exponentiale Funktion
+#### Exponentielle Funktion
 
 Diese Funktion berechnet die Zugänglichkeiten auf der Grundlage einer Exponentialkurve, die von der von Ihnen definierten `sensitivity` und dem `destination_potential`  beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
@@ -213,7 +213,7 @@ Benötigen Sie Hilfe bei der Auswahl einer geeigneten Reisezeit für verschieden
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Wenn erforderlich, wählen Sie ein <code>Zielpotenzialfeld</code> aus. Dies muss ein numerisches Feld aus Ihrem <i>Gelegenheitslayer</i> sein, das als Koeffizient von der Zugänglichkeitsfunktion verwendet wird.</div>
+  <div class="content">Falls erforderlich, wählen Sie ein <code>Zielpotenzialfeld</code> aus. Dies muss ein numerisches Feld aus Ihrem <i>Gelegenheitslayer</i> sein, das als Koeffizient von der Zugänglichkeitsfunktion verwendet wird.</div>
 </div>
 
 :::Tipp Pro-Tipp
@@ -266,7 +266,7 @@ Der Erreichbarkeitswert jeder sechseckigen Zelle innerhalb einer Heatmap wird mi
 
 ![Accessibility Formula](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/place-based_accessibility_measures.webp „Zugänglichkeitsformel“)
 
-wobei die Erreichbarkeit **A** des Ausgangspunkts **i** die Summe aller am Zielort **j** verfügbaren Möglichkeiten **O** ist, gewichtet mit einer Funktion der Reisezeit **tij** zwischen **i** und **j**. Die Funktion **f(tij)** ist die Impedanzfunktion, die `gaussian`, `linear`, `exponential`, oder `power`. sein kann. Der Parameter **β** für die *Empfindlichkeit* und das *destination potential* werden verwendet, um den Erreichbarkeitswert einzustellen.
+wobei die Erreichbarkeit **A** des Ausgangspunkts **i** die Summe aller am Zielort **j** verfügbaren Möglichkeiten **O** ist, gewichtet mit einer Funktion der Reisezeit **tij** zwischen **i** und **j**. Die Funktion **f(tij)** ist die Impedanzfunktion, die `gaussian`, `linear`, `exponential`, oder `power`. sein kann. Der Parameter **β** für die *sensitivity* und das *destination potential* werden verwendet, um den Erreichbarkeitswert einzustellen.
 
 #### GOAT verwendet die folgenden Formeln für seine Impedanzfunktionen:
 
@@ -287,7 +287,7 @@ wobei die Erreichbarkeit **A** des Ausgangspunkts **i** die Summe aller am Zielo
 ![Inverse Power, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/inverse_power.png "Inverse Power, (Kwan,1998)")
 
 Die Reisezeit wird in Minuten gemessen. Bei einer maximalen Reisezeit von 30 Minuten gelten Ziele, die weiter als 30 Minuten entfernt sind, als nicht erreichbar und werden daher bei der Berechnung der Erreichbarkeit nicht berücksichtigt.
-Der Parameter *sensitivity*bestimmt, wie sich die Erreichbarkeit mit zunehmender Reisezeit verändert. Da der Parameter *sensitivity* für die Messung der Erreichbarkeit entscheidend ist, können Sie ihn in GOAT anpassen. Die folgenden Diagramme zeigen den Einfluss des Parameters *sensitivity* auf die Erreichbarkeit:
+Der Parameter *sensitivity* bestimmt, wie sich die Erreichbarkeit mit zunehmender Reisezeit verändert. Da der Parameter *sensitivity* für die Messung der Erreichbarkeit entscheidend ist, können Sie ihn in GOAT anpassen. Die folgenden Diagramme zeigen den Einfluss des Parameters *sensitivity* auf die Erreichbarkeit:
 
 :::info demnächst
 
@@ -295,7 +295,7 @@ Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
 
 :::
 
-In ähnlicher Weise kann auch das *destination potential* verändert werden. So kann z.B. einem POI-Typ (z.B. Verbrauchermärkte) ein höherer Erreichbarkeitseffekt zugeordnet werden als anderen POI-Typen (z.B. Discounter). Die folgenden Bilder zeigen den Einfluss des Parameters *Destinationspotenzial* auf die Erreichbarkeit:
+In ähnlicher Weise kann auch das *destination potential* verändert werden. So kann z.B. einem POI-Typ (z.B. Verbrauchermärkte) ein höherer Erreichbarkeitseffekt zugeordnet werden als anderen POI-Typen (z.B. Discounter). Die folgenden Bilder zeigen den Einfluss des Parameters *destination potential* auf die Erreichbarkeit:
 
 :::info demnächst
 
@@ -312,7 +312,7 @@ Heatmaps in GOAT nutzen die **[Uber's H3 grid-based](../further_reading/glossary
 
 Die Auflösung und die Abmessungen des verwendeten hexagonalen Gitters hängen von der gewählten *routing type* ab:
 
-#### Gehen
+#### Zu Fuß
 - Auflösung: 10
 - Durchschnittliche Sechseckfläche: 11285.6 m²
 - Durchschnittliche Kantenlänge des Sechsecks: 65,9 m
@@ -368,7 +368,7 @@ Im zweiten Beispiel wird die Erreichbarkeit von Lebensmittelgeschäften in 15 mi
 
 Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
 
-Wenn Sie die beiden Ergebnisse vergleichen, bekommen Sie einen Eindruck davon, wie sich die *sensitivity*auf die Zugänglichkeit auswirkt.
+Wenn Sie die beiden Ergebnisse vergleichen, bekommen Sie einen Eindruck davon, wie sich die *sensitivity* auf die Zugänglichkeit auswirkt.
 
 ## 5. Referenzen
 
