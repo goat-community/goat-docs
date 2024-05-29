@@ -55,7 +55,7 @@ html[data-theme='dark'] {
 }
 
 .subscription_button {
-  background-color: #ffffff; 
+  background-color: #f5f5f5; 
   cursor: pointer;
   border: none; 
   padding: 8px 22px; 
