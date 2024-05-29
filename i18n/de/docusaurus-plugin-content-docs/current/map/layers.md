@@ -121,7 +121,7 @@ By clicking on three dots <img src={require('/img/map/filter/3dots.png').default
 
 :::tip tip
 
-Want to change the design of your layers? See [Layer Style](../category/layer-style).  
+Want to change the design of your layers? See [Layer Style](../category/layer-styling).  
 Only want to visualize parts of your dataset? See [Filter](../map/filter). 
 
 :::
