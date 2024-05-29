@@ -75,7 +75,7 @@ Wenn Sie Analysen außerhalb dieses Geofence durchführen möchten, kontaktieren
 
 <Tabs>
 
-<TabItem value="walk" label="Walk" default className="tabItemBox">
+<TabItem value="zu Fuß" label="zu Fuß" default className="tabItemBox">
 
 ##### Zu Fuß
 
@@ -91,7 +91,7 @@ Für weitere Einblicke in den Routing-Algorithmus, besuchen Sie [Routing/Gehen](
 
 </TabItem>
   
-<TabItem value="cycling" label="Bicycle" className="tabItemBox">
+<TabItem value="Fahrrad" label="Fahrrad" className="tabItemBox">
 
 #### Fahrrad
 
@@ -120,7 +120,7 @@ Für weitere Einblicke in den Routing-Algorithmus, besuchen Sie [Routing/Fahrrad
 
 </TabItem>
 
-<TabItem value="car" label="Car" className="tabItemBox">
+<TabItem value="Auto" label="Auto" className="tabItemBox">
 
 #### Auto
 
