@@ -3,109 +3,103 @@ sidebar_position: 6
 ---
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
-# PT Trip Count
+# Abfahrten ÖPNV
 
-This indicator displays the **average number of public transport departures** per hour for each public transport stop. 
+Dieser Indikator zeigt die **durchschnittliche Anzahl der Abfahrten öffentlicher Verkehrsmittel** pro Stunde für jede Haltestelle des öffentlichen Verkehrs an.
 
-## 1. Explanation
+## 1. Erklärung
 
-The Public Transport (PT) Trip Count shows the **average number of public transport departures per hour** for a selected **time interval** for each public transport stop on a point layer. The results can be visualized either as a sum of all transport modes or by focusing on one dedicated mode (e.g. bus, tram, metro, rail).
+Das Werkzeug "Afahrten ÖPNV" zeigt die *durchschnittliche Anzahl der Abfahrten öffentlicher Verkehrsmittel pro Stunde** für ein ausgewähltes **Zeitintervall** für jede Haltestelle des öffentlichen Verkehrs auf einer Punkt-Layer an. Die Ergebnisse können entweder als Summe aller Verkehrsmodi oder durch Fokussierung auf einen bestimmten Modus (z.B. Bus, Straßenbahn, U-Bahn, Bahn) visualisiert werden.
 
-This indicator serves as the foundation for the [ÖV-Güteklassen](/docs/toolbox/accessibility_indicators/oev_gueteklassen.md), but can also be utilized on its own as a straightforward measure for public transport offer at a **station level**. It gives a summary of a station’s departures during a specific time window and day, providing a valuable overview of the public transport offered in a city. Thus, the indicator is often used in **weak point analyses of local transport plans** (see, among others, [Guideline for Local Transport Planning in Bavaria](https://www.demografie-leitfaden-bayern.de/index.html)).
+Dieser Indikator dient als Grundlage für die [ÖV-Güteklassen](/docs/toolbox/accessibility_indicators/oev_gueteklassen.md), kann aber auch eigenständig als einfache Maßnahme für das Angebot an öffentlichen Verkehrsmitteln auf **Stationsebene** verwendet werden. Er gibt eine Zusammenfassung der Abfahrten einer Station während eines bestimmten Zeitfensters und Tages und bietet einen wertvollen Überblick über das öffentliche Verkehrsangebot in einer Stadt. Daher wird der Indikator oft in **Schwachstellenanalysen von lokalen Verkehrsplänen** verwendet (siehe unter anderem [Richtlinie für die Nahverkehrsplanung in Bayern](https://www.demografie-leitfaden-bayern.de/index.html)).
 
-![Public Transport Trip Count](/img/toolbox/accessibility_indicators/trip_count/sample.png "[Public Transport Trip Count")
+![Public Transport Trip Count](/img/toolbox/accessibility_indicators/trip_count/sample.png "Public Transport Trip Count")
 
-:::info 
-The public transport (PT) trip count is only available in areas where the transport network is integrated into GOAT. 
+:::info
+Abfahrten ÖPNV ist nur in Gebieten verfügbar, in denen das Verkehrsnetz in GOAT integriert ist.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence for public transport trip count calculation in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
-</div> 
+  <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence für die Berechnung des PT Trip Count in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
+</div>
 
-In case you need to perform analysis beyond this geofence, feel free to contact the [Support](https://plan4better.de/en/contact/ "Contact Support") and we will check what is possible. 
+Falls Sie Analysen außerhalb dieses Geofences durchführen müssen, kontaktieren Sie bitte den [Support](https://plan4better.de/en/contact/ "Contact Support") und wir werden prüfen, was möglich ist.
 :::
 
-## 2. Example use cases
+## 2. Anwendungsbeispiele
 
-- Which stations in the city serve as main hubs?
-- Which stations have low service rates in comparison to others?
-- How does the public transport quality vary over different times of the week or day?
+- Welche Stationen in der Stadt dienen als Hauptknotenpunkte?
+- Welche Stationen haben im Vergleich zu anderen niedrige Serviceraten?
+- Wie variiert die Qualität des öffentlichen Verkehrs zu unterschiedlichen Zeiten der Woche oder des Tages?
 
-## 3. How to use the indicator?
+## 3. Wie benutzt man den Indikator?
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Klicken Sie auf <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>.</div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>PT Trip Count</code>. This opens the settings menu.</div>
+  <div class="content">Unter <code>Erreichbarkeitsindikatoren</code> wähen Sie <code>Abfahrten ÖPNV</code>. Dies öffnet das Einstellungsmenü.</div>
 </div>
 
+![Menüübersicht für den Public Transport Trip Count](/img/toolbox/accessibility_indicators/trip_count/overview.png "Menüübersicht für den Public Transport Trip Count")
 
-![Menu Overview for Public Transport Trip Count](/img/toolbox/accessibility_indicators/trip_count/overview.png "[Menu Overview for Public Transport Trip Count")
-
-
-### Calculation Time
+### Berechnungszeit
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select for which <code>Day</code>, <code>Start Time</code>, and <code>End Time</code> you would like to calculate the public transport trip count.</div>
+  <div class="content">Wählen Sie aus, für welchen <code>Tag</code>, <code>Startzeit</code> und <code>Endzeit</code> Sie die Abfahrten ÖPNV berechnen möchten.</div>
 </div>
 
-### Reference Layer
+### Referenzlayer
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the <code>Reference Layer</code> that contains the area for which you like to calculate the indicator. This can be any polygon feature layer.</div>
+  <div class="content">Wählen Sie den <code>Referenzlayer</code>, der das Gebiet enthält, für das Sie den Indikator berechnen möchten. Dies kann jeder Polygon-Feature-Layer sein.</div>
 </div>
-
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Click on <code>Run</code>. This starts the calculation of the Public Transport Trip Count for the selected area and time interval.</div>
+  <div class="content">Klicken Sie auf <code>Ausführen</code>. Dies startet die Berechnung des Abfahrten ÖPNV für das ausgewählte Gebiet und Zeitintervall.</div>
 </div>
 
-:::tip Hint
+:::tip Tipp
 
-Depending on the size of the selected area, the calculation might take some minutes. The [status bar](../../workspace/home#status-bar) shows the current progress.
+Je nach Größe des ausgewählten Gebiets kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../workspace/home#status-bar) zeigt den aktuellen Fortschritt an.
 
 :::
 
-### Results
+### Ergebnisse
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layer called <b>"Trip Count Station"</b> will be added to the map.</div>
+  <div class="content">Sobald der Berechnungsprozess abgeschlossen ist, wird der resultierende Layer mit dem Namen <b>"Trip Count Station"</b> zur Karte hinzugefügt.</div>
 </div>
 
-
-![Menu Overview for Public Transport Trip Count](/img/toolbox/accessibility_indicators/trip_count/result.png "[Menu Overview for Public Transport Trip Count")
+![Menüübersicht für den Public Transport Trip Count](/img/toolbox/accessibility_indicators/trip_count/result.png "Menüübersicht für den Public Transport Trip Count")
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">When clicking on a point in the map, you can see the <b>station name</b>, <b>total departure count</b>, and the <b>departure counts per mode</b>.</div>
+  <div class="content">Wenn Sie auf einen Punkt in der Karte klicken, können Sie den <b>Stationsnamen</b>, die <b>Gesamtanzahl der Abfahrten</b> und die <b>Abfahrten pro Modus</b> sehen.</div>
 </div>
 
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
-<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+  <img src={require('/img/toolbox/accessibility_indicators/trip_count/details.png').default} alt="Weitere Details zum Trip Count" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
 
-  <img src={require('/img/toolbox/accessibility_indicators/trip_count/details.png').default} alt="Trip Count Further Details" style={{ maxHeight: "300px", maxWidth: "300px", objectFit: "cover"}}/>
+</div>
 
-</div> 
+:::tip Tipp
 
-
-:::tip Hint
-
-If you are interested in one specific mode, e.g. only busses, you can use the [attribute-based styling](../../map/layer_style/attribute_based_styling.md) to adjust the point color based on that desired column.
+Falls Sie an einem bestimmten Modus interessiert sind, z.B. nur Busse, können Sie die [attributbasierte Stilierung](../../map/layer_style/attribute_based_styling.md) verwenden, um die Punktfarbe basierend auf der gewünschten Spalte anzupassen.
 
 :::
 
-## 4. Technical details
+## 4. Technische Details
 
-Similar to the Public Transport Quality Classes <i>(German: ÖV-Güteklassen)</i>, this indicator is calculated based on **GTFS data** (see [Data Basis](../../data/data_basis)). Based on the selected day and time window, the average number of departures per hour (regardless of direction) is calculated.
+Ähnlich den Public Transport Quality Classes <i>(Deutsch: ÖV-Güteklassen)</i>, wird dieser Indikator basierend auf **GTFS-Daten** berechnet (siehe [Datengrundlage](../../data/data_basis)). Basierend auf dem ausgewählten Tag und Zeitfenster wird die durchschnittliche Anzahl der Abfahrten pro Stunde (unabhängig von der Richtung) berechnet.
 
-## 5. References
+## 5. Referenzen
 
 Shkurti, Majk (2022). [Spatio-temporal public transport accessibility analysis and benchmarking in an interactive WebGIS](https://www.researchgate.net/publication/365790691_Spatio-temporal_public_transport_accessibility_analysis_and_benchmarking_in_an_interactive_WebGIS)

@@ -1,8 +1,8 @@
 {
-  "label": "Data",
+  "label": "Daten",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "High-quality input data is a crucial part of perfoming analyses. GOAT is therefore equipped with a variety of such datasets and also allows you to upload your own."
+    "description": "Qualitativ hochwertige Eingangsdaten sind für die Durchführung von Analysen von entscheidender Bedeutung. GOAT ist daher mit einer Vielzahl solcher Datensätze ausgestattet und erlaubt Ihnen auch, Ihre eigenen hochzuladen."
   }
 }

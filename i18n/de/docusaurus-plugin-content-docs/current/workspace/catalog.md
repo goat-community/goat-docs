@@ -10,7 +10,7 @@ Der **Datenkatalog** ist eine umfassende Liste aller verfügbaren [georäumliche
 
 ## Den Katalog erkunden
 
-Der Zugang erfolgt über den [Arbeitsbereich](../category/workspace) oder über die Schaltfläche [`+ Ebene hinzufügen`](../map/layers#add-layers) in Ihrem GOAT-Projekt. Sie können unsere Sammlung von Datensätzen nach *Schlüsselwörtern durchsuchen und räumliche und nicht-räumliche Filter* anwenden, um eine effiziente Entdeckung zu ermöglichen. Sie können auch Datensätze interaktiv in unserer Benutzeroberfläche vorab ansehen, um den Inhalt und die Qualität zu bewerten, und so eine visuelle Erkundung ermöglichen. Seien Sie versichert, dass unsere Sammlung aus autoritativen Quellen stammt und eine hohe Datenqualität aufweist.
+Der Zugang erfolgt über den [Arbeitsbereich](../category/workspace) oder über die Schaltfläche [`+ Layer hinzufügen`](../map/layers#add-layers) in Ihrem GOAT-Projekt. Sie können unsere Sammlung von Datensätzen nach *Schlüsselwörtern durchsuchen und räumliche und nicht-räumliche Filter* anwenden, um eine effiziente Entdeckung zu ermöglichen. Sie können auch Datensätze interaktiv in unserer Benutzeroberfläche vorab ansehen, um den Inhalt und die Qualität zu bewerten, und so eine visuelle Erkundung ermöglichen. Seien Sie versichert, dass unsere Sammlung aus autoritativen Quellen stammt und eine hohe Datenqualität aufweist.
 
 Unser Katalog bietet eine umfangreiche Sammlung von Datensätzen, die verschiedene thematische Bereiche abdecken und in verschiedenen Kategorien unterteilt sind, darunter:
 
@@ -38,30 +38,30 @@ Ein Klick auf einen Datensatz innerhalb der Katalogseite führt Sie zum **Metada
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content"> Under the <b>Layer</b> tab click <code> + Add Layer</code>.</div>
+  <div class="content"> Unter <b>Layer</b> klicke Sie auf <code> + Layer hinzufügen</code>.</div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content"> Select <code>Catalog Explorer</code> and browse the <b>Data Catalog</b>.</div>
+  <div class="content"> Wählen Sie <code>Katalogsuche</code> und suchen Sie nach <b>Datenkatalog</b>.</div>
 </div>
 
 <div class="content"><img src={require('/img/workspace/catalog/map-catalog.png').default} alt="Catalog Explorer" style={{ maxHeight: "700px", maxWidth: "800px"}}/></div>
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content"> Select a <i>dataset</i> and click <code>Add Layer</code>.</div>
+  <div class="content"> Wählen Sie einen <i>Datensatz</i> und klicken anschließend auf <code>Layer hinzufügen</code>.</div>
 </div>
 
 <div class="content"><img src={require('/img/workspace/catalog/add-layer.png').default} alt="Catalog Explorer" style={{ maxHeight: "700px", maxWidth: "800px"}}/></div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content"> Once added, apply a <code><img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "16px", maxWidth: "16px"}}/> Filter</code> to the new layer. This will filter the data by a logical or spatial expression, retaining only the data necessary for your analysis and making it easier to work with.</div>
+  <div class="content">Nach dem Hinzufügen wenden Sie einen <code><img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "16px", maxWidth: "16px"}}/> Filter</code> auf den neuen Layer an. Dies wird die Daten durch einen logischen oder räumlichen Ausdruck filtern, sodass nur die für Ihre Analyse erforderlichen Daten beibehalten werden und die Arbeit erleichtert wird.</div>
 </div>
 
 
-:::tip HINWEIS
+:::tip Tipp
 
 Um mehr über die erweiterten Filterfunktionen von GOAT zu erfahren, besuchen Sie die Seite [Filter](../map/filter.md "Filter dataset").
 

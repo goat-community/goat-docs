@@ -18,27 +18,27 @@ GOAT unterstützt das Hochladen von **GeoPackage-, GeoJSON-, Shapefile-, KML-, C
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Navigate to the <b>"Datasets"</b> page via the sidebar.</div>
+  <div class="content">Navigieren Sie zur<b>"Datensatz"</b> Seite mithilfe der Nebenleiste</div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Click on <code>+ Add Dataset</code>. </div>
+  <div class="content">Klicken Sie auf <code>+ Datensatz hinzufügen</code>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select the file from your local device.</div>
+  <div class="content">Wählen Sie eine Datei von Ihrem Rechner.</div>
 </div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the <b>Destination Folder</b> and define the <b>Name</b> of your new dataset. Furthermore, you can add a <b>Description</b> if you like.</div>
+  <div class="content">Wählen Sie einen <b>Zielordner</b> und definieren Sie den <b>Namen</b> Ihres neuen Datensatzes. Des weiteren können Sie bei Bedarf eine <b>Beschreibung</b> hinzufügen.</div>
 </div>
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Check the information and click on <code>Upload</code>.</div>
+  <div class="content">Überprüfen Sie ihre Informationen und klicken anschließend auf <code>Hochladen</code>.</div>
 </div>
 
 
@@ -51,7 +51,7 @@ Sie können Datensätze auch direkt in der [Karte](../map/layers) hochladen.
 
 ## Datensätze filtern
 
-Datasets can be sorted based on the [dataset type](../data/dataset_types "What are the dataset types?"), i.e. *features, tables, external imagery*, and *external vector tiles*. Simply click on the filter icon <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "20px", maxWidth: "20px"}}/> to choose the desired dataset type for filtering.
+Datensätze können basierend auf dem [Datensatztyp](../data/dataset_types "Was sind die Datensatztypen?") sortiert werden, d.h. *Features, Tabellen, externe Bilder* und *externe Vektorkacheln*. Klicken Sie einfach auf das Filtersymbol <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "20px", maxWidth: "20px"}}/>, um den gewünschten Datensatztyp für die Filterung auszuwählen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/datasets/dataset_filter.gif').default} alt="Datasets filtering in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
@@ -64,25 +64,23 @@ Durch Klicken auf die drei Punkte <img src={require('/img/map/filter/3dots.png')
 
 ## Metadaten der Datensätze anzeigen
 
-The **metadata** of datasets can be viewed and edited by clicking on <code>Info</code> under the three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> or by clicking directly on the dataset. This grants access to a detailed **summary** of the data, the **attribute table**, and a **map preview with a legend**.
+Die **Metadaten** von Datensätzen können angezeigt und bearbeitet werden, indem Sie auf <code>Info</code> unter den drei Punkten <img src={require('/img/map/filter/3dots.png').default} alt="Optionen" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> klicken oder direkt auf den Datensatz klicken. Dies gewährt Zugang zu einer detaillierten **Zusammenfassung** der Daten, der **Attributtabelle** und einer **Kartenansicht mit Legende**.
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-  <img src={require('/img/workspace/datasets/metadata.gif').default} alt="Metadata of the datasets in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/workspace/datasets/metadata.gif').default} alt="Metadaten der Datensätze im Workspace von GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
-
 
 ## Ordner erstellen
 
-To organize your data, you can create new folders within the workspace. Therefore, click on the ``folder icon`` <img src={require('/img/workspace/datasets/folder_icon.png').default} alt="Folder Icon" style={{ maxHeight: "25px", maxWidth: "25px"}}/> and define the name of the new folder.
+Um Ihre Daten zu organisieren, können Sie neue Ordner im Arbeitsbereich erstellen. Klicken Sie dazu auf das ``Ordnersymbol`` <img src={require('/img/workspace/datasets/folder_icon.png').default} alt="Ordnersymbol" style={{ maxHeight: "25px", maxWidth: "25px"}}/> und legen Sie den Namen des neuen Ordners fest.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-  <img src={require('/img/workspace/datasets/new_folder.gif').default} alt="Create new folders in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/workspace/datasets/new_folder.gif').default} alt="Neue Ordner im Workspace von GOAT erstellen" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
-
 
 ## Datensätze in Ordner verschieben
 
-To move a dataset into a folder, click on three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px"}}/> and select **"Move to folder"**. From the dropdown menu, choose the folder to which you want to move your dataset.
+Um einen Datensatz in einen Ordner zu verschieben, klicken Sie auf die drei Punkte <img src={require('/img/map/filter/3dots.png').default} alt="Optionen" style={{ maxHeight: "25px", maxWidth: "25px"}}/> und wählen Sie **"In Ordner verschieben"**. Wählen Sie im Dropdown-Menü den Ordner aus, in den Sie Ihren Datensatz verschieben möchten.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-  <img src={require('/img/workspace/datasets/move_to_folder.gif').default} alt="Move your datasets to the folders in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/workspace/datasets/move_to_folder.gif').default} alt="Verschieben Sie Ihre Datensätze in die Ordner im Workspace von GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 

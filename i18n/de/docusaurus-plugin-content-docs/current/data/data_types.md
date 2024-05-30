@@ -8,18 +8,18 @@ GOAT verarbeitet eine Vielzahl von Geometrietypen für räumliche Daten. Diese F
 
 Darüber hinaus verfolgt GOAT einen strukturierten Ansatz für das Datenmanagement, indem die Datentypen kategorisiert werden. Diese Kategorisierung soll das Datenbankschema für verbesserte Leistung und Skalierbarkeit optimieren. Das aktuelle Schema umfasst eine begrenzte Anzahl von Spalten pro Datentyp:
 
-| Data Type  | Description | Maximum Number of Columns |
-|------------|-------------|--------------|
-| integer    | Whole numbers without any decimal points (e.g., 1, 100, -5) |  15 |
-| bigint     | Very large whole numbers, larger than what 'integer' can store | 5  |
-| float      | Numbers with decimal points that need precision (e.g., 3.14, -0.001) | 10 |
-| text       | Any kind of text, including letters, numbers, and symbols | 20 |
-| timestamp  | Specific dates and times, including year, month, day, hour, minute, and second | 3  |
-| arrfloat (Array of Floats)   | A list of numbers with decimal points, stored together as one entry | 3  |
-| arrint (Array of Integers)   | A list of whole numbers, stored together as one entry | 3  |
-| arrtext (Array of Text)   | A list of text items, stored together as one entry | 3 |
-| jsonb (Binary JSON)    | 	Data formatted as JSON (a way to store information in an organized, easy-to-access manner), stored in an efficient binary format | 3  |
-| boolean    | True or false values, used for decisions or to indicate if something is on or off |3 |
+| Datentyp  | Beschreibung | Maximale Anzahl der Spalten |
+|-----------|--------------|-----------------------------|
+| integer   | Ganze Zahlen ohne Dezimalstellen (z.B. 1, 100, -5) | 15 |
+| bigint    | Sehr große ganze Zahlen, größer als das, was 'integer' speichern kann | 5  |
+| float     | Zahlen mit Dezimalstellen, die Präzision benötigen (z.B. 3,14, -0,001) | 10 |
+| text      | Jegliche Art von Text, einschließlich Buchstaben, Zahlen und Symbole | 20 |
+| timestamp | Spezifische Daten und Zeiten, einschließlich Jahr, Monat, Tag, Stunde, Minute und Sekunde | 3  |
+| arrfloat (Array von Floats)   | Eine Liste von Zahlen mit Dezimalstellen, die zusammen als ein Eintrag gespeichert werden | 3  |
+| arrint (Array von Integern)   | Eine Liste von ganzen Zahlen, die zusammen als ein Eintrag gespeichert werden | 3  |
+| arrtext (Array von Text)   | Eine Liste von Textelementen, die zusammen als ein Eintrag gespeichert werden | 3  |
+| jsonb (Binary JSON)    | Daten im JSON-Format (eine Möglichkeit, Informationen auf organisierte und leicht zugängliche Weise zu speichern), gespeichert in einem effizienten binären Format | 3  |
+| boolean   | Wahr- oder Falschwerte, verwendet für Entscheidungen oder um anzuzeigen, ob etwas an oder aus ist | 3 |
 
 ::::tip
 
@@ -29,7 +29,7 @@ Under <img src={require('/img/map/filter/3dots.png').default} alt="Options" styl
 
 ![More Options](/img/data/view-data-layer.png "More Options")
 
-Scrollen Sie die Datentabelle. Oben in jedem Feld finden Sie den Datentyp:
+Scrollen Sie in der Datentabelle. Oben in jedem Feld finden Sie den Datentyp:
 
 ![More Options](/img/data/data-table.png  "More Options" )
 
