@@ -20,7 +20,7 @@ Im Gegensatz zu unseren anderen Heatmaps, die sich auf die Visualisierung der Er
 
 :::info 
 
-Heatmaps sind in bestimmten Regionen verfügbar. Bei der Auswahl eines `Routing type` wird auf der Karte ein **geofence** angezeigt, um die unterstützten Regionen hervorzuheben.
+Heatmaps sind in bestimmten Regionen verfügbar. Bei der Auswahl eines `Verkehrsmittels` wird auf der Karte ein **geofence** angezeigt, um die unterstützten Regionen hervorzuheben.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/geofence.png').default} alt="Geofence for Connectivity-based Heatmaps in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
@@ -45,12 +45,12 @@ Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Klicken Sie auf<code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Erreichbarkeitsindikatoren</code> menu, klicken Sie auf<code>Heatmap Konnektivität</code>.</div>
+  <div class="content">Unter<code>Erreichbarkeitsindikatoren</code> wählen Sie<code>Heatmap Konnektivität</code>.</div>
 </div>
 
 ### Routing
@@ -62,9 +62,9 @@ Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie
 
 <Tabs>
 
-<TabItem value="walk" label="Walk" default className="tabItemBox">
+<TabItem value="zu Fuß" label="zu Fuß" default className="tabItemBox">
 
-#### Gehen
+#### Zu Fuß
 
 Berücksichtigt alle zu Fuß begehbaren Wege. Für Heatmaps wird eine Gehgeschwindigkeit von 5 km/h angenommen.
 
@@ -76,7 +76,7 @@ Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Walk](.
 
 </TabItem>
   
-<TabItem value="cycling" label="Bicycle" className="tabItemBox">
+<TabItem value="Fahrrad" label="Fahrrad" className="tabItemBox">
 
 #### Fahrrad
 
@@ -90,7 +90,7 @@ Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Fahrrad
 
 </TabItem>
 
-<TabItem value="pedelec" label="Pedelec" className="tabItemBox">
+<TabItem value="Pedelec" label="Pedelec" className="tabItemBox">
 
 #### Pedelec
 
@@ -104,7 +104,7 @@ Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Fahrrad
 
 </TabItem>
 
-<TabItem value="car" label="Car" className="tabItemBox">
+<TabItem value="Auto" label="Auto" className="tabItemBox">
 
 #### Auto
 
@@ -172,7 +172,7 @@ Möchten Sie Ihre Heatmaps gestalten und schöne Karten erstellen? Siehe [Stylin
 
 ### Berechnung
 
-Für jede Zelle des sechseckigen Gitters (innerhalb Ihres AOI) wird die gesamte Ausdehnung der umgebenden Zellen, von denen aus sie erreichbar ist, ermittelt. Diese umgebenden Zellen können sich außerhalb Ihres AOI befinden, müssen aber in Bereichen liegen, die gemäß der angegebenen `Travel time limit`  und dem `Routing type` zugänglich sind.
+Für jede Zelle des sechseckigen Gitters (innerhalb Ihres AOI) wird die gesamte Ausdehnung der umgebenden Zellen, von denen aus sie erreichbar ist, ermittelt. Diese umgebenden Zellen können sich außerhalb Ihres AOI befinden, müssen aber in Bereichen liegen, die gemäß der angegebenen `Reisezeitlimit`  und dem `Verkehrsmittel` zugänglich sind.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/heatmap_connectivity_infographic.png').default} alt="Extent of cells from where destination cell within AOI is accessible." style={{ maxHeight: "400px", maxWidth: "500px", alignItems:'center'}}/>
@@ -189,11 +189,11 @@ Zur Klassifizierung der Konnektivitätsstufen, die für jede Rasterzelle berechn
 
 ### Visualisierung 
 
-Heatmaps in GOAT nutzen die **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** Lösung für effiziente Berechnungen und leicht verständliche Visualisierung. Hinter den Kulissen wird eine vorberechnete Reisezeitmatrix für jeden *Routentyp* mit dieser Lösung abgefragt und in Echtzeit weiterverarbeitet, um die Erreichbarkeit zu berechnen und eine endgültige Heatmap zu erstellen.
+Heatmaps in GOAT nutzen die **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** Lösung für effiziente Berechnungen und leicht verständliche Visualisierung. Hinter den Kulissen wird eine vorberechnete Reisezeitmatrix für jedes *Verkehrsmittel* mit dieser Lösung abgefragt und in Echtzeit weiterverarbeitet, um die Erreichbarkeit zu berechnen und eine endgültige Heatmap zu erstellen.
 
-Die Auflösung und die Abmessungen des verwendeten hexagonalen Gitters hängen von der gewählten *Routenart* ab:
+Die Auflösung und die Abmessungen des verwendeten hexagonalen Gitters hängen von dem gewählten *Verkehrsmittel* ab:
 
-#### Gehen
+#### Zu Fuß
 - Auflösung: 10
 - Durchschnittliche Sechseckfläche: 11285.6 m²
 - Durchschnittliche Kantenlänge des Sechsecks: 65,9 m
@@ -215,6 +215,6 @@ Die Auflösung und die Abmessungen des verwendeten hexagonalen Gitters hängen v
 
 ### Beispiel für die Berechnung
 
-Das folgende Beispiel veranschaulicht die Berechnung einer konnektivitätsbasierten Heatmap für eine bestimmte AOI. Die Heatmap wird für ein `Travel time limit` von 15 Minuten und einen`Routing type` von `Walk`berechnet.
+Das folgende Beispiel veranschaulicht die Berechnung einer konnektivitätsbasierten Heatmap für eine bestimmte AOI. Die Heatmap wird für ein `Reisezeitlimit` von 15 Minuten und einen`Verkehrsmittel` von `zu Fuß`berechnet.
 
 <img src={require('/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/connectivity-calculation.gif').default} alt="Options" style={{ maxHeight: "800px", maxWidth: "800px"}}/>

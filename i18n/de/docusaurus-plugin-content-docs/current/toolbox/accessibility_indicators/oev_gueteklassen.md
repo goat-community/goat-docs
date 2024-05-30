@@ -40,7 +40,7 @@ Falls Sie eine Analyse außerhalb dieses Geofence durchführen müssen, kontakti
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Klicken Sie im Menü <code>Accessibility Indicators</code> auf <code>ÖV-Güteklassen</code>. Dadurch wird das Einstellungsmenü geöffnet.</div>
+  <div class="content">Klicken Sie im Menü <code>Erreichbarkeitsindikatoren</code> auf <code>ÖV-Güteklassen</code>. Dadurch wird das Einstellungsmenü geöffnet.</div>
 </div>
 
 ![Menüübersicht für ÖV-Güteklassen](/img/toolbox/accessibility_indicators/gueteklassen/overview.png "Menüübersicht für ÖV-Güteklassen")
@@ -56,14 +56,14 @@ Falls Sie eine Analyse außerhalb dieses Geofence durchführen müssen, kontakti
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Wählen Sie die <code>Referenzschicht</code> aus, für die Sie den Indikator berechnen möchten. Dies kann jede Polygon-Feature-Layer sein.</div>
+  <div class="content">Wählen Sie den <code>Referenzlayer</code> aus, für den Sie den Indikator berechnen möchten. Dies kann jeder Polygon-Feature-Layer sein.</div>
 </div>
 
 ![Auswahl des Referenzgebiets](/img/toolbox/accessibility_indicators/gueteklassen/reference_area.png "Auswahl des Referenzgebiets")
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Klicken Sie auf <code>Run</code>. Dies startet die Berechnung der ÖV-Güteklassen für das ausgewählte Gebiet.</div>
+  <div class="content">Klicken Sie auf <code>Ausführen</code>. Dies startet die Berechnung der ÖV-Güteklassen für das ausgewählte Gebiet.</div>
 </div>
 
 :::tip Tipp
@@ -74,9 +74,9 @@ Je nach Größe des ausgewählten Gebiets kann die Berechnung einige Minuten dau
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Sobald der Berechnungsprozess abgeschlossen ist, werden die resultierenden Ebenen zur Karte hinzugefügt. Die Ergebnisse bestehen aus einer Ebene namens <b>"ÖV-Güteklassen"</b>, die die ÖV-Güteklassen zeigt, und einer Ebene namens <b>"ÖV-Güteklassen Stationen"</b>, die alle Stationen enthält, die für die Berechnung dieses Indikators verwendet wurden. Die in Grau dargestellten Stationen haben eine zu geringe Servicefrequenz und tragen daher nicht zu einer ÖV-Güteklasse bei.
+  <div class="content">Sobald der Berechnungsprozess abgeschlossen ist, werden die resultierenden Layer zur Karte hinzugefügt. Die Ergebnisse bestehen aus einem Layer namens <b>"ÖV-Güteklassen"</b>, die die ÖV-Güteklassen zeigt, und einer Ebene namens <b>"ÖV-Güteklassen Stationen"</b>, die alle Stationen enthält, die für die Berechnung dieses Indikators verwendet wurden. Die in Grau dargestellten Stationen haben eine zu geringe Servicefrequenz und tragen daher nicht zu einer ÖV-Güteklasse bei.
   <p></p>
-  Wenn Sie auf ein "ÖV-Güteklassen"-Element auf der Karte klicken, sehen Sie weitere Details wie dessen pt_class und pt_class_number, die die <a href="#calculation">Qualität des öffentlichen Verkehrs</a> angeben.</div>
+  Wenn Sie auf ein "ÖV-Güteklassen"-Symbol auf der Karte klicken, sehen Sie weitere Details wie dessen pt_class und pt_class_number, die die <a href="#calculation">Qualität des öffentlichen Verkehrs</a> angeben.</div>
 </div>
 
 ![Ergebnis - ÖV-Güteklassen](/img/toolbox/accessibility_indicators/gueteklassen/result.png "Ergebnis - ÖV-Güteklassen")

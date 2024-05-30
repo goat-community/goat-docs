@@ -13,15 +13,15 @@ Eine farbkodierte Karte zur Visualisierung der durchschnittlichen Reisezeit zu P
 ## 1. Erklärung
 
 
-Visualisiert als farbkodiertes hexagonales Raster, berücksichtigt die Heatmap reale Transport- und Straßennetze, um Reisezeiten zu berechnen. Nach der Festlegung eines *Routing-Typs* (Gehen, Fahrrad, usw.), einer *Opportunity-Schicht* und eines *Reisezeitlimits* wird das Ergebnis ein farbkodiertes hexagonales Raster für alle unter diesen Bedingungen zugänglichen Bereiche anzeigen. Die Farbschattierung bezieht sich auf die durchschnittliche Reisezeit.
+Visualisiert als farbkodiertes hexagonales Raster, berücksichtigt die Heatmap reale Transport- und Straßennetze, um Reisezeiten zu berechnen. Nach der Festlegung eines *Verkehrsmittels* (Zu Fuß, Fahrrad, usw.), eines *Opportunity-Layers* und eines *Reisezeitlimits* wird das Ergebnis ein farbkodiertes hexagonales Raster für alle unter diesen Bedingungen zugänglichen Bereiche anzeigen. Die Farbschattierung bezieht sich auf die durchschnittliche Reisezeit.
 
 :::info INFO
 
-Eine `Opportunity-Schicht` enthält [geografische Punkt](../../../data/data_types "Was sind geografische Punkte?")-Daten. Wählen Sie eine oder mehrere solcher Schichten mit Ihren Zielpunkten (Opportunities) als Eingabe für die Heatmap.
+Ein `Opportunity-Layer` enthält [geografische Punkt](../../../data/data_types "Was sind geografische Punkte?")-Daten. Wählen Sie eine oder mehrere solcher Schichten mit Ihren Zielpunkten (Opportunities) als Eingabe für die Heatmap.
 
 :::
 
-Mit der konfigurierbaren Eigenschaft *Anzahl der Ziele* können Sie die Berechnung auf die *n* nächstgelegenen Opportunities beschränken. Dies ergibt eine leicht verständliche Visualisierung, die verwendet werden kann, um Unterschiede in den durchschnittlichen Reisezeiten sogar auf Stadt- oder regionaler Ebene zu identifizieren. Der berechnete Wert für jede Zelle in der Heatmap stellt die durchschnittliche Reisezeit zu den nächstgelegenen *n* Zielen dar.
+Mit der konfigurierbaren Eigenschaft *Anzahl der Ziele* können Sie die Berechnung auf die *n* nächstgelegenen Gelegenheiten beschränken. Dies ergibt eine leicht verständliche Visualisierung, die verwendet werden kann, um Unterschiede in den durchschnittlichen Reisezeiten sogar auf Stadt- oder regionaler Ebene zu identifizieren. Der berechnete Wert für jede Zelle in der Heatmap stellt die durchschnittliche Reisezeit zu den nächstgelegenen *n* Zielen dar.
 
 :::tip Pro Tipp
 
@@ -34,7 +34,7 @@ Kurz beschrieben, sind Zugänglichkeits-Heatmaps eine Visualisierung, die den *Z
   
 :::info 
 
-Heatmaps sind in bestimmten Regionen verfügbar. Beim Auswählen eines `Routing-Typs` wird auf der Karte ein **Geofence** angezeigt, um die unterstützten Regionen hervorzuheben.
+Heatmaps sind in bestimmten Regionen verfügbar. Beim Auswählen eines `Verkehrsmittels` wird auf der Karte ein **Geofence** angezeigt, um die unterstützten Regionen hervorzuheben.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/toolbox/accessibility_indicators/heatmaps/closest_average_based/geofence.png').default} alt="Geofence for Closest-average-based Heatmaps in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
@@ -58,26 +58,26 @@ Wenn Sie Analysen außerhalb dieses Geofence durchführen möchten, kontaktieren
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Klicken Sie auf<code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Erreichbarkeitsindikatoren</code> menu, click on <code>Heatmap Durchschnitt Reisezeit</code>.</div>
+  <div class="content">Unter<code>Erreichbarkeitsindikatoren</code> klicken Sie auf<code>Heatmap Durchschnitt Reisezeit</code>.</div>
 </div>
 
 ### Routing
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Pick the <code>Routing Type</code> you would like to use for the heatmap.</div>
+  <div class="content">Wählen Sie ein<code>Verkehrsmittel</code> welches Sie für die Heatmap anwenden möchten.</div>
 </div>
 
 <Tabs>
 
-<TabItem value="walk" label="Walk" default className="tabItemBox">
+<TabItem value="zu Fuß" label="zu Fuß" default className="tabItemBox">
 
-##### Gehen
+##### Zu Fuß
 
 Berücksichtigt alle Wege, die zu Fuß zugänglich sind. Für Heatmaps wird eine Gehgeschwindigkeit von 5 km/h angenommen.
 
@@ -91,7 +91,7 @@ Für weitere Einblicke in den Routing-Algorithmus, besuchen Sie [Routing/Gehen](
 
 </TabItem>
   
-<TabItem value="cycling" label="Bicycle" className="tabItemBox">
+<TabItem value="Fahrrad" label="Fahrrad" className="tabItemBox">
 
 #### Fahrrad
 
@@ -120,7 +120,7 @@ Für weitere Einblicke in den Routing-Algorithmus, besuchen Sie [Routing/Fahrrad
 
 </TabItem>
 
-<TabItem value="car" label="Car" className="tabItemBox">
+<TabItem value="Auto" label="Auto" className="tabItemBox">
 
 #### Auto
 
@@ -136,20 +136,20 @@ Für weitere Einblicke in den Routing-Algorithmus, besuchen Sie [Routing/Auto](.
 
 </Tabs>
 
-### Opportunities
+### Gelegenheiten
 
-Opportunities sind im Wesentlichen punktbasierte Daten (wie [POI](../../further_reading/glossary#point-of-interest-poi "Was ist ein POI?")), für die Sie eine Heatmap berechnen möchten. Dies sind die "Ziele" (wie Transitstationen, Schulen, andere Annehmlichkeiten oder Ihre eigenen benutzerdefinierten punktbasierten Daten), während umliegende Gebiete "Ursprünge" sind, für die ein Zugänglichkeitswert berechnet und visualisiert wird.
+Gelegenheiten sind im Wesentlichen punktbasierte Daten (wie [POI](../../further_reading/glossary#point-of-interest-poi "Was ist ein POI?")), für die Sie eine Heatmap berechnen möchten. Dies sind die "Ziele" (wie Transitstationen, Schulen, andere Annehmlichkeiten oder Ihre eigenen benutzerdefinierten punktbasierten Daten), während umliegende Gebiete "Quellen" sind, für die ein Zugänglichkeitswert berechnet und visualisiert wird.
 
-Zusätzlich können Sie über die Schaltfläche `+ Add Opportunity` am unteren Rand des Drawers weitere Opportunities erstellen. Alle Opportunity-Schichten werden kombiniert, um eine einheitliche Heatmap zu erzeugen.
+Zusätzlich können Sie über die Schaltfläche `+ Gelegenheit hinzufügen` am unteren Rand des Drawers weitere Opportunities erstellen. Alle Opportunity-Layer werden kombiniert, um eine einheitliche Heatmap zu erzeugen.
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Wählen Sie Ihre <code>Möglichkeitsdaten</code> aus dem Dropdown-Menü aus. Dies kann ein zuvor ersteller Layer sein, die punktbasierte Daten enthält.</div>
+  <div class="content">Wählen Sie Ihre <code>Gelegenheitsdaten</code> aus dem Dropdown-Menü aus. Dies kann ein zuvor ersteller Layer sein, die punktbasierte Daten enthält.</div>
 </div>
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Wählen Sie ein <code>Reisezeitlimit</code> für Ihre Wärmekarte. Dies wird im Zusammenhang mit Ihrem zuvor ausgewählten <i>Routentyp</i> verwendet.</div>
+  <div class="content">Wählen Sie ein <code>Reisezeitlimit</code> für Ihre Heatmap. Dies wird im Zusammenhang mit Ihrem zuvor ausgewählten <i>Verkehrsmittel</i> verwendet.</div>
 </div>
 
 :::tip Tipp
@@ -165,13 +165,13 @@ Brauchen Sie Hilfe bei der Wahl eines geeigneten Reisezeitlimits für verschiede
 
 :::tip Tipp
 
-Da der Parameter *Anzahl der Ziele* einmal pro Opportunity-Schicht angegeben wird, haben Sie die Flexibilität, für jede Opportunity-Schicht unterschiedliche Werte anzugeben. Dies kann nützlich sein, wenn verschiedene Arten von Annehmlichkeiten unterschiedliche Zugänglichkeitsstandards haben.
+Da der Parameter *Anzahl der Ziele* einmal pro Opportunity-Layer angegeben wird, haben Sie die Flexibilität, für jeden Opportunity-Layer unterschiedliche Werte anzugeben. Dies kann nützlich sein, wenn verschiedene Arten von Annehmlichkeiten unterschiedliche Zugänglichkeitsstandards haben.
 
 :::
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Click <code>Run</code> um die Berechnung der Heatmap zu beginnen</div>
+  <div class="content">Klicken Sie auf <code>Ausführen</code> um die Berechnung der Heatmap zu beginnen</div>
 </div>
 
 :::tip Tipp
@@ -184,7 +184,7 @@ Je nach Konfiguration kann die Berechnung einige Minuten dauern. Die [Statusleis
 
 <div class="step">
   <div class="step-number">10</div>
-  <div class="content">Sobald die Berechnung abgeschlossen ist, wird eine Ergebnisschicht zur Karte hinzugefügt. Diese Schicht mit dem Namen <i>Heatmap Durchschnitt nächster Nachbarn</i> wird Ihre farbcodierte Heatmap enthalten.
+  <div class="content">Sobald die Berechnung abgeschlossen ist, wird ein Ergebnislayer zur Karte hinzugefügt. Dieser Layer mit dem Namen <i>Heatmap Closest Average</i> wird Ihre farblich gekennzeichnet Heatmap enthalten.
   <p></p>
   Durch Klicken auf eine der hexagonalen Zellen der Heatmap wird der berechnete Durchschnittswert der Reisezeit für diese Zelle angezeigt.</div>
 </div>
@@ -202,7 +202,7 @@ Möchten Sie Ihre Heatmaps gestalten und ansprechende Karten erstellen? Siehe un
 
 ### Berechnung
 
-Sobald alle eingegebenen Opportunity-Layer kombiniert sind, wird ein Gitter aus umliegenden sechseckigen Zellen identifiziert. Dies geschieht durch die Berücksichtigung von Zellen, in denen mindestens eine Opportunity erreichbar ist, unter Berücksichtigung des spezifizierten `Routing type` und `Travel time limit`. Anschließend wird die durchschnittliche Reisezeit für jede Zelle innerhalb dieses Gitters berechnet, wobei die nächstgelegenen *n* Gelegenheiten, wie in dem Opportunity-Layer angegeben, berücksichtigt werden.
+Sobald alle eingegebenen Opportunity-Layer kombiniert sind, wird ein Gitter aus umliegenden sechseckigen Zellen identifiziert. Dies geschieht durch die Berücksichtigung von Zellen, in denen mindestens eine Opportunity erreichbar ist, unter Berücksichtigung des spezifizierten `Verkehrsmittels` und `Reisezeitlimits`. Anschließend wird die durchschnittliche Reisezeit für jede Zelle innerhalb dieses Gitters berechnet, wobei die nächstgelegenen *n* Gelegenheiten, wie in dem Opportunity-Layer angegeben, berücksichtigt werden.
 
 Formel für die durchschnittliche Fahrtzeit:
 
@@ -219,7 +219,7 @@ Heatmaps in GOAT nutzen die **[Uber's H3 grid-based](../further_reading/glossary
 
 Die Auflösung und die Abmessungen des verwendeten hexagonalen Gitters hängen von der gewählten *Routenart* ab:
 
-#### Gehen
+#### Zu Fuß
 - Auflösung: 10
 - Durchschnittliche Sechseckfläche: 11285.6 m²
 - Durchschnittliche Kantenlänge des Sechsecks: 65,9 m

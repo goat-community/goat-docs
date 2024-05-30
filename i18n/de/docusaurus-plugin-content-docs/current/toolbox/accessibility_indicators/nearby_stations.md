@@ -85,15 +85,15 @@ Falls Sie eine Analyse außerhalb dieses Geofence durchführen müssen, wenden S
 </div>
 
 <Tabs>
-  <TabItem value="Select on map" label="Select on map" default className="tabItemBox">
+  <TabItem value="Klicke auf die Karte" label="Klicke auf die Karte" default className="tabItemBox">
  
   Klicken Sie auf <code>Klicke auf die Karte</code>. Wählen Sie den/die Ausgangspunkt(e) aus, indem Sie auf die jeweiligen Position(en) in der Karte klicken. Sie können beliebig viele Ausgangspunkte hinzufügen.
 
   </TabItem>
 
-  <TabItem value="Select from layer" label="Select from layer" className="tabItemBox">
+  <TabItem value="Wähle vom Layer" label="Wähle vom Layer" className="tabItemBox">
   
-  Klicken Sie auf <code>Wähle vom Layer</code>. Wählen Sie die <code>Punktebene</code> aus, die die Startpunkte enthält, die Sie verwenden möchten.
+  Klicken Sie auf <code>Wähle vom Layer</code>. Wählen Sie den <code>Punktlayer</code> aus, der die Startpunkte enthält, die Sie verwenden möchten.
   
   </TabItem>
 </Tabs>
@@ -130,4 +130,4 @@ Möchten Sie Ihre Ergebnisse bearbeiten und ansprechende Karten erstellen? Siehe
 
 ## 4. Technische Details
 
-Ähnlich wie die Public Transport Quality Classes (ÖV-Güteklassen) wird dieser Indikator auf Basis von **GTFS-Daten** berechnet (siehe [Datenbasis](../../data/data_basis)). Basierend auf den ausgewählten Verkehrsmitteln, dem Tag und dem Zeitfenster werden die nahegelegenen PT-Stationen ermittelt.
+Ähnlich wie die Public Transport Quality Classes (ÖV-Güteklassen) wird dieser Indikator auf Basis von **GTFS-Daten** berechnet (siehe [Datenbasis](../../data/data_basis)). Basierend auf den ausgewählten Verkehrsmitteln, dem Tag und dem Zeitfenster werden die nahegelegenen ÖV-Haltestellen ermittelt.
