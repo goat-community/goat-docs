@@ -1,8 +1,0 @@
-{
-  "label": "Karte",
-  "position": 3,
-  "link": {
-    "type": "generated-index",
-    "description": "Wenn Sie ein Projekt öffnen, sehen Sie die Karte. Hier können Sie eine Vielzahl von Geodatenanalysen durchführen, Statistiken und Benchmarks berechnen oder Feature-Layer visualisieren und gestalten."
-  }
-}

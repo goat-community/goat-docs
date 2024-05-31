@@ -38,5 +38,109 @@
   "sidebar.tutorialSidebar.category.Tutorial - Extras": {
     "message": "Tutorial - Extras",
     "description": "Das Label für die Kategorie Tutorial - Extras in der Seitenleiste tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Data": {
+    "message": "Daten",
+    "description": "The label for category Data in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Data.link.generated-index.description": {
+    "message": "Qualitativ hochwertige Eingangsdaten sind für die Durchführung von Analysen von entscheidender Bedeutung. GOAT ist daher mit einer Vielzahl solcher Datensätze ausgestattet und erlaubt Ihnen auch, Ihre eigenen hochzuladen.",
+    "description": "The generated-index page description for category Data in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Workspace": {
+    "message": "Arbeitsplatz",
+    "description": "The label for category Workspace in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Workspace.link.generated-index.description": {
+    "message": "Die erste Seite, die Sie sehen, wenn Sie GOAT betreten. Von hier aus können Sie auf Ihre Projekte, Datensätze und Einstellungen zugreifen und diese verwalten.",
+    "description": "The generated-index page description for category Workspace in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Map": {
+    "message": "Karte",
+    "description": "The label for category Map in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Map.link.generated-index.description": {
+    "message": "Wenn Sie ein Projekt öffnen, sehen Sie die Karte. Hier können Sie eine Vielzahl von Geodatenanalysen durchführen, Statistiken und Benchmarks berechnen oder Feature-Layer visualisieren und gestalten.",
+    "description": "The generated-index page description for category Map in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Layer Styling": {
+    "message": "Layer Styling",
+    "description": "The label for category Layer Styling in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Layer Styling.link.generated-index.description": {
+    "message": "All layers added to the map can be styled. This can be done using the same colour and appearance for all objects, or using an attribute-based styling.",
+    "description": "The generated-index page description for category Layer Styling in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Toolbox": {
+    "message": "Werkzeuge",
+    "description": "The label for category Toolbox in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Toolbox.link.generated-index.description": {
+    "message": "Unter Werkzeuge finden Sie verschiedene leistungsstarke Werkzeuge für raumbezogene Analysen - Erreichbarkeitsindikatoren, Datenverwaltungstools, Geoverarbeitung und mehr.",
+    "description": "The generated-index page description for category Toolbox in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Accessibility Indicators": {
+    "message": "Accessibility Indicators",
+    "description": "The label for category Accessibility Indicators in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Accessibility Indicators.link.generated-index.description": {
+    "message": "Various tools are provided for accessibility analysis, including the calculation of catchment areas, heatmaps and public transport indicators.",
+    "description": "The generated-index page description for category Accessibility Indicators in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Data management": {
+    "message": "Data management",
+    "description": "The label for category Data management in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Data management.link.generated-index.description": {
+    "message": "In order to manage your data, you can perform different kind of join operations, either based on a matching attribute or based on a spatial intersection.",
+    "description": "The generated-index page description for category Data management in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Geoanalysis": {
+    "message": "Geoanalysis",
+    "description": "The label for category Geoanalysis in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Geoanalysis.link.generated-index.description": {
+    "message": "Different geoanalysis allow to analyse spatial datasets by aggregating information or visualizing it in new ways.",
+    "description": "The generated-index page description for category Geoanalysis in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Geoprocessing": {
+    "message": "Geoprocessing",
+    "description": "The label for category Geoprocessing in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Geoprocessing.link.generated-index.description": {
+    "message": "As a geoprocessing tool, you can create buffers around geometries.",
+    "description": "The generated-index page description for category Geoprocessing in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Scenarios": {
+    "message": "Scenarios",
+    "description": "The label for category Scenarios in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Scenarios.link.generated-index.description": {
+    "message": "Besides analyzing existing real-world data & situations, GOAT allows you to create custom scenarios such as network changes or new infrastructure projects. Ways, points and polygons can be added, edited or removed and their impact on accessibility analyzed.",
+    "description": "The generated-index page description for category Scenarios in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Routing": {
+    "message": "Routing",
+    "description": "The label for category Routing in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Routing.link.generated-index.description": {
+    "message": "Der Routing-Algorithmus ist eine Kernfunktion von GOAT, die unter anderem zur Berechnung von Fahrten und Fahrzeiten für Einzugsgebiete und Heatmaps verwendet wird. Basierend auf dem gewählten Verkehrsmittel und den Routing-Präferenzen verwendet unser Algorithmus verschiedene Datensätze und Ansätze, um ein genaues Routing durchzuführen.",
+    "description": "The generated-index page description for category Routing in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Literature": {
+    "message": "Literatur",
+    "description": "The label for category Literature in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Literature.link.generated-index.description": {
+    "message": "Wenn Sie mehr über die Entwicklung von GOAT erfahren und unsere Fachterminologie verstehen möchten, sollten Sie diesen Abschnitt lesen. Im Glossar finden Sie Erklärungen zu den gebräuchlichsten Begriffen. Im Abschnitt Wissenschaftliche Veröffentlichungen finden Sie die wichtigsten Veröffentlichungen über GOAT. Viel Spaß beim Lesen!",
+    "description": "The generated-index page description for category Literature in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Technical Insights": {
+    "message": "Technical Insights",
+    "description": "The label for category Technical Insights in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Technical Insights.link.generated-index.description": {
+    "message": "Here you can find technical insights and details about the software architecture of GOAT.",
+    "description": "The generated-index page description for category Technical Insights in sidebar tutorialSidebar"
   }
 }

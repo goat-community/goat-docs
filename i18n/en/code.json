@@ -1,4 +1,4 @@
-  {
+{
   "theme.ErrorPageContent.title": {
     "message": "The site is temporarily offline",
     "description": "The title of the fallback page when the page crashed"
