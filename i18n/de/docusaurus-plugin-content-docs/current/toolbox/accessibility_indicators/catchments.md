@@ -457,7 +457,7 @@ The catchment areas are dynamically created in the front end based on a travel t
 
 ### Scientific background
 
-From the scientific background, catchments are _contour-based measures_ (also known as _cumulative opportunities_). They are valued for their **easily interpretable results** ([Geurs and van Eck 2001](catchments#6-references); [Albacete 2016](catchments#6-references)), but have the drawback of not distinguishing between different travel times within the **cut-off range** ([Bertolini, le Clercq, and Kapoen 2005](catchments#6-references)), as it is done by [heatmaps](../accessibility_indicators/heatmaps/closest_facilities.md).
+From the scientific background, catchments are _contour-based measures_ (also known as _cumulative opportunities_). They are valued for their **easily interpretable results** ([Geurs and van Eck 2001](catchments#6-references); [Albacete 2016](catchments#6-references)), but have the drawback of not distinguishing between different travel times within the **cut-off range** ([Bertolini, le Clercq, and Kapoen 2005](catchments#6-references)), as it is done by [heatmaps](../accessibility_indicators/closest_average.md).
 
 ### Visualization 
 

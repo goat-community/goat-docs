@@ -29,14 +29,26 @@
   },
   "link.item.label.Blog": {
     "message": "Blog",
-    "description": "The label of footer link with label=Blog linking to /blog"
+    "description": "The label of footer link with label=Blog linking to https://plan4better.de/en/blog/"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/facebook/docusaurus"
+    "description": "The label of footer link with label=GitHub linking to https://github.com/goat-community"
   },
   "copyright": {
-    "message": "Copyright © 2023 Plan4Better, Inc. Built with Docusaurus.",
+    "message": "Copyright © 2024 Plan4Better, Inc. Built with Docusaurus.",
     "description": "The footer copyright"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/company/plan4better/"
+  },
+  "link.item.label.Plan4Better": {
+    "message": "Plan4Better",
+    "description": "The label of footer link with label=Plan4Better linking to https://plan4better.de/en/"
+  },
+  "link.item.label.References": {
+    "message": "References",
+    "description": "The label of footer link with label=References linking to https://plan4better.de/en/references/"
   }
 }
