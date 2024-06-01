@@ -2,20 +2,20 @@
 sidebar_position: 4
 ---
 
-# Glossary
+# Glossar
 
 
 
-### Accessibility
-**Accessibility** was first defined in 1959 as “the potential of opportunities for interaction”, which refers to the ease with which people or goods can be reached from a particular location ([Hansen, 1959](https://doi.org/10.1080/01944365908978307 "Visit Reference")). In the context of GIS and urban planning, it refers to the ease with which people can access essential services, such as healthcare facilities, schools, or supermarkets. 
+### Erreichbarkeit
+**Erreichbarkeit** wurde erstmals 1959 definiert als „das Potenzial an Interaktionsmöglichkeiten“, das sich auf die Leichtigkeit bezieht, mit der Menschen oder Güter von einem bestimmten Ort aus erreicht werden können ([Hansen, 1959](https://doi.org/10.1080/01944365908978307 "Visit Reference")). Im Kontext von GIS und Stadtplanung bezieht es sich auf die Leichtigkeit, mit der Menschen wesentliche Dienstleistungen wie Gesundheitseinrichtungen, Schulen oder Supermärkte erreichen können. 
 
-Generally, ensuring appropriate accessibility is a critical aspect of urban and transport planning, as it profoundly influences individuals' quality of life and transportation decisions. Accessibility can be expressed through diverse indicators that aim to model accessibility at different spatial scales and transport modes.
+Generell ist die Gewährleistung einer angemessenen Erreichbarkeit ein entscheidender Aspekt der Stadt- und Verkehrsplanung, da sie die Lebensqualität der Menschen und ihre Verkehrsentscheidungen maßgeblich beeinflusst. Erreichbarkeit kann durch verschiedene Indikatoren ausgedrückt werden, die darauf abzielen, die Verfügbarkeit in verschiedenen räumlichen Maßstäben und für verschiedene Verkehrsträger zu modellieren.
 
-### Accessibility Instrument
-An **accessibility instrument** is a tool used to calculate and analyze the accessibility of a particular location or region. It takes into account factors such as transportation options, distance, and travel time to determine how easily people can access essential services such as healthcare and education. Usually, an accessibility instrument is technically based on GIS technology, routing algorithms, and different data sources.
+### Erreichbarkeitsinstrument
+Ein **Erreichbarkeitsinstrument** ist ein Instrument zur Berechnung und Analyse der Erreichbarkeit eines bestimmten Ortes oder einer Region. Es berücksichtigt Faktoren wie Transportmöglichkeiten, Entfernung und Reisezeit, um festzustellen, wie leicht die Menschen Zugang zu wichtigen Dienstleistungen wie Gesundheitsversorgung und Bildung haben. Normalerweise basiert ein Erreichbarkeitsinstrument technisch auf GIS-Technologie, Routing-Algorithmen und verschiedenen Datenquellen.
 
-### Active Mobility
-**Active mobility** refers to the use of human-powered modes of transport, such as walking, and cycling. It is an important part of sustainable transport as it reduces car dependency and is emission-free. Active mobility also has many health benefits, such as reducing the risk of obesity and cardiovascular disease. 
+### Aktive Mobilität
+**Aktive Mobilität** bezieht sich auf die Nutzung von Fortbewegungsmitteln, die vom Menschen angetrieben werden, wie z. B. zu Fuß gehen und Radfahren. Sie ist ein wichtiger Bestandteil des nachhaltigen Verkehrs, da sie die Abhängigkeit vom Auto verringert und emissionsfrei ist. Aktive Mobilität hat auch viele gesundheitliche Vorteile, wie die Verringerung des Risikos von Fettleibigkeit und Herz-Kreislauf-Erkrankungen. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/literature/glossary/active_mobility_freepik.webp').default} alt="Active Mobility" style={{ mixBlendMode: 'multiply'}}/>
@@ -24,21 +24,21 @@ An **accessibility instrument** is a tool used to calculate and analyze the acce
 
 
 ### Area of Interest (AOI)
-An **Area of Interest (AOI)** is a specific geographical region or boundary that is of particular interest or importance to a particular study or analysis. It can be a watershed, a forest, a park, or any other geographic area relevant to the study. The AOI is usually defined by a set of coordinates or a polygonal boundary that encompasses the region of interest. 
+Ein **Area of Interest (AOI)** ist eine bestimmte geografische Region oder Grenze, die für eine bestimmte Studie oder Analyse von besonderem Interesse oder Bedeutung ist. Dabei kann es sich um ein Wassereinzugsgebiet, einen Wald, einen Park oder ein anderes für die Studie relevantes geografisches Gebiet handeln. Die AOI wird in der Regel durch eine Reihe von Koordinaten oder eine polygonale Grenze definiert, die die Region von Interesse umfasst.
 
-### Connectivity
-**Connectivity** refers to the degree to which paths are connected. The higher the path and intersection density, the higher the connectivity. The main obstacles to connectivity are, for example, rivers, railway lines, and highways.
+### Konnektivität
+Die **Konnektivität** bezieht sich auf das Ausmaß, in dem Wege miteinander verbunden sind. Je höher die Pfad- und Schnittpunktdichte ist, desto höher ist die Konnektivität. Haupthindernisse für die Konnektivität sind z. B. Flüsse, Eisenbahnlinien und Autobahnen.
 
-Connectivity has a direct impact on accessibility, as it is decisive for the travel time to reach a certain destination. High connectivity is especially important for active modes, as these modes are particularly sensitive to detours. Thus, high connectivity is key to ensuring accessibility to services and amenities and promote sustainable mobility. 
+Die Konnektivität wirkt sich direkt auf die Zugänglichkeit aus, da sie entscheidend für die Reisezeit ist, um ein bestimmtes Ziel zu erreichen. Eine hohe Konnektivität ist besonders wichtig für aktive Verkehrsträger, da diese besonders empfindlich auf Umwege reagieren. Daher ist eine gute Anbindung der Schlüssel zur Gewährleistung der Zugänglichkeit zu Dienstleistungen und Einrichtungen und zur Förderung einer nachhaltigen Mobilität.  
 
-### Geospatial Data
+### Geodaten
 
-**Geospatial data** refers to data that is associated with specific geographic locations on the Earth's surface. This data typically includes information such as coordinates, attributes, and sometimes even metadata about the geographic features being represented. Geospatial data is used in various applications such as mapping, navigation, urban planning, environmental monitoring, and more. They are crucial for analyzing and understanding spatial relationships and patterns in the real world.
+**Geodaten** beziehen sich auf Daten, die mit bestimmten geografischen Orten auf der Erdoberfläche verbunden sind. Diese Daten enthalten in der Regel Informationen wie Koordinaten, Attribute und manchmal sogar Metadaten über die dargestellten geografischen Merkmale. Geodaten werden in verschiedenen Anwendungen wie Kartierung, Navigation, Stadtplanung, Umweltüberwachung und anderen eingesetzt. Sie sind entscheidend für die Analyse und das Verständnis räumlicher Beziehungen und Muster in der realen Welt.
 
-### H3 Grid
+### H3-Gitter
 
-The **H3 grid** <img src={require('/img/literature/glossary/H3_grid_logo.webp').default} width="1000px" alt="H3 grid logo" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/> 
-is a geospatial indexing system by [Uber Technologies](https://investor.uber.com/home/default.aspx "About Uber Technologies") that partitions the Earth's surface into a hierarchical grid of hexagonal cells for more efficient and accurate representation and analysis of geospatial data. It uses a hexagonal tiling approach based on an icosahedron, creating a hierarchical structure with multiple levels of resolution. The hexagonal shape allows for equidistant and consistent spatial representation, with different resolutions. The resolution of H3 grids is typically described in terms of the edge length of the hexagon at each level. For example, at resolution 3, the hexagons cover a relatively large area (approx. edge length of 69km), similar to the size of countries or large states/provinces, whereas, at resolution 10 (approx. 75m edge length), the hexagons are much smaller and are suited for localized analyses.
+Das **H3-Gitter** <img src={require('/img/literature/glossary/H3_grid_logo.webp').default} width="1000px" alt="H3 grid logo" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/> 
+ist ein geospatiales Indexierungssystem von [Uber Technologies](https://investor.uber.com/home/default.aspx "About Uber Technologies"), das die Erdoberfläche in ein hierarchisches Gitter aus hexagonalen Zellen unterteilt, um eine effizientere und genauere Darstellung und Analyse von Geodaten zu ermöglichen. Es verwendet einen hexagonalen Kachelansatz auf der Grundlage eines Ikosaeders, der eine hierarchische Struktur mit mehreren Auflösungsebenen schafft. Die sechseckige Form ermöglicht eine äquidistante und konsistente räumliche Darstellung mit unterschiedlichen Auflösungen. Die Auflösung von H3-Gittern wird in der Regel durch die Kantenlänge des Sechsecks auf jeder Ebene beschrieben. Bei der Auflösung 3 beispielsweise decken die Sechsecke ein relativ großes Gebiet ab (ca. 69 km Kantenlänge), das der Größe von Ländern oder großen Staaten/Provinzen entspricht, während die Sechsecke bei der Auflösung 10 (ca. 75 m Kantenlänge) viel kleiner sind und sich für lokalisierte Analysen eignen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/literature/glossary/H3_grid.webp').default}  alt="H3 Grid" style={{ width: "600px", height: "200px", objectFit: "cover", mixBlendMode: 'multiply'}}/>
@@ -46,21 +46,21 @@ is a geospatial indexing system by [Uber Technologies](https://investor.uber.com
 </div>
 
 ### Heatmap
-A **heatmap** is a graphical visualization form that uses different colors to indicate the different values of a dataset. This allows for a quick understanding of the data presented. 
+Eine **Heatmap** ist eine grafische Visualisierungsform, die verschiedene Farben verwendet, um die unterschiedlichen Werte eines Datensatzes anzuzeigen. Dies ermöglicht ein schnelles Verständnis der dargestellten Daten. 
 
-In GOAT, we use - amongst other indicators - heatmaps to analyze the local accessibility of different amenities, such as cafes, restaurants, or supermarkets. The heatmap utilizes a range of colors to represent various accessibility values. By analyzing this data, we can gain insights into the distribution of destinations and the quality of infrastructure available.
+In GOAT verwenden wir - neben anderen Indikatoren - Heatmaps, um die lokale Erreichbarkeit verschiedener Einrichtungen, wie Cafés, Restaurants oder Supermärkte, zu analysieren. Die Heatmap verwendet eine Reihe von Farben, um verschiedene Erreichbarkeitswerte darzustellen. Durch die Analyse dieser Daten erhalten wir Einblicke in die Verteilung von Reisezielen und die Qualität der verfügbaren Infrastruktur.
 
-### Indicator
-An **indicator** is a means to analyze a specific attribute or topic quantitatively. Usually, a standardized procedure is applied for this, e.g. by using a formula. In planning, indicators can be used to assess the current situation, to compare different locations with each other, as well as to monitor the progress towards specific goals or objectives, such as improving accessibility. 
+### Indikator
+Ein **Indikator** ist ein Mittel, um ein bestimmtes Attribut oder Thema quantitativ zu analysieren. In der Regel wird dazu ein standardisiertes Verfahren angewandt, z.B. durch die Verwendung einer Formel. In der Planung können Indikatoren verwendet werden, um die aktuelle Situation zu bewerten, um verschiedene Standorte miteinander zu vergleichen und um den Fortschritt bei der Erreichung bestimmter Ziele zu überwachen, z. B. bei der Verbesserung der Zugänglichkeit. 
 
 ### Isochrone
-An **isochrone** or catchment area is an indicator that shows how far people can travel in a given time at a given speed from a selected location. Isochrones can be calculated for any mode such as walking, cycling, car, or public transport. Depending on the selected mode, the corresponding routing network is used.  
+Eine **Isochrone** oder ein Einzugsgebiet ist ein Indikator, der angibt, wie weit Personen in einer bestimmten Zeit und mit einer bestimmten Geschwindigkeit von einem ausgewählten Ort aus reisen können. Isochronen können für jeden Verkehrsträger berechnet werden, z. B. zu Fuß, mit dem Fahrrad, mit dem Auto oder mit öffentlichen Verkehrsmitteln. Je nach gewähltem Verkehrsmittel wird das entsprechende Streckennetz verwendet. 
 
-You can find further information on how we perform isochrone calculations in our [indicator documentation](../toolbox/accessibility_indicators/catchments "Isochrone documentation"). 
+Weitere Informationen zur Isochronenberechnung finden Sie in unserer  [indicator documentation](../toolbox/accessibility_indicators/catchments "Isochrone documentation"). 
 
 
-### Land Use
-**Land use** is the categorization and management of land according to its functional role within a specific area. This includes a range of purposes such as residential, commercial, industrial, and natural or conservation uses. Additionally, land use incorporates aspects of urban planning and environmental management, as how land is utilized significantly influences factors like population density and the distribution of destinations. Consequently, land use has a direct and substantial impact on accessibility, affecting the availability of services, transport connectivity, and liveability of an area.
+### Landnutzung
+**Landnutzung** ist die Kategorisierung und Verwaltung von Land entsprechend seiner funktionalen Rolle innerhalb eines bestimmten Gebiets. Dies umfasst eine Reihe von Zwecken wie Wohn-, Gewerbe-, Industrie-, Natur- oder Naturschutznutzung. Darüber hinaus umfasst die Flächennutzung auch Aspekte der Stadtplanung und des Umweltmanagements, da die Art der Flächennutzung Faktoren wie die Bevölkerungsdichte und die Verteilung von Zielen maßgeblich beeinflusst. Folglich hat die Flächennutzung einen direkten und erheblichen Einfluss auf die Zugänglichkeit, da sie die Verfügbarkeit von Dienstleistungen, die Verkehrsanbindung und die Lebensqualität eines Gebiets beeinflusst.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/literature/glossary/landuse.webp').default}  alt="Landuse" style={{ width: "350px", height: "300px", objectFit: "cover"}}/>
@@ -68,11 +68,11 @@ You can find further information on how we perform isochrone calculations in our
 </div>
 
 
-### Local Accessibility
-**Local accessibility**, also known as neighborhood-level accessibility, refers to the ease with which people can access essential services within a specific neighborhood or area ([Handy, 1992](http://www.jstor.org/stable/23288518 "Visit Reference")). It usually refers to active modes of transport and focuses on short travel distances. 
+### Lokale Erreichbarkeit
+**Lokale Erreichbarkeit**, auch bekannt als Erreichbarkeit auf Stadtteilebene, bezieht sich auf die Leichtigkeit, mit der Menschen wesentliche Dienstleistungen innerhalb eines bestimmten Stadtteils oder Gebiets erreichen können ([Handy, 1992](http://www.jstor.org/stable/23288518 "Visit Reference")). Sie bezieht sich in der Regel auf aktive Verkehrsmittel und konzentriert sich auf kurze Entfernungen.  
 
-### Micromobility
-**Micromobility** is a growing trend in urban transportation, involving small, lightweight vehicles like electric scooters and skateboards. These compact modes of transport offer convenient solutions for short-distance travel. 
+### Mikromobilität
+**Mikromobilität** ist ein wachsender Trend im städtischen Verkehr, der kleine, leichte Fahrzeuge wie Elektroroller und Skateboards umfasst. Diese kompakten Verkehrsmittel bieten bequeme Lösungen für kurze Strecken.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/literature/glossary/micromobility_freepik.webp').default} 
@@ -81,33 +81,33 @@ You can find further information on how we perform isochrone calculations in our
 </div>
 
 ### Open Source 
-**Open source** <img src={require('/img/literature/glossary/open_source.webp').default} width="1000px" alt="opensource" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/> refers to software or other products that are made available to the public with their source code freely accessible and modifiable. This allows individuals and organizations to modify and improve the product as needed, without restrictions on use or distribution. 
+**Open source** <img src={require('/img/literature/glossary/open_source.webp').default} width="1000px" alt="opensource" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/>  bezieht sich auf Software oder andere Produkte, die der Öffentlichkeit zur Verfügung gestellt werden und deren Quellcode frei zugänglich und veränderbar ist. Dies ermöglicht es Einzelpersonen und Organisationen, das Produkt nach Bedarf zu verändern und zu verbessern, ohne Einschränkungen bei der Nutzung oder Verbreitung. 
 
 ### Planning Support System (PSS)
-A **planning support system** is a digital tool used to support the planning and decision-making process for urban and regional development. It uses data and models to provide information on various aspects of planning, such as land use, transportation, and environmental impact. A PPS allows planners to explore different scenarios and evaluate the potential outcomes of their decisions. 
+Ein **Planning Support System** ist ein digitales Werkzeug zur Unterstützung des Planungs- und Entscheidungsprozesses für die Stadt- und Regionalentwicklung. Es nutzt Daten und Modelle, um Informationen zu verschiedenen Aspekten der Planung wie Flächennutzung, Verkehr und Umweltauswirkungen zu liefern. Ein PPS ermöglicht es den Planern, verschiedene Szenarien zu untersuchen und die möglichen Folgen ihrer Entscheidungen zu bewerten.  
 
-### Point of Interest (POI)
-A **Point of Interest (POI)** refers to a distinct location or site that holds significant relevance or value within a specific context, study, or analysis. In the context of GOAT, POIs mainly refer to amenities of daily need, such as supermarkets, kindergartens, or restaurants. 
+### Punkt von Interesse (POI)
+Ein **Point of Interest (POI)** ist ein bestimmter Ort oder eine bestimmte Stelle, die in einem bestimmten Kontext, einer Studie oder Analyse von Bedeutung ist. Im Kontext von GOAT beziehen sich POIs hauptsächlich auf Einrichtungen des täglichen Bedarfs, wie Supermärkte, Kindergärten oder Restaurants. 
 
-### Quantile Classification
-**Quantile classification** is a commonly used method in Geographic Information Systems (GIS) to divide data into equal groups based on their values. This method is useful for analyzing and visualizing patterns in data and can help identify trends and patterns that may not be obvious easily. 
+### Quantile Klassifikation
+Die **Quantil-Klassifizierung** ist eine in Geografischen Informationssystemen (GIS) häufig verwendete Methode zur Einteilung von Daten in gleiche Gruppen auf der Grundlage ihrer Werte. Diese Methode ist nützlich für die Analyse und Visualisierung von Mustern in Daten und kann dabei helfen, Trends und Muster zu erkennen, die möglicherweise nicht so leicht zu erkennen sind. 
 
-In GIS, quantile classification is often used to create choropleth maps, which are maps that use color to represent different values of a variable. For example, a choropleth map of the population density of a city. The map would be divided into e.g. five color-coded categories, with each category representing a different range of population densities. 
+In GIS wird die Quantilklassifizierung häufig zur Erstellung von Choroplethen-Karten verwendet, d. h. von Karten, die verschiedene Werte einer Variablen farblich darstellen. Ein Beispiel: eine Choroplethenkarte der Bevölkerungsdichte einer Stadt. Die Karte wäre z. B. in fünf farbcodierte Kategorien unterteilt, wobei jede Kategorie einen anderen Bereich der Bevölkerungsdichte darstellt. 
 
-The quantile classification can be used for [attribute-based styling](../map/layer_style/attribute_based_styling.md) in GOAT. 
+Die Quantil-Klassifizierung kann für [attribute-based styling](../map/layer_style/attribute_based_styling.md) in GOAT verwendet werden. 
 
 ### Routing 
-**Routing** <img src={require('/img/literature/glossary/routing_logo.webp').default} width="1000px" alt="routing" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/> refers to the process of finding the fastest or shortest path from one location to another. This is commonly used in transportation planning and navigation systems to help people get from point A to point B but is also crucial to accessibility analysis.
+**Routing** <img src={require('/img/literature/glossary/routing_logo.webp').default} width="1000px" alt="routing" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/> bezieht sich auf den Prozess der Suche nach dem schnellsten oder kürzesten Weg von einem Ort zum anderen. Dies wird häufig in der Verkehrsplanung und in Navigationssystemen verwendet, um Menschen dabei zu helfen, von Punkt A nach Punkt B zu gelangen, ist aber auch für die Analyse der Barrierefreiheit von entscheidender Bedeutung.
 
-### Sustainability  
-**Sustainability** <img src={require('/img/literature/glossary/sustainability.webp').default} width="1000px" alt="sustainability" style={{width: "100px", height: "200px", maxHeight: "50px", maxWidth: "100px", objectFit: "cover"}}/> refers to meeting the needs of the present without compromising the ability of future generations to meet their own needs. In the context of urban and regional development, sustainability involves balancing economic, social, and environmental factors to create livable and resilient communities. This includes reducing carbon emissions, promoting active mobility, and preserving natural resources. 
+### Nachhaltigkeit  
+**Nachhaltigkeit** <img src={require('/img/literature/glossary/sustainability.webp').default} width="1000px" alt="sustainability" style={{width: "100px", height: "200px", maxHeight: "50px", maxWidth: "100px", objectFit: "cover"}}/> bedeutet, die Bedürfnisse der Gegenwart zu befriedigen, ohne die Möglichkeiten künftiger Generationen zur Befriedigung ihrer eigenen Bedürfnisse zu beeinträchtigen. Dazu gehören die Verringerung der Kohlenstoffemissionen, die Förderung aktiver Mobilität und die Erhaltung der natürlichen Ressourcen. 
 
-### Transport Mode
-**Transport mode** refers to the type of transportation used for a particular trip or journey. This can include modes such as transit (bus, train, subway), cycling (pedelec, bike), walking, and driving. The choice of transport mode can have a significant impact on factors such as travel time, cost, and environmental impact. 
+### Verkehrsmittel
+**Verkehrsmittel** bezieht sich auf die Art des Verkehrsmittels, das für eine bestimmte Reise oder Fahrt verwendet wird. Dazu gehören Verkehrsmittel wie Bus, Bahn und U-Bahn, Radfahren (Pedelec, Fahrrad), Gehen und Autofahren. Die Wahl des Verkehrsträgers kann einen erheblichen Einfluss auf Faktoren wie Reisezeit, Kosten und Umweltbelastung haben. 
 
 ______________________________________________________________________________
 
-### References
+### Referenzen
 Hansen, W.G. (1959). How accessibility shapes land use. Journal of the American Institute of Planners. 25, 73–76.
 https://doi.org/10.1080/01944365908978307 
 

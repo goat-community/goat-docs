@@ -2,22 +2,22 @@
 sidebar_position: 21
 ---
 
-# Attribute-based Styling
+# Attribut-basiertes Styling
 
-GOAT supports **attribute-based styling** to enhance the visualization of data on maps. This approach allows the visual representation to reflect variations and patterns in the data, making it easier to understand complex spatial information.
+GOAT unterstützt **attributbasiertes Styling**, um die Visualisierung von Daten auf Karten zu verbessern. Dieser Ansatz erlaubt es der visuellen Darstellung, Variationen und Muster in den Daten widerzuspiegeln, wodurch es einfacher wird, komplexe räumliche Informationen zu verstehen.
 
-In the <code>Layer design <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "15px", maxWidth: "21px", objectFit: "cover"}}/></code> menu, you will find styling options for your selected layer. Each aspect of a layer's visualization (<i>Fill Color</i>, <i>Stroke Color</i>, <i>Custom Marker</i> and <i>Labels</i>) can be individually styled according to a field or attribute within the layer's data. To enable attribute-based styling for any of these, ensure its attribute toggle is ON, and then click the <b>options button</b> <code><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "15px", maxWidth: "15px", objectFit: "cover"}}/></code>.
+Im Menü <code>Ebenendesign <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "15px", maxWidth: "21px", objectFit: "cover"}}/></code> sind Styling-Optionen für die ausgewählte Ebene zu finden. Jeder Aspekt der Visualisierung einer Ebene (<i>Füllfarbe</i>, <i>Strichfarbe</i>, <i>Benutzerdefinierte Markierung</i> und <i>Beschriftungen</i>) kann individuell entsprechend einem Feld oder Attribut in den Daten der Ebene gestaltet werden. Um das attributbasierte Styling für eine dieser Ebenen zu aktivieren, stellen Sie sicher, dass das Attribut eingeschaltet (ON) ist, und klicken Sie dann auf den <b>Options Knopf</b> <code><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "15px", maxWidth: "15px", objectFit: "cover"}}/></code>.
 
 
-:::tip HINT
-If you would like to save your styling settings and use them in further projects, you can do so by [saving a style as default](../layer_style/styling/#default-settings). 
+:::tip TIPP
+Wenn Sie Ihre Styling-Einstellungen speichern und in weiteren Projekten verwenden möchten, können Sie dies durch [saving a style as default](../layer_style/styling/#default-settings) tun. 
 :::
 
-## Select Attribute 
+## Attribut auswählen 
 
-To style based on an attribute, select it from the <code>Color based on</code> field's dropdown menu. This will list all the attributes or columns available in your layer's data.
+Um einen Stil basierend auf einem Attribut zu erstellen, wählen Sie es aus dem Dropdown-Menü des Feldes <code>Farbe basiert auf</code>. Daraufhin werden alle Attribute oder Spalten aufgelistet, die in den Daten Ihrer Ebene verfügbar sind.
 
-The visualization will then be styled automatically according to the range of values in the data. A <code>Color Palette</code> and <code>Color Scale</code> is assigned by default, but can all be customized to better suit your data and visualization needs. The *color scale* uses a [**data classification method**](#data-classification-methods) to determine how data values are assigned to different color categories.
+Die Visualisierung wird dann automatisch entsprechend dem Wertebereich der Daten gestaltet. Eine <code>Farbpalette</code> und eine <code>Farbskala</code> sind standardmäßig zugewiesen, können aber angepasst werden, um Ihren Daten und Visualisierungsanforderungen besser zu entsprechen. Die *Farbskala* verwendet eine [**Datenklassifizierungsmethode**](#data-classification-methods), um zu bestimmen, wie Datenwerte verschiedenen Farbkategorien zugewiesen werden.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -25,22 +25,22 @@ The visualization will then be styled automatically according to the range of va
 
 </div> 
 
-## Color Palette
+## Farbpalette
 
-In this section, you will find GOAT's comprehensive set of palettes, all designed to provide **visually impactful spatial data representation**. A palette is a collection of colors chosen to represent the scale of values or categories within your layer's data.
+In diesem Abschnitt finden Sie GOATs umfassende Paletten, die alle für eine **visuell eindrucksvolle räumliche Datendarstellung** entwickelt wurden. Eine Palette ist eine Sammlung von Farben, die ausgewählt wurden, um die Skala der Werte oder Kategorien in den Daten Ihrer Ebene darzustellen.
  
- For further customization, you may choose a different palette <code>Type</code>, number of <code>Steps</code>, or <code>Reverse</code> the colors. You can also define a custom range of colors by enabling the <code>Custom</code> toggle button.
+  Für weitere Anpassungen können Sie einen anderen <code>Typ</code> der Palette, eine andere Anzahl von <code>Schritten</code> oder eine <code>Umkehrung</code> der Farben wählen. Sie können auch eine benutzerdefinierte Farbpalette definieren, indem Sie die <code>Benutzerdefiniert</code>-Schaltfläche aktivieren.
  
- GOAT provides a comprehensive set of predefined palettes, categorized into four different *palette types* for ease of selection and application.
+ GOAT bietet einen umfassenden Satz an vordefinierten Paletten, die in vier verschiedene *Palettentypen* unterteilt sind, um die Auswahl und Anwendung zu erleichtern.
 
 <p></p>
 
-| Palette Type| Example | Description |
+| Palettentyp | Beispiel | Beschreibung |
 | :-: | --- | ---|
-| Diverging | <img src={require('/img/map/styling/diverging_palette.png').default} alt="diverging" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | This type of color palette is ideal for displaying data that is centred around a critical midpoint or has a natural division. It is particularly useful for displaying data characterised by both positive and negative variations from a central value, allowing these variations to be visualised clearly and effectively. |
-| Sequential | <img src={require('/img/map/styling/sequential_palette.png').default} alt="sequential" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | This color palette is designed for data that follows a natural progression or ordered sequence. It excels at visualising continuous data, where values either incrementally increase or decrease along a spectrum. This makes it particularly suitable for clearly displaying data that gradually changes from one extreme to the other. |
-| Qualitative | <img src={require('/img/map/styling/qualitative_palette.png').default} alt="qualitative" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | This color palette is designed for data that is categorised into specific, distinct groups or classes. Qualitative color palettes are designed to distinguish between discrete categories. Importantly, these palettes do so without suggesting any inherent order or relative importance between the different categories. |
-| Singlehue | <img src={require('/img/map/styling/singlehue_palette.png').default} alt="singlehue" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | This color palette is a type of color scheme used in data visualisation that uses different hues, shades and tones of a single color. This approach creates a visually coherent and harmonious aesthetic that can be particularly effective in conveying information without the distraction of multiple colors. |
+| Diverging | <img src={require('/img/map/styling/diverging_palette.png').default} alt="diverging" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Diese Art von Farbpalette ist ideal für die Darstellung von Daten, die um einen kritischen Mittelpunkt zentriert sind oder eine natürliche Teilung aufweisen. Sie eignet sich besonders für die Darstellung von Daten, die sowohl positive als auch negative Abweichungen von einem zentralen Wert aufweisen, so dass diese Abweichungen klar und effektiv visualisiert werden können. |
+| Sequentiell | <img src={require('/img/map/styling/sequential_palette.png').default} alt="sequential" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Diese Farbpalette ist für Daten gedacht, die einem natürlichen Verlauf oder einer geordneten Abfolge folgen. Sie eignet sich hervorragend zur Visualisierung von kontinuierlichen Daten, bei denen die Werte entlang eines Spektrums entweder schrittweise ansteigen oder abfallen. Sie eignet sich daher besonders für die klare Darstellung von Daten, die sich allmählich von einem Extrem zum anderen verändern. |
+| Qualitativ | <img src={require('/img/map/styling/qualitative_palette.png').default} alt="qualitative" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Diese Farbpalette ist für Daten gedacht, die in bestimmte, eindeutige Gruppen oder Klassen eingeteilt sind. Qualitative Farbpaletten sind so konzipiert, dass sie zwischen einzelnen Kategorien unterscheiden. Wichtig ist, dass diese Paletten dies tun, ohne eine inhärente Ordnung oder relative Bedeutung zwischen den verschiedenen Kategorien zu suggerieren. |
+| Singlehue | <img src={require('/img/map/styling/singlehue_palette.png').default} alt="singlehue" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Bei dieser Farbpalette handelt es sich um ein Farbschema, das in der Datenvisualisierung verwendet wird und verschiedene Farbtöne, Schattierungen und Nuancen einer einzigen Farbe verwendet. Dieser Ansatz schafft eine visuell kohärente und harmonische Ästhetik, die besonders effektiv sein kann, um Informationen ohne die Ablenkung durch mehrere Farben zu vermitteln. |
 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -49,15 +49,15 @@ In this section, you will find GOAT's comprehensive set of palettes, all designe
 
 </div> 
 
-## Color Scale
+## Farbskala
 
-Under the <code>Color Scale</code>, you will find the **data classification method** and the **color scale** that associates data values with a spectrum of colors. It converts a given data value within a given range (domain) into a corresponding color from a given color spectrum (range). GOAT provides six predefined **data classification methods**: [Quantile](#quantile), [Standard Deviation](#standard-deviation), [Equal Interval](#equal-interval), [Heads and Tails](#heads-and-tails), [Custom Breaks](#custom-breaks-for-numbers), and [Custom Ordinal](#custom-ordinal-for-strings).
+Unter <code>Farbskala</code> finden Sie die **Methode zur Datenklassifizierung** und die **Farbskala**, die Datenwerte mit einem Farbspektrum verbindet. Sie wandelt einen gegebenen Datenwert innerhalb eines gegebenen Bereichs (Domain) in eine entsprechende Farbe aus einem gegebenen Farbspektrum (Range) um. GOAT bietet sechs vordefinierte **Datenklassifizierungsmethoden**: [Quantile](#quantile), [Standard Deviation](#standard-deviation), [Equal Interval](#equal-interval), [Heads and Tails](#heads-and-tails), [Custom Breaks](#custom-breaks-for-numbers), and [Custom Ordinal](#custom-ordinal-for-strings).
 
-## Data Classification Methods
+## Datenklassifizierungsmethoden
 
-### Quantile
+### Quantil
 
-The Quantile classification divides data into **groups with an equal number of values in each class** based on their attribute values. This method is useful for analyzing and visualizing patterns in data and can help identify trends and patterns that may not be obvious easily. The fact that the data values are grouped in equal quantities within each class makes this approach **ideal for data that is linearly distributed**. Per default, the data is distributed into 7 classes. 
+Die Quantil-Klassifizierung unterteilt Daten in **Gruppen mit einer gleichen Anzahl von Werten in jeder Klasse**, basierend auf ihren Attributwerten. Diese Methode ist nützlich für die Analyse und Visualisierung von Mustern in Daten und kann dabei helfen, Trends und Muster zu erkennen, die vielleicht nicht so leicht zu erkennen sind. Die Tatsache, dass die Datenwerte in jeder Klasse in gleichen Mengen gruppiert werden, macht diesen Ansatz **ideal für Daten, die linear verteilt sind**. Standardmäßig werden die Daten in 7 Klassen aufgeteilt. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -66,13 +66,13 @@ The Quantile classification divides data into **groups with an equal number of v
 </div>  
 
 
-:::tip HINT
-Want to deeper understand what quantile classification is? Check our [Glossary](../../further_reading/glossary/#quantile-classification).
+:::tip TIPP
+Möchten Sie besser verstehen, was eine Quantilklassifizierung ist? Schauen Sie in unser [Glossary](../../further_reading/glossary/#quantile-classification).
 :::
 
-### Standard Deviation
+### Standardabweichung
 
-The Standard Deviation method is a **statistical approach** used in data visualization. It uses the concept of standard deviation, a measure of the **amount of variation or dispersion in a set of values**, to determine how data points are assigned to different color categories. This method is valuable for its ability to provide a statistical perspective on the data, allowing users to quickly grasp the **relative dispersion and distribution of values** within the dataset. Per default, the data is distributed into 7 classes. 
+Die Methode der Standardabweichung ist ein **statistischer Ansatz**, der in der Datenvisualisierung verwendet wird. Sie verwendet das Konzept der Standardabweichung, ein Maß für das **Ausmaß der Variation oder Streuung in einer Gruppe von Werten**, um zu bestimmen, wie Datenpunkte verschiedenen Farbkategorien zugeordnet werden. Diese Methode ist wertvoll, da sie eine statistische Perspektive auf die Daten bietet und es den Benutzern ermöglicht, die **relative Streuung und Verteilung der Werte** innerhalb des Datensatzes schnell zu erfassen. Standardmäßig werden die Daten in 7 Klassen aufgeteilt. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -80,9 +80,9 @@ The Standard Deviation method is a **statistical approach** used in data visuali
 
 </div> 
 
-### Equal Interval
+### Gleiches Intervall
 
-For the Equal Interval classification, the range of the attribute values is divided into **equal interval classes**. Per default, the data is distributed into 7 classes. 
+Bei der Klassifizierung „Gleiches Intervall“ wird der Bereich der Attributwerte in **gleiche Intervallklassen** unterteilt. Standardmäßig werden die Daten in 7 Klassen aufgeteilt. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -90,9 +90,9 @@ For the Equal Interval classification, the range of the attribute values is divi
 
 </div> 
 
-### Heads and Tails
+### Kopf und Zahl
 
-The Heads and Tails method is used to deal with **datasets with a skewed distribution**. It's designed to highlight extremes in the data, focusing on the **'heads' (the very high values)** and the **'tails' (the very low values)**. This method is particularly useful for datasets where the most important information is found in the extremes, and where highlighting these values can lead to greater insight and understanding. Per default, the data is distributed into 7 classes. 
+Die Heads and Tails-Methode wird für **Datensätze mit einer schiefen Verteilung** verwendet. Sie wurde entwickelt, um die Extreme in den Daten hervorzuheben, indem sie sich auf die **'Köpfe' (die sehr hohen Werte)** und die **'Zahlen' (die sehr niedrigen Werte)** konzentriert. Diese Methode ist besonders nützlich für Datensätze, bei denen die wichtigsten Informationen in den Extremen zu finden sind, und bei denen die Hervorhebung dieser Werte zu einem besseren Einblick und Verständnis führen kann. Standardmäßig werden die Daten in 7 Klassen aufgeteilt.  
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -103,12 +103,12 @@ The Heads and Tails method is used to deal with **datasets with a skewed distrib
 
 ### Custom Breaks (for <code>numbers</code>)
 
-The Custom Break classification is a data visualization method used for **numerical data**. It allows users to define **custom breakpoints** or **thresholds** and therewith provides a tailored approach for context-specific visualizations. 
+Die Klassifizierung Custom Break ist eine Datenvisualisierungsmethode für **numerische Daten**. Sie ermöglicht die Definition von **benutzerdefinierten Haltepunkten** oder **Schwellenwerten** und bietet damit einen maßgeschneiderten Ansatz für kontextspezifische Visualisierungen. 
 
 
 ### Custom Ordinal (for <code>strings</code>)
 
-The Custom Ordinal classification is a data sorting and visualisation method applied to **string data**, such as categories, labels, or text-based variables. Unlike numerical data, where order is typically based on magnitude, string data often lacks a natural order. The Custom Order method therefore allows users to **define their own ordering rules for strings**, creating a customised sequence tailored to their specific needs. 
+Die benutzerdefinierte Ordinal-Klassifizierung ist eine Methode zur Datensortierung und -visualisierung, die auf **String-Daten** angewendet wird, wie z. B. Kategorien, Etiketten oder textbasierte Variablen. Im Gegensatz zu numerischen Daten, bei denen die Reihenfolge typischerweise auf der Größe basiert, fehlt bei Zeichenkettendaten oft eine natürliche Reihenfolge. Die Custom Order-Methode ermöglicht es daher, **eigene Ordnungsregeln für Strings** zu definieren und eine individuelle, auf die eigenen Bedürfnisse zugeschnittene Reihenfolge zu erstellen. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -117,7 +117,7 @@ The Custom Ordinal classification is a data sorting and visualisation method app
 </div>
 
 
-Therefore, additional steps can be added and multiple string values selected per group from a drop-down menu. The drop-down menu thereby lists all attribute values of the dataset. 
+So können zusätzliche Schritte hinzugefügt und mehrere String-Werte pro Gruppe aus einem Dropdown-Menü ausgewählt werden. Das Dropdown-Menü listet dabei alle Attributwerte des Datensatzes auf. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -130,10 +130,10 @@ Therefore, additional steps can be added and multiple string values selected per
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## Style Settings
+## Stil-Einstellungen
 
 <Tabs>
-  <TabItem value="fill color" label="Fill Color" default> Fill Color can either be one single color or a color palette. GOAT offers a set of preset colors and palettes to style your map. 
+ <TabItem value="fill color" label="Fill Color" default> Die Füllfarbe kann entweder eine einzelne Farbe oder eine Farbpalette sein. GOAT bietet eine Reihe von voreingestellten Farben und Paletten zur Gestaltung Ihrer Karte. 
     For attribute-based Fill Color select a Field from the selected <code>Layer</code>.
     GOAT applies a random color palette to your results. 
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -143,9 +143,9 @@ import TabItem from '@theme/TabItem';
    </div> 
 
   </TabItem>
-  <TabItem value="stroke color" label="Stroke Color"> Stroke Color by default is one single color. Apply attribute-based styling to apply a color scale to the layer stroke. 
-    For attribute-based Stroke Color select a Field from the selected <code>Layer</code>.
-    GOAT applies a random color palette to your results. 
+  <TabItem value="stroke color" label="Stroke Color"> Die Strichfarbe ist standardmäßig eine einzige Farbe. Wenden Sie attributbasiertes Styling an, um eine Farbskala auf den Ebenenstrich anzuwenden. 
+    Für die attributbasierte Strichfarbe wählen Sie ein Feld aus der ausgewählten <code>Ebene</code>.
+    GOAT wendet eine zufällige Farbpalette auf Ihre Ergebnisse an. 
 
    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -156,7 +156,7 @@ import TabItem from '@theme/TabItem';
 
 
   </TabItem>
-  <TabItem value="custom marker" label="Custom Marker"> When available, the custom marker has an icon library to best represent your data set.
+  <TabItem value="custom marker" label="Custom Marker"> Wenn verfügbar, verfügt die benutzerdefinierte Markierung über eine Symbolbibliothek, die Ihren Datensatz am besten darstellt.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 

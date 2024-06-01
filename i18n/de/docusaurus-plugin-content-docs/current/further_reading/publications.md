@@ -2,9 +2,9 @@
 sidebar_position: 5
 ---
 
-# Scientific Publications
+# Wissenschaftliche Veröffentlichungen
 
-This section gives an overview of scientific publications about the development, application, and evaluation of GOAT.
+Dieser Abschnitt gibt einen Überblick über wissenschaftliche Veröffentlichungen über die Entwicklung, Anwendung und Bewertung von GOAT.
 
 ________________________________
 
@@ -12,28 +12,28 @@ ________________________________
 
 https://doi.org/10.26084/14dfns-p032  
 
-<b>Authors</b>: Robert Hecht, Benjamin Büttner, Ulrike Jehle, Manfred Klaus, Falko Krügel,  Bartosz McCormick, Elias Pajares,  Denis Reiter, Theodor Rieche, Sebastian Seisenberger,  Mathias Jehling  <br /> <br />
+<b>Autoren</b>: Robert Hecht, Benjamin Büttner, Ulrike Jehle, Manfred Klaus, Falko Krügel,  Bartosz McCormick, Elias Pajares,  Denis Reiter, Theodor Rieche, Sebastian Seisenberger,  Mathias Jehling  <br /> <br />
 
-<b>Date</b>: 2022  <br /> <br />
+<b>Datum</b>: 2022  <br /> <br />
 
-<b>Keywords</b>: spatial planning; supply; mobility; infrastructure; settlement; development; planning instrument; Lower Saxony; Federal Republic of Germany; 15-Minuten Stadt; Anforderungsanalyse; Web-GIS  <br /> <br />
+<b>Stichwörter</b>: spatial planning; supply; mobility; infrastructure; settlement; development; planning instrument; Lower Saxony; Federal Republic of Germany; 15-Minuten Stadt; Anforderungsanalyse; Web-GIS  <br /> <br />
 
 <b>Abstract</b>: Systeme zur Entscheidungsunterstützung haben große Potenziale, Planungsprozesse im Rahmen der Daseinsvorsorge zu verbessern. Allerdings werden mit zunehmenden technischen Möglichkeiten Fragen nach verbesserter Anwendungsorientierung und Nutzbarkeit für Akteure der Planung deutlich. In einem Workshop haben Akteure aus Planungspraxis, Wissenschaft und Wirtschaft anhand von konkreten Fragen aus der Planung die Anwendung der web-basierten Tools „Daseinsvorsorgeatlas Niedersachsen“ und „GOAT 3.0“ diskutiert. Im Rahmen von Arbeitsgruppen wurden die Anwendbarkeit, Indikatoren und Modellierungen sowie Hindernisse für eine Integration in Verfahren erarbeitet.  
 
 ________________________________
 
-### Assessment of the usefulness of the accessibility instrument GOAT for the planning practice
+### Bewertung der Nützlichkeit des Erreichbarkeitsinstrumentes GOAT für die Planungspraxis
 
 https://doi.org/10.1016/j.urbmob.2022.100033
 
-<b>Authors</b>: Elias Pajares, Ulrike Jehle, Joelean Hall, Montserrat Miramontes, Gebhard Wulfhorst  <br /><br />
+<b>Autoren</b>: Elias Pajares, Ulrike Jehle, Joelean Hall, Montserrat Miramontes, Gebhard Wulfhorst  <br /><br />
 
-<b>Date</b>: 4 October 2022  <br /><br />
+<b>Datum</b>: 4 Oktober 2022  <br /><br />
 
-<b>Keywords</b>: Accessibility ; Active mobility ; PSS  <br /><br />
+<b>Stichwörter</b>: Accessibility ; Active mobility ; PSS  <br /><br />
 
-<b>Abstract</b>: Accessibility instruments could serve as powerful support in assisting planning practitioners. However, accessibility instruments are usually not yet applied in practice. Past research has identified that besides institutional barriers to adopting accessibility, there is still a lack of useful instruments. It is suggested that tool developers engage closer with planning practice to better meet requirements from practice. The authors developed an interactive and web-based accessibility instrument called GOAT, focusing on active mobility in a co-creative environment with urban and transport planning practitioners. This manuscript aims to answer two research questions. Which planning questions exist for GOAT in the field of transport and urban planning? Is the accessibility instrument GOAT useful support in the planning practice?  First, suitable planning questions were identified. The tools’ utility and usability for the planning questions were self-assessed based on the experience in five application workshops with 37 planning professionals in four German cities. The assessment was realized by analyzing workshop minutes and worksheets for the different planning questions. As a result, the usefulness was assessed for the planning questions and was summarized into four groups: Infrastructure Planning Walking, Infrastructure Planning Cycling, Location Planning, and Housing Development. 
-The assessment revealed that the tool helps answer common planning questions. In terms of usability, the tool could also be used by individuals unfamiliar with existing planning software after a half-day introduction. Meanwhile, practitioners requested further indicators and improvements in usability. Furthermore, stronger technical integration with existing systems should be envisaged. It is concluded that the involvement of planning practice was highly beneficial when developing and assessing the tool. Therefore, ongoing exchange and a long-term assessment of the tools’ usefulness are suggested in the future.
+<b>Abstract</b>: Erreichbarkeitsinstrumente können eine wichtige Unterstützung für Planungspraktiker sein. Allerdings werden Barrierefreiheitsinstrumente in der Regel noch nicht in der Praxis angewendet. Frühere Untersuchungen haben gezeigt, dass neben institutionellen Barrieren für die Einführung von Barrierefreiheit auch ein Mangel an nützlichen Instrumenten besteht. Es wird vorgeschlagen, dass die Entwickler von Instrumenten enger mit der Planungspraxis zusammenarbeiten, um die Anforderungen der Praxis besser zu erfüllen. Die Autoren haben ein interaktives und webbasiertes Erreichbarkeitsinstrument mit dem Namen GOAT entwickelt, das sich auf aktive Mobilität in einem ko-kreativen Umfeld mit Stadt- und Verkehrsplanungspraktikern konzentriert. Dieses Manuskript zielt darauf ab, zwei Forschungsfragen zu beantworten. Welche Planungsfragen gibt es für GOAT im Bereich der Verkehrs- und Stadtplanung? Ist das Erreichbarkeitsinstrument GOAT eine nützliche Unterstützung in der Planungspraxis?  Zunächst wurden geeignete Planungsfragen identifiziert. Die Nützlichkeit und Verwendbarkeit des Instruments für die Planungsfragen wurde anhand der Erfahrungen in fünf Anwendungsworkshops mit 37 Planungsfachleuten in vier deutschen Städten selbst eingeschätzt. Die Bewertung erfolgte durch die Analyse von Workshop-Protokollen und Arbeitsblättern zu den verschiedenen Planungsfragen. Als Ergebnis wurde die Nützlichkeit für die Planungsfragen bewertet und in vier Gruppen zusammengefasst: Infrastrukturplanung zu Fuß, Infrastrukturplanung mit dem Fahrrad, Standortplanung und Wohnraumentwicklung. 
+Die Bewertung ergab, dass das Tool zur Beantwortung gängiger Planungsfragen beiträgt. Was die Benutzerfreundlichkeit betrifft, so kann das Tool nach einer halbtägigen Einführung auch von Personen genutzt werden, die mit der vorhandenen Planungssoftware nicht vertraut sind. Gleichzeitig forderten die Anwender weitere Indikatoren und Verbesserungen der Benutzerfreundlichkeit. Außerdem sollte eine stärkere technische Integration mit bestehenden Systemen ins Auge gefasst werden. Abschließend wird festgestellt, dass die Einbeziehung der Planungspraxis bei der Entwicklung und Bewertung des Tools von großem Nutzen war. Für die Zukunft werden daher ein kontinuierlicher Austausch und eine langfristige Bewertung des Nutzens des Tools vorgeschlagen
 
 ________________________________
 
@@ -41,11 +41,11 @@ ________________________________
 
 https://doi.org/10.26084/13dfns-p024 
 
-<b>Authors</b>: Elias Pajares, Ulrike Jehle <br /><br />
+<b>Autoren</b>: Elias Pajares, Ulrike Jehle <br /><br />
 
-<b>Year</b>: 2021 <br /><br />
+<b>Jahr</b>: 2021 <br /><br />
 
-<b>Keywords</b>: Erreichbarkeit; Planungswerkzeug; Fußverkehr; Radverkehr <br /><br />
+<b>Stichwörter</b>: Erreichbarkeit; Planungswerkzeug; Fußverkehr; Radverkehr <br /><br />
 
 <b>Abstract</b>: Die Sicherstellung einer hohen nahräumlichen Erreichbarkeit für den Fuß- und Radverkehr erfährt mit dem Ansatz der 15-Minuten-Stadt einen enormen Bedeutungsgewinn. Erreichbarkeitsinstrumente als digitale Planungswerkzeuge können in der Praxis dabei unterstützen, Defizite sowie Potenziale im Raum aufzuzeigen. Der Beitrag untersucht, inwiefern das sich in Entwicklung befindliche, webbasierte Erreichbarkeitsinstrument GOAT unterstützen kann, evidenzbasiert im Sinne einer 15-Minuten-Stadt zu planen. Zum Einsatz kommen hierbei verschiedene Indikatoren wie Reisezeitisochronen, Heatmaps und räumliche Daten, welche zur Abbildung des Ist-Zustandes, aber auch für die interaktive Modellierung von Erreichbarkeitsszenarien eingesetzt werden. Trotz der bereits sehr guten Einsatzfähigkeit des Instrumentes besteht weiterhin die Herausforderung, einen ganzheitlichen Indikator für die 15-Minuten-Stadt zu entwickeln. Hiermit zusammenhängend gilt es zu klären, ob eine vielschichtige Vision wie die 15-Minuten-Stadt überhaupt ganzheitlich in digitalen Planungswerkzeugen bewertet werden kann oder ob gerade in der Nutzung mehrerer Indikatoren die Stärke liegt. Ebenso besteht der Bedarf, Lösungen und Zielvorgaben auch für suburbane und ländliche Räume zu entwickeln.
 
@@ -55,11 +55,11 @@ ________________________________
 
 https://doi.org/10.26084/13dfns-p020  
 
-<b>Authors</b>: Ulrike Jehle, Elias Pajares <br /><br />
+<b>Autoren</b>: Ulrike Jehle, Elias Pajares <br /><br />
 
-<b>Year</b>: 2021 <br /><br />
+<b>Jahr</b>: 2021 <br /><br />
 
-<b>Keywords</b>: Fußverkehr; OpenData; Walkability <br /><br />
+<b>Stichwörter</b>: Fußverkehr; OpenData; Walkability <br /><br />
 
 <b>Abstract</b>: Kinder in Deutschland leiden verstärkt unter Bewegungsmangel, daher sollte das Gehen
 zur Schule gefördert werden. Damit Menschen zu Fuß gehen, ist jedoch eine attraktive und sichere Gehumgebung erforderlich. Es existieren zahlreiche Ansätze, die Fußgängerfreundlichkeit (engl. Walkability) zu bewerten. Jedoch fehlt es an einem auf den deutschen Kontext angepassten, übertragbaren Walkability Index. Basierend auf einer Vielzahl an offenen Datensätzen wurde für die Pilotkommune Freiburg ein multi-kriterieller Ansatz eines Walkability Index entwickelt. Dieser ist in das webbasierte Planungsinstrument Geo Open Accessibility Tool – GOAT integriert und zeigt pro Wegeabschnitt die Qualität für den Fußverkehr auf. Um gezielt Maßnahmen zur Verbesserung der Walkability priorisieren zu können, wurde außerdem ein Algorithmus zur Berechnung von Fußgängerpotentialströmen entwickelt. Dieser berechnet, ausgehend von allen Wohnhäusern, den kürzesten Weg zu ausgewählten Zielen. Die Einsatzmöglichkeit der entwickelten Indikatoren wird in diesem Beitrag anhand von Schulwegen beispielhaft erläutert.
@@ -70,27 +70,27 @@ ________________________________
 
 https://doi.org/10.3390/ijgi10100662
 
-<b>Authors</b>: Elias Pajares, Rafael Muñoz Nieto, Liqiu Meng, Gebhard Wulfhorst <br /><br />
+<b>Autoren</b>: Elias Pajares, Rafael Muñoz Nieto, Liqiu Meng, Gebhard Wulfhorst <br /><br />
 
-<b>Date</b>: 1 October 2021 <br /><br />
+<b>Datum</b>: 1 Oktober 2021 <br /><br />
 
-<b>Keywords</b>: Population disaggregation; Accessibility; Open data <br /><br />
+<b>Stichwörter</b>: Population disaggregation; Accessibility; Open data <br /><br />
 
-<b>Abstract</b>: A wide range of disciplines require population data with high spatial resolution. In particular, accessibility instruments for active mobility need data on the building access level. Data availability varies by context. Spatially detailed national census counts often present the challenge that they are outdated. Therefore, this study proposes a novel approach to hybrid population disaggregation. It updates outdated census tracts and disaggregates the population on the building access level. Open and widely available data sets are used. A bottom-up population estimation for new development areas is combined with a top-down dasymetric mapping process to update outdated census tracts. A particular focus lies on the high flexibility of the developed procedure. Accordingly, users can utilize diverse data and adapt settings to a specific study context. Instead of requiring ubiquitous 3D building data, often unavailable free of charge, the approach suggests collecting building levels only in new development areas. The open-source software development was done using PostgreSQL/PostGIS as part of the co-creative development of the accessibility instrument GOAT in three German municipalities. A comparison with reference data from the population registry of one district was realized. On the building level, an R2 of 0.82, and on the grid level (100 m × 100 m), an R2 of 0.89 is reached. The approach stands out when land-use information is outdated; however, a spatially detailed census grid exists, but no ubiquitous 3D building information is available. Enhancements are proposed, such as improving the dasymetric mapping with machine learning and remote sensing techniques. Moreover, more reliable detection of new building development in already built-up areas is suggested to account better for urban densification.
+<b>Abstract</b>: Eine Vielzahl von Disziplinen benötigt Bevölkerungsdaten mit hoher räumlicher Auflösung. Insbesondere Erreichbarkeitsinstrumente für aktive Mobilität benötigen Daten auf der Ebene des Gebäudezugangs. Die Datenverfügbarkeit variiert je nach Kontext. Räumlich detaillierte nationale Volkszählungen haben oft das Problem, dass sie veraltet sind. Daher wird in dieser Studie ein neuartiger Ansatz für eine hybride Bevölkerungsdisaggregation vorgeschlagen. Dieser aktualisiert veraltete Volkszählungsgebiete und disaggregiert die Bevölkerung auf der Ebene des Gebäudezugangs. Es werden offene und weithin verfügbare Datensätze verwendet. Eine Bottom-up-Bevölkerungsschätzung für neue Erschließungsgebiete wird mit einem Top-down-dasymetrischen Kartierungsprozess kombiniert, um veraltete Zählungsgebiete zu aktualisieren. Ein besonderer Fokus liegt auf der hohen Flexibilität des entwickelten Verfahrens. So kann der Anwender auf unterschiedliche Daten zurückgreifen und die Einstellungen an den jeweiligen Untersuchungskontext anpassen. Anstatt allgegenwärtige 3D-Gebäudedaten zu benötigen, die oft nicht kostenlos zur Verfügung stehen, schlägt der Ansatz vor, die Gebäudehöhen nur in Neubaugebieten zu erfassen. Die Entwicklung der Open-Source-Software erfolgte mit PostgreSQL/PostGIS im Rahmen der ko-kreativen Entwicklung des Erreichbarkeitsinstrumentes GOAT in drei deutschen Kommunen. Ein Vergleich mit Referenzdaten aus dem Melderegister eines Landkreises wurde durchgeführt. Auf der Gebäudeebene wird ein R2 von 0,82 und auf der Rasterebene (100 m × 100 m) ein R2 von 0,89 erreicht. Der Ansatz zeichnet sich aus, wenn die Landnutzungsinformationen veraltet sind, jedoch ein räumlich detailliertes Zählungsgitter existiert, aber keine allgegenwärtigen 3D-Gebäudeinformationen verfügbar sind. Es werden Verbesserungen vorgeschlagen, z. B. die Verbesserung der dasymetrischen Kartierung durch maschinelles Lernen und Fernerkundungstechniken. Außerdem wird eine zuverlässigere Erkennung von Neubauten in bereits bebauten Gebieten vorgeschlagen, um die städtische Verdichtung besser zu berücksichtigen.
 
 ________________________________
 
-### Accessibility by proximity: Addressing the lack of interactive accessibility instruments for active mobility
+### Erreichbarkeit durch Nähe: Der Mangel an interaktiven Zugänglichkeitsinstrumenten für aktive Mobilität wird behoben
 
 https://doi.org/10.1016/j.jtrangeo.2021.103080
 
-<b>Authors</b>: Elias Pajares, Benjamin Büttner, Ulrike Jehle, Aaron Nichols, Gebhard Wulfhorst <br /><br />
+<b>Autoren</b>: Elias Pajares, Benjamin Büttner, Ulrike Jehle, Aaron Nichols, Gebhard Wulfhorst <br /><br />
 
-<b>Date</b>: 8 May 2021 <br /><br />
+<b>Datum</b>: 8 Mai 2021 <br /><br />
 
-<b>Keywords</b>: Active mobility; GIS; Open source; Planning support systems <br /><br />
+<b>Stichwörter</b>: Active mobility; GIS; Open source; Planning support systems <br /><br />
 
-<b>Abstract</b>: The rise of concepts such as the 15-minute-city represents the growing importance of accessibility by active mobility. To promote accessibility, accessibility instruments are developed that have substantial potential to assist practitioners in decision-making processes. Therefore, this research starts with an up-to-date overview of the suitability of accessibility instruments when planning for active mobility. It was found that accessibility instruments were significantly further developed in the last few years and there is a rising number of tools that contain novel features. However, it was identified that there is a clear lack of tools specifically designed for modeling active mobility that are open source, include interactive scenario building, and can easily be transferred to new study areas. Therefore, an interactive accessibility instrument named GOAT (Geo Open Accessibility Tool) was developed, which is open source, transferable, and has an easy-to-use web interface. This instrument has been developed following an iterative software development process in close cooperation with practitioners from three municipalities in the region of Munich, Germany. The practitioners tested the tool independently in numerous workshops to provide feedback, which was integrated into the development. Furthermore, the tool was tested and transferred to more than 20 German municipalities, the City of Bogotá (Colombia) and Matosinhos (Portugal). The first results show collaborative and open development process produced a user-centric solution, which bears the high potential to make planning for active mobility more effective and efficient.
+<b>Abstract</b>: Das Aufkommen von Konzepten wie der 15-Minuten-Stadt repräsentiert die wachsende Bedeutung von Erreichbarkeit durch aktive Mobilität. Zur Förderung der Erreichbarkeit werden Erreichbarkeitsinstrumente entwickelt, die ein erhebliches Potenzial haben, Anwender in Entscheidungsprozessen zu unterstützen. Daher beginnt diese Untersuchung mit einem aktuellen Überblick über die Eignung von Erreichbarkeitsinstrumenten für die Planung aktiver Mobilität. Es wurde festgestellt, dass Erreichbarkeitsinstrumente in den letzten Jahren erheblich weiterentwickelt wurden und es eine steigende Anzahl von Instrumenten gibt, die neuartige Funktionen enthalten. Dennoch stellte man fest, dass ein deutlicher Mangel an Instrumenten besteht, die speziell für die Modellierung aktiver Mobilität entwickelt wurden, die open source sind, eine interaktive Szenarienbildung beinhalten und leicht auf neue Untersuchungsgebiete übertragen werden können. Daher wurde ein interaktives Erreichbarkeitsinstrument mit dem Namen GOAT (Geo Open Accessibility Tool) entwickelt, das open source und übertragbar ist und über eine einfach zu bedienende Webschnittstelle verfügt. Dieses Instrument wurde in einem iterativen Softwareentwicklungsprozess in enger Zusammenarbeit mit Praktikern aus drei Gemeinden in der Region München entwickelt. Die Praktiker testeten das Instrument unabhängig voneinander in zahlreichen Workshops und gaben Feedback, das in die Entwicklung einfloss. Darüber hinaus wurde das Tool in mehr als 20 deutschen Kommunen, der Stadt Bogotá (Kolumbien) und Matosinhos (Portugal) getestet und übertragen. Die ersten Ergebnisse zeigen, dass der kollaborative und offene Entwicklungsprozess zu einer nutzerzentrierten Lösung geführt hat, die das Potenzial hat, die Planung für aktive Mobilität effektiver und effizienter zu gestalten.
 
 ________________________________
 
