@@ -7,58 +7,58 @@ import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 
-# Catchment Area
+# Einzugsgebiet
 
-**Catchment Areas** show how far people can travel within a certain travel time or distance, using one or more modes of transport.
+**Einzugsgebiete** zeigen, wie weit Menschen innerhalb einer bestimmten Reisezeit oder Entfernung mit einem oder mehreren Verkehrsmitteln reisen können.
 
-## 1. Explanation
+## 1. Erklärung
 
-Based on the specified starting point(s), maximum travel time or distance, and mode(s) of transport, **Catchment Areas** visualize the extent of accessibility. This is calculated using **real-world data** and provides useful insights into the quality, density, and extensiveness of an area's transport network.
+Ausgehend von den angegebenen Startpunkten, der maximalen Reisezeit oder Entfernung und den Verkehrsmitteln visualisieren **Einzugsgebiete** das Ausmaß der Zugänglichkeit. Dies wird anhand von **realen Daten** berechnet und liefert nützliche Einblicke in die Qualität, Dichte und Reichweite des Verkehrsnetzes einer Region.
 
-Furthermore, the catchment area can be intersected with spatial datasets, such as population and [POI](../../further_reading/glossary#point-of-interest-poi "What is a POI?") data. This allows you to assess - for example - how many POIs can be reached from a certain location and therefore identify what share of inhabitants has access to important amenities within a specific travel time.
+Darüber hinaus kann das Einzugsgebiet mit räumlichen Datensätzen wie Bevölkerungs- und POI-Daten überlagert werden. Dies ermöglicht beispielsweise die Bewertung, wie viele POIs von einem bestimmten Standort aus erreichbar sind und damit festzustellen, welcher Anteil der Einwohner Zugang zu wichtigen Annehmlichkeiten innerhalb einer bestimmten Reisezeit hat.
 
 ![Catchment Area in GOAT](/img/toolbox/accessibility_indicators/catchments/catchment_sample.png "Catchment Area in GOAT")
   
 
-:::tip Hint
-You might know this feature from our previous software versions under the terms *Single-Isochrone* and *Multi-Isochrone*. With the release of GOAT version 2.0, we combined these two indicators in the same flow and enriched it with further calculation options. 
+:::tip Tipp
+Sie kennen diese Funktion möglicherweise aus unseren früheren Softwareversionen unter den Begriffen Single-Isochrone und Multi-Isochrone. Mit der Veröffentlichung von GOAT Version 2.0 haben wir diese beiden Indikatoren im gleichen Ablauf zusammengeführt und mit weiteren Berechnungsoptionen angereichert.
 :::
 
 :::info 
-Catchment areas are available for certain regions. Upon selecting a <code>Routing type</code>, GOAT will dynamically display a geofence for supported regions.
-For <code>Walk</code>, <code>Bicycle</code>, <code>Pedelec</code>, and <code>Car</code>, the geofence reaches more than 30 European countries:
+Einzugsgebiete sind für bestimmte Regionen verfügbar. Nach Auswahl eines <code>Verkehrsmittels</code>,  zeigt GOAT dynamisch eine Geofence für unterstützte Regionen an.
+Für <code>Zu Fuß</code>, <code>Fahrrad</code>, <code>Pedelec</code>, und <code>Auto</code>, erreicht der Geofence mehr als 30 europäische Länder:
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/toolbox/accessibility_indicators/catchments/geofence.png').default} alt="Geofence for catchment area calculation in GOAT" style={{ maxHeight: "300px", maxWidth: "400px", alignItems:'center'}}/>
+  <img src={require('/img/toolbox/accessibility_indicators/catchments/geofence.png').default} alt="Geofence für Einzugsgebiet-Berechnung in GOAT" style={{ maxHeight: "300px", maxWidth: "400px", alignItems:'center'}}/>
 </div> 
 
-For <code>Public Transport</code>, the geofence reaches all of Germany:
+Für <code>ÖV</code>, erreicht der Geofence ganz Deutschland:
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence for catchment area calculation in GOAT" style={{ maxHeight: "300px", maxWidth: "400px", alignItems:'center'}}/>
 </div> 
 
-In case you need to perform analysis beyond this geofence, feel free to contact the [Support](https://plan4better.de/en/contact/ "Contact Support") and we will check what is possible. 
+Falls Sie Analysen außerhalb dieses Geofence durchführen müssen, kontaktieren Sie bitte den [Support](https://plan4better.de/en/contact/ "Contact Support") und wir prüfen, was möglich ist.
 :::
 
-## 2. Example use cases
+## 2. Anwendungsbeispiele
 
-- Which amenities can be reached from a certain point in a 15-minute walk?
-- How many inhabitants have access to a supermarket within 10 minutes of cycling?
-- What share of the population has a general practitioner (GP) within 500m distance?
-- How big is the catchment area of a workplace by car vs. by public transport? How many employees live within these catchment areas? 
-- How well are kindergartens currently distributed across the city? In which districts are there accessibility deficits?
+- Welche Annehmlichkeiten sind von einem bestimmten Punkt aus in einem 15-minütigen Fußweg erreichbar?
+- Wie viele Einwohner haben Zugang zu einem Supermarkt innerhalb von 10 Minuten mit dem Fahrrad?
+- Welcher Anteil der Bevölkerung hat einen Hausarzt innerhalb von 500m Entfernung?
+- Wie groß ist das Einzugsgebiet eines Arbeitsplatzes mit dem Auto vs. mit öffentlichen Verkehrsmitteln? Wie viele Mitarbeiter leben in diesen Einzugsgebieten?
+- Wie gut sind Kindergärten derzeit über die Stadt verteilt? In welchen Bezirken gibt es Defizite in der Zugänglichkeit?
 
 
-## 3. How to use the indicator?
+## 3. Wie benutzt man den Indikator?
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Klicken Sie auf <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Under the <code>Accessibility Indicators</code> menu, click on <code>Catchment Area</code>.</div>
+  <div class="content">Unter dem <code>Erreichbarkeitsindikatoren</code> Menü, wählen Sie<code>Einzugsgebiet</code>.</div>
 </div>
 
 ### Routing
@@ -66,85 +66,85 @@ In case you need to perform analysis beyond this geofence, feel free to contact 
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Pick for which <code>Routing Type</code> you would like to calculate a catchment area.</div>
+  <div class="content">Wählen Sie das <code>Verkehrsmittel</code> für das Sie ein Einzugsgebiet berechnen möchten</div>
 </div>
 
 
-### Configuration
+### Konfiguration
 
 <Tabs>
-  <TabItem value="walk" label="Walk" default className="tabItemBox">
+  <TabItem value="zu Fuß" label="zu Fuß" default className="tabItemBox">
 
-#### Walk
+#### zu Fuß
 
-Considers all paths accessible by foot.
+Berücksichtigt alle zu Fuß erreichbaren Wege.
 
-:::tip Hint
+:::tip Tipp
 
-For further insights into the Routing algorithm, visit [Routing/Walk](../../routing/walking).
+Für weitere Einblicke in den Routing-Algorithmus besuchen Sie  [Routing/Walk](../../routing/walking).
 
 :::
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Pick if you like to calculate the catchment area based on <b>time</b> or <b>distance</b>.</div>
+  <div class="content">Wählen Sie, ob Sie das Einzugsgebiet basierend auf <b>Zeit</b> oder <b>Entfernung</b>berechnen möchten.</div>
 </div>
 
 
 
 <Tabs>
-  <TabItem value="time" label="Time" default className="tabItemBox">
+  <TabItem value="Zeit" label="Zeit" default className="tabItemBox">
 
 #### Time
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Set the configurations for <code>Travel time limit</code>, <code>Travel speed</code>, and <code> Number of breaks</code>.</div>
+  <div class="content">Legen Sie die Konfigurationen für<code>Reisezeitlimit</code>, <code>Reisegeschwindigkeit</code>, und <code> Anzahl der Schritte</code>fest.</div>
 </div>
 
-<img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_time.png').default} alt="walking-time configurations" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+<img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_time.png').default} alt="Konfigurationen für Reisezeit zu Fuß" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
 
-:::tip Hint
+:::tip Tipp
 
-For defining which travel time limits are suitable for which amenity, the ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
+Für die Definition, welche Reisezeitlimits für welche Annehmlichkeit geeignet sind, bietet das ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) der Stadt Chemnitz hilfreiche Orientierung.
 
 :::
 
-#### Advanced Configurations
+#### Erweiterte Konfigurationen
 
-Per default, the catchment areas are calculated in polygon shape. In case you want to adjust that, you find further options in the advanced configurations. 
+Standardmäßig werden die Einzugsgebiete in Polygonform berechnet. Falls Sie dies anpassen möchten, finden Sie weitere Optionen in den erweiterten Konfigurationen.
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Click on <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Here you can select the <code> Catchment area shape</code>. You can choose between <b>Polygon</b>, <b>Network</b> and <b>Rectangular Grid</b>.</div>
+  <div class="content">Klicken Sie auf des<b>Optionen-Symbol</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die <code> Form des Einzugsgebiets</code>wählen. Die Auswahlmöglichkeiten sind <b>Polygon</b>, <b>Netzwerk</b> und <b>Sechseckiges Gitter</b>.</div>
 </div>
 
   </TabItem>
-  <TabItem value="distance" label="Distance" default className="tabItemBox">
+  <TabItem value="Entfernung" label="Entfernung" default className="tabItemBox">
 
-#### Distance
+#### ENtfernung
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Set the configurations for <code>Travel distance</code> and <code> Number of breaks</code>.</div>
+  <div class="content">Legen Sie die Konfigurationen für <code>Reiseentfernung</code> und <code>Anzahl der Schritte</code> fest.</div>
 </div>
 
-<img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_distance.png').default} alt="walking-distance configurations" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+<img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_distance.png').default} alt="Konfigurationen für Reiseentfernung zu Fuß" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
 
-:::tip Hint
+:::tip Tipp
 
-For defining which travel distances are suitable for which amenity, the ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
+Für die Definition, welche Reiseentfernungen für welche Annehmlichkeit geeignet sind, bietet das ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) der Stadt Chemnitz hilfreiche Orientierung.
 
 :::
 
 
-#### Advanced Configurations
+#### Erweiterte Konfigurationen
 
-Per default, the catchment areas are calculated in polygon shape. In case you want to adjust that, you find further options in the advanced configurations. 
+Standardmäßig werden die Einzugsgebiete in Polygonform berechnet. Falls Sie dies anpassen möchten, finden Sie weitere Optionen in den erweiterten Konfigurationen.
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Click on <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Here you can select the <code> Catchment area shape</code>. You can choose between <b>Polygon</b>, <b>Network</b> and <b>Rectangular Grid</b>.</div>
+  <div class="content">Klicken Sie auf das<b>Optionen-Symbol</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die <code> Form des Einzugsgebiets</code>auswählen. Die Möglichkeiten sind <b>Polygon</b>, <b>Netzwerk</b> und <b>Sechseckiges Gitter</b>.</div>
 </div>
 
   </TabItem>
@@ -152,78 +152,78 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
 </Tabs>
 
   </TabItem>
-  <TabItem value="cycling" label="Bicycle/Pedelec" className="tabItemBox">
+  <TabItem value="Fahrrad" label="Fahrrad/Pedelec" className="tabItemBox">
 
     
-#### Bicycle/Pedelec
+#### Fahrrad/Pedelec
 
-Considers all paths accessible by bicycle. This routing mode takes into account the surface, smoothness, and slope of streets while computing accessibility. For Pedelec, slopes are considered with a lower impedance than for standard bicycles.
+Berücksichtigt alle mit dem Fahrrad erreichbaren Wege. Dieser Routentyp berücksichtigt die Oberfläche, Glätte und Steigung der Straßen bei der Berechnung der Zugänglichkeit. Für Pedelec werden Steigungen mit einer geringeren Impedanz als für Standardfahrräder berücksichtigt.
 
-:::tip Hint
+:::tip Tipp
 
-For further insights into the Routing algorithm, visit [Routing/Bicycle](../../routing/bicycle). In addition, you can check this [Publication](https://doi.org/10.1016/j.jtrangeo.2021.103080).
+Für weitere Einblicke in den Routing-Algorithmus besuchen Sie[Routing/Bicycle](../../routing/bicycle). Zusätzlich können Sie diese [Richtlinie](https://doi.org/10.1016/j.jtrangeo.2021.103080)verwenden.
 
 :::
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Pick if you like to calculate the catchment area based on <b>time</b> or <b>distance</b>.</div>
+  <div class="content">Wählen Sie, ob Sie das Einzugsgebiet basierend auf <b>Zeit</b> or <b>Entfernung</b>berechnen möchten.</div>
 </div>
 
 <Tabs>
-  <TabItem value="time" label="Time" default className="tabItemBox">
+  <TabItem value="Zeit" label="Zeit" default className="tabItemBox">
 
-#### Time
+#### Zeit
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Set the configurations for <code>Travel time limit</code>, <code>Travel speed</code>, and <code> Number of breaks</code>.</div>
+  <div class="content">Legen Sie die Konfigurationen für<code>Reisezeitlimit</code>, <code>Reisegeschwindigkeit</code>, und <code> Anzahl der Schritte</code>fest.</div>
 </div>
 
-<img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_time.png').default} alt="walking-time configurations" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+<img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_time.png').default} alt="Konfigurationen für Reisezeit mit dem Fahrrad" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
 
-:::tip Hint
+:::tip Tipp
 
-For defining which travel time limits are suitable for which amenity, the ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
+Für die Definition, welche Reisezeitlimits für welche Annehmlichkeit geeignet sind, bietet das ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) der Stadt Chemnitz hilfreiche Orientierung.
 
 :::
 
 
-#### Advanced Configurations
+#### Erweiterte Konfigurationen
 
-Per default, the catchment areas are calculated in polygon shape. In case you want to adjust that, you find further options in the advanced configurations. 
+Standardmäßig werden die Einzugsgebiete in Polygonform berechnet. Falls Sie dies anpassen möchten, finden Sie weitere Optionen in den erweiterten Konfigurationen.
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Click on <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Here you can select the <code> Catchment area shape</code>. You can choose between <b>Polygon</b>, <b>Network</b> and <b>Rectangular Grid</b>.</div>
+  <div class="content">Klicken Sie auf das <b>Optionen-Symbol</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die<code> Form des Einzugsgebiets</code>festlegen. Die Auswahlmöglichkeiten sind<b>Polygon</b>, <b>Netzwerk</b> und <b>Sechseckiges Gitter</b>.</div>
 </div>
 
   </TabItem>
-  <TabItem value="distance" label="Distance" default className="tabItemBox">
+  <TabItem value="Entfernung" label="Entfernung" default className="tabItemBox">
 
-#### Distance
+#### Entfernung
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Set the configurations for <code>Travel distance</code> and <code> Number of breaks</code>.</div>
+  <div class="content">Legen Sie die Konfigurationen für<code>Reiseentfernung</code> and <code> Anzahl der Schritte</code>fest.</div>
 </div>
 
 <img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_distance.png').default} alt="walking-distance configurations" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
 
-:::tip Hint
+:::tip Tipp
 
-For defining which travel distances are suitable for which amenity, the ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
+Für die Definition, welche Reiseentfernungen für welche Annehmlichkeit geeignet sind, bietet das  ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) der Stadt Chemnitz hilfreiche Orientierung.
 
 :::
 
 
-#### Advanced Configurations
+#### Erweiterte Konfigurationen
 
-Per default, the catchment areas are calculated in polygon shape. In case you want to adjust that, you find further options in the advanced configurations. 
+Standardmäßig werden die Einzugsgebiete in Polygonform berechnet. Falls Sie dies anpassen möchten, finden Sie weitere Optionen in den erweiterten Konfigurationen.
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Click on <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Here you can select the <code> Catchment area shape</code>. You can choose between <b>Polygon</b>, <b>Network</b> and <b>Rectangular Grid</b>.</div>
+  <div class="content">Klicken Sie auf das<b>Optionen-Symbol</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die <code>Form des Einzugsgebiets</code>festlegen. Die Auswahlmöglichkeien sind <b>Polygon</b>, <b>Netzwerk</b> und <b>Sechseckiges Gitter</b>.</div>
 </div>
 
   </TabItem>
@@ -233,117 +233,126 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
 
   </TabItem>
 
-  <TabItem value="car" label="Car" className="tabItemBox">
+  <TabItem value="Auto" label="Auto" className="tabItemBox">
 
-#### Car
+#### Auto
 
-Considers all paths accessible by car. This routing mode takes into account speed limits and one-way access restrictions while computing accessibility.
+Berücksichtigt alle mit dem Auto erreichbaren Wege.
 
-:::tip Hint
+:::tip Tipp
 
-For further insights into the Routing algorithm, visit [Routing/Car](../../routing/car).
+Für weitere Einblicke in den Routing-Algorithmus besuchen Sie [Routing/Car](../../routing/car).
 
 :::
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Pick if you like to calculate the catchment area based on <b>time</b> or <b>distance</b>.</div>
+  <div class="content">Wählen Sie, ob Sie das Einzugsgebiet basierend auf <b>Zeit</b> oder <b>Entfernung</b> berechnen möchten.</div>
 </div>
 
 <Tabs>
-  <TabItem value="time" label="Time" default className="tabItemBox">
+  <TabItem value="Zeit" label="Zeit" default className="tabItemBox">
 
-#### Time
+#### Zeit
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Set the configurations for <code>Travel time limit</code> and <code> Number of breaks</code>.</div>
+  <div class="content">Legen Sie die Konfigurationen für<code>Reisegeschwindigkeit</code> und <code> Anzahl der Schritte</code>fest.</div>
 </div>
 
-<img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_time.png').default} alt="travel-time configurations" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+<img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_time.png').default} alt="Konfigurationen für Reisezeit mit dem Auto" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+
+:::tip Tipp
+
+Für die Definition, welche Reiseentfernungen für welche Annehmlichkeit geeignet sind, bietet das  ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) der Stadt Chemnitz hilfreiche Orientierung.
+
+:::
 
 
+#### Erweiterte Konfigurationen
 
-#### Advanced Configurations
-
-Per default, the catchment areas are calculated in polygon shape. In case you want to adjust that, you find further options in the advanced configurations. 
+Standardmäßig werden die Einzugsgebiete in Polygonform berechnet. Falls Sie dies anpassen möchten, finden Sie weitere Optionen in den erweiterten Konfigurationen. 
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Click on <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Here you can select the <code> Catchment area shape</code>. You can choose between <b>Polygon</b>, <b>Network</b> and <b>Rectangular Grid</b>.</div>
+  <div class="content">Klicken Sie auf das <b>Optionen-Symbol</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die<code> Form des Einzugsgebiets</code>bestimmen. Die Auswahlmöglichkeiten sind<b>Polygon</b>, <b>Netzwerk</b> und <b>Sechseckiges Gitter</b>.</div>
 </div>
 
   </TabItem>
-  <TabItem value="distance" label="Distance" default className="tabItemBox">
+  <TabItem value="Entfernung" label="Entfernung" default className="tabItemBox">
 
-#### Distance
+#### Entfernung
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Set the configurations for <code>Travel distance</code> and <code> Number of breaks</code>.</div>
+  <div class="content">Legen Sie die Konfigurationen für<code>Reiseentfernung</code> und <code> Anzahl der Schritte</code>fest.</div>
 </div>
 
-<img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_distance.png').default} alt="travel-distance configurations" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+<img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_distance.png').default} alt="Konfigurationen für Reiseentfernung mit dem Auto" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
 
+:::tip Tipp
 
+Für die Definition, welche Reiseentfernungen für welche Annehmlichkeit geeignet sind, bietet das  ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) der Stadt Chemnitz hilfreiche Orientierung.
 
-#### Advanced Configurations
+:::
 
-Per default, the catchment areas are calculated in polygon shape. In case you want to adjust that, you find further options in the advanced configurations. 
+#### Erweiterte Konfigurationen
+
+Standardmäßig werden die Einzugsgebiete in Polygonform berechnet. Falls Sie dies anpassen möchten, finden Sie weitere Optionen in den erweiterten Konfigurationen. 
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Click on <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Here you can select the <code> Catchment area shape</code>. You can choose between <b>Polygon</b>, <b>Network</b> and <b>Rectangular Grid</b>.</div>
+  <div class="content">Klicken Sie auf das <b>Optionen-Symbol</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die<code> Form des Einzugsgebiets</code>bestimmen. Die Auswahlmöglichkeiten sind<b>Polygon</b>, <b>Netzwerk</b> und <b>Sechseckiges Gitter</b>.</div>
 </div>
 
   </TabItem>
 </Tabs>
 
   </TabItem>
-  <TabItem value="public transport" label="Public Transport (PT)" className="tabItemBox">
+  <TabItem value="ÖV" label="ÖV" className="tabItemBox">
 
-#### Public Transport (PT)
+#### ÖV
 
-Considers all locations accessible by public transport. This routing mode considers inter-modal transfers including access to and from stations.
+Berücksichtigt alle mit dem öffentlichen Verkehr erreichbaren Wege. Dieser Routing-Modus berücksichtigt intermodale Transfers einschließlich des Zugangs zu und von Bahnhöfen.
 
 
-:::tip Hint
+:::tip Tipp
 
-For further insights into the Routing algorithm, visit [Routing/Public Transport](../../routing/public_transport).
+Für weitere Einblicke in den Routing-Algorithmus besuchen Sie [Routing/Public Transport](../../routing/public_transport).
 
 :::
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the <code>Public transport modes</code> you want to analyze (<i>Bus, Tram, Rail, Subway, Ferry, Cable Car, Gondola</i> and/or <i>Funicular</i>).</div>
+  <div class="content">Wählen Sie die <code>Verkehrsmittel ÖV</code> die Sie analysieren möchten(<i>Bus, Tram, Bahn, U-Bahn, Fähre, Seilbahn, Gondelbahn</i> und/oder <i>Standseilbahn</i>).</div>
 </div>
 
 <div>
-  <img src={require('/img/toolbox/accessibility_indicators/catchments/pt_type.png').default} alt="Public Transport Modes in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>
+  <img src={require('/img/toolbox/accessibility_indicators/catchments/pt_type.png').default} alt="Verkehrsmittel ÖV in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>
 </div>
 
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Set the configurations for <code>Travel time limit</code>, <code>Number of breaks</code>, <code>Day</code> <i>(Weekday, Saturday</i> or <i>Sunday</i>) and Time period (<code>Start Time</code> and <code>End Time</code>).</div>
+  <div class="content">Legen Sie die Kofigurationen für <code>Reisezeitlimit</code>, <code>Anzahl der Schritte</code>, <code>Tag</code> <i>(Werktag, Samstaag</i> oder <i>Sonntag</i>) und ein Zeitintervall (<code>Startzeit</code> und <code>Endzeit</code>)fest.</div>
 </div>
 
-<img src={require('/img/toolbox/accessibility_indicators/catchments/pt_config.png').default} alt="Public Transport Configurations" style={{ maxHeight: "400px", maxWidth: "400px"}}/>
+<img src={require('/img/toolbox/accessibility_indicators/catchments/pt_config.png').default} alt="Konfigurationen für Reisezeit mit dem öffentlichen Verkehr" style={{ maxHeight: "400px", maxWidth: "400px"}}/>
 
-:::tip Hint
+:::tip Tipp
 
-For defining which travel time limits are suitable for which amenity, the ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) of the City of Chemnitz can provide helpful guidance.
+Für die Definition, welche Reisezeitlimits für welche Annehmlichkeit geeignet sind, bietet das  ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) der Stadt Chemnitz hilfreiche Orientierung.
 
 :::
 
 
-#### Advanced Configurations
+#### Erweiterte Konfigurationen
 
-Per default, the catchment areas are calculated in polygon shape. In case you want to adjust that, you find further options in the advanced configurations. 
+Standardmäßig werden die Einzugsgebiete in Polygonform berechnet. Falls Sie dies anpassen möchten, finden Sie weitere Optionen in den erweiterten Konfigurationen.
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Click on <b>options button</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Here you can select the <code> Catchment area shape</code>. You can choose between <b>Polygon</b>, <b>Network</b> and <b>Rectangular Grid</b>.</div>
+  <div class="content">Klicken Sie auf das <b>Optionen-Symbol</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die <code> Form des Einzugsgebiets</code>bestimmen. Die Auswahlmöglichkeite sind<b>Polygon</b>, <b>Netzwerk</b> and <b>Sechseckiges Gitter</b>.</div>
 </div>
 
   </TabItem>
@@ -354,68 +363,68 @@ Per default, the catchment areas are calculated in polygon shape. In case you wa
   <TabItem value="Polygon" label="Polygon" default className="tabItemBox">
 
  #### Polygon
-- It is the *geometric representation* of the catchments.
-- Provides an easy-to-understand visualization of the catchment area.
-- One polygon is produced for each <code>step</code>.
+- Es ist die *geometrische Darstellung* der Einzugsgebiete.
+- Bietet eine leicht verständliche Visualisierung des Einzugsgebiets.
+- Für jeden <code>Schritt</code> wird ein Polygon erzeugt.
 
-<img src={require('/img/toolbox/accessibility_indicators/catchments/pt_polygon.png').default} alt="Catchment Area Shape (Polygon) Public Transport in GOAT" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+<img src={require('/img/toolbox/accessibility_indicators/catchments/pt_polygon.png').default} alt="Einzugsgebiet (Polygon) ÖV in GOAT" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
 
-:::tip NOTE
+:::tip Tipp
 
-If you enable **Polygon Difference**, only the "incremental" (or differential) polygon will be created for each step, but if you disable **Polygon Difference**, a "full" polygon will be created for each step (including the areas covered by all previous steps).
+Wenn Sie **Polygon-Differenz** aktivieren, wird für jeden Schritt nur das "inkrementelle" (oder differenzielle) Polygon erstellt. Wenn Sie **Polygon-Differenz** deaktivieren, wird für jeden Schritt ein "vollständiges" Polygon erstellt (einschließlich der Bereiche, die von allen vorherigen Schritten abgedeckt wurden).
 
-<img src={require('/img/toolbox/accessibility_indicators/catchments/polygon_difference.png').default} alt="Public Transport Configurations" style={{ maxHeight: "400px", maxWidth: "400px"}}/>
+<img src={require('/img/toolbox/accessibility_indicators/catchments/polygon_difference.png').default} alt="ÖV Konfigurationen" style={{ maxHeight: "400px", maxWidth: "400px"}}/>
 
 :::
 
   </TabItem>
-  <TabItem value="Network" label="Network" className="tabItemBox">
+  <TabItem value="Netzwerk" label="Netzwerk" className="tabItemBox">
 
- #### Network
-- It is a *street-level representation* of the catchments.
-- Enables easy correlation to actual streets and their accessibility within the catchment area.
-- Fine-grained detail compared to the other catchment types.
+ #### Netzwerk
+- Es ist eine *straßenebene Darstellung* der Einzugsgebiete.
+- Ermöglicht eine einfache Korrelation zu tatsächlichen Straßen und deren Erreichbarkeit innerhalb des Einzugsgebiets.
+- Bietet feinere Details im Vergleich zu den anderen Einzugsgebietstypen.
 
-<img src={require('/img/toolbox/accessibility_indicators/catchments/pt_network.png').default} alt="Catchment Area Shape (Network) Public Transport in GOAT" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+<img src={require('/img/toolbox/accessibility_indicators/catchments/pt_network.png').default} alt="Einzugsgebiet (Network) ÖV in GOAT" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
 
   </TabItem>
-  <TabItem value="Rectangular Grid" label="Rectangular Grid" className="tabItemBox">
+  <TabItem value="Sechseckiges Gitter" label="Sechseckiges Gitter" className="tabItemBox">
 
-#### Rectangular Grid
-- It is a *grid cell-based representation* of the catchments.
-- Appears similar to a “heatmap” visualization, however, differs conceptually & computationally (this represents egress from a specified origin to various other locations while heatmaps represent access from various locations to a specified destination).
+#### Sechseckiges Gitter
+- Es ist eine *gitterzellenbasierte Darstellung* der Einzugsgebiete.
+- Erscheint ähnlich wie eine „Heatmap“-Visualisierung, unterscheidet sich jedoch konzeptionell und rechnerisch (dies stellt das Abfließen von einem bestimmten Ursprung zu verschiedenen anderen Standorten dar, während Heatmaps den Zugang von verschiedenen Standorten zu einem bestimmten Ziel darstellen).
 
-<img src={require('/img/toolbox/accessibility_indicators/catchments/pt_grid.png').default} alt="Catchment Area Shape (Grid) Public Transport in GOAT" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
+<img src={require('/img/toolbox/accessibility_indicators/catchments/pt_grid.png').default} alt="Einzugsgebiet(Gitter) ÖV in GOAT" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
 
   </TabItem>
 </Tabs>
 
-### Starting Points
+### Ausgangspunkte
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Select the <code>Starting point method</code> to define how you like to define the starting point(s) for the catchment areas. You can either <b>Select on map</b> or <b>Select from layer</b>.</div>
+  <div class="content">Wählen Sie die <code>Art der Startpunkte</code> aus, um zu definieren, wie Sie den/die Startpunkt(e) für die Einzugsgebiete festlegen möchten. Sie können entweder <b>Klicke auf Karte</b> oder <b>Wähle vom Layer</b>auswählen.</div>
 </div>
 
 <Tabs>
-  <TabItem value="Select on Map" label="Select on Map" default className="tabItemBox">
+  <TabItem value="Klicke auf Karte" label="Klicke auf Karte" default className="tabItemBox">
 
- #### Select on Map
+ #### Klicke auf Karte
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Choose <code>Select on map</code>. Select the starting point(s) by clicking on the respective location(s) in the map. You can add <b>as many starting points</b> as you like.</div>
+  <div class="content">Wählen Sie <code>Klicke auf Karte</code>. Wählen Sie den/die Startpunkt(e), indem Sie auf die jeweiligen Position(en) in der Karte klicken. Sie können <b>so viele Startpunkte</b> hinzufügen, wie Sie möchten.</div>
 </div>
 
 
   </TabItem>
-  <TabItem value="Select From Layer" label="Select From Layer" className="tabItemBox">
+  <TabItem value="Wähle vom Layer" label="Wähle vom Layer" className="tabItemBox">
 
- #### Select From Layer
+ #### Wähle vom Layer
 
  <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Click on <code>Select from layer</code>. Select the <code>Point layer</code> which contains the starting point(s) you like to use.</div>
+  <div class="content">Klicken Sie auf <code>Wähle vom Layer</code>. Wählen Sie den <code>Punktlayer</code>, der die Startpunkte enthält, die Sie verwenden möchten.</div>
 </div>
 
 
@@ -425,53 +434,53 @@ If you enable **Polygon Difference**, only the "incremental" (or differential) p
 
 <div class="step">
   <div class="step-number">9</div>
-  <div class="content">Click on <code>Run</code>. This starts the calculation of the <b>catchment areas</b> from the selected starting point(s).</div>
+  <div class="content">Klicken Sie auf <code>Ausführen</code>. Dies startet die Berechnung der <b>Einzugsgebiete</b> von den ausgewählten Startpunkten.</div>
 </div>
 
-:::tip Hint
+:::tip Tipp
 
-Depending on the chosen settings, the calculation might take some minutes. The [status bar](../../workspace/home#status-bar) shows the current progress.
+Je nach gewählten Einstellungen kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../workspace/home#status-bar) zeigt den aktuellen Fortschritt an.
 
 :::
 
-### Results
+### Ergebnisse
 
 <div class="step">
   <div class="step-number">10</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layer(s) will be added to the map. The layer called <b>"Catchment Area"</b> contains the calculated catchments. If the starting points were created by clicking on the map, they will also be saved in a layer called <b>"Starting Points"</b>.
+  <div class="content">Sobald der Berechnungsprozess abgeschlossen ist, werden die resultierenden Layer zur Karte hinzugefügt. Der Layer namens <b>"Einzugsgebiet"</b> enthält die berechneten Einzugsgebiete. Wenn die Startpunkte durch Klicken auf die Karte erstellt wurden, werden sie ebenfalls in einem Layer namens <b>"Startpunkte"</b> gespeichert.
   <p></p>
-  If you click on a catchment polygon on the map, you will see further details in its attribute table. The attribute <b>travel_cost</b> shows the travel distance or time, depending on which unit you picked for the calculation. If you have selected travel time, the travel_cost will show the <b>time in minutes</b>. If you have selected distance, the travel_cost will show the <b>distance in meters</b>.</div>
+  Wenn Sie auf ein Einzugsgebietspolygon auf der Karte klicken, sehen Sie weitere Details in seiner Attributtabelle. Das Attribut <b>travel_cost</b> zeigt die Reisekosten in Form von Entfernung oder Zeit, je nachdem, welche Einheit Sie für die Berechnung gewählt haben. Wenn Sie die Reisezeit gewählt haben, zeigt der travel_cost die <b>Zeit in Minuten</b> an. Wenn Sie die Entfernung gewählt haben, zeigt der travel_cost die <b>Entfernung in Metern</b> an.</div>
 </div>
 
 ![Catchment Area Calculation Result in GOAT](/img/toolbox/accessibility_indicators/catchments/catchment_result.png "Catchment Area Calculation Result in GOAT")
 
-:::tip Tip
-Want to style your catchment areas and create nice looking maps? See [Styling](../../map/layer_style/styling).
+:::tip Tipp
+Möchten Sie Ihre Einzugsgebiete stilisieren und schöne Karten erstellen? Siehe [Styling](../../map/layer_style/styling).
 :::
 
-## 4. Technical details
+## 4. Technische Details
 
-Catchment areas are **isolines** connecting all points that can be reached from one or more starting points within a certain time interval (called *isochrones*) or distance (called *isodistance*). Depending on the chosen travel mode, the according transport networks are used for the [routing](/docs/routing/walking). 
+Einzugsgebiete sind **Isolinien**, die alle Punkte verbinden, die von einem oder mehreren Startpunkten innerhalb eines bestimmten Zeitintervalls (genannt *Isochronen*) oder einer bestimmten Entfernung (genannt *Isodistanz*) erreicht werden können. Je nach gewähltem Verkehrsmittel werden die entsprechenden Verkehrsnetze für das [Routing](/docs/routing/walking) verwendet.
 
-The catchment areas are dynamically created in the front end based on a travel time/distance grid. Therefore, catchment areas can be created fast and for different intervals on the fly.
+Die Einzugsgebiete werden dynamisch im Frontend auf der Basis eines Reisezeit-/Entfernungsgitters erstellt. Daher können Einzugsgebiete schnell und für verschiedene Intervalle in Echtzeit erstellt werden.
 
-### Scientific background
+### Wissenschaftlicher Hintergrund
 
-From the scientific background, catchments are _contour-based measures_ (also known as _cumulative opportunities_). They are valued for their **easily interpretable results** ([Geurs and van Eck 2001](catchments#6-references); [Albacete 2016](catchments#6-references)), but have the drawback of not distinguishing between different travel times within the **cut-off range** ([Bertolini, le Clercq, and Kapoen 2005](catchments#6-references)), as it is done by [heatmaps](../accessibility_indicators/closest_average.md).
+Aus wissenschaftlicher Sicht sind Einzugsgebiete _konturbasierte Maßnahmen_ (auch bekannt als _kumulative Gelegenheiten_). Sie werden wegen ihrer **leicht interpretierbaren Ergebnisse** geschätzt ([Geurs und van Eck 2001](catchments#6-references); [Albacete 2016](catchments#6-references)), haben jedoch den Nachteil, dass sie innerhalb des **Cut-off-Bereichs** nicht zwischen verschiedenen Reisezeiten unterscheiden ([Bertolini, le Clercq, und Kapoen 2005](catchments#6-references)), wie es bei [Heatmaps](../accessibility_indicators/closest_average.md) der Fall ist.
 
-### Visualization 
+### Visualisierung
 
-The catchment shape is derived from the routing grid using the [Marching square contour line algorithm](https://en.wikipedia.org/wiki/Marching_squares "Wikipedia: Marching Squares"), a computer graphics algorithm that can generate two-dimensional contour lines from a rectangular array of values ([de Queiroz Neto et al. 2016](catchments#6-references)). This algorithm transforms the grid from a 2D array to a shape to visualize or analyze. An illustration of 2D image processing is shown in the figure. 
+Die Form der Einzugsgebiete wird aus dem Routing-Gitter unter Verwendung des [Marching-Square-Konturlinien-Algorithmus](https://en.wikipedia.org/wiki/Marching_squares "Wikipedia: Marching Squares") abgeleitet, einem Computergraphik-Algorithmus, der zweidimensionale Konturlinien aus einem rechteckigen Wertearray erzeugen kann ([de Queiroz Neto et al. 2016](catchments#6-references)). Dieser Algorithmus transformiert das Gitter von einem 2D-Array in eine Form, um es zu visualisieren oder zu analysieren. Eine Illustration der 2D-Bildverarbeitung ist in der Abbildung dargestellt.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src="https://plan4better.de/images/docs/technical_documentation/isochrone/wiki.webp" width="1000px" alt="marching square" style={{ width: "1000px", height: "400px", maxHeight: "400px", maxWidth: "400px", objectFit: "contain"}}/>
 </div> 
 
-## 5. Further readings
+## 5. Weiterführende Literatur
 
-Further insights into the catchment calculation and its scientific background can be found in this [publication](https://doi.org/10.1016/j.jtrangeo.2021.103080).
+Weitere Einblicke in die Einzugsgebietsberechnung und deren wissenschaftlichen Hintergrund finden Sie in dieser [Publikation](https://doi.org/10.1016/j.jtrangeo.2021.103080).
 
-## 6. References
+## 6. Referenzen
 
 Albacete, Xavier. 2016. “Evaluation and Improvements of Contour-Based Accessibility Measures.” url: https://dspace.uef.fi/bitstream/handle/123456789/16857/urn_isbn_978-952-61-2103-1.pdf?sequence=1&isAllowed=y 
 
