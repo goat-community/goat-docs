@@ -262,12 +262,6 @@ Für weitere Einblicke in den Routing-Algorithmus besuchen Sie [Routing/Car](../
 
 <img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_time.png').default} alt="Konfigurationen für Reisezeit mit dem Auto" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
 
-:::tip Tipp
-
-Für die Definition, welche Reiseentfernungen für welche Annehmlichkeit geeignet sind, bietet das  ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) der Stadt Chemnitz hilfreiche Orientierung.
-
-:::
-
 
 #### Erweiterte Konfigurationen
 
@@ -289,12 +283,6 @@ Standardmäßig werden die Einzugsgebiete in Polygonform berechnet. Falls Sie di
 </div>
 
 <img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_distance.png').default} alt="Konfigurationen für Reiseentfernung mit dem Auto" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
-
-:::tip Tipp
-
-Für die Definition, welche Reiseentfernungen für welche Annehmlichkeit geeignet sind, bietet das  ["Standort-Werkzeug"](https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) der Stadt Chemnitz hilfreiche Orientierung.
-
-:::
 
 #### Erweiterte Konfigurationen
 
