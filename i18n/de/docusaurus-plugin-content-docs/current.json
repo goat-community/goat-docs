@@ -68,7 +68,7 @@
     "description": "Das Label für die Kategorie Layer Styling in der Seitenleiste tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Layer Styling.link.generated-index.description": {
-    "message": "All layers added to the map can be styled. This can be done using the same colour and appearance for all objects, or using an attribute-based styling.",
+    "message": "Alle der Karte hinzugefügten Layer können gestaltet werden. Dies kann mit der gleichen Farbe und dem gleichen Aussehen für alle Objekte oder mit einem attributbasierten Styling geschehen.",
     "description": "Die generierte Index-Seite Beschreibung für die Kategorie Layer Styling in der Seitenleiste tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Toolbox": {
