@@ -8,7 +8,7 @@
     "description": "Die Beschreibung für den Blog, die für SEO verwendet wird"
   },
   "sidebar.title": {
-    "message": "Recent posts",
+    "message": "Neueste Beiträge",
     "description": "Die Beschriftung für die linke Seitenleiste"
   }
 }
