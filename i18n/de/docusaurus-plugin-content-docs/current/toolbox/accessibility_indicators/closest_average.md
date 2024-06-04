@@ -87,8 +87,6 @@ Für weitere Einblicke in den Routing-Algorithmus, besuchen Sie [Routing/Gehen](
 
 :::
 
-:::
-
 </TabItem>
   
 <TabItem value="Fahrrad" label="Fahrrad" className="tabItemBox">
@@ -243,6 +241,6 @@ Die Auflösung und die Abmessungen des verwendeten hexagonalen Gitters hängen v
 
 Die folgenden Beispiele veranschaulichen die Berechnung einer auf dem nächstgelegenen Durchschnitt basierenden Heatmap für dieselben Opportunities mit einem variierenden Wert für die „Anzahl der Ziele“.
 
-![Closest Average Heatmaps for different destinations](/img/toolbox/accessibility_indicators/heatmaps/closest_average_based/cls-avg-destinations.png „Closest Average Heatmaps for different destinations“)
+![Closest Average Heatmaps for different destinations](/img/toolbox/accessibility_indicators/heatmaps/closest_average_based/cls-avg-destinations.png "Closest Average Heatmaps for different destinations")
 
 Im ersten Beispiel wird die durchschnittliche Reisezeit nur für das nächstgelegene Ziel berechnet, während im zweiten Beispiel die 5 nächstgelegenen Ziele berücksichtigt werden.

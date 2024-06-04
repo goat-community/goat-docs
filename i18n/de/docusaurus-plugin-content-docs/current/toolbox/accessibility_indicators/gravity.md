@@ -8,7 +8,7 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 
 # Heatmap - Gravity
-Eine farblich gekennzeichnete Karte zur Visualisierung der Erreichbarkeit von Punkten (wie z.B. [POI](../../../further_reading/glossary#point-of-interest-poi „What is a POI?“)) aus der Umgebung.
+Eine farblich gekennzeichnete Karte zur Visualisierung der Erreichbarkeit von Punkten (wie z.B. [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) aus der Umgebung.
 
 ## 1. Erklärung
 
@@ -16,7 +16,7 @@ Die Heatmap wird als farblich gekennzeichnetes sechseckiges Raster dargestellt u
 
 :::info INFO
 
-Ein `Opportunity Layer` enthält [geografische Punkte](../../../data/data_types „Was sind geografische Punkte?“). Wählen Sie einen oder mehrere solcher Layer mit Ihren Zielpunkten (Opportunities) als Input für die Heatmap.
+Ein `Opportunity Layer` enthält [geografische Punkte](../../../data/data_types "Was sind geografische Punkte?"). Wählen Sie einen oder mehrere solcher Layer mit Ihren Zielpunkten (Opportunities) als Input für die Heatmap.
 
 :::
 
@@ -39,7 +39,7 @@ Heatmaps sind in bestimmten Regionen verfügbar. Bei der Auswahl eines „Verkeh
 </div> 
 
 
-Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie sich bitte an [contact us](https://plan4better.de/en/contact/ „Contact us“). Wir besprechen mit Ihnen gerne weitere Möglichkeiten.
+Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie sich bitte an [contact us](https://plan4better.de/en/contact/ "Contact us"). Wir besprechen mit Ihnen gerne weitere Möglichkeiten.
 
 :::
 
@@ -151,7 +151,7 @@ Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Auto](.
 
 #### Gaussfunktion
 
-Diese Funktion berechnet die Zugänglichkeiten auf der Grundlage einer Gaußschen Kurve, die durch die von Ihnen definierten Parameter „sensitivity“ und „destination potential“ beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
+Diese Funktion berechnet die Zugänglichkeiten auf der Grundlage einer Gaußschen Kurve, die durch die von Ihnen definierten Parameter `sensitivity` und `destination potential` beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
 :::tip Pro Tipp
 
@@ -167,7 +167,7 @@ Mit Hilfe der von Ihnen definierten *sensitivity* ermöglicht die Gauß-Funktion
 
 #### Lineare Funktion
 
-Diese Funktion stellt eine direkte Korrelation zwischen Reisezeit und Erreichbarkeit her, die durch das von Ihnen angegebene „destination_potential“ moduliert wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
+Diese Funktion stellt eine direkte Korrelation zwischen Reisezeit und Erreichbarkeit her, die durch das von Ihnen angegebene `destination_potential` moduliert wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
 </TabItem>
 
@@ -191,7 +191,7 @@ Diese Funktion berechnet die Zugänglichkeiten auf der Grundlage einer Leistungs
 
 ### Gelegenheiten
 
-Gelegenheiten sind im Wesentlichen punktbasierte Daten (wie [POI](../../further_reading/glossary#point-of-interest-poi „Was ist ein POI?“)), für die Sie eine Heatmap berechnen möchten. Dies sind die „destinations“ (z. B. Bahnhöfe, Schulen, andere Einrichtungen oder Ihre eigenen punktbasierten Daten), während die umliegenden Gebiete „origins“ sind, für die ein Erreichbarkeitswert berechnet und visualisiert wird.
+Gelegenheiten sind im Wesentlichen punktbasierte Daten (wie [POI](../../further_reading/glossary#point-of-interest-poi "Was ist ein POI?")), für die Sie eine Heatmap berechnen möchten. Dies sind die „destinations“ (z. B. Bahnhöfe, Schulen, andere Einrichtungen oder Ihre eigenen punktbasierten Daten), während die umliegenden Gebiete „origins“ sind, für die ein Erreichbarkeitswert berechnet und visualisiert wird.
 
 Zusätzlich können Sie weitere Opportunities über die Schaltfläche `+ Add Opportunity`am unteren Rand der Leiste erstellen. Alle Opportunity-Layer werden kombiniert, um eine einheitliche Heatmap zu erstellen.
 
@@ -216,7 +216,7 @@ Benötigen Sie Hilfe bei der Auswahl einer geeigneten Reisezeit für verschieden
   <div class="content">Falls erforderlich, wählen Sie ein <code>Zielpotenzialfeld</code> aus. Dies muss ein numerisches Feld aus Ihrem <i>Gelegenheitslayer</i> sein, das als Koeffizient von der Zugänglichkeitsfunktion verwendet wird.</div>
 </div>
 
-:::Tipp Pro-Tipp
+:::tip Pro-Tipp
 
 Das *destination potential* ist eine nützliche Methode, um bestimmte Möglichkeiten gegenüber anderen zu bevorzugen. Wenn es zum Beispiel zwei Supermärkte gibt und einer näher liegt als der andere, würde er aufgrund seiner Nähe in der Regel eine höhere Erreichbarkeitsbewertung erhalten. Wenn der weiter entfernte Supermarkt jedoch größer ist, sollten Sie ihm eine höhere Priorität einräumen. Mit *destination potential* können Sie eine zusätzliche Eigenschaft (z. B. die Größe von Supermärkten) verwenden, um Opportunities ein "potential" zuzuweisen und bei der Berechnung der Erreichbarkeit qualitative Informationen zu verwenden.
 
@@ -264,7 +264,7 @@ Der Erreichbarkeitswert jeder sechseckigen Zelle innerhalb einer Heatmap wird mi
 
 *Accessibility Formula:*
 
-![Accessibility Formula](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/place-based_accessibility_measures.webp „Zugänglichkeitsformel“)
+![Accessibility Formula](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/place-based_accessibility_measures.webp "Zugänglichkeitsformel")
 
 wobei die Erreichbarkeit **A** des Ausgangspunkts **i** die Summe aller am Zielort **j** verfügbaren Möglichkeiten **O** ist, gewichtet mit einer Funktion der Reisezeit **tij** zwischen **i** und **j**. Die Funktion **f(tij)** ist die Impedanzfunktion, die `gaussian`, `linear`, `exponential`, oder `power`. sein kann. Der Parameter **β** für die *sensitivity* und das *destination potential* werden verwendet, um den Erreichbarkeitswert einzustellen.
 
@@ -343,6 +343,8 @@ Für das hier dargestellte Sechseck ergibt die Berechnung je nach Sensitivitäts
 
 Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
 
+:::
+
 ##### Variierender Empfindlichkeitsparameter für Hypermarkt:
 :::info in Kürze
 
@@ -367,6 +369,8 @@ Im zweiten Beispiel wird die Erreichbarkeit von Lebensmittelgeschäften in 15 mi
 :::info coming soon
 
 Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
+
+:::
 
 Wenn Sie die beiden Ergebnisse vergleichen, bekommen Sie einen Eindruck davon, wie sich die *sensitivity* auf die Zugänglichkeit auswirkt.
 

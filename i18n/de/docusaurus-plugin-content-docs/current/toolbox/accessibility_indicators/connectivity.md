@@ -8,13 +8,13 @@ import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 # Heatmap - Konnektivität
-Eine farbkodierte Karte zur Visualisierung der Konnektivität von Orten innerhalb eines Interessengebiets ([AOI](../../../further_reading/glossary#area-of-interest-aoi „What is an AOI?“)).
+Eine farbkodierte Karte zur Visualisierung der Konnektivität von Orten innerhalb eines Interessengebiets ([AOI](../../../further_reading/glossary#area-of-interest-aoi "What is an AOI?")).
 
 ## 1. Erläuterung
 
 Die Heatmap wird als farbkodiertes sechseckiges Gitter dargestellt und berücksichtigt reale Verkehrs- und Straßennetze zur Berechnung der Konnektivität. Nach der Angabe einer *Routenart* (zu Fuß, mit dem Fahrrad usw.) und eines *Reisezeitlimits* zeigt das Ergebnis ein farbkodiertes hexagonales Raster, das die relative Konnektivität aller Orte innerhalb des angegebenen AOI darstellt.
 
-Im Gegensatz zu unseren anderen Heatmaps, die sich auf die Visualisierung der Erreichbarkeit bestimmter Punkte (wie z. B. [POI](../../../further_reading/glossary#point-of-interest-poi „What is a POI?“)) oder Einrichtungen in der Umgebung konzentrieren, stellen konnektivitätsbasierte Heatmaps die Gesamtkonnektivität eines Gebiets dar. Das bedeutet, dass alle Orte innerhalb Ihres AOI als Ziele betrachtet werden, und für jeden Ort stellt seine „Konnektivität“ den geografischen Bereich (innerhalb und außerhalb des AOI) dar, von dem aus der Ort unter Berücksichtigung der angegebenen *Routenart* und *Reisezeitbeschränkung* erreichbar ist.
+Im Gegensatz zu unseren anderen Heatmaps, die sich auf die Visualisierung der Erreichbarkeit bestimmter Punkte (wie z. B. [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) oder Einrichtungen in der Umgebung konzentrieren, stellen konnektivitätsbasierte Heatmaps die Gesamtkonnektivität eines Gebiets dar. Das bedeutet, dass alle Orte innerhalb Ihres AOI als Ziele betrachtet werden, und für jeden Ort stellt seine „Konnektivität“ den geografischen Bereich (innerhalb und außerhalb des AOI) dar, von dem aus der Ort unter Berücksichtigung der angegebenen *Routenart* und *Reisezeitbeschränkung* erreichbar ist.
 
 ![Connectivity-based Heatmap in GOAT](/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/connectivity.png "Connectivity-based Heatmap in GOAT")
 
@@ -27,7 +27,7 @@ Heatmaps sind in bestimmten Regionen verfügbar. Bei der Auswahl eines `Verkehrs
 </div>
 
 
-Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie sich bitte an [contact us](https://plan4better.de/en/contact/ „Contact us“). Wir besprechen mit Ihnen gerne weitere Möglichkeiten.
+Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie sich bitte an [contact us](https://plan4better.de/en/contact/ "Contact us"). Wir besprechen mit Ihnen gerne weitere Möglichkeiten.
 
 :::
 
