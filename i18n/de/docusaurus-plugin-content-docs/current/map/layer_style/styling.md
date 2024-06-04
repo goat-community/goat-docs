@@ -4,14 +4,13 @@ sidebar_position: 20
 
 # Basic Styling
 
-When you add a new layer to your project, it is assigned a default style based on the type of data. By customizing options in the <code>Layer design <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "15px", maxWidth: "15px", objectFit: "cover"}}/></code> menu, you can adjust the visualization of the layer and **create appealing maps**. The styling options available depend on the type of data contained by a layer, i.e. whether it is points, lines, or polygons. Thereby, multiple visual aspects, such as **colors**, **strokes**, and **opacities** can be adjusted.
+Wenn Sie eine neue Ebene zu Ihrem Projekt hinzufügen, wird ihr ein Standardstil zugewiesen, welcher auf der Art der Daten basiert. Durch die Anpassung der Optionen im Menü <code>Layerdesign <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "15px", maxWidth: "15px", objectFit: "cover"}}/></code> können Sie die Darstellung des Layers anpassen und **ansprechende Karten** erstellen. Die verfügbaren Gestaltungsoptionen hängen von der Art der in einer Ebene enthaltenen Daten ab, d. h. davon, ob es sich um Punkte, Linien oder Polygone handelt. Dabei können mehrere visuelle Aspekte wie **Farben**, **Striche** und **Optionen** angepasst werden.
 
+## Farbeinstellungen
 
-## Color Settings
+### Füllfarbe
 
-### Fill Color
-
-Fill color is used to represent the **interior** of **point or polygon features** on a map. Fill color is an aspect of cartography and GIS visualization because it helps to improve the overall readability of the map. The [Color Picker](#color-picker--preset-colors) provides different options to select the colors of your choice.
+Die Füllfarbe wird verwendet, um das **Innere** von **Punkt- oder Polygon-Features** auf einer Karte darzustellen. Die Füllfarbe ist ein Aspekt der Kartographie und der GIS-Visualisierung, da sie zur besseren Lesbarkeit der Karte beiträgt. Der [Color Picker](#color-picker--preset-colors) bietet verschiedene Optionen, um die Farben Ihrer Wahl auszuwählen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -19,9 +18,9 @@ Fill color is used to represent the **interior** of **point or polygon features*
 
 </div> 
 
-#### Opacity
+#### Deckkraft
 
-To adjust the opacity of your layer styles for fill color, simply change the opacity to any **value between 0 and 1**. This numerical scale allows you to define the exact level of opacity you want, where **0 is transparent** and **1 is opaque**. Adjust the opacity to your preference, either by using the slider or by typing the exact level directly into the text box provided.
+TUm die Deckkraft Ihrer Ebenenstile für die Füllfarbe anzupassen, ändern Sie die Deckkraft einfach auf einen beliebigen **Wert zwischen 0 und 1**. Mit dieser numerischen Skala können Sie genau den gewünschten Grad der Deckkraft festlegen, wobei **0 transparent** und **1 undurchsichtig** ist. Stellen Sie die Deckkraft nach Ihren Wünschen ein, indem Sie entweder den Schieberegler verwenden oder den genauen Wert direkt in das Textfeld eingeben.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -30,14 +29,14 @@ To adjust the opacity of your layer styles for fill color, simply change the opa
 </div> 
 
 
-### Stroke Color
+### Strichfarbe
 
-Similar to the fill color, also the stroke color can be adjusted. Stroke color refers to the color applied to the **outlines or edges** of map features such as polygons, lines, and points. It is used to delineate the edges of spatial entities, distinguishing them from one another and enhancing their visibility on the map. The [Color Picker](#color-picker--preset-colors) provides different options to select the colors of your choice.
+Ähnlich wie die Füllfarbe kann auch die Strichfarbe eingestellt werden. Die Strichfarbe bezieht sich auf die Farbe, die auf die **Außenlinien oder Kanten** von Kartenmerkmalen wie Polygonen, Linien und Punkten angewendet wird. Sie wird verwendet, um die Kanten von räumlichen Elementen abzugrenzen, sie voneinander zu unterscheiden und ihre Sichtbarkeit auf der Karte zu verbessern. Der [Color Picker](#color-picker--preset-colors) bietet verschiedene Optionen, um die Farben Ihrer Wahl auszuwählen.
 
 
-### Color Picker & Preset Colors
+### Farbwähler & voreingestellte Farben
 
-Whenever you want to change a color, may it be **Fill Color** or **Stroke Color**, the color menu opens. You can either set the colors from the <code>Color Picker</code> by **moving the picker** in the color field or by defining **hex code** or **RGB values**, or you can select one of the colors we provide in the <code>Preset Colors</code>.
+Wann immer Sie eine Farbe ändern möchten, sei es **Füllfarbe** oder **Strichfarbe**, öffnet sich das Farbmenü. Sie können die Farben entweder über den <code>Farbpicker</code> einstellen, indem Sie den Picker im Farbfeld **bewegen** oder **hex-Code** oder **RGB-Werte** definieren, oder Sie können eine der Farben auswählen, die wir in den <code>Voreinstellungsfarben</code> bereitstellen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -46,9 +45,9 @@ Whenever you want to change a color, may it be **Fill Color** or **Stroke Color*
 </div> 
 
 
-## Custom Marker
+## Benutzerdefinierte Markierung
 
-For point layers, Custom Markers can be used for the visualization. Therefore, the marker can be selected from an **icon** list. The Marker Size can be adjusted via the slider.
+Für Punktebenen können benutzerdefinierte Marker für die Visualisierung verwendet werden. Dazu kann der Marker aus einer **Icon**-Liste ausgewählt werden. Die Markergröße kann über den Schieberegler eingestellt werden.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -56,11 +55,11 @@ For point layers, Custom Markers can be used for the visualization. Therefore, t
 
 </div> 
 
-## Width & Radius
+## Breite & Radius
 
-### Stroke Width
+## Strichbreite
 
-Besides the color, also the **line thickness** of strokes can be defined. Adjust the line width to your preference, either by using the width slider or by typing the exact size directly into the text box provided.
+Neben der Farbe kann auch die **Strichstärke** der Striche definiert werden. Passen Sie die Strichstärke nach Ihren Wünschen an, indem Sie entweder den Schieberegler für die Strichstärke verwenden oder die genaue Größe direkt in das dafür vorgesehene Textfeld eingeben.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -71,7 +70,7 @@ Besides the color, also the **line thickness** of strokes can be defined. Adjust
 
 ### Radius
 
-For **point datasets**, the **radius** can be adjusted. Therefore, you can either use the Radius slider to make incremental changes or enter the desired radius size directly in the text box for precise control.
+Bei **Punktdatensätzen** kann der **Radius** angepasst werden. Daher können Sie entweder den Radius-Schieberegler verwenden, um schrittweise Änderungen vorzunehmen, oder die gewünschte Radiusgröße direkt in das Textfeld eingeben, um eine präzise Steuerung zu ermöglichen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -80,9 +79,9 @@ For **point datasets**, the **radius** can be adjusted. Therefore, you can eithe
 </div> 
 
 
-## Default Settings 
+## Standardeinstellungen 
 
-By clicking on the three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>, the default style settings open. 
+Durch Klicken auf die drei Punkte <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>,  öffnen sich die Standard-Stil-Einstellungen. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -90,11 +89,11 @@ By clicking on the three dots <img src={require('/img/map/filter/3dots.png').def
 
 </div> 
 
-If you select <code>Save as default</code>, the current style settings will be attached to the dataset. Whenever you add this dataset to a project, this default style will be used (*Note: existing projects where this dataset is displayed will not be affected*). 
+Wenn Sie <code>Als Standard speichern</code> wählen, werden die aktuellen Stileinstellungen an den Datensatz angehängt. Wann immer Sie diesen Datensatz zu einem Projekt hinzufügen, wird dieser Standardstil verwendet (*Hinweis: bestehende Projekte, in denen dieser Datensatz angezeigt wird, sind davon nicht betroffen*). 
 
-By clicking on <code>Reset</code>, you can reset the current style settings back to the default. 
+Wenn Sie auf <code>Rücksetzen</code> klicken, können Sie die aktuellen Stileinstellungen wieder auf die Standardwerte zurücksetzen. 
 
 
-:::tip HINT
-Interested in **smart styling** options? Check our [Attribute-based Styling](../layer_style/attribute_based_styling).
+:::tip TIPP
+Interessieren Sie sich für **Smart Styling** Optionen? Schauen Sie sich unser  [Attribute-based Styling](../layer_style/attribute_based_styling) an.
 :::
