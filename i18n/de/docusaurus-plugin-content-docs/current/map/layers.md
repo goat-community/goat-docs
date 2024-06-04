@@ -7,33 +7,33 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 
-# Layers
+# Ebenen
 
-In the **Layers** section, layers can be **added and organized**. Among others, the layer order can be adjusted, layers can be enabled/disabled, duplicated, renamed, downloaded, and removed.
+Im Bereich **Ebenen** können Ebenen **hinzugefügt und organisiert** werden. Unter anderem kann die Reihenfolge der Ebenen angepasst werden, Ebenen können aktiviert/deaktiviert, dupliziert, umbenannt, heruntergeladen und entfernt werden.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/map/layers/overview.png').default} alt="Layer View in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
-## Add Layers
+## Ebenen hinzufügen
 
-You can add two kinds of layers to your map: [internal layers](../data/dataset_types) or [external layers](../data/dataset_types). For adding new internal layers, you can either integrate **datasets from your data explorer** or upload new **datasets from your local device** (GeoPackage, GeoJSON, Shapefile, KML, CSV, or XLSX). External layers can be added by inserting the **url of the external source** (WMS, WMTS, or MVT). 
+Sie können zwei Arten von Ebenen zu Ihrer Karte hinzufügen: [internal layers](../data/dataset_types) oder [external layers](../data/dataset_types). Um neue interne Ebenen hinzuzufügen, können Sie entweder **Datensätze aus Ihrem Datenexplorer** integrieren oder neue **Datensätze von Ihrem lokalen Gerät** hochladen (GeoPackage, GeoJSON, Shapefile, KML, CSV oder XLSX). Externe Ebenen können durch Einfügen der **Url der externen Quelle** (WMS, WMTS oder MVT) hinzugefügt werden. 
 
-Follow these steps to add a layer to the map: 
+Führen Sie die folgenden Schritte aus, um der Karte eine Ebene hinzuzufügen: 
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Navigate to the <b>"Layers"</b> menu via the left sidebar.</div>
+  <div class="content">Navigieren Sie über die linke Seitenleiste zum Menü <b>"Ebene"</b>.</div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Click on <code>+ Add Layer</code>. </div>
+  <div class="content">Klicke auf <code>+ Ebene hinzufügen</code>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select if you like to integrate an dataset from your <b>data explorer</b>, <b>upload</b> a new dataset or add an <b>external dataset</b>.</div>
+  <div class="content">SWählen Sie aus, ob Sie einen Datensatz aus Ihrem  <b>Datenexplorer</b> einbinden möchten,  <b>einen neuen Datensatz hochladen</b> oder einen <b>externen Datensatz</b> hinzufügen möchten.</div>
 </div>
 
 <Tabs>
@@ -42,12 +42,12 @@ Follow these steps to add a layer to the map:
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the file you want to import.</div>
+  <div class="content">Wählen Sie die Datei aus, die Sie importieren möchten.</div>
 </div>
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Click on <code>+ Add Layer</code>.</div>
+  <div class="content">Klicken Sie auf <code>+ Ebene hinzufügen</code>.</div>
 </div>
 
 
@@ -57,25 +57,25 @@ Follow these steps to add a layer to the map:
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Select the file you want to import.</div>
+  <div class="content">Wählen Sie die Datei aus, die Sie importieren möchten.</div>
 </div>
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Define the name of the dataset and add a description, if you like.</div>
+  <div class="content">Bestimmen Sie den Namen des Datensatzes und fügen Sie ggf. eine Beschreibung hinzu.</div>
 </div>
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Check the information and click on <code>Upload</code>.</div>
+  <div class="content">Kontrollieren Sie die Informationen und klicken Sie auf <code>Hochladen</code>.</div>
 </div>
 
   </TabItem>
   <TabItem value="Dataset External" label="Dataset External" className="tabItemBox">
 
-:::info coming soon
+:::info demnächst
 
-We currently implement this functionality. 🧑🏻‍💻
+Wir implementieren derzeit diese Funktion.  🧑🏻‍💻
 
 :::
 
@@ -83,45 +83,45 @@ We currently implement this functionality. 🧑🏻‍💻
   </TabItem>
 </Tabs>
 
-:::tip tip
+:::tip Tipp
 
-You can manage all your datasets on the [Datasets page](../workspace/datasets). 
+ Sie können alle Ihre Datasets auf der Seite [Datasets page](../workspace/datasets) verwalten. 
 
 :::
 
-## Organize Layers
+## Organisieren von Ebenen
 
-Once you have added a dataset to the map, it will be visible in the **Layer List**. From there you can organize the different layers.
+Sobald Sie einen Datensatz zur Karte hinzugefügt haben, wird er in der **Ebenenliste** angezeigt. Von dort aus können Sie die verschiedenen Ebenen organisieren.
 
-### Layer Order
+### Ebenen-Reihenfolge
 
-When visualizing several data sets at once, the layer order is crucial for creating nice maps. Therefore, the **layer order** can be changed interactively.
-When hovering over the left border of the layer in the layer list, an arrow symbol appears. By drag and drop, the layer can be moved. 
+Wenn Sie mehrere Datensätze auf einmal visualisieren, ist die Reihenfolge der Ebenen entscheidend für die Erstellung guter Karten. Daher kann die **Ebenenreihenfolge** interaktiv geändert werden.
+Wenn Sie mit der Maus über den linken Rand der Ebene in der Ebenenliste fahren, erscheint ein Pfeilsymbol. Durch Ziehen und Ablegen kann die Ebene verschoben werden. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/map/layers/layer_order.gif').default} alt="Layer Order" style={{ maxHeight: "600px", maxWidth: "600px", objectFit: "cover"}}/>
 </div> 
 
-### Show / Hide Layers
+### Ebenen ein-/ausblenden
 
-To temporarily **hide** a layer from the map view, click the eye icon for that layer in the layer list. Clicking the eye again will make the layer **visible** again.
+Um eine Ebene vorübergehend aus der Kartenansicht **auszublenden**, klicken Sie in der Ebenenliste auf das Augensymbol der betreffenden Ebene. Wenn Sie erneut auf das Auge klicken, wird die Ebene wieder **sichtbar**.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/map/layers/hide_layers.gif').default} alt="Hide Layer" style={{ maxHeight: "600px", maxWidth: "600px", objectFit: "cover"}}/>
 </div> 
 
-### Options
+### Optionen
 
 
-By clicking on three dots <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> you have further options to manage and organize the selected layer.
+BMit einem Klick auf die drei Punkte <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> erhalten Sie weitere Optionen zur Verwaltung und Organisation der ausgewählten Ebene.
 
 
 <img src={require('/img/map/layers/layer_options.png').default} alt="Layer Options" style={{ maxHeight: "250px", maxWidth: "250px", objectFit: "cover"}}/> 
 
 
-:::tip tip
+:::tip Tipp
 
-Want to change the design of your layers? See [Layer Style](../category/layer-styling).  
-Only want to visualize parts of your dataset? See [Filter](../map/filter). 
+Möchten Sie das Design Ihrer Ebenen ändern? Siehe [Layer Style](../category/layer-styling).  
+Möchten Sie nur Teile Ihres Datensatzes visualisieren? Siehe[Filter](../map/filter). 
 
 :::
