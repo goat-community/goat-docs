@@ -48,7 +48,7 @@
     "description": "Die generierte Beschreibung der Indexseite für die Kategorie Daten in der Seitenleiste tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Workspace": {
-    "message": "Arbeitsplatz",
+    "message": "Workspace",
     "description": "Die Bezeichnung für die Kategorie Arbeitsbereich in der Seitenleiste tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Workspace.link.generated-index.description": {
