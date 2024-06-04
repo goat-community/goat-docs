@@ -12,8 +12,8 @@ On the **Settings** page, you can view and modify your preferences and settings 
 
 ## Account Settings
 
-Under the **Account Settings**, you can adjust your personal profile and your preferences. 
-In the <code>Profile</code> tab, you can update your **first name, last name** and **email address** and upload a **profile picture**.
+Under the **Account Settings**, you can adjust your profile and your preferences. 
+In the <code>Profile</code> tab, you can update your **first name, last name**, and **email address** and upload a **profile picture**.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/settings/profile.png').default} alt="GOAT - Profile Settings" style={{ maxHeight: "auto", maxWidth: "600px", objectFit: "cover"}}/>
@@ -21,7 +21,7 @@ In the <code>Profile</code> tab, you can update your **first name, last name** a
 
 :::info
 
-If you wish to **delete your account**, you can also do this in this section. Please only click on this button if you are certain abut this step, as this cannot be undone. 
+If you wish to **delete your account**, you can also do this in this section. Please only click on this button if you are certain about this step, as this cannot be undone. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/settings/delete_account.png').default} alt="Delete Account" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
@@ -56,11 +56,11 @@ Under the **Organization Settings**, you can adjust the profile of your organiza
 </div> 
 
 
-In the <code>Profile</code> tab, you can change your **organization's name** and upload a  **logo or picture**. 
+In the <code>Profile</code> tab, you can change your **organization's name** and upload a **logo or picture**. 
 
 :::info
 
-If you scroll down to the Danger zone, you also find an option to **delete your organization**. Please only click on this button if you are certain abut this step, as this cannot be undone. 
+If you scroll down to the Danger zone, you also find an option to **delete your organization**. Please only click on this button if you are certain about this step, as this cannot be undone. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/settings/delete_organization.png').default} alt="Delete Organization" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
@@ -84,6 +84,6 @@ In the **Subscriptions** menu, you can view and change the **details of your sub
 
 :::info
 
-Please feel free to contact the **[Support](https://plan4better.de/en/contact/ "Contact support")** anytime in case you are having questions regarding your subscription. 
+Please feel free to contact the **[Support](https://plan4better.de/en/contact/ "Contact support")** anytime in case you have questions regarding your subscription. 
 
 :::

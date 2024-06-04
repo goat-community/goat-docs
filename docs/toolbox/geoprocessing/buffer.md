@@ -10,11 +10,11 @@ import TabItem from '@theme/TabItem';
 
 # Buffer
 
-The buffer creates a **zone around** given **points, lines or polygons** with a specified buffer distance.
+The buffer creates a **zone around** given **points, lines, or polygons** with a specified buffer distance.
 
 ## 1. Explanation
 
-A **buffer** is a tool used to delineate the catchment area around a specific point, line or polygon illustrating the extent of influence or reach from that point. Users can define the ``distance`` of the buffer, thereby customising the radius of the area covered.
+A **buffer** is a tool used to delineate the catchment area around a specific point, line, or polygon illustrating the extent of influence or reach from that point. Users can define the ``distance`` of the buffer, thereby customizing the radius of the area covered.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
@@ -74,7 +74,7 @@ Depending on which geometric results you are aiming for, you can first select, i
 
 </div> 
 
-In addition, if you decide for a Polygon Union, you can choose whether you like to have each buffer as a **filled polygon (no difference)** or if you like to apply a **geometric difference between each buffer step (difference)**.
+In addition, if you decide on a Polygon Union, you can choose whether you like to have each buffer as a **filled polygon (no difference)** or if you like to apply a **geometric difference between each buffer step (difference)**.
 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -90,7 +90,7 @@ In addition, if you decide for a Polygon Union, you can choose whether you like 
 <TabItem value="nounion" label="No Union" default className="tabItemBox">
 
 #### No Union
-If you calculate buffers **without union**, GOAT will generate single buffers around each input geometry. 
+If you calculate buffers **without a union**, GOAT will generate single buffers around each input geometry. 
 
 <div class="step">
   <div class="step-number">6</div>
@@ -120,7 +120,7 @@ If you calculate buffers **without union**, GOAT will generate single buffers ar
   <TabItem value="polygonunion" label="Union" default className="tabItemBox">
 
 #### Polygon Union
-The  ``Polygon Union`` creates a **geometric union** of all steps of the buffer polygons. It **combines** multiple polygons into a single polygon that encompasses all the areas of the individual polygons, i.e. the buffer with the biggest extend also includes all buffer areas of the smaller extend. This approach is useful if you want to see the total area covered by all your buffer steps combined. 
+The  ``Polygon Union`` creates a **geometric union** of all steps of the buffer polygons. It **combines** multiple polygons into a single polygon that encompasses all the areas of the individual polygons, i.e. the buffer with the biggest extent also includes all buffer areas of the smaller extent. This approach is useful if you want to see the total area covered by all your buffer steps combined. 
 
 <div style={{ display: 'flex', flexDirection: 'column' }}>
 
@@ -198,7 +198,7 @@ The  ``Polygon Difference`` operation creates a **geometric difference** of the 
 
 :::tip Tip
 
-Want to style your buffers and create nice looking maps? See [Styling](../../map/layer_style/smart_styling).
+Want to style your buffers and create nice-looking maps? See [Styling](../../map/layer_style/styling.md).
 
 :::
 

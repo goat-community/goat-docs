@@ -10,9 +10,7 @@ The **Origin-Destination** analysis is used in various fields such as transport 
 
 ## 1. Explanation
 
-The Origin-Destination (OD) tool is suited for studying **movement patterns between locations**, such as commuter flows, providing insights into the spatial interactions. This analytical process thereby visualizes the relationships between **starting points (origins)** and **end points (destinations)** by **connecting them with a straight line**. 
-
-Such analyses are helpful for understanding how and why movement occurs in different contexts, and assists in the assessment and planning of transport networks and urban infrastructure. It supports data-driven decision-making by **highlighting patterns and trends in spatial interactions**, which can help improve the efficiency and sustainability of transport systems and urban layouts.
+The Origin-Destination (OD) tool is suited for studying **movement patterns between locations**, such as commuter flows, providing insights into spatial interactions. This analytical process thereby visualizes the relationships between **starting points (origins)** and **endpoints (destinations)** by **connecting them with a straight line**. Such analyses help understand how and why movement occurs in different contexts and assist in the assessment and planning of transport networks and urban infrastructure. It supports data-driven decision-making by **highlighting patterns and trends in spatial interactions**, which can help improve the efficiency and sustainability of transport systems and urban layouts.
 
 The example below shows an *Input Table (Matrix Layer)* and the resulting *Origin-Destination Lines* based on the *Zipcode Areas (Geometry Layer)*.
 
@@ -23,9 +21,9 @@ The example below shows an *Input Table (Matrix Layer)* and the resulting *Origi
 
 ## 2. Example use cases
 
-- Visualising the commuter flows between residential areas (origins) and workplaces (destinations).
+- Visualizing the commuter flows between residential areas (origins) and workplaces (destinations).
 - Assessing the public transport passenger flows between different stations.
-- Analysing the flow of people from residential areas (origins)  to shopping locations (destinations).
+- Analyzing the flow of people from residential areas (origins)  to shopping locations (destinations).
 
 
 ## 3. How to use the tool?
@@ -48,7 +46,7 @@ The example below shows an *Input Table (Matrix Layer)* and the resulting *Origi
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select your <code>Geometries Layer</code> (this should be a feature layer contain the geometries of the origins and destinations and an attribute that can be used as an identifier to match the OD-connections with the geometries) and <code>Unique Id Field</code>.</div>
+  <div class="content">Select your <code>Geometries Layer</code> (this should be a feature layer containing the geometries of the origins and destinations and an attribute that can be used as an identifier to match the OD-connections with the geometries) and <code>Unique Id Field</code>.</div>
 </div>
 
 ### Matrix
@@ -62,12 +60,12 @@ The example below shows an *Input Table (Matrix Layer)* and the resulting *Origi
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Select your <code>Destination Field</code> (the field that contains the destinations in the origin destination matrix).</div>
+  <div class="content">Select your <code>Destination Field</code> (the field that contains the destinations in the origin-destination matrix).</div>
 </div>
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Select your <code>Weight Field</code> (the field that contains the weights in the origin destination matrix).</div>
+  <div class="content">Select your <code>Weight Field</code> (the field that contains the weights in the origin-destination matrix).</div>
 </div>
 
 <div class="step">
@@ -93,5 +91,5 @@ Depending on the complexity of the OD-matrix, the calculation might take some mi
 <img src={require('/img/toolbox/geoanalysis/origin_destination/result.png').default} alt="Origin Destination Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 
 :::tip Tip
-Want to style your result layer and create nice looking maps? See [Styling](../../map/layer_style/styling).
+Want to style your result layer and create nice-looking maps? See [Styling](../../map/layer_style/styling).
 :::

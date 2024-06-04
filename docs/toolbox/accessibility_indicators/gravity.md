@@ -305,7 +305,7 @@ Examples of this functionality will be online soon. 🧑🏻‍💻
 :::
 
 ### Classification
-In order to classify the accessibility levels that were computed for each grid cell (for color-coded visualization), a classification based on quantiles is used.
+In order to classify the accessibility levels that were computed for each grid cell (for color-coded visualization), a classification based on quantiles is used by default. However, various other classification methods may be used instead. Read more in the **[Data Classification Methods](../../map/layer_style/attribute_based_styling#data-classification-methods)** section of the *Attribute-based Styling* page.
 
 ### Visualization 
 

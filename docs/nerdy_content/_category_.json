@@ -4,5 +4,6 @@
   "link": {
     "type": "generated-index",
     "description": "Here you can find technical insights and details about the software architecture of GOAT."
-  }
+  },
+  "className": "hidden"
 }

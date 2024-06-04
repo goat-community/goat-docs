@@ -1,42 +1,54 @@
 {
   "link.title.Docs": {
     "message": "Dokumentation",
-    "description": "The title of the footer links column with title=Docs in the footer"
+    "description": "Der Titel der Spalte für die Fußzeilenlinks mit title=Docs in der Fußzeile"
   },
   "link.title.Community": {
-    "message": "Networks",
-    "description": "The title of the footer links column with title=Community in the footer"
+    "message": "Netzwerke",
+    "description": "Der Titel der Fußzeile Links Spalte mit title=Community in der Fußzeile"
   },
   "link.title.More": {
     "message": "Mehr",
-    "description": "The title of the footer links column with title=More in the footer"
+    "description": "Der Titel der Fußzeilen-Links-Spalte mit title=More in der Fußzeile"
   },
   "link.item.label.Tutorial": {
     "message": "Tutorial",
-    "description": "The label of footer link with label=Tutorial linking to /docs/intro"
+    "description": "Die Bezeichnung des Fußzeilen-Links mit label=Tutorial, der auf /docs/intro verweist"
   },
   "link.item.label.Stack Overflow": {
     "message": "Stack Overflow",
-    "description": "The label of footer link with label=Stack Overflow linking to https://stackoverflow.com/questions/tagged/docusaurus"
+    "description": "Die Beschriftung des Fußzeilen-Links mit label=Stack Overflow verweist auf https://stackoverflow.com/questions/tagged/docusaurus"
   },
   "link.item.label.Discord": {
     "message": "Discord",
-    "description": "The label of footer link with label=Discord linking to https://discordapp.com/invite/docusaurus"
+    "description": "Die Bezeichnung des Fußzeilen-Links mit label=Discord, der auf https://discordapp.com/invite/docusaurus verweist."
   },
   "link.item.label.Twitter": {
     "message": "Twitter",
-    "description": "The label of footer link with label=Twitter linking to https://twitter.com/docusaurus"
+    "description": "Die Beschriftung des Fußzeilen-Links mit label=Twitter, der auf https://twitter.com/docusaurus verlinkt."
   },
   "link.item.label.Blog": {
     "message": "Blog",
-    "description": "The label of footer link with label=Blog linking to /blog"
+    "description": "Die Beschriftung des Fußzeilen-Links mit label=Blog verweist auf https://plan4better.de/en/blog/"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/facebook/docusaurus"
+    "description": "Die Beschriftung des Fußzeilen-Links mit label=Github verweist auf https://github.com/goat-community"
   },
   "copyright": {
-    "message": "Copyright © 2023 Plan4Better, Inc. Built with Docusaurus.",
-    "description": "The footer copyright"
+    "message": "Copyright © 2024 Plan4Better, Inc. Built with Docusaurus.",
+    "description": "Das Copyright in der Fußzeile"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "Die Beschriftung des Fußzeilen-Links mit label=LinkedIn verweist aufhttps://www.linkedin.com/company/plan4better/"
+  },
+  "link.item.label.Plan4Better": {
+    "message": "Plan4Better",
+    "description": "Die Beschriftung des Fußzeilen-Links mit label=Plan4Better verweist auf https://plan4better.de/en/"
+  },
+  "link.item.label.References": {
+    "message": "Referenzen",
+    "description": "Die Beschriftung des Fußzeilen-Links mit label=References verweist aufhttps://plan4better.de/en/references/"
   }
 }

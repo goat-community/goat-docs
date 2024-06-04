@@ -7,11 +7,11 @@ import TabItem from '@theme/TabItem';
 
 # Aggregate Points
 
-The **Aggregate Points** tool performs statistical analysis of points, e.g. **count, sum, min or max**, and aggregates the information on polygons.
+The **Aggregate Points** tool performs statistical analysis of points, e.g. **count, sum, min, or max**, and aggregates the information on polygons.
 
 ## 1. Explanation
 
-The Aggregate Points tool can be used to **analyse the characteristics of points within a given area**. It aggregates the information of the points and therewith allows to calculate the point **count**, the **sum** of point attributes or derive e.g. the **maximum** value of a certain point attribute within a polygon. As polygon layer, either a feature layer (e.g. city districts) or a hexagonal grid can be used. 
+The Aggregate Points tool can be used to **analyze the characteristics of points within a given area**. It aggregates the information of the points and therewith allows calculation of the point **count**, the **sum** of point attributes, or derive e.g. the **maximum** value of a certain point attribute within a polygon. As a polygon layer, either a feature layer (e.g. city districts) or a hexagonal grid can be used. 
 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -25,7 +25,7 @@ The Aggregate Points tool can be used to **analyse the characteristics of points
 
 - Aggregating the population numbers on a hexagon grid.
 - Deriving the sum of traffic accidents within a city district.
-- Visualizing the average number of carsharing vehicles available per station on a district-level. 
+- Visualizing the average number of carsharing vehicles available per station on a district level. 
 
 ## 3. How to use the tool?
 
@@ -77,7 +77,7 @@ The Aggregate Points tool can be used to **analyse the characteristics of points
 
 :::tip NOTE
 
-To learn more about H3 grid, you can visit the [Glossary](../../further_reading/glossary#H3-grid).
+To learn more about the H3 grid, you can visit the [Glossary](../../further_reading/glossary#H3-grid).
 
 :::
 
@@ -118,12 +118,12 @@ Depending on the size of the datasets, the calculation might take some minutes. 
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">As soon as the calculation process is finished, the resulting layer <b>"Aggregation Point"</b> will be added to the map. This layer consist of the information of the source layer and an <b>additional column</b> showing the results from the <b>statistical operation</b>. You can see the table by clicking on the polygon on the map.</div>
+  <div class="content">As soon as the calculation process is finished, the resulting layer <b>"Aggregation Point"</b> will be added to the map. This layer consists of the information of the source layer and an <b>additional column</b> showing the results from the <b>statistical operation</b>. You can see the table by clicking on the polygon on the map.</div>
 </div>
 
 <img src={require('/img/toolbox/geoanalysis/aggregate_points/aggregate_points_result.png').default} alt="Point Aggregation Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
 
 
 :::tip Tip
-Want to style your result layer and create nice looking maps? See [Styling](../../map/layer_style/styling).
+Want to style your result layer and create nice-looking maps? See [Styling](../../map/layer_style/styling).
 :::

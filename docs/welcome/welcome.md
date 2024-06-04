@@ -5,9 +5,7 @@ slug: /
 
 # Welcome 👋
 
-Welcome to the documentation of our WebGIS platform **GOAT**.
-
-GOAT is a **WebGIS platform** with planning intelligence for **urban and transport planning**. Equipped with rich [data](../data/data_basis) and functionalities, it provides planners and GIS-analysts with fact-based analysis. Besides the calculation of benchmarks and analysis of the current situation, also **scenarios** can be created and assessed. The platform offers a modern user interface and an intuitive user flow to simplify the planning process. GOAT's main goal is to enable **smarter, more collaborative and efficient planning** through its innovative features and design. 
+GOAT is a **WebGIS platform** with planning intelligence for **urban and transport planning**. Equipped with rich [data](../data/data_basis.md) and functionalities, it provides planners and GIS analysts with fact-based analysis. Along with computing benchmarks and analyzing existing situations, potential **scenarios** can be created and assessed. The platform offers a modern user interface and an intuitive user flow to simplify the planning process. GOAT's main goal is to enable **smarter**, **more collaborative**, and **efficient planning** through its innovative features and design.
 
 :::tip Tip
 

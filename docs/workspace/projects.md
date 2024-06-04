@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Projects
 
-The **Projects** page allows users to **create, manage and share** projects. The page provides users with an organised view of their projects, categorised into personal projects, team projects and projects shared with the whole organisation. In addition, projects can be organised into **folders** and can be **filtered** and **sorted** based on alphabetical order, date of creation or date of last update. It is also possible to **delete projects** and to **edit their metadata**. 
+The **Projects** page allows users to **create, manage, and share** projects. The page provides users with an organized view of their projects, categorized into personal projects, team projects, and projects shared with the whole organization. In addition, projects can be organized into **folders** and can be **filtered** and **sorted** based on alphabetical order, date of creation, or date of last update. It is also possible to **delete projects** and **edit their metadata**. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/projects/projects_general.png').default} alt="Projects Page in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
