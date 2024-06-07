@@ -4,13 +4,13 @@ sidebar_position: 4
 
 # Catalog
 
-The **Data Catalog** is a comprehensive listing of all [geospatial datasets](../further_reading/glossary#geospatial-data) available for exploration and analysis. A wide range of datasets are provided by Plan4Better, our partners, and [open source](../further_reading/glossary#open-source) libraries, ensuring a **reliable and accurate** database for your GIS projects.
+The **Data Catalog** is a comprehensive listing of all [geospatial datasets](../further_reading/glossary#geospatial-data) available for exploration and analysis. A wide range of datasets is provided by Plan4Better based on official open data providers and other sources, ensuring that **reliable** data is immediately available for your projects for analysis and visualization.
 
 <div class="content"><img src={require('/img/workspace/catalog/home-catalog.png').default} alt="Data Catalog" style={{ maxHeight: "700px", maxWidth: "800px"}}/></div>
 
 ## Explore the catalog
 
-Accessed from the [Workspace](../category/workspace) or via the [`+ Add layer`](../map/layers#add-layers) button in your GOAT project, you can search our collection of datasets by *keyword, applying spatial and non-spatial filters* for efficient discovery. You can also interactively preview datasets within our interface to assess content and quality, enabling visual exploration. Be assured of data quality with our collection of authoritative sources.
+Accessed from the [Workspace](../category/workspace) or via the [`+ Add layer`](../map/layers#add-layers) button in your GOAT project, you can search our collection of datasets by *keyword, applying spatial and non-spatial filters* for efficient discovery. You can also interactively preview datasets within our interface to assess content and quality, enabling visual exploration.
 
 Our catalog features an extensive collection of datasets spanning different thematic areas, under different categories including:
 
@@ -57,8 +57,9 @@ Clicking on a dataset within the Catalog page will take you to the **metadata** 
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content"> Once added, apply a <code><img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "16px", maxWidth: "16px"}}/> Filter</code> to the new layer. This will filter the data by a logical or spatial expression, retaining only the data necessary for your analysis and making it easier to work with.</div>
+  <div class="content">After adding, you can apply a <code><img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "16px", maxWidth: "16px"}}/> filter</code> to the new layer to tailor the dataset to your needs. This allows extensive layers to be adjusted for specific analyses or geographies.</div>
 </div>
+
 
 
 :::tip HINT

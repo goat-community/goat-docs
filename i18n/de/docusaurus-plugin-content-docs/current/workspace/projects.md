@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Projekte
 
-Die **Projekte**-Seite ermöglicht es Benutzern, Projekte zu **erstellen, zu verwalten und zu teilen**. Die Seite bietet den Nutzern eine übersichtliche Darstellung ihrer Projekte, kategorisiert in persönliche Projekte, Teamprojekte und Projekte, die mit der gesamten Organisation geteilt werden. Darüber hinaus können Projekte in **Ordnern** organisiert und **gefiltert** und **sortiert** werden, basierend auf alphabetischer Reihenfolge, Erstellungsdatum oder Datum der letzten Aktualisierung. Es ist auch möglich, **Projekte zu löschen** und deren **Metadaten zu bearbeiten**.
+Die **Projekte**-Seite ermöglicht es Benutzern, Projekte zu **erstellen, zu verwalten und zu teilen**. Die Seite bietet den Nutzern eine übersichtliche Darstellung ihrer Projekte, kategorisiert in persönliche Projekte, Teamprojekte und Projekte, die mit der gesamten Organisation geteilt werden. Darüber hinaus können Projekte in **Ordnern** organisiert und **gefiltert**. Auch können Projekte **sortiert** werden, basierend auf alphabetischer Reihenfolge, Erstellungsdatum oder Datum der letzten Aktualisierung. Es ist auch möglich, **Projekte zu löschen** und deren **Metadaten zu bearbeiten**.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/projects/projects_general.png').default} alt="Projects Page in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>

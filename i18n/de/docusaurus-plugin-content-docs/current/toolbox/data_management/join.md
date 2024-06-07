@@ -7,11 +7,11 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 # Join & Group
 
-Füge Felder von einer Ebene zu einer anderen hinzu und gruppiere sie, indem du ein übereinstimmendes Feld in beiden Ebenen verwendest.
+Füge Felder von einer Layer zu einer anderen hinzu und gruppiere sie, indem du ein übereinstimmendes Feld in beiden Ebenen verwendest.
 
 ## 1. Erklärung
 
-Dieses Werkzeug erleichtert die Kombination von zwei Datensätzen. Durch die Definition von Beziehungen werden die Daten aus beiden Ebenen abgeglichen. Das resultierende Ergebnis ist eine neue Ebene, die die Attribute der *Zielebene* und eine neue Spalte enthält, die ein ausgewähltes Attribut der *Joinebene* zusammenfasst.
+Dieses Werkzeug erleichtert die Kombination von zwei Datensätzen. Durch die Definition von Beziehungen werden die Daten aus beiden Ebenen abgeglichen. Das resultierende Ergebnis ist eine neue Layer, die die Attribute der *Zielebene* und eine neue Spalte enthält, die ein ausgewähltes Attribut der *Joinebene* zusammenfasst.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
@@ -23,9 +23,9 @@ GOAT verwendet die **"Inner Join"**-Operation, um einen Join zu berechnen, der Z
 
 ## 2. Anwendungsbeispiele
 
-- Zusammenfassung von Bevölkerungszahlen aus einer Tabelle in eine Feature-Ebene von Postleitzahlengebieten (verwandte Spalte: Postleitzahlen).
+- Zusammenfassung von Bevölkerungszahlen aus einer Tabelle in eine Feature-Layer von Postleitzahlengebieten (verwandte Spalte: Postleitzahlen).
 - Zusammenführen und Aggregieren von Daten aus einer Haushaltsbefragung mit den Geometrien des Zensusgebiets (verwandte Spalte: Zensusgebiet).
-- Join der Anzahl von Pendlern aus einer Tabelle in eine Feature-Ebene mit den Stadtgrenzen (verwandte Spalte: Stadtname).
+- Join der Anzahl von Pendlern aus einer Tabelle in eine Feature-Layer mit den Stadtgrenzen (verwandte Spalte: Stadtname).
 
 ## 3. Wie benutzt man das Werkzeug?
 
@@ -103,7 +103,7 @@ Du kannst zwischen mehreren statistischen Operationen wählen. Einige Methoden s
 
 <div class="step">
   <div class="step-number">10</div>
-  <div class="content">Der resultierende Layer<b>"Join"</b> wird dem Projekt sowie den <a href="../../workspace/datasets">Datensätzen</a> in deinem Arbeitsbereich hinzugefügt. Diese Ebene besteht aus den Informationen desZiellayers und einer <b>zusätzlichen Spalte</b>, die die Ergebnisse der <b>statistischen Operation</b> zeigt. Du kannst die Attribute sehen, indem du auf eines der Features in der Karte klickst.</div>
+  <div class="content">Der resultierende Layer<b>"Join"</b> wird dem Projekt sowie den <a href="../../workspace/datasets">Datensätzen</a> in deinem Arbeitsbereich hinzugefügt. Diese Layer besteht aus den Informationen desZiellayers und einer <b>zusätzlichen Spalte</b>, die die Ergebnisse der <b>statistischen Operation</b> zeigt. Du kannst die Attribute sehen, indem du auf eines der Features in der Karte klickst.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

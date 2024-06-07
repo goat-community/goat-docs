@@ -26,7 +26,7 @@ Die folgende Liste erklärt die Navigationsleiste im Arbeitsbereich.
 
 
 ### Aktuelle Projekte
-Hier können Sie Ihre neuesten Projekte und deren letzte Aktualisierungen sehen. Sie können ein neues Projekt erstellen, indem Sie auf das Plus-Symbol klicken, und die **[Projekte](../workspace/projects)**-Seite aufrufen, indem Sie auf die Schaltfläche `Alle anzeigen` klicken.
+Hier können Sie Ihre neuesten Projekte und deren letzte Aktualisierungen sehen. Sie können ein neues Projekt erstellen, indem Sie auf das Plus-Symbol klicken. Wenn Sie die **[Projekte](../workspace/projects)**-Seite aufrufen möchten, klicken Sie auf die Schaltfläche `Alle anzeigen`.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/workspace/home/recent_projects.png').default} alt="Recent Projects" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
@@ -34,7 +34,7 @@ Hier können Sie Ihre neuesten Projekte und deren letzte Aktualisierungen sehen.
 
 
 ### Aktuelle Datensätze
-Hier können Sie Ihre neuesten Datensätze und deren letzte Aktualisierungen sehen. Sie können einen neuen Datensatz hinzufügen, indem Sie auf das Plus-Symbol klicken, und die **[Datensätze](../workspace/datasets)**-Seite aufrufen, indem Sie auf die Schaltfläche `Alle anzeigen` klicken.
+Hier können Sie Ihre neuesten Datensätze und deren letzte Aktualisierungen sehen. Sie können einen neuen Datensatz hinzufügen, indem Sie auf das Plus-Symbol klicken. Wenn Sie die **[Datensätze](../workspace/datasets)**-Seite aufrufen möchten dann klicken Sie auf die Schaltfläche `Alle anzeigen`.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/workspace/home/recent_datasets.png').default} alt="Recent Datasets" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
@@ -42,7 +42,7 @@ Hier können Sie Ihre neuesten Datensätze und deren letzte Aktualisierungen seh
 
 
 ### Erkunden
-Hier können Sie die neuesten Blogbeiträge und weitere interessante Materialien sehen. Sie können auf die Schaltfläche `Blog besuchen` klicken, um alle [Blogbeiträge](https://plan4better.de/en/blog/) zu sehen.
+Hier können Sie die neuesten Blogbeiträge und weitere interessante Materialien finden. Sie können auf die Schaltfläche `Blog besuchen` klicken, um alle [Blogbeiträge](https://plan4better.de/en/blog/) zu sehen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/workspace/home/explore.png').default} alt="Explore" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
@@ -56,7 +56,7 @@ Durch Klicken auf das Benutzer-Symbol können Sie Ihren Namen, Ihre Organisation
 
 
 ### Statusleiste
-Wenn Sie auf die Statusleiste in der oberen rechten Ecke der Startseite klicken, sehen Sie den Status Ihrer Aufgaben in GOAT. *Aufgaben* sind Vorgänge wie Daten-Uploads oder Geoanalysen.
+Wenn Sie auf die Statusleiste in der oberen rechten Ecke der Startseite klicken, sehen Sie den Status Ihrer Jobs in GOAT. *Jobs* sind Vorgänge wie Daten-Uploads oder Berechnungen unter Nutzung der Werkzeuge.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/workspace/home/status_bar.png').default} alt="Status Bar" style={{ maxHeight: "400px", maxWidth: "400px", objectFit: "cover"}}/>

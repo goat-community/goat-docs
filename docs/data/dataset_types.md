@@ -17,16 +17,14 @@ You can find out which data types are supported by GOAT for internal data sets u
 ### 1. Features
 Feature datasets serve as a dynamic repository of **spatial features**, such as points, lines, or polygons. Users can upload and utilize data from **Shapefiles**, **Geopackages**, **GeoJSON**, and **KML** files. Feature datasets can be visualized on the map, [styled](../category/layer-styling), and used for analyses with any tools from the [toolbox](../category/toolbox). Furthermore, feature datasets can serve as a data basis for the [scenario creation](../category/scenarios).
 
-Within the GOAT framework, there are three different types of feature datasets, to address different aspects of geospatial functionality:
+Within the GOAT framework, there are two different types of feature datasets, to address different aspects of geospatial functionality:
 
 - **Feature Dataset Standard:** This is the primary feature type that is automatically selected when a user uploads a file. It supports a range of formats including GeoJSON, GPKG, KML, and ZIP files. This dataset serves as the foundation for basic geospatial operations within GOAT.
 
-- **Feature Dataset Tool:** This dataset includes all datasets that have been processed or calculated using the tools available in GOAT. 
-
-- **Feature Dataset Scenario:** Dedicated to scenario-based analysis, this dataset contains scenarios created by users.
+- **Feature Dataset Tool:** This dataset includes all datasets that have been produced using the tools available in GOAT. 
 
 ### 2. Tables
-Tables are **non-spatial datasets**, which differ from the geospatial datasets due to their lack of geographic reference points. These datasets can be used for the overall analysis and data management process. Users can import table datasets in widely used formats such as **CSV** (Comma-Separated Values) and **XLSX** (Microsoft Excel Open XML Spreadsheet). 
+Tables are **non-spatial datasets**, which differ from the geospatial datasets due to their lack of geographic reference points. These datasets can be used for selected analysis and data management processes. Users can import table datasets in widely used formats such as **CSV** (Comma-Separated Values) and **XLSX** (Microsoft Excel Open XML Spreadsheet). 
 
 ## External Datasets
 

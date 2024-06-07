@@ -45,7 +45,7 @@ Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie
 
 ## 2. Beispielhafte Anwendungsfälle
 
- - Welche Stadtteile oder Gebiete haben nur begrenzten Zugang zu öffentlichen Einrichtungen wie Parks, Freizeiteinrichtungen oder Kultureinrichtungen und erfordern möglicherweise gezielte Maßnahmen zur Verbesserung der Zugänglichkeit?
+ - Welche Stadtteile oder Gebiete haben nur begrenzten Zugang zu öffentlichen Einrichtungen wie Parks, Freizeiteinrichtungen oder Kultureinrichtungen und erfordern möglicherweise gezielte Maßnahmen zur Verbesserung der Erreichbarkeit?
 
  - Gibt es Gebiete mit hohem Potenzial für eine verkehrsorientierte Entwicklung oder Möglichkeiten zur Verbesserung der Infrastruktur für den nicht motorisierten Verkehr, z. B. Radwege oder fußgängerfreundliche Straßen?
 
@@ -98,7 +98,7 @@ Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/zu Fuß
 
 #### Fahrrad
 
-Berücksichtigt alle mit dem Fahrrad befahrbaren Wege. Dieser Routing-Modus berücksichtigt bei der Berechnung der Zugänglichkeit die Oberfläche, die Glätte und die Steigung der Straßen. Für Heatmaps wird eine Fahrradgeschwindigkeit von 15 km/h angenommen.
+Berücksichtigt alle mit dem Fahrrad befahrbaren Wege. Dieser Routing-Modus berücksichtigt bei der Berechnung der Erreichbarkeit die Oberfläche, die Glätte und die Steigung der Straßen. Für Heatmaps wird eine Fahrradgeschwindigkeit von 15 km/h angenommen.
 
 :::tip Tipp
 
@@ -151,7 +151,7 @@ Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Auto](.
 
 #### Gaussfunktion
 
-Diese Funktion berechnet die Zugänglichkeiten auf der Grundlage einer Gaußschen Kurve, die durch die von Ihnen definierten Parameter `sensitivity` und `destination potential` beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
+Diese Funktion berechnet die Erreichbarkeiten auf der Grundlage einer Gaußschen Kurve, die durch die von Ihnen definierten Parameter `sensitivity` und `destination potential` beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
 :::tip Pro Tipp
 
@@ -175,7 +175,7 @@ Diese Funktion stellt eine direkte Korrelation zwischen Reisezeit und Erreichbar
 
 #### Exponentielle Funktion
 
-Diese Funktion berechnet die Zugänglichkeiten auf der Grundlage einer Exponentialkurve, die von der von Ihnen definierten `sensitivity` und dem `destination potential`  beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
+Diese Funktion berechnet die Erreichbarkeiten auf der Grundlage einer Exponentialkurve, die von der von Ihnen definierten `sensitivity` und dem `destination potential`  beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
 </TabItem>
 
@@ -183,7 +183,7 @@ Diese Funktion berechnet die Zugänglichkeiten auf der Grundlage einer Exponenti
 
 #### Powerfunktion
 
-Diese Funktion berechnet die Zugänglichkeiten auf der Grundlage einer Leistungskurve, die durch die von Ihnen definierte `sensitivity` und das `destination potential` beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
+Diese Funktion berechnet die Erreichbarkeiten auf der Grundlage einer Leistungskurve, die durch die von Ihnen definierte `sensitivity` und das `destination potential` beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
 </TabItem>
 
@@ -213,7 +213,7 @@ Benötigen Sie Hilfe bei der Auswahl einer geeigneten Reisezeit für verschieden
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Falls erforderlich, wählen Sie ein <code>Zielpotenzialfeld</code> aus. Dies muss ein numerisches Feld aus Ihrem <i>Gelegenheitslayer</i> sein, das als Koeffizient von der Zugänglichkeitsfunktion verwendet wird.</div>
+  <div class="content">Falls erforderlich, wählen Sie ein <code>Zielpotenzialfeld</code> aus. Dies muss ein numerisches Feld aus Ihrem <i>Gelegenheitslayer</i> sein, das als Koeffizient von der Erreichbarkeitsfunktion verwendet wird.</div>
 </div>
 
 :::tip Pro-Tipp
@@ -224,7 +224,7 @@ Das *destination potential* ist eine nützliche Methode, um bestimmte Möglichke
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Geben Sie einen Wert für die <code>Sensitivität</code> an. Dieser muss numerisch sein und wird von der Heatmap-Funktion verwendet, um zu bestimmen, wie sich die Zugänglichkeit mit zunehmender Reisezeit ändert.</div>
+  <div class="content">Geben Sie einen Wert für die <code>Sensitivität</code> an. Dieser muss numerisch sein und wird von der Heatmap-Funktion verwendet, um zu bestimmen, wie sich die Erreichbarkeit mit zunehmender Reisezeit ändert.</div>
 </div>
 
 <div class="step">
@@ -244,7 +244,7 @@ Je nach Ihrer Konfiguration kann die Berechnung einige Minuten dauern. Die [Stat
   <div class="step-number">10</div>
   <div class="content">Sobald die Berechnung abgeschlossen ist, wird ein Ergebnislayer zur Karte hinzugefügt. Dieser Layer namens <i>Heatmap Gravity</i> enthält Ihre farblich gekennzeichnete Heatmap.
   <p></p>
-  Durch Klicken auf eine der hexagonalen Zellen der Heatmap wird der berechnete Zugänglichkeitswert für diese Zelle angezeigt.</div>
+  Durch Klicken auf eine der hexagonalen Zellen der Heatmap wird der berechnete Erreichbarkeitswert für diese Zelle angezeigt.</div>
 </div>
 
 
@@ -264,7 +264,7 @@ Der Erreichbarkeitswert jeder sechseckigen Zelle innerhalb einer Heatmap wird mi
 
 *Accessibility Formula:*
 
-![Accessibility Formula](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/place-based_accessibility_measures.webp "Zugänglichkeitsformel")
+![Accessibility Formula](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/place-based_accessibility_measures.webp "Erreichbarkeitsformel")
 
 wobei die Erreichbarkeit **A** des Ausgangspunkts **i** die Summe aller am Zielort **j** verfügbaren Möglichkeiten **O** ist, gewichtet mit einer Funktion der Reisezeit **tij** zwischen **i** und **j**. Die Funktion **f(tij)** ist die Impedanzfunktion, die `gaussian`, `linear`, `exponential`, oder `power`. sein kann. Der Parameter **β** für die *sensitivity* und das *destination potential* werden verwendet, um den Erreichbarkeitswert einzustellen.
 
@@ -372,7 +372,7 @@ Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
 
 :::
 
-Wenn Sie die beiden Ergebnisse vergleichen, bekommen Sie einen Eindruck davon, wie sich die *sensitivity* auf die Zugänglichkeit auswirkt.
+Wenn Sie die beiden Ergebnisse vergleichen, bekommen Sie einen Eindruck davon, wie sich die *sensitivity* auf die Erreichbarkeit auswirkt.
 
 ## 5. Referenzen
 

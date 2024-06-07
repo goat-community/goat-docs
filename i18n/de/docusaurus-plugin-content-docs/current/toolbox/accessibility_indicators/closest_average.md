@@ -21,11 +21,11 @@ Ein `Opportunity-Layer` enthält [geografische Punkt](../../../data/data_types "
 
 :::
 
-Mit der konfigurierbaren Eigenschaft *Anzahl der Ziele* können Sie die Berechnung auf die *n* nächstgelegenen Gelegenheiten beschränken. Dies ergibt eine leicht verständliche Visualisierung, die verwendet werden kann, um Unterschiede in den durchschnittlichen Reisezeiten sogar auf Stadt- oder regionaler Ebene zu identifizieren. Der berechnete Wert für jede Zelle in der Heatmap stellt die durchschnittliche Reisezeit zu den nächstgelegenen *n* Zielen dar.
+Mit der konfigurierbaren Eigenschaft *Anzahl der Ziele* können Sie die Berechnung auf die *n* nächstgelegenen Gelegenheiten beschränken. Dies ergibt eine leicht verständliche Visualisierung, die verwendet werden kann, um Unterschiede in den durchschnittlichen Reisezeiten sogar auf Stadt- oder regionaler Layer zu identifizieren. Der berechnete Wert für jede Zelle in der Heatmap stellt die durchschnittliche Reisezeit zu den nächstgelegenen *n* Zielen dar.
 
 :::tip Pro Tipp
 
-Kurz beschrieben, sind Zugänglichkeits-Heatmaps eine Visualisierung, die den *Zugang* von verschiedenen unbestimmten Ursprungsorten zu einem oder mehreren festgelegten Zielen darstellt. Dies steht im Gegensatz zu Einzugsgebieten, die den *Abfluss* von einem oder mehreren festgelegten Ursprungsorten zu verschiedenen unbestimmten Zielen darstellen.
+Kurz beschrieben, sind Erreichbarkeits-Heatmaps eine Visualisierung, die den *Zugang* von verschiedenen unbestimmten Ursprungsorten zu einem oder mehreren festgelegten Zielen darstellt. Dies steht im Gegensatz zu Einzugsgebieten, die den *Abfluss* von einem oder mehreren festgelegten Ursprungsorten zu verschiedenen unbestimmten Zielen darstellen.
 
 :::
 
@@ -93,7 +93,7 @@ Für weitere Einblicke in den Routing-Algorithmus, besuchen Sie [Routing/Gehen](
 
 #### Fahrrad
 
-Berücksichtigt alle Wege, die mit dem Fahrrad zugänglich sind. Dieser Routing-Modus berücksichtigt die Oberfläche, Glätte und Steigung der Straßen bei der Berechnung der Zugänglichkeit. Für Heatmaps wird eine Fahrradgeschwindigkeit von 15 km/h angenommen.
+Berücksichtigt alle Wege, die mit dem Fahrrad zugänglich sind. Dieser Routing-Modus berücksichtigt die Oberfläche, Glätte und Steigung der Straßen bei der Berechnung der Erreichbarkeit. Für Heatmaps wird eine Fahrradgeschwindigkeit von 15 km/h angenommen.
 
 :::tip Tipp
 
@@ -107,7 +107,7 @@ Für weitere Einblicke in den Routing-Algorithmus, besuchen Sie [Routing/Fahrrad
 
 #### Pedelec
 
-Berücksichtigt alle Wege, die mit dem Pedelec zugänglich sind. Dieser Routing-Modus berücksichtigt die Oberfläche und Glätte der Straßen bei der Berechnung der Zugänglichkeit. Für Heatmaps wird eine Pedelec-Geschwindigkeit von 23 km/h angenommen.
+Berücksichtigt alle Wege, die mit dem Pedelec zugänglich sind. Dieser Routing-Modus berücksichtigt die Oberfläche und Glätte der Straßen bei der Berechnung der Erreichbarkeit. Für Heatmaps wird eine Pedelec-Geschwindigkeit von 23 km/h angenommen.
 
 :::tip Tipp
 
@@ -122,7 +122,7 @@ Für weitere Einblicke in den Routing-Algorithmus, besuchen Sie [Routing/Fahrrad
 
 #### Auto
 
-Berücksichtigt alle Wege, die mit dem Auto zugänglich sind. Dieser Routing-Modus berücksichtigt Geschwindigkeitsbegrenzungen und Einbahnstraßenbeschränkungen bei der Berechnung der Zugänglichkeit.
+Berücksichtigt alle Wege, die mit dem Auto zugänglich sind. Dieser Routing-Modus berücksichtigt Geschwindigkeitsbegrenzungen und Einbahnstraßenbeschränkungen bei der Berechnung der Erreichbarkeit.
 
 :::tip Tipp
 
@@ -136,7 +136,7 @@ Für weitere Einblicke in den Routing-Algorithmus, besuchen Sie [Routing/Auto](.
 
 ### Gelegenheiten
 
-Gelegenheiten sind im Wesentlichen punktbasierte Daten (wie [POI](../../further_reading/glossary#point-of-interest-poi "Was ist ein POI?")), für die Sie eine Heatmap berechnen möchten. Dies sind die "Ziele" (wie Transitstationen, Schulen, andere Annehmlichkeiten oder Ihre eigenen benutzerdefinierten punktbasierten Daten), während umliegende Gebiete "Quellen" sind, für die ein Zugänglichkeitswert berechnet und visualisiert wird.
+Gelegenheiten sind im Wesentlichen punktbasierte Daten (wie [POI](../../further_reading/glossary#point-of-interest-poi "Was ist ein POI?")), für die Sie eine Heatmap berechnen möchten. Dies sind die "Ziele" (wie Transitstationen, Schulen, andere Annehmlichkeiten oder Ihre eigenen benutzerdefinierten punktbasierten Daten), während umliegende Gebiete "Quellen" sind, für die ein Erreichbarkeitswert berechnet und visualisiert wird.
 
 Zusätzlich können Sie über die Schaltfläche `+ Gelegenheit hinzufügen` am unteren Rand des Drawers weitere Opportunities erstellen. Alle Opportunity-Layer werden kombiniert, um eine einheitliche Heatmap zu erzeugen.
 
@@ -163,7 +163,7 @@ Brauchen Sie Hilfe bei der Wahl eines geeigneten Reisezeitlimits für verschiede
 
 :::tip Tipp
 
-Da der Parameter *Anzahl der Ziele* einmal pro Opportunity-Layer angegeben wird, haben Sie die Flexibilität, für jeden Opportunity-Layer unterschiedliche Werte anzugeben. Dies kann nützlich sein, wenn verschiedene Arten von Annehmlichkeiten unterschiedliche Zugänglichkeitsstandards haben.
+Da der Parameter *Anzahl der Ziele* einmal pro Opportunity-Layer angegeben wird, haben Sie die Flexibilität, für jeden Opportunity-Layer unterschiedliche Werte anzugeben. Dies kann nützlich sein, wenn verschiedene Arten von Annehmlichkeiten unterschiedliche Erreichbarkeitsstandards haben.
 
 :::
 
