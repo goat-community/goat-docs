@@ -6,16 +6,16 @@ sidebar_position: 21
 
 GOAT unterstützt **attributbasiertes Styling**, um die Visualisierung von Daten auf Karten zu verbessern. Dieser Ansatz erlaubt es der visuellen Darstellung, Variationen und Muster in den Daten widerzuspiegeln, wodurch es einfacher wird, komplexe räumliche Informationen zu verstehen.
 
-Im Menü <code>Ebenendesign <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "15px", maxWidth: "21px", objectFit: "cover"}}/></code> sind Styling-Optionen für die ausgewählte Ebene zu finden. Jeder Aspekt der Visualisierung einer Ebene (<i>Füllfarbe</i>, <i>Strichfarbe</i>, <i>Benutzerdefinierte Markierung</i> und <i>Beschriftungen</i>) kann individuell entsprechend einem Feld oder Attribut in den Daten der Ebene gestaltet werden. Um das attributbasierte Styling für eine dieser Ebenen zu aktivieren, stellen Sie sicher, dass das Attribut eingeschaltet (ON) ist, und klicken Sie dann auf den <b>Options Knopf</b> <code><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "15px", maxWidth: "15px", objectFit: "cover"}}/></code>.
+Im Menü <code>Layer Style <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "15px", maxWidth: "21px", objectFit: "cover"}}/></code> sind Styling-Optionen für die ausgewählte Layer zu finden. Jeder Aspekt der Visualisierung eines Layers (<i>Füllfarbe</i>, <i>Strichfarbe</i>, <i>Benutzerdefinierte Markierung</i> und <i>Beschriftungen</i>) kann individuell entsprechend einem Feld oder Attribut in den Daten des Layers gestaltet werden. Um das attributbasierte Styling für einen Layer zu aktivieren Klicken Sie auf <b>Erweiterte Einstellungen</b> <code><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "15px", maxWidth: "15px", objectFit: "cover"}}/></code>.
 
 
 :::tip TIPP
-Wenn Sie Ihre Styling-Einstellungen speichern und in weiteren Projekten verwenden möchten, können Sie dies durch [saving a style as default](../layer_style/styling/#default-settings) tun. 
+Wenn Sie Ihre Styling-Einstellungen speichern und in weiteren Projekten verwenden möchten, können Sie dies durch [Speichern als Standard](../layer_style/styling/#default-settings) tun. 
 :::
 
 ## Attribut auswählen 
 
-Um einen Stil basierend auf einem Attribut zu erstellen, wählen Sie es aus dem Dropdown-Menü des Feldes <code>Farbe basiert auf</code>. Daraufhin werden alle Attribute oder Spalten aufgelistet, die in den Daten Ihrer Ebene verfügbar sind.
+Um einen Stil basierend auf einem Attribut zu erstellen, wählen Sie es aus dem Dropdown-Menü des Feldes <code>Farbe basiert auf</code> aus. Daraufhin werden alle Attribute oder Spalten aufgelistet, die in den Daten Ihres Layers verfügbar sind.
 
 Die Visualisierung wird dann automatisch entsprechend dem Wertebereich der Daten gestaltet. Eine <code>Farbpalette</code> und eine <code>Farbskala</code> sind standardmäßig zugewiesen, können aber angepasst werden, um Ihren Daten und Visualisierungsanforderungen besser zu entsprechen. Die *Farbskala* verwendet eine [**Datenklassifizierungsmethode**](#data-classification-methods), um zu bestimmen, wie Datenwerte verschiedenen Farbkategorien zugewiesen werden.
 
@@ -27,9 +27,9 @@ Die Visualisierung wird dann automatisch entsprechend dem Wertebereich der Daten
 
 ## Farbpalette
 
-In diesem Abschnitt finden Sie GOATs umfassende Paletten, die alle für eine **visuell eindrucksvolle räumliche Datendarstellung** entwickelt wurden. Eine Palette ist eine Sammlung von Farben, die ausgewählt wurden, um die Skala der Werte oder Kategorien in den Daten Ihrer Ebene darzustellen.
+In diesem Abschnitt finden Sie GOATs umfassende Paletten, die alle für eine **visuell eindrucksvolle räumliche Datendarstellung** entwickelt wurden. Eine Palette ist eine Sammlung von Farben, die ausgewählt wurden, um die Skala der Werte oder Kategorien in den Daten Ihrer Layer darzustellen.
  
-  Für weitere Anpassungen können Sie einen anderen <code>Typ</code> der Palette, eine andere Anzahl von <code>Schritten</code> oder eine <code>Umkehrung</code> der Farben wählen. Sie können auch eine benutzerdefinierte Farbpalette definieren, indem Sie die <code>Benutzerdefiniert</code>-Schaltfläche aktivieren.
+  Für weitere Anpassungen können Sie einen anderen <code>Typ</code> der Palette, eine andere Anzahl von <code>Schritten</code> oder eine <code>Umkehrung</code> der Farbreihenfolge wählen. Sie können auch eine benutzerdefinierte Farbpalette definieren, indem Sie die <code>Benutzerdefiniert</code>-Schaltfläche aktivieren.
  
  GOAT bietet einen umfassenden Satz an vordefinierten Paletten, die in vier verschiedene *Palettentypen* unterteilt sind, um die Auswahl und Anwendung zu erleichtern.
 
@@ -51,7 +51,7 @@ In diesem Abschnitt finden Sie GOATs umfassende Paletten, die alle für eine **v
 
 ## Farbskala
 
-Unter <code>Farbskala</code> finden Sie die **Methode zur Datenklassifizierung** und die **Farbskala**, die Datenwerte mit einem Farbspektrum verbindet. Sie wandelt einen gegebenen Datenwert innerhalb eines gegebenen Bereichs (Domain) in eine entsprechende Farbe aus einem gegebenen Farbspektrum (Range) um. GOAT bietet sechs vordefinierte **Datenklassifizierungsmethoden**: [Quantile](#quantile), [Standard Deviation](#standard-deviation), [Equal Interval](#equal-interval), [Heads and Tails](#heads-and-tails), [Custom Breaks](#custom-breaks-for-numbers), and [Custom Ordinal](#custom-ordinal-for-strings).
+Unter <code>Palette</code> finden Sie die **Methode zur Datenklassifizierung** und die **Farbskala**, die Datenwerte mit einem Farbspektrum verbindet. Sie wandelt einen gegebenen Datenwert innerhalb eines gegebenen Bereichs in eine entsprechende Farbe aus einem gegebenen Farbspektrum um. GOAT bietet sechs vordefinierte **Datenklassifizierungsmethoden**: [Quantile](#quantile), [Standard Deviation](#standard-deviation), [Equal Interval](#equal-interval), [Heads and Tails](#heads-and-tails), [Custom Breaks](#custom-breaks-for-numbers), and [Custom Ordinal](#custom-ordinal-for-strings).
 
 ## Datenklassifizierungsmethoden
 
@@ -90,9 +90,9 @@ Bei der Klassifizierung „Gleiches Intervall“ wird der Bereich der Attributwe
 
 </div> 
 
-### Kopf und Zahl
+### Heads and Tails
 
-Die Heads and Tails-Methode wird für **Datensätze mit einer schiefen Verteilung** verwendet. Sie wurde entwickelt, um die Extreme in den Daten hervorzuheben, indem sie sich auf die **'Köpfe' (die sehr hohen Werte)** und die **'Zahlen' (die sehr niedrigen Werte)** konzentriert. Diese Methode ist besonders nützlich für Datensätze, bei denen die wichtigsten Informationen in den Extremen zu finden sind, und bei denen die Hervorhebung dieser Werte zu einem besseren Einblick und Verständnis führen kann. Standardmäßig werden die Daten in 7 Klassen aufgeteilt.  
+Die Heads and Tails-Methode wird für **Datensätze mit einer schiefen Verteilung** verwendet. Sie wurde entwickelt, um die Extreme in den Daten hervorzuheben, indem sie sich auf die **'Heads' (die sehr hohen Werte)** und die **'Tails' (die sehr niedrigen Werte)** konzentriert. Diese Methode ist besonders nützlich für Datensätze, bei denen die wichtigsten Informationen in den Extremen zu finden sind, und bei denen die Hervorhebung dieser Werte zu einem besseren Einblick und Verständnis führen kann. Standardmäßig werden die Daten in 7 Klassen aufgeteilt.  
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -101,14 +101,14 @@ Die Heads and Tails-Methode wird für **Datensätze mit einer schiefen Verteilun
 </div> 
 
 
-### Custom Breaks (for <code>numbers</code>)
+### Benutzerdefinierte Schritte (for <code>numbers</code>)
 
-Die Klassifizierung Custom Break ist eine Datenvisualisierungsmethode für **numerische Daten**. Sie ermöglicht die Definition von **benutzerdefinierten Haltepunkten** oder **Schwellenwerten** und bietet damit einen maßgeschneiderten Ansatz für kontextspezifische Visualisierungen. 
+Die Klassifizierung Benutzerdefinierte Schritte ist eine Datenvisualisierungsmethode für **numerische Daten**. Sie ermöglicht die Definition von **benutzerdefinierten Zwischenpunkten** oder **Schwellenwerten** und bietet damit einen maßgeschneiderten Ansatz für kontextspezifische Visualisierungen. 
 
 
-### Custom Ordinal (for <code>strings</code>)
+### Benutzerdefinierte Ordinalskala (for <code>strings</code>)
 
-Die benutzerdefinierte Ordinal-Klassifizierung ist eine Methode zur Datensortierung und -visualisierung, die auf **String-Daten** angewendet wird, wie z. B. Kategorien, Etiketten oder textbasierte Variablen. Im Gegensatz zu numerischen Daten, bei denen die Reihenfolge typischerweise auf der Größe basiert, fehlt bei Zeichenkettendaten oft eine natürliche Reihenfolge. Die Custom Order-Methode ermöglicht es daher, **eigene Ordnungsregeln für Strings** zu definieren und eine individuelle, auf die eigenen Bedürfnisse zugeschnittene Reihenfolge zu erstellen. 
+Die benutzerdefinierte Ordinalskala ist eine Methode zur Datensortierung und -visualisierung, die auf **String-Daten** angewendet wird, wie z. B. Kategorien, Etiketten oder textbasierte Variablen. Im Gegensatz zu numerischen Daten, bei denen die Reihenfolge typischerweise auf der Größe basiert, fehlt bei Textdaten oft eine natürliche Reihenfolge. Die Benutzerdefinierte Ordinalskala ermöglicht es daher, **eigene Ordnungsregeln für Textfelder** zu definieren und eine individuelle, auf die eigenen Bedürfnisse zugeschnittene Reihenfolge zu erstellen. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -117,7 +117,7 @@ Die benutzerdefinierte Ordinal-Klassifizierung ist eine Methode zur Datensortier
 </div>
 
 
-So können zusätzliche Schritte hinzugefügt und mehrere String-Werte pro Gruppe aus einem Dropdown-Menü ausgewählt werden. Das Dropdown-Menü listet dabei alle Attributwerte des Datensatzes auf. 
+So können zusätzliche Schritte hinzugefügt und mehrere Text-Werte pro Gruppe aus einem Dropdown-Menü ausgewählt werden. Das Dropdown-Menü listet dabei alle Attributwerte des Datensatzes auf. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -130,12 +130,12 @@ So können zusätzliche Schritte hinzugefügt und mehrere String-Werte pro Grupp
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## Stil-Einstellungen
+## Layer Style
 
 <Tabs>
- <TabItem value="fill color" label="Fill Color" default> Die Füllfarbe kann entweder eine einzelne Farbe oder eine Farbpalette sein. GOAT bietet eine Reihe von voreingestellten Farben und Paletten zur Gestaltung Ihrer Karte. 
-    For attribute-based Fill Color select a Field from the selected <code>Layer</code>.
-    GOAT applies a random color palette to your results. 
+ <TabItem value="fill color" label="Füllfarbe" default> Die Füllfarbe kann entweder eine einzelne Farbe oder eine Farbpalette sein. GOAT bietet eine Reihe von voreingestellten Farben und Paletten zur Gestaltung Ihrer Karte an. 
+Für die attributbasierte Füllfarbe wählen Sie ein Feld aus dem ausgewählten <code>Layer</code> aus.
+GOAT wendet eine zufällige Farbpalette auf Ihre Ergebnisse an.
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
    <img src={require('/img/map/layers/fill-color.gif').default} alt="Custom Ordinal for strings" style={{ maxHeight: "500px", maxWidth: "500px", objectFit: "cover"}}/>
@@ -143,8 +143,8 @@ import TabItem from '@theme/TabItem';
    </div> 
 
   </TabItem>
-  <TabItem value="stroke color" label="Stroke Color"> Die Strichfarbe ist standardmäßig eine einzige Farbe. Wenden Sie attributbasiertes Styling an, um eine Farbskala auf den Ebenenstrich anzuwenden. 
-    Für die attributbasierte Strichfarbe wählen Sie ein Feld aus der ausgewählten <code>Ebene</code>.
+  <TabItem value="stroke color" label="Strichfarbe"> Die Strichfarbe ist standardmäßig eine einzige Farbe. Wenden Sie attributbasiertes Styling an, um eine Farbskala auf den Strichfabe für den Layer anzuwenden. 
+    Für die attributbasierte Strichfarbe wählen Sie ein Feld aus der ausgewählten <code>Layer</code>.
     GOAT wendet eine zufällige Farbpalette auf Ihre Ergebnisse an. 
 
    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -156,7 +156,7 @@ import TabItem from '@theme/TabItem';
 
 
   </TabItem>
-  <TabItem value="custom marker" label="Custom Marker"> Wenn verfügbar, verfügt die benutzerdefinierte Markierung über eine Symbolbibliothek, die Ihren Datensatz am besten darstellt.
+  <TabItem value="custom marker" label="Benutzerdefinierter Icon"> Diese sind verfügbar für Punktlayer. Aus einer Übersicht können passende Marker ausgewählt werden.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 

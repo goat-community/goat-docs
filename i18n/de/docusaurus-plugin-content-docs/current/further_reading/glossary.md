@@ -29,7 +29,7 @@ Ein **Area of Interest (AOI)** ist eine bestimmte geografische Region oder Grenz
 ### Konnektivität
 Die **Konnektivität** bezieht sich auf das Ausmaß, in dem Wege miteinander verbunden sind. Je höher die Pfad- und Schnittpunktdichte ist, desto höher ist die Konnektivität. Haupthindernisse für die Konnektivität sind z. B. Flüsse, Eisenbahnlinien und Autobahnen.
 
-Die Konnektivität wirkt sich direkt auf die Zugänglichkeit aus, da sie entscheidend für die Reisezeit ist, um ein bestimmtes Ziel zu erreichen. Eine hohe Konnektivität ist besonders wichtig für aktive Verkehrsträger, da diese besonders empfindlich auf Umwege reagieren. Daher ist eine gute Anbindung der Schlüssel zur Gewährleistung der Zugänglichkeit zu Dienstleistungen und Einrichtungen und zur Förderung einer nachhaltigen Mobilität.  
+Die Konnektivität wirkt sich direkt auf die Erreichbarkeit aus, da sie entscheidend für die Reisezeit ist, um ein bestimmtes Ziel zu erreichen. Eine hohe Konnektivität ist besonders wichtig für aktive Verkehrsträger, da diese besonders empfindlich auf Umwege reagieren. Daher ist eine gute Anbindung der Schlüssel zur Gewährleistung der Erreichbarkeit zu Dienstleistungen und Einrichtungen und zur Förderung einer nachhaltigen Mobilität.  
 
 ### Geodaten
 
@@ -38,7 +38,7 @@ Die Konnektivität wirkt sich direkt auf die Zugänglichkeit aus, da sie entsche
 ### H3-Gitter
 
 Das **H3-Gitter** <img src={require('/img/literature/glossary/H3_grid_logo.webp').default} width="1000px" alt="H3 grid logo" style={{width: "100px", height: "170px", maxHeight: "50px", maxWidth: "50px", objectFit: "cover"}}/> 
-ist ein geospatiales Indexierungssystem von [Uber Technologies](https://investor.uber.com/home/default.aspx "About Uber Technologies"), das die Erdoberfläche in ein hierarchisches Gitter aus hexagonalen Zellen unterteilt, um eine effizientere und genauere Darstellung und Analyse von Geodaten zu ermöglichen. Es verwendet einen hexagonalen Kachelansatz auf der Grundlage eines Ikosaeders, der eine hierarchische Struktur mit mehreren Auflösungsebenen schafft. Die sechseckige Form ermöglicht eine äquidistante und konsistente räumliche Darstellung mit unterschiedlichen Auflösungen. Die Auflösung von H3-Gittern wird in der Regel durch die Kantenlänge des Sechsecks auf jeder Ebene beschrieben. Bei der Auflösung 3 beispielsweise decken die Sechsecke ein relativ großes Gebiet ab (ca. 69 km Kantenlänge), das der Größe von Ländern oder großen Staaten/Provinzen entspricht, während die Sechsecke bei der Auflösung 10 (ca. 75 m Kantenlänge) viel kleiner sind und sich für lokalisierte Analysen eignen.
+ist ein geospatiales Indexierungssystem von [Uber Technologies](https://investor.uber.com/home/default.aspx "About Uber Technologies"), das die Erdoberfläche in ein hierarchisches Gitter aus hexagonalen Zellen unterteilt, um eine effizientere und genauere Darstellung und Analyse von Geodaten zu ermöglichen. Es verwendet einen hexagonalen Kachelansatz auf der Grundlage eines Ikosaeders, der eine hierarchische Struktur mit mehreren Auflösungen schafft. Die sechseckige Form ermöglicht eine äquidistante und konsistente räumliche Darstellung mit unterschiedlichen Auflösungen. Die Auflösung von H3-Gittern wird in der Regel durch die Kantenlänge des Sechsecks auf jeder Layer beschrieben. Bei der Auflösung 3 beispielsweise decken die Sechsecke ein relativ großes Gebiet ab (ca. 69 km Kantenlänge), das der Größe von Ländern oder großen Staaten/Provinzen entspricht, während die Sechsecke bei der Auflösung 10 (ca. 75 m Kantenlänge) viel kleiner sind und sich für lokalisierte Analysen eignen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/literature/glossary/H3_grid.webp').default}  alt="H3 Grid" style={{ width: "600px", height: "200px", objectFit: "cover", mixBlendMode: 'multiply'}}/>
@@ -51,7 +51,7 @@ Eine **Heatmap** ist eine grafische Visualisierungsform, die verschiedene Farben
 In GOAT verwenden wir - neben anderen Indikatoren - Heatmaps, um die lokale Erreichbarkeit verschiedener Einrichtungen, wie Cafés, Restaurants oder Supermärkte, zu analysieren. Die Heatmap verwendet eine Reihe von Farben, um verschiedene Erreichbarkeitswerte darzustellen. Durch die Analyse dieser Daten erhalten wir Einblicke in die Verteilung von Reisezielen und die Qualität der verfügbaren Infrastruktur.
 
 ### Indikator
-Ein **Indikator** ist ein Mittel, um ein bestimmtes Attribut oder Thema quantitativ zu analysieren. In der Regel wird dazu ein standardisiertes Verfahren angewandt, z.B. durch die Verwendung einer Formel. In der Planung können Indikatoren verwendet werden, um die aktuelle Situation zu bewerten, um verschiedene Standorte miteinander zu vergleichen und um den Fortschritt bei der Erreichung bestimmter Ziele zu überwachen, z. B. bei der Verbesserung der Zugänglichkeit. 
+Ein **Indikator** ist ein Mittel, um ein bestimmtes Attribut oder Thema quantitativ zu analysieren. In der Regel wird dazu ein standardisiertes Verfahren angewandt, z.B. durch die Verwendung einer Formel. In der Planung können Indikatoren verwendet werden, um die aktuelle Situation zu bewerten, um verschiedene Standorte miteinander zu vergleichen und um den Fortschritt bei der Erreichung bestimmter Ziele zu überwachen, z. B. bei der Verbesserung der Erreichbarkeit. 
 
 ### Isochrone
 Eine **Isochrone** oder ein Einzugsgebiet ist ein Indikator, der angibt, wie weit Personen in einer bestimmten Zeit und mit einer bestimmten Geschwindigkeit von einem ausgewählten Ort aus reisen können. Isochronen können für jeden Verkehrsträger berechnet werden, z. B. zu Fuß, mit dem Fahrrad, mit dem Auto oder mit öffentlichen Verkehrsmitteln. Je nach gewähltem Verkehrsmittel wird das entsprechende Streckennetz verwendet. 
@@ -59,8 +59,8 @@ Eine **Isochrone** oder ein Einzugsgebiet ist ein Indikator, der angibt, wie wei
 Weitere Informationen zur Isochronenberechnung finden Sie in unserer  [indicator documentation](../toolbox/accessibility_indicators/catchments "Isochrone documentation"). 
 
 
-### Landnutzung
-**Landnutzung** ist die Kategorisierung und Verwaltung von Land entsprechend seiner funktionalen Rolle innerhalb eines bestimmten Gebiets. Dies umfasst eine Reihe von Zwecken wie Wohn-, Gewerbe-, Industrie-, Natur- oder Naturschutznutzung. Darüber hinaus umfasst die Flächennutzung auch Aspekte der Stadtplanung und des Umweltmanagements, da die Art der Flächennutzung Faktoren wie die Bevölkerungsdichte und die Verteilung von Zielen maßgeblich beeinflusst. Folglich hat die Flächennutzung einen direkten und erheblichen Einfluss auf die Zugänglichkeit, da sie die Verfügbarkeit von Dienstleistungen, die Verkehrsanbindung und die Lebensqualität eines Gebiets beeinflusst.
+### Flächennutzung
+**Flächennutzung** ist die Kategorisierung und Verwaltung von Land entsprechend seiner funktionalen Rolle innerhalb eines bestimmten Gebiets. Dies umfasst eine Reihe von Zwecken wie Wohnen, Gewerbe, Industrie oder Natur. Darüber hinaus umfasst die Flächennutzung auch Aspekte der Stadtplanung und des Umweltmanagements, da die Art der Flächennutzung Faktoren wie die Bevölkerungsdichte und die Verteilung von Zielen maßgeblich beeinflusst. Folglich hat die Flächennutzung einen direkten und erheblichen Einfluss auf die Erreichbarkeit, da sie die Verfügbarkeit von Dienstleistungen, die Verkehrsanbindung und die Lebensqualität eines Gebiets beeinflusst.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/literature/glossary/landuse.webp').default}  alt="Landuse" style={{ width: "350px", height: "300px", objectFit: "cover"}}/>
@@ -86,7 +86,7 @@ Weitere Informationen zur Isochronenberechnung finden Sie in unserer  [indicator
 ### Planning Support System (PSS)
 Ein **Planning Support System** ist ein digitales Werkzeug zur Unterstützung des Planungs- und Entscheidungsprozesses für die Stadt- und Regionalentwicklung. Es nutzt Daten und Modelle, um Informationen zu verschiedenen Aspekten der Planung wie Flächennutzung, Verkehr und Umweltauswirkungen zu liefern. Ein PPS ermöglicht es den Planern, verschiedene Szenarien zu untersuchen und die möglichen Folgen ihrer Entscheidungen zu bewerten.  
 
-### Punkt von Interesse (POI)
+### Points of Interest (POI)
 Ein **Point of Interest (POI)** ist ein bestimmter Ort oder eine bestimmte Stelle, die in einem bestimmten Kontext, einer Studie oder Analyse von Bedeutung ist. Im Kontext von GOAT beziehen sich POIs hauptsächlich auf Einrichtungen des täglichen Bedarfs, wie Supermärkte, Kindergärten oder Restaurants. 
 
 ### Quantile Klassifikation

@@ -12,7 +12,7 @@ Auf der **Einstellungen**-Seite können Sie Ihre Präferenzen und Einstellungen 
 
 ## Kontoeinstellungen
 
-Unter den **Kontoeinstellungen** können Sie Ihr Profil und Ihre Präferenzen anpassen. 
+Unter den **Kontoeinstellungen** können Sie Ihr Profil und Ihre Einstellungen anpassen. 
 Im <code>Profil</code>-Tab können Sie Ihren **Vorname, Nachname** und **E-Mail-Adresse** aktualisieren und ein **Profilbild** hochladen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -29,7 +29,7 @@ Falls Sie Ihr **Konto löschen** möchten, können Sie dies ebenfalls in diesem 
 :::
 
 
-Im <code>Präferenzen</code>-Tab können Sie Ihre bevorzugte **Sprache** (Englisch oder Deutsch), das **Design** (hell und dunkel Modus) und die **Maßeinheit** (metrisch oder imperial) wählen.
+Im <code>Einstellung</code>-Tab können Sie Ihre bevorzugte **Sprache** (Englisch oder Deutsch) und das **Design** (hell und dunkel Modus) wählen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/settings/preferences.png').default} alt="GOAT - Preferences" style={{ maxHeight: "300px", maxWidth: "600px", objectFit: "cover"}}/>

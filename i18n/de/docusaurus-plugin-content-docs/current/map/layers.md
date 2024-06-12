@@ -7,33 +7,33 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 
-# Ebenen
+# Layer
 
-Im Bereich **Ebenen** können Ebenen **hinzugefügt und organisiert** werden. Unter anderem kann die Reihenfolge der Ebenen angepasst werden, Ebenen können aktiviert/deaktiviert, dupliziert, umbenannt, heruntergeladen und entfernt werden.
+Im Bereich **Layer** können Layer **hinzugefügt und organisiert** werden. Unter anderem kann die Reihenfolge der Layer angepasst werden, Layer können aktiviert/deaktiviert, dupliziert, umbenannt, heruntergeladen und entfernt werden.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/map/layers/overview.png').default} alt="Layer View in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
-## Ebenen hinzufügen
+## Layer hinzufügen
 
-Sie können zwei Arten von Ebenen zu Ihrer Karte hinzufügen: [internal layers](../data/dataset_types) oder [external layers](../data/dataset_types). Um neue interne Ebenen hinzuzufügen, können Sie entweder **Datensätze aus Ihrem Datenexplorer** integrieren oder neue **Datensätze von Ihrem lokalen Gerät** hochladen (GeoPackage, GeoJSON, Shapefile, KML, CSV oder XLSX). Externe Ebenen können durch Einfügen der **Url der externen Quelle** (WMS, WMTS oder MVT) hinzugefügt werden. 
+Sie können zwei Arten von Layer zu Ihrer Karte hinzufügen: [Interne Layer](../data/dataset_types) oder [Externe Layer](../data/dataset_types). Um neue interne Layer hinzuzufügen, können Sie entweder **Datensätze aus Ihrem Datenexplorer** integrieren oder neue **Datensätze von Ihrem lokalen Gerät** hochladen (GeoPackage, GeoJSON, Shapefile, KML, CSV oder XLSX). Externe Layer können durch Einfügen der **URL der externen Quelle** (WMS, WMTS oder MVT) hinzugefügt werden. 
 
-Führen Sie die folgenden Schritte aus, um der Karte eine Ebene hinzuzufügen: 
+Führen Sie die folgenden Schritte aus, um der Karte eine Layer hinzuzufügen: 
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Navigieren Sie über die linke Seitenleiste zum Menü <b>"Ebene"</b>.</div>
+  <div class="content">Navigieren Sie über die linke Seitenleiste zum Menü <b>"Layer"</b>.</div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Klicke auf <code>+ Ebene hinzufügen</code>. </div>
+  <div class="content">Klicke auf <code>+ Layer hinzufügen</code>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">SWählen Sie aus, ob Sie einen Datensatz aus Ihrem  <b>Datenexplorer</b> einbinden möchten,  <b>einen neuen Datensatz hochladen</b> oder einen <b>externen Datensatz</b> hinzufügen möchten.</div>
+  <div class="content">Wählen Sie aus, ob Sie einen Datensatz aus Ihrem  <b>Datenexplorer</b> einbinden möchten,  <b>einen neuen Datensatz hochladen</b> oder einen <b>externen Datensatz</b> hinzufügen möchten.</div>
 </div>
 
 <Tabs>
@@ -47,7 +47,7 @@ Führen Sie die folgenden Schritte aus, um der Karte eine Ebene hinzuzufügen:
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Klicken Sie auf <code>+ Ebene hinzufügen</code>.</div>
+  <div class="content">Klicken Sie auf <code>+ Layer hinzufügen</code>.</div>
 </div>
 
 
@@ -85,26 +85,26 @@ Wir implementieren derzeit diese Funktion.  🧑🏻‍💻
 
 :::tip Tipp
 
- Sie können alle Ihre Datasets auf der Seite [Datasets page](../workspace/datasets) verwalten. 
+ Sie können alle Ihre Datasets auf der Seite [Datensätze-Seite](../workspace/datasets) verwalten. 
 
 :::
 
-## Organisieren von Ebenen
+## Organisieren von Layer
 
-Sobald Sie einen Datensatz zur Karte hinzugefügt haben, wird er in der **Ebenenliste** angezeigt. Von dort aus können Sie die verschiedenen Ebenen organisieren.
+Sobald Sie einen Datensatz zur Karte hinzugefügt haben, wird er in der **Layerliste** angezeigt. Von dort aus können Sie die verschiedenen Layer organisieren.
 
-### Ebenen-Reihenfolge
+### Layer-Reihenfolge
 
-Wenn Sie mehrere Datensätze auf einmal visualisieren, ist die Reihenfolge der Ebenen entscheidend für die Erstellung guter Karten. Daher kann die **Ebenenreihenfolge** interaktiv geändert werden.
-Wenn Sie mit der Maus über den linken Rand der Ebene in der Ebenenliste fahren, erscheint ein Pfeilsymbol. Durch Ziehen und Ablegen kann die Ebene verschoben werden. 
+Wenn Sie mehrere Datensätze auf einmal visualisieren, ist die Reihenfolge der Layer entscheidend für die Erstellung guter Karten. Daher kann die **Layerreihenfolge** interaktiv geändert werden.
+Wenn Sie mit der Maus über den linken Rand der Layer in der Ebenenliste fahren, erscheint ein Pfeilsymbol. Durch Ziehen und Ablegen kann die Layer verschoben werden. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/map/layers/layer_order.gif').default} alt="Layer Order" style={{ maxHeight: "600px", maxWidth: "600px", objectFit: "cover"}}/>
 </div> 
 
-### Ebenen ein-/ausblenden
+### Layer ein-/ausblenden
 
-Um eine Ebene vorübergehend aus der Kartenansicht **auszublenden**, klicken Sie in der Ebenenliste auf das Augensymbol der betreffenden Ebene. Wenn Sie erneut auf das Auge klicken, wird die Ebene wieder **sichtbar**.
+Um eine Layer vorübergehend aus der Kartenansicht **auszublenden**, klicken Sie in der Ebenenliste auf das Augensymbol des betreffenden Layer. Wenn Sie erneut auf das Auge klicken, wird der Layer wieder **sichtbar**.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/map/layers/hide_layers.gif').default} alt="Hide Layer" style={{ maxHeight: "600px", maxWidth: "600px", objectFit: "cover"}}/>
@@ -112,8 +112,7 @@ Um eine Ebene vorübergehend aus der Kartenansicht **auszublenden**, klicken Sie
 
 ### Optionen
 
-
-BMit einem Klick auf die drei Punkte <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> erhalten Sie weitere Optionen zur Verwaltung und Organisation der ausgewählten Ebene.
+Durch Klicken auf die drei Punkte <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> erhalten Sie weitere Optionen zur Verwaltung und Organisation des ausgewählten Layers.
 
 
 <img src={require('/img/map/layers/layer_options.png').default} alt="Layer Options" style={{ maxHeight: "250px", maxWidth: "250px", objectFit: "cover"}}/> 
@@ -121,7 +120,7 @@ BMit einem Klick auf die drei Punkte <img src={require('/img/map/filter/3dots.pn
 
 :::tip Tipp
 
-Möchten Sie das Design Ihrer Ebenen ändern? Siehe [Layer Style](../category/layer-styling).  
-Möchten Sie nur Teile Ihres Datensatzes visualisieren? Siehe[Filter](../map/filter). 
+Möchten Sie das Design Ihres Layers ändern? Siehe [Layer Style](../category/layer-styling).  
+Möchten Sie nur Teile Ihres Datensatzes visualisieren? Siehe [Filter](../map/filter). 
 
 :::

@@ -113,7 +113,7 @@ Abhängig von der Größe der Datensätze kann die Berechnung einige Minuten dau
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Sobald der Berechnungsprozess abgeschlossen ist, wird die resultierende Ebene <b>"Aggregation Point"</b> der Karte hinzugefügt. Diese Ebene besteht aus den Informationen der Quell-Ebene und einer <b>zusätzlichen Spalte</b>, die die Ergebnisse der <b>statistischen Operation</b> anzeigt. Du kannst die Tabelle sehen, indem du auf das Polygon auf der Karte klickst.</div>
+  <div class="content">Sobald der Berechnungsprozess abgeschlossen ist, wird die resultierende Layer <b>"Aggregation Point"</b> der Karte hinzugefügt. Diese Layer besteht aus den Informationen der Quell-Layer und einer <b>zusätzlichen Spalte</b>, die die Ergebnisse der <b>statistischen Operation</b> anzeigt. Du kannst die Tabelle sehen, indem du auf das Polygon auf der Karte klickst.</div>
 </div>
 
 <img src={require('/img/toolbox/geoanalysis/aggregate_points/aggregate_points_result.png').default} alt="Point Aggregation Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>

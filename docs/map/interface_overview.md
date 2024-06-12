@@ -54,4 +54,4 @@ The following graphic explains the different elements of the map interface:
 
 - <img src={require('/img/map/interface/MINUS.png').default} alt="Zoom out" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Zoom out</code>
 
-- <img src={require('/img/map/interface/MAP.png').default} alt="Basemap" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Basemap</code>: Choose between basemap options such as <code>High Fidelity</code>, <code>Satellite Streets</code>, and more.
+- <img src={require('/img/map/interface/MAP.png').default} alt="Basemap" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Basemap</code>: Choose between basemap options such as <code>High Fidelity</code>, <code>Satellite</code>, and more.

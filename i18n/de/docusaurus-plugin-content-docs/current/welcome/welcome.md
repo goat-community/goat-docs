@@ -5,7 +5,7 @@ slug: /
 
 # Willkommen 👋
 
-GOAT ist eine **WebGIS-Plattform** mit Planungsintelligenz für die Bereiche der **Stadt- und Verkehrsplanung**. Ausgestattet mit umfangreichen Daten [data](../data/data_basis.md) und Funktionalitäten bietet sie Planern und GIS-Nutzern eine faktenbasierte Analyse. Neben der Berechnung von Benchmarks und der Analyse bestehender Situationen können potenzielle **Szenarien** erstellt und bewertet werden. Die Plattform bietet eine moderne Möglichkeit und einen intuitiven „User-Flow“, um den Planungsprozess zu vereinfachen. Das Hauptziel von GOAT ist es, durch innovative Funktionen und Designs **intelligentere**, **kollaborativere** und **effizientere** Planung zu ermöglichen.
+GOAT ist eine **WebGIS-Plattform** mit Planungsintelligenz für die Bereiche der **Stadt- und Verkehrsplanung**. Ausgestattet mit umfangreichen [Daten](../data/data_basis.md) und Funktionalitäten bietet sie Planern und GIS-Nutzern eine faktenbasierte Analyse. Neben der Berechnung von Benchmarks und der Analyse des IST-Zustandes können **Szenarien** erstellt und bewertet werden. Die Plattform bietet ausgefeilte datenbasierte Analysen und einen intuitiven „User-Flow“, um Planungsprozesse zu unterstützen. Das Hauptziel von GOAT ist es, durch innovative Funktionen und eine intuitive Nutzeroberfläche **intelligentere**, **kollaborativere** und **effizientere** Planung zu ermöglichen.
 
 :::tip Tipp
 
@@ -13,7 +13,7 @@ Möchten Sie mehr über GOAT erfahren? Besuchen Sie unsere Website: https://plan
 
 :::
 
-Nach der Anmeldung landen Sie auf der [Startseite](../workspace/home.md), um mit der Erkundung von [GOAT](https://goat.plan4better.de/login) zu beginnen.
+Nach der Anmeldung landen Sie auf der [Startseite](../workspace/home.md), hier kann [GOAT](https://goat.plan4better.de/login) unmittelbar genutzt werden.
 
 ![Willkommen im GOAT Workspace](/img/workspace/home/home_general.png "Geo Open Accessibility Tool - GOAT- Workspace")
 
@@ -21,6 +21,6 @@ Wenn Sie auf ein Projekt klicken, wird die GOAT [Kartenansicht](../map/interface
 
 ![Willkommen bei GOAT](/img/welcome/welcome_2.png "Geo Open Accessibility Tool - GOAT")
 
-In dieser Dokumentation finden Sie umfassende Erklärungen, detaillierte **Schritt-für-Schritt-Anleitungen**, **instruktive Video-Tutorials** und **technische Einblicke** in die von GOAT nutz- und verfügbaren Werkzeuge.
+In dieser Dokumentation finden Sie umfassende Erklärungen, detaillierte **Schritt-für-Schritt-Anleitungen**, **geleitete Video-Tutorials** und **technische Einblicke** in die Nutzung von GOAT.
 
 Über die **Seitenleiste** können Sie auf alle Inhalte der Dokumentation zugreifen.
