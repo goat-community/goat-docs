@@ -116,7 +116,7 @@
     "description": "Die Bezeichnung für die Kategorie Szenarien in der Seitenleiste tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Scenarios.link.generated-index.description": {
-    "message": "Neben der Analyse vorhandener realer Daten und Situationen können Sie mit GOAT auch benutzerdefinierte Szenarien erstellen, wie z. B. Netzwerkänderungen oder neue Infrastrukturprojekte. Wege, Punkte und Polygone können hinzugefügt, bearbeitet oder entfernt werden und ihre Auswirkungen auf die Zugänglichkeit analysiert werden.",
+    "message": "Neben der Analyse vorhandener realer Daten und Situationen können Sie mit GOAT auch benutzerdefinierte Szenarien erstellen, wie z. B. Netzwerkänderungen oder neue Infrastrukturprojekte. Wege, Punkte und Polygone können hinzugefügt, bearbeitet oder entfernt werden und ihre Auswirkungen auf die Erreichbarkeit analysiert werden.",
     "description": "Die generierte Beschreibung der Indexseite für die Kategorie Szenarien in der Seitenleiste tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Routing": {

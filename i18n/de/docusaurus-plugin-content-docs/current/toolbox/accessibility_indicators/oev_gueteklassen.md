@@ -74,7 +74,7 @@ Je nach Größe des ausgewählten Gebiets kann die Berechnung einige Minuten dau
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Sobald der Berechnungsprozess abgeschlossen ist, werden die resultierenden Layer zur Karte hinzugefügt. Die Ergebnisse bestehen aus einem Layer namens <b>"ÖV-Güteklassen"</b>, die die ÖV-Güteklassen zeigt, und einer Ebene namens <b>"ÖV-Güteklassen Stationen"</b>, die alle Stationen enthält, die für die Berechnung dieses Indikators verwendet wurden. Die in Grau dargestellten Stationen haben eine zu geringe Servicefrequenz und tragen daher nicht zu einer ÖV-Güteklasse bei.
+  <div class="content">Sobald der Berechnungsprozess abgeschlossen ist, werden die resultierenden Layer zur Karte hinzugefügt. Die Ergebnisse bestehen aus einem Layer namens <b>"ÖV-Güteklassen"</b>, die die ÖV-Güteklassen zeigt, und einer Layer namens <b>"ÖV-Güteklassen Stationen"</b>, die alle Stationen enthält, die für die Berechnung dieses Indikators verwendet wurden. Die in Grau dargestellten Stationen haben eine zu geringe Servicefrequenz und tragen daher nicht zu einer ÖV-Güteklasse bei.
   <p></p>
   Wenn Sie auf ein "ÖV-Güteklassen"-Symbol auf der Karte klicken, sehen Sie weitere Details wie dessen pt_class und pt_class_number, die die <a href="#calculation">Qualität des öffentlichen Verkehrs</a> angeben.</div>
 </div>

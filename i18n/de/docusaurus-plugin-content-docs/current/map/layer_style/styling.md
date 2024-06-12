@@ -4,7 +4,7 @@ sidebar_position: 20
 
 # Basic Styling
 
-Wenn Sie eine neue Ebene zu Ihrem Projekt hinzufügen, wird ihr ein Standardstil zugewiesen, welcher auf der Art der Daten basiert. Durch die Anpassung der Optionen im Menü <code>Layerdesign <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "15px", maxWidth: "15px", objectFit: "cover"}}/></code> können Sie die Darstellung des Layers anpassen und **ansprechende Karten** erstellen. Die verfügbaren Gestaltungsoptionen hängen von der Art der in einer Ebene enthaltenen Daten ab, d. h. davon, ob es sich um Punkte, Linien oder Polygone handelt. Dabei können mehrere visuelle Aspekte wie **Farben**, **Striche** und **Optionen** angepasst werden.
+Wenn Sie eine neue Layer zu Ihrem Projekt hinzufügen, wird ihr ein Standardstil zugewiesen, welche je nach Datensatz unterschiedlich sein kann. Durch die Anpassung der Optionen im Menü <code>Layer Style<img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "15px", maxWidth: "15px", objectFit: "cover"}}/></code> können Sie die Darstellung des Layers anpassen und **ansprechende Karten** erstellen. Die verfügbaren Gestaltungsoptionen hängen von der Art der in einer Layer enthaltenen Daten ab, d. h. davon, ob es sich um Punkte, Linien oder Polygone handelt. Dabei können mehrere visuelle Aspekte wie **Farben**, **Striche** und **Optionen** angepasst werden.
 
 ## Farbeinstellungen
 
@@ -20,7 +20,7 @@ Die Füllfarbe wird verwendet, um das **Innere** von **Punkt- oder Polygon-Featu
 
 #### Deckkraft
 
-TUm die Deckkraft Ihrer Ebenenstile für die Füllfarbe anzupassen, ändern Sie die Deckkraft einfach auf einen beliebigen **Wert zwischen 0 und 1**. Mit dieser numerischen Skala können Sie genau den gewünschten Grad der Deckkraft festlegen, wobei **0 transparent** und **1 undurchsichtig** ist. Stellen Sie die Deckkraft nach Ihren Wünschen ein, indem Sie entweder den Schieberegler verwenden oder den genauen Wert direkt in das Textfeld eingeben.
+Um die Deckkraft Ihrer Layerstile für die Füllfarbe anzupassen, ändern Sie die Deckkraft einfach auf einen beliebigen **Wert zwischen 0 und 1**. Mit dieser numerischen Skala können Sie genau den gewünschten Grad der Deckkraft festlegen, wobei **0 transparent** und **1 undurchsichtig** ist. Stellen Sie die Deckkraft nach Ihren Wünschen ein, indem Sie entweder den Schieberegler verwenden oder den genauen Wert direkt in das Textfeld eingeben.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -45,9 +45,9 @@ Wann immer Sie eine Farbe ändern möchten, sei es **Füllfarbe** oder **Strichf
 </div> 
 
 
-## Benutzerdefinierte Markierung
+## Benutzerdefinierte Icons
 
-Für Punktebenen können benutzerdefinierte Marker für die Visualisierung verwendet werden. Dazu kann der Marker aus einer **Icon**-Liste ausgewählt werden. Die Markergröße kann über den Schieberegler eingestellt werden.
+Für Punktlayer können benutzerdefinierte Marker für die Visualisierung verwendet werden. Dazu kann der Marker aus einer **Icon**-Liste ausgewählt werden. Die Markergröße kann über den Schieberegler eingestellt werden.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -59,7 +59,7 @@ Für Punktebenen können benutzerdefinierte Marker für die Visualisierung verwe
 
 ## Strichbreite
 
-Neben der Farbe kann auch die **Strichstärke** der Striche definiert werden. Passen Sie die Strichstärke nach Ihren Wünschen an, indem Sie entweder den Schieberegler für die Strichstärke verwenden oder die genaue Größe direkt in das dafür vorgesehene Textfeld eingeben.
+Neben der Farbe kann auch die **Strichstärke** der Striche für **Linienlayern** definiert werden. Passen Sie die Strichstärke nach Ihren Wünschen an, indem Sie entweder den Schieberegler für die Strichstärke verwenden oder die genaue Größe direkt in das dafür vorgesehene Textfeld eingeben.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -81,7 +81,7 @@ Bei **Punktdatensätzen** kann der **Radius** angepasst werden. Daher können Si
 
 ## Standardeinstellungen 
 
-Durch Klicken auf die drei Punkte <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>,  öffnen sich die Standard-Stil-Einstellungen. 
+Durch Klicken auf die drei Punkte <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>,  öffnen sich weitere Einstellungen. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -89,9 +89,9 @@ Durch Klicken auf die drei Punkte <img src={require('/img/map/filter/3dots.png')
 
 </div> 
 
-Wenn Sie <code>Als Standard speichern</code> wählen, werden die aktuellen Stileinstellungen an den Datensatz angehängt. Wann immer Sie diesen Datensatz zu einem Projekt hinzufügen, wird dieser Standardstil verwendet (*Hinweis: bestehende Projekte, in denen dieser Datensatz angezeigt wird, sind davon nicht betroffen*). 
+Wenn Sie <code>Speichern als Standard</code> wählen, werden die aktuellen Stileinstellungen an den Datensatz angehängt. Wann immer Sie diesen Datensatz zu einem Projekt hinzufügen, wird dieser Standardstil verwendet (*Hinweis: bestehende Projekte, in denen dieser Datensatz angezeigt wird, sind davon nicht betroffen*). 
 
-Wenn Sie auf <code>Rücksetzen</code> klicken, können Sie die aktuellen Stileinstellungen wieder auf die Standardwerte zurücksetzen. 
+Wenn Sie auf <code>Rücksetzen</code> klicken, können Sie die aktuellen Stileinstellungen des Layers im Projekt wieder auf die Standardwerte zurücksetzen. 
 
 
 :::tip TIPP

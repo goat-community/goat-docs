@@ -13,7 +13,7 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 ## 1. Erklärung
 
-Ausgehend von den angegebenen Startpunkten, der maximalen Reisezeit oder Entfernung und den Verkehrsmitteln visualisieren **Einzugsgebiete** das Ausmaß der Zugänglichkeit. Dies wird anhand von **realen Daten** berechnet und liefert nützliche Einblicke in die Qualität, Dichte und Reichweite des Verkehrsnetzes einer Region.
+Ausgehend von den angegebenen Startpunkten, der maximalen Reisezeit oder Entfernung und den Verkehrsmitteln visualisieren **Einzugsgebiete** das Ausmaß der Erreichbarkeit. Dies wird anhand von **realen Daten** berechnet und liefert nützliche Einblicke in die Qualität, Dichte und Reichweite des Verkehrsnetzes einer Region.
 
 Darüber hinaus kann das Einzugsgebiet mit räumlichen Datensätzen wie Bevölkerungs- und POI-Daten überlagert werden. Dies ermöglicht beispielsweise die Bewertung, wie viele POIs von einem bestimmten Standort aus erreichbar sind und damit festzustellen, welcher Anteil der Einwohner Zugang zu wichtigen Annehmlichkeiten innerhalb einer bestimmten Reisezeit hat.
 
@@ -46,7 +46,7 @@ Falls Sie Analysen außerhalb dieses Geofence durchführen müssen, kontaktieren
 - Wie viele Einwohner haben Zugang zu einem Supermarkt innerhalb von 10 Minuten mit dem Fahrrad?
 - Welcher Anteil der Bevölkerung hat einen Hausarzt innerhalb von 500m Entfernung?
 - Wie groß ist das Einzugsgebiet eines Arbeitsplatzes mit dem Auto vs. mit öffentlichen Verkehrsmitteln? Wie viele Mitarbeiter leben in diesen Einzugsgebieten?
-- Wie gut sind Kindergärten derzeit über die Stadt verteilt? In welchen Bezirken gibt es Defizite in der Zugänglichkeit?
+- Wie gut sind Kindergärten derzeit über die Stadt verteilt? In welchen Bezirken gibt es Defizite in der Erreichbarkeit?
 
 
 ## 3. Wie benutzt man den Indikator?
@@ -157,7 +157,7 @@ Standardmäßig werden die Einzugsgebiete in Polygonform berechnet. Falls Sie di
     
 #### Fahrrad/Pedelec
 
-Berücksichtigt alle mit dem Fahrrad erreichbaren Wege. Dieser Routentyp berücksichtigt die Oberfläche, Glätte und Steigung der Straßen bei der Berechnung der Zugänglichkeit. Für Pedelec werden Steigungen mit einer geringeren Impedanz als für Standardfahrräder berücksichtigt.
+Berücksichtigt alle mit dem Fahrrad erreichbaren Wege. Dieser Routentyp berücksichtigt die Oberfläche, Glätte und Steigung der Straßen bei der Berechnung der Erreichbarkeit. Für Pedelec werden Steigungen mit einer geringeren Impedanz als für Standardfahrräder berücksichtigt.
 
 :::tip Tipp
 

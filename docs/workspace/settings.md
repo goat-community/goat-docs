@@ -29,7 +29,7 @@ If you wish to **delete your account**, you can also do this in this section. Pl
 :::
 
 
-In the <code>Preferences</code> tab, you can choose your preferred **language** (English or German), **theme** (light and dark mode), and **unit of measurement** (metric or imperial).
+In the <code>Preferences</code> tab, you can choose your preferred **language** (English or German) and **theme** (light and dark mode).
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/settings/preferences.png').default} alt="GOAT - Preferences" style={{ maxHeight: "300px", maxWidth: "600px", objectFit: "cover"}}/>

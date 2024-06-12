@@ -4,8 +4,7 @@ sidebar_position: 3
 
 # Datensätze
 
-Auf der **Datensätze**-Seite können Daten **hochgeladen, verwaltet und geteilt** werden. Die Seite bietet den Nutzern eine organisierte Ansicht ihrer Datensätze, kategorisiert nach persönlichen Datensätzen, Team-Datensätzen und Datensätzen, die mit der gesamten Organisation geteilt werden. Darüber hinaus können Datensätze in **Ordnern** organisiert, **gefiltert** und **sortiert** werden, basierend auf ihrem Namen, Erstellungsdatum oder ihrer letzten Aktualisierung. Datensätze können auch **gelöscht**, **heruntergeladen** und deren **Metadaten** bearbeitet werden.
-
+Auf der **Datensätze**-Seite können Daten **hochgeladen, verwaltet und geteilt** werden. Die Seite bietet den Nutzern eine organisierte Ansicht ihrer Datensätze, kategorisiert nach persönlichen Datensätzen, Team-Datensätzen und Datensätzen, die mit der gesamten Organisation geteilt werden. Darüber hinaus können Daten in **Ordnern** organisiert und **gefiltert**. Auch können Datensätze **sortiert** werden, basierend auf alphabetischer Reihenfolge, Erstellungsdatum oder Datum der letzten Aktualisierung. Es ist auch möglich, **Projekte zu löschen** und deren **Metadaten zu bearbeiten**.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/datasets/datasets_general.png').default} alt="Datasets Page in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
@@ -51,7 +50,7 @@ Sie können Datensätze auch direkt in der [Karte](../map/layers) hochladen.
 
 ## Datensätze filtern
 
-Datensätze können basierend auf dem [Datensatztyp](../data/dataset_types "Was sind die Datensatztypen?") sortiert werden, d.h. *Features, Tabellen, externe Bilder* und *externe Vektorkacheln*. Klicken Sie einfach auf das Filtersymbol <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "20px", maxWidth: "20px"}}/>, um den gewünschten Datensatztyp für die Filterung auszuwählen.
+Datensätze können basierend auf dem [Datensatztyp](../data/dataset_types "Was sind die Datensatztypen?") sortiert werden, d.h. *Features, Tabellen, Imagery* und *Vector Tiles*. Klicken Sie einfach auf das Filtersymbol <img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "20px", maxWidth: "20px"}}/>, um den gewünschten Datensatztyp für die Filterung auszuwählen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/datasets/dataset_filter.gif').default} alt="Datasets filtering in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
@@ -64,7 +63,7 @@ Durch Klicken auf die drei Punkte <img src={require('/img/map/filter/3dots.png')
 
 ## Metadaten der Datensätze anzeigen
 
-Die **Metadaten** von Datensätzen können angezeigt und bearbeitet werden, indem Sie auf <code>Info</code> unter den drei Punkten <img src={require('/img/map/filter/3dots.png').default} alt="Optionen" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> klicken oder direkt auf den Datensatz klicken. Dies gewährt Zugang zu einer detaillierten **Zusammenfassung** der Daten, der **Attributtabelle** und einer **Kartenansicht mit Legende**.
+Die **Metadaten** von Datensätzen können angezeigt und bearbeitet werden, indem Sie auf <code>Info</code> unter den drei Punkten <img src={require('/img/map/filter/3dots.png').default} alt="Optionen" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> oder direkt auf den Datensatz klicken. Dies gewährt Zugang zu einer detaillierten **Zusammenfassung** der Daten, der **Attributtabelle** und einer **Kartenansicht mit Legende**.
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/datasets/metadata.gif').default} alt="Metadaten der Datensätze im Workspace von GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
