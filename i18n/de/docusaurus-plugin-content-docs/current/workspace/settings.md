@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Einstellungen
 
-Auf der **Einstellungen**-Seite können Sie Ihre Präferenzen und Einstellungen in Bezug auf Ihr **Konto, Teams, Organisation und Abonnements** anzeigen und ändern.
+Auf der **Einstellungen**-Seite können Sie Ihre Präferenzen und Einstellungen in Bezug auf Ihr **Konto, Teams, Organisation und Abonnement** anzeigen und ändern.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/settings/settings_general.gif').default} alt="Settings Page in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
@@ -13,7 +13,7 @@ Auf der **Einstellungen**-Seite können Sie Ihre Präferenzen und Einstellungen 
 ## Kontoeinstellungen
 
 Unter den **Kontoeinstellungen** können Sie Ihr Profil und Ihre Einstellungen anpassen. 
-Im <code>Profil</code>-Tab können Sie Ihren **Vorname, Nachname** und **E-Mail-Adresse** aktualisieren und ein **Profilbild** hochladen.
+Im <code>Profil</code>-Tab können Sie Ihren **Vornamen, Nachnamen** und **E-Mail-Adresse** aktualisieren und ein **Profilbild** hochladen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/settings/profile.png').default} alt="GOAT - Profile Settings" style={{ maxHeight: "auto", maxWidth: "600px", objectFit: "cover"}}/>
@@ -29,7 +29,7 @@ Falls Sie Ihr **Konto löschen** möchten, können Sie dies ebenfalls in diesem 
 :::
 
 
-Im <code>Einstellung</code>-Tab können Sie Ihre bevorzugte **Sprache** (Englisch oder Deutsch) und das **Design** (hell und dunkel Modus) wählen.
+Im <code>Einstellungen</code>-Tab können Sie Ihre bevorzugte **Sprache** (Englisch oder Deutsch) und das **Theme** (Hell oder Dunkel) wählen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
   <img src={require('/img/workspace/settings/preferences.png').default} alt="GOAT - Preferences" style={{ maxHeight: "300px", maxWidth: "600px", objectFit: "cover"}}/>
@@ -41,7 +41,7 @@ Im <code>Einstellung</code>-Tab können Sie Ihre bevorzugte **Sprache** (Englisc
 
 ## Teameinstellungen
 
-:::infos folgen bald
+:::info Demnächst verfügbar
 
 Wir implementieren derzeit diese Funktion. 🧑🏻‍💻
 
@@ -75,9 +75,9 @@ Im <code>Mitglieder</code>-Tab können Sie die **Mitgliederliste** Ihrer Organis
 </p>
 
 
-## Abonnements
+## Abonnement
 
-Im **Abonnements**-Menü können Sie die **Details Ihres Abonnements** anzeigen und ändern. Dies ermöglicht es Ihnen, stets über den Status Ihres Abonnements informiert zu bleiben und notwendige Anpassungen vorzunehmen, um Ihren Anforderungen besser gerecht zu werden.
+Im **Abonnement**-Menü können Sie die **Details Ihres Abonnements** anzeigen und ändern. Dies ermöglicht es Ihnen, stets über den Status Ihres Abonnements informiert zu bleiben und notwendige Anpassungen vorzunehmen, um Ihren Anforderungen besser gerecht zu werden.
 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>

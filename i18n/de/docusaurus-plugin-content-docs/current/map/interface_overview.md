@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Map Interface
 
-Wenn Sie ein Projekt öffnen, gelangen Sie zum **Kartenansicht**.
+Wenn Sie ein Projekt öffnen, gelangen Sie zum **Map Interface**.
 Hier können Sie Layer erstellen, organisieren und gestalten, räumliche Daten visualisieren und alle leistungsstarken räumlichen Analysefunktionen von GOAT nutzen.
 
 ### Obere Leiste
@@ -22,23 +22,23 @@ In der folgenden Grafik werden die verschiedenen Elemente der Karteansicht erlä
 
 #### Navigationsleiste
 
-- <img src={require('/img/map/interface/layer.png').default} alt="Layers" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Layers</code>: Fügen Sie in Ihrem GOAT-Projekt Ihre Assets in Form von Layern hinzu und verwalten Sie sie. 
+- <img src={require('/img/map/interface/layer.png').default} alt="Layers" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Layer</code>: Fügen Sie in Ihrem GOAT-Projekt Ihre Assets in Form von Layern hinzu und verwalten Sie sie. 
 
-- <img src={require('/img/map/interface/list.png').default} alt="Legende" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Legend</code>: Visualisiert die Legende der aktiven Layer.
+- <img src={require('/img/map/interface/list.png').default} alt="Legende" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Legende</code>: Visualisiert die Legende der aktiven Layer.
 
-- <img src={require('/img/map/interface/chart-simple.png').default} alt="Diagramme" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Charts</code>: Bald verfügbar.
+- <img src={require('/img/map/interface/chart-simple.png').default} alt="Diagramme" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Diagramme</code>: Demnächst verfügbar.
 
 #### Räumliche Operationen
 
-- <img src={require('/img/map/interface/sliders.png').default} alt="Properties" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Eigenschaften</code>: Zeigt die Layerinformationen, die Symbologie und die Sichtbarkeitseinstellungen für die ausgewählte Layer an.
+- <img src={require('/img/map/interface/sliders.png').default} alt="Properties" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Eigenschaften</code>: Zeigt die Layerinformationen, die Symbologie und die Sichtbarkeitseinstellungen für den ausgewählte Layer an.
 
-- <img src={require('/img/map/interface/filter.png').default} alt="Filter" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Filter</code>: Lesen Sie mehr in <a title=" Filter" href="../map/filter"> Filter</a>. 
+- <img src={require('/img/map/interface/filter.png').default} alt="Filter" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Filtern</code>: Lesen Sie mehr in <a title=" Filter" href="../map/filter"> Filtern</a>. 
 
-- <img src={require('/img/map/interface/palette.png').default} alt="Layer Design" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Layer Style</code>: Lesen Sie mehr in <a title=" Layer Design" href="../category/layer-styling"> Layer Styling</a>.
+- <img src={require('/img/map/interface/palette.png').default} alt="Layer Design" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Layer Design</code>: Lesen Sie mehr in <a title=" Layer Design" href="../category/layer-styling"> Layer Design</a>.
 
-- <img src={require('/img/map/interface/toolbox.png').default} alt="Toolbox" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Werkzeuge</code>:  Lesen Sie mehr in <a title=" Toolbox " href="../category/toolbox"> Toolbox</a>.
+- <img src={require('/img/map/interface/toolbox.png').default} alt="Toolbox" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Werkzeuge</code>:  Lesen Sie mehr in <a title=" Toolbox " href="../category/toolbox"> Werkzeuge</a>.
 
-- <img src={require('/img/map/interface/compass-drafting.png').default} alt="Scenarios" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Szenario</code>:  Lesen Sie mehr in <a title="Scenarios" href="../category/scenarios "> Scenarios</a>.
+- <img src={require('/img/map/interface/compass-drafting.png').default} alt="Scenarios" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Szenario</code>:  Lesen Sie mehr in <a title="Scenarios" href="../category/scenarios "> Szenario</a>.
 
 ### Kartennavigation
 
@@ -50,8 +50,8 @@ In der folgenden Grafik werden die verschiedenen Elemente der Karteansicht erlä
 
 - <img src={require('/img/map/interface/magnifYING-GLASS.png').default} alt="Address and coordinates search" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Adressen und Koordinaten suchen</code>
 
-- <img src={require('/img/map/interface/PLUS.png').default} alt="Zoom In" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Vergrößern</code>
+- <img src={require('/img/map/interface/PLUS.png').default} alt="Zoom In" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Hineinzoomen</code>
 
-- <img src={require('/img/map/interface/MINUS.png').default} alt="Zoom out" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Verkleinern</code>
+- <img src={require('/img/map/interface/MINUS.png').default} alt="Zoom out" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Rauszoomen</code>
 
-- <img src={require('/img/map/interface/MAP.png').default} alt="Basemap" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Basemap</code>: Wählen Sie zwischen Basemaps wie <code>Satellit</code>, <code>Verkehr</code> und mehr.
+- <img src={require('/img/map/interface/MAP.png').default} alt="Basemap" style={{ maxHeight: "20px", maxWidth: "20px", objectFit: "cover"}}/> <code>Grundkarten</code>: Wählen Sie zwischen Grundkarten wie <code>Satellit</code>, <code>Verkehr</code> und mehr.
