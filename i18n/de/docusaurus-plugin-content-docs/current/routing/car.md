@@ -5,14 +5,14 @@ sidebar_position: 4
 
 # Auto
 
-Das **Car Routing** wird für alle Analysen in GOAT verwendet, die Autofahrten enthalten.
+Das **Verkehrsmittel Auto** wird für alle Analysen in GOAT verwendet, die Autofahrten enthalten.
 
 
 ## 1. Ziele
 
-Car Routing wird für viele Indikatoren in GOAT verwendet, wie z.B. [Catchment Areas](../toolbox/accessibility_indicators/catchments) und [Heatmaps](../toolbox/accessibility_indicators/connectivity). 
+Car Routing wird für viele Indikatoren in GOAT verwendet, wie z.B. [Einzugsgebiete](../toolbox/accessibility_indicators/catchments) und [Heatmaps](../toolbox/accessibility_indicators/connectivity). 
 
-Da GOAT auch die Erstellung von [Scenarios on the Paths Network](../scenarios/ways) erlaubt, wird ein **angepasster Routing-Algorithmus** benötigt, der auch die Änderungen des Szenarios in den Erreichbarkeitsanalysen widerspiegelt. Für den Verkehrsträger Auto werden dabei **nur Wege berücksichtigt, die für das Fahren geeignet sind**.
+Da GOAT auch die Erstellung von [Szenarien im Wegenetz](../scenarios/ways) erlaubt, wird ein **angepasster Routing-Algorithmus** benötigt, der auch die Änderungen des Szenarios in den Erreichbarkeitsanalysen widerspiegelt. Für den Verkehrsträger Auto werden dabei **nur Wege berücksichtigt, die für das Fahren geeignet sind**.
 
 ## 2. Daten
 
@@ -27,9 +27,9 @@ Daten von der  **[Overture Maps Foundation](https://overturemaps.org/)**  werden
 
 Die folgenden Schritte werden an den Daten durchgeführt, um ein **schnelles** und **genaues** Routing für Autos zu ermöglichen:
 
-1.  **Attribut-Parsing:** Kategorisierung der Attribute von Kanten (Straßen `class` und `surface`).
-2.  **Geospatial Indexing:**  Nutzung des  **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)**  Indexing für effizientes Routing.
-3.  **Extrahieren von Beschränkungen:** Identifizieren von Einweg-Zugangsbeschränkungen zusätzlich zu den Geschwindigkeitsbegrenzungen für beide Richtungen der Kante (`maxspeed_forward` and `maxspeed_backward`).
+1.  **Attribut-Parsing:** Kategorisierung der Attribute von Kanten (Straßen `Klasse` und `Oberfläche`).
+2.  **Geospatial Indexing:**  Nutzung des  **[Uber H3 auf Gitter basierendes](../further_reading/glossary#h3-grid)**  Indexing für effizientes Routing.
+3.  **Extrahieren von Beschränkungen:** Identifizieren von Einweg-Zugangsbeschränkungen zusätzlich zu den Geschwindigkeitsbegrenzungen für beide Richtungen der Kante (`Maximalgeschwindigkeit vorwärts` and `Maximalgeschwindigkeit rückwärts`).
 
 ### Routing-Prozess-Schritte
 
@@ -40,7 +40,7 @@ Die folgenden Schritte werden an den Daten durchgeführt, um ein **schnelles** u
 
 Für das Auto-Routing werden die Kanten der folgenden Straßenklassen berücksichtigt:
 
-`motorway`, `primary`, `secondary`, `tertiary`, `residential`, `living_street`, `trunk`, `parking_aisle`, `driveway`, `alley` and `track`.
+'Autobahn', 'Hauptstraße', 'Sekundärstraße', 'Tertiärstraße', 'Wohngebiet', 'Verkehrsberuhigter Bereich', 'Fernstraße', 'Parkreihe', 'Auffahrt', 'Gasse' und 'Pfad'.
     
 Weitere Informationen zu dieser Klassifizierung finden Sie im [Overture Wiki](https://docs.overturemaps.org/schema/reference/transportation/segment).
 
@@ -50,14 +50,14 @@ Für alle Kanten im Teilnetz wird ein Kostenwert (dargestellt als Zeit) auf der 
 
 Kostenfunktion für Auto:
 
-`cost_forward = length / maxspeed_forward`
+`Kosten_vorwärts = Länge / Höchstgeschwindigkeit_vorwärts`
 
-`cost_reverse = length / maxspeed_backward`
+`Kosten_rückwärts = Länge / Höchstgeschwindigkeit_rückwärts`
 
-Bei der Berechnung von `cost_reverse` wird eine Kante, die eine Einbahnstraßenbeschränkung enthält und daher nicht in umgekehrter Richtung befahren werden darf, mit sehr hohen Kosten belegt. Dadurch wird verhindert, dass der Routing-Algorithmus solche Kanten für das Routing in umgekehrter Richtung in Betracht zieht.
+Bei der Berechnung von `Kosten_rückwärts` wird eine Kante, die eine Einbahnstraßenbeschränkung enthält und daher nicht in umgekehrter Richtung befahren werden darf, mit sehr hohen Kosten belegt. Dadurch wird verhindert, dass der Routing-Algorithmus solche Kanten für das Routing in umgekehrter Richtung in Betracht zieht.
 
 
-:::info Note
+:::info Tipp
 Der Routing-Algorithmus von GOAT berücksichtigt derzeit keine **historischen Verkehrsmuster** für das Routing von Fahrzeugen. Diese Funktion befindet sich derzeit in der Entwicklung. 🧑🏻‍💻
 :::
 

@@ -25,18 +25,18 @@ Das untenstehende Beispiel zeigt, dass die Geometrie der *Referenz-Layer* gleich
 
 - Visualisierung der Anzahl von Parks pro Stadtteil.
 - Berechnung der durchschnittlichen Gebäudegröße in einem Gebiet.
-- Aggregation der Bevölkerungszahlen auf einem hexagonalen Raster und Berechnung der Bevölkerungsdichten.
+- Aggregation der Bevölkerungszahlen auf einem sechseckigen Raster und Berechnung der Bevölkerungsdichten.
 
 ## 3. Wie benutzt man das Werkzeug?
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Klicke auf <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Klicken Sie auf <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Klicke im Menü <code>Geoanalyse</code> auf <code>Polygone aggregieren</code>.</div>
+  <div class="content">Wählen Sie im Menü <code>Geoanalyse</code> aus und drücken auf <code>Polygone aggregieren</code>.</div>
 </div>
 
 <img src={require('/img/toolbox/geoanalysis/aggregate_polygons/aggregate_polygons.png').default} alt="Polygon Aggregation Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
@@ -45,12 +45,12 @@ Das untenstehende Beispiel zeigt, dass die Geometrie der *Referenz-Layer* gleich
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Wähle deinen <code>Referenz-Layer</code>, der die Daten enthält, die du aggregieren möchtest.</div>
+  <div class="content">Wählen Sie einen <code>Referenz-Layer</code>, der die Daten enthält, die Sie aggregieren möchten.</div>
 </div>
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Wähle, auf welchem <code>Gebietstyp</code> du die Referenz-Layer aggregieren möchtest. Du kannst zwischen <b>Polygon</b> oder <b>H3-Raster</b> wählen.</div>
+  <div class="content">Wählen Sie, auf welche <code>Form</code> Sie die Referenz-Layer aggregieren möchten. Sie können zwischen <b>Polygon</b> oder <b>H3-Raster</b> wählen.</div>
 </div>
 
 <Tabs>
@@ -60,7 +60,7 @@ Das untenstehende Beispiel zeigt, dass die Geometrie der *Referenz-Layer* gleich
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Wähle die <code>Gebiets-Layer</code>, die die Polygone enthält, auf denen du deine Punktdaten aggregieren möchtest.</div>
+  <div class="content">Wählen Sie den <code>Polyon-Layer</code>, der die Polygone enthält, auf denen Sie Ihre Punktdaten aggregieren möchten.</div>
 </div>
 
   </TabItem>
@@ -70,12 +70,12 @@ Das untenstehende Beispiel zeigt, dass die Geometrie der *Referenz-Layer* gleich
 
  <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Wähle die <code>H3-Rasterauflösung</code>. Du kannst zwischen Auflösungen von <b>3</b> (durchschnittliche Kantenlänge von 69 km) und <b>10</b> (durchschnittliche Kantenlänge von 70 m) wählen.</div>
+  <div class="content">Wählen Sie <code>H3-Raster</code>. Sie können zwischen Auflösungen von <b>3</b> (durchschnittliche Kantenlänge von 69 km) und <b>10</b> (durchschnittliche Kantenlänge von 70 m) wählen.</div>
 </div>
 
 :::tip Tipp
 
-Um mehr über das H3-Raster zu erfahren, kannst du das [Glossar](../../further_reading/glossary#H3-grid) besuchen.
+Um mehr über das H3-Raster zu erfahren, können Sie das [Glossar](../../further_reading/glossary#H3-grid) besuchen.
 
 :::
 
@@ -86,7 +86,7 @@ Um mehr über das H3-Raster zu erfahren, kannst du das [Glossar](../../further_r
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Wähle die <code>Statistische Methode</code> und <code>Feldstatistik</code> (das Feld in der Referenz-Layer, das zur Gruppierung der Aggregation verwendet wird).</div>
+  <div class="content">Wählen Sie die <code>Statistische Methode</code> und <code>Feld Statistik</code> (das Feld in dem Referenz-Layer, das zur Gruppierung der Aggregation verwendet wird).</div>
 </div>
 
 Die verfügbaren **Statistischen Methoden** sind im Folgenden aufgeführt. Die verfügbaren Methoden hängen vom Datentyp des ausgewählten Attributs ab:
@@ -102,12 +102,12 @@ Die verfügbaren **Statistischen Methoden** sind im Folgenden aufgeführt. Die v
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Wenn du möchtest, kannst du die Option <b>Gewichtet nach Schnittfläche</b> aktivieren, indem du auf die <b>Optionsschaltfläche</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> klickst. Dadurch werden aggregierte Werte nach dem Anteil der Schnittfläche zwischen dem <i>Referenz-Layer</i> und dem <i>Aggregations-Layer</i> gewichtet.</div>
+  <div class="content">Wenn Sie möchten, können Sie die Option <b>Gewichtet nach Verschneidungsfläche</b> aktivieren, indem Sie auf <b>Erweiterte Eigenschaften</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> klicken. Dadurch werden aggregierte Werte nach dem Anteil der Schnittfläche zwischen dem <i>Referenz-Layer</i> und dem <i>Aggregations-Layer</i> gewichtet.</div>
 </div>
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Klicke auf <code>Ausführen</code>.</div>
+  <div class="content">Drücken Sie nun auf <code>Ausführen</code>.</div>
 </div>
 
 :::tip Tipp
@@ -120,12 +120,12 @@ Abhängig von der Größe der Datensätze kann die Berechnung einige Minuten dau
 
 <div class="step">
   <div class="step-number">9</div>
-  <div class="content">Sobald der Berechnungsprozess abgeschlossen ist, wird die resultierende Layer <b>"Aggregation Polygon"</b> der Karte hinzugefügt. Die Ergebnis-Layer besteht aus den Informationen der Referenz-Layer und einer <b>zusätzlichen Spalte</b>, die die Ergebnisse der <b>statistischen Operation</b> anzeigt. Du kannst die Tabelle sehen, indem du auf das Polygon auf der Karte klickst.</div>
+  <div class="content">Sobald der Berechnungsprozess abgeschlossen ist, wird der resultierende Layer <b>"Aggregation Polygon"</b> der Karte hinzugefügt. Der Ergebnis-Layer besteht aus den Informationen des Referenz-Layers und einer <b>zusätzlichen Spalte</b>, die die Ergebnisse der <b>statistischen Operation</b> anzeigt. Sie können die Tabelle sehen, indem Sie das Polygon auf der Karte anklicken.</div>
 </div>
 
 <img src={require('/img/toolbox/geoanalysis/aggregate_polygons/aggregate_polygons_result.png').default} alt="Polygon Aggregation Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
 
 :::tip Tipp
-Möchtest du deinen Ergebnislayer stylen und ansprechende Karten erstellen? Siehe [Styling](../../map/layer_style/styling).
+Möchten Sie Ihren Ergebnislayer bearbeiten und ansprechende Karten erstellen? Dies können Sie unter [Layer Design](../../map/layer_style/styling).
 :::
 
