@@ -10,32 +10,32 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 # Heatmap - Konnektivität
 Eine farbkodierte Karte zur Visualisierung der Konnektivität von Orten innerhalb eines Interessengebiets ([AOI](../../../further_reading/glossary#area-of-interest-aoi "What is an AOI?")).
 
-## 1. Erläuterung
+## 1. Erklärung
 
-Die Heatmap wird als farbkodiertes sechseckiges Gitter dargestellt und berücksichtigt reale Verkehrs- und Straßennetze zur Berechnung der Konnektivität. Nach der Angabe einer *Routenart* (zu Fuß, mit dem Fahrrad usw.) und eines *Reisezeitlimits* zeigt das Ergebnis ein farbkodiertes hexagonales Raster, das die relative Konnektivität aller Orte innerhalb des angegebenen AOI darstellt.
+Die Heatmap wird als farbkodiertes sechseckiges Gitter dargestellt und berücksichtigt reale Verkehrs- und Straßennetze zur Berechnung der Konnektivität. Nach der Angabe eines *Verkehrsmittels* (zu Fuß, mit dem Fahrrad usw.) und eines *Reisezeitlimits* zeigt das Ergebnis ein farbkodiertes hexagonales Raster, das die relative Konnektivität aller Orte innerhalb des angegebenen AOI (Area of interest) darstellt.
 
-Im Gegensatz zu unseren anderen Heatmaps, die sich auf die Visualisierung der Erreichbarkeit bestimmter Punkte (wie z. B. [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) oder Einrichtungen in der Umgebung konzentrieren, stellen konnektivitätsbasierte Heatmaps die Gesamtkonnektivität eines Gebiets dar. Das bedeutet, dass alle Orte innerhalb Ihres AOI als Ziele betrachtet werden, und für jeden Ort stellt seine „Konnektivität“ den geografischen Bereich (innerhalb und außerhalb des AOI) dar, von dem aus der Ort unter Berücksichtigung der angegebenen *Routenart* und *Reisezeitbeschränkung* erreichbar ist.
+Im Gegensatz zu unseren anderen Heatmaps, die sich auf die Visualisierung der Erreichbarkeit bestimmter Punkte (wie z. B. [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) oder Einrichtungen in der Umgebung konzentrieren, stellen konnektivitätsbasierte Heatmaps die Gesamtkonnektivität eines Gebiets dar. Das bedeutet, dass alle Orte innerhalb Ihrer AOI als Ziele betrachtet werden, und für jeden Ort stellt seine „Konnektivität“ den geografischen Bereich (innerhalb und außerhalb der AOI) dar, von dem aus der Ort unter Berücksichtigung des angegebenen *Verkehrsmittels* und *Reisezeitbeschränkung* erreichbar ist.
 
 ![Connectivity-based Heatmap in GOAT](/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/connectivity.png "Connectivity-based Heatmap in GOAT")
 
 :::info 
 
-Heatmaps sind in bestimmten Regionen verfügbar. Bei der Auswahl eines `Verkehrsmittels` wird auf der Karte ein **geofence** angezeigt, um die unterstützten Regionen hervorzuheben.
+Heatmaps sind in bestimmten Regionen verfügbar. Bei der Auswahl eines `Verkehrsmittels` wird auf der Karte ein **Geofence** angezeigt, um die unterstützten Regionen hervorzuheben.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/geofence.png').default} alt="Geofence for Connectivity-based Heatmaps in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
 </div>
 
 
-Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie sich bitte an [contact us](https://plan4better.de/en/contact/ "Contact us"). Wir besprechen mit Ihnen gerne weitere Möglichkeiten.
+Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie sich bitte an unseren [Support](https://plan4better.de/en/contact/ "Support"). Wir besprechen mit Ihnen gerne weitere Möglichkeiten.
 
 :::
 
-## 2. Beispielhafte Anwendungsfälle
+## 2. Anwendungsbeispiele
 
  - Wie gut ist das Straßen-, Fuß- oder Radwegenetz in einem bestimmten Gebiet vernetzt?
 
- - Wie schneiden die Orte innerhalb eines AOI in Bezug auf die Anbindung an die verschiedenen Verkehrsträger ab?
+ - Wie schneiden die Orte innerhalb einer AOI in Bezug auf die Anbindung an die verschiedenen Verkehrsträger ab?
 
  - Gibt es Barrieren, Lücken oder Inseln im Straßennetz, die die Konnektivität behindern?
 
@@ -50,10 +50,10 @@ Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Unter<code>Erreichbarkeitsindikatoren</code> wählen Sie<code>Heatmap Konnektivität</code>.</div>
+  <div class="content">Unter <code>Erreichbarkeitsindikatoren</code> wählen Sie <code>Heatmap Konnektivität</code>.</div>
 </div>
 
-### Routing
+### Verkehrsmittel
 
 <div class="step">
   <div class="step-number">3</div>
@@ -70,7 +70,7 @@ Berücksichtigt alle zu Fuß begehbaren Wege. Für Heatmaps wird eine Gehgeschwi
 
 :::tip Tipp
 
-Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Walk](../../routing/walking).
+Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Verkehrsmittel/Zu Fuß](../../routing/walking).
 
 :::
 
@@ -84,7 +84,7 @@ Berücksichtigt alle mit dem Fahrrad befahrbaren Wege. Dieser Routing-Modus ber�
 
 :::tip Hinweis
 
-Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Fahrrad](../../routing/fahrrad). Darüber hinaus können Sie diese [Publikation](https://doi.org/10.1016/j.jtrangeo.2021.103080) lesen.
+Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Verkehrsmittel/Fahrrad](../../routing/fahrrad). Darüber hinaus können Sie diese [Publikation](https://doi.org/10.1016/j.jtrangeo.2021.103080) lesen.
 
 :::
 
@@ -98,7 +98,7 @@ Berücksichtigt alle mit dem Pedelec befahrbaren Wege. Dieser Routing-Modus ber�
 
 :::tip Tipp
 
-Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Fahrrad](../../routing/fahrrad). Darüber hinaus können Sie diese [Publikation](https://doi.org/10.1016/j.jtrangeo.2021.103080) lesen.
+Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Verkehrsmittel/Fahrrad](../../routing/fahrrad). Darüber hinaus können Sie diese [Publikation](https://doi.org/10.1016/j.jtrangeo.2021.103080) lesen.
 
 :::
 
@@ -112,7 +112,7 @@ Berücksichtigt alle mit dem Auto befahrbaren Wege. Dieser Routing-Modus berück
 
 :::tip Tipp
 
-Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Car](../../routing/car).
+Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Verkehrsmittel/Auto](../../routing/car).
 
 :::
 
@@ -135,7 +135,7 @@ Benötigen Sie Hilfe bei der Auswahl einer geeigneten Reisezeit für verschieden
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Wählen Sie die <code>Referenzlayer</code> (Layer, der Ihren AOI enthält), für den Sie die Heatmap berechnen möchten. Dies kann eine beliebiger Polygon-Feature-Layer sein.</div>
+  <div class="content">Wählen Sie die <code>Referenzlayer</code> (Layer, der Ihre AOI enthält), für den Sie die Heatmap berechnen möchten. Dies kann eine beliebiger Polygon-Feature-Layer sein.</div>
 </div>
 
 
@@ -165,14 +165,14 @@ Je nach Ihrer Konfiguration kann die Berechnung einige Minuten dauern. Die [Stat
 
 :::tip Tipp
 
-Möchten Sie Ihre Heatmaps gestalten und schöne Karten erstellen? Siehe [Styling](../../map/layer_style/styling).
+Möchten Sie Ihre Heatmaps gestalten und schöne Karten erstellen? Gehen Sie zu [Layer Design](../../map/layer_style/styling).
 :::
 
 ## 4. Technische Details
 
 ### Berechnung
 
-Für jede Zelle des sechseckigen Gitters (innerhalb Ihres AOI) wird die gesamte Ausdehnung der umgebenden Zellen, von denen aus sie erreichbar ist, ermittelt. Diese umgebenden Zellen können sich außerhalb Ihres AOI befinden, müssen aber in Bereichen liegen, die gemäß der angegebenen `Reisezeitlimit`  und dem `Verkehrsmittel` zugänglich sind.
+Für jede Zelle des sechseckigen Gitters (innerhalb Ihrer AOI) wird die gesamte Ausdehnung der umgebenden Zellen, von denen aus sie erreichbar ist, ermittelt. Diese umgebenden Zellen können sich außerhalb Ihrer AOI befinden, müssen aber in Bereichen liegen, die gemäß des angegebenen `Reisezeitlimits`  und dem `Verkehrsmittel` zugänglich sind.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/heatmap_connectivity_infographic.png').default} alt="Extent of cells from where destination cell within AOI is accessible." style={{ maxHeight: "400px", maxWidth: "500px", alignItems:'center'}}/>
@@ -182,16 +182,16 @@ Konnektivitäts Formel:
 
 ![Connectivity Formula](/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/connectivity_formula.png "Connectivity Formula")
 
-Dabei ist ***i*** ein Reisezeitschritt und ***n*** die Reisezeitgrenze. Diese Funktion berechnet die gesamte geographische Fläche (in Quadratmetern), von der aus die Zielzelle in Ihrem AOI erreichbar ist.
+Dabei ist ***i*** ein Reisezeitschritt und ***n*** das Reisezeitlimit. Diese Funktion berechnet die gesamte geographische Fläche (in Quadratmetern), von der aus die Zielzelle in Ihrer AOI erreichbar ist.
 
 ### Klassifizierung
-Zur Klassifizierung der Konnektivitätsstufen, die für jede Rasterzelle berechnet wurden (für die farbliche Darstellung), wird standardmäßig eine Klassifizierung auf der Grundlage von Quantilen verwendet. Es können jedoch auch verschiedene andere Klassifizierungsmethoden verwendet werden. Weitere Informationen finden Sie im Abschnitt **[Datenklassifizierungsmethoden](../../map/layer_style/attribute_based_styling#data-classification-methods)** auf der Seite *Attribute-based Styling*.
+Zur Klassifizierung der Konnektivitätsstufen, die für jede Rasterzelle berechnet wurden (für die farbliche Darstellung), wird standardmäßig eine Klassifizierung auf der Grundlage von Quantilen verwendet. Es können jedoch auch verschiedene andere Klassifizierungsmethoden verwendet werden. Weitere Informationen finden Sie im Abschnitt **[Datenklassifizierungsmethoden](../../map/layer_style/attribute_based_styling#data-classification-methods)** auf der Seite *Attributbasiertes Styling*.
 
 ### Visualisierung 
 
-Heatmaps in GOAT nutzen die **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** Lösung für effiziente Berechnungen und leicht verständliche Visualisierung. Hinter den Kulissen wird eine vorberechnete Reisezeitmatrix für jedes *Verkehrsmittel* mit dieser Lösung abgefragt und in Echtzeit weiterverarbeitet, um die Erreichbarkeit zu berechnen und eine endgültige Heatmap zu erstellen.
+Heatmaps in GOAT nutzen die **[Uber H3 auf Gittern basierende](../further_reading/glossary#h3-grid)** Lösung für effiziente Berechnungen und leicht verständliche Visualisierung. Hinter den Kulissen wird eine vorberechnete Reisezeitmatrix für jedes *Verkehrsmittel* mit dieser Lösung abgefragt und in Echtzeit weiterverarbeitet, um die Erreichbarkeit zu berechnen und eine endgültige Heatmap zu erstellen.
 
-Die Auflösung und die Abmessungen des verwendeten hexagonalen Gitters hängen von dem gewählten *Verkehrsmittel* ab:
+Die Auflösung und die Abmessungen des verwendeten sechseckigen Gitters hängen von dem gewählten *Verkehrsmittel* ab:
 
 #### Zu Fuß
 - Auflösung: 10
@@ -215,6 +215,6 @@ Die Auflösung und die Abmessungen des verwendeten hexagonalen Gitters hängen v
 
 ### Beispiel für die Berechnung
 
-Das folgende Beispiel veranschaulicht die Berechnung einer konnektivitätsbasierten Heatmap für eine bestimmte AOI. Die Heatmap wird für ein `Reisezeitlimit` von 15 Minuten und einen`Verkehrsmittel` von `zu Fuß`berechnet.
+Das folgende Beispiel veranschaulicht die Berechnung einer konnektivitätsbasierten Heatmap für eine bestimmte AOI. Die Heatmap wird für ein `Reisezeitlimit` von 15 Minuten und das `Verkehrsmittel` `zu Fuß` berechnet.
 
 <img src={require('/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/connectivity-calculation.gif').default} alt="Options" style={{ maxHeight: "800px", maxWidth: "800px"}}/>

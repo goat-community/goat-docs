@@ -5,13 +5,13 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 # Abfahrten ÖPNV
 
-Dieser Indikator zeigt die **durchschnittliche Anzahl der Abfahrten öffentlicher Verkehrsmittel** pro Stunde für jede Haltestelle des öffentlichen Verkehrs an.
+Dieser Indikator zeigt die **durchschnittliche Anzahl der Abfahrten öffentlicher Verkehrsmittel** pro Stunde für jede Haltestelle des ÖVs an.
 
 ## 1. Erklärung
 
-Das Werkzeug "Afahrten ÖPNV" zeigt die *durchschnittliche Anzahl der Abfahrten öffentlicher Verkehrsmittel pro Stunde** für ein ausgewähltes **Zeitintervall** für jede Haltestelle des öffentlichen Verkehrs auf einer Punkt-Layer an. Die Ergebnisse können entweder als Summe aller Verkehrsmodi oder durch Fokussierung auf einen bestimmten Modus (z.B. Bus, Straßenbahn, U-Bahn, Bahn) visualisiert werden.
+Das Werkzeug "Afahrten ÖPNV" zeigt die *durchschnittliche Anzahl der Abfahrten öffentlicher Verkehrsmittel pro Stunde** für ein ausgewähltes **Zeitfenster** für jede Haltestelle des öffentlichen Verkehrs auf einem Punkt-Layer an. Die Ergebnisse können entweder als Summe aller Verkehrsmittel oder durch Fokussierung auf einen bestimmtes davon (z.B. Bus, Straßenbahn, U-Bahn, Bahn) visualisiert werden.
 
-Dieser Indikator dient als Grundlage für die [ÖV-Güteklassen](./oev_gueteklassen.md), kann aber auch eigenständig als einfache Maßnahme für das Angebot an öffentlichen Verkehrsmitteln auf **Stationsebene** verwendet werden. Er gibt eine Zusammenfassung der Abfahrten einer Station während eines bestimmten Zeitfensters und Tages und bietet einen wertvollen Überblick über das öffentliche Verkehrsangebot in einer Stadt. Daher wird der Indikator oft in **Schwachstellenanalysen von lokalen Verkehrsplänen** verwendet (siehe unter anderem [Richtlinie für die Nahverkehrsplanung in Bayern](https://www.demografie-leitfaden-bayern.de/index.html)).
+Dieser Indikator dient als Grundlage für die [ÖV-Güteklassen](./oev_gueteklassen.md), kann aber auch eigenständig als einfache Maßnahme für das Angebot an öffentlichen Verkehrsmitteln auf **Haltestellenebene** verwendet werden. Er gibt eine Zusammenfassung der Abfahrten einer Haltestelle während eines bestimmten Zeitfensters und Tages und bietet einen wertvollen Überblick über das öffentliche Verkehrsangebot in einer Stadt. Daher wird der Indikator oft in **Schwachstellenanalysen von lokalen Verkehrsplänen** verwendet (siehe unter anderem [Richtlinie für die Nahverkehrsplanung in Bayern](https://www.demografie-leitfaden-bayern.de/index.html)).
 
 ![Public Transport Trip Count](/img/toolbox/accessibility_indicators/trip_count/sample.png "Public Transport Trip Count")
 
@@ -81,7 +81,7 @@ Je nach Größe des ausgewählten Gebiets kann die Berechnung einige Minuten dau
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Wenn Sie auf einen Punkt in der Karte klicken, können Sie den <b>Stationsnamen</b>, die <b>Gesamtanzahl der Abfahrten</b> und die <b>Abfahrten pro Modus</b> sehen.</div>
+  <div class="content">Wenn Sie auf einen Punkt in der Karte klicken, können Sie den <b>Haltestellennamen</b>, die <b>Gesamtanzahl der Abfahrten</b> und die <b>Abfahrten pro Verkehrsmittel</b> sehen.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -92,7 +92,7 @@ Je nach Größe des ausgewählten Gebiets kann die Berechnung einige Minuten dau
 
 :::tip Tipp
 
-Falls Sie an einem bestimmten Modus interessiert sind, z.B. nur Busse, können Sie die [attributbasierte Stilierung](../../map/layer_style/attribute_based_styling.md) verwenden, um die Punktfarbe basierend auf der gewünschten Spalte anzupassen.
+Falls Sie an einem bestimmten Verkehrsmittel interessiert sind, z.B. nur Busse, können Sie das [attributbasierte Styling](../../map/layer_style/attribute_based_styling.md) verwenden, um die Punktfarbe basierend auf der gewünschten Spalte anzupassen.
 
 :::
 
