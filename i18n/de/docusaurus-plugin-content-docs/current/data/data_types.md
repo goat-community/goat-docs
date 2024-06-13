@@ -4,9 +4,9 @@ sidebar_position: 2
 
 # Datentypen
 
-GOAT verarbeitet eine Vielzahl von Geometrietypen für räumliche Daten. Dies wird durch die Verwendung einer [PostgreSQL](https://www.postgresql.org/docs/) Datenbank mit der [PostGIS](https://postgis.net/documentation/) Erweiterung ermöglicht. GOAT speichert alle Geometrien im **PostGIS-Geometrietyp** (Der PostGIS-Geometrietyp ist eine Möglichkeit, verschiedene Formen und Standorte auf einer Karte innerhalb einer PostgreSQL-Datenbank zu speichern und zu bearbeiten. Er ermöglicht es, Details über Punkte (z.B. POIs), Linien (z.B. Straßen) und Flächen (z.B. Bezirke) direkt in der Datenbank zu speichern. Alle Daten werden in der Datenbank Koordinatenreferenzsystem **EPSG:4326** gespeichert. Für Operationen, die Längen- oder Flächenmessungen beinhalten, wird der metrische Datentyp Geography verwendet. Dieser Typ ermöglicht Berechnungen in Metern und bietet eine höhere Genauigkeit.
+GOAT verarbeitet eine Vielzahl von Geometrietypen für räumliche Daten. Dies wird durch die Verwendung einer [PostgreSQL](https://www.postgresql.org/docs/) Datenbank mit der [PostGIS](https://postgis.net/documentation/) Erweiterung erreicht. GOAT speichert alle Geometrien im **PostGIS-Geometrietyp** (Der PostGIS-Geometrietyp ist eine Möglichkeit, verschiedene Formen und Standorte auf einer Karte innerhalb einer PostgreSQL-Datenbank zu speichern und zu bearbeiten. Er ermöglicht es, Details über Punkte (wie Wahrzeichen), Linien (wie Straßen) und Flächen (wie Bezirke) direkt in der Datenbank zu speichern. Alle Daten werden in der Datenbank Koordinatenreferenzsystem **EPSG:4326** gespeichert. Für Operationen, die Längen- oder Flächenmessungen beinhalten, wird jedoch der PostGIS-Geographietyp verwendet. Dieser Typ ermöglicht Berechnungen in Metern und bietet eine höhere Genauigkeit.
 
-Darüber hinaus verfolgt GOAT einen strukturierten Ansatz für das Datenmanagement, indem die nutzbaren Datentypen vordefiniert werden. Dies ermöglicht ein effizientes Speichern der Daten und Skalierbarkeit. Das aktuelle Schema umfasst eine begrenzte Anzahl von Spalten je Datentyp:
+Darüber hinaus verfolgt GOAT einen strukturierten Ansatz für das Datenmanagement, indem die Datentypen kategorisiert werden. Diese Kategorisierung soll das Datenbankschema für verbesserte Leistung und Skalierbarkeit optimieren. Das aktuelle Schema umfasst eine begrenzte Anzahl von Spalten pro Datentyp:
 
 | Datentyp  | Beschreibung | Maximale Anzahl der Spalten |
 |-----------|--------------|-----------------------------|
@@ -27,7 +27,7 @@ In aller Regel reichen die oben aufgeführten Datentypen vollkommen aus um belie
 
 Visualisieren Sie die Layer-Datentabelle
 
-Under <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> <code> More Options </code> click <code> View Data</code>:
+Unter <img src={require('/img/map/filter/3dots.png').default} alt="Optionen" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/> <code> Weitere Optionen </code> klicken Sie auf <code> Daten ansehen </code>:
 
 ![More Options](/img/data/view-data-layer.png "More Options")
 

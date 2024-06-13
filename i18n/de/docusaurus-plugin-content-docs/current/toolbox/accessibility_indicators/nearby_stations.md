@@ -14,13 +14,13 @@ Die **Nahgelegene ÖV-Haltestellen**-Analyse wird verwendet, um öffentliche Ver
 
 Die Nahverkehrsanalyse (Nahgelegene ÖV-Haltestellen) ist ein geeignetes Werkzeug, um **öffentliche Verkehrshaltestellen und deren Verbindungen** zu visualisieren, die zu Fuß oder mit dem Fahrrad von einem oder mehreren Ausgangspunkten erreichbar sind. Die nächstgelegenen Haltestellen, die dort verfügbaren öffentlichen Verkehrslinien, ihre Frequenz und die Reisezeit zu Fuß und mit dem Fahrrad werden als Ergebnis bereitgestellt.
 
-**Die Nähe zu nahegelegenen Stationen** ist für verschiedene Aspekte des städtischen Lebens wesentlich und wichtig in der Stadtplanung. Die Verfügbarkeit von öffentlichen Verkehrsverbindungen verbessert die Erreichbarkeit für Bewohner, Arbeiter und Besucher erheblich.
+**Die Nähe zu nahegelegenen Haltestellen** ist für verschiedene Aspekte des städtischen Lebens wesentlich und wichtig in der Stadtplanung. Die Verfügbarkeit von öffentlichen Verkehrsverbindungen verbessert die Erreichbarkeit für Bewohner, Arbeiter und Besucher erheblich.
 
 
 ![Nearby Stations in GOAT](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_example.png "Nearby Stations in GOAT")
 
 :::info 
-Die Berechnung der nahegelegenen Stationen ist nur für Gebiete verfügbar, in denen das öffentliche Verkehrsnetz in GOAT integriert ist.
+Die Berechnung der nahegelegenen Haltestellen ist nur für Gebiete verfügbar, in denen das öffentliche Verkehrsnetz in GOAT integriert ist.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence for nearby stations calculation in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
@@ -32,21 +32,21 @@ Falls Sie eine Analyse außerhalb dieses Geofence durchführen müssen, wenden S
 
 ## 2. Anwendungsbeispiele
 
-- Welche öffentlichen Verkehrshaltestellen befinden sich in der Nähe und bieten bequemen Zugang zu wichtigen Sehenswürdigkeiten und Wahrzeichen für Touristen, die eine neue Stadt erkunden?
+- Welche öffentlichen Verkehrshaltestellen befinden sich in der Nähe und bieten eine bequeme Erreichbarkeit zu wichtigen Sehenswürdigkeiten und Wahrzeichen für Touristen, die eine neue Stadt erkunden?
 - Bei der täglichen Pendelstrecke zur Arbeit, welche nahegelegenen öffentlichen Verkehrshaltestellen bieten optimale Routen und Fahrpläne für eine nahtlose Reise?
-- Welche nahegelegenen öffentlichen Verkehrshaltestellen bieten bequemen Zugang zu Einkaufszentren?
+- Welche nahegelegenen öffentlichen Verkehrshaltestellen bieten eine bequeme Erreichbarkeit zu Einkaufszentren?
 
 
 ## 3. Wie verwendet man den Indikator?
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Click on <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Klicken Sie auf <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Unter<code>Erreichbarkeitsindikatoren</code> klicken Sie auf <code>Nahgelegene ÖV-Haltestellen</code>.</div>
+  <div class="content">Unter <code>Erreichbarkeitsindikatoren</code> wählen Sie <code>Nahgelegene ÖV-Haltestellen</code>.</div>
 </div>
 
 ![Menu Overview for Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_overview.png "Menu Overview for Public Transport Nearby Stations")
@@ -60,14 +60,14 @@ Falls Sie eine Analyse außerhalb dieses Geofence durchführen müssen, wenden S
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Legen Sie die Konfigurationen für den Station-Zugang fest, indem Sie <code>Reisezeitlimit (Minuten)</code> und <code>Reisegeschwindigkeit (km/h)</code> wählen.</div>
+  <div class="content">Legen Sie die Konfigurationen für die Haltestellen-Erreichbarkeit fest, indem Sie <code>Reisezeitlimit in (Minuten)</code> und <code>Reisegeschwindigkeit in (km/h)</code> bestimmen.</div>
 </div>
 
-### Station Konfiguration 
+### Haltestellen Konfiguration 
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Wählen Sie aus, welche <code>Verkehrsmittel ÖV</code> für die nahegelegenen Stationen berücksichtigt werden sollen.</div>
+  <div class="content">Wählen Sie aus, welche <code>Verkehrsmittel ÖV</code> für die nahegelegenen Haltestellen berücksichtigt werden sollen.</div>
 </div>
 
 <div class="step">
@@ -77,17 +77,17 @@ Falls Sie eine Analyse außerhalb dieses Geofence durchführen müssen, wenden S
 
 ![Configurations for Public Transport Nearby Stations](/img/toolbox/accessibility_indicators/nearby_stations/nearby_stations_config.png "Configurations for Public Transport Nearby Stations")
 
-### Starting Points
+### Startpunkte
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Wählen Sie die <code>Art der Startpunkte</code> aus, um zu definieren, wie Sie den bzw. die Startpunkt(e) für die Reise(n) festlegen möchten. Sie können entweder <b>Klicke auf die Karte</b> oder <b>Wähle vom Layer</b>.</div>
+  <div class="content">Wählen Sie die <code>Art der Startpunkte</code> aus, um zu definieren, wie Sie den bzw. die Startpunkt(e) für die Reise(n) festlegen möchten. Sie können entweder <b>Klicke auf die Karte</b> oder <b>Wähle vom Layer</b> auswählen.</div>
 </div>
 
 <Tabs>
   <TabItem value="Klicke auf die Karte" label="Klicke auf die Karte" default className="tabItemBox">
  
-  Klicken Sie auf <code>Klicke auf die Karte</code>. Wählen Sie den/die Ausgangspunkt(e) aus, indem Sie auf die jeweiligen Position(en) in der Karte klicken. Sie können beliebig viele Ausgangspunkte hinzufügen.
+  Klicken Sie auf <code>Klicke auf die Karte</code>. Wählen Sie den/die Startpunkt(e) aus, indem Sie auf die jeweiligen Position(en) in der Karte klicken. Sie können beliebig viele Startpunkte hinzufügen.
 
   </TabItem>
 
@@ -100,12 +100,12 @@ Falls Sie eine Analyse außerhalb dieses Geofence durchführen müssen, wenden S
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Klicken Sie auf <code>Ausführen</code>. Dadurch wird die Erfassung der nahegelegenen Stationen von den ausgewählten Startpunkt(en) gestartet.</div>
+  <div class="content">Klicken Sie auf <code>Ausführen</code>. Dadurch wird die Erfassung der nahegelegenen Haltestellen von den ausgewählten Startpunkt(en) gestartet.</div>
 </div>
 
 :::tip Tipp
 
-Je nach Anzahl der ausgewählten Ausgangspunkte kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../workspace/home#status-bar) zeigt den aktuellen Fortschritt an.
+Je nach Anzahl der ausgewählten Startpunkte kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../workspace/home#status-bar) zeigt den aktuellen Fortschritt an.
 
 :::
 
@@ -125,7 +125,7 @@ Je nach Anzahl der ausgewählten Ausgangspunkte kann die Berechnung einige Minut
 
 
 :::tip Tipp
-Möchten Sie Ihre Ergebnisse bearbeiten und ansprechende Karten erstellen? Siehe [Styling](../../map/layer_style/styling).
+Möchten Sie Ihre Ergebnisse bearbeiten und ansprechende Karten erstellen? Dies können Sie unter [Layer Design](../../map/layer_style/styling).
 :::
 
 ## 4. Technische Details

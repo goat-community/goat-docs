@@ -5,20 +5,20 @@ sidebar_position: 3
 
 # Öffentliche Verkehrsmittel
 
-Das **ÖPNV-Routing** in GOAT ist essentiell für die Durchführung von Analysen, welche Fahrten mit öffentlichen Verkehrsmitteln beinhalten.
+Das **Verkehrsmittel ÖPNV** in GOAT ist essentiell für die Durchführung von Analysen, welche Fahrten mit öffentlichen Verkehrsmitteln beinhalten.
 
 ## 1. Zielsetzung
 
 Das ÖPNV-Routing erleichtert die **intermodale Analyse** durch die Integration von Ein- und Ausstiegsmodi, wie z.B. zu Fuß oder mit dem Fahrrad zum und vom Bahnhof. Dies ist komplexer als die anderen Routing-Modi, da es die Zusammenführung verschiedener Datensätze (z. B. Bürgersteige und Radwege, Haltestellen und Fahrpläne des öffentlichen Verkehrs usw.) und Berechnungsansätze erfordert.
 
-ÖPNV-Routing wird für viele Indikatoren in GOAT verwendet, wie z. B. [Catchment Areas](../toolbox/accessibility_indicators/catchments) und [Heatmaps](../toolbox/accessibility_indicators/connectivity).
+ÖPNV-Routing wird für viele Indikatoren in GOAT verwendet, wie z. B. [Einzugsgebiete](../toolbox/accessibility_indicators/catchments) und [Heatmaps](../toolbox/accessibility_indicators/connectivity).
 
-Darüber hinaus passt sich mit [Scenarios on the Paths Network](../scenarios/ways), ein **flexibler Routing-Algorithmus** an Szenarienänderungen bei Erreichbarkeitsanalysen in GOAT an.
+Darüber hinaus passt sich mit [Szenarien im Wegenetz](../scenarios/ways), ein **flexibler Routing-Algorithmus** an Szenarienänderungen bei Erreichbarkeitsanalysen in GOAT an.
 
 ### Konfigurierbare Optionen für Analysen
 
-- `weekday`: Wählen Sie zwischen Wochentag, Samstag oder Sonntag.
-- `start time` und `end time`: Geben Sie das Zeitfenster für die Analyse an.
+- `Wochentag`: Wählen Sie zwischen Wochentag, Samstag oder Sonntag.
+- `Startzeit` und `Endzeit`: Geben Sie das Zeitfenster für die Analyse an.
 
 
 
@@ -31,7 +31,7 @@ Verwendet Daten in **[GTFS](https://developers.google.com/transit/gtfs)** (Gener
 
 ### Straßendaten
 
-Bezieht Informationen auf Straßenebene von  **[OpenStreetMap](https://wiki.openstreetmap.org/)** ein, um multimodales Routing und reale Wegeverbindungen zu unterstützen (einschließlich Bürgersteige, Radwege und Fußgängerüberwege).
+Bezieht Informationen auf Straßenebene von  **[OpenStreetMap](https://wiki.openstreetmap.org/)** ein, um multimodales Routing und echte Wegeverbindungen zu unterstützen (einschließlich Bürgersteige, Radwege und Fußgängerüberwege).
 
 
 ## 3. Technische Einzelheiten
@@ -42,12 +42,12 @@ PDas Routing für den öffentlichen Verkehr wird mit der **[R5 Routing Engine](h
 ### Routing-Optionen
 
 #### Modi
-`bus` `tram` `rail` `subway` `ferry` `cable_car` `gondola` `funicular`
+'Bus', 'Straßenbahn', 'Bahn', 'U-Bahn', 'Fähre', 'Seilbahn', 'Gondel', 'Standseilbahn'.
 
 #### Zugangs- und Ausstiegsmodi
 
-- **Zugangsmodus:** Wie die Nutzer von ihrem Ausgangsort zu einer Haltestelle gelangen (`walk` `bicycle` `car`).
-- **Ausstiegsmodus:** Wie die Benutzer von einer Haltestelle zu ihrem Ziel gelangen (`walk` `bicycle`).
+- **Zugangsmodus:** Wie die Nutzer von ihrem Ausgangsort zu einer Haltestelle gelangen (`zu Fuß` `Fahrrad` `Auto`).
+- **Ausstiegsmodus:** Wie die Benutzer von einer Haltestelle zu ihrem Ziel gelangen (`zu Fuß` `Fahrrad`).
 
 
 #### Sonstiges (Standardkonfigurationen)
