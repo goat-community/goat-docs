@@ -4,35 +4,35 @@ sidebar_position: 4
 
 # Katalog
 
-Der **Datenkatalog** ist eine umfassende Liste bereitgestellter [räumlicher Datensätze](../further_reading/glossary#geospatial-data) zur Visualisierung und Analyse. Eine breite Palette von Datensätzen wird von Plan4Better auf Basis von amtlichen Open-Data und weiteren Quellen bereitgestellt, dadurch stehen für Ihre Projekte unmittelbar **zuverlässige** Daten für die Analyse und Visualisierung zur Verfügung.
+Der **Datenkatalog** ist eine umfassende Liste aller verfügbaren[räumlichen Datensätzen](../further_reading/glossary#geospatial-data) zur Erkundung und Analyse. Eine breite Palette von Datensätzen wird von Plan4Better, unseren Partnern und Open-Source-Bibliotheken bereitgestellt, wodurch eine **zuverlässige und genaue** Datenbank für Ihre GIS-Projekte sichergestellt wird.
 
 <div class="content"><img src={require('/img/workspace/catalog/home-catalog.png').default} alt="Data Catalog" style={{ maxHeight: "700px", maxWidth: "800px"}}/></div>
 
 ## Den Katalog erkunden
 
-Der Zugang erfolgt über den [Arbeitsbereich](../category/workspace) oder über die Schaltfläche [`+ Layer hinzufügen`](../map/layers#add-layers) in Ihrem GOAT-Projekt. Sie können unsere Sammlung von Datensätzen nach *Schlüsselwörtern durchsuchen und räumliche und nicht-räumliche Filter* anwenden, um schnell die für Sie relevanten Datensätze zu finden. Sie können auch Datensätze interaktiv in unserer Benutzeroberfläche vorab ansehen, um den Inhalt und die Qualität zu bewerten. 
+Der Zugang erfolgt über den [Workspace](../category/workspace) oder über die Schaltfläche [`+ Layer hinzufügen`](../map/layers#add-layers) in Ihrem GOAT-Projekt. Sie können unsere Sammlung von Datensätzen nach *Schlüsselwörtern durchsuchen und räumliche und nicht-räumliche Filter* anwenden, um eine effiziente Entdeckung zu ermöglichen. Sie können auch Datensätze interaktiv in unserer Benutzeroberfläche vorab ansehen, um den Inhalt und die Qualität zu bewerten und so eine visuelle Erkundung ermöglichen. Seien Sie versichert, dass unsere Sammlung aus autoritativen Quellen stammt und eine hohe Datenqualität aufweist.
 
 Unser Katalog bietet eine umfangreiche Sammlung von Datensätzen, die verschiedene thematische Bereiche abdecken und in verschiedenen Kategorien unterteilt sind, darunter:
 
-- **Basemap:** Grundlegende Kartenebene, die wesentliche geografische Merkmale wie Küstenlinien, Flüsse und Gelände enthält und als Hintergrund für zusätzliche Layer dient.
+- **Grundkarte:** Grundlegende Kartenebene, die wesentliche geografische Merkmale wie Küstenlinien, Flüsse und Gelände enthält und als Hintergrund für zusätzliche Daenebenen dient.
 
-- **Imagery:** Hochauflösende visuelle Daten, die von Satelliten oder Luftaufnahmen erfasst wurden und detaillierte Ansichten von Landschaften, städtischen Gebieten und Infrastrukturen bieten.
+- **Bildmaterial:** Hochauflösende visuelle Daten, die von Satelliten oder Luftaufnahmen erfasst wurden und detaillierte Ansichten von Landschaften, städtischen Gebieten und Infrastrukturen bieten.
 
-- **Boundary:** Räumliche Abgrenzungen, die administrative, politische oder geografische Grenzen darstellen, einschließlich Landesgrenzen, Staats-/Provinzgrenzen und Gemeindebezirke.
+- **Grenzen:** Räumliche Abgrenzungen, die administrative, politische oder geografische Grenzen darstellen, einschließlich Landesgrenzen, Staats-/Provinzgrenzen und Gemeindebezirke.
 
-- **Landuse:** Kategorisierung von Landflächen basierend auf ihrer primären Nutzung, einschließlich Klassifikationen wie Wohngebiete, Gewerbegebiete, Industriegebiete, Landwirtschafts- und Erholungszonen.
+- **Landnutzung:** Kategorisierung von Landflächen basierend auf ihrer primären Nutzung, einschließlich Klassifikationen wie Wohngebiete, Gewerbegebiete, Industriegebiete, Landwirtschafts- und Erholungszonen.
 
-- **Environment:** Daten, die natürliche Merkmale und Phänomene darstellen, wie Ökosysteme, Klimamuster und ökologische Lebensräume.
+- **Umwelt:** Daten, die natürliche Merkmale und Phänomene darstellen, wie Ökosysteme, Klimamuster und ökologische Lebensräume.
 
-- **People:** Demografische Daten zur Bevölkerung, wie Bevölkerungsdichte, Bevölkerungsverteilung, Altersgruppen und sozioökonomische Merkmale.
+- **Menschen:** Demografische Daten zu menschlichen Popultionen, wie Bevölkerungsdichte, Bevölkerungsverteilung, Altersgruppen und sozioökonomische Merkmale.
 
-- **Transportation:** Informationen zu Verkehrsnetzen und Infrastrukturen, einschließlich Straßen, Autobahnen, Eisenbahnen, Flughäfen, Häfen und öffentlichen Verkehrssystemen.
+- **Verkehr** Informationen zu Verkehrsnetzen und Infrastrukturen, einschließlich Straßen, Autobahnen, Eisenbahnen, Flughäfen, Häfen und öffentlichen Verkehrssystemen.
 
-- **Places:** Sehenswürdigkeiten und Einrichtungen wie Schulen, Carsharing-Standorte, Touristenattraktionen und Krankenhäuser.
+- **Orte:** Sehenswürdigkeiten und geographische Wahrzeichen wie Schulen, Carsharing-Standorte, Touristenattraktionen und Krankenhäuser.
 
-![Data Catalog in GOAT](/img/workspace/catalog/catalog_general.png "Data Catalog in GOAT")
+![Datenkatalog in GOAT](/img/workspace/catalog/catalog_general.png "Datenkatalog in GOAT")
 
-Ein Klick auf einen Datensatz innerhalb der Katalogseite führt Sie zum **Metadaten**-Bereich. Hier können Sie detaillierte Informationen zum Datensatz ansehen, einschließlich seiner **Beschreibung**, den **[Datensatztyp](../data/dataset_types)**, der **geografischen Ausdehnung und die Sprache** (basierend auf dem [ISO 3166-1 alpha-2](https://www.iso.org/iso-3166-country-codes.html)), den **Datengebers** und **Lizenzdetails**. Sie können auch die **Kartenvorschau des Datensatzes** und die zugehörigen Daten direkt von der Datenseite aus ansehen.
+Ein Klick auf einen Datensatz innerhalb der Katalogseite führt Sie zum **Metadaten**-Bereich. Hier können Sie detaillierte Informationen zum Datensatz ansehen, einschließlich seiner **Beschreibung**, den **[Datensatztyp](../data/dataset_types)**, der **geografischen Ausdehnung** und des **Sprachcodes** (basierend auf dem [ISO 3166-1 alpha-2](https://www.iso.org/iso-3166-country-codes.html)), den **Verteilernamen** sowie die **Lizenzdetails**. Sie können auch die **Kartenvorschau des Datensatzes** und die zugehörigen Daten direkt von der Datenseite aus ansehen.
 
 ## Katalogdaten in Ihrem GOAT-Projekt verwenden
 
@@ -57,7 +57,7 @@ Ein Klick auf einen Datensatz innerhalb der Katalogseite führt Sie zum **Metada
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Nach dem Hinzufügen können Sie einen <code><img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "16px", maxWidth: "16px"}}/> Filter</code> auf den neuen Layer anwenden um den Datensatz für Ihre Zwecke zuzuschneiden. Dadurch können gerade umfangreiche Layer für spezifische Analysen oder Untersuchungsräume angepasst werden.</div>
+  <div class="content">Nach dem Hinzufügen wenden Sie einen <code><img src={require('/img/map/filter/filter_icon.png').default} alt="Filter Icon" style={{ maxHeight: "16px", maxWidth: "16px"}}/> Filter</code> auf den neuen Layer an. Dies wird die Daten durch einen logischen oder räumlichen Ausdruck filtern, sodass nur die für Ihre Analyse erforderlichen Daten beibehalten werden und die Arbeit erleichtert wird.</div>
 </div>
 
 

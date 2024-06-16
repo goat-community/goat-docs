@@ -15,7 +15,7 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 Ausgehend von den angegebenen Startpunkten, der maximalen Reisezeit oder Entfernung und den Verkehrsmitteln visualisieren **Einzugsgebiete** das Ausmaß der Erreichbarkeit. Dies wird anhand von **realen Daten** berechnet und liefert nützliche Einblicke in die Qualität, Dichte und Reichweite des Verkehrsnetzes einer Region.
 
-Darüber hinaus kann das Einzugsgebiet mit räumlichen Datensätzen wie Bevölkerungs- und POI-Daten überlagert werden. Dies ermöglicht beispielsweise die Bewertung, wie viele POIs von einem bestimmten Standort aus erreichbar sind und damit festzustellen, welcher Anteil der Einwohner Zugang zu wichtigen Annehmlichkeiten innerhalb einer bestimmten Reisezeit hat.
+Darüber hinaus kann das Einzugsgebiet mit räumlichen Datensätzen wie Bevölkerungs- und POI-Daten überlagert werden. Dies ermöglicht beispielsweise die Bewertung, wie viele POIs von einem bestimmten Standort aus erreichbar sind und damit festzustellen, welcher Anteil der Einwohner eine gute Erreichbarkeit zu wichtigen Annehmlichkeiten innerhalb einer bestimmten Reisezeit hat.
 
 ![Catchment Area in GOAT](/img/toolbox/accessibility_indicators/catchments/catchment_sample.png "Catchment Area in GOAT")
   
@@ -43,9 +43,9 @@ Falls Sie Analysen außerhalb dieses Geofence durchführen müssen, kontaktieren
 ## 2. Anwendungsbeispiele
 
 - Welche Annehmlichkeiten sind von einem bestimmten Punkt aus in einem 15-minütigen Fußweg erreichbar?
-- Wie viele Einwohner haben Zugang zu einem Supermarkt innerhalb von 10 Minuten mit dem Fahrrad?
+- Wie viele Einwohner erreichen einen Supermarkt innerhalb von 10 Minuten mit dem Fahrrad?
 - Welcher Anteil der Bevölkerung hat einen Hausarzt innerhalb von 500m Entfernung?
-- Wie groß ist das Einzugsgebiet eines Arbeitsplatzes mit dem Auto vs. mit öffentlichen Verkehrsmitteln? Wie viele Mitarbeiter leben in diesen Einzugsgebieten?
+- Wie groß ist das Einzugsgebiet eines Arbeitsplatzes mit dem Auto im vergleich zu öffentlichen Verkehrsmitteln? Wie viele Mitarbeiter leben in diesen Einzugsgebieten?
 - Wie gut sind Kindergärten derzeit über die Stadt verteilt? In welchen Bezirken gibt es Defizite in der Erreichbarkeit?
 
 
@@ -81,13 +81,13 @@ Berücksichtigt alle zu Fuß erreichbaren Wege.
 
 :::tip Tipp
 
-Für weitere Einblicke in den Routing-Algorithmus besuchen Sie  [Routing/Walk](../../routing/walking).
+Für weitere Einblicke in den Routing-Algorithmus besuchen Sie  [Verkehrsmittel/Zu Fuß](../../routing/walking).
 
 :::
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Wählen Sie, ob Sie das Einzugsgebiet basierend auf <b>Zeit</b> oder <b>Entfernung</b>berechnen möchten.</div>
+  <div class="content">Wählen Sie, ob Sie das Einzugsgebiet basierend auf <b>Zeit</b> oder <b>Entfernung </b>berechnen möchten.</div>
 </div>
 
 
@@ -95,11 +95,11 @@ Für weitere Einblicke in den Routing-Algorithmus besuchen Sie  [Routing/Walk](.
 <Tabs>
   <TabItem value="Zeit" label="Zeit" default className="tabItemBox">
 
-#### Time
+#### Zeit
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Legen Sie die Konfigurationen für<code>Reisezeitlimit</code>, <code>Reisegeschwindigkeit</code>, und <code> Anzahl der Schritte</code>fest.</div>
+  <div class="content">Legen Sie die Konfigurationen für<code>Reisezeitlimit</code>, <code>Reisegeschwindigkeit</code>, und <code> Anzahl der Schritte </code>fest.</div>
 </div>
 
 <img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_time.png').default} alt="Konfigurationen für Reisezeit zu Fuß" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
@@ -116,7 +116,7 @@ Standardmäßig werden die Einzugsgebiete in Polygonform berechnet. Falls Sie di
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Klicken Sie auf des<b>Optionen-Symbol</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die <code> Form des Einzugsgebiets</code>wählen. Die Auswahlmöglichkeiten sind <b>Polygon</b>, <b>Netzwerk</b> und <b>Sechseckiges Gitter</b>.</div>
+  <div class="content">Klicken Sie auf <b>Erweiterte Einstellungen</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die <code> Form des Einzugsgebiets</code>wählen. Die Auswahlmöglichkeiten sind <b> Polygon</b>, <b>Netzwerk</b> und <b>Sechseckiges Gitter</b>.</div>
 </div>
 
   </TabItem>
@@ -144,7 +144,7 @@ Standardmäßig werden die Einzugsgebiete in Polygonform berechnet. Falls Sie di
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Klicken Sie auf das<b>Optionen-Symbol</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die <code> Form des Einzugsgebiets</code>auswählen. Die Möglichkeiten sind <b>Polygon</b>, <b>Netzwerk</b> und <b>Sechseckiges Gitter</b>.</div>
+  <div class="content">Klicken Sie auf <b>Erweiterte Einstellungen</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die <code> Form des Einzugsgebiets</code>auswählen. Die Möglichkeiten sind <b> Polygon</b>, <b>Netzwerk</b> und <b>Sechseckiges Gitter</b>.</div>
 </div>
 
   </TabItem>
@@ -161,13 +161,13 @@ Berücksichtigt alle mit dem Fahrrad erreichbaren Wege. Dieser Routentyp berück
 
 :::tip Tipp
 
-Für weitere Einblicke in den Routing-Algorithmus besuchen Sie[Routing/Bicycle](../../routing/bicycle). Zusätzlich können Sie diese [Richtlinie](https://doi.org/10.1016/j.jtrangeo.2021.103080)verwenden.
+Für weitere Einblicke in den Routing-Algorithmus besuchen Sie [Verkehrsmittel/Fahrrad](../../routing/bicycle). Zusätzlich können Sie diese [Richtlinie](https://doi.org/10.1016/j.jtrangeo.2021.103080) verwenden.
 
 :::
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Wählen Sie, ob Sie das Einzugsgebiet basierend auf <b>Zeit</b> or <b>Entfernung</b>berechnen möchten.</div>
+  <div class="content">Wählen Sie, ob Sie das Einzugsgebiet basierend auf <b>Zeit</b> or <b>Entfernung </b>berechnen möchten.</div>
 </div>
 
 <Tabs>
@@ -177,7 +177,7 @@ Für weitere Einblicke in den Routing-Algorithmus besuchen Sie[Routing/Bicycle](
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Legen Sie die Konfigurationen für<code>Reisezeitlimit</code>, <code>Reisegeschwindigkeit</code>, und <code> Anzahl der Schritte</code>fest.</div>
+  <div class="content">Legen Sie die Konfigurationen für<code>Reisezeitlimit</code>, <code>Reisegeschwindigkeit</code>, und <code> Anzahl der Schritte</code> fest.</div>
 </div>
 
 <img src={require('/img/toolbox/accessibility_indicators/catchments/walk_config_time.png').default} alt="Konfigurationen für Reisezeit mit dem Fahrrad" style={{ maxHeight: "300px", maxWidth: "300px"}}/>
@@ -195,7 +195,7 @@ Standardmäßig werden die Einzugsgebiete in Polygonform berechnet. Falls Sie di
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Klicken Sie auf das <b>Optionen-Symbol</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die<code> Form des Einzugsgebiets</code>festlegen. Die Auswahlmöglichkeiten sind<b>Polygon</b>, <b>Netzwerk</b> und <b>Sechseckiges Gitter</b>.</div>
+  <div class="content">Klicken Sie auf <b>Erweiterte Einstellungen</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die<code> Form des Einzugsgebiets</code>festlegen. Die Auswahlmöglichkeiten sind <b> Polygon</b>, <b>Netzwerk</b> und <b>Sechseckiges Gitter</b>.</div>
 </div>
 
   </TabItem>
@@ -223,7 +223,7 @@ Standardmäßig werden die Einzugsgebiete in Polygonform berechnet. Falls Sie di
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Klicken Sie auf das<b>Optionen-Symbol</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die <code>Form des Einzugsgebiets</code>festlegen. Die Auswahlmöglichkeien sind <b>Polygon</b>, <b>Netzwerk</b> und <b>Sechseckiges Gitter</b>.</div>
+  <div class="content">Klicken Sie auf<b>Erweiterte Einstellungen</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die <code>Form des Einzugsgebiets</code>festlegen. Die Auswahlmöglichkeien sind <b> Polygon</b>, <b>Netzwerk</b> und <b>Sechseckiges Gitter</b>.</div>
 </div>
 
   </TabItem>
@@ -241,7 +241,7 @@ Berücksichtigt alle mit dem Auto erreichbaren Wege.
 
 :::tip Tipp
 
-Für weitere Einblicke in den Routing-Algorithmus besuchen Sie [Routing/Car](../../routing/car).
+Für weitere Einblicke in den Routing-Algorithmus besuchen Sie [Verkehrsmittel/Auto](../../routing/car).
 
 :::
 
@@ -269,7 +269,7 @@ Standardmäßig werden die Einzugsgebiete in Polygonform berechnet. Falls Sie di
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Klicken Sie auf das <b>Optionen-Symbol</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die<code> Form des Einzugsgebiets</code>bestimmen. Die Auswahlmöglichkeiten sind<b>Polygon</b>, <b>Netzwerk</b> und <b>Sechseckiges Gitter</b>.</div>
+  <div class="content">Klicken Sie auf <b>Erweiterte Einstellungen</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die<code> Form des Einzugsgebiets</code>bestimmen. Die Auswahlmöglichkeiten sind <b>Polygon</b>, <b>Netzwerk</b> und <b>Sechseckiges Gitter</b>.</div>
 </div>
 
   </TabItem>
@@ -290,7 +290,7 @@ Standardmäßig werden die Einzugsgebiete in Polygonform berechnet. Falls Sie di
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Klicken Sie auf das <b>Optionen-Symbol</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die<code> Form des Einzugsgebiets</code>bestimmen. Die Auswahlmöglichkeiten sind<b>Polygon</b>, <b>Netzwerk</b> und <b>Sechseckiges Gitter</b>.</div>
+  <div class="content">Klicken Sie auf <b>Erweiterte Einstellungen</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die<code> Form des Einzugsgebiets</code>bestimmen. Die Auswahlmöglichkeiten sind <b>Polygon</b>, <b>Netzwerk</b> und <b>Sechseckiges Gitter</b>.</div>
 </div>
 
   </TabItem>
@@ -306,7 +306,7 @@ Berücksichtigt alle mit dem öffentlichen Verkehr erreichbaren Wege. Dieser Rou
 
 :::tip Tipp
 
-Für weitere Einblicke in den Routing-Algorithmus besuchen Sie [Routing/Public Transport](../../routing/public_transport).
+Für weitere Einblicke in den Routing-Algorithmus besuchen Sie [Verkehrsmittel/ÖV](../../routing/public_transport).
 
 :::
 
@@ -322,7 +322,7 @@ Für weitere Einblicke in den Routing-Algorithmus besuchen Sie [Routing/Public T
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Legen Sie die Kofigurationen für <code>Reisezeitlimit</code>, <code>Anzahl der Schritte</code>, <code>Tag</code> <i>(Werktag, Samstaag</i> oder <i>Sonntag</i>) und ein Zeitintervall (<code>Startzeit</code> und <code>Endzeit</code>)fest.</div>
+  <div class="content">Legen Sie die Kofigurationen für <code>Reisezeitlimit</code>, <code>Anzahl der Schritte</code>, <code>Tag</code> <i>(Werktag, Samstag</i> oder <i>Sonntag</i>) und ein Zeitfenster (<code>Startzeit</code> und <code>Endzeit</code>)fest.</div>
 </div>
 
 <img src={require('/img/toolbox/accessibility_indicators/catchments/pt_config.png').default} alt="Konfigurationen für Reisezeit mit dem öffentlichen Verkehr" style={{ maxHeight: "400px", maxWidth: "400px"}}/>
@@ -340,7 +340,7 @@ Standardmäßig werden die Einzugsgebiete in Polygonform berechnet. Falls Sie di
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Klicken Sie auf das <b>Optionen-Symbol</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die <code> Form des Einzugsgebiets</code>bestimmen. Die Auswahlmöglichkeite sind<b>Polygon</b>, <b>Netzwerk</b> and <b>Sechseckiges Gitter</b>.</div>
+  <div class="content">Klicken Sie auf <b>Erweiterte Einstellungen</b> <img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>. Hier können Sie die <code> Form des Einzugsgebiets</code>bestimmen. Die Auswahlmöglichkeite sind <b>Polygon</b>, <b>Netzwerk</b> and <b>Sechseckiges Gitter</b>.</div>
 </div>
 
   </TabItem>
@@ -369,7 +369,7 @@ Wenn Sie **Polygon-Differenz** aktivieren, wird für jeden Schritt nur das "inkr
   <TabItem value="Netzwerk" label="Netzwerk" className="tabItemBox">
 
  #### Netzwerk
-- Es ist eine *straßenebene Darstellung* der Einzugsgebiete.
+- Es ist eine *Darstellung auf Straßenebene* der Einzugsgebiete.
 - Ermöglicht eine einfache Korrelation zu tatsächlichen Straßen und deren Erreichbarkeit innerhalb des Einzugsgebiets.
 - Bietet feinere Details im Vergleich zu den anderen Einzugsgebietstypen.
 
@@ -391,7 +391,7 @@ Wenn Sie **Polygon-Differenz** aktivieren, wird für jeden Schritt nur das "inkr
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Wählen Sie die <code>Art der Startpunkte</code> aus, um zu definieren, wie Sie den/die Startpunkt(e) für die Einzugsgebiete festlegen möchten. Sie können entweder <b>Klicke auf Karte</b> oder <b>Wähle vom Layer</b>auswählen.</div>
+  <div class="content">Wählen Sie die <code>Art der Startpunkte</code> aus, um zu definieren, wie Sie den/die Startpunkt(e) für die Einzugsgebiete festlegen möchten. Sie können entweder <b>Klicke auf Karte</b> oder <b>Wähle vom Layer</b> auswählen.</div>
 </div>
 
 <Tabs>
@@ -448,7 +448,7 @@ Möchten Sie Ihre Einzugsgebiete stilisieren und schöne Karten erstellen? Siehe
 
 ## 4. Technische Details
 
-Einzugsgebiete sind **Isolinien**, die alle Punkte verbinden, die von einem oder mehreren Startpunkten innerhalb eines bestimmten Zeitintervalls (genannt *Isochronen*) oder einer bestimmten Entfernung (genannt *Isodistanz*) erreicht werden können. Je nach gewähltem Verkehrsmittel werden die entsprechenden Verkehrsnetze für das [Routing](/docs/routing/walking) verwendet.
+Einzugsgebiete sind **Isolinien**, die alle Punkte verbinden, die von einem oder mehreren Startpunkten innerhalb eines bestimmten Zeitfensters (genannt *Isochronen*) oder einer bestimmten Entfernung (genannt *Isodistanz*) erreicht werden können. Je nach gewähltem Verkehrsmittel werden die entsprechenden Verkehrsnetze für das [Verkehrsmittel](/docs/routing/walking) verwendet.
 
 Die Einzugsgebiete werden dynamisch im Frontend auf der Basis eines Reisezeit-/Entfernungsgitters erstellt. Daher können Einzugsgebiete schnell und für verschiedene Intervalle in Echtzeit erstellt werden.
 

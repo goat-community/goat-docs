@@ -6,7 +6,7 @@ sidebar_position: 21
 
 GOAT unterstützt **attributbasiertes Styling**, um die Visualisierung von Daten auf Karten zu verbessern. Dieser Ansatz erlaubt es der visuellen Darstellung, Variationen und Muster in den Daten widerzuspiegeln, wodurch es einfacher wird, komplexe räumliche Informationen zu verstehen.
 
-Im Menü <code>Layer Style <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "15px", maxWidth: "21px", objectFit: "cover"}}/></code> sind Styling-Optionen für die ausgewählte Layer zu finden. Jeder Aspekt der Visualisierung eines Layers (<i>Füllfarbe</i>, <i>Strichfarbe</i>, <i>Benutzerdefinierte Markierung</i> und <i>Beschriftungen</i>) kann individuell entsprechend einem Feld oder Attribut in den Daten des Layers gestaltet werden. Um das attributbasierte Styling für einen Layer zu aktivieren Klicken Sie auf <b>Erweiterte Einstellungen</b> <code><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "15px", maxWidth: "15px", objectFit: "cover"}}/></code>.
+Im Menü unter<code>Layer Design <img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "15px", maxWidth: "21px", objectFit: "cover"}}/></code> sind Styling-Optionen für die ausgewählten Layer zu finden. Jeder Aspekt der Visualisierung eines Layers (<i>Füllfarbe</i>, <i>Strichfarbe</i>, <i>Benutzerdefinierte Icon</i> und <i>Beschriftungen</i>) kann individuell entsprechend einem Feld oder Attribut in den Daten des Layers gestaltet werden. Um das attributbasierte Styling für einen Layer zu aktivieren Klicken Sie auf <b>Erweiterte Einstellungen</b> <code><img src={require('/img/map/styling/options_icon.png').default} alt="Options Icon" style={{ maxHeight: "15px", maxWidth: "15px", objectFit: "cover"}}/></code>.
 
 
 :::tip TIPP
@@ -15,7 +15,7 @@ Wenn Sie Ihre Styling-Einstellungen speichern und in weiteren Projekten verwende
 
 ## Attribut auswählen 
 
-Um einen Stil basierend auf einem Attribut zu erstellen, wählen Sie es aus dem Dropdown-Menü des Feldes <code>Farbe basiert auf</code> aus. Daraufhin werden alle Attribute oder Spalten aufgelistet, die in den Daten Ihres Layers verfügbar sind.
+Um einen Stil basierend auf einem Attribut zu erstellen, wählen Sie es aus dem Dropdown-Menü des Feldes <code>Farbe basierend auf</code> aus. Daraufhin werden alle Attribute oder Spalten aufgelistet, die in den Daten Ihres Layers verfügbar sind.
 
 Die Visualisierung wird dann automatisch entsprechend dem Wertebereich der Daten gestaltet. Eine <code>Farbpalette</code> und eine <code>Farbskala</code> sind standardmäßig zugewiesen, können aber angepasst werden, um Ihren Daten und Visualisierungsanforderungen besser zu entsprechen. Die *Farbskala* verwendet eine [**Datenklassifizierungsmethode**](#data-classification-methods), um zu bestimmen, wie Datenwerte verschiedenen Farbkategorien zugewiesen werden.
 
@@ -29,7 +29,7 @@ Die Visualisierung wird dann automatisch entsprechend dem Wertebereich der Daten
 
 In diesem Abschnitt finden Sie GOATs umfassende Paletten, die alle für eine **visuell eindrucksvolle räumliche Datendarstellung** entwickelt wurden. Eine Palette ist eine Sammlung von Farben, die ausgewählt wurden, um die Skala der Werte oder Kategorien in den Daten Ihrer Layer darzustellen.
  
-  Für weitere Anpassungen können Sie einen anderen <code>Typ</code> der Palette, eine andere Anzahl von <code>Schritten</code> oder eine <code>Umkehrung</code> der Farbreihenfolge wählen. Sie können auch eine benutzerdefinierte Farbpalette definieren, indem Sie die <code>Benutzerdefiniert</code>-Schaltfläche aktivieren.
+  Für weitere Anpassungen können Sie einen anderen <code>Typ</code> der Palette, eine andere Anzahl von <code>Schritten</code> oder <code>Umgekehrt</code> der Farbreihenfolge wählen. Sie können auch eine benutzerdefinierte Farbpalette definieren, indem Sie die <code>Benutzerdefiniert</code>-Schaltfläche aktivieren.
  
  GOAT bietet einen umfassenden Satz an vordefinierten Paletten, die in vier verschiedene *Palettentypen* unterteilt sind, um die Auswahl und Anwendung zu erleichtern.
 
@@ -37,10 +37,10 @@ In diesem Abschnitt finden Sie GOATs umfassende Paletten, die alle für eine **v
 
 | Palettentyp | Beispiel | Beschreibung |
 | :-: | --- | ---|
-| Diverging | <img src={require('/img/map/styling/diverging_palette.png').default} alt="diverging" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Diese Art von Farbpalette ist ideal für die Darstellung von Daten, die um einen kritischen Mittelpunkt zentriert sind oder eine natürliche Teilung aufweisen. Sie eignet sich besonders für die Darstellung von Daten, die sowohl positive als auch negative Abweichungen von einem zentralen Wert aufweisen, so dass diese Abweichungen klar und effektiv visualisiert werden können. |
+| Divergierend | <img src={require('/img/map/styling/diverging_palette.png').default} alt="diverging" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Diese Art von Farbpalette ist ideal für die Darstellung von Daten, die um einen kritischen Mittelpunkt zentriert sind oder eine natürliche Teilung aufweisen. Sie eignet sich besonders für die Darstellung von Daten, die sowohl positive als auch negative Abweichungen von einem zentralen Wert aufweisen, so dass diese Abweichungen klar und effektiv visualisiert werden können. |
 | Sequentiell | <img src={require('/img/map/styling/sequential_palette.png').default} alt="sequential" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Diese Farbpalette ist für Daten gedacht, die einem natürlichen Verlauf oder einer geordneten Abfolge folgen. Sie eignet sich hervorragend zur Visualisierung von kontinuierlichen Daten, bei denen die Werte entlang eines Spektrums entweder schrittweise ansteigen oder abfallen. Sie eignet sich daher besonders für die klare Darstellung von Daten, die sich allmählich von einem Extrem zum anderen verändern. |
 | Qualitativ | <img src={require('/img/map/styling/qualitative_palette.png').default} alt="qualitative" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Diese Farbpalette ist für Daten gedacht, die in bestimmte, eindeutige Gruppen oder Klassen eingeteilt sind. Qualitative Farbpaletten sind so konzipiert, dass sie zwischen einzelnen Kategorien unterscheiden. Wichtig ist, dass diese Paletten dies tun, ohne eine inhärente Ordnung oder relative Bedeutung zwischen den verschiedenen Kategorien zu suggerieren. |
-| Singlehue | <img src={require('/img/map/styling/singlehue_palette.png').default} alt="singlehue" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Bei dieser Farbpalette handelt es sich um ein Farbschema, das in der Datenvisualisierung verwendet wird und verschiedene Farbtöne, Schattierungen und Nuancen einer einzigen Farbe verwendet. Dieser Ansatz schafft eine visuell kohärente und harmonische Ästhetik, die besonders effektiv sein kann, um Informationen ohne die Ablenkung durch mehrere Farben zu vermitteln. |
+| Einzelner Farbton| <img src={require('/img/map/styling/singlehue_palette.png').default} alt="singlehue" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/> | Bei dieser Farbpalette handelt es sich um ein Farbschema, das in der Datenvisualisierung verwendet wird und verschiedene Farbtöne, Schattierungen und Nuancen einer einzigen Farbe verwendet. Dieser Ansatz schafft eine visuell kohärente und harmonische Ästhetik, die besonders effektiv sein kann, um Informationen ohne die Ablenkung durch mehrere Farben zu vermitteln. |
 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -51,7 +51,7 @@ In diesem Abschnitt finden Sie GOATs umfassende Paletten, die alle für eine **v
 
 ## Farbskala
 
-Unter <code>Palette</code> finden Sie die **Methode zur Datenklassifizierung** und die **Farbskala**, die Datenwerte mit einem Farbspektrum verbindet. Sie wandelt einen gegebenen Datenwert innerhalb eines gegebenen Bereichs in eine entsprechende Farbe aus einem gegebenen Farbspektrum um. GOAT bietet sechs vordefinierte **Datenklassifizierungsmethoden**: [Quantile](#quantile), [Standard Deviation](#standard-deviation), [Equal Interval](#equal-interval), [Heads and Tails](#heads-and-tails), [Custom Breaks](#custom-breaks-for-numbers), and [Custom Ordinal](#custom-ordinal-for-strings).
+Unter <code>Palette</code> finden Sie die **Farbe basierend auf** und die **Farbskala**, die Datenwerte mit einem Farbspektrum verbindet. Sie wandelt einen gegebenen Datenwert innerhalb eines gegebenen Bereichs in eine entsprechende Farbe aus einem gegebenen Farbspektrum um. GOAT bietet sechs vordefinierte **Datenklassifizierungsmethoden**: [Quantil](#quantile), [Standardabweichung](#standard-deviation), [Gleiches Intervall](#equal-interval), [Heads und Tails](#heads-and-tails), [Benutzerdefinierte Ordinalskala](#custom-breaks-for-numbers), und [Benutzerdefinierte Schritte](#custom-ordinal-for-strings).
 
 ## Datenklassifizierungsmethoden
 
@@ -67,7 +67,7 @@ Die Quantil-Klassifizierung unterteilt Daten in **Gruppen mit einer gleichen Anz
 
 
 :::tip TIPP
-Möchten Sie besser verstehen, was eine Quantilklassifizierung ist? Schauen Sie in unser [Glossary](../../further_reading/glossary/#quantile-classification).
+Möchten Sie besser verstehen, was eine Quantilklassifizierung ist? Schauen Sie in unser [Glossar](../../further_reading/glossary/#quantile-classification).
 :::
 
 ### Standardabweichung
@@ -90,9 +90,9 @@ Bei der Klassifizierung „Gleiches Intervall“ wird der Bereich der Attributwe
 
 </div> 
 
-### Heads and Tails
+### Heads und Tails
 
-Die Heads and Tails-Methode wird für **Datensätze mit einer schiefen Verteilung** verwendet. Sie wurde entwickelt, um die Extreme in den Daten hervorzuheben, indem sie sich auf die **'Heads' (die sehr hohen Werte)** und die **'Tails' (die sehr niedrigen Werte)** konzentriert. Diese Methode ist besonders nützlich für Datensätze, bei denen die wichtigsten Informationen in den Extremen zu finden sind, und bei denen die Hervorhebung dieser Werte zu einem besseren Einblick und Verständnis führen kann. Standardmäßig werden die Daten in 7 Klassen aufgeteilt.  
+Die Heads und Tails-Methode wird für **Datensätze mit einer schiefen Verteilung** verwendet. Sie wurde entwickelt, um die Extreme in den Daten hervorzuheben, indem sie sich auf die **'Heads' (die sehr hohen Werte)** und die **'Tails' (die sehr niedrigen Werte)** konzentriert. Diese Methode ist besonders nützlich für Datensätze, bei denen die wichtigsten Informationen in den Extremen zu finden sind, und bei denen die Hervorhebung dieser Werte zu einem besseren Einblick und Verständnis führen kann. Standardmäßig werden die Daten in 7 Klassen aufgeteilt.  
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -101,14 +101,14 @@ Die Heads and Tails-Methode wird für **Datensätze mit einer schiefen Verteilun
 </div> 
 
 
-### Benutzerdefinierte Schritte (for <code>numbers</code>)
+### Benutzerdefinierte Schritte (für <code>Zahlen</code>)
 
 Die Klassifizierung Benutzerdefinierte Schritte ist eine Datenvisualisierungsmethode für **numerische Daten**. Sie ermöglicht die Definition von **benutzerdefinierten Zwischenpunkten** oder **Schwellenwerten** und bietet damit einen maßgeschneiderten Ansatz für kontextspezifische Visualisierungen. 
 
 
-### Benutzerdefinierte Ordinalskala (for <code>strings</code>)
+### Benutzerdefinierte Ordinalskala (für <code>Zeichen</code>)
 
-Die benutzerdefinierte Ordinalskala ist eine Methode zur Datensortierung und -visualisierung, die auf **String-Daten** angewendet wird, wie z. B. Kategorien, Etiketten oder textbasierte Variablen. Im Gegensatz zu numerischen Daten, bei denen die Reihenfolge typischerweise auf der Größe basiert, fehlt bei Textdaten oft eine natürliche Reihenfolge. Die Benutzerdefinierte Ordinalskala ermöglicht es daher, **eigene Ordnungsregeln für Textfelder** zu definieren und eine individuelle, auf die eigenen Bedürfnisse zugeschnittene Reihenfolge zu erstellen. 
+Die benutzerdefinierte Ordinalskala ist eine Methode zur Datensortierung und -visualisierung, die auf **Zeichen-Daten** angewendet wird, wie z. B. Kategorien, Etiketten oder textbasierte Variablen. Im Gegensatz zu numerischen Daten, bei denen die Reihenfolge typischerweise auf der Größe basiert, fehlt bei Textdaten oft eine natürliche Reihenfolge. Die Benutzerdefinierte Ordinalskala ermöglicht es daher, **eigene Ordnungsregeln für Textfelder** zu definieren und eine individuelle, auf die eigenen Bedürfnisse zugeschnittene Reihenfolge zu erstellen. 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -130,7 +130,7 @@ So können zusätzliche Schritte hinzugefügt und mehrere Text-Werte pro Gruppe 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## Layer Style
+## Layer Design
 
 <Tabs>
  <TabItem value="fill color" label="Füllfarbe" default> Die Füllfarbe kann entweder eine einzelne Farbe oder eine Farbpalette sein. GOAT bietet eine Reihe von voreingestellten Farben und Paletten zur Gestaltung Ihrer Karte an. 
@@ -156,7 +156,7 @@ GOAT wendet eine zufällige Farbpalette auf Ihre Ergebnisse an.
 
 
   </TabItem>
-  <TabItem value="custom marker" label="Benutzerdefinierter Icon"> Diese sind verfügbar für Punktlayer. Aus einer Übersicht können passende Marker ausgewählt werden.
+  <TabItem value="custom marker" label="Benutzerdefinierter Icon"> Diese sind verfügbar für Punktlayer. Aus einer Übersicht können passende Icons ausgewählt werden.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 

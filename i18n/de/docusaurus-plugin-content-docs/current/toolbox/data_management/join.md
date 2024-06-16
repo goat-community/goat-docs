@@ -7,11 +7,11 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 # Join & Group
 
-Füge Felder von einer Layer zu einer anderen hinzu und gruppiere sie, indem du ein übereinstimmendes Feld in beiden Ebenen verwendest.
+Füge Felder von einer Layer zu einer anderen hinzu und gruppiere sie, indem du ein übereinstimmendes Feld in beiden Layern verwendest.
 
 ## 1. Erklärung
 
-Dieses Werkzeug erleichtert die Kombination von zwei Datensätzen. Durch die Definition von Beziehungen werden die Daten aus beiden Ebenen abgeglichen. Das resultierende Ergebnis ist eine neue Layer, die die Attribute der *Zielebene* und eine neue Spalte enthält, die ein ausgewähltes Attribut der *Joinebene* zusammenfasst.
+Dieses Werkzeug erleichtert die Kombination von zwei Datensätzen. Durch die Definition von Beziehungen werden die Daten aus beiden Layern abgeglichen. Das resultierende Ergebnis ist eine neue Layer, die die Attribute des *Ziellayers* und eine neue Spalte enthält, die ein ausgewähltes Attribut des *Joinlayers* zusammenfasst.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
@@ -19,24 +19,24 @@ Dieses Werkzeug erleichtert die Kombination von zwei Datensätzen. Durch die Def
 
 </div> 
 
-GOAT verwendet die **"Inner Join"**-Operation, um einen Join zu berechnen, der Zeilen aus einer Ziel- und einer Joinebene basierend auf einer verwandten Spalte zwischen ihnen kombiniert. Es werden nur Datensätze ausgewählt, die übereinstimmende Werte in beiden Tabellen haben. Das bedeutet, dass für jede Zeile in der Zielebene mindestens eine Zeile in der Joinebene vorhanden sein muss, um eine erfolgreiche Übereinstimmung zu erzielen. Alle nicht übereinstimmenden Zeilen werden nicht zurückgegeben.
+GOAT verwendet die **"Inner Join"**-Operation, um einen Join zu berechnen, der Zeilen aus einem Ziel- und einem Join-Layer basierend auf einer verwandten Spalte zwischen ihnen kombiniert. Es werden nur Datensätze ausgewählt, die übereinstimmende Werte in beiden Tabellen haben. Das bedeutet, dass für jede Zeile im Ziellayer mindestens eine Zeile im Join-Layer vorhanden sein muss, um eine erfolgreiche Übereinstimmung zu erzielen. Alle nicht übereinstimmenden Zeilen werden nicht zurückgegeben.
 
 ## 2. Anwendungsbeispiele
 
 - Zusammenfassung von Bevölkerungszahlen aus einer Tabelle in eine Feature-Layer von Postleitzahlengebieten (verwandte Spalte: Postleitzahlen).
 - Zusammenführen und Aggregieren von Daten aus einer Haushaltsbefragung mit den Geometrien des Zensusgebiets (verwandte Spalte: Zensusgebiet).
-- Join der Anzahl von Pendlern aus einer Tabelle in eine Feature-Layer mit den Stadtgrenzen (verwandte Spalte: Stadtname).
+- Join der Anzahl von Pendlern aus einer Tabelle in einen Feature-Layer mit den Stadtgrenzen (verwandte Spalte: Stadtname).
 
 ## 3. Wie benutzt man das Werkzeug?
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Klicke auf <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Klickn Sie auf <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Klicke im Menü <code>Datenmanagement</code> auf <code>Join & Group</code>.</div>
+  <div class="content">Wählen Sie im Menü <code>Datenmanagement</code> aus und drücken Sie auf <code>Join & Group</code>.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -63,7 +63,7 @@ GOAT verwendet die **"Inner Join"**-Operation, um einen Join zu berechnen, der Z
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Wähle das <code>Zielfeld</code> der Zielebene, das du zum Abgleichen der Datensätze beider Ebenen verwenden möchtest.</div>
+  <div class="content">Wähle das <code>Zielfeld</code> des Ziellayers, das du zum Abgleichen der Datensätze beider Layer verwenden möchtest.</div>
 </div>
 
 <div class="step">
@@ -91,7 +91,7 @@ Du kannst zwischen mehreren statistischen Operationen wählen. Einige Methoden s
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Wähle die <code>Feldstatistiken</code>, für die du die statistische Operation anwenden möchtest.</div>
+  <div class="content">Wähle die <code>Feld Statistik</code>, für die du die statistische Operation anwenden möchtest.</div>
 </div>
 
 <div class="step">
@@ -103,7 +103,7 @@ Du kannst zwischen mehreren statistischen Operationen wählen. Einige Methoden s
 
 <div class="step">
   <div class="step-number">10</div>
-  <div class="content">Der resultierende Layer<b>"Join"</b> wird dem Projekt sowie den <a href="../../workspace/datasets">Datensätzen</a> in deinem Arbeitsbereich hinzugefügt. Diese Layer besteht aus den Informationen desZiellayers und einer <b>zusätzlichen Spalte</b>, die die Ergebnisse der <b>statistischen Operation</b> zeigt. Du kannst die Attribute sehen, indem du auf eines der Features in der Karte klickst.</div>
+  <div class="content">Der resultierende Layer<b>"Join"</b> wird dem Projekt sowie den <a href="../../workspace/datasets">Datensätzen</a> in deinem Workspace hinzugefügt. Dieser Layer besteht aus den Informationen des Ziellayers und einer <b>zusätzlichen Spalte</b>, die die Ergebnisse der <b>statistischen Operation</b> zeigt. Du kannst die Attribute sehen, indem du auf eines der Objekte in der Karte klickst.</div>
 </div>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

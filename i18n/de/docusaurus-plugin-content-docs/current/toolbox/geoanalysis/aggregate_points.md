@@ -11,7 +11,7 @@ Das **Punkte aggregieren**-Werkzeug führt statistische Analysen von Punkten dur
 
 ## 1. Erklärung
 
-Das Werkzeug Punkte aggregieren kann verwendet werden, um **die Eigenschaften von Punkten innerhalb eines bestimmten Gebiets zu analysieren**. Es aggregiert die Informationen der Punkte und ermöglicht so die Berechnung der Punktanzahl, die Summe der Punktattribute oder z.B. den maximalen Wert eines bestimmten Punktattributs innerhalb eines Polygons. Als Polygon-Layer kann entweder ein Feature-Layer (z.B. Stadtteile) oder ein hexagonales Raster verwendet werden.
+Das Werkzeug Punkte aggregieren kann verwendet werden, um **die Eigenschaften von Punkten innerhalb eines bestimmten Gebiets zu analysieren**. Es aggregiert die Informationen der Punkte und ermöglicht so die Berechnung der Punktanzahl, die Summe der Punktattribute oder z.B. den maximalen Wert eines bestimmten Punktattributs innerhalb eines Polygons. Als Polygon-Layer kann entweder ein Feature-Layer (z.B. Stadtteile) oder ein sechseckiges Raster verwendet werden.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -21,20 +21,20 @@ Das Werkzeug Punkte aggregieren kann verwendet werden, um **die Eigenschaften vo
 
 ## 2. Anwendungsbeispiele
 
-- Aggregieren der Bevölkerungszahlen auf einem Hexagon-Raster.
+- Aggregieren der Bevölkerungszahlen auf einem sechseckigen Raster.
 - Ableiten der Summe der Verkehrsunfälle innerhalb eines Stadtteils.
-- Visualisieren der durchschnittlichen Anzahl von Carsharing-Fahrzeugen pro Station auf Stadtebene.
+- Visualisieren der durchschnittlichen Anzahl von Carsharing-Fahrzeugen pro Haltestelle auf Stadtebene.
 
 ## 3. Wie benutzt man das Werkzeug?
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Klicke auf <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Klicken Sie auf <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Klicke im Menü <code>Geoanalyse</code> auf <code>Punkte aggregieren</code>.</div>
+  <div class="content">Drücken Sie anschließend im Menü <code>Geoanalyse</code> auf <code>Punkte aggregieren</code>.</div>
 </div>
 
 <img src={require('/img/toolbox/geoanalysis/aggregate_points/aggregate_points.png').default} alt="Point Aggregation Tool in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
@@ -48,7 +48,7 @@ Das Werkzeug Punkte aggregieren kann verwendet werden, um **die Eigenschaften vo
 
 <div class="step">
   <div class="step-number">4</div>
-  <div class="content">Wähle, auf welchem <code>Gebietstyp</code> du die Referenz-Layer aggregieren möchtest. Du kannst zwischen <b>Polygon</b> oder <b>H3-Raster</b> wählen.</div>
+  <div class="content">Wählen Sie, auf welche <code>Form</code> Sie die Referenz-Layer aggregieren möchten. Sie können zwischen <b>Polygon</b> oder <b>H3-Raster</b> wählen.</div>
 </div>
 
 <Tabs>
@@ -58,7 +58,7 @@ Das Werkzeug Punkte aggregieren kann verwendet werden, um **die Eigenschaften vo
 
 <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Wähle den <code>Gebiets-Layer</code>, der die Polygone enthält, auf denen du deine Punktdaten aggregieren möchtest.</div>
+  <div class="content">Wählen Sie den <code>Form-Layer</code>, der die Polygone enthält, auf denen Sie Ihre Punktdaten aggregieren möchten.</div>
 </div>
 
   </TabItem>
@@ -68,7 +68,7 @@ Das Werkzeug Punkte aggregieren kann verwendet werden, um **die Eigenschaften vo
 
  <div class="step">
   <div class="step-number">5</div>
-  <div class="content">Wähle die <code>H3-Rasterauflösung</code>. Du kannst zwischen Auflösungen von <b>3</b> (durchschnittliche Kantenlänge von 69 km) und <b>10</b> (durchschnittliche Kantenlänge von 70 m) wählen.</div>
+  <div class="content">Wähle die <code>H3-Raster</code>. Sie können zwischen Auflösungen von <b>3</b> (durchschnittliche Kantenlänge von 69 km) und <b>10</b> (durchschnittliche Kantenlänge von 70 m) wählen.</div>
 </div>
 
 :::tip Tipp
@@ -84,7 +84,7 @@ Um mehr über das H3-Raster zu erfahren, kannst du das [Glossar](../../further_r
 
 <div class="step">
   <div class="step-number">6</div>
-  <div class="content">Wähle die <code>Statistische Methode</code> und das Feld, das du für die <code>Feldstatistik</code> verwenden möchtest (das Feld in des Referenz-Layers, das verwendet wird, um die aggregierten Punkte für die Statistik zu gruppieren).</div>
+  <div class="content">Wählen Sie die <code>Statistische Methode</code> und das Feld, das Sie für die <code>Feld Statistik</code> verwenden möchten (das Feld des Referenz-Layers, das verwendet wird, um die aggregierten Punkte für die Statistik zu gruppieren).</div>
 </div>
 
 Die verfügbaren **Statistischen Methoden** sind im Folgenden aufgeführt. Die verfügbaren Methoden hängen vom Datentyp des ausgewählten Attributs ab:
@@ -100,10 +100,10 @@ Die verfügbaren **Statistischen Methoden** sind im Folgenden aufgeführt. Die v
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Klicke auf <code>Ausführen</code>.</div>
+  <div class="content">Drücken Sie nun auf <code>Ausführen</code>.</div>
 </div>
 
-:::tip HINWEIS
+:::tip Tipp
 
 Abhängig von der Größe der Datensätze kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../workspace/home#status-bar) zeigt den aktuellen Fortschritt an.
 
@@ -113,11 +113,11 @@ Abhängig von der Größe der Datensätze kann die Berechnung einige Minuten dau
 
 <div class="step">
   <div class="step-number">8</div>
-  <div class="content">Sobald der Berechnungsprozess abgeschlossen ist, wird die resultierende Layer <b>"Aggregation Point"</b> der Karte hinzugefügt. Diese Layer besteht aus den Informationen der Quell-Layer und einer <b>zusätzlichen Spalte</b>, die die Ergebnisse der <b>statistischen Operation</b> anzeigt. Du kannst die Tabelle sehen, indem du auf das Polygon auf der Karte klickst.</div>
+  <div class="content">Sobald der Berechnungsprozess abgeschlossen ist, wird die resultierende Layer <b>"Aggregation Point"</b> der Karte hinzugefügt. Dieser Layer besteht aus den Informationen der Quell-Layer und einer <b>zusätzlichen Spalte</b>, die die Ergebnisse der <b>statistischen Operation</b> anzeigt. Sie können die Tabelle sehen, indem Sie auf das Polygon auf der Karte klicken.</div>
 </div>
 
 <img src={require('/img/toolbox/geoanalysis/aggregate_points/aggregate_points_result.png').default} alt="Point Aggregation Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto"}}/>
 
 :::tip Tipp
-Möchtest du deinen Ergebnislayer stylen und ansprechende Karten erstellen? Siehe [Styling](../../map/layer_style/styling).
+Möchten Sie Ihren Ergebnislayer gestalten und ansprechende Karten erstellen? Dies können Sie unter [Layer Design](../../map/layer_style/styling).
 :::

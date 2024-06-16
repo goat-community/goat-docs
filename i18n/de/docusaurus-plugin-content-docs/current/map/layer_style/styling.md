@@ -4,13 +4,13 @@ sidebar_position: 20
 
 # Basic Styling
 
-Wenn Sie eine neue Layer zu Ihrem Projekt hinzufügen, wird ihr ein Standardstil zugewiesen, welche je nach Datensatz unterschiedlich sein kann. Durch die Anpassung der Optionen im Menü <code>Layer Style<img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "15px", maxWidth: "15px", objectFit: "cover"}}/></code> können Sie die Darstellung des Layers anpassen und **ansprechende Karten** erstellen. Die verfügbaren Gestaltungsoptionen hängen von der Art der in einer Layer enthaltenen Daten ab, d. h. davon, ob es sich um Punkte, Linien oder Polygone handelt. Dabei können mehrere visuelle Aspekte wie **Farben**, **Striche** und **Optionen** angepasst werden.
+Wenn Sie einen neue Layer zu Ihrem Projekt hinzufügen, wird ihr ein Standardstil zugewiesen, welche je nach Datensatz unterschiedlich sein kann. Durch die Anpassung der Optionen im Menü <code>Layer Design<img src={require('/img/map/styling/styling_icon.webp').default} alt="Styling Icon" style={{ maxHeight: "15px", maxWidth: "15px", objectFit: "cover"}}/></code> können Sie die Darstellung des Layers anpassen und **ansprechende Karten** erstellen. Die verfügbaren Gestaltungsoptionen hängen von der Art der in einer Layer enthaltenen Daten ab, d. h. davon, ob es sich um Punkte, Linien oder Polygone handelt. Dabei können mehrere visuelle Aspekte wie **Farben**, **Striche** und **Optionen** angepasst werden.
 
 ## Farbeinstellungen
 
 ### Füllfarbe
 
-Die Füllfarbe wird verwendet, um das **Innere** von **Punkt- oder Polygon-Features** auf einer Karte darzustellen. Die Füllfarbe ist ein Aspekt der Kartographie und der GIS-Visualisierung, da sie zur besseren Lesbarkeit der Karte beiträgt. Der [Color Picker](#color-picker--preset-colors) bietet verschiedene Optionen, um die Farben Ihrer Wahl auszuwählen.
+Die Füllfarbe wird verwendet, um das **Innere** von **Punkt- oder Polygon-Features** auf einer Karte darzustellen. Die Füllfarbe ist ein Aspekt der Kartographie und der GIS-Visualisierung, da sie zur besseren Lesbarkeit der Karte beiträgt. Der [Farbwähler](#color-picker--preset-colors) bietet verschiedene Optionen, um die Farben Ihrer Wahl auszuwählen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -31,12 +31,12 @@ Um die Deckkraft Ihrer Layerstile für die Füllfarbe anzupassen, ändern Sie di
 
 ### Strichfarbe
 
-Ähnlich wie die Füllfarbe kann auch die Strichfarbe eingestellt werden. Die Strichfarbe bezieht sich auf die Farbe, die auf die **Außenlinien oder Kanten** von Kartenmerkmalen wie Polygonen, Linien und Punkten angewendet wird. Sie wird verwendet, um die Kanten von räumlichen Elementen abzugrenzen, sie voneinander zu unterscheiden und ihre Sichtbarkeit auf der Karte zu verbessern. Der [Color Picker](#color-picker--preset-colors) bietet verschiedene Optionen, um die Farben Ihrer Wahl auszuwählen.
+Ähnlich wie die Füllfarbe kann auch die Strichfarbe eingestellt werden. Die Strichfarbe bezieht sich auf die Farbe, die auf die **Außenlinien oder Kanten** von Kartenmerkmalen wie Polygonen, Linien und Punkten angewendet wird. Sie wird verwendet, um die Kanten von räumlichen Elementen abzugrenzen, sie voneinander zu unterscheiden und ihre Sichtbarkeit auf der Karte zu verbessern. Der [Farbwähler](#color-picker--preset-colors) bietet verschiedene Optionen, um die Farben Ihrer Wahl auszuwählen.
 
 
 ### Farbwähler & voreingestellte Farben
 
-Wann immer Sie eine Farbe ändern möchten, sei es **Füllfarbe** oder **Strichfarbe**, öffnet sich das Farbmenü. Sie können die Farben entweder über den <code>Farbpicker</code> einstellen, indem Sie den Picker im Farbfeld **bewegen** oder **hex-Code** oder **RGB-Werte** definieren, oder Sie können eine der Farben auswählen, die wir in den <code>Voreinstellungsfarben</code> bereitstellen.
+Wann immer Sie eine Farbe ändern möchten, sei es **Füllfarbe** oder **Strichfarbe**, öffnet sich das Farbmenü. Sie können die Farben entweder über den <code>Farbwähler</code> einstellen, indem Sie die Maus im Farbfeld **bewegen** oder **hex-Code** bzw. **RGB-Werte** definieren. Ansonsten können Sie eine der Farben auswählen, die wir unter <code>Voreingestellte Farben</code> bereitstellen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -47,7 +47,7 @@ Wann immer Sie eine Farbe ändern möchten, sei es **Füllfarbe** oder **Strichf
 
 ## Benutzerdefinierte Icons
 
-Für Punktlayer können benutzerdefinierte Marker für die Visualisierung verwendet werden. Dazu kann der Marker aus einer **Icon**-Liste ausgewählt werden. Die Markergröße kann über den Schieberegler eingestellt werden.
+Für Punktlayer können benutzerdefinierte Icons für die Visualisierung verwendet werden. Dazu kann das Icon aus einer **Icon**-Liste ausgewählt werden. Die Icongröße kann über den Schieberegler eingestellt werden.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -70,7 +70,7 @@ Neben der Farbe kann auch die **Strichstärke** der Striche für **Linienlayern*
 
 ### Radius
 
-Bei **Punktdatensätzen** kann der **Radius** angepasst werden. Daher können Sie entweder den Radius-Schieberegler verwenden, um schrittweise Änderungen vorzunehmen, oder die gewünschte Radiusgröße direkt in das Textfeld eingeben, um eine präzise Steuerung zu ermöglichen.
+Bei **Punktdatensätzen** kann der **Radius** angepasst werden. Daher können Sie entweder den Radius-Schieberegler verwenden, um schrittweise Änderungen vorzunehmen, oder die gewünschte Radiusgröße direkt in das Textfeld eingeben, um eine präzise Eingabe zu ermöglichen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -79,7 +79,7 @@ Bei **Punktdatensätzen** kann der **Radius** angepasst werden. Daher können Si
 </div> 
 
 
-## Standardeinstellungen 
+## Weitere Optionen
 
 Durch Klicken auf die drei Punkte <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px", objectFit: "cover"}}/>,  öffnen sich weitere Einstellungen. 
 
@@ -91,7 +91,7 @@ Durch Klicken auf die drei Punkte <img src={require('/img/map/filter/3dots.png')
 
 Wenn Sie <code>Speichern als Standard</code> wählen, werden die aktuellen Stileinstellungen an den Datensatz angehängt. Wann immer Sie diesen Datensatz zu einem Projekt hinzufügen, wird dieser Standardstil verwendet (*Hinweis: bestehende Projekte, in denen dieser Datensatz angezeigt wird, sind davon nicht betroffen*). 
 
-Wenn Sie auf <code>Rücksetzen</code> klicken, können Sie die aktuellen Stileinstellungen des Layers im Projekt wieder auf die Standardwerte zurücksetzen. 
+Wenn Sie auf <code>Zurücksetzen</code> klicken, können Sie die aktuellen Designeinstellungen des Layers im Projekt wieder auf die Standardwerte zurücksetzen. 
 
 
 :::tip TIPP

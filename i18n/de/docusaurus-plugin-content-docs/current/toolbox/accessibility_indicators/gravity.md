@@ -12,19 +12,19 @@ Eine farblich gekennzeichnete Karte zur Visualisierung der Erreichbarkeit von Pu
 
 ## 1. Erklärung
 
-Die Heatmap wird als farblich gekennzeichnetes sechseckiges Raster dargestellt und berücksichtigt reale Verkehrs- und Straßennetze, um die Erreichbarkeit zu berechnen. Nach Angabe eines *Verkehrsmittels* (zu Fuß, mit dem Fahrrad usw.), eines *Opportunity Layers* und eines *Reisezeitlimits* zeigt das Ergebnis ein farblich gekennzeichnetes sechseckiges Raster für alle unter diesen Bedingungen erreichbaren Gebiete an. Die Farbskala bezieht sich auf die lokale Erreichbarkeit.
+Die Heatmap wird als farblich gekennzeichnetes sechseckiges Raster dargestellt und berücksichtigt reale Verkehrs- und Straßennetze, um die Erreichbarkeit zu berechnen. Nach Angabe eines *Verkehrsmittels* (zu Fuß, mit dem Fahrrad usw.), eines *Gelegenheits-Layers* und eines *Reisezeitlimits* zeigt das Ergebnis ein farblich gekennzeichnetes sechseckiges Raster für alle unter diesen Bedingungen erreichbaren Gebiete an. Die Farbskala bezieht sich auf die lokale Erreichbarkeit.
 
 :::info INFO
 
-Ein `Opportunity Layer` enthält [geografische Punkte](../../../data/data_types "Was sind geografische Punkte?"). Wählen Sie einen oder mehrere solcher Layer mit Ihren Zielpunkten (Opportunities) als Input für die Heatmap.
+Ein `Gelegenheits-Layer` enthält [geografische Punkte](../../../data/data_types "Was sind geografische Punkte?"). Wählen Sie einen oder mehrere solcher Layer mit Ihren Zielpunkten (Opportunities) als Input für die Heatmap.
 
 :::
 
-Einzigartig an der Schwerkraft-basierten Heatmap sind die anpassbaren Eigenschaften wie *Empfindlichkeit*, *Impedanzfunktion* und *Zielpotenzial*, die Ihnen eine genaue Kontrolle über die verwendete Methode und die Metadaten geben, die bei der Berechnung des Erreichbarkeitswertes für ein Gebiet berücksichtigt werden. Beeinflusst durch diese Eigenschaften kann die Erreichbarkeit eines Punktes komplexes menschliches Verhalten in der realen Welt modellieren und ist ein leistungsfähiges Maß für die Verkehrs- und Erreichbarkeitsplanung.
+Einzigartig an der Gravity Heatmap sind die anpassbaren Eigenschaften wie *Sensitivität*, *Widerstandsfunktion* und das *Zielpotenzialfeld*, die Ihnen eine genaue Kontrolle über die verwendete Methode und die Metadaten geben, die bei der Berechnung des Erreichbarkeitswertes für ein Gebiet berücksichtigt werden. Beeinflusst durch diese Eigenschaften kann die Erreichbarkeit eines Punktes komplexes menschliches Verhalten in der realen Welt modellieren und ist ein leistungsfähiges Maß für die Verkehrs- und Erreichbarkeitsplanung.
 
 :::tip Profi-Tipp
 
-Kurz gesagt, sind Erreichbarkeits-Heatmaps eine Visualisierung, die den *Zugang* von verschiedenen, nicht spezifizierten Ausgangspunkten zu einem oder mehreren spezifizierten Zielen darstellt. Dies steht im Gegensatz zu Einzugsgebieten, die den *Ausgang* von einem oder mehreren bestimmten Ursprüngen zu verschiedenen, nicht spezifizierten Zielen darstellen.
+Kurz gesagt, sind Erreichbarkeits-Heatmaps eine Visualisierung, die die *Erreichbarkeit* von verschiedenen, nicht spezifizierten Ausgangspunkten zu einem oder mehreren spezifizierten Zielen darstellt. Dies steht im Gegensatz zu Einzugsgebieten, die den *Ausgang* von einem oder mehreren bestimmten Quellen zu verschiedenen, nicht spezifizierten Zielen darstellen.
 
 :::
 
@@ -32,20 +32,20 @@ Kurz gesagt, sind Erreichbarkeits-Heatmaps eine Visualisierung, die den *Zugang*
   
 :::info 
 
-Heatmaps sind in bestimmten Regionen verfügbar. Bei der Auswahl eines „Verkehrsmittels“ wird auf der Karte ein **geofence** angezeigt, um die unterstützten Regionen hervorzuheben.
+Heatmaps sind in bestimmten Regionen verfügbar. Bei der Auswahl eines „Verkehrsmittels“ wird auf der Karte ein **Geofence** angezeigt, um die unterstützten Regionen hervorzuheben.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/toolbox/accessibility_indicators/heatmaps/gravity_based/geofence.png').default} alt="Geofence for Gravity-based Heatmaps in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
 </div> 
 
 
-Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie sich bitte an [contact us](https://plan4better.de/en/contact/ "Contact us"). Wir besprechen mit Ihnen gerne weitere Möglichkeiten.
+Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie sich bitte an unseren [Support](https://plan4better.de/en/contact/ "Support").
 
 :::
 
-## 2. Beispielhafte Anwendungsfälle
+## 2. Anwendungsbeispiele
 
- - Welche Stadtteile oder Gebiete haben nur begrenzten Zugang zu öffentlichen Einrichtungen wie Parks, Freizeiteinrichtungen oder Kultureinrichtungen und erfordern möglicherweise gezielte Maßnahmen zur Verbesserung der Erreichbarkeit?
+ - Welche Stadtteile oder Gebiete haben nur begrenzte Erreichbarkeit zu öffentlichen Einrichtungen wie Parks, Freizeiteinrichtungen oder Kultureinrichtungen und erfordern möglicherweise gezielte Maßnahmen zur Verbesserung der Erreichbarkeit?
 
  - Gibt es Gebiete mit hohem Potenzial für eine verkehrsorientierte Entwicklung oder Möglichkeiten zur Verbesserung der Infrastruktur für den nicht motorisierten Verkehr, z. B. Radwege oder fußgängerfreundliche Straßen?
 
@@ -55,7 +55,7 @@ Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie
 
  - Wie ist die Erreichbarkeit in verschiedenen Stadtteilen im Vergleich, wenn man die qualitativen Aspekte der Einrichtungen berücksichtigt (z. B. Häufigkeit der Bushaltestellen, Größe der Supermärkte, Kapazität der Schulen usw.)?
 
- - Wie sieht die reale Erreichbarkeit von Bahnhöfen des öffentlichen Verkehrs aus, wenn sich die Fahrtzeiten zu diesen Bahnhöfen nicht linear auf ihre Erreichbarkeit auswirken?
+ - Wie sieht die Erreichbarkeit von Bahnhöfen des öffentlichen Verkehrs aus, wenn sich die Fahrtzeiten zu diesen Bahnhöfen nicht linear auf ihre Erreichbarkeit auswirken?
 
 
 
@@ -71,7 +71,7 @@ Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie
   <div class="content">Unter <code>Erreichbarkeitsindikatoren</code> wählen Sie <code>Heatmap Gravity</code>.</div>
 </div>
 
-### Routing
+### Verkehrsmittel
 
 <div class="step">
   <div class="step-number">3</div>
@@ -88,7 +88,7 @@ Berücksichtigt alle zu Fuß begehbaren Wege. Für Heatmaps wird eine Gehgeschwi
 
 :::tip Tipp
 
-Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/zu Fuß](../../routing/walking).
+Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Verkehrsmittel/zu Fuß](../../routing/walking).
 
 :::
 
@@ -102,7 +102,7 @@ Berücksichtigt alle mit dem Fahrrad befahrbaren Wege. Dieser Routing-Modus ber�
 
 :::tip Tipp
 
-Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Fahrrad](../../routing/fahrrad). Darüber hinaus können Sie diese [Publikation](https://doi.org/10.1016/j.jtrangeo.2021.103080) lesen.
+Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Verkehrsmittel/Fahrrad](../../routing/fahrrad). Darüber hinaus können Sie diese [Publikation](https://doi.org/10.1016/j.jtrangeo.2021.103080) lesen.
 
 :::
 
@@ -116,7 +116,7 @@ Berücksichtigt alle mit dem Pedelec befahrbaren Wege. Dieser Routing-Modus ber�
 
 :::tip Tipp
 
-Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Fahrrad](../../routing/fahrrad). Darüber hinaus können Sie diese [Publikation](https://doi.org/10.1016/j.jtrangeo.2021.103080) lesen.
+Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Verkehrsmittel/Fahrrad](../../routing/fahrrad). Darüber hinaus können Sie diese [Publikation](https://doi.org/10.1016/j.jtrangeo.2021.103080) lesen.
 
 :::
 
@@ -130,7 +130,7 @@ Berücksichtigt alle mit dem Auto befahrbaren Wege. Dieser Routing-Modus berück
 
 :::tip Tipp
 
-Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Auto](../../routing/car).
+Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Verkehrsmittel/Auto](../../routing/car).
 
 :::
 
@@ -147,43 +147,43 @@ Weitere Einblicke in den Routing-Algorithmus erhalten Sie unter [Routing/Auto](.
 
 <Tabs>
 
-<TabItem value="gaussian" label="Gaussian" default className="tabItemBox">
+<TabItem value="gaussian" label="Gaussfunktion" default className="tabItemBox">
 
 #### Gaussfunktion
 
-Diese Funktion berechnet die Erreichbarkeiten auf der Grundlage einer Gaußschen Kurve, die durch die von Ihnen definierten Parameter `sensitivity` und `destination potential` beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
+Diese Funktion berechnet die Erreichbarkeiten auf der Grundlage einer Gaußschen Kurve, die durch die von Ihnen definierten Parameter `Sensitivität` und `Zielpotentialfeld` beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
 :::tip Pro Tipp
 
 Wie Studien gezeigt haben, ist die Beziehung zwischen Reisezeit und Erreichbarkeit oft nicht linear. Das bedeutet, dass Menschen bereit sein können, eine kurze Strecke zurückzulegen, um eine Einrichtung zu erreichen, aber mit zunehmender Entfernung nimmt ihre Bereitschaft, diese Strecke zurückzulegen, schnell ab (oft überproportional).
 
-Mit Hilfe der von Ihnen definierten *sensitivity* ermöglicht die Gauß-Funktion eine genauere Modellierung dieses Aspekts des Verhaltens in der realen Welt.
+Mit Hilfe der von Ihnen definierten *Sensitivität* ermöglicht die Gauß-Funktion eine genauere Modellierung dieses Aspekts des Verhaltens in der realen Welt.
 
 :::
 
 </TabItem>
   
-<TabItem value="linear" label="Linear" default className="tabItemBox">
+<TabItem value="linear" label="Lineare Funktion" default className="tabItemBox">
 
 #### Lineare Funktion
 
-Diese Funktion stellt eine direkte Korrelation zwischen Reisezeit und Erreichbarkeit her, die durch das von Ihnen angegebene `destination_potential` moduliert wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
+Diese Funktion stellt eine direkte Korrelation zwischen Reisezeit und Erreichbarkeit her, die durch das von Ihnen angegebene `Zielpotentialfeld` moduliert wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
 </TabItem>
 
-<TabItem value="exponential" label="Exponential" default className="tabItemBox">
+<TabItem value="exponential" label="Exponentialfunktion" default className="tabItemBox">
 
-#### Exponentielle Funktion
+#### Exponentialfunktion
 
-Diese Funktion berechnet die Erreichbarkeiten auf der Grundlage einer Exponentialkurve, die von der von Ihnen definierten `sensitivity` und dem `destination potential`  beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
+Diese Funktion berechnet die Erreichbarkeiten auf der Grundlage einer Exponentialkurve, die von der von Ihnen definierten `Sensitivität` und dem `Zielpotentialfeld`  beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
 </TabItem>
 
-<TabItem value="power" label="Power" default className="tabItemBox">
+<TabItem value="power" label="Powerfunktion" default className="tabItemBox">
 
 #### Powerfunktion
 
-Diese Funktion berechnet die Erreichbarkeiten auf der Grundlage einer Leistungskurve, die durch die von Ihnen definierte `sensitivity` und das `destination potential` beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
+Diese Funktion berechnet die Erreichbarkeiten auf der Grundlage einer Leistungskurve, die durch die von Ihnen definierte `Sensitivität` und das `Zielpotentialfeld` beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
 </TabItem>
 
@@ -191,9 +191,9 @@ Diese Funktion berechnet die Erreichbarkeiten auf der Grundlage einer Leistungsk
 
 ### Gelegenheiten
 
-Gelegenheiten sind im Wesentlichen punktbasierte Daten (wie [POI](../../further_reading/glossary#point-of-interest-poi "Was ist ein POI?")), für die Sie eine Heatmap berechnen möchten. Dies sind die „destinations“ (z. B. Bahnhöfe, Schulen, andere Einrichtungen oder Ihre eigenen punktbasierten Daten), während die umliegenden Gebiete „origins“ sind, für die ein Erreichbarkeitswert berechnet und visualisiert wird.
+Gelegenheiten sind im Wesentlichen punktbasierte Daten (wie [POI](../../further_reading/glossary#point-of-interest-poi "Was ist ein POI?")), für die Sie eine Heatmap berechnen möchten. Dies sind die „Destinationen“ (z. B. Bahnhöfe, Schulen, andere Einrichtungen oder Ihre eigenen punktbasierten Daten), während die umliegenden Gebiete „Quellen“ sind, für die ein Erreichbarkeitswert berechnet und visualisiert wird.
 
-Zusätzlich können Sie weitere Opportunities über die Schaltfläche `+ Add Opportunity`am unteren Rand der Leiste erstellen. Alle Opportunity-Layer werden kombiniert, um eine einheitliche Heatmap zu erstellen.
+Zusätzlich können Sie weitere Gelegenheiten über die Schaltfläche `+ Gelegenheit hinzufügen`am unteren Rand der Leiste erstellen. Alle Gelegenheits-Layer werden kombiniert, um eine einheitliche Heatmap zu erstellen.
 
 <div class="step">
   <div class="step-number">5</div>
@@ -207,7 +207,7 @@ Zusätzlich können Sie weitere Opportunities über die Schaltfläche `+ Add Opp
 
 :::tip Tipp
 
-Benötigen Sie Hilfe bei der Auswahl einer geeigneten Reisezeit für verschiedene Gemeinschaftseinrichtungen? Das [„Standort-Werkzeug“] (https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) der Stadt Chemnitz kann Ihnen dabei behilflich sein.
+Benötigen Sie Hilfe bei der Auswahl einer geeigneten Reisezeit für verschiedene Einrichtungen? Das [„Standort-Werkzeug“] (https://www.chemnitz.de/chemnitz/media/unsere-stadt/verkehr/verkehrsplanung/vep2040_standortwerkzeug.pdf) der Stadt Chemnitz kann Ihnen dabei behilflich sein.
 
 :::
 
@@ -218,7 +218,7 @@ Benötigen Sie Hilfe bei der Auswahl einer geeigneten Reisezeit für verschieden
 
 :::tip Pro-Tipp
 
-Das *destination potential* ist eine nützliche Methode, um bestimmte Möglichkeiten gegenüber anderen zu bevorzugen. Wenn es zum Beispiel zwei Supermärkte gibt und einer näher liegt als der andere, würde er aufgrund seiner Nähe in der Regel eine höhere Erreichbarkeitsbewertung erhalten. Wenn der weiter entfernte Supermarkt jedoch größer ist, sollten Sie ihm eine höhere Priorität einräumen. Mit *destination potential* können Sie eine zusätzliche Eigenschaft (z. B. die Größe von Supermärkten) verwenden, um Opportunities ein "potential" zuzuweisen und bei der Berechnung der Erreichbarkeit qualitative Informationen zu verwenden.
+Das *Zielpotenzialfeld* ist eine nützliche Methode, um bestimmte Möglichkeiten gegenüber anderen zu bevorzugen. Wenn es zum Beispiel zwei Supermärkte gibt und einer näher liegt als der andere, würde er aufgrund seiner Nähe in der Regel eine höhere Erreichbarkeitsbewertung erhalten. Wenn der weiter entfernte Supermarkt jedoch größer ist, sollten Sie ihm eine höhere Priorität einräumen. Mit *Zielpotenzialfeld* können Sie eine zusätzliche Eigenschaft (z. B. die Größe von Supermärkten) verwenden, um Gelegenheiten ein "Potenzial" zuzuweisen und bei der Berechnung der Erreichbarkeit qualitative Informationen zu verwenden.
 
 :::
 
@@ -244,31 +244,31 @@ Je nach Ihrer Konfiguration kann die Berechnung einige Minuten dauern. Die [Stat
   <div class="step-number">10</div>
   <div class="content">Sobald die Berechnung abgeschlossen ist, wird ein Ergebnislayer zur Karte hinzugefügt. Dieser Layer namens <i>Heatmap Gravity</i> enthält Ihre farblich gekennzeichnete Heatmap.
   <p></p>
-  Durch Klicken auf eine der hexagonalen Zellen der Heatmap wird der berechnete Erreichbarkeitswert für diese Zelle angezeigt.</div>
+  Durch Klicken auf eine der sechseckigen Zellen der Heatmap wird der berechnete Erreichbarkeitswert für diese Zelle angezeigt.</div>
 </div>
 
 
-![Ergebnis der Schwerkraftbasierten Heatmap-Berechnung in GOAT](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/heatmap_gravity_result.png "Ergebnis der Schwerkraftbasierten Heatmap-Berechnung in GOAT")
+![Ergebnis der Gravity Heatmap-Berechnung in GOAT](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/heatmap_gravity_result.png "Ergebnis der Gravity Heatmap-Berechnung in GOAT")
 
 
 :::tip Tipp
 
-Möchten Sie Ihre Heatmaps editieren und schöne Karten erstellen? Siehe [Styling](../../map/layer_style/styling).
+Möchten Sie Ihre Heatmaps bearbeiten und schöne Karten erstellen? Sie können dies unter [Layer Design](../../map/layer_style/styling).
 
 :::
 
 ## 4. Technische Details
 
 ### Berechnung
-Der Erreichbarkeitswert jeder sechseckigen Zelle innerhalb einer Heatmap wird mit Hilfe von Schwerkraftmaßen berechnet und kann wie folgt operationalisiert werden:
+Der Erreichbarkeitswert jeder sechseckigen Zelle innerhalb einer Heatmap wird mit Hilfe von gravity-basierenden Maßnahmen berechnet und kann wie folgt operationalisiert werden:
 
-*Accessibility Formula:*
+*Erreichbarkeitsformel:*
 
-![Accessibility Formula](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/place-based_accessibility_measures.webp "Erreichbarkeitsformel")
+![Erreichbarkeitsformel](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/place-based_accessibility_measures.webp "Erreichbarkeitsformel")
 
-wobei die Erreichbarkeit **A** des Ausgangspunkts **i** die Summe aller am Zielort **j** verfügbaren Möglichkeiten **O** ist, gewichtet mit einer Funktion der Reisezeit **tij** zwischen **i** und **j**. Die Funktion **f(tij)** ist die Impedanzfunktion, die `gaussian`, `linear`, `exponential`, oder `power`. sein kann. Der Parameter **β** für die *sensitivity* und das *destination potential* werden verwendet, um den Erreichbarkeitswert einzustellen.
+wobei die Erreichbarkeit **A** des Ausgangspunkts **i** die Summe aller am Zielort **j** verfügbaren Möglichkeiten **O** ist, gewichtet mit einer Funktion der Reisezeit **tij** zwischen **i** und **j**. Die Funktion **f(tij)** ist die Impedanzfunktion, die `Gaussfunktion`, `lineare Funktion`, `Exponentialfunktion`, oder `Powerfunktion`. sein kann. Der Parameter **β** für die *Sensitivität* und das *Zielpotenzialfeld* werden verwendet, um den Erreichbarkeitswert einzustellen.
 
-#### GOAT verwendet die folgenden Formeln für seine Impedanzfunktionen:
+#### GOAT verwendet die folgenden Formeln für seine Widerstandsfunktionen:
 
 *Modifizierter Gauß, (Kwan,1998):*
 
@@ -287,30 +287,30 @@ wobei die Erreichbarkeit **A** des Ausgangspunkts **i** die Summe aller am Zielo
 ![Inverse Power, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/inverse_power.png "Inverse Power, (Kwan,1998)")
 
 Die Reisezeit wird in Minuten gemessen. Bei einer maximalen Reisezeit von 30 Minuten gelten Ziele, die weiter als 30 Minuten entfernt sind, als nicht erreichbar und werden daher bei der Berechnung der Erreichbarkeit nicht berücksichtigt.
-Der Parameter *sensitivity* bestimmt, wie sich die Erreichbarkeit mit zunehmender Reisezeit verändert. Da der Parameter *sensitivity* für die Messung der Erreichbarkeit entscheidend ist, können Sie ihn in GOAT anpassen. Die folgenden Diagramme zeigen den Einfluss des Parameters *sensitivity* auf die Erreichbarkeit:
+Der Parameter *Sensitivität* bestimmt, wie sich die Erreichbarkeit mit zunehmender Reisezeit verändert. Da der Parameter *Sensitivität* für die Messung der Erreichbarkeit entscheidend ist, können Sie ihn in GOAT anpassen. Die folgenden Diagramme zeigen den Einfluss des Parameters *Sensitivität* auf die Erreichbarkeit:
 
-:::info demnächst
+:::info demnächst verfügbar
 
 Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
 
 :::
 
-In ähnlicher Weise kann auch das *destination potential* verändert werden. So kann z.B. einem POI-Typ (z.B. Verbrauchermärkte) ein höherer Erreichbarkeitseffekt zugeordnet werden als anderen POI-Typen (z.B. Discounter). Die folgenden Bilder zeigen den Einfluss des Parameters *destination potential* auf die Erreichbarkeit:
+In ähnlicher Weise kann auch das *Zielpotenzialfeld* verändert werden. So kann z.B. einem POI-Typ (z.B. Verbrauchermärkte) ein höherer Erreichbarkeitseffekt zugeordnet werden als anderen POI-Typen (z.B. Discounter). Die folgenden Bilder zeigen den Einfluss des Parameters *Zielpotenzialfeld* auf die Erreichbarkeit:
 
-:::info demnächst
+:::info demnächst verfügbar
 
 Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
 
 :::
 
 ### Klassifizierung
-Zur Klassifizierung der Erreichbarkeitsstufen, die für jede Rasterzelle berechnet wurden (für die farbige Visualisierung), wird standardmäßig eine Klassifizierung auf der Grundlage von Quantilen verwendet. Es können jedoch auch verschiedene andere Klassifizierungsmethoden verwendet werden. Weitere Informationen finden Sie im Abschnitt **[Datenklassifizierungsmethoden](../../map/layer_style/attribute_based_styling#data-classification-methods)** auf der Seite *Attribute-based Styling*.
+Zur Klassifizierung der Erreichbarkeitsstufen, die für jede Rasterzelle berechnet wurden (für die farbige Visualisierung), wird standardmäßig eine Klassifizierung auf der Grundlage von Quantilen verwendet. Es können jedoch auch verschiedene andere Klassifizierungsmethoden verwendet werden. Weitere Informationen finden Sie im Abschnitt **[Datenklassifizierungsmethoden](../../map/layer_style/attribute_based_styling#data-classification-methods)** auf der Seite *attributbasiertes Styling*.
 
 ### Visualisierung
 
-Heatmaps in GOAT nutzen die **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** Lösung für effiziente Berechnungen und leicht verständliche Visualisierungen. Hinter den Kulissen wird eine vorberechnete Reisezeitmatrix für jeden *routing type* mit dieser Lösung abgefragt und in Echtzeit weiterverarbeitet, um die Erreichbarkeit zu berechnen und eine endgültige Heatmap zu erstellen.
+Heatmaps in GOAT nutzen die **[Uber H3 auf Gitter basierende](../further_reading/glossary#h3-grid)** Lösung für effiziente Berechnungen und leicht verständliche Visualisierungen. Hinter den Kulissen wird eine vorberechnete Reisezeitmatrix für jedes *Verkehrsmittel* mit dieser Lösung abgefragt und in Echtzeit weiterverarbeitet, um die Erreichbarkeit zu berechnen und eine endgültige Heatmap zu erstellen.
 
-Die Auflösung und die Abmessungen des verwendeten hexagonalen Gitters hängen von dem gewählten *Verkehrsmittel* ab:
+Die Auflösung und die Abmessungen des verwendeten sechseckigen Gitters hängen von dem gewählten *Verkehrsmittel* ab:
 
 #### Zu Fuß
 - Auflösung: 10
@@ -339,14 +339,14 @@ Das folgende Beispiel veranschaulicht, wie die Heatmap der lokalen Erreichbarkei
 Für das hier dargestellte Sechseck ergibt die Berechnung je nach Sensitivitätsparameter folgende Ergebnisse:
 
 ##### Einheitlicher Empfindlichkeitsparameter:
-:::info in Kürze
+:::info demnächst verfügbar
 
 Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
 
 :::
 
 ##### Variierender Empfindlichkeitsparameter für Hypermarkt:
-:::info in Kürze
+:::info demnächst verfügbar
 
 Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
 
@@ -357,7 +357,7 @@ In GOAT angewandt, ergeben sich folgende Unterschiede:
 #### Berechnung mit einheitlichem Empfindlichkeitsparameter
 Im ersten Beispiel wird die Erreichbarkeit von Lebensmittelgeschäften in 15 min mit einem einheitlichen Empfindlichkeitsparameter (β=300.000) für alle Geschäfte berechnet. Das Ergebnis sieht wie folgt aus:
 
-:::info in Kürze
+:::info demnächst verfügbar
 
 Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
 
@@ -366,13 +366,13 @@ Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
 #### Berechnung mit verschiedenen Empfindlichkeitsparametern
 Im zweiten Beispiel wird die Erreichbarkeit von Lebensmittelgeschäften in 15 min mit unterschiedlichen Sensitivitätsparametern (β=300.000 und β=400.000) durchgeführt. Das bedeutet, dass der Sensitivitätsparameter von den verschiedenen Lebensmittelladentypen abhängt. Für dieses Beispiel haben wir β=400.000 für Hypermärkte und β=300.000 für Discounter und Supermärkte verwendet. Daraus ergibt sich das folgende Ergebnis:
 
-:::info coming soon
+:::info demnächst verfügbar
 
 Beispiele für diese Funktionalität werden bald online sein. 🧑🏻‍💻
 
 :::
 
-Wenn Sie die beiden Ergebnisse vergleichen, bekommen Sie einen Eindruck davon, wie sich die *sensitivity* auf die Erreichbarkeit auswirkt.
+Wenn Sie die beiden Ergebnisse vergleichen, bekommen Sie einen Eindruck davon, wie sich die *Sensitivität* auf die Erreichbarkeit auswirkt.
 
 ## 5. Referenzen
 

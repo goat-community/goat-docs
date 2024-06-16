@@ -11,7 +11,7 @@ Die ÖV-Güteklassen zeigen die **Attraktivität von öffentlichen Verkehrsmitte
 
 ## 1. Erklärung
 
-ÖV-Güteklassen, auch bekannt als **Public Transport Quality Classes**, sind ein Klassifizierungssystem zur Bewertung und Kategorisierung der **Qualität** von öffentlichen Verkehrsmitteln in einem bestimmten Gebiet. Das Konzept wird verwendet, um öffentliche Verkehrsdienste zu planen und zu bewerten, damit sie bestimmten Standards entsprechen und die Bedürfnisse der Bevölkerung erfüllen. Die **Güteklassen** reichen dabei von **<span style={{color: "#199741"}}>A</span>** (sehr gutes Angebot) bis **<span style={{color: "#E4696A"}}>F</span>** (sehr schlechtes Angebot).
+ÖV-Güteklassen, auch bekannt als **Qualitätsklassen öffentlicher Verkehrsmittel**, sind ein Klassifizierungssystem zur Bewertung und Kategorisierung der **Qualität** von öffentlichen Verkehrsmitteln in einem bestimmten Gebiet. Das Konzept wird verwendet, um öffentliche Verkehrsdienste zu planen und zu bewerten, damit sie bestimmten Standards entsprechen und die Bedürfnisse der Bevölkerung erfüllen. Die **Güteklassen** reichen dabei von **<span style={{color: "#199741"}}>A</span>** (sehr gutes Angebot) bis **<span style={{color: "#E4696A"}}>F</span>** (sehr schlechtes Angebot).
 
 ![ÖV-Güteklassen in GOAT](/img/toolbox/accessibility_indicators/gueteklassen/example.png "ÖV-Güteklassen in GOAT")
 
@@ -35,7 +35,7 @@ Falls Sie eine Analyse außerhalb dieses Geofence durchführen müssen, kontakti
 
 <div class="step">
   <div class="step-number">1</div>
-  <div class="content">Klicken Sie auf <code>Toolbox</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
+  <div class="content">Gehen Sie auf <code>Werkzeuge</code> <img src={thematicIcon} alt="toolbox" style={{width: "25px"}}/>. </div>
 </div>
 
 <div class="step">
@@ -52,7 +52,7 @@ Falls Sie eine Analyse außerhalb dieses Geofence durchführen müssen, kontakti
   <div class="content">Definieren Sie den <code>Tag</code>, die <code>Startzeit</code> und die <code>Endzeit</code>, für die Sie die Analyse durchführen möchten.</div>
 </div>
 
-### Referenzschicht
+### Referenzlayer
 
 <div class="step">
   <div class="step-number">4</div>
@@ -93,17 +93,17 @@ Die Institutionalisierung des Indikators im deutschsprachigen Raum sowie die nac
 
 In der Schweizer Version des Indikators wird die Berechnung der Güteklassen üblicherweise für Abfahrten an Werktagen zwischen 6 Uhr und 20 Uhr durchgeführt. Für die Nutzung in GOAT wurde der **Berechnungszeitraum** flexibler gestaltet, sodass der Indikator **für jeden Wochentag und jede Tageszeit** berechnet werden kann. Zudem wurde der Indikator an die Bedingungen in Deutschland angepasst.
 
-Die Berechnungen basieren auf **GTFS-Daten** (siehe [Datengrundlage](../../data/data_basis)). Zunächst wird die Anzahl der Abfahrten pro Verkehrsmittel (Zug, U-Bahn, Straßenbahn und Bus) für jede Station dynamisch berechnet. Die Summe der Abfahrten wird durch zwei geteilt, um die Frequenz zu berechnen und die Hin- und Rückrichtungen zu eliminieren. Im nächsten Schritt wird die **durchschnittliche Frequenz** für das ausgewählte Zeitintervall berechnet. Das höherwertige Angebot wird als **Stationstyp** ausgewählt, falls mehrere Verkehrsmittel die Station bedienen. Zum Beispiel ist bei Bussen und Zügen der Zug der höherwertige Service. Mithilfe der unten stehenden Tabelle sowie des Stationstyps und der Frequenz kann nun die Stationskategorie bestimmt werden.
+Die Berechnungen basieren auf **GTFS-Daten** (siehe [Datengrundlage](../../data/data_basis)). Zunächst wird die Anzahl der Abfahrten pro Verkehrsmittel (Zug, U-Bahn, Straßenbahn und Bus) für jede Station dynamisch berechnet. Die Summe der Abfahrten wird durch zwei geteilt, um die Frequenz zu berechnen und die Hin- und Rückrichtungen zu eliminieren. Im nächsten Schritt wird die **durchschnittliche Frequenz** für das ausgewählte Zeitfenster berechnet. Das höherwertige Angebot wird als **Art der Haltestelle** ausgewählt, falls mehrere Verkehrsmittel die Haltestelle bedienen. Zum Beispiel ist bei Bussen und Zügen der Zug der höherwertige Service. Mithilfe der unten stehenden Tabelle sowie der Art der Haltestelle und der Frequenz kann nun die Haltestellenkategorie bestimmt werden.
 
 ![Klassifikation der Verkehrshaltestellen](/img/toolbox/accessibility_indicators/gueteklassen/classification_stations_en.webp "Klassifikation der Verkehrshaltestellen")
 
-Anschließend werden **Puffer** der angegebenen Größe für die entsprechenden Stationskategorien berechnet. Dadurch entstehen mehrere Puffer, die zusammengeführt werden. Bei überlappenden Puffern wird die höherwertige Klasse verwendet.
+Anschließend werden **Puffer** der angegebenen Größe für die entsprechenden Haltestellenkategorien berechnet. Dadurch entstehen mehrere Puffer, die zusammengeführt werden. Bei überlappenden Puffern wird die höherwertige Klasse verwendet.
 
 ![Bestimmung der ÖV-Güteklassen](/img/toolbox/accessibility_indicators/gueteklassen/determination_oev_gueteklasse_en.webp "Bestimmung der ÖV-Güteklassen")
 
 ### Visualisierung
 
-Die erstellten Puffer werden um die Stationen in den entsprechenden Farben visualisiert, um die **Güteklasse** (<span style={{color: "#199741"}}>A</span>-<span style={{color: "#E4696A"}}>F</span>) hervorzuheben.
+Die erstellten Puffer werden um die Haltestellen in den entsprechenden Farben visualisiert, um die **Güteklasse** (<span style={{color: "#199741"}}>A</span>-<span style={{color: "#E4696A"}}>F</span>) hervorzuheben.
 
 ![Visualisierung der ÖV-Güteklassen](/img/toolbox/accessibility_indicators/gueteklassen/visualization.png "Visualisierung der ÖV-Güteklassen")
 
