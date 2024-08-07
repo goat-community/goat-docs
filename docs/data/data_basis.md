@@ -80,6 +80,8 @@ While in-built networks are currently used for public transport and street routi
 #### Public Transport Network
 Extensive public transport network data for various modes such as buses, trams, subways, trains, ferries, and more. This is used by GOAT for [Public Transport](../routing/public_transport) routing.
 
+![Public Transport Network](/img/data/data_basis/pt_network_banner.png "Public Transport Network")
+
 - *Features:*
     - Stops (name, location, type, accessibility information)
     - Routes (name, service type, accessibility information)
@@ -100,6 +102,8 @@ Extensive public transport network data for various modes such as buses, trams, 
 
 #### Street Network and Topography
 Extensive street network data that represents real-world transport networks and their components: roads, motorways, interchanges, dedicated paths, and more. This is used by GOAT for [Walk](../routing/walking), [Bicycle](../routing/bicycle), [Pedelec](../routing/bicycle), and [Car](../routing/car) routing.
+
+![Street Network](/img/data/data_basis/street_network_banner.png "Street Network")
 
 - *Features:*
     - Segments or Edges (any continuous path not bisected by another)
