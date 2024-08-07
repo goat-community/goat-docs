@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Map Interface
+# Map Interface (Hello)
 
 Opening a project will lead you to the **Map Interface**.
 Here, you can create, organize, and style layers, visualize spatial data, and harness all of GOAT's powerful spatial analysis capabilities.
