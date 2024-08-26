@@ -10,6 +10,8 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 # Heatmap - Konnektivität
 Eine farbkodierte Karte zur Visualisierung der Konnektivität von Orten innerhalb eines Interessengebiets ([AOI](../../../further_reading/glossary#area-of-interest-aoi "What is an AOI?")).
 
+<iframe width="100%" height="500" src="https://youtu.be/zXoIJDZpahQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## 1. Erklärung
 
 Die Heatmap wird als farbkodiertes sechseckiges Gitter dargestellt und berücksichtigt reale Verkehrs- und Straßennetze zur Berechnung der Konnektivität. Nach der Angabe eines *Verkehrsmittels* (zu Fuß, mit dem Fahrrad usw.) und eines *Reisezeitlimits* zeigt das Ergebnis ein farbkodiertes hexagonales Raster, das die relative Konnektivität aller Orte innerhalb des angegebenen AOI (Area of interest) darstellt.

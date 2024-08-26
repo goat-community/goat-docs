@@ -11,6 +11,8 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 **Einzugsgebiete** zeigen, wie weit Menschen innerhalb einer bestimmten Reisezeit oder Entfernung mit einem oder mehreren Verkehrsmitteln reisen können.
 
+<iframe width="100%" height="500" src="https://youtu.be/bWRAIgPCn3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## 1. Erklärung
 
 Ausgehend von den angegebenen Startpunkten, der maximalen Reisezeit oder Entfernung und den Verkehrsmitteln visualisieren **Einzugsgebiete** das Ausmaß der Erreichbarkeit. Dies wird anhand von **realen Daten** berechnet und liefert nützliche Einblicke in die Qualität, Dichte und Reichweite des Verkehrsnetzes einer Region.
