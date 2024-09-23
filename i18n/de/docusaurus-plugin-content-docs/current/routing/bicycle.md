@@ -24,7 +24,7 @@ Die Daten der **[Overture Maps Foundation](https://overturemaps.org/)** iwerden 
 
 ### Topographie und Höhenlage
 
-Die Höhendaten stammen von **[Copernicus](https://www.copernicus.eu/en)** als **Digital Elevation Model (DEM)** Kacheln.
+Die Höhendaten stammen von **[Copernicus](https://www.copernicus.eu/de)** als **Digital Elevation Model (DEM)** Kacheln.
 
 
 ## 3. Technische Details
@@ -70,12 +70,12 @@ Wenn eine Kante der Klasse `Fußgänger` oder `Zebrastreifen` angehört, gehen w
 
 #### Netzausbreitung
 
-Um den kürzesten Weg vom Ausgangspunkt zu verschiedenen Zielen zu berechnen, wird eine eigene Implementierung des bekannten [Dijkstra Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) verwendet.
+Um den kürzesten Weg vom Ausgangspunkt zu verschiedenen Zielen zu berechnen, wird eine eigene Implementierung des bekannten [Dijkstra Algorithm](https://de.wikipedia.org/wiki/Dijkstra-Algorithmus) verwendet.
 
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/routing/walk/dijkstra.gif').default}  alt="Dijkstra Algorithm" style={{ width: "auto", height: "auto", objectFit: "cover"}}/>
-<p style={{ textAlign: 'center' }}>GIF: <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra Algorithm</a></p>
+<p style={{ textAlign: 'center' }}>GIF: <a href="https://de.wikipedia.org/wiki/Dijkstra-Algorithmus">Dijkstra Algorithm</a></p>
 </div>
 
 
