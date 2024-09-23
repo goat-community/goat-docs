@@ -11,7 +11,7 @@ import TabItem from '@theme/TabItem';
 
 In the **Layers** section, layers can be **added and organized**. Among others, the layer order can be adjusted, layers can be enabled/disabled, duplicated, renamed, downloaded, and removed.
 
-<iframe width="100%" height="500" src="https://youtu.be/EeC2L4ZxcDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EeC2L4ZxcDI?si=QpRIZfUASZOgX9Xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Add Layers
 
