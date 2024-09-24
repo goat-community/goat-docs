@@ -11,7 +11,7 @@ import TabItem from '@theme/TabItem';
 
 Im Bereich **Layer** können Layer **hinzugefügt und organisiert** werden. Unter anderem kann die Reihenfolge der Layer angepasst werden, Layer können angezeigt/ausgeblendet, dupliziert, umbenannt, heruntergeladen und entfernt werden.
 
-<iframe width="100%" height="500" src="https://youtu.be/c_EoWW7HJVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c_EoWW7HJVU?si=PBahX_5OTRpT5pjq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/map/layers/overview.png').default} alt="Layer View in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>

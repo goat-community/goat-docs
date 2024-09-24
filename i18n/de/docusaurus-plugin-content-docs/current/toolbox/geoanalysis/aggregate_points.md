@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem';
 
 Das **Punkte aggregieren**-Werkzeug führt statistische Analysen von Punkten durch, z.B. **Anzahl, Summe, Minimum oder Maximum**, und aggregiert die Informationen auf Polygonen.
 
-<iframe width="100%" height="500" src="https://youtu.be/hGHLEEvSBNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hGHLEEvSBNA?si=MMQpO6sPvDrW8m7e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## 1. Erklärung
 
