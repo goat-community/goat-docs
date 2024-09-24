@@ -8,6 +8,9 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 The **Origin-Destination** analysis is used in various fields such as transport planning and urban planning to study **movements or flows between different locations**.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h2U6ELaRsgI?si=XWcSzYV4_GWw3Na7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 ## 1. Explanation
 
 The Origin-Destination (OD) tool is suited for studying **movement patterns between locations**, such as commuter flows, providing insights into spatial interactions. This analytical process thereby visualizes the relationships between **starting points (origins)** and **endpoints (destinations)** by **connecting them with a straight line**. Such analyses help understand how and why movement occurs in different contexts and assist in the assessment and planning of transport networks and urban infrastructure. It supports data-driven decision-making by **highlighting patterns and trends in spatial interactions**, which can help improve the efficiency and sustainability of transport systems and urban layouts.

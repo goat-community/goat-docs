@@ -9,6 +9,8 @@ import TabItem from '@theme/TabItem';
 
 Das **Punkte aggregieren**-Werkzeug führt statistische Analysen von Punkten durch, z.B. **Anzahl, Summe, Minimum oder Maximum**, und aggregiert die Informationen auf Polygonen.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hGHLEEvSBNA?si=MMQpO6sPvDrW8m7e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## 1. Erklärung
 
 Das Werkzeug Punkte aggregieren kann verwendet werden, um **die Eigenschaften von Punkten innerhalb eines bestimmten Gebiets zu analysieren**. Es aggregiert die Informationen der Punkte und ermöglicht so die Berechnung der Punktanzahl, die Summe der Punktattribute oder z.B. den maximalen Wert eines bestimmten Punktattributs innerhalb eines Polygons. Als Polygon-Layer kann entweder ein Feature-Layer (z.B. Stadtteile) oder ein sechseckiges Raster verwendet werden.

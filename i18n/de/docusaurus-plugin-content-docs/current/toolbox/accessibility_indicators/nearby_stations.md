@@ -10,6 +10,8 @@ import TabItem from '@theme/TabItem';
 
 Die **Nahgelegene ÖV-Haltestellen**-Analyse wird verwendet, um öffentliche Verkehrshaltestellen zu finden, die zu Fuß oder mit dem Fahrrad innerhalb einer bestimmten Zeit erreichbar sind. Für jede Haltestelle werden Abfahrtsinformationen nach Verkehrsmittel und Route bereitgestellt.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Dl4FjAAQyrY?si=LaEDuoH0cvWRmjIr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## 1. Erklärung
 
 Die Nahverkehrsanalyse (Nahgelegene ÖV-Haltestellen) ist ein geeignetes Werkzeug, um **öffentliche Verkehrshaltestellen und deren Verbindungen** zu visualisieren, die zu Fuß oder mit dem Fahrrad von einem oder mehreren Ausgangspunkten erreichbar sind. Die nächstgelegenen Haltestellen, die dort verfügbaren öffentlichen Verkehrslinien, ihre Frequenz und die Reisezeit zu Fuß und mit dem Fahrrad werden als Ergebnis bereitgestellt.

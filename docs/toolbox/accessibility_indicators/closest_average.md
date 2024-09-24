@@ -9,7 +9,7 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 # Heatmap - Closest Average
 A color-coded map to visualize the average travel time to points (such as [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) from surrounding areas.
 
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/OKmMjrLh3Rc?si=XxS25KSXkDBFMYcG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YGRfLugUEb8?si=6TfBiPEMt4mPiag4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## 1. Explanation
 
@@ -25,7 +25,7 @@ With the configurable *number of destinations* property, you can restrict the ca
 
 :::tip Pro tip
 
-Described succinctly, accessibility heatmaps are a visualization representing *access* from various unspecified origins, to one or more specified destinations. This is in contrast to catchment areas which represent *egress* from one or more specified origins to various unspecified destinations.
+Shortly, accessibility heatmaps are a visualization representing *access* from various unspecified origins, to one or more specified destinations. This is in contrast to catchment areas which represent *egress* from one or more specified origins to various unspecified destinations.
 
 :::
 

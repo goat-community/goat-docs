@@ -12,6 +12,8 @@ import TabItem from '@theme/TabItem';
 
 The buffer creates a **zone around** given **points, lines, or polygons** with a specified buffer distance.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Yboi3CwOLPM?si=FuSPRmK6zTB-GVJ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## 1. Explanation
 
 A **buffer** is a tool used to delineate the catchment area around a specific point, line, or polygon illustrating the extent of influence or reach from that point. Users can define the ``distance`` of the buffer, thereby customizing the radius of the area covered.

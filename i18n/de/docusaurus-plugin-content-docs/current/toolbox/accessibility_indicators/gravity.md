@@ -10,6 +10,8 @@ import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 # Heatmap - Gravity
 Eine farblich gekennzeichnete Karte zur Visualisierung der Erreichbarkeit von Punkten (wie z.B. [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) aus der Umgebung.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qVV63ZN-gVE?si=c-2n7O002Ze4dWgH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## 1. Erklärung
 
 Die Heatmap wird als farblich gekennzeichnetes sechseckiges Raster dargestellt und berücksichtigt reale Verkehrs- und Straßennetze, um die Erreichbarkeit zu berechnen. Nach Angabe eines *Verkehrsmittels* (zu Fuß, mit dem Fahrrad usw.), eines *Gelegenheits-Layers* und eines *Reisezeitlimits* zeigt das Ergebnis ein farblich gekennzeichnetes sechseckiges Raster für alle unter diesen Bedingungen erreichbaren Gebiete an. Die Farbskala bezieht sich auf die lokale Erreichbarkeit.
