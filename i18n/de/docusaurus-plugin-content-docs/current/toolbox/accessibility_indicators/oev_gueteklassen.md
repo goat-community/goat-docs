@@ -22,7 +22,7 @@ Die Berechnung der ÖV-Güteklassen ist nur für Gebiete verfügbar, in denen da
   <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence für ÖV-Güteklassen Berechnung in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
 </div>
 
-Falls Sie eine Analyse außerhalb dieses Geofence durchführen müssen, kontaktieren Sie bitte den [Support](https://plan4better.de/en/contact/ "Support kontaktieren") und wir prüfen, was möglich ist.
+Falls Sie eine Analyse außerhalb dieses Geofence durchführen müssen, kontaktieren Sie bitte den [Support](https://plan4better.de/kontakt/ "Support kontaktieren") und wir prüfen, was möglich ist.
 :::
 
 ## 2. Anwendungsbeispiele

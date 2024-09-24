@@ -9,11 +9,11 @@ GOAT ist eine **WebGIS-Plattform** mit Planungsintelligenz für die Bereiche der
 
 :::tip Tipp
 
-Möchten Sie mehr über GOAT erfahren? Besuchen Sie unsere Website: https://plan4better.de/en/goat/
+Möchten Sie mehr über GOAT erfahren? Besuchen Sie unsere Website: https://plan4better.de/goat/
 
 :::
 
-Nach der Anmeldung landen Sie auf der [Startseite](../workspace/home.md), hier kann [GOAT](https://goat.plan4better.de/login) unmittelbar genutzt werden.
+Nach der Anmeldung landen Sie auf der [Startseite](../workspace/home.md), hier kann [GOAT](https://goat.plan4better.de) unmittelbar genutzt werden.
 
 ![Willkommen im GOAT Workspace](/img/workspace/home/home_general.png "Geo Open Accessibility Tool - GOAT- Workspace")
 

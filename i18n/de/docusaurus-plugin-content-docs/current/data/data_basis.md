@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ### Daten als wichtige Basis für Analysen
 
-Wir bei Plan4Better sind uns bewusst, dass Daten der Treibstoff für unsere Analysen sind und somit unser wertvollstes Gut darstellen. Um genaue Erkenntnisse auf der Grundlage qualitativ hochwertiger Informationen zu angemessenen Kosten zu liefern, integriert unsere WebGIS-Plattform [GOAT](https://goat.plan4better.de/login) diverse räumliche und nicht-räumliche Datensätze aus verschiedenen Quellen. Die Verarbeitung inkonsistenter Geodaten aus verschiedenen Quellen mit unterschiedlichem Genauigkeitsgraden kann jedoch eine große Herausforderung darstellen. Um dieses Problem zu lösen, setzen wir eine Reihe von Techniken ein, einschließlich effizienter Datenintegration, Disaggregation und Fusionsworkflows, um eine nahtlose Datenverarbeitung zu gewährleisten.
+Wir bei Plan4Better sind uns bewusst, dass Daten der Treibstoff für unsere Analysen sind und somit unser wertvollstes Gut darstellen. Um genaue Erkenntnisse auf der Grundlage qualitativ hochwertiger Informationen zu angemessenen Kosten zu liefern, integriert unsere WebGIS-Plattform [GOAT](https://goat.plan4better.de) diverse räumliche und nicht-räumliche Datensätze aus verschiedenen Quellen. Die Verarbeitung inkonsistenter Geodaten aus verschiedenen Quellen mit unterschiedlichem Genauigkeitsgraden kann jedoch eine große Herausforderung darstellen. Um dieses Problem zu lösen, setzen wir eine Reihe von Techniken ein, einschließlich effizienter Datenintegration, Disaggregation und Fusionsworkflows, um eine nahtlose Datenverarbeitung zu gewährleisten.
 
 
 ### Daten sammeln und Daten vorbereiten 

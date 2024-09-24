@@ -39,7 +39,7 @@ Heatmaps sind in bestimmten Regionen verfügbar. Bei der Auswahl eines „Verkeh
 </div> 
 
 
-Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie sich bitte an unseren [Support](https://plan4better.de/en/contact/ "Support").
+Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie sich bitte an unseren [Support](https://plan4better.de/kontakt/ "Support").
 
 :::
 
