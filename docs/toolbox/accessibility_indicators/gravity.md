@@ -12,6 +12,7 @@ A color-coded map to visualize the accessibility of points (such as [POI](../../
 
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/OAHa-5-WVk8?si=looP1BuuuWUVNFb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+
 ## 1. Explanation
 
 Visualized as a color-coded hexagonal grid, the heatmap takes into account real-world transport and street networks to compute accessibility. After specifying a *routing type* (Walk, Bicycle, etc.), *opportunity layer* and *travel time limit*, the result will display a color-coded hexagonal grid for all areas accessible under these conditions. The color scale refers to local accessibility.

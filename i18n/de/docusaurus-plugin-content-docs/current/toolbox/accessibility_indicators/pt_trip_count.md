@@ -24,7 +24,7 @@ Abfahrten ÖPNV ist nur in Gebieten verfügbar, in denen das Verkehrsnetz in GOA
   <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence für die Berechnung des PT Trip Count in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
 </div>
 
-Falls Sie Analysen außerhalb dieses Geofences durchführen müssen, kontaktieren Sie bitte den [Support](https://plan4better.de/en/contact/ "Contact Support") und wir werden prüfen, was möglich ist.
+Falls Sie Analysen außerhalb dieses Geofences durchführen müssen, kontaktieren Sie bitte den [Support](https://plan4better.de/kontakt/ "Contact Support") und wir werden prüfen, was möglich ist.
 :::
 
 ## 2. Anwendungsbeispiele
