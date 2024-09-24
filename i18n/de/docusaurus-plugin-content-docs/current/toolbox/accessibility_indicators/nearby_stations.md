@@ -28,7 +28,7 @@ Die Berechnung der nahegelegenen Haltestellen ist nur für Gebiete verfügbar, i
   <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence for nearby stations calculation in GOAT" style={{ maxHeight: "400px", maxWidth: "400px", alignItems:'center'}}/>
 </div> 
 
-Falls Sie eine Analyse außerhalb dieses Geofence durchführen müssen, wenden Sie sich bitte an den [Support](https://plan4better.de/en/contact/ "Contact Support") und wir werden prüfen, was möglich ist.
+Falls Sie eine Analyse außerhalb dieses Geofence durchführen müssen, wenden Sie sich bitte an den [Support](https://plan4better.de/kontakt/ "Support") und wir werden prüfen, was möglich ist.
 :::
 
 

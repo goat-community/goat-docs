@@ -29,7 +29,7 @@
   },
   "link.item.label.Blog": {
     "message": "Blog",
-    "description": "Die Beschriftung des Fußzeilen-Links mit label=Blog verweist auf https://plan4better.de/en/blog/"
+    "description": "Die Beschriftung des Fußzeilen-Links mit label=Blog verweist auf https://plan4better.de/blog/"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
@@ -45,10 +45,10 @@
   },
   "link.item.label.Plan4Better": {
     "message": "Plan4Better",
-    "description": "Die Beschriftung des Fußzeilen-Links mit label=Plan4Better verweist auf https://plan4better.de/en/"
+    "description": "Die Beschriftung des Fußzeilen-Links mit label=Plan4Better verweist auf https://plan4better.de/"
   },
   "link.item.label.References": {
     "message": "Referenzen",
-    "description": "Die Beschriftung des Fußzeilen-Links mit label=References verweist aufhttps://plan4better.de/en/references/"
+    "description": "Die Beschriftung des Fußzeilen-Links mit label=References verweist auf https://plan4better.de/references/"
   }
 }

@@ -39,7 +39,7 @@ Für <code>ÖV</code>, erreicht der Geofence ganz Deutschland:
   <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence for catchment area calculation in GOAT" style={{ maxHeight: "300px", maxWidth: "400px", alignItems:'center'}}/>
 </div> 
 
-Falls Sie Analysen außerhalb dieses Geofence durchführen müssen, kontaktieren Sie bitte den [Support](https://plan4better.de/en/contact/ "Contact Support") und wir prüfen, was möglich ist.
+Falls Sie Analysen außerhalb dieses Geofence durchführen müssen, kontaktieren Sie bitte den [Support](https://plan4better.de/kontakt/) und wir prüfen, was möglich ist.
 :::
 
 ## 2. Anwendungsbeispiele
@@ -460,7 +460,7 @@ Aus wissenschaftlicher Sicht sind Einzugsgebiete _konturbasierte Maßnahmen_ (au
 
 ### Visualisierung
 
-Die Form der Einzugsgebiete wird aus dem Routing-Gitter unter Verwendung des [Marching-Square-Konturlinien-Algorithmus](https://en.wikipedia.org/wiki/Marching_squares "Wikipedia: Marching Squares") abgeleitet, einem Computergraphik-Algorithmus, der zweidimensionale Konturlinien aus einem rechteckigen Wertearray erzeugen kann ([de Queiroz Neto et al. 2016](catchments#6-references)). Dieser Algorithmus transformiert das Gitter von einem 2D-Array in eine Form, um es zu visualisieren oder zu analysieren. Eine Illustration der 2D-Bildverarbeitung ist in der Abbildung dargestellt.
+Die Form der Einzugsgebiete wird aus dem Routing-Gitter unter Verwendung des [Marching-Square-Konturlinien-Algorithmus](https://de.wikipedia.org/wiki/Marching_Squares "Wikipedia: Marching Squares") abgeleitet, einem Computergraphik-Algorithmus, der zweidimensionale Konturlinien aus einem rechteckigen Wertearray erzeugen kann ([de Queiroz Neto et al. 2016](catchments#6-references)). Dieser Algorithmus transformiert das Gitter von einem 2D-Array in eine Form, um es zu visualisieren oder zu analysieren. Eine Illustration der 2D-Bildverarbeitung ist in der Abbildung dargestellt.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src="https://plan4better.de/images/docs/technical_documentation/isochrone/wiki.webp" width="1000px" alt="marching square" style={{ width: "1000px", height: "400px", maxHeight: "400px", maxWidth: "400px", objectFit: "contain"}}/>
