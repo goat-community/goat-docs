@@ -1,9 +1,0 @@
-{
-  "label": "Scenarios",
-  "position": 4,
-  "link": {
-    "type": "generated-index",
-    "description": "Neben der Analyse vorhandener realer Daten und Situationen können Sie mit GOAT auch benutzerdefinierte Szenarien erstellen, wie z. B. Netzwerkänderungen oder neue Infrastrukturprojekte. Wege, Punkte und Polygone können hinzugefügt, bearbeitet oder entfernt werden und ihre Auswirkungen auf die Zugänglichkeit analysiert werden."
-  },
-  "className": "hidden"
-}
