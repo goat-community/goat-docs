@@ -62,8 +62,8 @@ const config = {
             // },
             //while working with this activate the code below, when finished comment it and create the push request
             current: {
-              label: "2.0 - Beta",
-              path: "2.0beta",
+              label: "2.0",
+              path: "2.0",
             },
           },
         },
