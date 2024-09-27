@@ -29,6 +29,6 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
   // todo: get version from config
-  const path = i18n.currentLocale === "de" ? "/docs/de/2.0" : `/docs/en/2.0`;
+  const path = i18n.currentLocale === "de" ? "/docs/de/2.0" : `/docs/2.0`;
   return <Redirect to={path} />
 }
