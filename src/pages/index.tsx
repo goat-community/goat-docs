@@ -28,7 +28,6 @@ function HomepageHeader() {
 }
 
 export default function Home(): JSX.Element {
-  const path = i18n.currentLocale === "en" ? "/docs" : `/${i18n.currentLocale}/1.5`
-  console.log(path) 
+  const path = i18n.currentLocale === "de" ? "/docs/de" : `/docs/en`;
   return <Redirect to={path} />
 }
