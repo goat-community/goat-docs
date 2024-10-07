@@ -27,7 +27,7 @@ Unique to the gravity-based heatmap, customizable properties such as *sensitivit
 
 :::tip Pro tip
 
-Described succinctly, accessibility heatmaps are a visualization representing *access* from various unspecified origins, to one or more specified destinations. This is in contrast to catchment areas which represent *egress* from one or more specified origins to various unspecified destinations.
+Described shortly, accessibility heatmaps are a visualization representing *access* from various unspecified origins, to one or more specified destinations. This is in contrast to catchment areas which represent *egress* from one or more specified origins to various unspecified destinations.
 
 :::
 
