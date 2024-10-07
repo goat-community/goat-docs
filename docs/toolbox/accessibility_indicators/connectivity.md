@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 # Heatmap - Connectivity
-A color-coded map to visualize the connectivity of locations within an area of interest ([AOI](../../../further_reading/glossary#area-of-interest-aoi "What is an AOI?")).
+A color-coded map to visualize the connectivity of locations within an area of interest ([AOI](../../further_reading/glossary#area-of-interest-aoi "What is an AOI?")).
 
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/Zv9oiKQAu-s?si=7mv4uduUTuk6Qgbe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
