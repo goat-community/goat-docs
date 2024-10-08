@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 
 # Heatmap - Connectivity
-A color-coded map to visualize the connectivity of locations within an area of interest ([AOI](../../../further_reading/glossary#area-of-interest-aoi "What is an AOI?")).
+A color-coded map to visualize the connectivity of locations within an area of interest ([AOI](../../further_reading/glossary#area-of-interest-aoi "What is an AOI?")).
 
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/Zv9oiKQAu-s?si=7mv4uduUTuk6Qgbe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -192,7 +192,7 @@ To classify the connectivity levels that were computed for each grid cell (for c
 
 ### Visualization 
 
-Heatmaps in GOAT utilize **[Uber's H3 grid-based](../further_reading/glossary#h3-grid)** solution for efficient computation and easy-to-understand visualization. Behind the scenes, a pre-computed travel time matrix for each *routing type* utilizes this solution and is queried and further processed in real-time to compute accessibility and produce a final heatmap.
+Heatmaps in GOAT utilize **[Uber's H3 grid-based](../../further_reading/glossary#h3-grid)** solution for efficient computation and easy-to-understand visualization. Behind the scenes, a pre-computed travel time matrix for each *routing type* utilizes this solution and is queried and further processed in real-time to compute accessibility and produce a final heatmap.
 
 The resolution and dimensions of the hexagonal grid used depend on the selected *routing type*:
 

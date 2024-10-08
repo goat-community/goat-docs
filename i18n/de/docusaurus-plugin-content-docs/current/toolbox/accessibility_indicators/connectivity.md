@@ -191,7 +191,7 @@ Zur Klassifizierung der Konnektivitätsstufen, die für jede Rasterzelle berechn
 
 ### Visualisierung 
 
-Heatmaps in GOAT nutzen die **[Uber H3 auf Gittern basierende](../further_reading/glossary#h3-grid)** Lösung für effiziente Berechnungen und leicht verständliche Visualisierung. Hinter den Kulissen wird eine vorberechnete Reisezeitmatrix für jedes *Verkehrsmittel* mit dieser Lösung abgefragt und in Echtzeit weiterverarbeitet, um die Erreichbarkeit zu berechnen und eine endgültige Heatmap zu erstellen.
+Heatmaps in GOAT nutzen die **[Uber H3 auf Gittern basierende](../../further_reading/glossary#h3-grid)** Lösung für effiziente Berechnungen und leicht verständliche Visualisierung. Hinter den Kulissen wird eine vorberechnete Reisezeitmatrix für jedes *Verkehrsmittel* mit dieser Lösung abgefragt und in Echtzeit weiterverarbeitet, um die Erreichbarkeit zu berechnen und eine endgültige Heatmap zu erstellen.
 
 Die Auflösung und die Abmessungen des verwendeten sechseckigen Gitters hängen von dem gewählten *Verkehrsmittel* ab:
 

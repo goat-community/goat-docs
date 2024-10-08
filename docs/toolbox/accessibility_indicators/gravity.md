@@ -27,7 +27,7 @@ Unique to the gravity-based heatmap, customizable properties such as *sensitivit
 
 :::tip Pro tip
 
-Described succinctly, accessibility heatmaps are a visualization representing *access* from various unspecified origins, to one or more specified destinations. This is in contrast to catchment areas which represent *egress* from one or more specified origins to various unspecified destinations.
+Described shortly, accessibility heatmaps are a visualization representing *access* from various unspecified origins, to one or more specified destinations. This is in contrast to catchment areas which represent *egress* from one or more specified origins to various unspecified destinations.
 
 :::
 
@@ -172,6 +172,10 @@ Leveraging the *sensitivity* you define, the Gaussian function allows you to mod
 
 This function maintains a direct correlation between travel time and accessibility, which is modulated by the `destination_potential` you specify. For a more in-depth understanding, refer to the [Technical details](./gravity#4-technical-details) section.
 
+:::info Note
+This feature is currently under development. 🧑🏻‍💻
+:::
+
 </TabItem>
 
 <TabItem value="exponential" label="Exponential" default className="tabItemBox">
@@ -180,6 +184,10 @@ This function maintains a direct correlation between travel time and accessibili
 
 This function calculates accessibilities based on an exponential curve, which is influenced by the `sensitivity` and `destination_potential` you define. For a more in-depth understanding, refer to the [Technical details](./gravity#4-technical-details) section.
 
+:::info Note
+This feature is currently under development. 🧑🏻‍💻
+:::
+
 </TabItem>
 
 <TabItem value="power" label="Power" default className="tabItemBox">
@@ -187,6 +195,10 @@ This function calculates accessibilities based on an exponential curve, which is
 #### Power
 
 This function calculates accessibilities based on a power curve, which is influenced by the `sensitivity` and `destination_potential` you define. For a more in-depth understanding, refer to the [Technical details](./gravity#4-technical-details) section.
+
+:::info Note
+This feature is currently under development. 🧑🏻‍💻
+:::
 
 </TabItem>
 

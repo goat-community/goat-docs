@@ -171,6 +171,10 @@ Mit Hilfe der von Ihnen definierten *Sensitivität* ermöglicht die Gauß-Funkti
 
 Diese Funktion stellt eine direkte Korrelation zwischen Reisezeit und Erreichbarkeit her, die durch das von Ihnen angegebene `Zielpotentialfeld` moduliert wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
+:::info Tipp 
+Diese Funktion befindet sich derzeit in der Entwicklung. 🧑🏻‍💻
+:::
+
 </TabItem>
 
 <TabItem value="exponential" label="Exponentialfunktion" default className="tabItemBox">
@@ -179,6 +183,9 @@ Diese Funktion stellt eine direkte Korrelation zwischen Reisezeit und Erreichbar
 
 Diese Funktion berechnet die Erreichbarkeiten auf der Grundlage einer Exponentialkurve, die von der von Ihnen definierten `Sensitivität` und dem `Zielpotentialfeld`  beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
+:::info Tipp 
+Diese Funktion befindet sich derzeit in der Entwicklung. 🧑🏻‍💻
+:::
 </TabItem>
 
 <TabItem value="power" label="Powerfunktion" default className="tabItemBox">
@@ -187,6 +194,9 @@ Diese Funktion berechnet die Erreichbarkeiten auf der Grundlage einer Exponentia
 
 Diese Funktion berechnet die Erreichbarkeiten auf der Grundlage einer Leistungskurve, die durch die von Ihnen definierte `Sensitivität` und das `Zielpotentialfeld` beeinflusst wird. Ein ausführlicheres Verständnis finden Sie im Abschnitt [Technische Details](./gravity#4-technical-details).
 
+:::info Tipp 
+Diese Funktion befindet sich derzeit in der Entwicklung. 🧑🏻‍💻
+:::
 </TabItem>
 
 </Tabs>
