@@ -5,7 +5,7 @@ sidebar_position: 4
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
-
+import MathJax from 'react-mathjax';
 
 # Heatmap - Gravity
 Eine farblich gekennzeichnete Karte zur Visualisierung der Erreichbarkeit von Punkten (wie z.B. [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) aus der Umgebung.
@@ -276,7 +276,11 @@ Der Erreichbarkeitswert jeder sechseckigen Zelle innerhalb einer Heatmap wird mi
 
 *Erreichbarkeitsformel:*
 
-![Erreichbarkeitsformel](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/place-based_accessibility_measures.webp "Erreichbarkeitsformel")
+<MathJax.Provider>
+  <div style={{ marginTop: '20px', fontSize: '24px'  }}>
+    <MathJax.Node formula={"A_i=\\sum_j O_jf(t_{i,j})"} />
+  </div>
+</MathJax.Provider>
 
 wobei die Erreichbarkeit **A** des Ausgangspunkts **i** die Summe aller am Zielort **j** verfügbaren Möglichkeiten **O** ist, gewichtet mit einer Funktion der Reisezeit **tij** zwischen **i** und **j**. Die Funktion **f(tij)** ist die Impedanzfunktion, die `Gaussfunktion`, `lineare Funktion`, `Exponentialfunktion`, oder `Powerfunktion`. sein kann. Der Parameter **β** für die *Sensitivität* und das *Zielpotenzialfeld* werden verwendet, um den Erreichbarkeitswert einzustellen.
 
@@ -284,19 +288,42 @@ wobei die Erreichbarkeit **A** des Ausgangspunkts **i** die Summe aller am Zielo
 
 *Modifizierter Gauß, (Kwan,1998):*
 
-![Modified Gaussian, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/modified_gaussian.png "Modified Gaussian, (Kwan,1998)")
+<MathJax.Provider>
+  <div style={{ marginTop: '20px', fontSize: '24px'  }}>
+    <MathJax.Node formula={"f(t_{i,j})=\\exp^{(-t_{i,j}^2/\\beta)}"} />
+  </div>
+</MathJax.Provider>
+
 
 *Lineare kumulative Chancen, (Kwan,1998):*
 
-![Cumulative Opportunities Linear, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/cumulative_opportunities_linear.png "Cumulative Opportunities Linear, (Kwan,1998)")
-
+<MathJax.Provider>
+  <div style={{ marginTop: '20px', fontSize: '24px' }}>
+    <MathJax.Node formula={`f(t_{ij}) = \\begin{cases}
+      \\left(1 - \\frac{t_{ij}}{\\bar{t}} \\right) & \\text{for } t_{ij} \\leq \\bar{t} \\\\
+      0 & \\text{otherwise}
+    \\end{cases}`} />
+  </div>
+</MathJax.Provider>
+      
 *Negative Exponentialfunktion, (Kwan,1998):*
 
-![Negative Exponential, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/negative_exponetial.png "Negative Exponential, (Kwan,1998)")
+<MathJax.Provider>
+  <div style={{ marginTop: '20px', fontSize: '24px'  }}>
+    <MathJax.Node formula={"f(t_{i,j})=\\exp^{(-\\beta t_{i,j})}"} />
+  </div>
+</MathJax.Provider>
 
 *Inverse Power, (Kwan,1998):*
 
-![Inverse Power, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/inverse_power.png "Inverse Power, (Kwan,1998)")
+<MathJax.Provider>
+  <div style={{ marginTop: '20px', fontSize: '24px' }}>
+    <MathJax.Node formula={`f(t_{ij}) = \\begin{cases}
+      \\ 1 & \\text{for } t_{ij} \\leq 1 \\\\
+      t_{i,j}^{-\\beta} & \\text{otherwise}
+    \\end{cases}`} />
+  </div>
+</MathJax.Provider>
 
 Die Reisezeit wird in Minuten gemessen. Bei einer maximalen Reisezeit von 30 Minuten gelten Ziele, die weiter als 30 Minuten entfernt sind, als nicht erreichbar und werden daher bei der Berechnung der Erreichbarkeit nicht berücksichtigt.
 Der Parameter *Sensitivität* bestimmt, wie sich die Erreichbarkeit mit zunehmender Reisezeit verändert. Da der Parameter *Sensitivität* für die Messung der Erreichbarkeit entscheidend ist, können Sie ihn in GOAT anpassen. Die folgenden Diagramme zeigen den Einfluss des Parameters *Sensitivität* auf die Erreichbarkeit:
