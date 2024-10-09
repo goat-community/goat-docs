@@ -1,11 +1,12 @@
 ---
 sidebar_position: 4
 ---
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
-
+import MathJax from 'react-mathjax';
 
 # Heatmap - Gravity
 A color-coded map to visualize the accessibility of points (such as [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) from surrounding areas.
@@ -280,7 +281,12 @@ The accessibility value of each hexagonal cell within a heatmap is calculated wi
 
 *Accessibility Formula:*
 
-![Accessibility Formula](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/place-based_accessibility_measures.webp "Accessibility Formula")
+<MathJax.Provider>
+  <div style={{ marginTop: '20px', fontSize: '24px'  }}>
+    <MathJax.Node formula={"A_i=\\sum_j O_jf(t_{i,j})"} />
+  </div>
+</MathJax.Provider>
+
 
 where the accessibility **A** of origin **i** is the sum of all opportunities **O** available at destinations **j** weighted by some function of the travel time **tij** between **i** and **j**. The function **f(tij)** is the impedance function, which can be `gaussian`, `linear`, `exponential`, or `power`. The *sensitivity* parameter **β** and the *destination potential* are used to adjust the accessibility value.
 
@@ -288,19 +294,41 @@ where the accessibility **A** of origin **i** is the sum of all opportunities **
 
 *Modified Gaussian, (Kwan,1998):*
 
-![Modified Gaussian, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/modified_gaussian.png "Modified Gaussian, (Kwan,1998)")
+<MathJax.Provider>
+  <div style={{ marginTop: '20px', fontSize: '24px'  }}>
+    <MathJax.Node formula={"f(t_{i,j})=\\exp^{(-t_{i,j}^2/\\beta)}"} />
+  </div>
+</MathJax.Provider>
 
 *Cumulative Opportunities Linear, (Kwan,1998):*
 
-![Cumulative Opportunities Linear, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/cumulative_opportunities_linear.png "Cumulative Opportunities Linear, (Kwan,1998)")
-
+<MathJax.Provider>
+  <div style={{ marginTop: '20px', fontSize: '24px' }}>
+    <MathJax.Node formula={`f(t_{ij}) = \\begin{cases}
+      \\left(1 - \\frac{t_{ij}}{\\bar{t}} \\right) & \\text{for } t_{ij} \\leq \\bar{t} \\\\
+      0 & \\text{otherwise}
+    \\end{cases}`} />
+  </div>
+</MathJax.Provider>
+      
 *Negative Exponential, (Kwan,1998):*
 
-![Negative Exponential, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/negative_exponetial.png "Negative Exponential, (Kwan,1998)")
-
+<MathJax.Provider>
+  <div style={{ marginTop: '20px', fontSize: '24px'  }}>
+    <MathJax.Node formula={"f(t_{i,j})=\\exp^{(-\\beta t_{i,j})}"} />
+  </div>
+</MathJax.Provider>
+      
 *Inverse Power, (Kwan,1998):*
 
-![Inverse Power, (Kwan,1998)](/img/toolbox/accessibility_indicators/heatmaps/gravity_based/impedance_formulas/inverse_power.png "Inverse Power, (Kwan,1998)")
+<MathJax.Provider>
+  <div style={{ marginTop: '20px', fontSize: '24px' }}>
+    <MathJax.Node formula={`f(t_{ij}) = \\begin{cases}
+      \\ 1 & \\text{for } t_{ij} \\leq 1 \\\\
+      t_{i,j}^{-\\beta} & \\text{otherwise}
+    \\end{cases}`} />
+  </div>
+</MathJax.Provider>
 
 Travel times are measured in minutes. For a maximum travel time of 30 minutes, destinations that are farther than 30 minutes are considered non-accessible and therefore not considered in the calculation of the accessibility.
 The *sensitivity* parameter determines how accessibility changes with increasing travel time. As the *sensitivity* parameter is decisive when measuring accessibility, GOAT allows you to adjust this. The following graphs show the influence of the *sensitivity* parameter on accessibility:
