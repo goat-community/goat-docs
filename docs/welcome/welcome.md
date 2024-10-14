@@ -13,7 +13,7 @@ Want to know more about GOAT? Visit our website: https://plan4better.de/en/goat/
 
 :::
 
-After signing up, you will land on the [homepage](../workspace/home.md) to begin exploring [GOAT](https://goat.plan4better.de/login). 
+After signing up, you will land on the [homepage](../workspace/home.md) to begin exploring [GOAT](https://goat.plan4better.de/en). 
 
 ![Welcome to GOAT Workspace](/img/workspace/home/home_general.png "Geo Open Accessibility Tool - GOAT- Workspace")
 
