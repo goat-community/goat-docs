@@ -39,7 +39,7 @@ Für <code>ÖV</code>, erreicht der Geofence ganz Deutschland:
   <img src={require('/img/toolbox/accessibility_indicators/gueteklassen/geofence-pt.png').default} alt="Geofence for catchment area calculation in GOAT" style={{ maxHeight: "300px", maxWidth: "400px", alignItems:'center'}}/>
 </div> 
 
-Falls Sie Analysen außerhalb dieses Geofence durchführen müssen, kontaktieren Sie bitte den [Support](https://plan4better.de/kontakt/) und wir prüfen, was möglich ist.
+Falls Sie Analysen außerhalb dieses Geofence durchführen müssen, kontaktieren Sie bitte den [Support](https://plan4better.de/de/contact/) und wir prüfen, was möglich ist.
 :::
 
 ## 2. Anwendungsbeispiele
