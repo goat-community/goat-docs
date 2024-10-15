@@ -43,7 +43,7 @@ Heatmaps sind in bestimmten Regionen verfügbar. Beim Auswählen eines `Verkehrs
 </div> 
 
 
-Wenn Sie Analysen außerhalb dieses Geofence durchführen möchten, kontaktieren Sie uns bitte [hier](https://plan4better.de/de/contakt/ "Kontaktieren Sie uns").
+Wenn Sie Analysen außerhalb dieses Geofence durchführen möchten, kontaktieren Sie uns bitte [hier](https://plan4better.de/de/contact/ "Kontaktieren Sie uns").
 
 :::
 
