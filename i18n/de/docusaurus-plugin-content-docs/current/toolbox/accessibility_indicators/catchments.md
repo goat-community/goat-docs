@@ -456,11 +456,11 @@ Die Einzugsgebiete werden dynamisch im Frontend auf der Basis eines Reisezeit-/E
 
 ### Wissenschaftlicher Hintergrund
 
-Aus wissenschaftlicher Sicht sind Einzugsgebiete _konturbasierte Maßnahmen_ (auch bekannt als _kumulative Gelegenheiten_). Sie werden wegen ihrer **leicht interpretierbaren Ergebnisse** geschätzt ([Geurs und van Eck 2001](catchments#6-references); [Albacete 2016](catchments#6-references)), haben jedoch den Nachteil, dass sie innerhalb des **Cut-off-Bereichs** nicht zwischen verschiedenen Reisezeiten unterscheiden ([Bertolini, le Clercq, und Kapoen 2005](catchments#6-references)), wie es bei [Heatmaps](../accessibility_indicators/closest_average.md) der Fall ist.
+Aus wissenschaftlicher Sicht sind Einzugsgebiete _konturbasierte Maßnahmen_ (auch bekannt als _kumulative Gelegenheiten_). Sie werden wegen ihrer **leicht interpretierbaren Ergebnisse** geschätzt ([Geurs und van Eck 2001](#6-referenzen); [Albacete 2016](#6-referenzen)), haben jedoch den Nachteil, dass sie innerhalb des **Cut-off-Bereichs** nicht zwischen verschiedenen Reisezeiten unterscheiden ([Bertolini, le Clercq, und Kapoen 2005](#6-referenzen)), wie es bei [Heatmaps](../accessibility_indicators/closest_average.md) der Fall ist.
 
 ### Visualisierung
 
-Die Form der Einzugsgebiete wird aus dem Routing-Gitter unter Verwendung des [Marching-Square-Konturlinien-Algorithmus](https://de.wikipedia.org/wiki/Marching_Squares "Wikipedia: Marching Squares") abgeleitet, einem Computergraphik-Algorithmus, der zweidimensionale Konturlinien aus einem rechteckigen Wertearray erzeugen kann ([de Queiroz Neto et al. 2016](catchments#6-references)). Dieser Algorithmus transformiert das Gitter von einem 2D-Array in eine Form, um es zu visualisieren oder zu analysieren. Eine Illustration der 2D-Bildverarbeitung ist in der Abbildung dargestellt.
+Die Form der Einzugsgebiete wird aus dem Routing-Gitter unter Verwendung des [Marching-Square-Konturlinien-Algorithmus](https://de.wikipedia.org/wiki/Marching_Squares "Wikipedia: Marching Squares") abgeleitet, einem Computergraphik-Algorithmus, der zweidimensionale Konturlinien aus einem rechteckigen Wertearray erzeugen kann ([de Queiroz Neto et al. 2016](#6-referenzen)). Dieser Algorithmus transformiert das Gitter von einem 2D-Array in eine Form, um es zu visualisieren oder zu analysieren. Eine Illustration der 2D-Bildverarbeitung ist in der Abbildung dargestellt.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src="https://plan4better.de/images/docs/technical_documentation/isochrone/wiki.webp" width="1000px" alt="marching square" style={{ width: "1000px", height: "400px", maxHeight: "400px", maxWidth: "400px", objectFit: "contain"}}/>
