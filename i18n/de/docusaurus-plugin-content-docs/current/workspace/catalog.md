@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Katalog
 
-Der **Datenkatalog** ist eine umfassende Liste aller verfügbaren[räumlichen Datensätzen](../further_reading/glossary#geospatial-data) zur Erkundung und Analyse. Eine breite Palette von Datensätzen wird von Plan4Better, unseren Partnern und Open-Source-Bibliotheken bereitgestellt, wodurch eine **zuverlässige und genaue** Datenbank für Ihre GIS-Projekte sichergestellt wird.
+Der **Datenkatalog** ist eine umfassende Liste aller verfügbaren [räumlichen Datensätzen](../further_reading/glossary#geospatial-data) zur Erkundung und Analyse. Eine breite Palette von Datensätzen wird von Plan4Better, unseren Partnern und Open-Source-Bibliotheken bereitgestellt, wodurch eine **zuverlässige und genaue** Datenbank für Ihre GIS-Projekte sichergestellt wird.
 
 <div class="content"><img src={require('/img/workspace/catalog/home-catalog.png').default} alt="Data Catalog" style={{ maxHeight: "700px", maxWidth: "800px"}}/></div>
 
