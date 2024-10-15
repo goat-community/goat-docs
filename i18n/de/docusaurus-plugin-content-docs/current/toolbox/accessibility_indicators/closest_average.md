@@ -43,7 +43,7 @@ Heatmaps sind in bestimmten Regionen verfügbar. Beim Auswählen eines `Verkehrs
 </div> 
 
 
-Wenn Sie Analysen außerhalb dieses Geofence durchführen möchten, kontaktieren Sie uns bitte [hier](https://plan4better.de/kontakt/ "Kontaktieren Sie uns").
+Wenn Sie Analysen außerhalb dieses Geofence durchführen möchten, kontaktieren Sie uns bitte [hier](https://plan4better.de/de/contakt/ "Kontaktieren Sie uns").
 
 :::
 
@@ -194,7 +194,7 @@ Je nach Konfiguration kann die Berechnung einige Minuten dauern. Die [Statusleis
 
 :::tip Tipp
 
-Möchten Sie Ihre Heatmaps gestalten und ansprechende Karten erstellen? Infos hierzu finden Sie unter[Layer Design](../../map/layer_style/styling).
+Möchten Sie Ihre Heatmaps gestalten und ansprechende Karten erstellen? Infos hierzu finden Sie unter [Layer Design](../../map/layer_style/styling).
 
 :::
 
@@ -211,7 +211,7 @@ Formel für die durchschnittliche Fahrtzeit:
 wobei die durchschnittliche Reisezeit für Zelle **i** die Summe von bis zu **n** Reisezeiten von Zelle **i** zu Möglichkeit **j** (**tij**) geteilt durch die Anzahl der Möglichkeiten **n** ist, die kleiner sein muss als der angegebene Parameter 'Anzahl der Ziele'.
 
 ### Klassifizierung
-Zur Klassifizierung der Erreichbarkeitsstufen, die für jede Rasterzelle berechnet wurden (für die farbige Visualisierung), wird standardmäßig eine Klassifizierung auf Basis von Quantilen verwendet. Es können jedoch auch verschiedene andere Klassifizierungsmethoden verwendet werden. Weitere Informationen finden Sie im Abschnitt **[Datenklassifizierungsmethoden](../../map/layer_style/attribute_based_styling#data-classification-methods)** auf der Seite *attributbasiertes Styling*.
+Zur Klassifizierung der Erreichbarkeitsstufen, die für jede Rasterzelle berechnet wurden (für die farbige Visualisierung), wird standardmäßig eine Klassifizierung auf Basis von Quantilen verwendet. Es können jedoch auch verschiedene andere Klassifizierungsmethoden verwendet werden. Weitere Informationen finden Sie im Abschnitt **[Datenklassifizierungsmethoden](../../map/layer_style/attribute_based_styling#datenklassifizierungsmethoden)** auf der Seite *attributbasiertes Styling*.
 
 ### Visualisierung 
 
