@@ -17,7 +17,7 @@ Wenn Sie Ihre Styling-Einstellungen speichern und in weiteren Projekten verwende
 
 Um einen Stil basierend auf einem Attribut zu erstellen, wählen Sie es aus dem Dropdown-Menü des Feldes <code>Farbe basierend auf</code> aus. Daraufhin werden alle Attribute oder Spalten aufgelistet, die in den Daten Ihres Layers verfügbar sind.
 
-Die Visualisierung wird dann automatisch entsprechend dem Wertebereich der Daten gestaltet. Eine <code>Farbpalette</code> und eine <code>Farbskala</code> sind standardmäßig zugewiesen, können aber angepasst werden, um Ihren Daten und Visualisierungsanforderungen besser zu entsprechen. Die *Farbskala* verwendet eine [**Datenklassifizierungsmethode**](#data-classification-methods), um zu bestimmen, wie Datenwerte verschiedenen Farbkategorien zugewiesen werden.
+Die Visualisierung wird dann automatisch entsprechend dem Wertebereich der Daten gestaltet. Eine <code>Farbpalette</code> und eine <code>Farbskala</code> sind standardmäßig zugewiesen, können aber angepasst werden, um Ihren Daten und Visualisierungsanforderungen besser zu entsprechen. Die *Farbskala* verwendet eine [**Datenklassifizierungsmethode**](#datenklassifizierungsmethoden), um zu bestimmen, wie Datenwerte verschiedenen Farbkategorien zugewiesen werden.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -51,7 +51,7 @@ In diesem Abschnitt finden Sie GOATs umfassende Paletten, die alle für eine **v
 
 ## Farbskala
 
-Unter <code>Palette</code> finden Sie die **Farbe basierend auf** und die **Farbskala**, die Datenwerte mit einem Farbspektrum verbindet. Sie wandelt einen gegebenen Datenwert innerhalb eines gegebenen Bereichs in eine entsprechende Farbe aus einem gegebenen Farbspektrum um. GOAT bietet sechs vordefinierte **Datenklassifizierungsmethoden**: [Quantil](#quantile), [Standardabweichung](#standard-deviation), [Gleiches Intervall](#equal-interval), [Heads und Tails](#heads-and-tails), [Benutzerdefinierte Ordinalskala](#custom-breaks-for-numbers), und [Benutzerdefinierte Schritte](#custom-ordinal-for-strings).
+Unter <code>Palette</code> finden Sie die **Farbe basierend auf** und die **Farbskala**, die Datenwerte mit einem Farbspektrum verbindet. Sie wandelt einen gegebenen Datenwert innerhalb eines gegebenen Bereichs in eine entsprechende Farbe aus einem gegebenen Farbspektrum um. GOAT bietet sechs vordefinierte **Datenklassifizierungsmethoden**: [Quantil](#quantil), [Standardabweichung](#standardabweichung), [Gleiches Intervall](#gleiches-intervall), [Heads und Tails](#heads-und-tails), [Benutzerdefinierte Schritte](#benutzerdefinierte-schritte-für-zahlen), und [Benutzerdefinierte Ordinalskala](#benutzerdefinierte-ordinalskala-für-zeichen).
 
 ## Datenklassifizierungsmethoden
 
