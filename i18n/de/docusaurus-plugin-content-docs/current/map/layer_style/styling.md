@@ -10,7 +10,7 @@ Wenn Sie einen neue Layer zu Ihrem Projekt hinzufügen, wird ihr ein Standardsti
 
 ### Füllfarbe
 
-Die Füllfarbe wird verwendet, um das **Innere** von **Punkt- oder Polygon-Features** auf einer Karte darzustellen. Die Füllfarbe ist ein Aspekt der Kartographie und der GIS-Visualisierung, da sie zur besseren Lesbarkeit der Karte beiträgt. Der [Farbwähler](#color-picker--preset-colors) bietet verschiedene Optionen, um die Farben Ihrer Wahl auszuwählen.
+Die Füllfarbe wird verwendet, um das **Innere** von **Punkt- oder Polygon-Features** auf einer Karte darzustellen. Die Füllfarbe ist ein Aspekt der Kartographie und der GIS-Visualisierung, da sie zur besseren Lesbarkeit der Karte beiträgt. Der [Farbwähler](#farbwähler--voreingestellte-farben) bietet verschiedene Optionen, um die Farben Ihrer Wahl auszuwählen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
@@ -31,7 +31,7 @@ Um die Deckkraft Ihrer Layerstile für die Füllfarbe anzupassen, ändern Sie di
 
 ### Strichfarbe
 
-Ähnlich wie die Füllfarbe kann auch die Strichfarbe eingestellt werden. Die Strichfarbe bezieht sich auf die Farbe, die auf die **Außenlinien oder Kanten** von Kartenmerkmalen wie Polygonen, Linien und Punkten angewendet wird. Sie wird verwendet, um die Kanten von räumlichen Elementen abzugrenzen, sie voneinander zu unterscheiden und ihre Sichtbarkeit auf der Karte zu verbessern. Der [Farbwähler](#color-picker--preset-colors) bietet verschiedene Optionen, um die Farben Ihrer Wahl auszuwählen.
+Ähnlich wie die Füllfarbe kann auch die Strichfarbe eingestellt werden. Die Strichfarbe bezieht sich auf die Farbe, die auf die **Außenlinien oder Kanten** von Kartenmerkmalen wie Polygonen, Linien und Punkten angewendet wird. Sie wird verwendet, um die Kanten von räumlichen Elementen abzugrenzen, sie voneinander zu unterscheiden und ihre Sichtbarkeit auf der Karte zu verbessern. Der [Farbwähler](#farbwähler--voreingestellte-farben) bietet verschiedene Optionen, um die Farben Ihrer Wahl auszuwählen.
 
 
 ### Farbwähler & voreingestellte Farben
