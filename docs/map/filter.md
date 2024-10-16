@@ -1,6 +1,8 @@
 ---
 sidebar_position: 4
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 
 # Filter
@@ -70,6 +72,9 @@ The **filter operation does not alter the original data**. It can be used on any
   </div>
 </div>
 
+<Tabs>
+  <TabItem value="Logical expression" label="Logical expression" default className="tabItemBox">
+
 <div class="step">
   <div class="step-number">6</div>
   <div class="content">Select the <code>Field</code>, i.e. the attribute which you like to use for the filtering.</div>
@@ -77,7 +82,8 @@ The **filter operation does not alter the original data**. It can be used on any
 
 <div class="step">
   <div class="step-number">7</div>
-  <div class="content">Select the concrete <code>Operator</code> that you want to apply. <i>Note: the available options vary based on the data type of the attribute selected in Step 6.</i>
+  <div class="content">Select the concrete <code>Operator</code> that you want to apply. 
+  <i> Note: the available options vary based on the data type of the attribute selected in Step 6.</i>
   </div>
 </div>
 
@@ -109,6 +115,40 @@ For the expressions **"includes"** and **"excludes"**, multiple values can be se
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/map/filter/filter_atlayer.webp').default} alt="Filter Result in GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
+</TabItem>
+
+<TabItem value="Spatial expression" label="Spatial expression" default className="tabItemBox">
+<div class="step">
+  <div class="step-number">6</div>
+  <div class="content">Select the <code>intersection method</code>, i.e. the method used for the spatial boundary.</div>
+</div>
+
+<Tabs>
+  <TabItem value="Map extent" label="Map extent" default className="tabItemBox">
+<div class="step">
+  <div class="step-number">7</div>
+  <div class="content"> The layer is automatically cropped to the current map extension.<p> To change the filter, zoom in or out of the map, choose the appropriate view, and refresh the map extension with the button.</p></div>
+</div>
+
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+
+  <img src={require('/img/map/filter/Map_extend.gif').default} alt="Attribute Selection" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+
+</div> 
+</TabItem>
+
+<TabItem value="Boundary" label="Boundary" default className="tabItemBox">
+
+:::info coming soon
+
+This feature is currently under development. 🧑🏻‍💻
+
+:::
+</TabItem>
+</Tabs>
+
+</TabItem>
+</Tabs>
 
 ### Multiple Expressions Filtering
 

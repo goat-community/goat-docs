@@ -8,7 +8,7 @@ Die Datensätze in GOAT sind in **interne und externe Datensätze** unterteilt. 
 
 ## Interne Datensätze
 
-Interne Datensätze beziehen sich auf Datensätze, die **direkt in GOAT gespeichert und verwaltet werden**. Dazu gehören [Features](#1-features), die räumlich referenzierte geografische Merkmale enthalten, und [Tabellen](#2-tables), die aus nicht-räumlichen Daten bestehen. Diese internen Datensätze sind für die Durchführung von Analysen in GOAT unerlässlich.
+Interne Datensätze beziehen sich auf Datensätze, die **direkt in GOAT gespeichert und verwaltet werden**. Dazu gehören [Features](#1-features), die räumlich referenzierte geografische Merkmale enthalten, und [Tabellen](#2-tabellen), die aus nicht-räumlichen Daten bestehen. Diese internen Datensätze sind für die Durchführung von Analysen in GOAT unerlässlich.
 
 :::info INFO
 Welche Datentypen von GOAT für interne Datensätze unterstützt werden, erfahren Sie unter [**Datentypen**](../data/data_types).

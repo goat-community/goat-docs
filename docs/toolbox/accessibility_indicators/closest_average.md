@@ -5,6 +5,7 @@ sidebar_position: 3
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
+import MathJax from 'react-mathjax';
 
 # Heatmap - Closest Average
 A color-coded map to visualize the average travel time to points (such as [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) from surrounding areas.
@@ -208,7 +209,12 @@ Once all input opportunity layers are combined, a grid of surrounding hexagonal 
 
 Average travel time formula:
 
-![Closest Average Formula](/img/toolbox/accessibility_indicators/heatmaps/closest_average_based/closest_avg_formula.png "Closest Average Formula")
+<MathJax.Provider>
+  <div style={{ marginTop: '20px', fontSize: '24px' }}>
+    <MathJax.Node formula={"\\overline{t}_i = \\frac{\\sum_{j=1}^{n} t_{ij}}{n}"} />
+  </div>
+</MathJax.Provider>
+
 
 where the average travel time for cell **i** is the sum of upto **n** travel times from cell **i** to opportunity **j** (**tij**) divided by the number of opportunities **n** which must be less than the `Number of destinations` parameter specified.
 
