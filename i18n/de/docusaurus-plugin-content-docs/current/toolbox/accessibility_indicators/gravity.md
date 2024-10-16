@@ -297,33 +297,39 @@ wobei die Erreichbarkeit **A** des Ausgangspunkts **i** die Summe aller am Zielo
 
 *Lineare kumulative Chancen, (Kwan,1998):*
 
+<div>
 <MathJax.Provider>
   <div style={{ marginTop: '20px', fontSize: '24px' }}>
     <MathJax.Node formula={`f(t_{ij}) = \\begin{cases}
       \\left(1 - \\frac{t_{ij}}{\\bar{t}} \\right) & \\text{for } t_{ij} \\leq \\bar{t} \\\\
-      0 & \\text{otherwise}
+      0 & \\text{sonst}
     \\end{cases}`} />
   </div>
 </MathJax.Provider>
-      
+</div>
+
 *Negative Exponentialfunktion, (Kwan,1998):*
 
+<div>
 <MathJax.Provider>
   <div style={{ marginTop: '20px', fontSize: '24px'  }}>
     <MathJax.Node formula={"f(t_{i,j})=\\exp^{(-\\beta t_{i,j})}"} />
   </div>
 </MathJax.Provider>
+</div>
 
 *Inverse Power, (Kwan,1998):*
 
+<div>
 <MathJax.Provider>
   <div style={{ marginTop: '20px', fontSize: '24px' }}>
     <MathJax.Node formula={`f(t_{ij}) = \\begin{cases}
       \\ 1 & \\text{for } t_{ij} \\leq 1 \\\\
-      t_{i,j}^{-\\beta} & \\text{otherwise}
+      t_{i,j}^{-\\beta} & \\text{sonst}
     \\end{cases}`} />
   </div>
 </MathJax.Provider>
+</div>
 
 Die Reisezeit wird in Minuten gemessen. Bei einer maximalen Reisezeit von 30 Minuten gelten Ziele, die weiter als 30 Minuten entfernt sind, als nicht erreichbar und werden daher bei der Berechnung der Erreichbarkeit nicht berücksichtigt.
 Der Parameter *Sensitivität* bestimmt, wie sich die Erreichbarkeit mit zunehmender Reisezeit verändert. Da der Parameter *Sensitivität* für die Messung der Erreichbarkeit entscheidend ist, können Sie ihn in GOAT anpassen. Die folgenden Diagramme zeigen den Einfluss des Parameters *Sensitivität* auf die Erreichbarkeit:

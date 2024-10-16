@@ -1,14 +1,13 @@
 ---
 sidebar_position: 4
 ---
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
 import MathJax from 'react-mathjax';
 
 # Heatmap - Gravity
+
 A color-coded map to visualize the accessibility of points (such as [POI](../../../further_reading/glossary#point-of-interest-poi "What is a POI?")) from surrounding areas.
 
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/OAHa-5-WVk8?si=looP1BuuuWUVNFb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -301,26 +300,33 @@ where the accessibility **A** of origin **i** is the sum of all opportunities **
 </MathJax.Provider>
 
 *Cumulative Opportunities Linear, (Kwan,1998):*
-
+<div>
 <MathJax.Provider>
   <div style={{ marginTop: '20px', fontSize: '24px' }}>
-    <MathJax.Node formula={`f(t_{ij}) = \\begin{cases}
-      \\left(1 - \\frac{t_{ij}}{\\bar{t}} \\right) & \\text{for } t_{ij} \\leq \\bar{t} \\\\
-      0 & \\text{otherwise}
-    \\end{cases}`} />
+    <MathJax.Node formula={`
+      f(t_{ij}) =
+      \\begin{cases}
+        1 - \\frac{t_{ij}}{\\bar{t}} & \\text{for } t_{ij} \\leq \\bar{t} \\\\
+        0 & \\text{otherwise}
+      \\end{cases}
+    `} />
   </div>
 </MathJax.Provider>
-      
-*Negative Exponential, (Kwan,1998):*
+  </div>    
 
-<MathJax.Provider>
+  *Negative Exponential, (Kwan,1998):*
+
+
+<div><MathJax.Provider>
   <div style={{ marginTop: '20px', fontSize: '24px'  }}>
     <MathJax.Node formula={"f(t_{i,j})=\\exp^{(-\\beta t_{i,j})}"} />
   </div>
 </MathJax.Provider>
-      
+    </div>  
+
 *Inverse Power, (Kwan,1998):*
 
+<div>
 <MathJax.Provider>
   <div style={{ marginTop: '20px', fontSize: '24px' }}>
     <MathJax.Node formula={`f(t_{ij}) = \\begin{cases}
@@ -329,6 +335,7 @@ where the accessibility **A** of origin **i** is the sum of all opportunities **
     \\end{cases}`} />
   </div>
 </MathJax.Provider>
+</div>  
 
 Travel times are measured in minutes. For a maximum travel time of 30 minutes, destinations that are farther than 30 minutes are considered non-accessible and therefore not considered in the calculation of the accessibility.
 The *sensitivity* parameter determines how accessibility changes with increasing travel time. As the *sensitivity* parameter is decisive when measuring accessibility, GOAT allows you to adjust this. The following graphs show the influence of the *sensitivity* parameter on accessibility:
