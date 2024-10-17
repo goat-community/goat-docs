@@ -5,6 +5,7 @@ sidebar_position: 3
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
+import MathJax from 'react-mathjax';
 
 # Heatmap - Durchschnitt Reisezeit
 
@@ -43,7 +44,7 @@ Heatmaps sind in bestimmten Regionen verfügbar. Beim Auswählen eines `Verkehrs
 </div> 
 
 
-Wenn Sie Analysen außerhalb dieses Geofence durchführen möchten, kontaktieren Sie uns bitte [hier](https://plan4better.de/kontakt/ "Kontaktieren Sie uns").
+Wenn Sie Analysen außerhalb dieses Geofence durchführen möchten, kontaktieren Sie uns bitte [hier](https://plan4better.de/de/contact/ "Kontaktieren Sie uns").
 
 :::
 
@@ -194,7 +195,7 @@ Je nach Konfiguration kann die Berechnung einige Minuten dauern. Die [Statusleis
 
 :::tip Tipp
 
-Möchten Sie Ihre Heatmaps gestalten und ansprechende Karten erstellen? Infos hierzu finden Sie unter[Layer Design](../../map/layer_style/styling).
+Möchten Sie Ihre Heatmaps gestalten und ansprechende Karten erstellen? Infos hierzu finden Sie unter [Layer Design](../../map/layer_style/styling).
 
 :::
 
@@ -206,12 +207,16 @@ Sobald alle eingegebenen Gelegenheits-Layer kombiniert sind, wird ein Gitter aus
 
 Formel für die durchschnittliche Fahrtzeit:
 
-![Closest Average Formula](/img/toolbox/accessibility_indicators/heatmaps/closest_average_based/closest_avg_formula.png "Closest Average Formula")
+<MathJax.Provider>
+  <div style={{ marginTop: '20px', fontSize: '24px' }}>
+    <MathJax.Node formula={"\\overline{t}_i = \\frac{\\sum_{j=1}^{n} t_{ij}}{n}"} />
+  </div>
+</MathJax.Provider>
 
 wobei die durchschnittliche Reisezeit für Zelle **i** die Summe von bis zu **n** Reisezeiten von Zelle **i** zu Möglichkeit **j** (**tij**) geteilt durch die Anzahl der Möglichkeiten **n** ist, die kleiner sein muss als der angegebene Parameter 'Anzahl der Ziele'.
 
 ### Klassifizierung
-Zur Klassifizierung der Erreichbarkeitsstufen, die für jede Rasterzelle berechnet wurden (für die farbige Visualisierung), wird standardmäßig eine Klassifizierung auf Basis von Quantilen verwendet. Es können jedoch auch verschiedene andere Klassifizierungsmethoden verwendet werden. Weitere Informationen finden Sie im Abschnitt **[Datenklassifizierungsmethoden](../../map/layer_style/attribute_based_styling#data-classification-methods)** auf der Seite *attributbasiertes Styling*.
+Zur Klassifizierung der Erreichbarkeitsstufen, die für jede Rasterzelle berechnet wurden (für die farbige Visualisierung), wird standardmäßig eine Klassifizierung auf Basis von Quantilen verwendet. Es können jedoch auch verschiedene andere Klassifizierungsmethoden verwendet werden. Weitere Informationen finden Sie im Abschnitt **[Datenklassifizierungsmethoden](../../map/layer_style/attribute_based_styling#datenklassifizierungsmethoden)** auf der Seite *attributbasiertes Styling*.
 
 ### Visualisierung 
 
