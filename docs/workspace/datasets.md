@@ -10,9 +10,11 @@ On the **Datasets** page, data can be **uploaded, managed, and shared**. The pag
   <img src={require('/img/workspace/datasets/datasets_general.png').default} alt="Datasets Page in Workspace of GOAT" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
+In the Workspace you have the option to upload a dataset or add it via an external link.
+
 ## Upload data
 
-GOAT supports the upload of **GeoPackage, GeoJSON, Shapefile, KML, CSV**, and **XLSX** files. Follow these steps to add a dataset via the Workspace:
+GOAT supports the upload of **GeoPackage, GeoJSON, Shapefile, KML, CSV**, and **XLSX** files. Follow these steps to upload a dataset via the Workspace:
 
 <div class="step">
   <div class="step-number">1</div>
@@ -21,7 +23,7 @@ GOAT supports the upload of **GeoPackage, GeoJSON, Shapefile, KML, CSV**, and **
 
 <div class="step">
   <div class="step-number">2</div>
-  <div class="content">Click on <code>+ Add Dataset</code>. </div>
+  <div class="content">Click on <code>+ Add Dataset</code> and select <code>Dataset Upload</code>. </div>
 </div>
 
 <div class="step">
@@ -39,7 +41,39 @@ GOAT supports the upload of **GeoPackage, GeoJSON, Shapefile, KML, CSV**, and **
   <div class="content">Check the information and click on <code>Upload</code>.</div>
 </div>
 
+## External data
 
+ The following external datasets are supported in GOAT: **Web Feature Service (WFS), Web Map Service (WMS), Web Map Tile Service (WMTS), XYZ Tiles**. Follow these steps to add an external dataset via the Workspace:
+
+<div class="step">
+  <div class="step-number">1</div>
+  <div class="content">Navigate to the <b>"Datasets"</b> page via the sidebar.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">2</div>
+  <div class="content">Click on <code>+ Add Dataset</code> and select <code>Dataset External</code>. </div>
+</div>
+
+<div class="step">
+  <div class="step-number">3</div>
+  <div class="content">Add the URL the file.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Select the layer you'd like to add and click on <code>Next</code>.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">5</div>
+  <div class="content">Select the <b>Destination Folder</b> and define the <b>Name</b> of your new dataset. Furthermore, you can add a <b>Description</b> if you like.</div>
+</div>
+
+<div class="step">
+  <div class="step-number">6</div>
+  <div class="content">Check the information and click on <code>Save</code>.</div>
+</div>
 
 :::tip tip
 

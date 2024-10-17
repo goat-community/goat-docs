@@ -35,7 +35,7 @@ Follow these steps to add a layer to the map:
 
 <div class="step">
   <div class="step-number">3</div>
-  <div class="content">Select if you like to integrate an dataset from your <b>data explorer</b>, <b>upload</b> a new dataset or browse the <b>catalog explorer</b>.</div>
+  <div class="content">Select if you like to integrate an dataset from your <b>data explorer</b>, <b>upload</b> a new dataset, browse the <b>catalog explorer</b> or add a dataset via an <b>external link</b>.</div>
 </div>
 
 <Tabs>
@@ -72,6 +72,7 @@ Follow these steps to add a layer to the map:
   <div class="content">Check the information and click on <code>Upload</code>.</div>
 </div>
 
+
   </TabItem>
   <TabItem value="Catalog Explorer" label="Catalog Explorer" className="tabItemBox">
 
@@ -91,8 +92,39 @@ Follow these steps to add a layer to the map:
 </div>
 
 
+ </TabItem>
+  <TabItem value="Dataset External" label="Dataset External" default className="tabItemBox">
+  
+<div class="step">
+  <div class="step-number">4</div>
+  <div class="content">Insert your external URL and follow the steps <b>depending on the type of dataset</b> you would like to add.</div>
+</div>
 
-  </TabItem>
+<Tabs>
+  <TabItem value="WFS" label="WFS" default className="tabItemBox">
+
+  <div class="step">
+      <div class="content"> <p>When you would like to add a WFS layer you need to have a <b>"GetCapabilities"</b> link. </p>
+      In the next step you can choose which layer you would like to add to your dataset. <i>You can only choose one layer at a time.</i></div>
+      </div>
+     </TabItem>
+
+  <TabItem value="WMS" label="WMS" className="tabItemBox">
+     
+  <div class="step">
+      <div class="content"> <p>When you would like to add a WMS layer you need to have a <b>"GetCapabilities"</b> link.</p> Here you have the option to select multiple layers, but when added to GOAT it <i>will be merged onto one layer.</i> </div>
+      </div>
+      </TabItem>
+
+  <TabItem value="WMTS" label="WMTS" className="tabItemBox">
+
+  <div class="step">
+      <div class="content"> <p>You can add a WMTS to your dataset via a <b>direct URL</b> or <b>"GetCapabilites"</b> link. You can only choose <i>one layer</i> at a time if your URL contains more than one layer.</p>
+      The projection needs to be <i>WEB Mercator (EPSG:3857) and GoogleMaps compatible</i>. Because they have different zoom levels, the dataset would not show up in the list of available layers if it doesn't meet both requirements.</div>
+      </div>
+    </TabItem>
+  </Tabs>
+</TabItem>
 </Tabs>
 
 :::tip tip
