@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Startseite
 
-Wenn Sie sich bei GOAT anmelden, gelangen Sie auf die **Startseite**. Von hier aus können Sie problemlos auf Ihre [aktuellen Projekte](#recent-projects) und [aktuellen Datensätze](#recent-datasets) zugreifen. Darüber hinaus können Sie interessante Inhalte erkunden, wie z. B. neue Blogbeiträge unter [Erkunden](#explore).
+Wenn Sie sich bei GOAT anmelden, gelangen Sie auf die **Startseite**. Von hier aus können Sie problemlos auf Ihre [aktuellen Projekte](#aktuelle-projekte) und [aktuellen Datensätze](#aktuelle-datensätze) zugreifen. Darüber hinaus können Sie interessante Inhalte erkunden, wie z. B. neue Blogbeiträge unter [Erkunden](#erkunden).
 
 Übersicht der Benutzeroberfläche:
 
@@ -42,7 +42,7 @@ Hier können Sie Ihre neuesten Datensätze und deren letzte Aktualisierungen seh
 
 
 ### Erkunden
-Hier können Sie die neuesten Blogbeiträge und weitere interessante Materialien sehen. Sie können auf die Schaltfläche `Blog besuchen` klicken, um alle [Blogbeiträge](https://plan4better.de/en/blog/) zu sehen.
+Hier können Sie die neuesten Blogbeiträge und weitere interessante Materialien sehen. Sie können auf die Schaltfläche `Blog besuchen` klicken, um alle [Blogbeiträge](https://plan4better.de/de/blog/) zu sehen.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/workspace/home/explore.png').default} alt="Explore" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>

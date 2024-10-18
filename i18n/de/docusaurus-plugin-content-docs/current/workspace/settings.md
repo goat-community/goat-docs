@@ -86,6 +86,6 @@ Im **Abonnement**-Menü können Sie die **Details Ihres Abonnements** anzeigen u
 
 :::info
 
-Bitte zögern Sie nicht, den **[Support](https://plan4better.de/en/contact/ "Contact support")** jederzeit zu kontaktieren, falls Sie Fragen zu Ihrem Abonnement haben.
+Bitte zögern Sie nicht, den **[Support](https://plan4better.de/de/contact/ "Contact support")** jederzeit zu kontaktieren, falls Sie Fragen zu Ihrem Abonnement haben.
 
 :::

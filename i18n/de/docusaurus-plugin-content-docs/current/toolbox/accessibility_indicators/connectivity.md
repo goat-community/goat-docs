@@ -6,9 +6,10 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import thematicIcon from "/img/toolbox/data_management/join/toolbox.webp";
+import MathJax from 'react-mathjax';
 
 # Heatmap - Konnektivität
-Eine farbkodierte Karte zur Visualisierung der Konnektivität von Orten innerhalb eines Interessengebiets ([AOI](../../../further_reading/glossary#area-of-interest-aoi "What is an AOI?")).
+Eine farbkodierte Karte zur Visualisierung der Konnektivität von Orten innerhalb eines Interessengebiets ([AOI](../../further_reading/glossary#area-of-interest-aoi "What is an AOI?")).
 
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/g90OhqpiHSs?si=YRCBJg0J-mwjhath" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -29,7 +30,7 @@ Heatmaps sind in bestimmten Regionen verfügbar. Bei der Auswahl eines `Verkehrs
 </div>
 
 
-Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie sich bitte an unseren [Support](https://plan4better.de/kontakt/ "Support"). Wir besprechen mit Ihnen gerne weitere Möglichkeiten.
+Wenn Sie Analysen über diesen Geofence hinaus durchführen möchten, wenden Sie sich bitte an unseren [Support](https://plan4better.de/de/contact/ "Support"). Wir besprechen mit Ihnen gerne weitere Möglichkeiten.
 
 :::
 
@@ -182,16 +183,21 @@ Für jede Zelle des sechseckigen Gitters (innerhalb Ihrer AOI) wird die gesamte 
 
 Konnektivitäts Formel:
 
-![Connectivity Formula](/img/toolbox/accessibility_indicators/heatmaps/connectivity_based/connectivity_formula.png "Connectivity Formula")
+<MathJax.Provider>
+  <div style={{ marginTop: '20px', fontSize: '24px' }}>
+    <MathJax.Node formula={"\\text{Konnektivität} = \\sum_{i=1}^{n} (\\text{Anzahl der Zellen}_i \\times \\text{Zellfläche})"} />
+  </div>
+</MathJax.Provider>
 
-Dabei ist ***i*** ein Reisezeitschritt und ***n*** das Reisezeitlimit. Diese Funktion berechnet die gesamte geographische Fläche (in Quadratmetern), von der aus die Zielzelle in Ihrer AOI erreichbar ist.
+
+Dabei ist ***i*** ein Reisezeitschritt, ***n*** das Reisezeitlimit,und ***Anzahl der Zellen*** ist die Anzahl der Zellen, von denen aus Ursprungsorte die betrachtete Lage in i Minuten erreichen. Diese Funktion berechnet die gesamte geographische Fläche (in Quadratmetern), von der aus die Zielzelle in Ihrer AOI erreichbar ist.
 
 ### Klassifizierung
-Zur Klassifizierung der Konnektivitätsstufen, die für jede Rasterzelle berechnet wurden (für die farbliche Darstellung), wird standardmäßig eine Klassifizierung auf der Grundlage von Quantilen verwendet. Es können jedoch auch verschiedene andere Klassifizierungsmethoden verwendet werden. Weitere Informationen finden Sie im Abschnitt **[Datenklassifizierungsmethoden](../../map/layer_style/attribute_based_styling#data-classification-methods)** auf der Seite *Attributbasiertes Styling*.
+Zur Klassifizierung der Konnektivitätsstufen, die für jede Rasterzelle berechnet wurden (für die farbliche Darstellung), wird standardmäßig eine Klassifizierung auf der Grundlage von Quantilen verwendet. Es können jedoch auch verschiedene andere Klassifizierungsmethoden verwendet werden. Weitere Informationen finden Sie im Abschnitt **[Datenklassifizierungsmethoden](../../map/layer_style/attribute_based_styling# datenklassifizierungsmethoden)** auf der Seite *Attributbasiertes Styling*.
 
 ### Visualisierung 
 
-Heatmaps in GOAT nutzen die **[Uber H3 auf Gittern basierende](../further_reading/glossary#h3-grid)** Lösung für effiziente Berechnungen und leicht verständliche Visualisierung. Hinter den Kulissen wird eine vorberechnete Reisezeitmatrix für jedes *Verkehrsmittel* mit dieser Lösung abgefragt und in Echtzeit weiterverarbeitet, um die Erreichbarkeit zu berechnen und eine endgültige Heatmap zu erstellen.
+Heatmaps in GOAT nutzen die **[Uber H3 auf Gittern basierende](../../further_reading/glossary#h3-grid)** Lösung für effiziente Berechnungen und leicht verständliche Visualisierung. Hinter den Kulissen wird eine vorberechnete Reisezeitmatrix für jedes *Verkehrsmittel* mit dieser Lösung abgefragt und in Echtzeit weiterverarbeitet, um die Erreichbarkeit zu berechnen und eine endgültige Heatmap zu erstellen.
 
 Die Auflösung und die Abmessungen des verwendeten sechseckigen Gitters hängen von dem gewählten *Verkehrsmittel* ab:
 
