@@ -59,7 +59,7 @@ Consequently, the visual presentation of the map imagery, including elements suc
 This type of layer supports zooming and panning and it is ideal for basemaps, but the output is always a static image and gets loaded slower.
 
 **WMTS (Web Map Tile Service)**
-WMTS layers have pre-rendered, fixed sized tiles therefore it loads quickly, and you can zoom in and pan them quickly and smoothly. It is ideal for basemaps on big areas and best to use when you wand to have consistent map-style.
+WMTS layers have pre-rendered, fixed sized tiles therefore it loads quickly, and you can zoom in and pan them quickly and smoothly. It is ideal for basemaps on big areas and best to use when you want to have consistent map-style.
 
 #### 2.2. Vector Tiles
 **Vector Tile Datasets** allow the integration of **MVT** (Mapbox Vector Tile) (e.g. mapbox://mapbox.mapbox-terrain-v2) into GOAT, allowing these efficient vector tiles to be used as static maps.

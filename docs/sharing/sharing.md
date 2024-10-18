@@ -38,12 +38,9 @@ Click on the three-dot menu <img src={require('/img/map/filter/3dots.png').defau
 
 <p> </p>
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/sharing/share_button.png').default} alt="Home Interface Overview in GOAT" style={{ maxHeight: "750px", maxWidth: "750px", objectFit: "cover"}}/>
+  <img src={require('/img/sharing/sharing_access.png').default} alt="Home Interface Overview in GOAT" style={{ maxHeight: "750px", maxWidth: "750px", objectFit: "cover"}}/>
 </div>
 <p> </p>
-<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/sharing/sharing_edit.png').default} alt="Home Interface Overview in GOAT" style={{ maxHeight: "500px", maxWidth: "500px", objectFit: "cover"}}/>
-</div>
 
 <p>
 You can find the list of projects shared with you in <code>Workspace</code> --> <code>Projects</code> --> <code>Teams</code> / <code>Organizations</code> sections.</p>
@@ -55,6 +52,7 @@ You can find the list of datasets shared with you in <code>Workspace</code> --> 
 </div>
 
 
+
 ## **Withdrawing access**
 
 Click on the three-dot menu <img src={require('/img/map/filter/3dots.png').default} alt="Options" style={{ maxHeight: "25px", maxWidth: "25px"}}/> on your dataset or project and select <code>sharing</code>, then choose the Organization/Team and select <code>no access</code> from the dropdown menu. 
@@ -64,5 +62,8 @@ Click on the three-dot menu <img src={require('/img/map/filter/3dots.png').defau
   <img src={require('/img/sharing/sharing_whitdraw.png').default} alt="Home Interface Overview in GOAT" style={{ maxHeight: "500px", maxWidth: "500px", objectFit: "cover"}}/>
 </div>
 
+## **Roles**
 
-
+:::info
+coming soon
+:::
