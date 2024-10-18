@@ -17,7 +17,7 @@ The left side of the upper bar displays the name of your project and the date an
 ### Map
 The following graphic explains the different elements of the map interface:
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/map/interface/map-interface.png').default} alt="recent datasets" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/map/interface/map_interface_new.png').default} alt="recent datasets" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 #### Navigation Bar
