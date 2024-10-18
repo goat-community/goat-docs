@@ -17,7 +17,7 @@ Auf der linken Seite der oberen Leiste werden der Name Ihres Projekts sowie das 
 ### Karte
 In der folgenden Grafik werden die verschiedenen Elemente der Karteansicht erläutert:
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/map/interface/map-interface.png').default} alt="recent datasets" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
+  <img src={require('/img/map/interface/map_interface_new.png').default} alt="recent datasets" style={{ maxHeight: "auto", maxWidth: "auto", objectFit: "cover"}}/>
 </div> 
 
 #### Navigationsleiste
