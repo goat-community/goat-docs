@@ -1,52 +1,91 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 # Datensatztypen
 
-Die Datensätze in GOAT sind in **interne und externe Datensätze** unterteilt. Interne Datensätze sind solche, die innerhalb von GOAT gespeichert sind, während externe Datensätze von Drittanbietern stammen.
+Benutzer können auf Datensätze im **Catalog Explorer** und über den **Dataset Explorer** zugreifen. Die im [Katalog](../workspace/Catalog) enthaltenen Datensätze werden von Plan4Better bereitgestellt und gepflegt. Wenn Sie einen externen Datensatz über eine URL hinzufügen, einen Datensatz von Ihrem lokalen Computer hochladen oder eine Ebene in GOAT erstellen, sind diese im Dataset Explorer sichtbar.
 
-## Interne Datensätze
+**Hinzufügen von Datensätzen**
 
-Interne Datensätze beziehen sich auf Datensätze, die **direkt in GOAT gespeichert und verwaltet werden**. Dazu gehören [Features](#1-features), die räumlich referenzierte geografische Merkmale enthalten, und [Tabellen](#2-tabellen), die aus nicht-räumlichen Daten bestehen. Diese internen Datensätze sind für die Durchführung von Analysen in GOAT unerlässlich.
+![GOAT-Datentypen](/img/data/data_basis/original_files/dataset_types.png "Datensatztypen")
 
-:::info INFO
-Welche Datentypen von GOAT für interne Datensätze unterstützt werden, erfahren Sie unter [**Datentypen**](../data/data_types).
+:::info Externe Datensätze
+
+Im Gegensatz zu anderen Datensätzen stammen externe Datensätze von **Drittanbietern** über den von Ihnen bereitgestellten Link. Diese Datensätze können entweder [Features](#1-features) oder [Raster](#2-rasters) sein, die unterschiedliche Zwecke erfüllen. *Externe Feature-Layer* werden in GOAT abgerufen und dort gespeichert, während *externe Raster-Layer* live abgerufen werden (um sie in der Karte zu überlagern), aber nicht gespeichert werden.
+<p>
+</p>
+Folgende externe Datensätze werden in GOAT unterstützt: Web Map Service (WMS), Web Map Tile Service (WMTS), Web Feature Service (WFS), XYZ Tiles.
+
 :::
+
+## Datensatztypen
 
 ### 1. Features
-Feature-Datensätze dienen als dynamisches Repository für **räumliche Merkmale** wie Punkte, Linien oder Polygone. Benutzer können Daten aus **Shapefiles**, **Geopackages**, **GeoJSON** und **KML**-Dateien hochladen und verwenden. Feature-Datensätze können auf der Karte visualisiert, [gestylt](../category/layer-style) und für Analysen mit allen Werkzeugen aus [Werkzeuge](../category/toolbox) genutzt werden. Darüber hinaus können Feature-Datensätze als Datenbasis für die [Szenarienerstellung](../category/scenarios) dienen.
 
-Innerhalb des GOAT-Frameworks gibt es drei verschiedene Arten von Feature-Datensätzen, um unterschiedliche Aspekte der geospatialen Funktionalität abzudecken:
+#### 1.1 Räumliche Features
+Feature-Datensätze dienen als dynamisches Repository für **räumliche Features** wie Punkte, Linien oder Polygone – sie enthalten räumlich referenzierte geografische Features. Benutzer können Daten aus **Shapefiles**, **Geopackages**, **GeoJSON** und **KML**-Dateien hochladen oder einen **WFS**-Link von einer externen URL hinzufügen. Feature-Datensätze können auf der Karte visualisiert, [gestylt](../category/layer-styling) und für Analysen mit Werkzeugen aus der [Toolbox](../category/toolbox) verwendet werden. Darüber hinaus können Feature-Datensätze als Datenbasis für die [Szenarioerstellung](../category/scenarios) dienen.
 
-- **Feature Dataset Standard:** Dies ist der primäre Feature-Typ, der automatisch ausgewählt wird, wenn ein Benutzer eine Datei hochlädt. Es unterstützt eine Vielzahl von Formaten, einschließlich GeoJSON, GPKG, KML und ZIP-Dateien. Dieser Datensatz dient als Grundlage für grundlegende geospatiale Operationen in GOAT.
+<p> </p>
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/data/spatial.png').default} alt="Übersicht über die Home-Oberfläche in GOAT" style={{ maxHeight: "750px", maxWidth: "750px", objectFit: "cover"}}/>
+</div>
+<p> </p>
 
-- **Feature Dataset Tool:** Dieser Datensatz umfasst alle Datensätze, die mit den in GOAT verfügbaren Werkzeugen berechnet wurden. 
+Im GOAT-Framework gibt es zwei verschiedene Arten von Feature-Datensätzen, um unterschiedliche Aspekte der Geofunktionalität zu adressieren:
 
-- **Feature Dataset Scenario:** Dieser Datensatz ist für szenariobasierte Analysen bestimmt und enthält von Benutzern erstellte Szenarien.
+- **Feature Dataset Standard:** Dies ist der primäre Feature-Typ, der automatisch ausgewählt wird, wenn ein Benutzer eine Datei hochlädt. Es unterstützt eine Vielzahl von Formaten, einschließlich GeoJSON, GPKG, KML und ZIP-Dateien. Dieser Datensatz dient als Grundlage für grundlegende geografische Operationen in GOAT.
 
-### 2. Tabellen
-Tabellen sind **nicht-räumliche Datensätze**, die sich von den geospatialen Datensätzen durch das Fehlen geografischer Referenzpunkte unterscheiden. Diese Datensätze können für den allgemeinen Analyse- und Datenverwaltungsprozess verwendet werden.Benutzer können Tabellendatensätze in weit verbreiteten Formaten wie **CSV** (Comma-Separated Values) und **XLSX** (Microsoft Excel Open XML Spreadsheet) importieren.
+- **Feature Dataset Tool:** Dieser Datensatz umfasst alle Datensätze, die mit den in GOAT verfügbaren Werkzeugen erstellt wurden.
 
-## Externe Datensätze
+#### 1.2 Nicht-räumliche Datensätze
+**Tabellen** sind **nicht-räumliche Datensätze**, die sich von den geografischen Datensätzen dadurch unterscheiden, dass sie keine geografischen Referenzpunkte enthalten, und daher nicht auf der Karte visualisiert werden können. Diese Datensätze können für ausgewählte Analyse- und Datenverwaltungsprozesse verwendet werden. Benutzer können Tabellendatensätze in weit verbreiteten Formaten wie **CSV** (Comma-Separated Values) und **XLSX** (Microsoft Excel Open XML Spreadsheet) importieren.
 
-:::info ERSCHEINT BALD
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/data/table.png').default} alt="Übersicht über die Home-Oberfläche in GOAT" style={{ maxHeight: "750px", maxWidth: "750px", objectFit: "cover"}}/>
+</div>
+<p> </p>
 
-Dieses Feature befindet sich derzeit in der Entwicklung. 🧑🏻‍💻
+### 2. Raster
+
+:::info Hinweis
+
+Sie können Raster-Layer weder bearbeiten noch Analysen darauf ausführen.
 
 :::
 
-Im Gegensatz zu internen Datensätzen, die direkt in GOAT gespeichert und verwaltet werden, stammen externe Datensätze von **Drittanbietern**. Diese Datensätze umfassen hauptsächlich [Imageries](#1-imageries) und [Vector Tiles](#2-vector-tiles), die jeweils unterschiedliche Zwecke erfüllen.
+Rasterdatensätze werden von externen Quellen wie **WMS** (Web Map Service) oder **WMTS** (Web Map Tile Service) bereitgestellt. Damit können eine Vielzahl von georeferenzierten Kartenbildern, wie topografische Karten, von externen Servern abgerufen und in GOAT integriert werden. Während diese Bilder als statische Karten eingebunden werden können, ist es wichtig zu beachten, dass sie keine analytischen Funktionen unterstützen.
 
-### 1. Imageries
-Imagery-Datensätze sind Datensätze, die von externen Quellen wie **WMS** (Web Map Service) oder **WMTS** (Web Map Tile Service) bereitgestellt werden. Damit können eine Vielzahl von georeferenzierten Kartenbildern, wie z.B. topografische Karten, von externen Servern bezogen und in GOAT integriert werden. Während diese Bilder als statische Karten eingebunden werden können, ist zu beachten, dass sie keine analytischen Funktionen unterstützen.
+:::tip Hinweis
 
-:::tip Tipp
-
-Die Gestaltung dieser externen Bilddatensätze hängt vom externen Dienst ab, der den WMS (z.B. Dienst von GeoServer "https://wms.websitehai.com/geoserver/ows?SERVICE=WMS&") oder WMTS bereitstellt.
-Daher kann die visuelle Darstellung der Kartenbilder, einschließlich Elemente wie Farbschemata und Darstellung geografischer Merkmale, nicht innerhalb des GOAT-Frameworks geändert werden.
+Die Darstellung dieser externen Bilddatensätze hängt vom externen Dienst ab, der den WMS- oder WMTS-Service bereitstellt (z.B. Dienst von GeoServer https://wm&#8203;s.websitehai.com/geoserver/ows?SERVICE=WMS&). Folglich kann die visuelle Präsentation des Kartenmaterials, einschließlich Elemente wie Farbschemata und Darstellung geografischer Merkmale, im GOAT-Framework nicht geändert werden.
 
 :::
+<p> </p>
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/data/raster.png').default} alt="Übersicht über die Home-Oberfläche in GOAT" style={{ maxHeight: "750px", maxWidth: "750px", objectFit: "cover"}}/>
+</div>
+<p> </p>
 
-### 2. Vector Tiles
-**Vector Tile Datasets** ermöglichen die Integration von **MVT** (Mapbox Vector Tile) (z.B. mapbox://mapbox.mapbox-terrain-v2) in GOAT, sodass diese effizienten Vektorkacheln als statische Karten verwendet werden können.
+**WMS (Web Map Service)**
+Dieser Layer-Typ unterstützt Zoom und Schwenken und ist ideal für Grundkarten, aber das Ergebnis ist immer ein statisches Bild und wird langsamer geladen.
+
+**WMTS (Web Map Tile Service)**
+WMTS-Layer haben vorgerenderte, festgelegte Kacheln und laden daher schnell. Sie können schnell hineinzoomen und sie sanft schwenken. Es ist ideal für Grundkarten großer Flächen und eignet sich am besten, wenn Sie einen konsistenten Kartenstil haben möchten.
+
+**XYZ Tiles**
+Dieser Layer-Typ bietet schnelles und effizientes Karten-Zoomen und Schwenken, da die Kachel durch ihre Längen- (X), Breiten- (Y) und Zoom-Stufen-Koordinaten (Z) definiert ist. Es wird am häufigsten verwendet, wenn Sie eine schnell ladende Karte benötigen, die in verschiedenen Zoomstufen die gleiche Leistung erbringt.
+
+|   | WMS | WMTS und XYZ Tiles |
+|----|-------------|--------------|
+| **URL-Typ in GOAT**    | Capabilities-URL | Capabilities (nur WMTS), direkte URL |
+| **Datenoutput** | Dynamische Kartenbilder | Vorgerenderte, zwischengespeicherte Kachelkarten |
+| **Struktur** | Keine Kacheln – Bilder werden bei Bedarf generiert | Strukturierte Kacheln basierend auf einem Raster |
+| **Leistung** | Langsamer (Bilder werden auf Anfrage generiert) | Schneller (Kacheln werden zwischengespeichert) |
+| **Anpassbarkeit** | Eingeschränkt | Eingeschränkt |
+| **Skalierbarkeit** | Weniger skalierbar | Hoch skalierbar |
+|**Zoomstufe** | Variabel, durch Anfrageparameter festgelegt | Feste Zoomstufe, vom Server vorgegeben |
+
+:::info INFO
+Sie können herausfinden, welche Datentypen von GOAT unterstützt werden, unter [**Attributtypen**](../data/data_types).
+:::
