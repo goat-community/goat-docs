@@ -13,10 +13,7 @@ Users can access datasets in the **Catalog Explorer** and through the **Dataset 
 
 :::info External Datasets
 
-Unlike other datasets, external datasets are sourced from **third-party services** via the link you provide. These datasets can either be [Features](#1-features) or [Rasters](#2-rasters), each serving distinct purposes. *External feature layers* will be fetched into GOAT and stored there, meanwhile *external raster layers* will be fetched live (to overlay on the map) but not stored.
-<p>
-</p>
-The following external datasets are supported in GOAT: Web Map Service (WMS), Web Map Tile Service (WMTS), Web Feature Service (WFS), XYZ Tiles.
+Unlike other datasets, external datasets are sourced from **third-party services** via the link you provide. They will be fetched into GOAT and stored there. These datasets can either be [Features](#1-features) or [Rasters](#2-rasters), each serving distinct purposes. The following external datasets are supported in GOAT: Web Map Service (WMS), Web Map Tile Service (WMTS), Web Feature Service (WFS), XYZ Tiles.
 
 :::
 
@@ -27,26 +24,16 @@ The following external datasets are supported in GOAT: Web Map Service (WMS), We
 #### 1.1 Spatial Features
 Feature datasets serve as a dynamic repository of **spatial features**, such as points, lines, or polygons - they contaian spatially referenced geogrpahic features. Users can upload and utilize data from **Shapefiles**, **Geopackages**, **GeoJSON**, and **KML** files or add **WFS** link from an external URL. Feature datasets can be visualized on the map, [styled](../category/layer-styling), and used for analyses with any tools from the [toolbox](../category/toolbox). Furthermore, feature datasets can serve as a data basis for the [scenario creation](../category/scenarios).
 
-<p> </p>
-<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/data/spatial.png').default} alt="Home Interface Overview in GOAT" style={{ maxHeight: "750px", maxWidth: "750px", objectFit: "cover"}}/>
-</div>
-<p> </p>
-
 Within the GOAT framework, there are two different types of feature datasets, to address different aspects of geospatial functionality:
 
 - **Feature Dataset Standard:** This is the primary feature type that is automatically selected when a user uploads a file. It supports a range of formats including GeoJSON, GPKG, KML, and ZIP files. This dataset serves as the foundation for basic geospatial operations within GOAT.
 
-- **Feature Dataset Tool:** This dataset includes all datasets that have been produced using the tools available in GOAT.
+- **Feature Dataset Tool:** This dataset includes all datasets that have been produced using the tools available in GOAT. 
 
 
 #### 1.2. Non-spatial datasets
 **Tables** are **non-spatial datasets**, which differ from the geospatial datasets due to their lack of geographic reference points, therefore they cannot be visualized on the map. These datasets can be used for selected analysis and data management processes. Users can import table datasets in widely used formats such as **CSV** (Comma-Separated Values) and **XLSX** (Microsoft Excel Open XML Spreadsheet). 
 
-<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/data/table.png').default} alt="Home Interface Overview in GOAT" style={{ maxHeight: "750px", maxWidth: "750px", objectFit: "cover"}}/>
-</div>
-<p> </p>
 
 ### 2. Rasters
 
@@ -56,7 +43,8 @@ You cannot edit or run analyses on raster layers.
 
 :::
 
-Raster datasets are provided by external sources such as **WMS** (Web Map Service) or **WMTS** (Web Map Tile Service). Therewith, a wide range of georeferenced map images, such as topographic maps, can be obtained from external servers and integrated into GOAT. While these images can be incorporated as static maps, it is important to note that they do not support analytical functions.
+#### 2.1. Imageries
+Imagery datasets are datasets that are provided by external sources such as **WMS** (Web Map Service) or **WMTS** (Web Map Tile Service). Therewith, a wide range of georeferenced map images, such as topographic maps, can be obtained from external servers and integrated into GOAT. While these images can be incorporated as static maps, it is important to note that they do not support analytical functions.
 
 
 :::tip Note
@@ -65,11 +53,7 @@ The styling of these external image datasets is dependent on the external servic
 Consequently, the visual presentation of the map imagery, including elements such as color schemes and representation of geographic features, cannot be changed within the GOAT framework.
 
 :::
-<p> </p>
-<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-  <img src={require('/img/data/raster.png').default} alt="Home Interface Overview in GOAT" style={{ maxHeight: "750px", maxWidth: "750px", objectFit: "cover"}}/>
-</div>
-<p> </p>
+
 
 **WMS (Web Map Service)**
 This type of layer supports zooming and panning and it is ideal for basemaps, but the output is always a static image and gets loaded slower.
@@ -77,6 +61,8 @@ This type of layer supports zooming and panning and it is ideal for basemaps, bu
 **WMTS (Web Map Tile Service)**
 WMTS layers have pre-rendered, fixed sized tiles therefore it loads quickly, and you can zoom in and pan them quickly and smoothly. It is ideal for basemaps on big areas and best to use when you want to have consistent map-style.
 
+#### 2.2. Vector Tiles
+**Vector Tile Datasets** allow the integration of **MVT** (Mapbox Vector Tile) (e.g. mapbox://mapbox.mapbox-terrain-v2) into GOAT, allowing these efficient vector tiles to be used as static maps.
 
 **XYZ Tiles**
 This type of layer offers fast and efficient map zooming and panning because the tile is defined by their longitude (X), latitude (Y) and zoom level (Z) coordinates. It’s most often used when you need a fast-loading map that has the same performance on different zoom levels.
@@ -91,9 +77,6 @@ This type of layer offers fast and efficient map zooming and panning because the
 | **Scalability** |Less scalable | Highly scalable |
 |**Zoom level** | Variable, set by request parameters | Fixed zoom level, predetermined by the server |
 
-
-
-
 :::info INFO
-You can find out which data types are supported by GOAT under [**Attribute Types**](../data/data_types).
+You can find out which data types are supported by GOAT under [**Data Types**](../data/data_types).
 :::

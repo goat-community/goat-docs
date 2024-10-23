@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Eingebaute Datensätze
+# Unsere Datensätze
 
 
 ### Daten als elementare Grundlage für Analysen

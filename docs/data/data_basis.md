@@ -5,12 +5,12 @@ sidebar_position: 2
 # Inbuilt Datasets
 
 
-## Data as an important basis for analyses
+### Data as an important basis for analyses
 
 At Plan4Better, we recognize that data is the fuel that powers our analyses, making it our most valuable asset. To deliver accurate insights based on high-quality information, our WebGIS platform [GOAT](https://goat.plan4better.de/login) integrates a variety of diverse geospatial and non-geospatial datasets from various sources. However, processing inconsistent data from different sources with varying degrees of accuracy can pose a significant challenge. To address this issue, we leverage a range of techniques including efficient data integration, disaggregation, and fusion workflows.
 
 
-## Data collection and preparation
+### Data collection and preparation
 
 The data collection process involves identifying relevant data sources and collecting data - ideally from open data portals or publicly available initiatives. Depending on the data source, various formats such as shapefiles and GeoJSON may be used. It is therefore essential to prepare and convert the data into a common schema and format to ensure consistency and comparability.
 
@@ -20,7 +20,7 @@ At Plan4Better, we ensure that our data is up-to-date by updating it at least on
 
 ![GOAT data basis](/img/data/data_basis/original_files/data_en_blue.png "GOAT data basis")
 
-## Datasets in the Catalog
+### Datasets in the Catalog
 
 The following datasets are available via the Catalog. These are managed as *feature layers* containing geospatial features (points, lines, or polygons) or non-geospatial data (in a tabular format), and can be added to your projects for analysis and visualization. While not an exhaustive list of available layers, the following information provides an overview of the primary dataset types.
 
@@ -30,7 +30,7 @@ This section provides technical details about datasets available in the Catalog.
 
 ::::
 
-### Points of Interest (POIs)
+#### Points of Interest (POIs)
 Locations of common amenities, facilities, and trip-attractors that are necessary for accessibility planning.
 
 - *Features:*
@@ -44,7 +44,7 @@ Locations of common amenities, facilities, and trip-attractors that are necessar
 - *Sources:*
     [Overture Maps Foundation](https://overturemaps.org/), [Open Street Map (OSM)](https://wiki.openstreetmap.org/), government departments and agencies, health insurance companies, and retailer companies. Additional data collection may be carried out in the field by us if needed.
 
-### Population and Buildings
+#### Population and Buildings
 Population data is often provided at a micro level (e.g. the number of people residing in a building) and is disaggregated from district, municipality, or census population data. This disaggregation process also takes into account land-use information to improve the accuracy of results.
 
 - *Features:*
@@ -55,7 +55,7 @@ Population data is often provided at a micro level (e.g. the number of people re
 - *Sources:*
     Population data is fetched from various sources including the [German Zensus 2022](https://ergebnisse.zensus2022.de/datenbank/online/), and individual municipalities and districts, while building data is fetched in the form of 3D City Models from German federal states.
 
-### Administrative Boundaries
+#### Administrative Boundaries
 Areas under the jurisdiction of governmental or administrative entities.
 
 - *Features:*
@@ -67,7 +67,7 @@ Areas under the jurisdiction of governmental or administrative entities.
 - *Sources:*
     The [Federal Agency for Cartography and Geodesy (BKG)](https://www.bkg.bund.de/) and [Open Street Map (OSM)](https://wiki.openstreetmap.org/).
 
-## Network Datasets for Routing
+### Network Datasets for Routing
 
 These are the networks used by GOAT's accessibility indicators for performing routing-based analyses.
 
@@ -77,7 +77,7 @@ While in-built networks are currently used for public transport and street routi
 
 ::::
 
-### Public Transport Network
+#### Public Transport Network
 Extensive public transport network data for various modes such as buses, trams, subways, trains, ferries, and more. This is used by GOAT for [Public Transport](../routing/public_transport) routing.
 
 ![Public Transport Network](/img/data/data_basis/pt_network_banner.png "Public Transport Network")
@@ -100,7 +100,7 @@ Extensive public transport network data for various modes such as buses, trams, 
     - The network is optimized to only include the modal pattern of service for each route (the most prevalent sequence of trips).
     - GOAT allows public transport analysis for three day-of-week types (**Weekday**, **Saturday**, and **Sunday**) with a **Tuesday** typically used as a reference day for the *Weekday* type.
 
-### Street Network and Topography
+#### Street Network and Topography
 Extensive street network data that represents real-world transport networks and their components: roads, motorways, interchanges, dedicated paths, and more. This is used by GOAT for [Walk](../routing/walking), [Bicycle](../routing/bicycle), [Pedelec](../routing/bicycle), and [Car](../routing/car) routing.
 
 ![Street Network](/img/data/data_basis/street_network_banner.png "Street Network")
