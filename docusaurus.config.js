@@ -132,6 +132,12 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Plan4Better, Inc. Built with Docusaurus.`,
       },
+      algolia: {
+        indexName: 'goat-plan4better',
+        appId: 'LLUCN6LJ7S',
+        apiKey: '638cac0d311f215315b3313f679af50a',
+        contextualSearch: true,
+      },
     }),
 };
 
