@@ -13,7 +13,7 @@ Sharing **does not duplicate** your data, only grants access to it.
 
 ## **Managing teams and members**
 
-In the [Settings](../workspace/settings.md) you can find the Teams you are part of, and you can see the members and their role. Teams are little departments of Organizations.
+In the [Settings](../workspace/settings.md) you can find the Teams you are part of, and you can see the members and their role. Teams can represent departments within an organization and allow you to group members in a way that suits your workflow.
 
 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
   <img src={require('/img/sharing/sharing_teams.png').default} alt="Home Interface Overview in GOAT" style={{ maxHeight: "750px", maxWidth: "750px", objectFit: "cover"}}/>
@@ -64,6 +64,18 @@ Click on the three-dot menu <img src={require('/img/map/filter/3dots.png').defau
 
 ## **Roles**
 
-:::info
-coming soon
+See the table to learn what each user can do within an Organization/Team and in a shared Dataset/Project.
+
+<p> </p>
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+  <img src={require('/img/sharing/sharing_roles_table.png').default} alt="Home Interface Overview in GOAT" style={{ maxHeight: "Auto", maxWidth: "Auto", objectFit: "cover"}}/>
+</div>
+<p> </p>
+
+:::info Important
+
+Deleting a dataset from a shared project **that you own** will cause it to be *deleted for other users as well*.
+
+**As an editor** if you delete a dataset or (layer from the) project, the *owner will still have it in their personal dataset*.
+
 :::
