@@ -429,7 +429,7 @@ Wenn Sie **Polygon-Differenz** aktivieren, wird für jeden Schritt nur das "inkr
 
 :::tip Tipp
 
-Je nach gewählten Einstellungen kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../workspace/home#status-bar) zeigt den aktuellen Fortschritt an.
+Je nach gewählten Einstellungen kann die Berechnung einige Minuten dauern. Die [Statusleiste](../../workspace/home#statusleiste) zeigt den aktuellen Fortschritt an.
 
 :::
 
