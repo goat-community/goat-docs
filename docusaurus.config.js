@@ -14,7 +14,7 @@ const config = {
   baseUrl: "/docs/",
   organizationName: "goat-community",
   projectName: "goat",
-  onBrokenLinks: "ignore",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   i18n: {
     defaultLocale: "en",
